@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: axe-core"
-description: "The accessibility engine underneath most of the field: what it implements, its ~30-40% ceiling, three verified false-positive issues, and the closed shadow DOM it cannot reach"
+description: "The accessibility engine underneath most of the field: what it implements, its ~30-40% ceiling, defects from the tracker and friction from Stack Overflow, and the closed shadow DOM it cannot reach"
 status: draft
 serves: [Accessibility Specialist, QA Engineer, Design Engineer]
 generated: { by: human:jkornobis, at: 2026-08-23 }
@@ -35,9 +35,11 @@ Adjacent, if the host is Cypress: `/component-driven/cypress-axe` — 59 snippet
 
 ## Known issues — what breaks, from the record rather than the vendor
 
-**Source of record: the project's own issue tracker.** **Stack Overflow was not reachable** — this orchestra's web arm is refused by `stackoverflow.com` (verified 2026-08-23, the search API returns *"domains are not accessible to our user agent"*). So no SO-sourced row appears below, and its absence is a fact about the instrument rather than about the tool.
+**Two sources, and they hold different classes of problem.** The tracker holds **defects** — the rule is wrong. Stack Overflow holds **friction** — the rule is right and the reader cannot tell. A page that reads only one of them misses half of what breaks a chair's day.
 
-Each row verified against the GitHub issues API on 2026-08-23 — title, state, date and labels read from the issue itself, never from a search summary.
+**How each was reached, because the route is part of the evidence.** The tracker: the GitHub issues API, 2026-08-23 — title, state, date and labels read from the issue itself, never from a search summary. Stack Overflow: **the Browser pane**, on the Composer's instruction of 2026-08-23, because the web-search arm is refused by the domain outright (*"domains are not accessible to our user agent"*). The pane renders the page like any reader; nothing is bypassed. **A tool unreachable by one instrument is not unreachable.**
+
+### Defects — the project's tracker
 
 | Issue | State | What it costs the chair | Source |
 |---|---|---|---|
@@ -45,7 +47,29 @@ Each row verified against the GitHub issues API on 2026-08-23 — title, state, 
 | `target-size` false positive inside a "fake" stacking context | **closed**, 2024-03-01, labels `fix` `rules` `high` | a translucent target in a positioned stacking context was reported as too small. Closed — the value here is the shape: **target-size reasoning depends on stacking context**, so a fix in one component can move the verdict in another | [#4350](https://github.com/dequelabs/axe-core/issues/4350) |
 | EPIC: fix customer-reported false positives | **open**, 2025-06-06 | the vendor tracks false positives as a standing programme rather than as incidents. Read it as the honest base rate: **some fraction of any run is noise**, and triage is part of the chair's work, not a sign of misuse | [#4791](https://github.com/dequelabs/axe-core/issues/4791) |
 
-**The pattern under all three is one fact worth carrying:** axe-core's failures are **false positives, not false negatives** — it over-reports rather than under-reports. That is the safe direction for a conformance tool and the expensive one for a team, because every run costs triage.
+### Friction — Stack Overflow, read through the Browser pane 2026-08-23
+
+**The `axe-core` tag holds four questions in total**, highest score 1. That thinness is itself the
+finding: **this tool's problems are not discussed on Stack Overflow**, they are filed against the
+repository. Recorded so nobody re-runs the search expecting a corpus.
+
+| Question | Signal | What it costs the chair | Source |
+|---|---|---|---|
+| axe-core reports colour values that match no CSS rule | 1 vote, **0 answers**, 312 views — the most-read of the four, asked by a 14.6k-rep user, Dec 2024 | **The reported colour is composited, not declared.** A maintainer answered *in a comment* — a non-1 `opacity` or an `rgba` background is alpha-composited into an opaque value before contrast is computed. So searching the stylesheet for the reported colour finds nothing, and the violation looks like a bug in the tool. It is not | [79248451](https://stackoverflow.com/questions/79248451/axe-core-accessibility-library-reports-incorrect-colour-values) |
+| `ERR_INVALID_FILE_URL_PATH` running `@axe-core/playwright` in a Next.js API route | 1 vote, 1 answer, 129 views, Apr 2025 | integration, not engine — the harness, not the rules | [79552838](https://stackoverflow.com/questions/79552838/why-do-i-get-err-invalid-file-url-path-when-using-axe-core-playwright-in-a-next) |
+| Getting axe-core to re-run on state change or route change | 1 vote, 1 answer, 101 views, Jul 2025 | a single-page app scans once at load and never again unless wired to re-run — a silent under-audit rather than a failure | [79686218](https://stackoverflow.com/questions/79686218/how-can-i-get-axe-core-to-run-when-state-changes-or-i-switch-to-a-different-page) |
+| Do axe-core rules conform to older rule sets | −1 vote, 1 answer, 126 views, Feb 2025 | — | [79475170](https://stackoverflow.com/questions/79475170/are-axe-core-rules-conform-to-older-rules) |
+
+**The first row is the one to carry, and it is the same shape this estate keeps recording:** the tool
+worked, returned a number, and the number described a **computed** state rather than the declared one.
+The reader went looking for the value in the wrong layer. `brain/brain_principles.md`'s oracle rule,
+arriving from outside this repo entirely.
+
+**And note where the answer was.** The question shows **0 answers**; the explanation sits in a
+comment. A row counted by answers would have scored this question as unresolved and skipped the most
+useful sentence on the page.
+
+**The pattern under all three tracker issues is one fact worth carrying:** axe-core's failures are **false positives, not false negatives** — it over-reports rather than under-reports. That is the safe direction for a conformance tool and the expensive one for a team, because every run costs triage.
 
 ## Limits — where this instrument stops
 
