@@ -34,15 +34,18 @@ independently confirmed. `Published` below is the date the page last changed in 
 | Page | Covers | Published by | Published |
 |---|---|---|---|
 | `protocols/agile_facilitator_score.md` | Core interpreter model, mode table, Open Score, multilingual protocol, conversation vs execution mode, discourse protocol | jkornobis | 2026-08-17 |
-| `protocols/sync_protocol.md` | Adopted 2026-07-02 (ADR-22) | jkornobis | 2026-08-16 |
 | `protocols/orchestra_test_harness.md` | The structural finale | jkornobis | 2026-08-17 |
+| `protocols/session_journal.md` | Cross-session continuity | jkornobis | 2026-08-22 |
+| `protocols/sync_protocol.md` | Adopted 2026-07-02 (ADR-22) | jkornobis | 2026-08-16 |
 
 ## Method — craft that outlives a tool
 
 | Page | Covers | Published by | Published |
 |---|---|---|---|
 | `method/agile_auditor_catalog.md` | The master list of anti-patterns the Agile Auditor watches for, consolidated from criteria scattered across the score | jkornobis | 2026-08-16 |
+| `method/common_score_matrix.md` | How each of the 12 musicians connects to the shared knowledge fields, across all 11 Acts | jkornobis | 2026-08-22 |
 | `method/multiagent_canon_audit.md` | The orchestra mapped against the 2026 multi-agent state of the art | jkornobis | 2026-07-03 |
+| `method/orchestra_glossary.md` | One definition per term | jkornobis | 2026-08-22 |
 | `method/orchestra_prior_art.md` | Status: researched with verified sources (2026-07-02) | jkornobis | 2026-08-16 |
 
 ## Principles — the claims the rest stands on
@@ -52,8 +55,9 @@ independently confirmed. `Published` below is the date the page last changed in 
 ---
 
 **What this library is not:** it is **public**, so it carries nothing [EMPLOYER]-internal and nothing
-under NDA; and it carries no Composer Key and nothing personal — if key material travels
-everywhere, it *is* everywhere. It carries what is true about an instrument **for whoever plays
-it**, never one estate's history.
+under NDA. It carries **no project** — a concert is not the instrument, and each Composer carries
+their own in their own `project/` tree. And it carries no Composer Key and nothing personal: if
+key material travels everywhere, it *is* everywhere. It carries what is true about an instrument
+**for whoever plays it**, never one estate's history.
 
 Licensed CC BY-SA 4.0.
