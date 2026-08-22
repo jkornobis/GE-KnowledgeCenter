@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: [Name]"
-description: "The skeleton a Tool Audit fills: chair and lever, lineage line, Context7 id resolved rather than recalled, known issues verified against the record, and limits marked tool or reasoning"
+description: "The skeleton a Tool Audit fills: chair and lever, lineage line, Context7 id resolved rather than recalled, defects and friction read from two sources by named routes, and limits marked tool or reasoning"
 status: draft
 serves: [User Researcher]
 generated: { by: human:jkornobis, at: 2026-08-23 }
@@ -32,9 +32,15 @@ A benchmark score is a dated reading: re-resolve rather than copy it forward.
 
 ## Known issues — what breaks, from the record rather than the vendor
 
-**Source of record:** [issue tracker / Stack Overflow / Stack Exchange], and say which. **Stack Overflow
-is not fetchable by this orchestra's web arm** (the crawler is refused, verified 2026-08-23), so an
-SO-sourced row arrives only via the Browser pane or from the Composer, and is marked with its route.
+**Two sources, and they hold different classes.** The **issue tracker** holds *defects* — the tool is
+wrong. **Stack Overflow / Stack Exchange** holds *friction* — the tool is right and the reader cannot
+tell. Read both, and say which a row came from.
+
+**Route matters and is recorded.** SO is refused to the web-search arm (*"domains are not accessible
+to our user agent"*), and is read through the **Browser pane** instead — the Composer's standing
+instruction, 2026-08-23. Ordinary rendering, nothing bypassed. **A tool unreachable by one instrument
+is not unreachable.** If a tag turns out to be thin, say so: an empty corpus is a finding, and it
+stops the next audit re-running the same search.
 
 | Issue | State | What it costs the chair | Source |
 |---|---|---|---|
