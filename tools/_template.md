@@ -4,7 +4,7 @@ title: "Tool: [Name]"
 description: "The skeleton a Tool Audit fills: chair and lever, lineage line, Context7 id resolved rather than recalled, defects and friction read from two sources by named routes, and limits marked tool or reasoning"
 status: draft
 serves: [User Researcher]
-generated: { by: human:jkornobis, at: 2026-08-23 }
+generated: { by: human:jkornobis, at: 2026-08-23T00:26:29+02:00 }
 ---
 
 # Tool: [Name]

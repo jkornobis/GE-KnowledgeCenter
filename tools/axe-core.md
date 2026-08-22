@@ -4,7 +4,7 @@ title: "Tool: axe-core"
 description: "The accessibility engine underneath most of the field: what it implements, its ~30-40% ceiling, defects from the tracker and friction from Stack Overflow, and the closed shadow DOM it cannot reach"
 status: draft
 serves: [Accessibility Specialist, QA Engineer, Design Engineer]
-generated: { by: human:jkornobis, at: 2026-08-23 }
+generated: { by: human:jkornobis, at: 2026-08-23T00:20:16+02:00 }
 ---
 
 # Tool: axe-core

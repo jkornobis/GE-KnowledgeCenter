@@ -3,7 +3,7 @@ type: Method
 title: "Agile Auditor Detection Catalog (Agile Auditor)"
 description: "The master list of anti-patterns the Agile Auditor watches for, consolidated from criteria scattered across the score"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Agile Auditor Detection Catalog (Agile Auditor)

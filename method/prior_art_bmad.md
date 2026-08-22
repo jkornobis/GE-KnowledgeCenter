@@ -3,7 +3,7 @@ type: Method
 title: "Prior Art — BMAD Method vs. the Orchestra"
 description: "A focused deep-dive on one comparable multi-agent framework, and three re-readings of it — including the one that found the comparison had been between a pipeline and a roster"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-22 }
+generated: { by: human:jkornobis, at: 2026-08-22T23:59:53+02:00 }
 ---
 
 # Prior Art — BMAD Method vs. the Orchestra (User Researcher + Product Owner + Software Architect)

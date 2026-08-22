@@ -4,7 +4,7 @@ title: "Lever index — UX Designer"
 description: "UX Designer lever index for Figma: seven intents keyed to the Plugin API call that serves them, each row naming the tempting wrong default it exists to beat"
 status: draft
 serves: [UX Designer]
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T23:27:12+02:00 }
 ---
 
 # Lever index — UX Designer

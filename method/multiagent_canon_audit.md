@@ -3,7 +3,7 @@ type: Method
 title: "Multi-Agent Canon Audit — 2026-07-03"
 description: "The orchestra mapped against the 2026 multi-agent state of the art"
 status: draft
-generated: { by: human:jkornobis, at: 2026-07-03 }
+generated: { by: human:jkornobis, at: 2026-07-03T11:32:33+02:00 }
 ---
 
 # Multi-Agent Canon Audit — 2026-07-03

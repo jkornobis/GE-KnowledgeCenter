@@ -4,7 +4,7 @@ title: "The lever register — what exists, ranked by the lineage"
 description: "The lever register: what leaps exist and which seats they serve, judged by six questions — lineage, posture, health, grip, why, licence — plus the seams no tool crosses yet"
 status: draft
 serves: [User Researcher, Product Owner, Software Architect]
-generated: { by: human:jkornobis, at: 2026-08-22 }
+generated: { by: human:jkornobis, at: 2026-08-22T23:51:16+02:00 }
 ---
 
 # The lever register — what exists, ranked by the lineage

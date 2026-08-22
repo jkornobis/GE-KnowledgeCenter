@@ -3,7 +3,7 @@ type: Chair Reference
 title: "Software Architect — Field References (Process & versioning)"
 description: "Living reference notes for the Software Architect's field"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Software Architect — Field References (Process & versioning)

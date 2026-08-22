@@ -3,7 +3,7 @@ type: Protocol
 title: "Orchestra Test Harness (QA Engineer)"
 description: "Testing a multi-agent system's own behaviour: BDD scenarios, the invariant and capability eval sets, the standard grader prompt, and why a grader must be constant"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-17 }
+generated: { by: human:jkornobis, at: 2026-08-17T11:59:30+02:00 }
 ---
 
 # Orchestra Test Harness (QA Engineer)

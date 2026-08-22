@@ -3,7 +3,7 @@ type: Chair Reference
 title: "Content Designer — Field References (Copy & vocabulary)"
 description: "Living reference notes for the Content Designer's field"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Content Designer — Field References (Copy & vocabulary)

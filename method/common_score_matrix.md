@@ -3,7 +3,7 @@ type: Method
 title: "The Common Score — Acts I–XI"
 description: "How each of the 12 musicians connects to the shared knowledge fields, across all 11 Acts"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-22 }
+generated: { by: human:jkornobis, at: 2026-08-22T20:54:19+02:00 }
 ---
 
 # The Common Score — Acts I–XI

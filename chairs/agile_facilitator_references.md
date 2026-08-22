@@ -3,7 +3,7 @@ type: Chair Reference
 title: "Agile Facilitator — Field References (Routing & synthesis)"
 description: "Living reference notes for the Agile Facilitator's field"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Agile Facilitator — Field References (Routing & synthesis)

@@ -5,7 +5,7 @@ description: "Context7 MCP: on-demand version-pinned library docs — verified t
 status: draft
 serves: [Design Engineer, Software Engineer, Product Owner, User Researcher]
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Tool: Context7

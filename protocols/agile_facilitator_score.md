@@ -3,7 +3,7 @@ type: Protocol
 title: "Agile Facilitator Routing Protocol"
 description: "How the router reads intention rather than keywords: the interpreter model, the six response modes, the chat triggers, and conversation versus execution"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-17 }
+generated: { by: human:jkornobis, at: 2026-08-17T11:59:30+02:00 }
 ---
 
 # Agile Facilitator Routing Protocol
