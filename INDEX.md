@@ -23,6 +23,9 @@ and each page names the chairs it serves, so the link runs both ways.
 |---|---|---|---|
 | `tools/README.md` | What a tool page records and why: the vantage point a reading was taken from, its verification state, and the three layers that stop a toolset being hand-rolled | QA Engineer, User Researcher | 2026-08-16 |
 | `tools/_template.md` | The skeleton a Tool Audit fills: audited date, re-audit cadence, verified-this-session facts per chair, and proposals the Composer accepts or declines | User Researcher | 2026-08-16 |
+| `tools/cowork.md` | Cowork mode in Claude Desktop: skills and their references do load, and the defining constraint is that the pass runs unwatched — with the audit brief for everything still unverified | UX Designer, QA Engineer, User Researcher, Reliability Engineer | 2026-08-22 |
+| `tools/claude-desktop.md` | Claude Desktop on Windows: the 1024-character skill-description limit, .skill as a zip of a directory, a menu that is not the registry, and why a shell-side localhost is not the machine | the whole room | 2026-08-22 |
+| `tools/register.md` | The lever register: what leaps exist and which seats they serve, judged by six questions — lineage, posture, health, grip, why, licence — plus the seams no tool crosses yet | Agile Facilitator, UX Designer, Design Engineer, Accessibility Specialist, Software Engineer, QA Engineer, Content Designer, Product Owner, User Researcher, Software Architect, Reliability Engineer | 2026-08-22 |
 | `tools/context7.md` | Context7 MCP: on-demand version-pinned library docs — verified tool names, keyless runtime, free-tier limits, and the coverage boundary it does not cross | the whole room | 2026-08-16 |
 | `tools/pdf-reading.md` | Reading a PDF on a Claude Desktop machine: four routes tried, one worked — and why a viewer that displays a document returns nothing to the orchestra | the whole room | 2026-08-16 |
 
