@@ -14,6 +14,17 @@ field, which in OKF terms is the *unverified* tier: published by the estate that
 independently confirmed. `Published` below is the date the page last changed in its home repo.
 
 
+## Tools — what an instrument can actually do
+
+**Addressable directly.** A tool page is reached by its own path, not through the chair that uses it —
+and each page names the chairs it serves, so the link runs both ways.
+
+| Page | Covers | Serves | Published |
+|---|---|---|---|
+| `tools/README.md` | One page per deployment surface (e.g | QA Engineer, User Researcher | 2026-08-16 |
+| `tools/_template.md` | Audited date] by User Researcher | User Researcher | 2026-08-16 |
+| `tools/context7.md` | Audited 2026-07-20 by User Researcher | the whole room | 2026-08-16 |
+| `tools/pdf-reading.md` | Audited 2026-07-29 by User Researcher, on a real 4.9MB PDF the Composer put on his Desktop | the whole room | 2026-08-16 |
 ## Chairs — what a seat knows
 
 | Page | Covers | Published by | Published |
