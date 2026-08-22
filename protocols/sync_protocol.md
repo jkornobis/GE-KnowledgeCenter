@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "Pre-Sync Protocol — test → refactor → test → sync → test the sync"
-description: "Adopted 2026-07-02 (ADR-22)"
+description: "Shipping a change safely: test, refactor, test, review, sync, test the sync — effort-tiered, with the gate owner named at each step"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16 }
 ---

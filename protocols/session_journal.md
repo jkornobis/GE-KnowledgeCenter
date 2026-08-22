@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "Session Journal Protocol (Agile Facilitator)"
-description: "Cross-session continuity"
+description: "The episodic memory layer above indexed memory: what a session journal entry captures, where it lives, and how a later session re-orients from it"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-22 }
 ---

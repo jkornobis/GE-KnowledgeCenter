@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool pages"
-description: "One page per deployment surface (e.g"
+description: "What a tool page records and why: the vantage point a reading was taken from, its verification state, and the three layers that stop a toolset being hand-rolled"
 status: draft
 serves: [QA Engineer, User Researcher]
 generated: { by: human:jkornobis, at: 2026-08-16 }

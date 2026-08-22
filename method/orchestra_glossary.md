@@ -1,7 +1,7 @@
 ---
 type: Method
 title: "Orchestra Glossary — Canonical Vocabulary (Content Designer)"
-description: "One definition per term"
+description: "One definition per term for the whole system: roles, artifacts, modes, triggers and named principles, so no word means two things"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-22 }
 ---
