@@ -16,13 +16,19 @@ independently confirmed. `Published` below is the date the page last changed in 
 
 ## Tools — what an instrument can actually do
 
+**The lineage index is the way in.** `tools/lineage.md` gives each chair its origin, the leap
+that changed it, and the instrument that carries that leap now — the tool pages below hang from
+its fourth column.
+
 **Addressable directly.** A tool page is reached by its own path, not through the chair that uses it —
 and each page names the chairs it serves, so the link runs both ways.
 
 | Page | Covers | Serves | Published |
 |---|---|---|---|
+| `tools/lineage.md` | Twelve chairs, each with the origin it started from, the leap that changed it, the current best-in-class, and the years between the two | the whole room | 2026-08-16 |
+| `tools/axe-core.md` | The accessibility engine underneath most of the field: what it implements, its ~30-40% ceiling, three verified false-positive issues, and the closed shadow DOM it cannot reach | Accessibility Specialist, QA Engineer, Design Engineer | 2026-08-23 |
 | `tools/README.md` | What a tool page records and why: the vantage point a reading was taken from, its verification state, and the three layers that stop a toolset being hand-rolled | the whole room | 2026-08-16 |
-| `tools/_template.md` | The skeleton a Tool Audit fills: audited date, re-audit cadence, verified-this-session facts per chair, and proposals the Composer accepts or declines | User Researcher | 2026-08-16 |
+| `tools/_template.md` | The skeleton a Tool Audit fills: chair and lever, lineage line, Context7 id resolved rather than recalled, known issues verified against the record, and limits marked tool or reasoning | User Researcher | 2026-08-16 |
 | `tools/cowork.md` | Cowork mode in Claude Desktop: skills and their references do load, and the defining constraint is that the pass runs unwatched — with the audit brief for everything still unverified | User Researcher | 2026-08-22 |
 | `tools/claude-desktop.md` | Claude Desktop on Windows: the 1024-character skill-description limit, .skill as a zip of a directory, a menu that is not the registry, and why a shell-side localhost is not the machine | the whole room | 2026-08-22 |
 | `tools/register.md` | The lever register: what leaps exist and which seats they serve, judged by six questions — lineage, posture, health, grip, why, licence — plus the seams no tool crosses yet | User Researcher, Product Owner, Software Architect | 2026-08-22 |
