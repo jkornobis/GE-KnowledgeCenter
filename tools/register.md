@@ -3,7 +3,7 @@ type: Tool
 title: "The lever register — what exists, ranked by the lineage"
 description: "The lever register: what leaps exist and which seats they serve, judged by six questions — lineage, posture, health, grip, why, licence — plus the seams no tool crosses yet"
 status: draft
-serves: [Agile Facilitator, UX Designer, Design Engineer, Accessibility Specialist, Software Engineer, QA Engineer, Content Designer, Product Owner, User Researcher, Software Architect, Reliability Engineer]
+serves: [User Researcher, Product Owner, Software Architect]
 generated: { by: human:jkornobis, at: 2026-08-22 }
 ---
 
