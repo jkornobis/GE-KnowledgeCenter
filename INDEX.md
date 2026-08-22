@@ -21,10 +21,11 @@ and each page names the chairs it serves, so the link runs both ways.
 
 | Page | Covers | Serves | Published |
 |---|---|---|---|
-| `tools/README.md` | One page per deployment surface (e.g | QA Engineer, User Researcher | 2026-08-16 |
-| `tools/_template.md` | Audited date] by User Researcher | User Researcher | 2026-08-16 |
-| `tools/context7.md` | Audited 2026-07-20 by User Researcher | the whole room | 2026-08-16 |
-| `tools/pdf-reading.md` | Audited 2026-07-29 by User Researcher, on a real 4.9MB PDF the Composer put on his Desktop | the whole room | 2026-08-16 |
+| `tools/README.md` | What a tool page records and why: the vantage point a reading was taken from, its verification state, and the three layers that stop a toolset being hand-rolled | QA Engineer, User Researcher | 2026-08-16 |
+| `tools/_template.md` | The skeleton a Tool Audit fills: audited date, re-audit cadence, verified-this-session facts per chair, and proposals the Composer accepts or declines | User Researcher | 2026-08-16 |
+| `tools/context7.md` | Context7 MCP: on-demand version-pinned library docs — verified tool names, keyless runtime, free-tier limits, and the coverage boundary it does not cross | the whole room | 2026-08-16 |
+| `tools/pdf-reading.md` | Reading a PDF on a Claude Desktop machine: four routes tried, one worked — and why a viewer that displays a document returns nothing to the orchestra | the whole room | 2026-08-16 |
+
 ## Chairs — what a seat knows
 
 | Page | Covers | Published by | Published |
@@ -36,7 +37,7 @@ and each page names the chairs it serves, so the link runs both ways.
 | `chairs/engineer_references.md` | Living reference notes for the Software Engineer's field | jkornobis | 2026-08-16 |
 | `chairs/product_owner_references.md` | Living reference notes for the Product Owner's field | jkornobis | 2026-08-16 |
 | `chairs/qa_engineer_references.md` | Living reference notes for the QA Engineer's field | jkornobis | 2026-08-16 |
-| `chairs/reliability_engineer_references.md` | This file is the currency layer only | jkornobis | 2026-08-16 |
+| `chairs/reliability_engineer_references.md` | Live-docs currency layer for reliability and runtime: Kubernetes, SLOs and error budgets, OpenTelemetry, IaC, GitOps, FinOps, incident practice | jkornobis | 2026-08-16 |
 | `chairs/software_architect_references.md` | Living reference notes for the Software Architect's field | jkornobis | 2026-08-16 |
 | `chairs/user_researcher_references.md` | Living reference notes for the User Researcher's field | jkornobis | 2026-08-16 |
 
@@ -44,10 +45,10 @@ and each page names the chairs it serves, so the link runs both ways.
 
 | Page | Covers | Published by | Published |
 |---|---|---|---|
-| `protocols/agile_facilitator_score.md` | Core interpreter model, mode table, Open Score, multilingual protocol, conversation vs execution mode, discourse protocol | jkornobis | 2026-08-17 |
-| `protocols/orchestra_test_harness.md` | The structural finale | jkornobis | 2026-08-17 |
-| `protocols/session_journal.md` | Cross-session continuity | jkornobis | 2026-08-22 |
-| `protocols/sync_protocol.md` | Adopted 2026-07-02 (ADR-22) | jkornobis | 2026-08-16 |
+| `protocols/agile_facilitator_score.md` | How the router reads intention rather than keywords: the interpreter model, the six response modes, the chat triggers, and conversation versus execution | jkornobis | 2026-08-17 |
+| `protocols/orchestra_test_harness.md` | Testing a multi-agent system's own behaviour: BDD scenarios, the invariant and capability eval sets, the standard grader prompt, and why a grader must be constant | jkornobis | 2026-08-17 |
+| `protocols/session_journal.md` | The episodic memory layer above indexed memory: what a session journal entry captures, where it lives, and how a later session re-orients from it | jkornobis | 2026-08-22 |
+| `protocols/sync_protocol.md` | Shipping a change safely: test, refactor, test, review, sync, test the sync — effort-tiered, with the gate owner named at each step | jkornobis | 2026-08-16 |
 
 ## Method — craft that outlives a tool
 
@@ -56,8 +57,8 @@ and each page names the chairs it serves, so the link runs both ways.
 | `method/agile_auditor_catalog.md` | The master list of anti-patterns the Agile Auditor watches for, consolidated from criteria scattered across the score | jkornobis | 2026-08-16 |
 | `method/common_score_matrix.md` | How each of the 12 musicians connects to the shared knowledge fields, across all 11 Acts | jkornobis | 2026-08-22 |
 | `method/multiagent_canon_audit.md` | The orchestra mapped against the 2026 multi-agent state of the art | jkornobis | 2026-07-03 |
-| `method/orchestra_glossary.md` | One definition per term | jkornobis | 2026-08-22 |
-| `method/orchestra_prior_art.md` | Status: researched with verified sources (2026-07-02) | jkornobis | 2026-08-16 |
+| `method/orchestra_glossary.md` | One definition per term for the whole system: roles, artifacts, modes, triggers and named principles, so no word means two things | jkornobis | 2026-08-22 |
+| `method/orchestra_prior_art.md` | Where a persona-based orchestra sits against published multi-agent practice, plus the substrate facts on long-context rule decay and what the measurements actually support | jkornobis | 2026-08-16 |
 
 ## Principles — the claims the rest stands on
 

@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "Agile Facilitator Routing Protocol"
-description: "Core interpreter model, mode table, Open Score, multilingual protocol, conversation vs execution mode, discourse protocol"
+description: "How the router reads intention rather than keywords: the interpreter model, the six response modes, the chat triggers, and conversation versus execution"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-17 }
 ---

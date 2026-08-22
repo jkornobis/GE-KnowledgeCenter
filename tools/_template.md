@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: [Name]"
-description: "Audited date] by User Researcher"
+description: "The skeleton a Tool Audit fills: audited date, re-audit cadence, verified-this-session facts per chair, and proposals the Composer accepts or declines"
 status: draft
 serves: [User Researcher]
 generated: { by: human:jkornobis, at: 2026-08-16 }

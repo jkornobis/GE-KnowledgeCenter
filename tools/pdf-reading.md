@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: Reading a PDF (Claude Desktop, this machine)"
-description: "Audited 2026-07-29 by User Researcher, on a real 4.9MB PDF the Composer put on his Desktop"
+description: "Reading a PDF on a Claude Desktop machine: four routes tried, one worked — and why a viewer that displays a document returns nothing to the orchestra"
 status: draft
 serves: [User Researcher]
 serves_all: true

@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: Context7"
-description: "Audited 2026-07-20 by User Researcher"
+description: "Context7 MCP: on-demand version-pinned library docs — verified tool names, keyless runtime, free-tier limits, and the coverage boundary it does not cross"
 status: draft
 serves: [Design Engineer, Software Engineer, Product Owner, User Researcher]
 serves_all: true

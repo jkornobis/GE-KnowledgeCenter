@@ -1,7 +1,7 @@
 ---
 type: Method
 title: "Orchestra Prior Art — Comparable Systems (User Researcher)"
-description: "Status: researched with verified sources (2026-07-02)"
+description: "Where a persona-based orchestra sits against published multi-agent practice, plus the substrate facts on long-context rule decay and what the measurements actually support"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16 }
 ---
