@@ -4,7 +4,7 @@ title: "Tool: Playwright"
 description: "Cross-browser E2E on one API: what it verifies, 141 open issues and no bug label, and 3,506 Stack Overflow questions topped by something the API deliberately does not offer"
 status: draft
 serves: [QA Engineer, Accessibility Specialist, Design Engineer, UX Designer, Reliability Engineer]
-generated: { by: human:jkornobis, at: 2026-08-23 }
+generated: { by: human:jkornobis, at: 2026-08-23T00:26:29+02:00 }
 ---
 
 # Tool: Playwright

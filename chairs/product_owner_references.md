@@ -3,7 +3,7 @@ type: Chair Reference
 title: "Product Owner — Field References (Purpose & scope)"
 description: "Living reference notes for the Product Owner's field"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Product Owner — Field References (Purpose & scope)

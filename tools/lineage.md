@@ -3,7 +3,7 @@ type: Index
 title: "Lineage index — each chair's tool, and the lag before it arrived"
 description: "Twelve chairs, each with the origin it started from, the leap that changed it, the current best-in-class, and the years between the two — the index a chair's tool pages hang from"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Lineage index — each chair's tool, and the lag before it arrived

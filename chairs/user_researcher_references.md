@@ -3,7 +3,7 @@ type: Chair Reference
 title: "User Researcher — Field References (Research & sourcing)"
 description: "Living reference notes for the User Researcher's field"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # User Researcher — Field References (Research & sourcing)

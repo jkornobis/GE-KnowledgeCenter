@@ -3,7 +3,7 @@ type: Chair Reference
 title: "Agile Auditor — Field References (Pattern detection)"
 description: "Living reference notes for the Agile Auditor's field"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Agile Auditor — Field References (Pattern detection)

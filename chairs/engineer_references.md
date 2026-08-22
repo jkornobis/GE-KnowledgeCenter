@@ -3,7 +3,7 @@ type: Chair Reference
 title: "Software Engineer — Field References (Code & APIs)"
 description: "Living reference notes for the Software Engineer's field"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T23:27:12+02:00 }
 ---
 
 # Software Engineer — Field References (Code & APIs)

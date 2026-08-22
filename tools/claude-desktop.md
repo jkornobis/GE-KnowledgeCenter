@@ -5,7 +5,7 @@ description: "Claude Desktop on Windows: the 1024-character skill-description li
 status: draft
 serves: [Software Engineer, QA Engineer, User Researcher, Reliability Engineer]
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-22 }
+generated: { by: human:jkornobis, at: 2026-08-22T23:51:16+02:00 }
 ---
 
 # Tool: Claude Desktop (this machine, Windows 11)

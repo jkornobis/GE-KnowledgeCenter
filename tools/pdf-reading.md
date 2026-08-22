@@ -5,7 +5,7 @@ description: "Reading a PDF on a Claude Desktop machine: four routes tried, one 
 status: draft
 serves: [User Researcher]
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Tool: Reading a PDF (Claude Desktop, this machine)

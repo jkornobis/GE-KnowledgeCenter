@@ -4,7 +4,7 @@ title: "Tool: Cowork mode (Claude Desktop)"
 description: "Cowork mode in Claude Desktop: skills and their references do load, and the defining constraint is that the pass runs unwatched — with the audit brief for everything still unverified"
 status: draft
 serves: [User Researcher]
-generated: { by: human:jkornobis, at: 2026-08-22 }
+generated: { by: human:jkornobis, at: 2026-08-22T23:51:16+02:00 }
 ---
 
 # Tool: Cowork mode (Claude Desktop)

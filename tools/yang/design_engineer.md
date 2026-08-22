@@ -4,7 +4,7 @@ title: "Lever index — Design Engineer"
 description: "Design Engineer lever index for the token crossing: Figma Variables and Code Connect keyed by intent, each row naming the default it must beat, plus the trap in publish --force"
 status: draft
 serves: [Design Engineer]
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T23:27:12+02:00 }
 ---
 
 # Lever index — Design Engineer

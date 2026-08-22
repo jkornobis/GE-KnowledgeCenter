@@ -4,7 +4,7 @@ title: "Tool pages"
 description: "What a tool page records and why: the vantage point a reading was taken from, its verification state, and the three layers that stop a toolset being hand-rolled"
 status: draft
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Tool pages

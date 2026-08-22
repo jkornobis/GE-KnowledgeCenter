@@ -3,7 +3,7 @@ type: Protocol
 title: "Pre-Sync Protocol — test → refactor → test → sync → test the sync"
 description: "Shipping a change safely: test, refactor, test, review, sync, test the sync — effort-tiered, with the gate owner named at each step"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Pre-Sync Protocol — test → refactor → test → sync → test the sync

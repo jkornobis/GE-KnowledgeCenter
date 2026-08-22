@@ -3,7 +3,7 @@ type: Chair Reference
 title: "Reliability Engineer — Field References (Reliability & runtime)"
 description: "Live-docs currency layer for reliability and runtime: Kubernetes, SLOs and error budgets, OpenTelemetry, IaC, GitOps, FinOps, incident practice"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---
 
 # Reliability Engineer — Field References (Reliability & runtime)
