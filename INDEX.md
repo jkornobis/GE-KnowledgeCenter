@@ -29,6 +29,17 @@ and each page names the chairs it serves, so the link runs both ways.
 | `tools/context7.md` | Context7 MCP: on-demand version-pinned library docs — verified tool names, keyless runtime, free-tier limits, and the coverage boundary it does not cross | the whole room | 2026-08-16 |
 | `tools/pdf-reading.md` | Reading a PDF on a Claude Desktop machine: four routes tried, one worked — and why a viewer that displays a document returns nothing to the orchestra | the whole room | 2026-08-16 |
 
+### Lever indexes — one per musician, keyed by intent
+
+**Keyed by what you want, not by what the API offers.** Every row names the plausible wrong
+default it exists to beat. Two exist; the other ten chairs have no index yet, and an index
+written before its musician has handled the instrument is plausible documentation, not craft.
+
+| Page | Covers | Serves | Published |
+|---|---|---|---|
+| `tools/yang/ux_designer.md` | UX Designer lever index for Figma: seven intents keyed to the Plugin API call that serves them, each row naming the tempting wrong default it exists to beat | UX Designer | 2026-08-16 |
+| `tools/yang/design_engineer.md` | Design Engineer lever index for the token crossing: Figma Variables and Code Connect keyed by intent, plus the trap in publish --force | Design Engineer | 2026-08-16 |
+
 ## Chairs — what a seat knows
 
 | Page | Covers | Published by | Published |
