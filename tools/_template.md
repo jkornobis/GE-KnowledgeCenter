@@ -1,10 +1,10 @@
 ---
 type: Tool
 title: "Tool: [Name]"
-description: "The skeleton a Tool Audit fills: chair and lever, lineage line, Context7 id resolved rather than recalled, defects and friction read from two sources by named routes, and limits marked tool or reasoning"
+description: "The skeleton a Tool Audit fills: chair and lever, lineage, Context7 id resolved rather than recalled, defects and friction from two named routes with the friction's class, and limits marked tool or reasoning"
 status: draft
 serves: [User Researcher]
-generated: { by: human:jkornobis, at: 2026-08-23T00:26:29+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-25T14:47:07+02:00 }
 ---
 
 # Tool: [Name]
@@ -46,8 +46,26 @@ stops the next audit re-running the same search.
 |---|---|---|---|
 | [title] | open/closed, [date] | [the practical consequence, not the symptom] | [#N or URL] |
 
+**A label query measures a project's labelling convention, not its defects.** `is:open label:bug`
+returning 0 can mean a healthy tracker or no such label — Playwright marks bugs `[BUG]` in the title
+and labels by area, so the zero was about the convention. Check what the project labels *with* before
+reading a count as a health signal.
+
 Each row is verified against the primary record — an issue's own API or page — never from a search
 summary. A search result is testimony; the issue is the transcript.
+
+**Name the friction's *class*, because it predicts what adoption costs.** Five tools audited, five
+distinct shapes:
+
+| Class | Seen on | What a chair should budget |
+|---|---|---|
+| almost none — problems go to the tracker | `axe-core` (4 questions) | triage of the tool's own output |
+| **API mental model** — the obvious way is wrong | `playwright` (3,506) | unlearning, and a lever index |
+| **build pipeline** — a second build beside the app's | `storybook` (2,133) | config and version conflicts |
+| **boundary** — where does this end and my stack begin | `opentelemetry` (1,405) | orientation, not debugging |
+| **DSL translation** — a type idea expressed at runtime | `zod` (708, 176k top view) | modelling, reviewed as carefully as code |
+
+A tag's *size* says how many people met the tool; its *shape* says what they met.
 
 ## Limits — where this instrument stops
 
