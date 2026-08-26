@@ -41,7 +41,7 @@ already in hand:
 | **Response calibration** — read the mode before answering | `principles/core-principles.md` | depth is chosen before content exists |
 | **The presentation gate** — show, don't tell; buttons for genuine choices | not published — client-shaped | it governs the render, and it is one estate's Score Key |
 
-**Everything else in this library is a lookup**, reached when a question arrives: a chair's canon, a
+**Everything else in this library is a lookup**, reached when a question arrives: `chairs/the-twelve-chairs.md` for the routing table itself, then a chair's canon, a
 tool's real capabilities, a protocol that fires in response to something already recognised, the
 mandala borders, the graph.
 
@@ -102,6 +102,7 @@ written before its musician has handled the instrument is plausible documentatio
 
 | Page | Covers | Published by | Published |
 |---|---|---|---|
+| `chairs/the-twelve-chairs.md` | What each seat is, the four instrument families, the routing table that turns a request into an ensemble, and the canonical duets — including the chair that never plays solo and the one that belongs to no family | jkornobis | 2026-08-26 |
 | `chairs/accessibility_specialist_references.md` | Living reference notes for the Accessibility Specialist's field | jkornobis | 2026-08-16 |
 | `chairs/agile_auditor_references.md` | Living reference notes for the Agile Auditor's field | jkornobis | 2026-08-16 |
 | `chairs/agile_facilitator_references.md` | Living reference notes for the Agile Facilitator's field | jkornobis | 2026-08-16 |
