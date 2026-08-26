@@ -18,6 +18,39 @@ field, which in OKF terms is the *unverified* tier: published by the estate that
 independently confirmed. `Published` below is the date the page last changed in its home repo.
 
 
+
+## The Agile Facilitator travels first — what must be resident, and what is fetched
+
+**This library assumes a traveler.** The Agile Facilitator arrives holding a floor, routes, and then
+each musician goes deeper on demand. **Reading order is therefore not the order of the sections
+below** — it is: floor first (already held), then the chair, then the chair's tools.
+
+**The floor is the part that cannot be fetched.** A rule that governs *how* an answer is formed has
+to be true before the first token; fetched, it arrives after the response it was supposed to shape.
+**A rule fetched by the thing it constrains is not a constraint.** These are published here so they
+can be read and cited — never so they can be loaded at runtime by an orchestra that needs them
+already in hand:
+
+| Resident rule | Published at | Why it cannot arrive late |
+|---|---|---|
+| **Minimum Duet** — no output from a single voice unless a solo was asked for | `protocols/orchestra-protocols.md` | it decides how many voices answer, before any of them do |
+| **Concert Quorum** — which ensemble a request earns | `protocols/orchestra-protocols.md` | same: it is the routing decision itself |
+| **Independent Verification (invariant 3)** — personas in one context are not corroboration; only a real subagent buys independence | `protocols/orchestra-protocols.md` | an orchestra that fetches this has already trusted its own agreement |
+| **The Agile Facilitator is an agent, not the Composer** | `principles/core-principles.md` | authorship is claimed in the first sentence or not at all |
+| **A choice offered is a bug** — the determinable / authorship gate | `principles/core-principles.md` | it fires on the way in, deciding whether to act or ask |
+| **Response calibration** — read the mode before answering | `principles/core-principles.md` | depth is chosen before content exists |
+| **The presentation gate** — show, don't tell; buttons for genuine choices | not published — client-shaped | it governs the render, and it is one estate's Score Key |
+
+**Everything else in this library is a lookup**, reached when a question arrives: a chair's canon, a
+tool's real capabilities, a protocol that fires in response to something already recognised, the
+mandala borders, the graph.
+
+**The Agile Auditor is the open question in this design.** Invariant 3 says its independence cannot
+exist in-context — it *is* the same model — so the long-term intent is a dedicated entity running
+outside the orchestra entirely. Until that exists, the rule saying so is floor: it is the one rule
+whose whole job is to stop the room trusting itself.
+
+
 ## Tools — what an instrument can actually do
 
 **The lineage index is the way in.** `tools/lineage.md` gives each chair its origin, the leap
@@ -84,7 +117,7 @@ written before its musician has handled the instrument is plausible documentatio
 
 | Page | Covers | Published by | Published |
 |---|---|---|---|
-| `protocols/orchestra-protocols.md` | The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, and Spotlighting | the whole room | 2026-08-17 |
+| `protocols/orchestra-protocols.md` | The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, Spotlighting — plus the spawn gate, the risk-tier re-ask, Lots, the runtime spot-check and the roadmap cadence, added 2026-08-26 | the whole room | 2026-08-26 |
 | `protocols/agile_facilitator_score.md` | How the router reads intention rather than keywords: the interpreter model, the six response modes, the chat triggers, and conversation versus execution | jkornobis | 2026-08-17 |
 | `protocols/orchestra_test_harness.md` | Testing a multi-agent system's own behaviour: BDD scenarios, the invariant and capability eval sets, the standard grader prompt, and why a grader must be constant | jkornobis | 2026-08-17 |
 | `protocols/session_journal.md` | The episodic memory layer above indexed memory: what a session journal entry captures, where it lives, and how a later session re-orients from it | jkornobis | 2026-08-22 |
@@ -135,7 +168,7 @@ the pages above and regenerated, never hand-edited.
 
 | Page | Covers | Serves | Published |
 |---|---|---|---|
-| `principles/core-principles.md` | Thirty-three principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobbler's children, and the oracle rule that an instrument is not its own oracle | the whole room | 2026-08-16 |
+| `principles/core-principles.md` | Thirty-three principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobblers children, the oracle rule that an instrument is not its own oracle — plus the Fractal Loop, the Declared Circle, Unison, the determinable/authorship gate and six more, added 2026-08-26 | the whole room | 2026-08-26 |
 
 ---
 
