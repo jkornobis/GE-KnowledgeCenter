@@ -175,8 +175,8 @@ the pages above and regenerated, never hand-edited.
 
 ---
 
-**What this library is not:** it is **public**, so it carries nothing DXC-internal and nothing
-under NDA. It carries **no project** — a concert is not the instrument, and each Composer carries
+**What this library is not:** it is **public**, so it carries nothing internal to an employer and
+nothing under NDA — **nor the employer's name, nor anything derived from it** (ruled 2026-08-27). It carries **no project** — a concert is not the instrument, and each Composer carries
 their own in their own `project/` tree. And it carries no Composer Key and nothing personal: if
 key material travels everywhere, it *is* everywhere. It carries what is true about an instrument
 **for whoever plays it**, never one estate's history.
