@@ -84,6 +84,7 @@ written before its musician has handled the instrument is plausible documentatio
 
 | Page | Covers | Published by | Published |
 |---|---|---|---|
+| `protocols/orchestra-protocols.md` | The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, and Spotlighting | the whole room | 2026-08-17 |
 | `protocols/agile_facilitator_score.md` | How the router reads intention rather than keywords: the interpreter model, the six response modes, the chat triggers, and conversation versus execution | jkornobis | 2026-08-17 |
 | `protocols/orchestra_test_harness.md` | Testing a multi-agent system's own behaviour: BDD scenarios, the invariant and capability eval sets, the standard grader prompt, and why a grader must be constant | jkornobis | 2026-08-17 |
 | `protocols/session_journal.md` | The episodic memory layer above indexed memory: what a session journal entry captures, where it lives, and how a later session re-orients from it | jkornobis | 2026-08-22 |
@@ -102,7 +103,9 @@ written before its musician has handled the instrument is plausible documentatio
 
 ## Principles — the claims the rest stands on
 
-*(none yet — the principles file is held pending a naming decision, not a content one)*
+| Page | Covers | Serves | Published |
+|---|---|---|---|
+| `principles/core-principles.md` | Thirty-three principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobbler's children, and the oracle rule that an instrument is not its own oracle | the whole room | 2026-08-16 |
 
 ---
 
