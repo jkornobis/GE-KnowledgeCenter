@@ -101,6 +101,22 @@ written before its musician has handled the instrument is plausible documentatio
 | `method/orchestra_glossary.md` | One definition per term for the whole system: roles, artifacts, modes, triggers and named principles, so no word means two things | jkornobis | 2026-08-22 |
 | `method/orchestra_prior_art.md` | Where a persona-based orchestra sits against published multi-agent practice, plus the substrate facts on long-context rule decay and what the measurements actually support | jkornobis | 2026-08-16 |
 
+## Mandalas — the three layers and the borders between them
+
+**The model, and how each edge was earned.** Three rings — 33 principles, 59 protocols, 12 chairs —
+and three borders carrying 282 crossings between them: `warrant` (a protocol puts a principle into
+practice), `grounds` (a chair requires a principle), `enacts` (a chair puts a protocol into practice).
+**Every edge quotes the sentence that earns it**, and every page opens by declaring the set it
+searched before it searched it.
+
+| Page | Covers | Serves | Published |
+|---|---|---|---|
+| `mandalas/principles-layer.md` | The principles ring re-derived from the principle bodies rather than inherited: the declared circle, both taijitu seeds read from source, and where the two derivation methods agree and part | the whole room | 2026-08-16 |
+| `mandalas/protocols-layer.md` | The protocols ring: every protocol as a taijitu of the maxim it holds and the practice it asks for, with protocol-to-protocol edges each earned by a quote, and what the graph shows before it is drawn | the whole room | 2026-08-16 |
+| `mandalas/border-protocols-principles.md` | The first border, warrant: which principle authorizes each protocol, arrows running Yang to Yin. A protocol with no warrant is a finding rather than an illegitimacy, and the map does not decide which | the whole room | 2026-08-16 |
+| `mandalas/border-chairs-principles.md` | The second border, grounds: which principle each chair requires to do its job, every edge quoting the chair's own sentence — plus the 2026-08-15 re-measurement to read before quoting anything | the whole room | 2026-08-17 |
+| `mandalas/border-chairs-protocols.md` | The third border, enacts: which protocols each chair puts into practice. The one that closes the triangle, after which the meta-mandala can be a result rather than a premise | the whole room | 2026-08-17 |
+
 ## Principles — the claims the rest stands on
 
 | Page | Covers | Serves | Published |
