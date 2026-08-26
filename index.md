@@ -96,6 +96,7 @@ written before its musician has handled the instrument is plausible documentatio
 |---|---|---|---|
 | `method/agile_auditor_catalog.md` | The master list of anti-patterns the Agile Auditor watches for, consolidated from criteria scattered across the score | jkornobis | 2026-08-16 |
 | `method/common_score_matrix.md` | How each of the 12 musicians connects to the shared knowledge fields, across all 11 Acts | jkornobis | 2026-08-22 |
+| `method/common_score_pivot.md` | Two relation types over the same twelve chairs: undirected shared concerns each anchored to an external standard, and directed requires-serves dependencies that a shared-concern reading is structurally blind to | jkornobis | 2026-08-26 |
 | `method/prior_art_bmad.md` | A focused deep-dive on one comparable multi-agent framework, and three re-readings of it — including the one that found the comparison had been between a pipeline and a roster | jkornobis | 2026-08-22 |
 | `method/multiagent_canon_audit.md` | The orchestra mapped against the 2026 multi-agent state of the art | jkornobis | 2026-07-03 |
 | `method/orchestra_glossary.md` | One definition per term for the whole system: roles, artifacts, modes, triggers and named principles, so no word means two things | jkornobis | 2026-08-22 |
@@ -116,6 +117,19 @@ searched before it searched it.
 | `mandalas/border-protocols-principles.md` | The first border, warrant: which principle authorizes each protocol, arrows running Yang to Yin. A protocol with no warrant is a finding rather than an illegitimacy, and the map does not decide which | the whole room | 2026-08-16 |
 | `mandalas/border-chairs-principles.md` | The second border, grounds: which principle each chair requires to do its job, every edge quoting the chair's own sentence — plus the 2026-08-15 re-measurement to read before quoting anything | the whole room | 2026-08-17 |
 | `mandalas/border-chairs-protocols.md` | The third border, enacts: which protocols each chair puts into practice. The one that closes the triangle, after which the meta-mandala can be a result rather than a premise | the whole room | 2026-08-17 |
+
+## Graph — the model as data, for traversing rather than reading
+
+**The mandala pages are the reasoning; this is its result in machine-readable form.** 104 nodes
+across three rings, 251 within-layer edges, 282 crossings — every evidence-bearing edge carrying
+the sentence that earns it and a `status` saying how well it is held. Derived mechanically from
+the pages above and regenerated, never hand-edited.
+
+| Page | Covers | Serves | Published |
+|---|---|---|---|
+| `graph/grand-ensemble-graph.md` | How to read the dataset: the four edge statuses and why collapsing them loses the only thing the graph adds over a diagram, plus two provenance caveats about paths written in the source repo's coordinates | the whole room | 2026-08-26 |
+| `graph/grand_ensemble.json` | The dataset itself, 472 KB — three layers, the movements, the shared concerns and the three borders, with every node's résumé and every edge's `why` | the whole room | 2026-08-26 |
+
 
 ## Principles — the claims the rest stands on
 
