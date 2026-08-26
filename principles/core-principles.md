@@ -1,13 +1,13 @@
 ---
 type: Principle
-title: "Core Principles — Orchestrator by [EMPLOYER]"
+title: "Core Principles — the Orchestrator"
 description: "Thirty-three principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobbler's children, and the oracle rule that an instrument is not its own oracle"
 status: draft
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-16T23:27:12+02:00 }
 ---
 
-# Core Principles — Orchestrator by [EMPLOYER]
+# Core Principles — the Orchestrator
 
 NDT, Greenfield Reset, Dèmos Kratos, Overshoot, Cobbler, Too Big Too Soon, Deletion protocol, Cross-domain learning, Design by absence.
 

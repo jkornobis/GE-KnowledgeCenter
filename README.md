@@ -48,11 +48,12 @@ curl -s https://raw.githubusercontent.com/jkornobis/GE-KnowledgeCenter/main/tool
 
 ## What it will never carry
 
-Three exclusions, and each was learned rather than assumed:
+Four exclusions, and each was learned rather than assumed:
 
 - **Nothing personal.** No keys, no profiles, no one's working habits. If key material travels everywhere, it *is* everywhere.
 - **Nothing internal.** No employer's systems, no customer engagement, nothing under NDA. This repo is public, and that inverts the filter an internal host would allow.
 - **No project.** A concert is not the instrument. What a team *plays* — a product, an engagement, a client's system — stays with the team that plays it. The library carries what is true for **whoever** plays; a project is true for exactly one of them.
+- **No brand.** The employer's name does not travel, and neither does anything derived from it. Ruled 2026-08-27, and it costs a real page: the persona palette is built as lightness steps along named brand hues, so the rationale is not separable from the anchors. That file stays home and this library carries the rules about colour instead of the colours — never colour as the sole signal, a word beside every coloured edge, an icon and a label so a dichromat reads identity rather than hue.
 
 ## Verification status
 
