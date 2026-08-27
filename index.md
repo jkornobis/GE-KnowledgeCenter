@@ -118,7 +118,7 @@ written before its musician has handled the instrument is plausible documentatio
 
 | Page | Covers | Published by | Published |
 |---|---|---|---|
-| `protocols/orchestra-protocols.md` | The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, Spotlighting — plus the spawn gate, the risk-tier re-ask, Lots, the runtime spot-check and the roadmap cadence, added 2026-08-26 | the whole room | 2026-08-26 |
+| `protocols/orchestra-protocols.md` | The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, Spotlighting — plus the spawn gate, the risk-tier re-ask, Lots, the runtime spot-check and the roadmap cadence, added 2026-08-26, and Chamber, Echo and Antiphony, added 2026-08-27 | the whole room | 2026-08-27 |
 | `protocols/presentation.md` | How a result reaches the person who asked: Rule 0 on whether a choice exists at all, the surface-to-decision-shape mapping, the content-type routing table with a markdown fallback for every widget, and the per-Composer override mechanism that keeps the shared contract shared | jkornobis | 2026-08-27 |
 | `protocols/presentation-checklist.md` | The pre-send gate — four yes/no conditionals checked before a message leaves, written as conditionals precisely because the prose system they replaced could be rationalised around | jkornobis | 2026-08-27 |
 | `protocols/agile_facilitator_score.md` | How the router reads intention rather than keywords: the interpreter model, the six response modes, the chat triggers, and conversation versus execution | jkornobis | 2026-08-17 |
@@ -171,7 +171,7 @@ the pages above and regenerated, never hand-edited.
 
 | Page | Covers | Serves | Published |
 |---|---|---|---|
-| `principles/core-principles.md` | Thirty-three principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobblers children, the oracle rule that an instrument is not its own oracle — plus the Fractal Loop, the Declared Circle, Unison, the determinable/authorship gate and six more, added 2026-08-26 | the whole room | 2026-08-26 |
+| `principles/core-principles.md` | Thirty-three principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobblers children, the oracle rule that an instrument is not its own oracle — plus the Fractal Loop, the Declared Circle, Unison, the determinable/authorship gate and six more, added 2026-08-26, and The Composer as Neuron, added 2026-08-27 | the whole room | 2026-08-27 |
 
 ---
 
