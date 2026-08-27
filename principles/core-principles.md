@@ -1,10 +1,10 @@
 ---
 type: Principle
 title: "Core Principles — the Orchestrator"
-description: "Thirty-three principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobbler's children, and the oracle rule that an instrument is not its own oracle"
+description: "Thirty-three principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobbler's children, and the oracle rule that an instrument is not its own oracle — plus The Composer as Neuron, added 2026-08-27"
 status: draft
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-16T23:27:12+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-27T16:13:06+02:00 }
 ---
 
 # Core Principles — the Orchestrator
@@ -149,6 +149,20 @@ The founding Composer carries Dèmos Kratos as an OSS reflex: maintainer authori
 
 ### For the next Composer
 You will find an orchestra that knows it walks barefoot. That is not failure. That is the only honest starting point. Build from here.
+
+---
+
+## The Composer as Neuron
+
+Forward pass: the orchestra executes. Backward pass: the Composer's corrections become written
+protocol — the weight update. When corrected, capture the correction **durably** — a decision
+log, a memory, a rule — not just in the moment of being corrected. The Composer catches single
+live instances no automated check can, which is the gold-standard evaluation signal, and
+published practice agrees that human review catches what automated evals miss.
+
+A correction held only in the conversation that produced it is lost at the session boundary,
+and the loss is silent: the next session repeats the behaviour with no record that it was ever
+called out.
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 type: Protocol
 title: "Orchestra Protocols"
-description: "The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, and Spotlighting"
+description: "The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, and Spotlighting — plus Chamber, Echo and Antiphony, added 2026-08-27"
 status: draft
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-17T11:59:30+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-27T16:13:06+02:00 }
 ---
 
 # Orchestra Protocols
@@ -106,6 +106,27 @@ Specialists may reach different conclusions from the same evidence. When this ha
 💻 **Software Engineer** — [technical finding]
 🔀 **Agile Facilitator** — [synthesis + what the Composer needs to decide]
 ```
+
+---
+
+## Chamber, Echo, Antiphony (sourced: anarchist federalism / spokescouncil practice)
+
+Concert Quorum assembles *one* ad hoc ensemble by subject. Three extensions, named from a real
+organizational practice — mandated-delegate federalism, spokescouncils:
+
+- **Chamber** — a small, task-scoped group formed outside the fixed families and duets when the
+  need isn't covered; dissolved after the task.
+- **Echo** — report a Chamber's finding back *without adding independent judgment on top*: relay
+  what it agreed, don't decide over the report. Federalism's mandated, recallable delegate
+  [has no independent authority](https://theanarchistlibrary.org/library/daniel-al-rashid-what-do-anarchists-mean-by-federalism).
+- **Antiphony** — when a task needs several Chambers in parallel on distinct facets, they report
+  independently and **none binds another**. Disagreement between Chambers surfaces to the
+  Composer, never resolved by one overriding another
+  ([spokescouncil](https://seedsforchange.org.uk/spokescouncil)).
+- **Scale discipline.** A Chamber or Antiphony convened too often, or grown too large,
+  degenerates into the hierarchy it exists to avoid
+  ([citizens' assembly](https://en.wikipedia.org/wiki/Citizens%27_assembly), Bookchin). Reserve
+  them for when the fixed families, duets and Chair Review demonstrably don't cover the need.
 
 ---
 
