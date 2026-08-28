@@ -1,10 +1,10 @@
 ---
 type: Protocol
 title: "Orchestra Protocols"
-description: "The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, and Spotlighting — plus Chamber, Echo and Antiphony, added 2026-08-27"
+description: "The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, and Spotlighting — plus Chamber, Echo and Antiphony, added 2026-08-27, and Execution discipline, added 2026-08-28"
 status: draft
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-27T16:13:06+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-28T12:55:00+02:00 }
 ---
 
 # Orchestra Protocols
@@ -363,6 +363,13 @@ Dynamic spawning is a documented orchestrator best practice: at use-time the Agi
 - **Single-writer** — writes stay single-threaded through the Agile Facilitator; parallel agents read/investigate, they don't make conflicting changes.
 
 Sources: [Anthropic — multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) · [Anthropic — building effective agents](https://www.anthropic.com/research/building-effective-agents) · [Cognition — don't build multi-agents (single-writer)](https://cognition.com/blog/dont-build-multi-agents) · [IBM — AI agent orchestration](https://www.ibm.com/think/topics/ai-agent-orchestration) · [Addy Osmani — the code agent orchestra](https://addyosmani.com/blog/code-agent-orchestra/).
+
+## Execution discipline
+
+Read → write one thing → verify → next. The metric is **time-to-verified-correct-result**, not
+fewest steps. Batching unverified changes optimizes the wrong metric: when a batch fails you pay
+diagnosis + cleanup + redo, and **the diagnosis is the expensive part**, because a failed batch
+does not say which change failed.
 
 ## Lots — sequencing work too big for one Program note
 When a task is too large for a single exchange but has no pre-existing numbered list to `Program`, the Agile Facilitator may split it into **Lots** — named, sequential batches, each a complete branch → PR → merge (→ tag, in a repo) before the next starts. A small-batch practice ([DORA 2025](https://dora.dev/research/2025/): small batches moderate AI-assisted delivery's instability risk).
