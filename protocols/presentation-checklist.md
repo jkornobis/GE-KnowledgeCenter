@@ -4,7 +4,7 @@ title: "The pre-send gate — presentation checklist"
 description: "Five yes/no gates run before a message leaves: is this decision determinable, is every voice attributed, does the line count track positions, is every option tagged and persisted, and does the turn end as a question, a task list or a use case — concrete conditionals rather than prose that can be rationalised around"
 status: draft
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-27T17:05:00+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-27T17:40:00+02:00 }
 ---
 
 
@@ -75,7 +75,7 @@ The emoji carries the colour markdown cannot.
 
 ---
 
-## Closing gate — a turn ends in one of three shapes, never a fourth
+## Closing gate — a turn ends in one of five shapes, never a sixth
 
 *Added 2026-08-27, after six consecutive turns of one task each ended at a handoff and the
 Composer said so: "I need too much to say continue the work now."* **The ending that was in use
@@ -83,31 +83,56 @@ Composer said so: "I need too much to say continue the work now."* **The ending 
 the Composer the thing that restarts the orchestra, every turn, and it is the shape this gate
 exists to delete.
 
-Check in order. The first that applies is the ending.
+Check in order. The first that applies is the ending — the order is the point, because a later
+condition must never absorb an earlier one.
 
-### 1. An issue was encountered — end with a question
-Something blocked, contradicted the plan, or turned out other than expected. Ask it: one precise
-question, buttons for a 2–4 option decision, plain text if it is open-ended. **An issue is never
-carried silently to the next turn**, and never reported as a finding with no question attached —
-a finding the Composer cannot act on is a status update wearing a finding's clothes.
+### 1. An irreversible action is reached → **stop there and ask**
+A public write, a push, a merge, a deletion, an outward-facing send. **Even with orchestra work
+still remaining**, and this is the one place where finishing the rest of the list first is the
+wrong order: an irreversible step batched into a later task list is a step the Composer approves
+with less attention than it deserves. The field's most common production gate ([LangChain
+interrupt](https://www.langchain.com/blog/making-it-easier-to-build-human-in-the-loop-agents-with-interrupt);
+[Agno, HITL in production](https://www.agno.com/blog/how-to-add-human-in-the-loop-controls-to-ai-agents-that-actually-run-in-production)).
 
-### 2. No issue, and the orchestra's own tasks are done — end with the Composer's task list
-Not one next step: **the list**, everything now his, ordered by what unblocks the most. It
-arrives *after* the orchestra has finished everything it can reach on its own, never before —
-while any task remains that does not need him, that task is done first and this ending does not
-fire. Each item names its verification step, and why that check is the Composer's rather than
-the orchestra's.
+### 2. An issue was encountered → **end with a question**
+Something blocked, contradicted the plan, or turned out other than expected. Ask it — one precise
+question, buttons if it is a 2–4 option decision, plain text if it is open-ended. **An issue is
+never carried silently to the next turn**, and never reported as a finding with no question
+attached: a finding the Composer cannot act on is a status update wearing a finding's clothes.
 
-### 3. Not enough to act on — end with a Definition of Use Case
-The request cannot be executed without inventing intent. Do not guess, and do not scatter
-clarifying questions. State the use case as understood — the actor, what they are trying to
-accomplish, what would make it done — and let the Composer correct it. This is the task-entry
-gate firing: the intent has not been stated, so the gap is named rather than filled.
+### 3. Low confidence, and nothing went wrong → **say so and ask**
+Nothing failed, and the orchestra is still not sure the work is right. Escalation by exception:
+autonomous by default, surfacing only when a self-read confidence drops. **This is the ending
+gate 2 misses** — gate 2 needs something to have happened, and this fires when nothing did. Say
+what the doubt is about and what would settle it; do not ship it inside a task list where it
+reads as done.
 
-**Why three and not more.** Every other ending — a summary, a status, a next-step offer, a recap
-of what was decided — leaves the next move undefined and hands the Composer the job of defining
-it. **These three each hand back something actionable**: a question to answer, a list to work, or
-a use case to correct.
+### 4. No issue, and the orchestra's own tasks are done → **end with the Composer's task list**
+Not one next step — **the list**, everything now his, ordered by what unblocks the most. It
+arrives *after* everything the orchestra can reach on its own; while any task
+remains that does not need him, that task is done first and this ending does not fire. Each item
+names its verification step and why that check is his (protocol #31, `Task entry`, step 3).
+
+### 5. Not enough to act on → **end with a Definition of Use Case**
+The request cannot be executed without inventing intent. Do not guess, and do not
+ask a scattering of clarifying questions. State the use case as understood — the actor, what they are
+trying to accomplish, what would make it done — and let the Composer correct it. Protocol #31's
+steps 1 and 2 firing: the intent has not been stated, so the gap is named rather than filled.
+
+**Why these five and not more.** Every other ending — a summary, a status, a next-step offer, a
+recap of what was decided — leaves the next move undefined and hands the Composer the job of
+defining it. **These five each hand back something actionable**: an action to authorize, a
+question to answer, a doubt to settle, a list to work, or a use case to correct.
+
+**The discipline that keeps five from becoming noise.** Each ending is also a licence to stop, and
+this gate exists because the orchestra was stopping too often. Anthropic's own measurement finds
+Claude Code asks for clarification **more than twice as often** on complex tasks than on simple
+ones, and hedges it explicitly — *it "may not be stopping at the right moments, it may ask
+unnecessary questions"* ([measuring agent autonomy](https://www.anthropic.com/research/measuring-agent-autonomy)).
+**So gates 1 and 3 are conditions, not moods.** Gate 1 fires on a named class of action, never on
+a feeling that something is weighty. Gate 3 fires when the doubt can be *stated* — what is
+uncertain, and what would settle it; a doubt that cannot be written in one sentence is not
+low confidence, it is an unfinished read, and the answer to that is to finish reading.
 
 ---
 
@@ -118,7 +143,7 @@ Before **every** message to the Composer:
 2. Is any musician speaking without an attribution line? (**Attribution gate**)
 3. Do 2+ voices agree? (**Line-count gate**: join them on one line rather than repeating a conclusion.)
 4. Does it have buttons and verb phrases? (**Button gate**: is every option tagged? Is the list persisted in text?)
-5. Does it end as a question, a Composer task list, or a Definition of Use Case? (**Closing gate**: any other ending makes the Composer restart the orchestra.)
+5. Does it end on an irreversible action, a question, a stated doubt, a Composer task list, or a Definition of Use Case? (**Closing gate**: any other ending makes the Composer restart the orchestra.)
 
 If any violation is found: fix it before send. The checklist is not post-hoc — it's the gate.
 
