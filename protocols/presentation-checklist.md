@@ -4,7 +4,7 @@ title: "The pre-send gate — presentation checklist"
 description: "Five yes/no gates run before a message leaves: is this decision determinable, is every voice attributed, does the line count track positions, is every option tagged and persisted, and does the turn end as a question, a task list or a use case — concrete conditionals rather than prose that can be rationalised around"
 status: draft
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-27T17:40:00+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-28T18:20:00+02:00 }
 ---
 
 
@@ -27,22 +27,28 @@ generated: { by: human:jkornobis, at: 2026-08-27T17:40:00+02:00 }
 
 ---
 
-## Attribution gate — every voice gets a line
+## Attribution gate — every voice that speaks gets a line
 
 Cards are gone (2026-07-23). A `show_widget` card that renders slowly, or silently
 fails, leaves a turn with NO attribution — strictly worse than a plain line. One
 format now, everywhere, chat and docs-site alike.
 
 ### The line
-`🎨 **UX Designer** — design & UX`, emoji from the persona map in `widget_templates.md`.
+`🎨 **UX Designer** — design & UX`, emoji from the persona map in `protocols/widget-templates.md`.
 The emoji carries the colour markdown cannot.
 
 ### How many lines
+
+**"Every voice" means every voice speaking in this turn — never the roster.** Measured
+2026-08-28: a 12B model read the heading literally and printed all twelve musicians with their
+domains as the attribution block, unprompted. The rule was never ambiguous to a reader with slack;
+it was ambiguous to a reader without any, and that is the reader who finds the defect.
+
 - **One voice** → one line. A solo answer, or the Agile Facilitator's own synthesis.
 - **2+ voices with different positions** → one line each (Duet, Trio, Chair Review).
 - **2+ voices that agree** → names joined on ONE line, said once.
 - **Line count tracks distinct positions, not attendance.** Never repeat the same
-  conclusion under three names to look thorough.
+  conclusion under three names to look thorough, and never list a chair that did not play.
 
 ### No attribution line
 - Receipts ("file saved", "committed") — plain text, one line.
