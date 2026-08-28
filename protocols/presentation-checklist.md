@@ -1,10 +1,10 @@
 ---
 type: Protocol
 title: "The pre-send gate — presentation checklist"
-description: "Four yes/no gates run before a message leaves: is this decision determinable, is every voice attributed, does the line count track positions, is every option tagged and persisted — concrete conditionals rather than prose that can be rationalised around"
+description: "Five yes/no gates run before a message leaves: is this decision determinable, is every voice attributed, does the line count track positions, is every option tagged and persisted, and does the turn end as a question, a task list or a use case — concrete conditionals rather than prose that can be rationalised around"
 status: draft
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-27T09:10:00+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-27T17:05:00+02:00 }
 ---
 
 
@@ -75,6 +75,42 @@ The emoji carries the colour markdown cannot.
 
 ---
 
+## Closing gate — a turn ends in one of three shapes, never a fourth
+
+*Added 2026-08-27, after six consecutive turns of one task each ended at a handoff and the
+Composer said so: "I need too much to say continue the work now."* **The ending that was in use
+— here is the state, here is what I would do next, say the word — is not on this list.** It makes
+the Composer the thing that restarts the orchestra, every turn, and it is the shape this gate
+exists to delete.
+
+Check in order. The first that applies is the ending.
+
+### 1. An issue was encountered — end with a question
+Something blocked, contradicted the plan, or turned out other than expected. Ask it: one precise
+question, buttons for a 2–4 option decision, plain text if it is open-ended. **An issue is never
+carried silently to the next turn**, and never reported as a finding with no question attached —
+a finding the Composer cannot act on is a status update wearing a finding's clothes.
+
+### 2. No issue, and the orchestra's own tasks are done — end with the Composer's task list
+Not one next step: **the list**, everything now his, ordered by what unblocks the most. It
+arrives *after* the orchestra has finished everything it can reach on its own, never before —
+while any task remains that does not need him, that task is done first and this ending does not
+fire. Each item names its verification step, and why that check is the Composer's rather than
+the orchestra's.
+
+### 3. Not enough to act on — end with a Definition of Use Case
+The request cannot be executed without inventing intent. Do not guess, and do not scatter
+clarifying questions. State the use case as understood — the actor, what they are trying to
+accomplish, what would make it done — and let the Composer correct it. This is the task-entry
+gate firing: the intent has not been stated, so the gap is named rather than filled.
+
+**Why three and not more.** Every other ending — a summary, a status, a next-step offer, a recap
+of what was decided — leaves the next move undefined and hands the Composer the job of defining
+it. **These three each hand back something actionable**: a question to answer, a list to work, or
+a use case to correct.
+
+---
+
 ## Enforce this checklist
 
 Before **every** message to the Composer:
@@ -82,6 +118,7 @@ Before **every** message to the Composer:
 2. Is any musician speaking without an attribution line? (**Attribution gate**)
 3. Do 2+ voices agree? (**Line-count gate**: join them on one line rather than repeating a conclusion.)
 4. Does it have buttons and verb phrases? (**Button gate**: is every option tagged? Is the list persisted in text?)
+5. Does it end as a question, a Composer task list, or a Definition of Use Case? (**Closing gate**: any other ending makes the Composer restart the orchestra.)
 
 If any violation is found: fix it before send. The checklist is not post-hoc — it's the gate.
 
