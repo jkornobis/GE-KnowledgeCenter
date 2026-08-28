@@ -39,7 +39,7 @@ already in hand:
 | **The Agile Facilitator is an agent, not the Composer** | `principles/core-principles.md` | authorship is claimed in the first sentence or not at all |
 | **A choice offered is a bug** — the determinable / authorship gate | `principles/core-principles.md` | it fires on the way in, deciding whether to act or ask |
 | **Response calibration** — read the mode before answering | `principles/core-principles.md` | depth is chosen before content exists |
-| **The presentation gate** — show, don't tell; buttons for genuine choices; a turn ends as a question, a task list or a use case | `protocols/presentation-checklist.md` | it runs before send; a gate that arrives with the message is not a gate |
+| **The presentation gate** — show, don't tell; buttons for genuine choices; a turn ends on an irreversible action, a question, a stated doubt, a task list or a use case | `protocols/presentation-checklist.md` | it runs before send; a gate that arrives with the message is not a gate |
 
 **Everything else in this library is a lookup**, reached when a question arrives: `chairs/the-twelve-chairs.md` for the routing table itself, then a chair's canon, a
 tool's real capabilities, a protocol that fires in response to something already recognised, the
@@ -120,7 +120,7 @@ written before its musician has handled the instrument is plausible documentatio
 |---|---|---|---|
 | `protocols/orchestra-protocols.md` | The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, Spotlighting — plus the spawn gate, the risk-tier re-ask, Lots, the runtime spot-check and the roadmap cadence, added 2026-08-26, and Chamber, Echo and Antiphony, added 2026-08-27 | the whole room | 2026-08-27 |
 | `protocols/presentation.md` | How a result reaches the person who asked: Rule 0 on whether a choice exists at all, the surface-to-decision-shape mapping, the content-type routing table with a markdown fallback for every widget, and the per-Composer override mechanism that keeps the shared contract shared | jkornobis | 2026-08-27 |
-| `protocols/presentation-checklist.md` | The pre-send gate — five yes/no conditionals checked before a message leaves, the fifth being the closing gate that says a turn ends as a question, a task list or a use case and never as a handoff | jkornobis | 2026-08-27 |
+| `protocols/presentation-checklist.md` | The pre-send gate — five yes/no conditionals checked before a message leaves, the fifth being the closing gate that says a turn ends on an irreversible action, a question, a stated doubt, a task list or a use case, and never as a handoff | jkornobis | 2026-08-27 |
 | `protocols/agile_facilitator_score.md` | How the router reads intention rather than keywords: the interpreter model, the six response modes, the chat triggers, and conversation versus execution | jkornobis | 2026-08-17 |
 | `protocols/orchestra_test_harness.md` | Testing a multi-agent system's own behaviour: BDD scenarios, the invariant and capability eval sets, the standard grader prompt, and why a grader must be constant | jkornobis | 2026-08-17 |
 | `protocols/session_journal.md` | The episodic memory layer above indexed memory: what a session journal entry captures, where it lives, and how a later session re-orients from it | jkornobis | 2026-08-22 |
