@@ -25,7 +25,14 @@ let concepts = 0;
 for (const abs of walk(ROOT)) {
   const rel = relative(ROOT, abs).split("\\").join("/");
   const base = rel.split("/").pop();
-  const src = readFileSync(abs, "utf8");
+  // Normalise line endings before anything looks at them. On a Windows checkout
+  // with core.autocrlf=true the working tree holds CRLF while the repository and
+  // everything raw.githubusercontent.com serves hold LF — so a CR-blind parser
+  // reports every file as having no frontmatter, on a bundle that is conformant
+  // to every reader. Measured 2026-08-28: this checker failed two files whose
+  // published bytes were correct. A check that fails on the platform rather than
+  // on the artifact teaches its operator to ignore it.
+  const src = readFileSync(abs, "utf8").replace(/\r\n/g, "\n");
   const hasFm = src.startsWith("---\n");
 
   if (RESERVED.has(base)) continue;                       // §3.1 reserved, §8/§9 shape
