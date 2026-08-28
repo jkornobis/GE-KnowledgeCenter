@@ -9,6 +9,19 @@ Every page an agent should fetch — what it covers, who published it and when.
 cover it — say so rather than guessing a path. A 404 means the path was wrong, never that the
 knowledge is absent.
 
+**A bare filename in these pages is a provenance marker, not a path.** Several pages cite the
+sibling names of the estate that produced them — `roster.md`, `patterns.md`, `protocols.md`,
+`agent_*.md` and others. **They are not fetchable and are not meant to be**: they record what was
+read, in that estate's own coordinates, and inventing a correspondence would assert a derivation
+nobody made. **Only the paths listed in the tables below are fetchable.** If a reference has no
+directory, it is history; if it has one and is not in a table below, report it rather than fetching
+it. `check_links.mjs` in this bundle holds the line.
+
+**Two estate pages are deliberately absent** and will stay so: the occupancy roster, whose portable
+half already travels as `tools/chair-levers.md` while the rest is one estate's own seating; and the
+Figma product-surface audit, which cannot be published because it names an employer's systems. Pages
+here cite both by bare name for exactly the reason above.
+
 Fetch a page with:
 
     curl -s https://raw.githubusercontent.com/jkornobis/GE-KnowledgeCenter/main/<Page>

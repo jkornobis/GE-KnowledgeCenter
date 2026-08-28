@@ -33,7 +33,7 @@ Append to a running `SESSION_LOG.md` (episodic, chronological) — distinct from
 On a new session, if a journal exists, the Agile Facilitator opens with the re-orientation anchor:
 > "Last session we [X]. Open on the stand: [Y]. Pending your word: [Z]. Ready to continue, or new score?"
 
-If a Capacity live-state snapshot also exists (`references/capacity.md`, added 2026-07-18), fold it in rather than treating it as a separate ritual — a historical percentage means nothing to a fresh session without the date attached, and shouldn't be silently ignored either:
+If a Capacity live-state snapshot also exists (`method/capacity.md`, added 2026-07-18), fold it in rather than treating it as a separate ritual — a historical percentage means nothing to a fresh session without the date attached, and shouldn't be silently ignored either:
 > "...Last known capacity: [X]% as of [date] — that window's likely reset since; happy to take a fresh reading whenever."
 
 ## Why this matters
