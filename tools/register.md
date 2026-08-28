@@ -9,7 +9,7 @@ generated: { by: human:jkornobis, at: 2026-08-22T23:51:16+02:00 }
 
 # The lever register — what exists, ranked by the lineage
 
-Products grouped under **levers**. Written by a User Researcher-led **Tool Discovery** run — see `skill/grand-ensemble/references/tool_discovery.md` for the protocol.
+Products grouped under **levers**. Written by a User Researcher-led **Tool Discovery** run — see `protocols/tool-discovery.md` for the protocol.
 
 **This file names chairs, never musicians.** A chair is a seat and its canon; a musician is whoever occupies it and whatever toolset they carry (ADR-199). The register describes what a leap *is* and which seats it touches — never who carries it. Who carries what lives in `roster.md`, which cites this file one way and is never cited back.
 
@@ -28,7 +28,7 @@ The distinction comes from `project/chair-gap-leap-thesis.md`, and it is split b
 
 | Question | Field | Answers |
 |---|---|---|
-| Is it worth holding? | **Lineage verdict** | true material, or a picture of it (`references/lineage.md`) |
+| Is it worth holding? | **Lineage verdict** | true material, or a picture of it (`method/web-lineage.md`) |
 | Does it implement the standard, or replace it? | **Posture** | implements · extends · replaces · no standard |
 | Will it still be here? | **Health** | stability · community |
 | What does it cost to hold? | **Grip** | ref-addressable · eyes-only · mixed · **blocked** · n/a |
@@ -369,7 +369,7 @@ A layer that won **by arrival** is not necessarily easy to displace — the acce
 
 | Named | Chair it would serve | Lever |
 |---|---|---|
-| **W3C web-based validators / inspecting tools** | QA Engineer — his words: *"QA Engineer have web based W3C inspecting tool"* | `audits-accessibility-mechanically` — an existing lever whose only candidates today are `axe-core` and a **paid** MCP. A free, first-party, URL-reachable checker changes that lever's licence picture entirely. **Not recalled from the web: the Composer used this workflow directly** — *"I started like that, notepad, wrote plain DOM with inline CSS by end, check html file on W3C website."* **Almost 25 years ago — c. 2001 — and by hand: no generator, no framework.** An authoring tool with no oracle, plus an independent checking surface: **Davis & Weyuker's pseudo-oracle, practised a quarter-century before this register named it.** Worth noting against `references/lineage.md`: that is era 1, the era the lineage cites for *tag soup arriving from tools that also produced "real" artifacts* — and he was hand-writing the true material and checking it against the standard, which is the era's counter-example rather than its symptom |
+| **W3C web-based validators / inspecting tools** | QA Engineer — his words: *"QA Engineer have web based W3C inspecting tool"* | `audits-accessibility-mechanically` — an existing lever whose only candidates today are `axe-core` and a **paid** MCP. A free, first-party, URL-reachable checker changes that lever's licence picture entirely. **Not recalled from the web: the Composer used this workflow directly** — *"I started like that, notepad, wrote plain DOM with inline CSS by end, check html file on W3C website."* **Almost 25 years ago — c. 2001 — and by hand: no generator, no framework.** An authoring tool with no oracle, plus an independent checking surface: **Davis & Weyuker's pseudo-oracle, practised a quarter-century before this register named it.** Worth noting against `method/web-lineage.md`: that is era 1, the era the lineage cites for *tag soup arriving from tools that also produced "real" artifacts* — and he was hand-writing the true material and checking it against the standard, which is the era's counter-example rather than its symptom |
 | **D3** | UX Designer · Design Engineer | no matching lever yet — *renders data as a manipulable graphic*. Relevant because this estate found **twelve encoding defects** that survived every text gate |
 | **Markdown → CSV converter** | Content Designer · Software Architect | no matching lever yet — a format crossing currently done here by script |
 

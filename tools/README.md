@@ -9,7 +9,7 @@ generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 
 # Tool pages
 
-One page per deployment surface (e.g. Figma), written by a User Researcher-led Tool Audit — see `skill/grand-ensemble/references/tool_audit.md` for the protocol. Not pre-filled speculatively: a page exists only once a Tool Audit has actually verified the tool's capabilities this session.
+One page per deployment surface (e.g. Figma), written by a User Researcher-led Tool Audit — see `protocols/tool-audit.md` for the protocol. Not pre-filled speculatively: a page exists only once a Tool Audit has actually verified the tool's capabilities this session.
 
 Template: `_template.md`.
 
@@ -102,7 +102,7 @@ A tool page answers *what can this surface do* — but only once you know the su
 | `register.md` | **Tool Discovery** | what leaps exist that we are not reaching — sourced, wide, five mechanisms |
 | `roster.md` | **Tool Discovery** + Tool Audit's placement | which levers each chair requires, and which products its occupant carries |
 
-The chain: `gap named` → Discovery (lever-level) → Composer picks → Tool Audit (verified) → placement into the occupant's products, or promotion to a chair requirement. Protocol: `skill/grand-ensemble/references/tool_discovery.md`.
+The chain: `gap named` → Discovery (lever-level) → Composer picks → Tool Audit (verified) → placement into the occupant's products, or promotion to a chair requirement. Protocol: `protocols/tool-discovery.md`.
 
 Two clocks, deliberately different: **90 days** for a tool page (capabilities drift), **30 days** for the register (AI surfaces move faster).
 
