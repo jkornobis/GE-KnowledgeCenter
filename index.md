@@ -4,7 +4,7 @@ okf_version: 0.2
 
 # GE-KnowledgeCenter — index
 
-Every page in this library, what it covers, who published it and when.
+Every page an agent should fetch — what it covers, who published it and when.
 **Read this before fetching anything.** If a subject is not listed here, the library does not
 cover it — say so rather than guessing a path. A 404 means the path was wrong, never that the
 knowledge is absent.
