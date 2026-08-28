@@ -97,6 +97,7 @@ written before its musician has handled the instrument is plausible documentatio
 |---|---|---|---|
 | `tools/yang/ux_designer.md` | UX Designer lever index for Figma: seven intents keyed to the Plugin API call that serves them, each row naming the tempting wrong default it exists to beat | UX Designer | 2026-08-16 |
 | `tools/yang/design_engineer.md` | Design Engineer lever index for the token crossing: Figma Variables and Code Connect keyed by intent, plus the trap in publish --force | Design Engineer | 2026-08-16 |
+| `tools/figma-method.md` | Eyes first and code second: the working loop for a design surface, what the eyes read in a structured file, and why text-only spatial reasoning collapses as a layout grows | the whole room | 2026-08-28 |
 
 ## Chairs — what a seat knows
 
@@ -125,6 +126,12 @@ written before its musician has handled the instrument is plausible documentatio
 | `protocols/orchestra_test_harness.md` | Testing a multi-agent system's own behaviour: BDD scenarios, the invariant and capability eval sets, the standard grader prompt, and why a grader must be constant | jkornobis | 2026-08-17 |
 | `protocols/session_journal.md` | The episodic memory layer above indexed memory: what a session journal entry captures, where it lives, and how a later session re-orients from it | jkornobis | 2026-08-22 |
 | `protocols/sync_protocol.md` | Shipping a change safely: test, refactor, test, review, sync, test the sync — effort-tiered, with the gate owner named at each step | jkornobis | 2026-08-16 |
+| `protocols/chair-review.md` | How a proposed addition to a chair's knowledge is judged by the Agile Auditor, User Researcher and Product Owner rather than by the chair itself, with a Keep/Revise/Drop verdict and a gate that stops the build until the Composer's next word | jkornobis | 2026-08-28 |
+| `protocols/tool-audit.md` | The one-time, file-backed setup step for deploying onto a new tool: critical facts verified this session rather than recalled, recommended skills proposed rather than applied, and a per-page re-audit clock that a default must admit is a default | jkornobis | 2026-08-28 |
+| `protocols/tool-discovery.md` | How the orchestra finds what it cannot reach: the six questions that judge a candidate — lineage, posture, health, grip, why, licence — who gathers, who weighs, who validates, and why the protocol never installs anything | jkornobis | 2026-08-28 |
+| `protocols/onboarding.md` | The short interview that establishes who a new Composer is and how they want to be served, then writes them a Key — never assuming a profile, always minting one | jkornobis | 2026-08-28 |
+| `protocols/triggers.md` | Full semantics and response formats for every typed trigger, the rule that a mode persists only by being echoed, and why breadth is a single-shot Auditorium rather than a sustained mode | jkornobis | 2026-08-28 |
+| `protocols/widget-templates.md` | The emoji and colour per musician that every attribution line is drawn from, plus the pivot-table and stat-tile markup reproduced verbatim so a widget is rebuilt rather than reinvented | jkornobis | 2026-08-28 |
 
 ## Method — craft that outlives a tool
 
@@ -137,6 +144,10 @@ written before its musician has handled the instrument is plausible documentatio
 | `method/multiagent_canon_audit.md` | The orchestra mapped against the 2026 multi-agent state of the art | jkornobis | 2026-07-03 |
 | `method/orchestra_glossary.md` | One definition per term for the whole system: roles, artifacts, modes, triggers and named principles, so no word means two things | jkornobis | 2026-08-22 |
 | `method/orchestra_prior_art.md` | Where a persona-based orchestra sits against published multi-agent practice, plus the substrate facts on long-context rule decay and what the measurements actually support | jkornobis | 2026-08-16 |
+| `method/evidence.md` | What is actually known about how this model behaves — long-context rule decay, the cost of a real subagent against a persona, and when independence has to be bought rather than simulated | jkornobis | 2026-08-28 |
+| `method/capacity.md` | How a session reports its own usage against a budget, why the reading is always fresh rather than recalled, and what a live-state snapshot carries into the next session | jkornobis | 2026-08-28 |
+| `method/time-management.md` | Time as a presentation option rather than a rule: none, ambient, scheduled and time-boxing, each keyed off a timezone and a set of working hours the Composer declares | jkornobis | 2026-08-28 |
+| `method/web-lineage.md` | Six eras of the web, the lesson each one left, the dream that keeps returning, and the loop underneath all of them — the essay, distinct from the per-chair tool lineage index | jkornobis | 2026-08-28 |
 
 ## Mandalas — the three layers and the borders between them
 
