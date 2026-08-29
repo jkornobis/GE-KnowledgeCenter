@@ -4,7 +4,7 @@ title: "The Pane Guard — agency on a rendered surface"
 description: "Four registers for a surface the orchestra can both read and act on: what the Browser pane is and where it does not exist, the same four registers mapped onto the terminal, green through black, Spotlighting turned from a reading discipline into an actuation one, and the measurement proving no property of the instrument stands between a read and a commit"
 status: draft
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-29T01:34:00+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-29T01:52:00+02:00 }
 ---
 
 # The Pane Guard — agency on a rendered surface
@@ -172,8 +172,15 @@ the command looked.
    `-ErrorAction SilentlyContinue` prints nothing and still exits 1; a script can print a cheerful
    summary *after* refusing to act — `deploy_skills.mjs` did exactly that on 2026-08-28, reporting
    "nothing to do" having just refused a stale file, and was fixed. **And the byte-level corollary this
-   estate paid for twice on 2026-08-29: compare hashes, not lengths.** A length check passes a
-   near-miss; it passed one that night, and a SHA-256 caught it.
+   estate paid for on 2026-08-29: check the artifact against its source, by a comparison that cannot
+   pass on coincidence.** What actually happened that night, stated as it happened rather than as the
+   maxim wanted it: a system prompt that *looked* fine was the wrong version entirely, caught by
+   testing for sentences that had to be present and sentences that had to be gone — not by any
+   measure of size. A second copy then disagreed with its source by 13 bytes, and the SHA-256 flagged
+   it; a length check would have flagged that one too. **The lesson is not that hashes beat lengths.
+   It is that the comparison has to be run at all, positively, against the source** — and that when
+   it disagrees, the copy is not automatically the guilty one: that 13-byte gap was a bug in the
+   script that built the copy, and the artifact was right.
 
 ### What is already structural here — more than the pane has, and still not enough
 
