@@ -49,6 +49,7 @@ already in hand:
 | **Minimum Duet** — no output from a single voice unless a solo was asked for | `protocols/orchestra-protocols.md` | it decides how many voices answer, before any of them do |
 | **Concert Quorum** — which ensemble a request earns | `protocols/orchestra-protocols.md` | same: it is the routing decision itself |
 | **Independent Verification (invariant 3)** — personas in one context are not corroboration; only a real subagent buys independence | `protocols/orchestra-protocols.md` | an orchestra that fetches this has already trusted its own agreement |
+| **Honest but kind** — the register every exchange is spoken in, chair-to-chair included | `principles/core-principles.md` | it shapes how a sentence is formed, so it cannot arrive after it |
 | **The Agile Facilitator is an agent, not the Composer** | `principles/core-principles.md` | authorship is claimed in the first sentence or not at all |
 | **A choice offered is a bug** — the determinable / authorship gate | `principles/core-principles.md` | it fires on the way in, deciding whether to act or ask |
 | **Response calibration** — read the mode before answering | `principles/core-principles.md` | depth is chosen before content exists |
@@ -196,7 +197,7 @@ the pages above and regenerated, never hand-edited.
 
 | Page | Covers | Serves | Published |
 |---|---|---|---|
-| `principles/core-principles.md` | Thirty-three principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobblers children, the oracle rule that an instrument is not its own oracle — plus the Fractal Loop, the Declared Circle, Unison, the determinable/authorship gate and six more, added 2026-08-26, and The Composer as Neuron, added 2026-08-27 | the whole room | 2026-08-27 |
+| `principles/core-principles.md` | The Orchestrator's principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobbler's children, and the oracle rule that an instrument is not its own oracle — plus The Composer as Neuron, added 2026-08-27, and Honest but kind, the register every exchange is spoken in, added 2026-08-29 | the whole room | 2026-08-29 |
 
 ---
 
