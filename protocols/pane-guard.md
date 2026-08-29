@@ -4,7 +4,7 @@ title: "The Pane Guard — agency on a rendered surface"
 description: "Four registers for a surface the orchestra can both read and act on: what the Browser pane is and where it does not exist, the same four registers mapped onto the terminal, green through black, Spotlighting turned from a reading discipline into an actuation one, and the measurement proving no property of the instrument stands between a read and a commit"
 status: draft
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-29T01:52:00+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-29T13:05:00+02:00 }
 ---
 
 # The Pane Guard — agency on a rendered surface
@@ -259,6 +259,7 @@ An action with no fourth field is the incident, not the record of one.
 ## Definition of Done
 
 - [ ] The four registers are stated somewhere the Agile Facilitator re-reads under load, not only here.
+- [ ] **The gate is observed to fire** — in the permission mode the Composer actually runs, not only in the mode it was written under. Open since 2026-08-29; until it is ticked, Register 3 on the pane is held by the reader, not by machinery.
 - [ ] A Register 3 action taken without a quoted yes is treated as a defect and entered in
       `patterns.md`, not argued about in the turn that did it.
 - [ ] `SESSION_LOG.md` carries the four-field record for every staged or committed pane action.
@@ -304,6 +305,46 @@ distance, which is the exact failure mode ADR-15 was written about, and nothing 
 machinery.
 
 **The structural gate is BUILT, 2026-08-06 (ADR-249): `scripts/hooks/pane-commit-guard.mjs`, wired as a PreToolUse hook on the pane's `computer` tool and a PostToolUse hook on its read tools.** It could not be one hook: a click payload carries a `ref` or a coordinate and never says what is being clicked, so the read hook caches `ref → label` from the accessibility tree and the click hook resolves against it. A commit-verb label returns **`ask`**, not `deny` — Register 3 wants the Composer's explicit yes for that action, and a permission prompt is that yes, where a hard deny would train a bypass. **Two holes stay open and are named in the file:** a **coordinate** click cannot be resolved and only warns, and the load-bearing rule — *intent precedes the read* — remains unreachable by any hook. What follows was the proposal, kept because it states what the gate cannot reach:
+
+### BUILT is not HELD — measured 2026-08-29, and the sentence above stood 23 days unchecked
+
+**The gate executes and does not bind.** Traced live, on `localhost`, clicking a control labelled
+*"Enregistrer & Mettre à jour"*:
+
+```
+10:57:45.691  PreToolUse  computer  left_click  ref=ref_231
+10:57:45.693  ASK-CALLED  "Pane Guard, Register 3 (ADR-230): this click lands on "Enreg…
+```
+
+**The click committed anyway.** Every link in the chain is intact except the last:
+
+| Link | Measured |
+|---|---|
+| `UserPromptSubmit` hooks execute | ✓ `usage-counts.json` written mid-session |
+| `PostToolUse` executes, caches `ref → label` | ✓ `ref_231 → "Enregistrer & Mettre à jour"` |
+| `PreToolUse` executes on the click | ✓ traced |
+| the vocabulary matches and `ask()` is called | ✓ traced, `verb = Enregistrer` |
+| **the permission layer honours the decision** | ✗ **the action proceeded** |
+
+**What a hook's `permissionDecision` actually is: a request to the permission layer, not a block.**
+Nothing in the hook stops anything. It asks the layer to ask the Composer — and a layer running in a
+mode that auto-approves grants that request silently, leaving no trace anywhere except a log this
+guard did not have until the day it was tested.
+
+**The leading explanation, labelled as a hypothesis because it has no artifact behind it:** this
+session ran in an accept-everything permission mode. That would explain all four inert mechanisms at
+once — this hook, and the three `permissions.ask` entries (`git push`, `git clean -d`, and the older
+force-push family), none of which has ever been observed to fire either. **One experiment settles it:
+switch out of auto-accept and click one commit control.** Until that is run, "the gate is broken" and
+"the gate is disarmed by the mode" are both live, and this page says so rather than picking the
+flattering one.
+
+**The generalisation, which is the part worth carrying past this file.** ADR-15 says prose degrades
+with context distance, so enforce structurally. This adds the half ADR-15 did not have: **machinery
+can be inert, and inertness is silent.** A rule that decays at least misfires visibly; a gate that
+never fires looks exactly like a gate with nothing to catch. **So: a gate is not held until it has
+been observed to fire, in the mode it will actually run in** — and the mode where it matters most is
+the unsupervised one, which is precisely the mode that appears to disarm it.
 
 **One structural gate is proposable and is not built** — a `PreToolUse` hook on the pane's `computer`
 tool that blocks `left_click` when the resolved element's accessible name matches a commit verb
