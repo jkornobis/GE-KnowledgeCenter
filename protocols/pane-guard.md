@@ -4,7 +4,7 @@ title: "The Pane Guard — agency on a rendered surface"
 description: "Four registers for a surface the orchestra can both read and act on: what the Browser pane is and where it does not exist, the same four registers mapped onto the terminal, green through black, Spotlighting turned from a reading discipline into an actuation one, and the measurement proving no property of the instrument stands between a read and a commit"
 status: draft
 serves_all: true
-generated: { by: human:jkornobis, at: 2026-08-29T01:22:00+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-29T01:34:00+02:00 }
 ---
 
 # The Pane Guard — agency on a rendered surface
@@ -185,8 +185,10 @@ the pane's has one hook with two holes it names itself.
 
 **What that machinery does not cover, named rather than assumed:**
 
-- **a plain `git push` to a public remote is not on the ask list.** Tonight's library publish was
-  authorised by the Composer in chat, not by a gate.
+- ~~a plain `git push` is not on the ask list~~ — **closed 2026-08-29, the Composer's call:**
+  `Bash(git push*)` is now in `permissions.ask`. The first two library publishes that night were
+  authorised in chat; every one after them is authorised by the harness. **A judgement replaced by a
+  gate is the whole of ADR-15 in one line.**
 - **`curl -X POST` is unlisted** — the shell's exfiltration path has no structural check at all.
 - **writes outside the repo tree are unlisted.**
 
@@ -255,7 +257,7 @@ An action with no fourth field is the incident, not the record of one.
 - [ ] `SESSION_LOG.md` carries the four-field record for every staged or committed pane action.
 - [ ] The terminal register mapping is re-read under load, not only here.
 - [ ] Every Red **terminal** action carries the same four-field record — surface · action · identity · the quoted yes.
-- [ ] A decision, the Composer's: does a plain `git push` join `permissions.ask`, or stay a chat-level yes?
+- [x] A decision, the Composer's: a plain `git push` **joins `permissions.ask`** (2026-08-29). Red is now asked by the harness, not remembered by the reader.
 - [ ] The adversarial DoD gate (`brain_protocols.md`, QA Engineer — adversarial) names this surface
       explicitly: ASI05 unexpected code execution, ASI06 memory/context poisoning, LLM06 excessive
       agency are the categories that land on a read-and-act DOM.
