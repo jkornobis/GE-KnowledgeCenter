@@ -11,7 +11,7 @@ generated: { by: human:jkornobis, at: 2026-08-25T15:13:24+02:00 }
 
 Audited 2026-08-23 by User Researcher. Library (JavaScript internationalization framework). Not MCP-mediated, no auth.
 
-Re-audit: 90 days — default, not measured (no release has yet invalidated anything on this page)
+Re-audit: 8 days — measured, release cadence (n=9 intervals, agile-watcher @ acaadb3, 2026-08-30)
 
 **Chair:** Content Designer — `brain/content_designer_references.md` names it the **FR/EN parity engine** behind localization engineering, and draws the boundary explicitly: *the words stay the Content Designer's; the technical i18n layer is shared with the Design Engineer.* ICU MessageFormat is the spec; this is its production implementation.
 **Lineage:** the Content Designer's leap — *readability made measurable*, Flesch (1948) and the plain-language movement, against style manuals from 1906/1918. Lag **~30 years**. **This tool is not that leap either**, and the mismatch is instructive: the lineage row is about making language *measurable*, while this instrument is about making it *portable*. Two different disciplines under one chair. `project/tools_lineage_full.md`

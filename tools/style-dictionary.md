@@ -11,7 +11,7 @@ generated: { by: human:jkornobis, at: 2026-08-26T16:53:30+02:00 }
 
 Audited 2026-08-26 by User Researcher. Library (build tool). Not MCP-mediated, no auth.
 
-Re-audit: 90 days — default, not measured (a build tool, no vendor release cycle driving it)
+Re-audit: 12 days — measured, release cadence (n=9 intervals, agile-watcher @ acaadb3, 2026-08-30)
 
 **Chair:** Design Engineer — the transform step inside `moves-tokens-between-design-and-code`, **the only lever promoted to a chair requirement** (`chair-levers.md`). Also `Serves:` UX Designer, Software Engineer and Software Architect, who hold pieces of the pipeline without breaking without it.
 **Lineage:** the Design Engineer's leap — **design tokens**, Jina Anne at Salesforce with Theo as the first generator (2014), against an origin of hand-written CSS (1996). Lag **15 years**. **This tool is the leap's direct descendant**, which almost nothing else in this library can say: Theo's successor, doing the same job. `project/tools_lineage_full.md`

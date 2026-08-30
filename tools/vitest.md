@@ -11,7 +11,7 @@ generated: { by: human:jkornobis, at: 2026-08-26T16:53:30+02:00 }
 
 Audited 2026-08-26 by User Researcher. Library (test runner, Vite-native). Not MCP-mediated, no auth.
 
-Re-audit: 90 days — default, not measured (no release has yet invalidated anything on this page)
+Re-audit: 10 days — measured, release cadence (n=7 intervals, PROVISIONAL, agile-watcher @ acaadb3, 2026-08-30)
 
 **Chair:** Software Engineer — `brain/engineer_references.md` names it Important: *Jest is no longer the default*. Also `Serves:` QA Engineer, whose `qa_engineer_references.md` lists it as the unit/component runner beneath the test-pyramid-to-honeycomb shift.
 **Lineage:** the QA Engineer's leap — **xUnit**, SUnit (Beck, 1989) → JUnit (1997) → TDD named (2002), against manual test scripts. Lag **20 years**. This is that lineage's current JavaScript expression, and — like [`playwright.md`](playwright.md) — one of several instruments that can carry it. `project/tools_lineage_full.md`

@@ -11,7 +11,7 @@ generated: { by: human:jkornobis, at: 2026-08-25T15:13:24+02:00 }
 
 Audited 2026-08-23 by User Researcher. CLI (`cosign`) over public infrastructure (Fulcio, Rekor); CNCF. Not MCP-mediated. Keyless signing uses an OIDC identity — no long-lived key to hold, which is the point.
 
-Re-audit: 90 days — default, not measured (no release has yet invalidated anything on this page)
+Re-audit: 40 days — measured, release cadence (n=6 intervals, PROVISIONAL, agile-watcher @ acaadb3, 2026-08-30)
 
 **Chair:** Software Architect — `brain/software_architect_references.md` names supply-chain integrity Critical (SLSA v1.2, SBOM) and frames it as an operational duty under the EU CRA rather than a buzzword. Also `Serves:` the Reliability Engineer, whose `reliability_engineer_references.md` lists Sigstore/Cosign as the **runtime enforcement** of the policy the Software Architect owns.
 **Lineage:** the Software Architect's leap is *the ADR* (Nygard, 2011) against an origin of design docs, lag **25 years** — and this instrument is not that leap. **Recorded as a mismatch:** signing is a younger seam the lineage table has no row for, and it exists because *the artifact* became the thing that needed a decision record, not just the design. `project/tools_lineage_full.md`

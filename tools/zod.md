@@ -11,7 +11,7 @@ generated: { by: human:jkornobis, at: 2026-08-25T14:47:07+02:00 }
 
 Audited 2026-08-23 by User Researcher. Library (TypeScript runtime schema validation). Not MCP-mediated, no auth.
 
-Re-audit: 90 days — default, not measured (no release has yet invalidated anything on this page)
+Re-audit: 3 days — measured, release cadence (n=5 intervals, PROVISIONAL, agile-watcher @ acaadb3, 2026-08-30)
 
 **Chair:** Software Engineer — `brain/engineer_references.md` names it Critical: *TypeScript types vanish at runtime, so trust-boundary data needs runtime validation.* Also reaches the Software Architect via the cross-library [Standard Schema](https://standardschema.dev/) spec. No lever in `register.md` covers it; sweep 1's four levers are design- and QA-side.
 **Lineage:** the Software Engineer's row is *version control* (SCCS 1972 → git 2005), which this is not. **Recorded as a mismatch rather than forced:** Zod belongs to a younger seam the lineage table does not have a row for — **the type system reaching runtime**, which only became a discipline once a gradually-typed language shipped types that erase. Not every instrument is the leap of the chair it serves. `project/tools_lineage_full.md`

@@ -11,7 +11,7 @@ generated: { by: human:jkornobis, at: 2026-08-23T00:26:29+02:00 }
 
 Audited 2026-08-23 by User Researcher. Library (dev server + build tool), not MCP-mediated. No auth; runs against a project's own build pipeline.
 
-Re-audit: 90 days — default, not measured (no release has yet invalidated anything on this page)
+Re-audit: 2 days — measured, release cadence (n=8 intervals, agile-watcher @ acaadb3, 2026-08-30)
 
 **Chair:** Design Engineer — `Serves:` the design↔code seam; also Software Engineer (the component workbench) and QA Engineer (`@storybook/addon-a11y` runs axe checks per story; Chromatic adds a visual-regression gate on the same stories). No lever in `register.md` names it directly.
 **Lineage:** it sits **under** the Design Engineer's row without being its leap. That row runs hand-written CSS (1996) → *design tokens* (2014) → Figma Variables + Code Connect, lag **15 years**. Storybook is not the token crossing; it is **where the crossing is checked** — the surface on which a component's variants and states become runnable, and therefore testable. Recorded as a mismatch rather than forced into the row: not every instrument is the leap of the chair it serves. `project/tools_lineage_full.md`

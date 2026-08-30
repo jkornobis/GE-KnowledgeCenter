@@ -11,7 +11,7 @@ generated: { by: human:jkornobis, at: 2026-08-26T16:53:30+02:00 }
 
 Audited 2026-08-26 by User Researcher. Figma plugin, freemium. Not MCP-mediated; driven inside Figma or via its own sync.
 
-Re-audit: 60 days — **default, adjusted** (`agents/tools/yang/design_engineer.md`): a plugin riding Figma's release train, slower than the platform, faster than a build tool. No interval observed yet.
+Re-audit: 15 days — measured, release cadence (n=9 intervals, agile-watcher @ acaadb3, 2026-08-30)
 
 **Chair:** Design Engineer — the authoring-and-sync step inside `moves-tokens-between-design-and-code`, the chair's **required** lever (`chair-levers.md`). Also `Serves:` UX Designer, who authors the decisions the tokens carry.
 **Lineage:** shares the Design Engineer's row with [`style-dictionary.md`](style-dictionary.md) — *design tokens*, 2014, lag **15 years**. This is the **authoring** end of that leap; Style Dictionary is the transform end.
