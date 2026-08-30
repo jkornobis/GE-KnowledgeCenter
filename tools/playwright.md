@@ -11,7 +11,7 @@ generated: { by: human:jkornobis, at: 2026-08-23T00:26:29+02:00 }
 
 Audited 2026-08-23 by User Researcher. Library (test runner + browser automation); also available as an MCP connector (`@playwright/mcp`, a separate candidate in `register.md`). No auth for the library.
 
-Re-audit: 90 days — default, not measured (no release has yet invalidated anything on this page)
+Re-audit: 11 days — measured, release cadence (n=9 intervals, agile-watcher @ acaadb3, 2026-08-30)
 
 **Chair:** QA Engineer — `Serves:` on the lever `reads-a-running-interface`, alongside Accessibility Specialist, Design Engineer, UX Designer and Reliability Engineer (`register.md`). Chair Review 2026-08-05 promoted that lever for **QA Engineer + Accessibility Specialist** as *required*; Playwright is one of several products that can satisfy it, not the requirement itself.
 **Lineage:** the QA Engineer's leap — *xUnit*, SUnit (Beck, 1989) → JUnit (1997) → TDD named (2002), against an origin of manual test scripts. Current best-in-class in that row is *CI harnesses*, and this is one. Lag **20 years**. `project/tools_lineage_full.md`

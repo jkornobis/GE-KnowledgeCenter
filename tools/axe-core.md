@@ -11,7 +11,7 @@ generated: { by: human:jkornobis, at: 2026-08-23T00:20:16+02:00 }
 
 Audited 2026-08-23 by User Researcher. Library (embeddable engine), not MCP-mediated. No auth; runs inside whatever test environment hosts it.
 
-Re-audit: 90 days — default, not measured (no release has yet invalidated anything on this page)
+Re-audit: 56 days — measured, release cadence (n=9 intervals, agile-watcher @ acaadb3, 2026-08-30)
 
 **Chair:** Accessibility Specialist — the lever `audits-accessibility-mechanically`, `Serves:` only. Chair Review 2026-08-05 refused promotion (ADR-218): the published ~30–40% automated-coverage ceiling means this instrument **scopes** manual work rather than being something the seat breaks without. QA Engineer and Design Engineer also `Serves:`.
 **Lineage:** the Accessibility Specialist's leap — *automated conformance*, Bobby (1996) → axe-core in CI (~2015), against an origin of manual review with Lynx as proxy (1992). Lag **16 years**. `project/tools_lineage_full.md`
