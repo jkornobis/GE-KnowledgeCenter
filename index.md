@@ -15,7 +15,11 @@ sibling names of the estate that produced them — `roster.md`, `patterns.md`, `
 read, in that estate's own coordinates, and inventing a correspondence would assert a derivation
 nobody made. **Only the paths listed in the tables below are fetchable.** If a reference has no
 directory, it is history; if it has one and is not in a table below, report it rather than fetching
-it. `check_links.mjs` in this bundle holds the line.
+it. `check_links.mjs` in this bundle holds that line for `.md` and `.json`
+references only. **It does not read script names at all** — `scripts/` is declared provenance and `.mjs` is
+outside its pattern — so the script names cited across these pages are provenance by construction, never links
+it has checked and passed. **And two bare names are exceptions to the history rule, because they are runnable
+files in this bundle rather than another estate's coordinates: `check_okf.mjs` and `check_links.mjs`.**
 
 **Two estate pages are deliberately absent** and will stay so: the occupancy roster, whose portable
 half already travels as `tools/chair-levers.md` while the rest is one estate's own seating; and the
