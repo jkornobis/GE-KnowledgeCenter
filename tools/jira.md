@@ -9,7 +9,7 @@ generated: { by: agent:agile-facilitator, at: 2026-09-01T16:20:23+02:00 }
 
 # Tool: Jira — the logic, and the route to its documentation
 
-Audited 2026-09-01 by User Researcher. **Documentation only.** No Jira instance has been reached from this deployment: the Atlassian connector requires an authorization a non-interactive session cannot run. **Nothing below is a capability claim about a running instance**, and the sections that would carry one are empty and dated rather than filled.
+Audited 2026-09-01 by User Researcher. **Documentation, then one live read.** The logic below was first taken from Atlassian's Cloud documentation and then checked against a running **Server / Data Center** instance the same day — see *Cloud and Server are two products at logic level*, which is the correction that read forced. The connector remains unauthorized; the live read was made through a browser on an already-authenticated session, read-only. No Jira instance has been reached from this deployment: the Atlassian connector requires an authorization a non-interactive session cannot run. **Nothing below is a capability claim about a running instance**, and the sections that would carry one are empty and dated rather than filled.
 
 Re-audit: 90 days — default, not measured. Jira Cloud ships continuously and publishes no release interval this audit could measure.
 
@@ -34,6 +34,20 @@ Re-audit: 90 days — default, not measured. Jira Cloud ships continuously and p
 
 **The working order, therefore: search first to locate the URL, then fetch it from the administration tree.** Fetching a guessed path costs a 404; fetching the marketing tree costs something worse — a plausible empty read.
 
+## Cloud and Server are two products at logic level — the correction a live read forced
+
+**Everything in the section below was written from Jira *Cloud* documentation. The first running instance this library met was Jira *Server / Data Center*, and the hierarchy model does not carry across.**
+
+| | Cloud | Server / Data Center |
+|---|---|---|
+| Grouping above the work item | **work-type hierarchy levels** — epic level, standard, subtask; Premium/Enterprise may add levels | **`Epic Link`** and an *"Issues in epic"* list — a field, not a level |
+| Project flavours | team-managed vs company-managed, with different capabilities | no such distinction |
+| Extra levels | a plan feature | not present |
+
+**So a page that says "three hierarchy levels by definition" is true of one product and false of the other, and the version below did not say which.** It does now. This is the class of defect only an instance can surface: the documentation was read correctly and answered a question about a different product.
+
+**Neither reading is wrong for whoever is on that deployment.** What is wrong is a page that names one and implies both.
+
 ## The logic (project-agnostic by construction)
 
 **Only what is true of Jira as a product.** Anything that varies per project — which statuses a workflow has, which fields are required, which hierarchy a plan uses — is configuration and belongs in a Composer's own `project/` tree, per `index.md`: *"It carries **no project**."*
@@ -43,6 +57,27 @@ Re-audit: 90 days — default, not measured. Jira Cloud ships continuously and p
 - **A board is a view over a query, not a container.** A board is defined by a JQL filter; work items are not *in* a board, they *match* it. [What are board filters](https://support.atlassian.com/jira-software-cloud/docs/configure-filters/) · [Example JQL queries for board filters](https://support.atlassian.com/jira-software-cloud/docs/example-jql-queries-for-board-filters/). **This is the single most load-bearing logic fact on the page**, because almost every "the item disappeared from the board" question is a query that stopped matching.
 - **A saved filter is a named query, and JQL is the language.** *"A custom filter is a saved and reusable search term"*, defined by queries *"written using JQL"*. [Manage custom filters](https://support.atlassian.com/jira-software-cloud/docs/manage-custom-filters-in-team-managed-projects/) · [JQL fields](https://support.atlassian.com/jira-software-cloud/docs/jql-fields/). Reported from a search result rather than a fetched body — *testimony, not transcript* (`tools/web-research.md`), and marked as such.
 - **A version is a grouping for release, orthogonal to hierarchy.** An item's `fixVersion` is searchable by name or by the ID Jira allocates. Same evidential status as above.
+
+### Verified live on a Server / Data Center instance, 2026-09-01
+
+Read-only, through an authenticated browser session. **No instance, project, ticket or person is recorded here** — `index.md` forbids it and the page is scoped to logic. These are the mechanisms, not the content.
+
+- **A view is a query times a projection.** The issue navigator exposes an `Advanced Query` field (JQL), a **Basic ↔ Advanced** toggle, a `Columns` control and a Detail/List view switch. **The query selects rows; the columns and the view mode select what is shown of them, and they are separate controls.** A board is the same pair with an arrangement on top — which is why *"items are not in a board, they match it"* holds on both products.
+- **Basic search is a form projection of the language, not an alternative to it.** The toggle presents one query in two surfaces; the form can express only the subset it has widgets for.
+- **A saved filter is a named query** — `Save as` on the navigator. Confirmed as a mechanism, not inferred from the Cloud docs.
+- **Issue links are typed and directional, and they are first-class data.** Named relations — `clones` / `is cloned by` and their inverses — stored on the item, editable, queryable. **This is the thing Figma does not have and Jira does**: an explicit, named edge between two units of work.
+- **The why and the when are first-class too** — `History`, `Work Log` and `Transitions` are tabs on every item. State changes are recorded with their time and author, without anyone choosing to write them down.
+
+**Where that lands in this library.** `tools/register.md`'s *line ↔ position* seam gains its third corner from this read:
+
+| Tool | Position | Typed edges | History of why |
+|---|---|---|---|
+| **Figma** | **yes** — x/y is the authoring surface | no — flow is spatial and implicit | no |
+| **Jira** | no | **yes** — named, directional, queryable | **yes** — transitions, work log |
+| **git** | no | inferred only — a move is delete-plus-add | **yes** — the commit message |
+| **JSON Canvas** | **yes** | **yes** — `fromNode`/`toNode`/`fromSide`/`toSide` | no |
+
+**Each carries two of the three and never the same two.** That is the seam stated as a table rather than as an argument, and it is why work crossing these tools loses something at every hop.
 
 ## Deliberately empty, and dated — 2026-09-01
 
