@@ -294,6 +294,5 @@ validate a claim.**
 | `method/common_score_matrix.md` — summary says *132 connections*; Act X is deliberately empty, so 120 are delivered | whether a declared-empty Act counts |
 | Two more bare names are clickable **routes**, not provenance: `protocol_warrant_map.md` and `principle_chair_map.md`, linked from the mandala borders | whether they are deliberately unpublished like the Figma surface audit, or were meant to travel |
 | `check_links.mjs` cannot tell a **route** from a **provenance marker** — 111 bare names exist nowhere here, 108 are provenance and 3 were links a reader would follow | whether a markdown-linked bare name should fail the check while a cited one does not |
-| **Figma prototype edges exist and no Figma page here says so** — `reactions` / `Action.destinationId` / `setReactionsAsync` / `PageNode.flowStartingPoints`, read from the Plugin API docs 2026-09-01 but **not introspected live** | one live introspection, which would also settle whether the REST route's lossy `transitionNodeID` is the only edge a remote reader gets |
 
 Licensed CC BY-SA 4.0.
