@@ -37,6 +37,18 @@ A tool page is a snapshot of verified facts, and tools ship new versions — MCP
 
 **The interval is per page, and its authority is the chair's own tool page** (ADR-267, the Composer: *"cadence per page"*, then *"cadence per chair tool page is the key"*). A product's clock is decided in `agents/tools/yang/<musician>.md`, where the musician reads it before playing; the tool page **cites** that decision rather than holding a rival number. ADR-256 sets N: the observed interval at which the product's releases invalidated what we wrote — **absent an observed interval it is 90 days and the line must say `default, not measured`**, because a default that does not admit it is a default becomes a measurement by repetition. **The line is required**; a missing one fails the check.
 
+**A third basis, added 2026-09-01 (Composer ruling):** `not applicable — no release surface`. Some pages are about a **method, a lineage, a way of reading, or are routers** — `figma.md` says of itself *"this page is now the router and the identity table. It carries no findings of its own."* **They have no releases, so no watch will ever give them a measured interval**, and asking them for one teaches the writer to put `default` and move on. That was the state this field was found in: **17 of 19 pages read `default, not measured`, and not one page in the library had ever carried an independently measured interval** until agile-watcher supplied nine on 2026-08-30.
+
+**The three bases now say three different things**, which is the point of the change:
+
+| basis | means |
+|---|---|
+| `measured, from …` | an interval was observed, with its `n` and its source |
+| `default, not measured` | **measurable and not yet measured** — a queue, not a shrug |
+| `not applicable — no release surface` | there is nothing to measure, and that is a finding rather than a gap |
+
+**A page whose body declares it carries no findings of its own takes the third value.** Judge it by that declaration, never by the slug — a page was once refused a measurement on the strength of its filename, and the filename was not the reason.
+
 **Why it stopped being 90 for everything:** a file-type clock called `figma.md` *fresh* at 35 days while `register.md` recorded **four Config 2026 capabilities landing inside that same window** — the first run of the per-page clock marked it stale, which the old one never could. A scheduled runner **does** exist since ADR-152 — `userresearcher-cadence-tool-audit-sota-watch`, monthly (`0 9 1 * *`, first fire 2026-08-01) — and it runs this check in the same pass as note 13's state-of-the-art watch (same owner, User Researcher). It is also typeable on demand. *(Corrected 2026-08-05: this line read "the orchestra has no scheduled runner", true when ADR-124 wrote it and false since 2026-07-17.)* A flagged page gets a **re-audit**: User Researcher re-verifies the Critical facts live (introspect the current MCP schema, re-fetch docs) — never re-dated from memory — corrects what changed, and updates the `Audited` date; Recommended items are re-proposed only if newly relevant. Same discipline as the first audit, just triggered by the clock instead of a first deployment.
 
 ## Template
