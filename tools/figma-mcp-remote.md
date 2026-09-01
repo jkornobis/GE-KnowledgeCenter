@@ -106,6 +106,18 @@ Reading note: high Trust ≠ high Bench — e.g. `glips/figma-context-mcp` (Trus
 - *Unused surface:* the three Widgets libraries (`developers_figma_widgets`, `figma_widget-docs`, `figma/widget-typings`) — Figma widgets aren't used here; plugins are.
 - *Redundant:* Figma REST API "files" site (`developers_figma_rest-api_files`, 2 snippets — covered by `rest-api-spec`); two duplicate Tokens Studio entries (`websites/tokens_studio`, `tokens-studio/figma-plugin` — kept the higher-bench plugin-docs one).
 
+### Figma serves agent skills over this route — verified by use, 2026-09-01
+
+**Config 2026 (2026-06-24) shipped reusable slash-command skills for the Figma Agent, and no page in this library had noticed.** It is the one Config capability that was absent everywhere here, and it is the one that matters most to an estate which is itself a skill.
+
+**What is verified, by having done it rather than read it:** the connector's own server instructions declare `/figma-use` **MANDATORY before every `use_figma` call**, and serve skills as MCP resources at `skill://figma/<name>/SKILL.md` when no plugin is installed. Six are named on the route used here — `figma-use`, `figma-generate-design`, `figma-generate-library`, `figma-code-connect`, `figma-use-figjam`, `figma-create-new-file`. This session loaded `figma-use` before its first `use_figma` call and every call after.
+
+**Three things follow, and the third is the one worth arguing about.**
+
+1. **A tool that ships its own skills changes what a Tool Audit is for.** `protocols/tool-audit.md` assumes the orchestra discovers a surface's capabilities. Here the vendor supplies the operating instructions, versioned with the tool, and the audit's job shifts from *discovering* to *deciding whether to trust what shipped*.
+2. **The skill is a prerequisite, not a convenience** — the server states that skipping it *"causes common, hard-to-debug failures"*. That is a capability fact about the route and belongs on this page, not in method.
+3. **This is a vendor writing down the convention for its own instrument** — the thing `tools/chair-levers.md` calls a lever index and this library builds by hand, per chair, from a musician's own hands. **Whether a vendor-supplied skill can substitute for one is unresolved and is not decided here.** It arrives with the vendor's interests in it, and it has not been through a Chair Review.
+
 ## Limits — what a reaction is not (2026-09-01, corrected by the Composer)
 
 **Reactions carry navigation and component-state plumbing. They do not carry designed flow, and on a file under construction they are not supposed to.**
