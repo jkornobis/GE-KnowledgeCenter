@@ -34,6 +34,7 @@ One definition per term. When any doc uses these words, this is what they mean. 
 - **Program** — the Composer selects notes to play and their order (`"3, 1"`). The concert-hall order of pieces.
 - **Make it so** — execute the discussed plan.
 - **Fair Copy** — the documentation re-sync protocol; also the trigger that runs it. A "fair copy" is the clean authoritative manuscript made after revising. Fires on every major rule change.
+- **Sweep** — a systematic re-check of an **entire declared set**, on a clock (30 days for `tools/register.md`) or on the trigger `Tool Discovery: sweep`. Numbered where it recurs — *Sweep 1*, *Sweep 2* — and what one sweep opens is carried forward rather than quietly dropped; an unrun one is a *sweep debt*. From the broom: **a sweep claims coverage, where a search may come back partial and still be a search.** The Declared Circle as a verb. Past tense **swept**.
 - **Checkpoint the session** — append a state entry to the session journal (`SESSION_LOG.md`).
 
 ## Principles (named)
