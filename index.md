@@ -21,6 +21,15 @@ outside its pattern — so the script names cited across these pages are provena
 it has checked and passed. **And two bare names are exceptions to the history rule, because they are runnable
 files in this bundle rather than another estate's coordinates: `check_okf.mjs` and `check_links.mjs`.**
 
+**And a provenance path may have a living sibling here.** The extraction remapped the files without remapping the
+cross-references, so **18 of the 48 provenance citations in these pages name a document this library also holds
+under a different path** — `brain/orchestra_prior_art.md` is `method/orchestra_prior_art.md`,
+`agents/tools/register.md` is `tools/register.md`, `skill/grand-ensemble/references/triggers.md` is
+`protocols/triggers.md`, and fifteen more. **Before reporting a provenance path as unfetchable, match its basename
+against the tables below.** The citation is still not rewritten: the two are the same subject in two estates'
+coordinates, not proven to be the same text, and inventing that correspondence is what this section forbids.
+`check_links.mjs` cannot catch this — `brain/`, `agents/` and `skill/` are in its skip list, by design.
+
 **Two estate pages are deliberately absent** and will stay so: the occupancy roster, whose portable
 half already travels as `tools/chair-levers.md` while the rest is one estate's own seating; and the
 Figma product-surface audit, which cannot be published because it names an employer's systems. Pages
