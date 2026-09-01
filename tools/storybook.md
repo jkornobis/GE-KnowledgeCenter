@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: Storybook"
-description: "The component workbench where a variant becomes a runnable story: 1,102 labelled bugs mostly carrying has-workaround, and friction that is all build pipeline rather than authoring"
+description: "The component workbench where a variant becomes a runnable story: 1,102 of 1,571 open issues carrying the bug label, three sampled and all three marked has-workaround, and friction that is all build pipeline rather than authoring"
 status: draft
 serves: [Design Engineer, Software Engineer, QA Engineer]
 generated: { by: human:jkornobis, at: 2026-08-23T00:26:29+02:00 }
