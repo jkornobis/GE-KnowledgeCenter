@@ -142,6 +142,24 @@ Weave workflows** (`app.weavy.ai`), a different product; they are not Figma Comm
 limit stands exactly as written. **A new tool family that looks like it might lift a limit is not
 evidence that it did.**
 
+### Prototype edges exist in the data model — introspected live, 2026-09-01
+
+**Recorded because a page of this library implied otherwise by silence: no Figma page here mentioned prototype edges at all, and an observation from another estate concluded that flow relationships *"have no edges in the graph"*.** Run through `use_figma` on the connector route, read-only, against a real production file:
+
+| Reading | Result |
+|---|---|
+| `reactions` on a node | **present and populated** — `1,236` nodes carry non-empty reactions on one page of 24,965 |
+| A sampled edge | `trigger: ON_CLICK` → `actions: [{ type: 'NODE', destinationId: '2910:102455', navigation: 'NAVIGATE' }]` — a real directed edge with a destination |
+| `setReactionsAsync` | **present** — the edges are writable, not merely readable |
+| `PageNode.flowStartingPoints` | **present and named**: ten entries, e.g. *"Flow 1 — Onboarding & First Chat"*, *"UC-3 — Summarize Request"* |
+| Same file, a second page | `773` of `32,730` nodes with reactions |
+
+**The scope of the claim, declared.** This establishes that the flow graph is in the data model and reachable in one call. **It does not establish that any particular pair of frames is linked** — flow starting points name entries, not transitions, and only some Use Cases on that page had one. A specific *"screen A does not link to screen B"* finding can still be true, and is a statement about the file rather than about Figma.
+
+**Route matters, and it is the whole lesson.** The **Plugin API** carries the complete reaction — trigger, actions, destination, writable. The **REST API** exposes only `transitionNodeID`, `transitionDuration`, `transitionEasing`, **and only the first reaction per node** (Figma developer docs, read 2026-09-01). The **node tree alone** carries nothing. *"The number was about the layer, not the subject"* (`tools/README.md`) — a reader who traverses children and concludes there are no edges has measured the traversal.
+
+**One claim from that estate corroborated rather than contested**, since the same scan measured it: an `INSTANCE` with zero children satisfies a tree query and renders nothing. On that page, **1,530 of 6,939 instances have zero children (22%) and 881 are hidden (12.7%)**. `node.type === 'INSTANCE'` is not proof of functional presence.
+
 ### Verified live through the connector route, 2026-08-25
 
 | Claim | Result |
