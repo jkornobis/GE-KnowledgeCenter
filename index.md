@@ -153,18 +153,32 @@ written before its musician has handled the instrument is plausible documentatio
 | Page | Covers | Published by | Published |
 |---|---|---|---|
 | `method/agile_auditor_catalog.md` | The master list of anti-patterns the Agile Auditor watches for, consolidated from criteria scattered across the score | jkornobis | 2026-08-16 |
+| `method/orchestra_glossary.md` | One definition per term for the whole system: roles, artifacts, modes, triggers and named principles, so no word means two things | jkornobis | 2026-08-22 |
+| `method/evidence.md` | What is actually known about how this model behaves — long-context rule decay, the cost of a real subagent against a persona, and when independence has to be bought rather than simulated | jkornobis | 2026-08-28 |
+| `method/capacity.md` | How a session reports its own usage against a budget, why the reading is always fresh rather than recalled, and what a live-state snapshot carries into the next session | jkornobis | 2026-08-28 |
+| `method/time-management.md` | Time as a presentation option rather than a rule: none, ambient, scheduled and time-boxing, each keyed off a timezone and a set of working hours the Composer declares | jkornobis | 2026-08-28 |
+
+## Recorded — provenance rather than working knowledge
+
+**Ruled 2026-09-01.** These pages are read *after* a decision rather than held before one: removing
+any of them changes what no musician does. They are this library doing its second job — *the skill
+executes; the repo remembers* (`principles/core-principles.md`) — applied one level down, to the
+repository's own contents rather than to the skill.
+
+They stay fetchable and stay cited. **What changes is the clock: the retirement rule at the foot of
+this index governs the served half of the library, not this section.** Provenance does not go stale.
+It records what was true when it was written, which is the whole of its value.
+
+| Page | Covers | Published by | Published |
+|---|---|---|---|
 | `method/common_score_matrix.md` | How each of the 12 musicians connects to the shared knowledge fields, across all 11 Acts | jkornobis | 2026-08-22 |
 | `method/common_score_pivot.md` | Two relation types over the same twelve chairs: undirected shared concerns each anchored to an external standard, and directed requires-serves dependencies that a shared-concern reading is structurally blind to | jkornobis | 2026-08-26 |
 | `method/prior_art_bmad.md` | A focused deep-dive on one comparable multi-agent framework, and three re-readings of it — including the one that found the comparison had been between a pipeline and a roster | jkornobis | 2026-08-22 |
 | `method/multiagent_canon_audit.md` | The orchestra mapped against the 2026 multi-agent state of the art | jkornobis | 2026-07-03 |
-| `method/orchestra_glossary.md` | One definition per term for the whole system: roles, artifacts, modes, triggers and named principles, so no word means two things | jkornobis | 2026-08-22 |
 | `method/orchestra_prior_art.md` | Where a persona-based orchestra sits against published multi-agent practice, plus the substrate facts on long-context rule decay and what the measurements actually support | jkornobis | 2026-08-16 |
-| `method/evidence.md` | What is actually known about how this model behaves — long-context rule decay, the cost of a real subagent against a persona, and when independence has to be bought rather than simulated | jkornobis | 2026-08-28 |
-| `method/capacity.md` | How a session reports its own usage against a budget, why the reading is always fresh rather than recalled, and what a live-state snapshot carries into the next session | jkornobis | 2026-08-28 |
-| `method/time-management.md` | Time as a presentation option rather than a rule: none, ambient, scheduled and time-boxing, each keyed off a timezone and a set of working hours the Composer declares | jkornobis | 2026-08-28 |
 | `method/web-lineage.md` | Six eras of the web, the lesson each one left, the dream that keeps returning, and the loop underneath all of them — the essay, distinct from the per-chair tool lineage index | jkornobis | 2026-08-28 |
 
-## Mandalas — the three layers and the borders between them
+### Mandalas — the three layers and the borders between them
 
 **The model, and how each edge was earned.** Three rings — 33 principles, 59 protocols, 12 chairs —
 and three borders carrying 282 crossings between them: `warrant` (a protocol puts a principle into
@@ -180,7 +194,7 @@ searched before it searched it.
 | `mandalas/border-chairs-principles.md` | The second border, grounds: which principle each chair requires to do its job, every edge quoting the chair's own sentence — plus the 2026-08-15 re-measurement to read before quoting anything | the whole room | 2026-08-17 |
 | `mandalas/border-chairs-protocols.md` | The third border, enacts: which protocols each chair puts into practice. The one that closes the triangle, after which the meta-mandala can be a result rather than a premise | the whole room | 2026-08-17 |
 
-## Graph — the model as data, for traversing rather than reading
+### Graph — the model as data, for traversing rather than reading
 
 **The mandala pages are the reasoning; this is its result in machine-readable form.** 104 nodes
 across three rings, 251 within-layer edges, 282 crossings — every evidence-bearing edge carrying
