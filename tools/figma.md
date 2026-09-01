@@ -20,7 +20,7 @@ different failure modes and — decisively — **different registration**. It co
 |---|---|---|
 | [`figma-mcp-remote.md`](figma-mcp-remote.md) | the **remote** MCP servers — `fileKey` + `nodeId` | **working**, audited 2026-08-25 |
 | [`figma-mcp-desktop.md`](figma-mcp-desktop.md) | the **desktop** MCP server — selection-scoped, no parameters | **unwired**, audit blocked |
-| [`figma-surface.md`](figma-surface.md) | the **product surface** — Skills UI, plugins, connectors, driven by eyes and hands | audited 2026-08-03 |
+| the product-surface audit — **deliberately unpublished** | the **product surface** — Skills UI, plugins, connectors, driven by eyes and hands | audited 2026-08-03, **and it stays home**: `index.md` rules it *"cannot be published because it names an employer's systems"*. It was linked here as a live route until 2026-09-01 |
 
 **Read the identity table below before opening any of them**, because the three servers are told
 apart by their parameter shape and nothing else.
