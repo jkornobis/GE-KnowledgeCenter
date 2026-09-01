@@ -263,4 +263,33 @@ backward over it (13 additions re-examined, 2026-07-04). The only gap these rule
 de-listing a whole page. Prior art for the shape: library **weeding** (CREW), **RFC 2026**'s
 Historic status, and the ADR **Superseded** state.
 
+## Observed, not yet decided
+
+**A register of what a read found and no one has ruled on.** Opened 2026-09-01 by a pass that read all
+71 pages against their own `title` and `description`. An entry states what was seen and **what would
+decide it** — never a verdict. **A row leaves this table when it is decided**, by the same mechanic as
+any other row here: it is deleted, and the history keeps it. The pattern is `tools/register.md`'s
+*Seams with no lever yet* — the one surface that records where to look rather than what was found.
+
+**The class matters more than any single row.** Eight of thirteen are pages whose description hides
+what they hold, not pages claiming what they lack. **This library undersells.** And no check catches
+it: `check_okf.mjs` validates shape, `check_links.mjs` validates resolution, and **neither can
+validate a claim.**
+
+| Observed | What would decide it |
+|---|---|
+| `method/time-management.md` — title says *four methods*, body defines **two**; `scheduled` and `time-boxing` appear nowhere in the body | whether the skill defines four. A wording fix, or a missing section |
+| `chairs/user_researcher_references.md` — generic description over the library's only page on hallucinated-citation and retraction screening | a description naming its subject |
+| `principles/core-principles.md` — enumerates, reads complete, stops before ten further principles incl. the Declared Circle | whether the description should enumerate at all |
+| `protocols/presentation-checklist.md` — description names three endings; the body's own heading says **five**, and the two omitted are the irreversible-action and low-confidence gates | a corrected count |
+| `tools/figma-method.md` — description covers the first third; the token/slot mandate, the design-system DoD and a 19-rule Part 2 are unhinted | how much a description owes a merged page |
+| `mandalas/border-chairs-protocols.md` — described as one relation; the body rules *"this border has two relations, not one"* | which reading is current |
+| `chairs/engineer_references.md` — generic description over the Context7 ID table for the token toolchain | a description naming its subject |
+| `tools/claude-desktop.md` — a fifth Critical bullet (a repeating push-time `git worktree` failure and its fix) is unhinted | whether Critical bullets belong in a description |
+| `protocols/agile_facilitator_score.md` — the discourse protocol and the backpropagation loop are unhinted | as above |
+| `method/prior_art_bmad.md` — claims *three re-readings*; the body has three reads and two re-readings | whether the word is loose or exact |
+| `tools/tokens-studio.md` — header says `Re-audit: 15 days`, the body says *"this page's clock is 60 days"* | which clock is real |
+| `protocols/agile_facilitator_score.md` — Auditorium table says *all 12 musicians* over ten rows, and orders *ascending* where `protocols/triggers.md` says descending | which is canonical |
+| `method/common_score_matrix.md` — summary says *132 connections*; Act X is deliberately empty, so 120 are delivered | whether a declared-empty Act counts |
+
 Licensed CC BY-SA 4.0.
