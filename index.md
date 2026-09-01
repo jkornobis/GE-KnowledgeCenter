@@ -207,4 +207,33 @@ their own in their own `project/` tree. And it carries no Composer Key and nothi
 key material travels everywhere, it *is* everywhere. It carries what is true about an instrument
 **for whoever plays it**, never one estate's history.
 
+**Three rules on what enters it, and one on what leaves** (ruled 2026-09-01). They sit here rather
+than in a protocol page for the reason this index already gives: a rule fetched by the thing it
+constrains is not a constraint, and this is the only page read first. The reasoning behind them is
+deliberately not here.
+
+- **One question decides.** *Must a musician know this before calling it?* If the capability has to
+  be held in advance — to route to it, to choose between it and something else, or to refuse it —
+  it is a candidate for a page. If not, the call is its own verification: the thing is used freely
+  and never recorded. This is the oracle rule read backwards — where a report needs no attestation,
+  there is nothing to write down.
+- **No page without a hand on the instrument.** `tools/chair-levers.md` rules a file written before
+  its musician has handled the tool *"plausible documentation"*, and that *"an absent one is better
+  than a stubbed one."* That holds for every page here, not only under `tools/yang/`.
+- **One page per surface, never per capability.** A vendor, a platform or a client is one surface
+  however many features it ships. `tools/README.md` already says *"One page per deployment
+  surface"*; it binds the whole library.
+- **Removing a row retires a page.** This index is the only route in, so de-listing removes a page
+  from the library while the file and its history stay and `git revert` returns it. A stale flag may
+  therefore end in **retire** as well as refresh. A retirement names what leaves and why — never as
+  *cleanup*, never batched as tidying, because `principles/core-principles.md` records what that
+  word cost once. Deleting the **file** is untouched by this: still a Greenfield Reset boundary,
+  still the deletion protocol's five statements in full.
+
+**What was already possible, said here so it is not rediscovered as missing:**
+`protocols/chair-review.md`'s **Drop** verdict already removes merged content and already runs
+backward over it (13 additions re-examined, 2026-07-04). The only gap these rules close is
+de-listing a whole page. Prior art for the shape: library **weeding** (CREW), **RFC 2026**'s
+Historic status, and the ADR **Superseded** state.
+
 Licensed CC BY-SA 4.0.
