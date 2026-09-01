@@ -11,7 +11,7 @@ generated: { by: human:jkornobis, at: 2026-08-25T14:47:07+02:00 }
 
 Audited [YYYY-MM-DD] by User Researcher. [MCP-mediated / native / library / web UI]. [Connection state / auth notes.]
 
-Re-audit: [N] days — [measured, from an observed release interval / default, not measured]
+Re-audit: [N] days — [measured, from an observed release interval / default, not measured / not applicable — no release surface]
 
 **Chair:** [Chair] — [required lever, or `Serves:` only] (`register.md`, `roster.md`)
 **Lineage:** [the chair's leap this product realises, with its date] — `project/tools_lineage_full.md`
