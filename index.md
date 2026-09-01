@@ -104,14 +104,14 @@ and each page names the chairs it serves, so the link runs both ways.
 | `tools/opentelemetry.md` | Traces, metrics and logs over OTLP: why every language SDK outscores the neutral spec, three Collector bugs, and 1,405 questions that are all boundary questions rather than defects | Reliability Engineer, Software Architect, Agile Facilitator | 2026-08-25 |
 | `tools/zod.md` | Runtime validation at the trust boundary: 58 open issues and a genuine zero open bugs, unknown keys passing by default, and the largest Stack Overflow view counts in this library | Software Engineer, Software Architect, QA Engineer | 2026-08-25 |
 | `tools/playwright.md` | Cross-browser E2E on one API: what it verifies, 141 open issues and no bug label, and 3,506 Stack Overflow questions topped by something the API deliberately does not offer | QA Engineer, Accessibility Specialist, Design Engineer, UX Designer, Reliability Engineer | 2026-08-23 |
-| `tools/storybook.md` | The component workbench where a variant becomes a runnable story: 1,102 labelled bugs mostly carrying has-workaround, and friction that is all build pipeline rather than authoring | Design Engineer, Software Engineer, QA Engineer | 2026-08-23 |
+| `tools/storybook.md` | The component workbench where a variant becomes a runnable story: 1,102 of 1,571 open issues carrying the bug label, three sampled and all three marked has-workaround, and friction that is all build pipeline rather than authoring | Design Engineer, Software Engineer, QA Engineer | 2026-08-23 |
 | `tools/README.md` | What a tool page records and why: the vantage point a reading was taken from, its verification state, and the three layers that stop a toolset being hand-rolled | the whole room | 2026-08-16 |
 | `tools/_template.md` | The skeleton a Tool Audit fills: chair and lever, lineage, Context7 id resolved rather than recalled, defects and friction from two named routes with the friction's class, and limits marked tool or reasoning | User Researcher | 2026-08-16 |
 | `tools/cowork.md` | Cowork mode in Claude Desktop: skills and their references do load, and the defining constraint is that the pass runs unwatched — with the audit brief for everything still unverified | User Researcher | 2026-08-22 |
 | `tools/claude-desktop.md` | Claude Desktop on Windows: the 1024-character skill-description limit, .skill as a zip of a directory, a menu that is not the registry, and why a shell-side localhost is not the machine | the whole room | 2026-08-22 |
 | `tools/register.md` | The lever register: what leaps exist and which seats they serve, judged by six questions — lineage, posture, health, grip, why, licence — plus the seams no tool crosses yet | User Researcher, Product Owner, Software Architect | 2026-08-22 |
 | `tools/chair-levers.md` | The taijitu model behind every tool page: what a chair requires versus what an occupant carries, the bar a lever must clear to become a seat's canon, and four dated rulings on which chairs break without which lever | the whole room | 2026-08-26 |
-| `tools/context7.md` | Context7 MCP: on-demand version-pinned library docs — verified tool names, keyless runtime, free-tier limits, and the coverage boundary it does not cross | the whole room | 2026-08-16 |
+| `tools/context7.md` | Context7 MCP: on-demand version-pinned library docs — keyless runtime, free-tier limits, the coverage boundary it does not cross, and one tool name still marked UNVERIFIED against the live re-audit the page says it is owed | the whole room | 2026-08-16 |
 | `tools/pdf-reading.md` | Reading a PDF on a Claude Desktop machine: four routes tried, one worked — and why a viewer that displays a document returns nothing to the orchestra | the whole room | 2026-08-16 |
 
 ### Lever indexes — one per musician, keyed by intent
@@ -159,7 +159,7 @@ written before its musician has handled the instrument is plausible documentatio
 | `protocols/tool-discovery.md` | How the orchestra finds what it cannot reach: the six questions that judge a candidate — lineage, posture, health, grip, why, licence — who gathers, who weighs, who validates, and why the protocol never installs anything | jkornobis | 2026-08-28 |
 | `protocols/onboarding.md` | One move before anything else — ask the Composer to call their Key, because the orchestra can detect one and never open it — then, only if none is in play, two questions and no more | jkornobis | 2026-08-28 |
 | `protocols/triggers.md` | Full semantics and response formats for every typed trigger, the rule that a mode persists only by being echoed, and why breadth is a single-shot Auditorium rather than a sustained mode | jkornobis | 2026-08-28 |
-| `protocols/widget-templates.md` | The emoji and colour per musician that every attribution line is drawn from, plus the pivot-table and stat-tile markup reproduced verbatim so a widget is rebuilt rather than reinvented | jkornobis | 2026-08-28 |
+| `protocols/widget-templates.md` | The emoji and colour per musician that every attribution line is drawn from, plus four blocks of markup reproduced verbatim — Note Picker, Auditorium, stat tiles and the coverage matrix — so a widget is rebuilt rather than reinvented | jkornobis | 2026-08-28 |
 
 ## Method — craft that outlives a tool
 
@@ -185,7 +185,7 @@ It records what was true when it was written, which is the whole of its value.
 | Page | Covers | Published by | Published |
 |---|---|---|---|
 | `method/common_score_matrix.md` | How each of the 12 musicians connects to the shared knowledge fields, across all 11 Acts | jkornobis | 2026-08-22 |
-| `method/common_score_pivot.md` | Two relation types over the same twelve chairs: undirected shared concerns each anchored to an external standard, and directed requires-serves dependencies that a shared-concern reading is structurally blind to | jkornobis | 2026-08-26 |
+| `method/common_score_pivot.md` | Two relation types over the same twelve chairs: undirected shared concerns, sixteen of twenty-eight carrying an external standard and twelve counted aloud as blank, and directed requires-serves dependencies that a shared-concern reading cannot see | jkornobis | 2026-08-26 |
 | `method/prior_art_bmad.md` | A focused deep-dive on one comparable multi-agent framework, and three re-readings of it — including the one that found the comparison had been between a pipeline and a roster | jkornobis | 2026-08-22 |
 | `method/multiagent_canon_audit.md` | The orchestra mapped against the 2026 multi-agent state of the art | jkornobis | 2026-07-03 |
 | `method/orchestra_prior_art.md` | Where a persona-based orchestra sits against published multi-agent practice, plus the substrate facts on long-context rule decay and what the measurements actually support | jkornobis | 2026-08-16 |
