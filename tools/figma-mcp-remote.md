@@ -106,6 +106,22 @@ Reading note: high Trust ≠ high Bench — e.g. `glips/figma-context-mcp` (Trus
 - *Unused surface:* the three Widgets libraries (`developers_figma_widgets`, `figma_widget-docs`, `figma/widget-typings`) — Figma widgets aren't used here; plugins are.
 - *Redundant:* Figma REST API "files" site (`developers_figma_rest-api_files`, 2 snippets — covered by `rest-api-spec`); two duplicate Tokens Studio entries (`websites/tokens_studio`, `tokens-studio/figma-plugin` — kept the higher-bench plugin-docs one).
 
+## Limits — what a reaction is not (2026-09-01, corrected by the Composer)
+
+**Reactions carry navigation and component-state plumbing. They do not carry designed flow, and on a file under construction they are not supposed to.**
+
+Measured on a real file: of the 13 reactions on one terminal screen, ten were `ON_HOVER → CHANGE_TO` variant swaps on nav items and buttons, two were overlays, one was a frame-level `NAVIGATE`. **None of them was the flow the designer had in mind.** That flow was authored *spatially* — screens placed in reading order, `UC8_S1` through `UC8_S7` as siblings on the canvas — with no edge of any kind between them.
+
+**The Composer's rule, and it is the reason rather than the symptom: prototype linking is useful to show at the end, not while building.** Links are wired when there is something to demonstrate — a walkthrough, a handoff, a stakeholder review. Wiring them during construction is waste, because every re-order breaks them, and re-ordering is what construction *is*. Component states are the opposite: authored once and reused, which is why they are the reactions that exist mid-build.
+
+**Three consequences for an agent working in Figma.**
+
+1. **Resolving `destinationId` reads the demo layer, not the design.** A traversal that finds no flow edges has learned that the file is still being built — which is information, not a gap.
+2. **Absence of edges mid-construction is correct, and reporting it as a defect is the error.** The finding *"no prototype connection between these two screens"* is true and is a statement about phase, not about quality.
+3. **The flow is still readable, just not as edges** — sibling order on the canvas, and text continuity across frames. That is `tools/figma-method.md`'s *eyes first* and the reason it holds: the relationships that matter during construction are visual, and the eye is the instrument that reads them.
+
+**So the section above is a capability fact and this is its boundary.** Both are needed: an agent that believes there are no edges will miss what the tool can do, and an agent that reads edges as flow will misreport a file in progress.
+
 ## Second pass — 2026-08-25, through the *other* MCP route
 
 **The Composer asked for the Dev Mode MCP server to be enabled and the page re-audited. The switch is
@@ -143,6 +159,8 @@ limit stands exactly as written. **A new tool family that looks like it might li
 evidence that it did.**
 
 ### Prototype edges exist in the data model — introspected live, 2026-09-01
+
+> **Read this together with *Limits — what a reaction is not*, below.** Edges existing is a fact about the tool. It is **not** a licence to read flow by resolving them, and this section was written before that distinction was understood.
 
 **Recorded because a page of this library implied otherwise by silence: no Figma page here mentioned prototype edges at all, and an observation from another estate concluded that flow relationships *"have no edges in the graph"*.** Run through `use_figma` on the connector route, read-only, against a real production file:
 
