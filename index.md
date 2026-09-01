@@ -290,7 +290,7 @@ validate a claim.**
 | `protocols/agile_facilitator_score.md` — the discourse protocol and the backpropagation loop are unhinted | as above |
 | `method/prior_art_bmad.md` — claims *three re-readings*; the body has three reads and two re-readings | whether the word is loose or exact |
 | `tools/tokens-studio.md` — header says `Re-audit: 15 days`, the body says *"this page's clock is 60 days"* | which clock is real |
-| `protocols/agile_facilitator_score.md` — Auditorium table says *all 12 musicians* over ten rows, and orders *ascending* where `protocols/triggers.md` says descending | which is canonical |
+| `protocols/agile_facilitator_score.md` — Auditorium table says *all 12 musicians* over ten rows, and orders *ascending* where `protocols/triggers.md` says descending — **and the same two chairs, Design Engineer and Reliability Engineer, were missing from `method/orchestra_glossary.md`, corrected 2026-09-01. Two instances makes it a pattern, not a slip** | which is canonical, and whether other pages inherited the same ten-chair era |
 | `method/common_score_matrix.md` — summary says *132 connections*; Act X is deliberately empty, so 120 are delivered | whether a declared-empty Act counts |
 | Two more bare names are clickable **routes**, not provenance: `protocol_warrant_map.md` and `principle_chair_map.md`, linked from the mandala borders | whether they are deliberately unpublished like the Figma surface audit, or were meant to travel |
 | `check_links.mjs` cannot tell a **route** from a **provenance marker** — 111 bare names exist nowhere here, 108 are provenance and 3 were links a reader would follow | whether a markdown-linked bare name should fail the check while a cited one does not |
