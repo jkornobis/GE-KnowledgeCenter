@@ -240,16 +240,13 @@ assets — is reserved for the **`explore-design-systems` subagent**, and insert
 is the design agent's job. Plugin API is for **local, in-file** components only. *SKILL REF:
 `use-design-system`. This is the Delegation Brief with a named delegate.*
 
-**19. ⚠ No screenshots unless asked — AND THIS CONTRADICTS THE METHOD ABOVE.** This session's rule:
-`node.screenshot()` pops into the chat, so never use it for self-verification; trust return values and
-logs. **The older method above says the opposite** — *"screenshot immediately after each step"*, with
-the QA Engineer's gate requiring a post-mutation screenshot, evidenced by MVoT, VisCritic and GUI-Actor.
-**Left unresolved on purpose rather than harmonised.** The likely reading is that they are two
-surfaces: on the **Plugin API / MCP** surface the screenshot is the only external artifact available,
-while on the **Figma AI Agent** surface return values and logs are, and a screenshot costs the
-Composer's attention by appearing in his chat. If that reading is right, the rule is *"verify against
-the cheapest external artifact the surface actually offers"* — but that is a rewrite of a live gate,
-so it is **the Composer's call, not a merge decision.**
+**Rule 19 was killed by the Composer on 2026-09-02, and this page carries eighteen rules.** It read
+*"⚠ No screenshots unless asked"*, carried from one session on the Figma AI Agent surface, and it
+flagged itself as contradicting this page's own method. It reserved its own resolution for the
+Composer — *"a rewrite of a live gate… the Composer's call, not a merge decision"* — and he made it:
+**dead, permanently.** What leaves is that rule and the unresolved-contradiction note it carried; the
+loop and the QA Engineer's gate above stand unopposed, unchanged, and were never in doubt.
+`git revert` returns what left.
 
 ## IV — Reading list (from the same session)
 
