@@ -2,9 +2,9 @@
 type: Mandala Layer
 title: "The Movements Mandala — the layer with no page, and the border nobody drew"
 description: "Twelve cultural movements carrying 7 internal edges and 0 crossings to anything else. The measurement, the reason, the Composer's claim that chairs ARE movements, and the one border that is already earned"
-status: proposal
+status: draft
 serves_all: true
-generated: { by: GrandEnsemble V4 · Agile Watcher instance, at: 2026-09-02 }
+generated: { by: GrandEnsemble V4 · Agile Watcher instance, at: 2026-09-02T20:46:37+02:00 }
 ---
 
 # The Movements Mandala — the layer with no page, and the border nobody drew
