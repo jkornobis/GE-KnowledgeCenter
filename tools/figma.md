@@ -9,6 +9,13 @@ generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
 
 # Tool: Figma — router
 
+Re-audit: 30 days — measured; inherits the Figma clock, the same basis and the same wording
+`tools/figma-method.md` already carries. **Added 2026-09-02, and the basis is a proposal rather than a
+reading:** `tools/README.md` already asserts *"30 days measured for `figma.md`"*, so this line makes the
+page state what the README states about it instead of inventing a cadence. **This page still carries no
+`Audited` line**, because it argues below that it cannot honestly carry one — that conflict with
+`README.md` is filed in `index.md` under `Observed, not yet decided` rather than resolved here.
+
 **Split into three pages on 2026-08-25, by the Composer's decision.** This file was one page about
 one surface, and it had grown to 485 lines covering three things with different capabilities,
 different failure modes and — decisively — **different registration**. It could never carry an honest
