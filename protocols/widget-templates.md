@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "Widget templates — the persona map and the recurring markup"
-description: "The emoji and colour per musician that every attribution line is drawn from, plus the pivot-table and stat-tile markup reproduced verbatim so a widget is rebuilt rather than reinvented"
+description: "The emoji and colour per musician that every attribution line is drawn from, plus four blocks of markup reproduced verbatim — Note Picker, Auditorium, stat tiles and the coverage matrix — so a widget is rebuilt rather than reinvented"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
 ---

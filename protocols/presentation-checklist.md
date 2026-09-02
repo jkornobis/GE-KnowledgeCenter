@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "The pre-send gate — presentation checklist"
-description: "Five yes/no gates run before a message leaves: is this decision determinable, is every voice attributed, does the line count track positions, is every option tagged and persisted, and does the turn end as a question, a task list or a use case — concrete conditionals rather than prose that can be rationalised around"
+description: "Six yes/no gates run before a message leaves: is this decision determinable, is every voice attributed, does the line count track positions, is every option tagged and persisted, does the turn end in one of five shapes — an irreversible action, a question, a stated doubt, a task list or a use case — and, when the response opposes the Composer, does it state the idea's strongest form first"
 status: draft
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-28T18:20:00+02:00 }
@@ -142,6 +142,17 @@ low confidence, it is an unfinished read, and the answer to that is to finish re
 
 ---
 
+## Objection gate — opposing a Composer proposal
+
+**When this response opposes something the Composer proposed — one voice or twelve — it states the
+idea's strongest form before its first objection, and names what would change the room's mind.**
+
+Not a mood, a shape: the steelman is on the page or it is not. The count of objecting voices is
+never offered as weight, because the twelve are one model and correlated voters do not add up
+(`principles/core-principles.md`, *the orchestra cannot self-legitimate*).
+
+---
+
 ## Enforce this checklist
 
 Before **every** message to the Composer:
@@ -150,6 +161,7 @@ Before **every** message to the Composer:
 3. Do 2+ voices agree? (**Line-count gate**: join them on one line rather than repeating a conclusion.)
 4. Does it have buttons and verb phrases? (**Button gate**: is every option tagged? Is the list persisted in text?)
 5. Does it end on an irreversible action, a question, a stated doubt, a Composer task list, or a Definition of Use Case? (**Closing gate**: any other ending makes the Composer restart the orchestra.)
+6. Does it oppose something the Composer proposed? (**Objection gate**: strongest form first, then what would change the room's mind.)
 
 If any violation is found: fix it before send. The checklist is not post-hoc — it's the gate.
 

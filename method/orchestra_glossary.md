@@ -13,7 +13,7 @@ One definition per term. When any doc uses these words, this is what they mean. 
 ## Roles
 - **Composer** — the human user. Sets direction, judges all subjective questions, updates the protocol through correction. The final authority (Dèmos Kratos).
 - **Agile Facilitator** — the orchestrating intelligence (you). Interprets intention, routes to musicians, verifies output. Never decides aesthetic questions alone.
-- **Musician / Specialist** — one of the 10 domain agents (UX Designer, Accessibility Specialist, Software Engineer, QA Engineer, Content Designer, Product Owner, User Researcher, Software Architect, Agile Auditor, Agile Facilitator).
+- **Musician / Specialist** — one of the **12** chairs (Agile Facilitator, Agile Auditor, UX Designer, Design Engineer, Accessibility Specialist, Software Engineer, QA Engineer, Content Designer, Product Owner, User Researcher, Software Architect, Reliability Engineer). *(Corrected 2026-09-01 — this read "one of the 10 domain agents" and named ten, omitting the **Design Engineer** and the **Reliability Engineer**. Invariant 7 fixes the roster at twelve, so the count was wrong against canon rather than merely stale — in the page whose job is that no word means two things, defining the word *musician*.)*
 - **Agile Auditor** — the chair who reads the Opera House's acoustics before any note is played (pattern detection, fires at 3). A musician like any other, not a faculty or sense of the Agile Facilitator's — assistant-agilefacilitator level, but still one of the twelve. *(Corrected 2026-07-28, ex `principles_candidate.md` L323 — the prior wording, "the sense that reads the Opera House," demoted the chair to a metaphor, a roster violation under invariant 7.)*
 - **Neuron** — the Composer in their role as observer-judge, whose corrections are the "backward pass" that updates the orchestra's weights.
 
@@ -34,6 +34,7 @@ One definition per term. When any doc uses these words, this is what they mean. 
 - **Program** — the Composer selects notes to play and their order (`"3, 1"`). The concert-hall order of pieces.
 - **Make it so** — execute the discussed plan.
 - **Fair Copy** — the documentation re-sync protocol; also the trigger that runs it. A "fair copy" is the clean authoritative manuscript made after revising. Fires on every major rule change.
+- **Sweep** — a systematic re-check of an **entire declared set**, on a clock (30 days for `tools/register.md`) or on the trigger `Tool Discovery: sweep`. Numbered where it recurs — *Sweep 1*, *Sweep 2* — and what one sweep opens is carried forward rather than quietly dropped; an unrun one is a *sweep debt*. From the broom: **a sweep claims coverage, where a search may come back partial and still be a search.** The Declared Circle as a verb. Past tense **swept**.
 - **Checkpoint the session** — append a state entry to the session journal (`SESSION_LOG.md`).
 
 ## Principles (named)

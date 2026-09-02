@@ -106,6 +106,34 @@ Reading note: high Trust ≠ high Bench — e.g. `glips/figma-context-mcp` (Trus
 - *Unused surface:* the three Widgets libraries (`developers_figma_widgets`, `figma_widget-docs`, `figma/widget-typings`) — Figma widgets aren't used here; plugins are.
 - *Redundant:* Figma REST API "files" site (`developers_figma_rest-api_files`, 2 snippets — covered by `rest-api-spec`); two duplicate Tokens Studio entries (`websites/tokens_studio`, `tokens-studio/figma-plugin` — kept the higher-bench plugin-docs one).
 
+### Figma serves agent skills over this route — verified by use, 2026-09-01
+
+**Config 2026 (2026-06-24) shipped reusable slash-command skills for the Figma Agent, and no page in this library had noticed.** It is the one Config capability that was absent everywhere here, and it is the one that matters most to an estate which is itself a skill.
+
+**What is verified, by having done it rather than read it:** the connector's own server instructions declare `/figma-use` **MANDATORY before every `use_figma` call**, and serve skills as MCP resources at `skill://figma/<name>/SKILL.md` when no plugin is installed. Six are named on the route used here — `figma-use`, `figma-generate-design`, `figma-generate-library`, `figma-code-connect`, `figma-use-figjam`, `figma-create-new-file`. This session loaded `figma-use` before its first `use_figma` call and every call after.
+
+**Three things follow, and the third is the one worth arguing about.**
+
+1. **A tool that ships its own skills changes what a Tool Audit is for.** `protocols/tool-audit.md` assumes the orchestra discovers a surface's capabilities. Here the vendor supplies the operating instructions, versioned with the tool, and the audit's job shifts from *discovering* to *deciding whether to trust what shipped*.
+2. **The skill is a prerequisite, not a convenience** — the server states that skipping it *"causes common, hard-to-debug failures"*. That is a capability fact about the route and belongs on this page, not in method.
+3. **This is a vendor writing down the convention for its own instrument** — the thing `tools/chair-levers.md` calls a lever index and this library builds by hand, per chair, from a musician's own hands. **Whether a vendor-supplied skill can substitute for one is unresolved and is not decided here.** It arrives with the vendor's interests in it, and it has not been through a Chair Review.
+
+## Limits — what a reaction is not (2026-09-01, corrected by the Composer)
+
+**Reactions carry navigation and component-state plumbing. They do not carry designed flow, and on a file under construction they are not supposed to.**
+
+Measured on a real file: of the 13 reactions on one terminal screen, ten were `ON_HOVER → CHANGE_TO` variant swaps on nav items and buttons, two were overlays, one was a frame-level `NAVIGATE`. **None of them was the flow the designer had in mind.** That flow was authored *spatially* — screens placed in reading order, `UC8_S1` through `UC8_S7` as siblings on the canvas — with no edge of any kind between them.
+
+**The Composer's rule, and it is the reason rather than the symptom: prototype linking is useful to show at the end, not while building.** Links are wired when there is something to demonstrate — a walkthrough, a handoff, a stakeholder review. Wiring them during construction is waste, because every re-order breaks them, and re-ordering is what construction *is*. Component states are the opposite: authored once and reused, which is why they are the reactions that exist mid-build.
+
+**Three consequences for an agent working in Figma.**
+
+1. **Resolving `destinationId` reads the demo layer, not the design.** A traversal that finds no flow edges has learned that the file is still being built — which is information, not a gap.
+2. **Absence of edges mid-construction is correct, and reporting it as a defect is the error.** The finding *"no prototype connection between these two screens"* is true and is a statement about phase, not about quality.
+3. **The flow is still readable, just not as edges** — sibling order on the canvas, and text continuity across frames. That is `tools/figma-method.md`'s *eyes first* and the reason it holds: the relationships that matter during construction are visual, and the eye is the instrument that reads them.
+
+**So the section above is a capability fact and this is its boundary.** Both are needed: an agent that believes there are no edges will miss what the tool can do, and an agent that reads edges as flow will misreport a file in progress.
+
 ## Second pass — 2026-08-25, through the *other* MCP route
 
 **The Composer asked for the Dev Mode MCP server to be enabled and the page re-audited. The switch is
@@ -141,6 +169,26 @@ cannot invoke an existing plugin — custom or Community — by name or ID."* We
 Weave workflows** (`app.weavy.ai`), a different product; they are not Figma Community plugins. The
 limit stands exactly as written. **A new tool family that looks like it might lift a limit is not
 evidence that it did.**
+
+### Prototype edges exist in the data model — introspected live, 2026-09-01
+
+> **Read this together with *Limits — what a reaction is not*, below.** Edges existing is a fact about the tool. It is **not** a licence to read flow by resolving them, and this section was written before that distinction was understood.
+
+**Recorded because a page of this library implied otherwise by silence: no Figma page here mentioned prototype edges at all, and an observation from another estate concluded that flow relationships *"have no edges in the graph"*.** Run through `use_figma` on the connector route, read-only, against a real production file:
+
+| Reading | Result |
+|---|---|
+| `reactions` on a node | **present and populated** — `1,236` nodes carry non-empty reactions on one page of 24,965 |
+| A sampled edge | `trigger: ON_CLICK` → `actions: [{ type: 'NODE', destinationId: '2910:102455', navigation: 'NAVIGATE' }]` — a real directed edge with a destination |
+| `setReactionsAsync` | **present** — the edges are writable, not merely readable |
+| `PageNode.flowStartingPoints` | **present and named**: ten entries, e.g. *"Flow 1 — Onboarding & First Chat"*, *"UC-3 — Summarize Request"* |
+| Same file, a second page | `773` of `32,730` nodes with reactions |
+
+**The scope of the claim, declared.** This establishes that the flow graph is in the data model and reachable in one call. **It does not establish that any particular pair of frames is linked** — flow starting points name entries, not transitions, and only some Use Cases on that page had one. A specific *"screen A does not link to screen B"* finding can still be true, and is a statement about the file rather than about Figma.
+
+**Route matters, and it is the whole lesson.** The **Plugin API** carries the complete reaction — trigger, actions, destination, writable. The **REST API** exposes only `transitionNodeID`, `transitionDuration`, `transitionEasing`, **and only the first reaction per node** (Figma developer docs, read 2026-09-01). The **node tree alone** carries nothing. *"The number was about the layer, not the subject"* (`tools/README.md`) — a reader who traverses children and concludes there are no edges has measured the traversal.
+
+**One claim from that estate corroborated rather than contested**, since the same scan measured it: an `INSTANCE` with zero children satisfies a tree query and renders nothing. On that page, **1,530 of 6,939 instances have zero children (22%) and 881 are hidden (12.7%)**. `node.type === 'INSTANCE'` is not proof of functional presence.
 
 ### Verified live through the connector route, 2026-08-25
 
