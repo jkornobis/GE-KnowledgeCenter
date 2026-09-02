@@ -138,3 +138,38 @@ does not survive this session, and the Composer Key still states the reverse.** 
 future session will load the Key, read *"I open a PR and stop"*, and be correct to
 do so. Everything above was done under an authority that no longer exists. If the
 merge chair here is meant to persist, that is the thing to record.
+
+---
+
+## Session 2026-09-03 — the merge chair, recorded
+
+*A short entry, written minutes after the one above closed, because that entry
+ended on something that is no longer true. Per this file's rule, a correction is
+its own entry and the earlier one is left standing.*
+
+**Played.** The entry above closes by saying the merge authority this session
+worked under *"does not survive this session"*. The Composer then ruled that it
+should. **The rule is now standing rather than session-level: a session working in
+`GE-KnowledgeCenter` holds the Library GrandEnsemble chair and merges here; every
+repository that is not the one the session is working in stays PR-and-issue only.**
+
+**The correction that made it durable was in the shape of the rule, not its scope.**
+Both earlier versions failed the same way — they named a chair-holder who was
+somewhere else. *"I open PRs; I never merge"* named a holder that did not exist at
+all; *"in `GE-KnowledgeCenter` I open a PR and stop, and the Library GrandEnsemble
+merges"* named one that was always going to be whichever session was already here.
+**The chair is fixed by the repository the session is in.** That is what a future
+session needs, and it is the version that was recorded.
+
+**Carried with it: the gate.** A merge right without a gate is what broke twice
+tonight, so the two rules earned above travel with the chair rather than living
+only in this log — `check_okf.mjs` and `check_links.mjs` are run and *read* before
+a merge, since neither exits non-zero; and a merge that adds a page adds its
+`index.md` row in the same breath.
+
+**Open on the stand, unchanged.** #7, #8, #9, and `index.md`'s *Observed, not yet
+decided* register.
+
+**Pending the Composer's word, unchanged.** Does the `project/` tree travel? Tiers
+for the two missing chair reference files. The eleven movement→chair placements.
+The `live: false` flag on `principles:artasfeltscience`.
