@@ -244,3 +244,28 @@ the library cannot finish them by its own method, because citation closes a
 period and these have not closed. The pairing is not a convenience — a corpus
 that cites and a watch that observes are the two halves the subject requires.
 The Composer named that arrangement the same day: **the GrandEnsemble Duet**.
+
+---
+
+## A footnote the corpus supplies about its own method
+
+The Composer stated the method twice on 2026-09-02 — *"Feeling the Science,
+produce the thesis then experiment"*, and *"Art is Science of Feeling, but
+feeling the pace of Science is Science."*
+
+**The corpus already holds that as a principle.** `principles:artasfeltscience`
+— *"Art as Felt Science"*, cluster **Balance**, seed **"Unmeasurable metric"**,
+sourced to Daft Punk's *Touch*, *Electroma* and *Music Sounds Better With You*.
+It `grounds` the Accessibility Specialist.
+
+Two observations, offered without a conclusion:
+
+- It is marked **`live: false`** — the principle that licenses feeling as the
+  origin of a thesis is itself recorded as not live.
+- Its `doc` points at `project/principles_candidate.md#artasfeltscience`, and
+  there is **no `project/` directory in this repository**. The principle's own
+  document is not in the mirror, so a reader arriving from the graph cannot get
+  to it.
+
+Whether either is deliberate is not this page's to say. Both are the kind of
+thing the corpus records rather than leaves to be noticed.
