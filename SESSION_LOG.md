@@ -63,6 +63,14 @@ issues at once: **does the `project/` tree travel, or do its references become
 non-links with their provenance stated?** — #5, #9, and `index.md:297`, which
 already logs the question and has not been answered.
 
+**Two of those issues are now closed, and the register is why.** #5 and #6 were
+closed by the Composer's ruling that `index.md`'s *Observed, not yet decided* table
+is the surface that owns an open question here — it already tracked both, and in
+#6's case tracked it better. The 73-vs-72 measurement was carried into that register
+first (`3f0c8fa`) so the close would lose nothing. **The lesson for a session that
+finds something here: read the register before opening an issue.** Open on the
+stand, then, is #7, #8, #9 and the register itself.
+
 **Corrections that became protocol.** One, and it was earned the hard way. **This
 repository carries its own gates — `check_okf.mjs` and `check_links.mjs` — and the
 review of #4 did not run them.** The review verified every factual claim in the page
@@ -77,6 +85,19 @@ in `c6ea741` and the checkers pass again.
 **The rule, for any session that merges here: run `node check_okf.mjs` and
 `node check_links.mjs` before the merge, not after.** Neither exits non-zero on
 failure, so nothing will stop a bad merge on your behalf — they must be read.
+
+**A second, and it happened twice in the same session, which makes it a pattern
+rather than a slip: I wrote commit hashes that did not exist**, before the commits
+that would carry them — `f9a0a26` into this log, corrected by `b052c33`, and
+`8b3b1ec` into the closing comment on #5, corrected in place. A hash cannot be
+predicted, only read back. **The rule: write the artifact first, then quote it from
+`git log`. Never the reverse, and never a hash that has not been read back.**
+
+**A third, from the same family as the first: merging is not only about the page.**
+`mandalas/movements-layer.md` was merged and never added to `index.md`, which this
+library states is the only route in — so the merge landed a document no traveler
+could reach. Listed in `4096b53`. **A merge that adds a page adds an index row in
+the same breath.**
 
 A second correction was *not* recorded, and that absence is worth
 carrying too. This session ran under an inverted delivery rule — *this instance reviews
