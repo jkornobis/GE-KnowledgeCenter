@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: Context7"
-description: "Context7 MCP: on-demand version-pinned library docs — verified tool names, keyless runtime, free-tier limits, and the coverage boundary it does not cross"
+description: "Context7 MCP: on-demand version-pinned library docs — keyless runtime, free-tier limits, the coverage boundary it does not cross, and one tool name still marked UNVERIFIED against the live re-audit the page says it is owed"
 status: draft
 serves: [Design Engineer, Software Engineer, Product Owner, User Researcher]
 serves_all: true

@@ -1,12 +1,12 @@
 ---
 type: Method
-title: "Evidence — sourced research and the substrate facts"
-description: "What is actually known about how this model behaves — long-context rule decay, the cost of a real subagent against a persona, and when independence has to be bought rather than simulated"
+title: "Evidence — the executable core"
+description: "The executable core and only that: when a real subagent is worth 3–15× a persona and the three fit cases that justify one, the model facts that change what you type, and a routing table to the research this page deliberately does not carry"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
 ---
 
-# Evidence — sourced research and the substrate facts
+# Evidence — the executable core
 
 **This file carries only the executable core. The research behind it lives in the repo**, because the
 skill executes and the repo remembers (`brain/brain_principles.md`). Every claim removed from here on

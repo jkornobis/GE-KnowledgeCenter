@@ -15,7 +15,20 @@ sibling names of the estate that produced them — `roster.md`, `patterns.md`, `
 read, in that estate's own coordinates, and inventing a correspondence would assert a derivation
 nobody made. **Only the paths listed in the tables below are fetchable.** If a reference has no
 directory, it is history; if it has one and is not in a table below, report it rather than fetching
-it. `check_links.mjs` in this bundle holds the line.
+it. `check_links.mjs` in this bundle holds that line for `.md` and `.json`
+references only. **It does not read script names at all** — `scripts/` is declared provenance and `.mjs` is
+outside its pattern — so the script names cited across these pages are provenance by construction, never links
+it has checked and passed. **And two bare names are exceptions to the history rule, because they are runnable
+files in this bundle rather than another estate's coordinates: `check_okf.mjs` and `check_links.mjs`.**
+
+**And a provenance path may have a living sibling here.** The extraction remapped the files without remapping the
+cross-references, so **18 of the 48 provenance citations in these pages name a document this library also holds
+under a different path** — `brain/orchestra_prior_art.md` is `method/orchestra_prior_art.md`,
+`agents/tools/register.md` is `tools/register.md`, `skill/grand-ensemble/references/triggers.md` is
+`protocols/triggers.md`, and fifteen more. **Before reporting a provenance path as unfetchable, match its basename
+against the tables below.** The citation is still not rewritten: the two are the same subject in two estates'
+coordinates, not proven to be the same text, and inventing that correspondence is what this section forbids.
+`check_links.mjs` cannot catch this — `brain/`, `agents/` and `skill/` are in its skip list, by design.
 
 **Two estate pages are deliberately absent** and will stay so: the occupancy roster, whose portable
 half already travels as `tools/chair-levers.md` while the rest is one estate's own seating; and the
@@ -81,6 +94,7 @@ and each page names the chairs it serves, so the link runs both ways.
 | `tools/figma-mcp-remote.md` | The fileKey-scoped Figma MCP servers: 33 tools against the 27 once recorded, the bulk Code Connect planner, and what a live re-audit verified on 2026-08-25 | UX Designer, Design Engineer, Content Designer, Accessibility Specialist | 2026-08-25 |
 | `tools/figma-mcp-desktop.md` | The selection-scoped Figma MCP server: seven tools that take no parameters at all, why that shape is the tell, and the per-agent registration that leaves it unwired | UX Designer, Design Engineer | 2026-08-25 |
 | `tools/i18next.md` | The FR/EN parity engine: two open issues against 1,472 Stack Overflow questions, and three of the top six are one problem — markup inside a translated string | Content Designer, Design Engineer | 2026-08-25 |
+| `tools/jira.md` | Jira at logic level rather than project level: the fetch route that works and the two that fail, the primitives a work item and a board actually are, and the craft slots left deliberately empty until an orchestra has experimented with a real instance | Product Owner, Software Architect, the whole room | 2026-09-01 |
 | `tools/lineage.md` | Twelve chairs, each with the origin it started from, the leap that changed it, the current best-in-class, and the years between the two | the whole room | 2026-08-16 |
 | `tools/style-dictionary.md` | The transform step of the token chain, and the direct descendant of the design-tokens leap: an eight-year-old architectural issue, and a mirror that scores 33 against the repo's 80 | Design Engineer, UX Designer, Software Engineer, Software Architect | 2026-08-26 |
 | `tools/tokens-studio.md` | The authoring end of the token chain: exports that silently lose resolution, no group-level description, and a tag with zero questions whose friction is filed under the tool downstream | Design Engineer, UX Designer | 2026-08-26 |
@@ -91,14 +105,15 @@ and each page names the chairs it serves, so the link runs both ways.
 | `tools/opentelemetry.md` | Traces, metrics and logs over OTLP: why every language SDK outscores the neutral spec, three Collector bugs, and 1,405 questions that are all boundary questions rather than defects | Reliability Engineer, Software Architect, Agile Facilitator | 2026-08-25 |
 | `tools/zod.md` | Runtime validation at the trust boundary: 58 open issues and a genuine zero open bugs, unknown keys passing by default, and the largest Stack Overflow view counts in this library | Software Engineer, Software Architect, QA Engineer | 2026-08-25 |
 | `tools/playwright.md` | Cross-browser E2E on one API: what it verifies, 141 open issues and no bug label, and 3,506 Stack Overflow questions topped by something the API deliberately does not offer | QA Engineer, Accessibility Specialist, Design Engineer, UX Designer, Reliability Engineer | 2026-08-23 |
-| `tools/storybook.md` | The component workbench where a variant becomes a runnable story: 1,102 labelled bugs mostly carrying has-workaround, and friction that is all build pipeline rather than authoring | Design Engineer, Software Engineer, QA Engineer | 2026-08-23 |
+| `tools/storybook.md` | The component workbench where a variant becomes a runnable story: 1,102 of 1,571 open issues carrying the bug label, three sampled and all three marked has-workaround, and friction that is all build pipeline rather than authoring | Design Engineer, Software Engineer, QA Engineer | 2026-08-23 |
+| `tools/git.md` | The substrate this library runs on rather than a tool it uses: the exit mechanic that is a deleted index row plus a revert, the branch as the unit of the delivery rule, a defect route that is not GitHub, and 153,621 questions whose top eight are mostly about undoing | Software Engineer, Software Architect, the whole room | 2026-09-01 |
 | `tools/README.md` | What a tool page records and why: the vantage point a reading was taken from, its verification state, and the three layers that stop a toolset being hand-rolled | the whole room | 2026-08-16 |
 | `tools/_template.md` | The skeleton a Tool Audit fills: chair and lever, lineage, Context7 id resolved rather than recalled, defects and friction from two named routes with the friction's class, and limits marked tool or reasoning | User Researcher | 2026-08-16 |
 | `tools/cowork.md` | Cowork mode in Claude Desktop: skills and their references do load, and the defining constraint is that the pass runs unwatched — with the audit brief for everything still unverified | User Researcher | 2026-08-22 |
 | `tools/claude-desktop.md` | Claude Desktop on Windows: the 1024-character skill-description limit, .skill as a zip of a directory, a menu that is not the registry, and why a shell-side localhost is not the machine | the whole room | 2026-08-22 |
 | `tools/register.md` | The lever register: what leaps exist and which seats they serve, judged by six questions — lineage, posture, health, grip, why, licence — plus the seams no tool crosses yet | User Researcher, Product Owner, Software Architect | 2026-08-22 |
 | `tools/chair-levers.md` | The taijitu model behind every tool page: what a chair requires versus what an occupant carries, the bar a lever must clear to become a seat's canon, and four dated rulings on which chairs break without which lever | the whole room | 2026-08-26 |
-| `tools/context7.md` | Context7 MCP: on-demand version-pinned library docs — verified tool names, keyless runtime, free-tier limits, and the coverage boundary it does not cross | the whole room | 2026-08-16 |
+| `tools/context7.md` | Context7 MCP: on-demand version-pinned library docs — keyless runtime, free-tier limits, the coverage boundary it does not cross, and one tool name still marked UNVERIFIED against the live re-audit the page says it is owed | the whole room | 2026-08-16 |
 | `tools/pdf-reading.md` | Reading a PDF on a Claude Desktop machine: four routes tried, one worked — and why a viewer that displays a document returns nothing to the orchestra | the whole room | 2026-08-16 |
 
 ### Lever indexes — one per musician, keyed by intent
@@ -135,7 +150,7 @@ written before its musician has handled the instrument is plausible documentatio
 |---|---|---|---|
 | `protocols/orchestra-protocols.md` | The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, Spotlighting — plus the spawn gate, the risk-tier re-ask, Lots, the runtime spot-check and the roadmap cadence, added 2026-08-26, and Chamber, Echo and Antiphony, added 2026-08-27, and Execution discipline, added 2026-08-28 | the whole room | 2026-08-28 |
 | `protocols/presentation.md` | How a result reaches the person who asked: Rule 0 on whether a choice exists at all, the surface-to-decision-shape mapping, the content-type routing table with a markdown fallback for every widget, and the per-Composer override mechanism that keeps the shared contract shared | jkornobis | 2026-08-27 |
-| `protocols/presentation-checklist.md` | The pre-send gate — five yes/no conditionals checked before a message leaves, the fifth being the closing gate that says a turn ends on an irreversible action, a question, a stated doubt, a task list or a use case, and never as a handoff | jkornobis | 2026-08-27 |
+| `protocols/presentation-checklist.md` | Six yes/no gates run before a message leaves: is this decision determinable, is every voice attributed, does the line count track positions, is every option tagged and persisted, does the turn end in one of five shapes — an irreversible action, a question, a stated doubt, a task list or a use case — and, when the response opposes the Composer, does it state the idea's strongest form first | jkornobis | 2026-08-27 |
 | `protocols/pane-guard.md` | Four registers for a surface the orchestra can both read and act on: what the Browser pane is and where it does not exist, the same four registers mapped onto the terminal, green through black, Spotlighting turned from a reading discipline into an actuation one, and the measurement proving no property of the instrument stands between a read and a commit | jkornobis | 2026-08-29 |
 | `protocols/agile_facilitator_score.md` | How the router reads intention rather than keywords: the interpreter model, the six response modes, the chat triggers, and conversation versus execution | jkornobis | 2026-08-17 |
 | `protocols/orchestra_test_harness.md` | Testing a multi-agent system's own behaviour: BDD scenarios, the invariant and capability eval sets, the standard grader prompt, and why a grader must be constant | jkornobis | 2026-08-17 |
@@ -146,25 +161,39 @@ written before its musician has handled the instrument is plausible documentatio
 | `protocols/tool-discovery.md` | How the orchestra finds what it cannot reach: the six questions that judge a candidate — lineage, posture, health, grip, why, licence — who gathers, who weighs, who validates, and why the protocol never installs anything | jkornobis | 2026-08-28 |
 | `protocols/onboarding.md` | One move before anything else — ask the Composer to call their Key, because the orchestra can detect one and never open it — then, only if none is in play, two questions and no more | jkornobis | 2026-08-28 |
 | `protocols/triggers.md` | Full semantics and response formats for every typed trigger, the rule that a mode persists only by being echoed, and why breadth is a single-shot Auditorium rather than a sustained mode | jkornobis | 2026-08-28 |
-| `protocols/widget-templates.md` | The emoji and colour per musician that every attribution line is drawn from, plus the pivot-table and stat-tile markup reproduced verbatim so a widget is rebuilt rather than reinvented | jkornobis | 2026-08-28 |
+| `protocols/widget-templates.md` | The emoji and colour per musician that every attribution line is drawn from, plus four blocks of markup reproduced verbatim — Note Picker, Auditorium, stat tiles and the coverage matrix — so a widget is rebuilt rather than reinvented | jkornobis | 2026-08-28 |
 
 ## Method — craft that outlives a tool
 
 | Page | Covers | Published by | Published |
 |---|---|---|---|
 | `method/agile_auditor_catalog.md` | The master list of anti-patterns the Agile Auditor watches for, consolidated from criteria scattered across the score | jkornobis | 2026-08-16 |
-| `method/common_score_matrix.md` | How each of the 12 musicians connects to the shared knowledge fields, across all 11 Acts | jkornobis | 2026-08-22 |
-| `method/common_score_pivot.md` | Two relation types over the same twelve chairs: undirected shared concerns each anchored to an external standard, and directed requires-serves dependencies that a shared-concern reading is structurally blind to | jkornobis | 2026-08-26 |
-| `method/prior_art_bmad.md` | A focused deep-dive on one comparable multi-agent framework, and three re-readings of it — including the one that found the comparison had been between a pipeline and a roster | jkornobis | 2026-08-22 |
-| `method/multiagent_canon_audit.md` | The orchestra mapped against the 2026 multi-agent state of the art | jkornobis | 2026-07-03 |
 | `method/orchestra_glossary.md` | One definition per term for the whole system: roles, artifacts, modes, triggers and named principles, so no word means two things | jkornobis | 2026-08-22 |
-| `method/orchestra_prior_art.md` | Where a persona-based orchestra sits against published multi-agent practice, plus the substrate facts on long-context rule decay and what the measurements actually support | jkornobis | 2026-08-16 |
-| `method/evidence.md` | What is actually known about how this model behaves — long-context rule decay, the cost of a real subagent against a persona, and when independence has to be bought rather than simulated | jkornobis | 2026-08-28 |
+| `method/evidence.md` | The executable core and only that: when a real subagent is worth 3–15× a persona and the three fit cases that justify one, the model facts that change what you type, and a routing table to the research this page deliberately does not carry | jkornobis | 2026-08-28 |
 | `method/capacity.md` | How a session reports its own usage against a budget, why the reading is always fresh rather than recalled, and what a live-state snapshot carries into the next session | jkornobis | 2026-08-28 |
 | `method/time-management.md` | Time as a presentation option rather than a rule: none, ambient, scheduled and time-boxing, each keyed off a timezone and a set of working hours the Composer declares | jkornobis | 2026-08-28 |
+
+## Recorded — provenance rather than working knowledge
+
+**Ruled 2026-09-01.** These pages are read *after* a decision rather than held before one: removing
+any of them changes what no musician does. They are this library doing its second job — *the skill
+executes; the repo remembers* (`principles/core-principles.md`) — applied one level down, to the
+repository's own contents rather than to the skill.
+
+They stay fetchable and stay cited. **What changes is the clock: the retirement rule at the foot of
+this index governs the served half of the library, not this section.** Provenance does not go stale.
+It records what was true when it was written, which is the whole of its value.
+
+| Page | Covers | Published by | Published |
+|---|---|---|---|
+| `method/common_score_matrix.md` | How each of the 12 musicians connects to the shared knowledge fields, across all 11 Acts | jkornobis | 2026-08-22 |
+| `method/common_score_pivot.md` | Two relation types over the same twelve chairs: undirected shared concerns, sixteen of twenty-eight carrying an external standard and twelve counted aloud as blank, and directed requires-serves dependencies that a shared-concern reading cannot see | jkornobis | 2026-08-26 |
+| `method/prior_art_bmad.md` | A focused deep-dive on one comparable multi-agent framework, and three re-readings of it — including the one that found the comparison had been between a pipeline and a roster | jkornobis | 2026-08-22 |
+| `method/multiagent_canon_audit.md` | The orchestra mapped against the 2026 multi-agent state of the art | jkornobis | 2026-07-03 |
+| `method/orchestra_prior_art.md` | Where a persona-based orchestra sits against published multi-agent practice, plus the substrate facts on long-context rule decay and what the measurements actually support | jkornobis | 2026-08-16 |
 | `method/web-lineage.md` | Six eras of the web, the lesson each one left, the dream that keeps returning, and the loop underneath all of them — the essay, distinct from the per-chair tool lineage index | jkornobis | 2026-08-28 |
 
-## Mandalas — the three layers and the borders between them
+### Mandalas — the three layers and the borders between them
 
 **The model, and how each edge was earned.** Three rings — 33 principles, 59 protocols, 12 chairs —
 and three borders carrying 282 crossings between them: `warrant` (a protocol puts a principle into
@@ -180,7 +209,7 @@ searched before it searched it.
 | `mandalas/border-chairs-principles.md` | The second border, grounds: which principle each chair requires to do its job, every edge quoting the chair's own sentence — plus the 2026-08-15 re-measurement to read before quoting anything | the whole room | 2026-08-17 |
 | `mandalas/border-chairs-protocols.md` | The third border, enacts: which protocols each chair puts into practice. The one that closes the triangle, after which the meta-mandala can be a result rather than a premise | the whole room | 2026-08-17 |
 
-## Graph — the model as data, for traversing rather than reading
+### Graph — the model as data, for traversing rather than reading
 
 **The mandala pages are the reasoning; this is its result in machine-readable form.** 104 nodes
 across three rings, 251 within-layer edges, 282 crossings — every evidence-bearing edge carrying
@@ -206,5 +235,66 @@ nothing under NDA — **nor the employer's name, nor anything derived from it** 
 their own in their own `project/` tree. And it carries no Composer Key and nothing personal: if
 key material travels everywhere, it *is* everywhere. It carries what is true about an instrument
 **for whoever plays it**, never one estate's history.
+
+**Three rules on what enters it, and one on what leaves** (ruled 2026-09-01). They sit here rather
+than in a protocol page for the reason this index already gives: a rule fetched by the thing it
+constrains is not a constraint, and this is the only page read first. The reasoning behind them is
+deliberately not here.
+
+- **One question decides.** *Must a musician know this before calling it?* If the capability has to
+  be held in advance — to route to it, to choose between it and something else, or to refuse it —
+  it is a candidate for a page. If not, the call is its own verification: the thing is used freely
+  and never recorded. This is the oracle rule read backwards — where a report needs no attestation,
+  there is nothing to write down.
+- **No page without a hand on the instrument.** `tools/chair-levers.md` rules a file written before
+  its musician has handled the tool *"plausible documentation"*, and that *"an absent one is better
+  than a stubbed one."* That holds for every page here, not only under `tools/yang/`.
+- **One page per surface, never per capability.** A vendor, a platform or a client is one surface
+  however many features it ships. `tools/README.md` already says *"One page per deployment
+  surface"*; it binds the whole library.
+- **Removing a row retires a page.** This index is the only route in, so de-listing removes a page
+  from the library while the file and its history stay and `git revert` returns it. A stale flag may
+  therefore end in **retire** as well as refresh. A retirement names what leaves and why — never as
+  *cleanup*, never batched as tidying, because `principles/core-principles.md` records what that
+  word cost once. Deleting the **file** is untouched by this: still a Greenfield Reset boundary,
+  still the deletion protocol's five statements in full.
+
+**What was already possible, said here so it is not rediscovered as missing:**
+`protocols/chair-review.md`'s **Drop** verdict already removes merged content and already runs
+backward over it (13 additions re-examined, 2026-07-04). The only gap these rules close is
+de-listing a whole page. Prior art for the shape: library **weeding** (CREW), **RFC 2026**'s
+Historic status, and the ADR **Superseded** state.
+
+## Observed, not yet decided
+
+**A register of what a read found and no one has ruled on.** Opened 2026-09-01 by a pass that read all
+71 pages against their own `title` and `description`. An entry states what was seen and **what would
+decide it** — never a verdict. **A row leaves this table when it is decided**, by the same mechanic as
+any other row here: it is deleted, and the history keeps it. The pattern is `tools/register.md`'s
+*Seams with no lever yet* — the one surface that records where to look rather than what was found.
+
+**The class matters more than any single row.** Eight of thirteen are pages whose description hides
+what they hold, not pages claiming what they lack. **This library undersells.** And no check catches
+it: `check_okf.mjs` validates shape, `check_links.mjs` validates resolution, and **neither can
+validate a claim.**
+
+| Observed | What would decide it |
+|---|---|
+| `method/time-management.md` — title says *four methods*, body defines **two**; `scheduled` and `time-boxing` appear nowhere in the body, and the only box in the file is `Metronome`'s, which the page fences off as *"not a permanent method"* | **the route named as deciding this is closed.** `skill time.md` does not resolve: the deployed skill is a single `SKILL.md`, this index carries no `time.md` row, and the bare name resolves here by the provenance-sibling rule above. No fuller source is reachable. What is left is authoring — write the two absent methods, or cut the description to two |
+| `chairs/user_researcher_references.md` — generic description over the library's only page on hallucinated-citation and retraction screening | a description naming its subject |
+| `principles/core-principles.md` — enumerates, reads complete, stops before ten further principles incl. the Declared Circle | whether the description should enumerate at all |
+| `tools/figma-method.md` — description covers the first third; the token/slot mandate, the design-system DoD and a 19-rule Part 2 are unhinted | how much a description owes a merged page |
+| `mandalas/border-chairs-protocols.md` — described as one relation; the body rules *"this border has two relations, not one"* | which reading is current |
+| `chairs/engineer_references.md` — generic description over the Context7 ID table for the token toolchain | a description naming its subject |
+| `tools/claude-desktop.md` — a fifth Critical bullet (a repeating push-time `git worktree` failure and its fix) is unhinted | whether Critical bullets belong in a description |
+| `protocols/agile_facilitator_score.md` — the discourse protocol and the backpropagation loop are unhinted | as above |
+| `method/prior_art_bmad.md` — claims *three re-readings*; the body has three reads and two re-readings | whether the word is loose or exact |
+| `tools/tokens-studio.md` — header says `Re-audit: 15 days`, the body says *"this page's clock is 60 days"* | which clock is real |
+| `protocols/agile_facilitator_score.md` — Auditorium table says *all 12 musicians* over ten rows, and orders *ascending* where `protocols/triggers.md` says descending — **and the same two chairs, Design Engineer and Reliability Engineer, were missing from `method/orchestra_glossary.md`, corrected 2026-09-01. Two instances makes it a pattern, not a slip** | which is canonical, and whether other pages inherited the same ten-chair era |
+| `method/common_score_matrix.md` — summary says *132 connections*; Act X is deliberately empty, so 120 are delivered | whether a declared-empty Act counts |
+| Two more bare names are clickable **routes**, not provenance: `protocol_warrant_map.md` and `principle_chair_map.md`, linked from the mandala borders | whether they are deliberately unpublished like the Figma surface audit, or were meant to travel |
+| **Retiring a page leaves no trace any check can read.** Simulated 2026-09-02: the `tools/storybook.md` row deleted from this index, the file kept — `check_okf.mjs` reported **73 concept documents, ✓ conformant**, warnings unchanged, and `check_links.mjs` passed. `walk(ROOT)` collects `.md` files from disk and never reads a table here, so an accidental deletion and a deliberate retirement are the same event | whether `check_okf.mjs` should reconcile index rows against files on disk — and **where a retirement is named.** The rule requires one to name what leaves and why, and designates no surface for it |
+| `method/web-lineage.md` carries a **second frontmatter block inside its body** at lines 11–15, in skill format (`name:` / `description:`), followed by a duplicated H1. `check_okf.mjs` passes the page on the first block and never sees the second | whether a body-embedded frontmatter is stripped as an artifact or kept as provenance. It is the extraction defect this index already records three times, arriving in a fourth form |
+| `check_links.mjs` cannot tell a **route** from a **provenance marker** — 111 bare names exist nowhere here, 108 are provenance and 3 were links a reader would follow | whether a markdown-linked bare name should fail the check while a cited one does not |
 
 Licensed CC BY-SA 4.0.
