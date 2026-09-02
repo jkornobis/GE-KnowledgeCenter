@@ -203,6 +203,11 @@ practice), `grounds` (a chair requires a principle), `enacts` (a chair puts a pr
 **Every edge quotes the sentence that earns it**, and every page opens by declaring the set it
 searched before it searched it.
 
+**A fourth ring has a page and no border.** `mandalas/movements-layer.md`, added 2026-09-02, covers
+the 12 cultural movements — the only layer in the graph with **0** of those 282 crossings touching
+it. The page argues one movement-to-chair border in prose and leaves eleven undrawn; none is in the
+graph yet. It is the first page in `mandalas/` written from outside this library.
+
 | Page | Covers | Serves | Published |
 |---|---|---|---|
 | `mandalas/principles-layer.md` | The principles ring re-derived from the principle bodies rather than inherited: the declared circle, both taijitu seeds read from source, and where the two derivation methods agree and part | the whole room | 2026-08-16 |
@@ -210,6 +215,7 @@ searched before it searched it.
 | `mandalas/border-protocols-principles.md` | The first border, warrant: which principle authorizes each protocol, arrows running Yang to Yin. A protocol with no warrant is a finding rather than an illegitimacy, and the map does not decide which | the whole room | 2026-08-16 |
 | `mandalas/border-chairs-principles.md` | The second border, grounds: which principle each chair requires to do its job, every edge quoting the chair's own sentence — plus the 2026-08-15 re-measurement to read before quoting anything | the whole room | 2026-08-17 |
 | `mandalas/border-chairs-protocols.md` | The third border, enacts: which protocols each chair puts into practice. The one that closes the triangle, after which the meta-mandala can be a result rather than a premise | the whole room | 2026-08-17 |
+| `mandalas/movements-layer.md` | Twelve cultural movements carrying 7 internal edges and 0 crossings to anything else. The measurement, the reason, the Composer's claim that chairs ARE movements, and the one border that is already earned | the whole room | 2026-09-02 |
 
 ### Graph — the model as data, for traversing rather than reading
 
@@ -229,6 +235,21 @@ the pages above and regenerated, never hand-edited.
 | Page | Covers | Serves | Published |
 |---|---|---|---|
 | `principles/core-principles.md` | The Orchestrator's principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobbler's children, and the oracle rule that an instrument is not its own oracle — plus The Composer as Neuron, added 2026-08-27, and Honest but kind, the register every exchange is spoken in, added 2026-08-29 | the whole room | 2026-08-29 |
+
+## Session log — this repository's own state
+
+**Not knowledge, and not provenance.** It is the episodic thread for this repository: what each
+session played here, what it left open, and what waits on the Composer. It is listed because
+`protocols/session_journal.md` says a resuming session re-orients from it — so it is a page an agent
+should fetch, which is the only test this index applies.
+
+**It sits outside the Recorded section on purpose.** That section holds pages whose value is that
+they do not go stale. This one goes stale by design: the newest entry is the live one, and every
+entry above it is history that must not be edited.
+
+| Page | Covers | Serves | Published |
+|---|---|---|---|
+| `SESSION_LOG.md` | Episodic memory for GE-KnowledgeCenter: what each session played, what it left on the stand, and what waits on the Composer. Chronological, append-only, newest at the bottom. | the whole room | 2026-09-02 |
 
 ---
 
