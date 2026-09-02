@@ -182,7 +182,11 @@ canvas — components ARE the show, not descriptions of them.*
 
 ## II — Structural rules (how to build)
 
-**6. Never use Sections — always Frames.** Universal, no exceptions. *SKILL REF: `convert-node-types`
+**6. Never use Sections — always Frames.** Universal, no exceptions. **And the mechanism, measured
+2026-09-02:** a `SECTION` has **no `layoutMode` and no `itemSpacing`** — the properties do not exist on
+the node, so a section is structurally incapable of auto-layout. Its children keep the `y` they were
+given; grow one and it overlaps its neighbour while every child still reports a correct internal
+layout. The rule was already right; this is why. *SKILL REF: `convert-node-types`
 — sections cannot become components; frames can, via `createComponentFromNode()`.*
 
 **7. Atomic decomposition, discovered not imposed.** Atoms (indivisible) → molecules (atom groups) →
@@ -240,16 +244,53 @@ assets — is reserved for the **`explore-design-systems` subagent**, and insert
 is the design agent's job. Plugin API is for **local, in-file** components only. *SKILL REF:
 `use-design-system`. This is the Delegation Brief with a named delegate.*
 
-**19. ⚠ No screenshots unless asked — AND THIS CONTRADICTS THE METHOD ABOVE.** This session's rule:
-`node.screenshot()` pops into the chat, so never use it for self-verification; trust return values and
-logs. **The older method above says the opposite** — *"screenshot immediately after each step"*, with
-the QA Engineer's gate requiring a post-mutation screenshot, evidenced by MVoT, VisCritic and GUI-Actor.
-**Left unresolved on purpose rather than harmonised.** The likely reading is that they are two
-surfaces: on the **Plugin API / MCP** surface the screenshot is the only external artifact available,
-while on the **Figma AI Agent** surface return values and logs are, and a screenshot costs the
-Composer's attention by appearing in his chat. If that reading is right, the rule is *"verify against
-the cheapest external artifact the surface actually offers"* — but that is a rewrite of a live gate,
-so it is **the Composer's call, not a merge decision.**
+**Rule 19 was killed by the Composer on 2026-09-02, and the number is retired rather than reused** —
+this page runs 1–18, then 20. It read
+*"⚠ No screenshots unless asked"*, carried from one session on the Figma AI Agent surface, and it
+flagged itself as contradicting this page's own method. It reserved its own resolution for the
+Composer — *"a rewrite of a live gate… the Composer's call, not a merge decision"* — and he made it:
+**dead, permanently.** What leaves is that rule and the unresolved-contradiction note it carried; the
+loop and the QA Engineer's gate above stand unopposed, unchanged, and were never in doubt.
+`git revert` returns what left.
+
+**20. Annotations live on the node, and every node has the property.** `node.annotations` is an array
+on `FRAME` and on `TEXT`, empty by default — **verified read-only 2026-09-02** on a live file. An
+annotation is `{ labelMarkdown, categoryId }`, and it travels with the node through moves, renames and
+relayouts, which is what separates it from a comment beside the design. **Two failure modes are
+reported by the estate that hit them and are *not* reproduced here, so they are marked and not
+asserted:** cloning a node whose annotations carry **both** `label` and `labelMarkdown` throws *"Only
+one of label or labelMarkdown should be given"* — so set annotations fresh on a clone; and categories
+created inside a script that later fails are orphans, since a failed `use_figma` is atomic. **A gap
+found while checking:** no annotation-**category** API was locatable on this route —
+`figma.getLocalAnnotationCategoriesAsync` does not exist and no `figma` key matches `/annot/i`. The
+property is confirmed; the category surface is not.
+
+**21. A text node carries hyperlinks per range.** `setRangeHyperlink(start, end, { type: "NODE", value:
+nodeId })` and its `getRangeHyperlink` pair are **both functions — verified 2026-09-02**, alongside a
+`hyperlink` property on the node. This is what turns a list of findings into a navigable index: one
+line per finding, one click to the frame. A table of contents without range hyperlinks is a list.
+
+**22. It is `dashPattern`, and `strokeDashes` does not exist.** Verified 2026-09-02 by the throw
+itself: `node.strokeDashes: no such property 'strokeDashes' on FRAME node`. `dashPattern` reads `[]` on
+an undashed frame. **The general rule this is an instance of:** the API surface is inconsistent across
+node types, so grep the typings for the property on *that* type before assuming it exists — a wrong
+property name throws, which is the good case; the bad case is a property that exists on a sibling type
+and silently does nothing.
+
+**23. `layoutSizing*` failures are value-rejections, not missing properties.** `layoutSizingHorizontal`
+**exists on every scene node — verified 2026-09-02** — and reads `FIXED` on a page-level frame. So
+`FILL` failing does not mean the property is absent; it means the structural context does not permit
+that value yet. Append to the auto-layout parent first, then set it. **Recorded with its source:** the
+sharper statement of this is in Figma's own `figma-use` skill, which the estate that reported it as a
+plain "throws if not yet a child" had not read — see `tools/figma-mcp-remote.md` on the route that
+serves those skills.
+
+**24. Images and exports exist; the pixel budget is reported, not reproduced.** `figma.createImage`,
+`figma.createImageAsync` and `node.exportAsync` are **all functions — verified 2026-09-02**.
+`exportAsync({ format: "PNG", constraint: { type: "SCALE", value } })` is the capture call. **Reported
+by the estate that hit the ceiling and untested here:** `createImage()` carries a budget near 16 MP, so
+a 1920×1080 frame exports at 2× (8.3 MP) but not 3× (18.6 MP). Treat 2× as the practical maximum for a
+full screen and 3× as available for crops — see `method/design-review.md` for why the floor is 2×.
 
 ## IV — Reading list (from the same session)
 
