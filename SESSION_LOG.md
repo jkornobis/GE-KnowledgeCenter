@@ -2,8 +2,8 @@
 type: Session Journal
 title: "Session Log — the library end"
 description: "Episodic memory for GE-KnowledgeCenter: what each session played, what it left on the stand, and what waits on the Composer. Chronological, append-only, newest at the bottom."
-status: live
-generated: { by: GrandEnsemble · Library instance, at: 2026-09-02 }
+status: draft
+generated: { by: GrandEnsemble · Library instance, at: 2026-09-02T22:26:04+02:00 }
 ---
 
 # Session Log — the library end
@@ -63,8 +63,23 @@ issues at once: **does the `project/` tree travel, or do its references become
 non-links with their provenance stated?** — #5, #9, and `index.md:297`, which
 already logs the question and has not been answered.
 
-**Corrections that became protocol.** None recorded, and that is itself worth
-carrying. This session ran under an inverted delivery rule — *this instance reviews
+**Corrections that became protocol.** One, and it was earned the hard way. **This
+repository carries its own gates — `check_okf.mjs` and `check_links.mjs` — and the
+review of #4 did not run them.** The review verified every factual claim in the page
+against primary sources and reported "this repo reports no CI checks, so a review is
+the only gate", which was true of GitHub Actions and false of the repository. `main`
+was OKF-conformant at `7125410` and was not at `8f04666`: `movements-layer.md`
+carried `status: proposal` where §5.4 allows only `draft|stable|deprecated`, and a
+bare date where §5 requires an ISO 8601 timestamp with an explicit UTC offset. The
+first entry of this very log then reproduced both faults. Both files were corrected
+in `f9a0a26` and the checkers pass again.
+
+**The rule, for any session that merges here: run `node check_okf.mjs` and
+`node check_links.mjs` before the merge, not after.** Neither exits non-zero on
+failure, so nothing will stop a bad merge on your behalf — they must be read.
+
+A second correction was *not* recorded, and that absence is worth
+carrying too. This session ran under an inverted delivery rule — *this instance reviews
 and merges in `GE-KnowledgeCenter`; every other repository is PR-and-issue only* —
 taken at session level by the Composer's explicit choice and written nowhere
 durable. It does not survive this session, and the Composer Key still states the
