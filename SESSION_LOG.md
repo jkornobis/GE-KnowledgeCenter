@@ -72,7 +72,7 @@ was OKF-conformant at `7125410` and was not at `8f04666`: `movements-layer.md`
 carried `status: proposal` where §5.4 allows only `draft|stable|deprecated`, and a
 bare date where §5 requires an ISO 8601 timestamp with an explicit UTC offset. The
 first entry of this very log then reproduced both faults. Both files were corrected
-in `f9a0a26` and the checkers pass again.
+in `c6ea741` and the checkers pass again.
 
 **The rule, for any session that merges here: run `node check_okf.mjs` and
 `node check_links.mjs` before the merge, not after.** Neither exits non-zero on
