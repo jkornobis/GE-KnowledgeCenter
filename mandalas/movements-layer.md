@@ -112,13 +112,16 @@ watch.** An open period is characterised by what is being said in it — which i
 a corpus of feeds read over time, not a citation. That is not a criticism of
 this repository. It is the reason the other one exists.
 
-## Three of twelve say what they do not know
+## Four of twelve say what they do not know
 
-Taoist emptiness, Cyberpunk and French touch carry `rootless`, and each states
-plainly what is *not* recorded rather than implying it was not there —
+Taoist emptiness, Cyberpunk, French touch and Lean carry `rootless`, and each
+states plainly what is *not* recorded rather than implying it was not there —
 *"nothing recorded. This is the corpus's root, not a claim that it had no
-ancestor."* That convention should survive into anything added here, and the
-proposal below follows it.
+ancestor."* Lean's is the clearest statement of the convention, because it names
+whose limit is being reported: *"nothing recorded. This corpus starts at the
+factory floor, which is a limit of the corpus, not of the history."* That
+convention should survive into anything added here, and the proposal below
+follows it.
 
 ## The Composer's claim
 
@@ -137,7 +140,7 @@ The movement node shape already fits a chair without modification:
 |---|---|
 | `boundary` | the question the chair holds |
 | `period` | ⚠️ **open, necessarily** — *"they define themselves as they play"*. A chair is a LIVING movement, so its period cannot be written for the same reason SRE's and DevOps's cannot. That is not a chair failing to qualify; it is the class it belongs to. |
-| `carries` | the principles it transmits — **these edges already exist**, 73 of them in `border-chairs-principles.md` |
+| `carries` | the principles it transmits — **these edges already exist**, 72 of them in `border-chairs-principles.md` |
 | `works` | its instruments — **already written**, as `chairs/*_references.md` |
 | `rootless` | what it descends from, or an honest "not recorded" |
 
