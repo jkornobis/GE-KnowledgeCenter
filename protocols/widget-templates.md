@@ -24,7 +24,7 @@ Every template here is a **result** surface (tables, tiles, pickers) — never a
 
 Copy these exactly; never re-guess an icon or hex. Text-on-light contrast note: for a tier/priority *word*, use the darker shade in the right column, not the fill hex.
 
-Colours are **[EMPLOYER] brand-derived** (2026-07-23). Each musician is a lightness step
+Colours are **derived from a house brand palette** (2026-07-23). Each musician is a lightness step
 along its *family's* brand hue, so a chip reads family-first, musician-second.
 Two hexes per musician because one usually can't clear contrast against both a
 near-white and a near-black surface — same constraint as the tier words below.
@@ -38,7 +38,7 @@ under deuteranopia — indistinguishable. Within a family the step is small by d
 (clearly legible at a shared edge, quiet in isolation), so **never let colour be the
 sole signal** — the icon and label carry identity, which is what a dichromat reads.
 
-Two deliberate trades to know before reusing these: **Woodwinds is green**, a hue [EMPLOYER]
+Two deliberate trades to know before reusing these: **Woodwinds is green**, a hue the source palette
 doesn't ship — built at 153°, the midpoint of the palette's own 155° empty arc, at its
 mean chroma, because Sky read as merely one more blue. And in **light** surfaces
 **Strings and Harp sit at ΔE 9.4** under deuteranopia — accepted knowingly, and only
@@ -71,7 +71,7 @@ or metaphor picks. The dot hexes remain for docs-site components and result widg
 
 **Family colours** (the layer above — use for family chips and hulls):
 
-| Family | Dark | Light | [EMPLOYER] anchor |
+| Family | Dark | Light | Brand anchor |
 |---|---|---|---|
 | Lead & meta | `#2E5BC0` | `#003795` | Royal `#004AAC` |
 | Strings | `#D14600` | `#D14600` | Red `#D14600` — same both themes |
