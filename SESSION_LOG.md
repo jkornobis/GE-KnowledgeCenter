@@ -452,3 +452,37 @@ by another instance, not once after the rewrite.** A tip-level check answers *is
 current content clean*, which is not the question a public repository asks. The
 question is *what can be fetched*, and a branch is an answer to that for every commit
 it reaches.
+
+---
+
+## Session 2026-09-04 — closing: the mirror is on its canonical route
+
+*Short entry, closing the day for the second time. It records one change to the
+Composer's machine and one gap that has no home yet.*
+
+**Played.** The Forgejo remote now uses the canonical URL rather than the LAN alias.
+The Composer confirmed the host key fingerprint; **the key the server offered was
+re-scanned and checked against the confirmed fingerprint before it was trusted**,
+rather than accepted because he had said yes — the confirmation is what makes the
+check meaningful, not a substitute for it.
+
+Authentication then failed on `publickey`, because the canonical hostname had no
+identity mapping — the working alias carried one and the hostname did not. **A `Host`
+block was added to the Composer's `~/.ssh/config`** (port 2222, the Forgejo key), with
+the previous file backed up beside it. Verified afterwards: the canonical URL reaches
+the same repository, thirteen heads, `main` identical on both sides.
+
+**Open on the stand.**
+
+- **The Support ticket correction is still unposted.** Drafted and handed to the
+  Composer; the browser closed before it could be sent.
+- **Nothing records that this repository now has two remotes**, and that is the gap
+  worth naming: a session that clones from GitHub sees one remote, pushes to it, and
+  **silently breaks the redundancy the mirror exists to provide** — without any error,
+  because nothing is wrong from where it is standing. Filed as an issue rather than
+  left here, because a future session reads the tracker before it reads five entries
+  of one day's log.
+
+**Corrections that became protocol.** None new. The one from the entry above — *a
+screening sweep reads history, not tips, and re-runs after any push by another
+instance* — is the day's last and the one most worth carrying.
