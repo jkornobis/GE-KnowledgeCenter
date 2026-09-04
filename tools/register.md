@@ -89,7 +89,7 @@ Spans: **UX Designer ↔ QA Engineer** — what was designed ↔ what actually r
 | **Chrome DevTools MCP** | MCP connector | OSS (Google) | live console, network inspection, performance traces, Core Web Vitals — *debugging* a browser rather than driving one; Chromium-only, leans on screenshots + CDP | [vibebrowser.app](https://www.vibebrowser.app/blog/chrome-devtools-mcp-vs-playwright-mcp) · [stevekinney.com](https://stevekinney.com/writing/driving-vs-debugging-the-browser) | 2026-08-05 |
 | **Browser pane** | tool (native) | free, in-harness | accessibility tree, console, network, viewport resize, in-session — no install, no auth | this session's own tool documentation | 2026-08-05 |
 | **Claude in Chrome** | MCP connector | free, in-harness | ~~the same reading surface **against already-authenticated sessions** — the one thing the Browser pane cannot reach~~ — **corrected 2026-08-08: too strong, and disproved by observation.** The Browser pane spent an entire session inside the Composer's live, authenticated Figma. The pane has **its own persistent session store**, separate from Chrome but not empty. Chrome's actual leap is narrower and still real: **sessions that already exist in his browser, with no second sign-in** — not *authenticated sessions* as a class | this session's own tool documentation; the correction from a live session | 2026-08-05 · corrected 2026-08-08 |
-| Browserbase MCP | MCP connector | paid — justification not established | managed cloud browser rather than a local one | [webfuse.com](https://www.webfuse.com/blog/the-top-5-best-mcp-servers-for-ai-agent-browser-automation) | 2026-08-05 `UNVERIFIED` |
+| ~~Browserbase MCP~~ **- dropped, sweep 2** | MCP connector | paid — justification never established | ~~managed cloud browser rather than a local one~~ | **`browserbase/mcp-server-browserbase` is `archived: true`, last push 2026-07-20** — GitHub API, 2026-09-04. A candidate that was `UNVERIFIED` and paid for **about a month** (the row dates to 2026-08-05, not a year — corrected after review) is now unmaintained; the licence bar was never cleared and the health bar now fails outright. Kept struck rather than deleted, per this file's own rule | 2026-08-05 · **struck 2026-09-04** |
 
 **Reading of the field, not a recommendation:** the sources agree the two OSS candidates are *complementary rather than competing* — driving versus debugging. Both already have a free in-harness analogue here, so the gap this lever names for this estate is narrower than the market: **cross-browser** (Firefox, WebKit) and **CI-able, unattended** runs, which is the deferred reading surface `README.md` argues for.
 
@@ -138,7 +138,7 @@ Spans: **Content Designer ↔ UX Designer** — intent expressed in language ↔
 Leap: a design decision survives the crossing in **both directions**, as data, with git as the source of truth rather than a handoff document.
 Lineage verdict: **true material** — tokens are the decision itself, not a rendering of it. Era 5's lesson made mechanical: design is rules under constraints, and this lever is where the rules are stored.
 Serves: Design Engineer · UX Designer · Software Engineer · Software Architect
-Spans: **UX Designer ↔ Software Engineer**, with the Design Engineer as the seam-holder rather than a party to it. Multiplier: N design tools × M platforms. Spanning layer: **DTCG** — a Draft Community Group Report, not a Recommendation (ADR-219). The founding case for this whole field: the crossing exists, is typed and aliasable, and is still provisional. **Won by: arrival** (2026-08-08) — adopted before it was finished, which is what *"still provisional"* has been saying all along. **Its gaps are what got typed first, not what was judged unnecessary**: no motion composite, and no type carrying accessibility intent — both already recorded below as seams. **Hunt here**, and note that the two open seams in this file both sit under this one incumbent.
+Spans: **UX Designer ↔ Software Engineer**, with the Design Engineer as the seam-holder rather than a party to it. Multiplier: N design tools × M platforms. Spanning layer: **DTCG** — a Draft Community Group Report, not a Recommendation (ADR-219); **status contested as of 2026-09-04, see obligation 1 below**. The founding case for this whole field: the crossing exists, is typed and aliasable, and is still provisional. **Won by: arrival** (2026-08-08) — adopted before it was finished. **Its gaps are what got typed first, not what was judged unnecessary**: ~~no motion composite, and~~ **[struck 2026-09-04: a `transition` composite has existed since 2022-02-03; sweep 1 misread the spec]** no type carrying accessibility intent — recorded below as a seam. **Hunt here.**
 
 | Candidate | Mechanism | Licence | The leap it offers | Source | Seen |
 |---|---|---|---|---|---|
@@ -153,7 +153,30 @@ Spans: **UX Designer ↔ Software Engineer**, with the Design Engineer as the se
 
 ---
 
-## Sweep 2 — what it is obliged to do, not just when (due 2026-09-04, ADR-269)
+## Sweep 2 — RUN 2026-09-04
+
+**Ran on the day it was due.** Five obligations, four with results and one a ban honoured. Every reading below was taken this session from a named instrument; nothing was recalled, and where an instrument did not reach, that is recorded as unreachable rather than unknown.
+
+| # | Obligation | Outcome |
+|---|---|---|
+| 1 | re-check every `won by: arrival` verdict against the sixth mechanism | **Deferred, not met — the DTCG status is contested and this sweep could not settle it.** The Community Group announced a stable **2025.10** on 2025-10-28; `tr.designtokens.org/format/` **301-redirects** to `/TR/drafts/format/`, whose masthead reads *Draft Community Group Report, 30 July 2026*; and the repository carries **no stable tag** (`first-public-draft`, `editors-drafts/1`, `editors-drafts/2` only). **The register states the contest rather than picking a side**, and the `arrival` verdict is therefore unresettled. ~~and the flag paid out; the motion seam's gap closed~~ — **struck 2026-09-04, sweep 2 review: it did not** |
+| 2 | fill `Grip` for the seven unvisited candidates | **three resolve to `n/a` from the field's own definition** and never needed a visit; four Figma features stay blank and are named as untested |
+| 3 | fill `Health` where `deps.dev` or Scorecard reach | **filled — and a candidate was found archived.** Scorecard reached **two of six** (one only under a former org name); the GitHub API reached all six |
+| 4 | re-check `generates-editable-design-layers` | **41 tools on the Figma remote MCP against the 33 recorded 2026-08-25** — eight in ten days, which is the clock this lever set |
+| 5 | do not re-test `openbenchmarking.org` | **not tested.** Honoured |
+| 6 | *(not an obligation — recorded after review)* | **Three candidates due at this sweep were missed**: W3C validators, D3, Markdown → CSV. Named in item 5 of the carry-forward list with the reason |
+
+**What sweep 2 opens for sweep 3**, carried forward so this is not a fresh survey next time:
+
+1. **Per-feature `Grip` for the four Figma candidates** — the surface measured `mixed`; the features have not been read individually, and an iframe would measure `eyes-only`.
+2. **The accessibility-intent prediction is still live** and now has one null reading behind it.
+3. **A `Spanning layer: none` verdict has still not been re-checked against a web UI** — obligation 1 was run against the two `arrival` levers and the *seams*, not against every `Spans:` line, which is what the original wording asked for. **Named as partly done rather than reported as done.**
+4. **`Health` for products remains unreachable**, which is the open `unconceptualized` seam below, unmoved.
+5. **Three candidates this file made due at sweep 2 were neither fetched nor carried forward** — the **W3C web-based validators**, **D3**, and the **Markdown → CSV converter**, all named by the Composer 2026-08-08 and marked *`UNVERIFIED` until sweep 2 fetches them*. Two seams also still carry a sweep-2 date that has now passed. **This is recorded as its own item, not folded into the list above, because the carry-forward section exists specifically to prevent it and failed on the first sweep that had one.** Carried-forward-with-a-reason is the standard; silently past due is the defect. The reason here is simply that obligation 2 was read as *fill `Grip` for the seven unvisited candidates* and these three sit in a different table, so a sweep run table-by-table never reached them. **Sweep 3 fetches them first, before any re-measurement.**
+
+---
+
+## Sweep 2 — what it was obliged to do, not just when (due 2026-09-04, ADR-269)
 
 The 30-day clock says *when*. These are carried forward so the next sweep is not a fresh survey that quietly drops what sweep 1 opened.
 
@@ -179,7 +202,11 @@ A `Spans:` line can only be written under a lever, which means the method's most
 **Accessibility Specialist ↔ Design Engineer** — the Accessibility Specialist holds *why* a contrast pair, a focus order, a target size was chosen; the Design Engineer holds the token that ships it. **The reason does not cross.** A downstream auditor re-derives intent from values, every time, on every platform.
 **Multiplier: N design tools × M platforms × K audit tools** — the highest on this board, because the audit dimension is a third axis the other seams do not have.
 **State: conceptualized, not standardised.** Contrast pairs carrying ratios and compliance flags exist as tool-level practice — [a11y-color-tokens](https://github.com/5t3ph/a11y-color-tokens), Style Dictionary with contrast libraries, the [FINOS A11y Theme Builder](https://finos.github.io/a11y-theme-builder/designers/how-to-work-with-tokens/) — and **no DTCG-level type carries them.** Verified 2026-08-05.
-**Prediction, falsifiable:** a standardised carrier for accessibility intent appears in this seam, or the method is wrong about where to look. Next check: sweep 2.
+**Prediction, falsifiable:** a standardised carrier for accessibility intent appears in this seam, or the method is wrong about where to look. ~~Next check: sweep 2.~~
+
+**Checked, sweep 2, 2026-09-04 — the seam holds, unchanged.** `accessibility`, `contrast` and `wcag` return **zero** across both `types.md` and `composite-types.md` in the DTCG source. The one adjacent item is issue **#91, "High contrast colors"**, open — a colour question, not a carrier for intent. **The prediction is neither confirmed nor falsified and stays live.** Next check: sweep 3.
+
+**Worth reading against the motion row above.** ~~Two seams, one incumbent, one sweep: the motion gap closed and this one did not move at all — the first evidence this file has that the `won by: arrival` flag discriminates rather than merely labels.~~ **Struck 2026-09-04, sweep 2 review: the motion gap never closed, so there is no contrast to read and no evidence here that the flag discriminates.** What the two seams show instead is that **one was misread and one was measured correctly** — a fact about this register's instruments, not about DTCG's growth. The flag's discriminating power remains **unevidenced**, which is where sweep 1 left it.
 
 ### Seam — tool health as data, for things that are not packages
 **User Researcher ↔ Product Owner**, and it is this method judging itself (ADR-269). User Researcher **gathers** health evidence; the Product Owner **weighs** whether it is adequate for the risk (ADR-263). **For a package the evidence exists and is machine-readable** — `deps.dev` (8 methods, 7 ecosystems), OpenSSF Scorecard (18 checks, 0–10, a public dataset over 1M projects). **For a product it does not exist at all.** There is no query that answers *is Figma's variables API being maintained*, *is this plugin abandoned*, *will this seat-gated feature survive its next pricing round*.
@@ -196,7 +223,15 @@ A `Spans:` line can only be written under a lever, which means the method's most
 ### Seam — motion as data
 **UX Designer ↔ Software Engineer**, Design Engineer as seam-holder (motion craft is in that chair's root knowledge).
 **Multiplier: N design tools × M platforms.**
-**State: exists, partial.** DTCG types `duration` and `cubicBezier` cross; there is **no motion composite**, so a transition survives the crossing as parts and is reassembled by hand at the far end.
+~~**State: exists, partial.** DTCG types `duration` and `cubicBezier` cross; there is **no motion composite**, so a transition survives the crossing as parts and is reassembled by hand at the far end.~~
+
+**State: exists — re-measured 2026-09-04, and sweep 1's reason was false when written, not overtaken.** The DTCG format spec's [composite types](https://github.com/design-tokens/community-group/blob/main/technical-reports/format/composite-types.md) define a **`transition`** composite — `duration` + `delay` + `timingFunction`, each a value or a reference to a token of that base type — and have done since **2022-02-03** ([PR 86](https://github.com/design-tokens/community-group/pull/86), *Update composite types chapter*). **That is four and a half years before sweep 1 wrote that no motion composite existed.**
+
+**Where sweep 1 looked, because its own evidence names the file.** The struck sentence cites `duration` and `cubicBezier` — both **base** types, both in the format spec's [base types](https://github.com/design-tokens/community-group/blob/main/technical-reports/format/types.md) document. Every composite in the format lives in a **different document**: `composite-types.md` holds `Transition`, `Shadow`, `Gradient`, `Typography`, `Border` and `Stroke style`, and `types.md` holds none of them. **Sweep 1 read the base-type file, correctly observed there is no motion *type*, and generalised to a claim about a file it never opened.** What makes this worse than an ordinary miss is that the sentence **carried real corroborating evidence** — `duration` and `cubicBezier` genuinely are there — so a false claim read as sourced. **The general form, and it is not about DTCG: a confident negative taken from one half of a two-file spec.** Verified 2026-09-04 by listing the headings of both files from the GitHub contents API.
+
+**The finding survives in a sharper form, and now from the spec's own mouth rather than from this estate's reading.** Issue **#103**, embedded in the spec text beside the type, asks whether transition parameters are useful by themselves when they cannot say what is being transitioned or what the start and end states are. And **#429** is open (2026-06-28): *Motion beyond `transition`: gauging interest in choreography-level token types (spring, keyframe sequences, named patterns)* — quoted verbatim after review; the earlier quotation truncated it mid-parenthesis.
+
+**So the crossing carries a transition's parameters and not its subject**, which is what *reassembled by hand at the far end* was reaching for — better evidenced now, and from the spec's own mouth. ~~And it is the `won by: arrival` flag paying out exactly as predicted: an arrival-winner's gaps are historical, not principled, so they close by ordinary growth. This one did, between sweeps, with nothing here watching.~~ **Struck 2026-09-04, sweep 2 review.** Nothing closed between sweeps: the composite predates sweep 1 by four and a half years, and issue #429 (2026-06-28) predates it too. **The flag did not pay out here, and the inference was the sweep reading its own correction as a confirmation of its method.**
 
 ### Seam — line ↔ position
 **UX Designer ↔ Software Engineer**, Design Engineer as seam-holder. The two disciplines have different atoms and each renders the other's primary verb worst. **A developer's atom is the line** — diff, blame, review and merge are all `+`/`-` over ordered text, and git has no first-class move: a re-order is delete-plus-add. **A designer's atom is the position**, and re-arranging *is* the authoring act. So the operation design lives on is the one version control sees least.
@@ -245,9 +280,33 @@ The four fields added on 2026-08-08 arrived after sweep 1, so its sixteen candid
 | **Claude in Chrome** | **implements** — same tree, different session store | — | n/a | in-harness |
 | Playwright MCP · Chrome DevTools MCP · Browserbase · Figma AI Agent · Figma code layers · Figma Motion · Figma Make | — | — | — | — |
 
-**The blank rows are the finding, not an omission.** Seven candidates have never been opened by anyone here, and this register's rule is that a value determined *"by one `read_page`"* cannot be supplied by inference. **They stay empty until sweep 2 visits them.**
+~~**The blank rows are the finding, not an omission.** Seven candidates have never been opened by anyone here, and this register's rule is that a value determined *"by one `read_page`"* cannot be supplied by inference. **They stay empty until sweep 2 visits them.**~~
+
+**Sweep 2, 2026-09-04 — and three of the seven never needed a visit.** `Grip`'s own definition is *"only meaningful for `web UI (URL)` candidates; `n/a` for everything else — an MCP tool or a skill is called, not driven, so there is nothing to grip."* **Playwright MCP, Chrome DevTools MCP and Browserbase MCP are MCP connectors**, so their value follows from the definition rather than from a reading: **`n/a`**. Recording them as *unvisited* was the field being asked a question that does not apply to them.
+
+**The four Figma features are the real blanks, and they stay blank.** Figma AI Agent, code layers, Motion and Make are driven inside a canvas whose `Grip` this estate measured **`mixed`** on 2026-08-08 — chrome fully ref-addressable, a third-party plugin's iframe returning a single `Close` button. **Inheriting that per-feature would be inference, which this section forbids**: a feature rendered in an iframe measures `eyes-only` and the plugin case proves that happens here. Untested per feature, and named as untested.
+
+**One instrument finding, because it cost this estate the whole session before it was noticed.** The Browser pane opened reporting **viewport 0×0**, and `read_page` correctly returned an empty tree. **One `resize_window` call fixed it** and the same page then returned 29 named refs. Three separate capability conclusions were drawn from that degenerate state earlier the same day before the page naming the oracle rule was read. **A zero-sized viewport is a fact about the pane, not about the site.**
 
 **And the `Health` column is empty for every OSS candidate on purpose**, which note 10 explains: the instruments that would fill it — `deps.dev`, OpenSSF Scorecard — cover **package ecosystems**, and half this table is products.
+
+### Health — filled by sweep 2, 2026-09-04, and the instrument reached less than this file claimed
+
+**Read live: `api.deps.dev/v3`, `api.securityscorecards.dev`, and the GitHub API. Nothing recalled.**
+
+| Candidate | Scorecard | Release / community |
+|---|---|---|
+| **axe-core** | **6.5**, dated 2026-08-24 — Maintained **10**, Code-Review **10**, Branch-Protection **4** | npm: 1,614 versions, first 2015-06-10, latest **2026-09-03** |
+| **Style Dictionary** | **5**, dated 2026-08-24 — filed under the **former** org name `amzn/style-dictionary`; the current slug `style-dictionary/style-dictionary` returns 404 | 4,797★ · 240 open · pushed 2026-09-04 · Apache-2.0 · npm 124 versions, latest 2026-08-19 |
+| **Playwright MCP** | **no record — HTTP 404** | 36,784★ · **2 open** · pushed 2026-09-03 · npm 433 versions |
+| **Chrome DevTools MCP** | **no record — HTTP 404** | 50,869★ · 90 open · pushed 2026-09-04 · npm 60 versions |
+| **Tokens Studio** | **no record — HTTP 404** | 1,606★ · 339 open · pushed 2026-09-04 · MIT |
+| ~~Browserbase MCP~~ | **no record — HTTP 404** | **archived**, last push 2026-07-20 — struck above |
+| Figma Variables · Code Connect · Figma AI Agent · code layers · Motion · Make · axe MCP | **not a package and not a repository** — no instrument reaches them | unreachable, which note 10 already predicted and the seam below still owns |
+
+**The correction this sweep owes its own text, revised 2026-09-04 after review.** The instrument row below describes Scorecard as a public dataset covering 1M+ projects. **It returned a record for two of the six repositories queried here and 404 for the other four** — and the second record was only found by asking under a name nobody would have guessed. **A 404 therefore has three meanings, not two: *unenrolled*, *not yet scanned*, or *enrolled under a name you did not ask for*.** The third is the dangerous one, because it is the only case where the instrument is silently **wrong** rather than merely empty, and its trigger — an organisation transfer — is common and invisible from the current slug. **Absence measures enrolment, not health**, and the operational rule is: query the current slug **and** the known former slug; a single 404 is not an answer.
+
+**So the honest shape of `Health` after this sweep:** the *security-weighted* half has one reading and five absences; the *stability and community* half was filled for every repository-backed candidate from the GitHub API, which reaches what Scorecard does not. **Two instruments, two coverages, and the register had been treating one as the whole field.**
 
 **One row worth reading twice.** `Figma Variables` and `Code Connect` are **`no standard`**, and ADR-263 flags that value as a warning rather than a fault: *a genuine first mover has nothing independent to check it against.* Both sit under the lever the Design Engineer **breaks** without. The chair's required capability rests on two formats with no external oracle, and **DTCG — the thing that would be that oracle — is `won by: arrival` and still a Draft.** That is not an argument against them; it is the reason the seams below exist.
 
@@ -340,7 +399,7 @@ A layer that won **by arrival** is not necessarily easy to displace — the acce
 
 > **Never infer *"it cannot be done"* from *"the incumbent standard does not cover it."*** With `won by: arrival`, absence is historical, not principled.
 
-**Both of this register's own arrival-winners demonstrate it.** The accessibility tree is empty inside a third-party iframe **by accident of how it grew, not by design** — and reading that emptiness as a capability limit cost the orchestra the plugin ecosystem for three weeks (ADR-259). DTCG has no motion composite and no accessibility-intent type because of **what got typed first**, which is exactly where `Seams with no lever yet` is already pointing.
+**Both of this register's own arrival-winners demonstrate it.** The accessibility tree is empty inside a third-party iframe **by accident of how it grew, not by design** — and reading that emptiness as a capability limit cost the orchestra the plugin ecosystem for three weeks (ADR-259). ~~DTCG has no motion composite and~~ **[struck 2026-09-04: it has had one since 2022-02-03]** DTCG has no accessibility-intent type because of **what got typed first**, which is exactly where `Seams with no lever yet` is already pointing.
 
 **Where Discovery hunts, stated as a rule:** `won by: leap` → watch, do not hunt; out-leaping a genuine leap is rare and expensive. **`won by: arrival` → hunt here** — the position may be immovable while the *gaps* are open, and a gap left by history is the cheapest thing this method can find.
 
@@ -394,7 +453,7 @@ A layer that won **by arrival** is not necessarily easy to displace — the acce
 | Instrument | What it answers | Verified shape | Mechanism · Grip |
 |---|---|---|---|
 | **deps.dev** (Google Open Source Insights) | **Health** — dependency graph, licences, security advisories, project data | 8 methods (`GetPackage`, `GetVersion`, `GetRequirements`, `GetDependencies`, `GetProject`, `GetProjectPackageVersions`, `GetAdvisory`, `Query`) over **7 ecosystems** — Go, RubyGems, npm, Cargo, Maven, PyPI, NuGet. `GetProject` reaches GitHub/GitLab/Bitbucket. **Auth: not documented on the API page — unconfirmed rather than confirmed-absent.** [docs.deps.dev/api/v3](https://docs.deps.dev/api/v3/) | **tool (API) · `n/a`** |
-| **OpenSSF Scorecard** | **Health**, security-weighted — *"is anyone still tending this"* | **18 automated checks**, each scored **0–10** with a risk level, aggregated; access by GitHub Action, **CLI**, or a **public dataset covering 1M+ projects**; no account to view; ships remediation prompts. [scorecard.dev](https://scorecard.dev/) · [ossf/scorecard](https://github.com/ossf/scorecard) | **tool (CLI/dataset) · `n/a`** |
+| **OpenSSF Scorecard** | **Health**, security-weighted — *is anyone still tending this* | **18 automated checks**, each scored **0–10** with a risk level, aggregated; access by GitHub Action, **CLI**, or a **public dataset covering 1M+ projects**; no account to view; ships remediation prompts. **Measured 2026-09-04: two records returned for six repositories queried, and one of the two only under the project's former organisation name. Enrolment, not coverage — and a 404 can also mean enrolled-under-another-name. Query the current slug and the known former slug; one 404 is not an answer.** [scorecard.dev](https://scorecard.dev/) · [ossf/scorecard](https://github.com/ossf/scorecard) | **tool (CLI/dataset) · `n/a`** |
 | **Libraries.io — SourceRank** | **Health**, popularity-weighted | a score whose *"main element … is the number of open source software projects that depend upon a package"*, max ≈30. [docs.libraries.io](https://docs.libraries.io/overview.html) | web UI (URL) · unmeasured |
 
 **The rule this suggests, and it is the cheap lesson from the ban: for evidence-gathering, prefer an API to a site.** All three replacements are **called, not driven** — `Grip: n/a` — so they cannot present a challenge wall, cost no screenshots, and never get more expensive with repetition. **The instrument that broke the pane was the one that had to be *visited*.**
