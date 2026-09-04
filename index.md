@@ -308,9 +308,27 @@ the claim.
 who is asking before they read it, not after. Same reason these rules sit in this file rather than
 in a protocol page: a marker read after the text it qualifies has already failed.
 
-**Labels supplement, they do not replace.** `ge:library`, `ge:workshop`, `ge:watcher` on an issue or
-a pull request make the board filterable at a glance. They are a convenience for the Composer, and
-they are absent from every comment by construction.
+**Four roles write here, and they are the whole set** (Composer, 2026-09-04): **Workshop** ·
+**Library** · **Watcher** · **Tool Worker**. Each is one session in one repository, and the Composer
+keeps one active session per repository so that the delivery rule's *"the chair is fixed by the
+repository the session is in"* has exactly one holder at a time rather than needing anyone to
+remember it.
+
+**And a session outside those four does not write here at all.** Two kinds exist and both were named
+by the Composer on 2026-09-04: a **dedicated task**, which is a piece of work rather than a seat, and
+**personal work**, which is his own and carries none of this repository's weight. Neither holds a
+chair, because a chair is fixed by a repository and neither has one in this system. **So the rule is
+total rather than holed: no role, no tag, no write.** A session that cannot name its repository has
+found the answer to whether it should be writing.
+
+**Labels supplement, they do not replace.** `ge:library`, `ge:workshop`, `ge:watcher`, `ge:toolworker`
+on an issue or a pull request make the board filterable at a glance. They are a convenience for the
+Composer, and they are absent from every comment by construction.
+
+**An artifact written before this rule cannot be labelled by inference.** Which instance wrote a
+given untagged pull request is not recoverable from git, from the API, or from the text — and
+assigning one from a guess is the failure the tag exists to prevent. **Untagged is the honest state**
+until the session that wrote it says so itself.
 
 **What a tag is not.** It is a statement by a session about itself, not a credential — nothing
 verifies it and nothing can. It says who claims to be speaking, which is exactly as much as prose
