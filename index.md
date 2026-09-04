@@ -357,6 +357,47 @@ backward over it (13 additions re-examined, 2026-07-04). The only gap these rule
 de-listing a whole page. Prior art for the shape: library **weeding** (CREW), **RFC 2026**'s
 Historic status, and the ADR **Superseded** state.
 
+### Taking the chair — what follows from naming the repository (proposed by the Workshop, 2026-09-04)
+
+**The rule above establishes identity. This is what identity is for.**
+
+Naming the repository is a single act with consequences that all derive from it, and that is the
+point: **they are not four things to remember, they are one declaration read four ways.**
+
+| named the repository → | you have |
+|---|---|
+| **your tag** | the third field is fixed by the declaration, so it cannot drift mid-session |
+| **your merge right** | this repository you merge; everywhere else, pull request and issue only |
+| **your watch** | the repository you lead, **and every repository you have pushed onto** |
+| **your first read** | what is already open on both, before doing anything else |
+
+**The watch has two halves and the second is the one that gets forgotten.** The repository you lead
+is your inbox — someone files there and nothing tells you. But **a pull request you opened on
+somebody else's repository is where their reply lands**, and unread it is the same debt as an unread
+issue at home. One direction without the other is a half-duplex that looks complete.
+
+**Why this is stated as a consequence rather than a reminder.** The Workshop ran a session on
+2026-09-04 in which seven instances of a pattern its own pattern ledger marks *Fired* were each
+detected correctly and each died as prose in a pull request, and that session opened neither tracker
+until the Composer told it to, twice. Nothing derived the read from anything; it was a separate thing
+to recall, and it was not recalled. **A rule that needs remembering is a rule written as a goal.**
+
+**How the watch is armed depends on what the repository may carry, and the difference is real.** A
+session can poll its trackers for the length of that session, leaving nothing behind — this is the
+portable form and it is the only one available here, because **a library carries what is true about
+an instrument for whoever plays it, not one estate's apparatus.** A repository that *is* an estate's
+workshop may instead put the read in a session-start hook, where it survives the session boundary
+and costs nothing to remember. **The consequence of that asymmetry, said plainly so it is not
+discovered as a surprise: an instance whose repository cannot carry apparatus re-arms its watch every
+session, and one whose repository can, does not.**
+
+**Two failures worth inheriting rather than repeating.** A watch must filter the instance's *own*
+posts on **every** query it makes — the Workshop armed one whose description claimed that filtering
+while only half its queries did it, and it notified itself about its own pull request within the
+minute. And **a poll is not free**: each event is a turn, so an interval short enough to feel live is
+an interval expensive enough to matter, and ninety seconds against a remote API is a floor rather
+than a target.
+
 ## Observed, not yet decided
 
 **A register of what a read found and no one has ruled on.** Opened 2026-09-01 by a pass that read all
