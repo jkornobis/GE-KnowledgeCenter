@@ -308,8 +308,15 @@ the claim.
 who is asking before they read it, not after. Same reason these rules sit in this file rather than
 in a protocol page: a marker read after the text it qualifies has already failed.
 
-**Four roles write here, and they are the whole set** (Composer, 2026-09-04): **Workshop** ·
-**Library** · **Watcher** · **Tool Worker**. Each is one session in one repository, and the Composer
+**Four roles are named so far** (Composer, 2026-09-04): **Workshop** · **Library** · **Watcher** ·
+**Tool Worker** — *"the fourth named GE for the moment"*, so **the set is open and expected to grow.**
+
+⚠️ **These are not chairs, and the difference is load-bearing.** The twelve chairs are fixed and may
+never be invented, renamed or substituted. **An instance-role is not one of them** — it is a session
+in a repository, and a new repository may earn a new role at any time. A page that treats this list
+as a closed roster will refuse a role the Composer has since named; a page that treats the twelve
+chairs as open will invent one. They fail in opposite directions and neither is recoverable by
+reading the other. Each is one session in one repository, and the Composer
 keeps one active session per repository so that the delivery rule's *"the chair is fixed by the
 repository the session is in"* has exactly one holder at a time rather than needing anyone to
 remember it.
