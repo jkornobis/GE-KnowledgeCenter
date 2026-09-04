@@ -309,7 +309,10 @@ who is asking before they read it, not after. Same reason these rules sit in thi
 in a protocol page: a marker read after the text it qualifies has already failed.
 
 **Four roles are named so far** (Composer, 2026-09-04): **Workshop** · **Library** · **Watcher** ·
-**Tool Worker** — *"the fourth named GE for the moment"*, so **the set is open and expected to grow.**
+**Tool Worker** — *"the fourth named GE for the moment"*, so **the set is open and expected to grow.** Each
+is one session in one repository, and the Composer keeps one active session per repository so that
+the delivery rule's *"the chair is fixed by the repository the session is in"* has exactly one holder
+at a time rather than needing anyone to remember it.
 
 **What defines the set is a capability, not the list.** These are the instances that **can hold a
 discussion through GitHub** — open an issue, open a pull request, comment on one, and be answered by
@@ -324,10 +327,7 @@ never be invented, renamed or substituted. **An instance-role is not one of them
 in a repository, and a new repository may earn a new role at any time. A page that treats this list
 as a closed roster will refuse a role the Composer has since named; a page that treats the twelve
 chairs as open will invent one. They fail in opposite directions and neither is recoverable by
-reading the other. Each is one session in one repository, and the Composer
-keeps one active session per repository so that the delivery rule's *"the chair is fixed by the
-repository the session is in"* has exactly one holder at a time rather than needing anyone to
-remember it.
+reading the other.
 
 **And a session outside those four does not write here at all.** Two kinds exist and both were named
 by the Composer on 2026-09-04: a **dedicated task**, which is a piece of work rather than a seat, and
