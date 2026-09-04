@@ -224,3 +224,95 @@ and `check_links.mjs` validates reference resolution; the screening rule lives i
 occurrences survived a week of green runs. **A green gate has never meant a page is
 publishable**, and anything that assumes otherwise is assuming an instrument that
 does not exist here.
+
+---
+
+## Session 2026-09-04 — the day, checkpointed
+
+*Succeeds the history-rewrite entry above, which stays as written and covers only
+that operation. This one covers the day. Closed 18:06 CEST at the Composer's word.*
+
+**Played.** Seven pull requests merged, one closed unmerged, one open and blocked;
+four of the seven came from another instance.
+
+- **#14, the register's sweep 2** — reviewed against its own instruments, six probes
+  raised, all six answered by the **Workshop** and revised on the branch, then merged.
+  The load-bearing finding: the sweep claimed a gap in the DTCG spec *"closed between
+  sweeps"* and built its only evidence for the `won by: arrival` flag on it. **Nothing
+  closed** — the `transition` composite has been in the spec since 2022-02-03. The
+  Workshop found the better finding underneath: sweep 1 read `types.md`, found what it
+  expected, and generalised a negative to `composite-types.md`, **a file it never
+  opened.** A confident negative from one half of a two-file spec, carrying real
+  evidence for the half it did read.
+- **#15 and #16, the signing convention** — every instance writes to GitHub as the
+  same person, so identification is carried in the text or it does not exist. Four
+  roles named so far, the set open, and **defined by a capability**: who can hold a
+  discussion here. #16 also records that an untagged artifact cannot be labelled by
+  inference.
+- **#18 and #19, screening** — the employer's name was on `main` in five places
+  across two pages, predating the rule that forbids it by a week; the house token
+  standard's name in two more. Both cleared from the working tree and, on the
+  Composer's ruling, from the history.
+- **#20 closed, #21 merged** — the Workshop's own fix, rebuilt because #20's branch
+  was cut before the rewrite and **was not an ancestor of the new `main`**; merging it
+  would have restored what the rewrite removed.
+- **#22 merged with two corrections**, under its own delegation of placement and
+  wording to this instance.
+- **A watch is armed** on this repository's tracker, session-scoped, filtering this
+  instance's own posts. It caught #22 within the hour.
+
+**Open on the stand.**
+
+- **#17 is blocked on one clause** — it names the employer in the file while its own
+  description carries a sanitised version of the same sentence. Its branch also
+  predates the rewrite and must be reset to the remote, or pushing it restores the
+  name. Both stated on the PR.
+- **Seven issues**, all tagged except **#10**, which no instance has claimed.
+- **`roster.md` remains bare** on `tools/register.md`, one of 114 such names — the
+  register's standing debt, named so it is not rediscovered as new.
+
+**Pending the Composer's word.**
+
+- **Whether to ask GitHub Support to purge** the pre-rewrite commits. They remain
+  reachable by SHA until GitHub's garbage collection runs, and that is the only
+  surviving copy of either name anywhere.
+- **Whether this watch stays** once the Workshop ships the cross-repository monitor it
+  is building. Two watches would double-notify.
+- The four authorship questions carried from 2026-09-02 are unchanged: the `project/`
+  tree, the two missing chair reference files, the eleven movement placements, and the
+  `live: false` flag on `principles:artasfeltscience`.
+
+**Corrections that became protocol.** Four, and the first is the expensive one.
+
+1. **Thirty-seven subagents were spawned to review a one-file pull request, and the
+   run hit the account's spend limit** — twenty-six of them died mid-flight. The
+   lesson is not *use fewer*: most of what they were doing was **counting things**, and
+   a shell command answers that for nothing. **A reasoning price was paid for
+   measurements that were never reasoning.** The surviving eleven agents' findings were
+   salvaged from disk rather than re-run, and the rest was finished in the shell.
+2. **No gate here reads prose.** `check_okf.mjs` validates page shape, `check_links.mjs`
+   validates reference resolution, and the screening rule lives in `index.md` as a
+   sentence enforced by whoever is reading. That is why five occurrences of the
+   employer's name survived a week of green runs. **A green gate has never meant a page
+   is publishable.**
+3. **Filter on what identifies the actor of the *event*, not the author of the
+   *item*.** Measured: a tracker watch with its own-posts filter on **both** queries
+   still reported this instance's own issues and re-fired another instance's pull
+   request the moment it was merged. A `since` query fires on any *update*, and an
+   item's body records who **opened** it, never who caused the update. So watch item
+   *creation*; leave the discussion to the comment query.
+4. **A redaction that only touches the diff leaves the name in the log.** The screening
+   commits quoted the employer's name while removing it, so the history rewrite had to
+   filter commit messages as well as file contents.
+
+**And one about this instance's own register, recorded because the Composer named it
+rather than because it was noticed here.** Reports were being written at the altitude
+of the shell — escaping, quoting, counts, hashes — for a Composer who asks to be served
+as a designer who knows development. **The test before a paragraph is whether it
+changes what he decides, or is only how the answer was reached.** The depth stays
+available behind *"Tell"*; it stopped being the default.
+
+**No capacity reading was taken**, and one fact stands in its place: **the account's
+monthly spend limit was reached today**, during the thirty-seven-agent run. That is an
+observation, not a percentage — `method/capacity.md` requires a fresh reading from the
+Composer and forbids recalling one.
