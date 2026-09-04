@@ -58,7 +58,7 @@ Tokens are built in three tiers, and the tier decides whether a token may be app
 
 Naming rules, all mandatory:
 - **Intent, not hue.** `text/subdued`, never `text/gray` — a hue name breaks the moment a dark mode exists. The name must stay true across *every* mode.
-- **DTCG-style paths that match code.** `category/role/variant` (`color/text/primary`, `spacing/gap/md`) maps 1:1 onto CSS custom properties (`--color-text-primary`) — one vocabulary shared by design and engineering, no translation layer. This is the portable convention; a Composer with a house token standard (e.g. [EMPLOYER] [HOUSE-TOKENS]) binds these paths to it, but the three-tier shape and intent-naming hold regardless.
+- **DTCG-style paths that match code.** `category/role/variant` (`color/text/primary`, `spacing/gap/md`) maps 1:1 onto CSS custom properties (`--color-text-primary`) — one vocabulary shared by design and engineering, no translation layer. This is the portable convention; a Composer with a house token standard of their own binds these paths to it, but the three-tier shape and intent-naming hold regardless.
 - **Modes carry more than light/dark, on the semantic layer, not new tokens.** Light/dark are values of the *same* semantic token, never a `text/primary-dark` sibling. And a mode is not only theme: Figma modes also switch **brand, locale, and density** — swap a frame's mode and spacing, copy, or palette update together ([Figma: variables guide](https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma) shows device-size and language modes explicitly). One semantic token, many modes; never a sibling token per context.
 
 ### Variables are typed, and scopes are the machine guardrail
@@ -134,7 +134,7 @@ The **UX Designer** and the **Design Engineer** own the loop during canvas work;
 # Part 2 — Deployment rules from practice (merged 2026-07-29)
 
 **Provenance, stated because it changes how to read this half.** Produced by the Figma AI Agent
-during a real session — *[EMPLOYER] 2026 Corporate Slide Template → [EMPLOYER] 2026 Figma System documentation* —
+during a real session — *a corporate slide template → that system's Figma documentation* —
 merging the Composer's corrections in that session with Figma's own 56 built-in skill files. **Its
 API claims are sourced from that session's skill files, not verified here**; each carries its
 `SKILL REF` so any of them can be checked against the named skill. Everything above this line is the
