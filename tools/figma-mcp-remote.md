@@ -69,7 +69,7 @@ Note: Context7 also surfaces third-party servers that are **not** Figma's offici
 
 ## Context7 library index for Figma (2026-07-20, User Researcher)
 
-Curated from Context7's `?q=figma` search — the libraries worth resolving for **this project's stack** (Figma MCP, Code Connect, design tokens/DCTG, plugin authoring, REST API, TS/React design-to-code), so a session can grab the right `/org/project` ID without re-searching. **Filter applied: Trust ≥ 7.5 AND in-stack relevance.** **Trust** is Context7's source-reputation score (0–10; 10 = first-party/official); **Snippets** = indexed code examples; **Bench** = benchmark quality score (100 max, 0 = not yet scored). Source: [context7.com/?q=figma](https://context7.com/?q=figma) via the search API. Full unfiltered list (30 entries) is in git history if the stack ever widens.
+Curated from Context7's `?q=figma` search — the libraries worth resolving for **this project's stack** (Figma MCP, Code Connect, design tokens, plugin authoring, REST API, TS/React design-to-code), so a session can grab the right `/org/project` ID without re-searching. **Filter applied: Trust ≥ 7.5 AND in-stack relevance.** **Trust** is Context7's source-reputation score (0–10; 10 = first-party/official); **Snippets** = indexed code examples; **Bench** = benchmark quality score (100 max, 0 = not yet scored). Source: [context7.com/?q=figma](https://context7.com/?q=figma) via the search API. Full unfiltered list (30 entries) is in git history if the stack ever widens.
 
 ### First-party — official Figma (`/figma/*` and official Figma sites)
 | Library | ID | Trust | Snippets | Bench |
@@ -90,7 +90,7 @@ Curated from Context7's `?q=figma` search — the libraries worth resolving for 
 |---|---|---|---|---|---|
 | Figma Types (TS defs) | `/iamtekeste/figma` | 8.8 | 5,418 | 79.54 | Type-safe Figma dev in TS |
 | Figma Console MCP Server | `/southleft/figma-console-mcp` | 9.6 | 1,437 | 88.94 | Dense MCP worked examples |
-| Tokens Studio (plugin docs) | `/tokens-studio/tokens-studio-for-figma-plugin-docs` | 8.3 | 1,082 | 82.95 | Design tokens / DCTG |
+| Tokens Studio (plugin docs) | `/tokens-studio/tokens-studio-for-figma-plugin-docs` | 8.3 | 1,082 | 82.95 | Design tokens |
 | Figma Context MCP | `/glips/figma-context-mcp` | 8.9 | 688 | 91.53 | Highest-bench MCP docs |
 | Create Figma Plugin | `/yuanqing/create-figma-plugin` | 9.8 | 201 | 62.33 | Plugin-authoring toolkit |
 | Figma Export (SVG/SCSS) | `/marcomontalbano/figma-export` | 8.8 | 175 | 69 | Design→code asset export |
