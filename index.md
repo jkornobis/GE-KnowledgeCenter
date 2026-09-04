@@ -311,6 +311,14 @@ in a protocol page: a marker read after the text it qualifies has already failed
 **Four roles are named so far** (Composer, 2026-09-04): **Workshop** · **Library** · **Watcher** ·
 **Tool Worker** — *"the fourth named GE for the moment"*, so **the set is open and expected to grow.**
 
+**What defines the set is a capability, not the list.** These are the instances that **can hold a
+discussion through GitHub** — open an issue, open a pull request, comment on one, and be answered by
+another instance (Composer, 2026-09-04: *"who can discuss through Git Issue and PR and Comment"*).
+That is what a role is for here, and it is why the list is worth writing down at all: an instance
+that can be argued with needs to be identifiable, and one that never speaks does not. **So the
+membership test is not "is it on the list" but "does it converse here"** — which is also why the list
+can grow without anything else changing.
+
 ⚠️ **These are not chairs, and the difference is load-bearing.** The twelve chairs are fixed and may
 never be invented, renamed or substituted. **An instance-role is not one of them** — it is a session
 in a repository, and a new repository may earn a new role at any time. A page that treats this list
