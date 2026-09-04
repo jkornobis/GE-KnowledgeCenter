@@ -316,3 +316,72 @@ available behind *"Tell"*; it stopped being the default.
 monthly spend limit was reached today**, during the thirty-seven-agent run. That is an
 observation, not a percentage — `method/capacity.md` requires a fresh reading from the
 Composer and forbids recalling one.
+
+---
+
+## Session 2026-09-04 — end of day
+
+*Fourth and final entry for the day, closing at 20:40 CEST on the Composer's
+`End Day GE`. The three above it stand: the day's checkpoint at 18:06 covered the
+work up to that hour, and this covers what came after.*
+
+**Played, after the 18:06 checkpoint.**
+
+- **A GitHub Support ticket was filed and is open — #4728767.** The pre-rewrite
+  commits are still served: `raw.githubusercontent.com` returns HTTP 200 and the
+  removed text at an old SHA, and the SHAs are readable from public pull request
+  timelines rather than needing to be guessed. **That corrects what this log said
+  earlier today** — *"hard to find, not unrecoverable"* was too soft. Two wrong
+  routes were rejected before filing: the *Deletions* category, whose required
+  field asks which repository you want deleted, and the *Private Information
+  Removal* form, which is for third parties posting credentials and says so.
+  GitHub's own triage confirmed the case and asked for four details; they were
+  added as a follow-up comment.
+- **#21 merged** — the two bare spec filenames sweep 2 introduced, restoring the
+  count to 114. **#20 closed unmerged**, correctly: its branch was cut before the
+  rewrite and was not an ancestor of the new `main`.
+- **#22 merged with two corrections** under its own delegation of placement and
+  wording — re-homed beside the rule it derives from, and its watch lesson's
+  diagnosis replaced.
+- **A fifth instance appeared**, `GE-GraphtalkTeam-ProjectKey`, and filed **#23**
+  and **#24**. A `ge:projectkey` label was created and applied. **It qualifies by
+  the definition in `index.md` rather than by anyone's permission** — the set is
+  open and membership is the capability of holding a discussion here — but the
+  Composer has not named it, so the label records its own declaration and nothing
+  more.
+
+**Open on the stand.**
+
+- **PR #17**, unchanged all day: one clause naming the employer in the file while
+  its own description carries the sanitised version, and a branch that predates
+  the rewrite and must be reset to the remote before it is touched.
+- **#23 names a gap that is half ours.** It attributes *"reached when a question
+  arrives"* to the skill; the same shape is at **`index.md:71`**, a library page,
+  fixable by a pull request here without a ruling on the floor.
+- **#24 is placed but not decided.** The content passes this library's admission
+  test; the shape does not — a fourth row in a table that lives on two existing
+  pages is an edit to those pages, not a new one.
+- **Ticket #4728767** awaits GitHub's reply.
+
+**Pending the Composer's word.**
+
+- **Whether a fifth role is named**, and whether `index.md`'s roster line moves
+  from four. The page already says the set is open, so nothing is wrong — only
+  behind.
+- **Whether this repository's watch stays** once the Workshop ships the
+  cross-repository monitor it is building. Two watches would double-notify.
+- **#10 is still unclaimed** by any instance and cannot be labelled by inference.
+- The four authorship questions carried from 2026-09-02 are unchanged.
+
+**Corrections that became protocol.** One, and it is about this instance's own
+altitude rather than about the library.
+
+**A count taken once and stated as agreement is a claim about a moving thing.**
+Three separate reports today gave a bare-name figure compared to `main` without
+naming which `main` — and `main` moved between a pull request being opened and
+being read, which nobody controls. **A stated count needs its commit beside it.**
+Raised against another instance's work; it applies here equally, and this log has
+made the same shape of error twice already this week.
+
+**And one observation rather than a reading.** No capacity percentage was given,
+so none is recorded. The account's monthly spend limit was reached earlier today.
