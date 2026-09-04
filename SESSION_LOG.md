@@ -385,3 +385,70 @@ made the same shape of error twice already this week.
 
 **And one observation rather than a reading.** No capacity percentage was given,
 so none is recorded. The account's monthly spend limit was reached earlier today.
+
+---
+
+## Session 2026-09-04 — after the end of day: the rewrite came undone once
+
+*A fifth entry, after the day was closed, because the entry above it states something
+that was not true when it was written. Per this file's rule the earlier entry stands
+and the correction is its own.*
+
+**What the end-of-day entry got wrong.** It reports the history rewrite as complete
+and the repository as screened. **One branch on GitHub still carried the pre-rewrite
+history**, and had done for four hours.
+
+**How, and this is the finding rather than the fix.** Every ref was force-pushed at
+about 17:0x CEST. At **17:34** the Workshop pushed `fix-bare-spec-names-2026-09-04`
+— PR #20's branch — **from a clone it had taken before the rewrite.** The old commits
+came back through a door that had already been closed, by an instance that had no way
+to know it was carrying them.
+
+> **A history rewrite is not a one-time operation while other instances hold
+> pre-rewrite clones.** Any of them can restore it by pushing, without knowing it has.
+> The rewrite is a state to be held, not an act to be completed.
+
+**The check that missed it was the wrong check.** The branch's **tip** was clean, so
+every tip-level sweep passed it — including the one this log recorded as proof. Its
+**history** was not, which had a second consequence: those objects were **referenced
+rather than orphaned**, so GitHub's garbage collection would never have taken them.
+**The Support ticket filed this evening was therefore asking for something that could
+not have worked**, on a premise stated in good faith and never verified. Measured
+while the branch existed: `raw.githubusercontent.com` returned HTTP 200 and three
+occurrences of the removed text.
+
+**Done since**, on the Composer's word: the branch deleted; all fifteen remaining
+branches re-swept clean in contents **and** commit messages; reflogs expired and `gc`
+run locally, because reviewing #20 had pulled those objects back into this machine's
+store too. The old commits are now unreachable rather than referenced, which is the
+state the ticket assumed.
+
+**Still open:** the ticket's correction is drafted and **not yet posted** — the
+browser closed before it could be, and it is in the Composer's hands.
+
+**And a second remote now exists.** The library is mirrored to a **Forgejo instance on
+the Composer's own server**, created by him as redundancy and as a future entry point
+for MCP work. Verified by cloning the mirror fresh rather than by trusting the push:
+105 commits, 13 branches, both gates green, and zero occurrences of either removed
+name. **The mirror was taken after the rewrite, so it has never held them.**
+
+**Two notes on that remote for whoever uses it next.**
+
+`git push --mirror` carried fifteen `refs/remotes/*` across — another remote's
+bookkeeping, not this repository's content. Removed. **A mirror carries heads and
+tags.**
+
+And the canonical URL the Composer gave, on port 2222, **presents a different host key
+from the LAN route already trusted on port 22.** Almost certainly two SSH daemons on
+one machine rather than anything wrong — but **accepting a host key is a trust
+decision that belongs to the Composer**, so the already-trusted route was used and the
+fingerprint put to him. The canonical URL is the better one and should replace the
+alias once he confirms it: the alias only resolves on the LAN.
+
+**Corrections that became protocol.** One, and it follows from the finding.
+
+**A screening sweep must read history, not tips — and must be re-run after any push
+by another instance, not once after the rewrite.** A tip-level check answers *is the
+current content clean*, which is not the question a public repository asks. The
+question is *what can be fetched*, and a branch is an answer to that for every commit
+it reaches.
