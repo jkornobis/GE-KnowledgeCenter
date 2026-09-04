@@ -36,7 +36,7 @@ that matters most: it names what a session must not decide on its own.
 ## Session 2026-09-02 — library end
 
 *Opened 2026-09-02 ~20:40 CEST, closed 2026-09-03 00:40 CEST. Ten commits,
-`1c10f80`..`40f4f3d`, three files, +405 lines and no deletions. Checkpointed at
+`20748c4`..`379f4d0`, three files, +405 lines and no deletions. Checkpointed at
 the Composer's word.*
 
 **Played.**
@@ -47,7 +47,7 @@ the Agile Watcher instance, and the first document in `mandalas/` written from
 outside the library. Every count in it was re-derived from
 `graph/grand_ensemble.json` with `node`; all four dated external claims were
 checked against the primary sources the page names. Two factual defects were found
-and corrected on the branch before merge (`54c669a`):
+and corrected on the branch before merge (`81d88b5`):
 
 - `rootless` is carried by **four** movement nodes, not three — `movements:lean`
   was omitted, and its wording is the strongest instance of the convention the
@@ -55,18 +55,18 @@ and corrected on the branch before merge (`54c669a`):
 - The chair↔principle warrant count is **72**, not 73. The 73 is real but belongs
   to a different document, `principle_chair_map.md`, measured 2026-08-13.
 
-Merged as `8f04666`, branch kept, matching this repo's practice. Five issues were
+Merged as `dbda2ff`, branch kept, matching this repo's practice. Five issues were
 opened, #5–#9; #5 and #6 were then closed on the Composer's ruling that
 `index.md`'s *Observed, not yet decided* register is the surface that owns an open
 question here. It already tracked both — better than #6 did, connecting the missing
 chair pages to a second ten-chair era in `method/orchestra_glossary.md`. The
-73-vs-72 measurement was carried into that register first (`3f0c8fa`) so the close
+73-vs-72 measurement was carried into that register first (`6dc076c`) so the close
 would lose nothing.
 
-This log was created (`7655ed2`) — `protocols/session_journal.md` prescribed a
+This log was created (`37c35f2`) — `protocols/session_journal.md` prescribed a
 running `SESSION_LOG.md` and none existed, so the protocol had a shape and no
-surface. OKF conformance was broken and restored (`c6ea741`), and `index.md` gained
-two rows and a section (`4096b53`): this log, and the merged movements page that
+surface. OKF conformance was broken and restored (`9ddc4d3`), and `index.md` gained
+two rows and a section (`221007c`): this log, and the merged movements page that
 had never been listed.
 
 **Open on the stand.**
@@ -103,17 +103,17 @@ Three, all mine, all found the hard way.
    `check_okf.mjs` and `check_links.mjs` sit at the root. The review verified every
    factual claim in the page against primary sources and reported *"this repo
    reports no CI checks, so a review is the only gate"* — true of GitHub Actions,
-   false of the repository. `main` was OKF-conformant at `7125410` and was not at
-   `8f04666`: `movements-layer.md` carried `status: proposal` where §5.4 allows only
+   false of the repository. `main` was OKF-conformant at `8f3814c` and was not at
+   `dbda2ff`: `movements-layer.md` carried `status: proposal` where §5.4 allows only
    `draft|stable|deprecated`, and a bare date where §5 requires an ISO 8601
    timestamp with an explicit UTC offset. The first entry of this very log then
-   reproduced both faults. Corrected in `c6ea741`.
+   reproduced both faults. Corrected in `9ddc4d3`.
    **The rule: run `node check_okf.mjs` and `node check_links.mjs` before the merge,
    not after.** Neither exits non-zero on failure, so nothing will stop a bad merge
    on your behalf — they have to be read.
 
 2. **I wrote commit hashes that did not exist, twice**, before the commits that
-   would carry them — `f9a0a26` into this log, corrected by `b052c33`, and
+   would carry them — `f9a0a26` into this log, corrected by `726052a`, and
    `8b3b1ec` into the closing comment on #5, corrected in place. Twice makes it a
    pattern rather than a slip.
    **The rule: write the artifact first, then quote it from `git log`. Never a hash
@@ -122,7 +122,7 @@ Three, all mine, all found the hard way.
 3. **A merge is not only about the page.** `mandalas/movements-layer.md` was merged
    and never added to `index.md`, which this library states is the only route in —
    so the merge landed a document on `main` that no traveler could reach, and it sat
-   there for two hours. Listed in `4096b53`.
+   there for two hours. Listed in `221007c`.
    **The rule: a merge that adds a page adds an index row in the same breath.**
 
 And one lesson that is not a correction because nothing was broken by it: **read
@@ -173,3 +173,54 @@ decided* register.
 **Pending the Composer's word, unchanged.** Does the `project/` tree travel? Tiers
 for the two missing chair reference files. The eleven movement→chair placements.
 The `live: false` flag on `principles:artasfeltscience`.
+
+---
+
+## Session 2026-09-04 — the history rewrite
+
+*Appended after the fact, because this entry's own subject is that **every commit
+hash in the entries above changed**. Read it before trusting a hash anywhere in
+this file.*
+
+**Played.** The employer's name was found on `main` — five occurrences across two
+pages, predating the 2026-08-27 ruling that this library carries *"nothing internal
+to an employer… nor the employer's name"*. Found while reviewing PR #17, which adds
+a sixth and is blocked on it. Cleared from the working tree in #18, and the house
+token standard's name in #19. **Then, on the Composer's ruling, from the history
+as well.**
+
+**What the rewrite did.** Both names replaced by redaction placeholders in file
+contents *and* in commit messages — the messages mattered, because the screening
+commits quoted the name while removing it. `DTCG`, the public W3C standard, is
+untouched and must stay: it differs from the redacted house name by two letters.
+
+**The cost, paid rather than discovered later.** The earliest affected commit was
+the repository's first content commit, so **all 97 commits were rewritten and every
+SHA changed.** Thirteen citations in this file pointed at commits that no longer
+existed; each was re-pointed by matching commit subjects between a pre-rewrite
+mirror and the rewritten repository. Verified afterwards: every hash cited anywhere
+in the library either resolves, or did not resolve before the rewrite either.
+
+**Five hashes still dangle and none of them is breakage.** `f9a0a26` and `8b3b1ec`
+are recorded in the entries above *as hashes that never existed* — repairing them
+would destroy the correction they document. `acaadb3`, `6572478` and `c609212` are
+provenance from other estates and were never resolvable here. All five were checked
+against the pre-rewrite mirror to establish that.
+
+**Open on the stand.** **The old commits remain reachable on GitHub by SHA** until
+its garbage collection runs; only GitHub Support can purge them on request. Anyone
+holding a clone keeps them regardless. **So the name is hard to find, not
+unrecoverable, and this entry says so rather than letting a later reader assume
+otherwise.** Every branch was force-pushed, including the open PR #17 — the Workshop
+must reset to the rewritten remote rather than merge, or it will restore what was
+removed.
+
+**Pending the Composer's word.** Whether to ask GitHub Support to purge.
+
+**Corrections that became protocol.** One, and it is about instruments rather than
+prose: **no gate here reads text for content.** `check_okf.mjs` validates page shape
+and `check_links.mjs` validates reference resolution; the screening rule lives in
+`index.md` as a sentence enforced by whoever is reading. That is why five
+occurrences survived a week of green runs. **A green gate has never meant a page is
+publishable**, and anything that assumes otherwise is assuming an instrument that
+does not exist here.
