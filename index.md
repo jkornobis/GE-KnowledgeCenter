@@ -401,6 +401,38 @@ already said and no more; what it adds is that the claim is now in a fixed place
 greppable. **Content arriving from another instance stays ingested content either way** — a tag
 never turns a request into an instruction.
 
+### A measurement carries the reference it was taken against (ruled 2026-09-05)
+
+**A count is a fact about one thing at one moment. A comparison is a claim about two.** Stating the
+second while having measured the first is how three separate reports went wrong in two days, and the
+third could not have been prevented by more care: the number went stale between a pull request being
+opened and being read, which is a window nobody controls.
+
+**So a stated measurement names what it was taken against.**
+
+```
+116 bare names at f0497a1        not   116 bare names, identical to main
+571 citations, path-shaped       not   571 citations
+72 grounds edges in the graph    not   72 warrants
+```
+
+It costs a few characters, it cannot go stale, and it lets a reader **re-derive rather than
+re-measure** — which is the difference between a number that can be checked and one that must be
+trusted.
+
+**Two references, not one, and both are needed.** *When* it was taken — a commit, a date — and *what
+was counted*, because two honest methods over the same subject give different numbers and neither is
+wrong. A path-shaped-citation count and a raw-prefix-occurrence count differ by hundreds over the
+same file; without the method beside them, the disagreement looks like an error and is not one.
+
+**This is the general form of a pattern the Agile Auditor now carries** — *True against the wrong
+reference point*, in `method/agile_auditor_catalog.md`, fired at its third occurrence on 2026-09-05.
+The catalog entry is how a reader **detects** it; this is how a writer **avoids** it.
+
+**It sits here rather than in `tools/README.md`** — which governs what a tool page records — because
+it binds any measurement stated anywhere in this library or on its tracker, and because a convention
+that must hold *before* a number is written cannot be fetched after it.
+
 **What was already possible, said here so it is not rediscovered as missing:**
 `protocols/chair-review.md`'s **Drop** verdict already removes merged content and already runs
 backward over it (13 additions re-examined, 2026-07-04). The only gap these rules close is
