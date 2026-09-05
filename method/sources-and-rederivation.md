@@ -133,6 +133,52 @@ releases had stopped, a month claimed from sources giving a season, and a tease 
 all. They were corrected by going to the sources. **The corrections landed and the addresses did
 not**, so the next reader is exactly where the last one was.
 
+## The case that proves it: the gate had no address
+
+**`check_okf.mjs` gates every merge in this repository against the Open Knowledge Format.** Its
+header cited the spec as `GoogleCloudPlatform/knowledge-catalog/okf/SPEC.md` — **a bare path, no
+URL, from the day it was written.**
+
+It was run about **thirty times on 2026-09-05 alone**, and **no session could read what it conformed
+to.** Found only because the Composer asked whether OKF already proposed what this library was
+busy re-deriving. The address is now in the file:
+[`okf/SPEC.md`](https://raw.githubusercontent.com/GoogleCloudPlatform/knowledge-catalog/main/okf/SPEC.md).
+
+**It did propose it**, in four lines that could be this page's thesis. A knowledge document must be
+*"readable by humans without tooling, parseable by agents without bespoke SDKs, **diffable in version
+control**, portable across tools, organizations, and time"* — and *"if you can `git clone` a repo,
+you can ship it."*
+
+### What the spec already had, and we re-derived
+
+**OKF defines a `sources` frontmatter field**, in its Provenance family, with credibility signals —
+`author`, `usage_count`, `last_modified`. **This page argued its way to the same idea from scratch,
+without knowing the field existed**, on the same day the Composer said the library relies too much on
+its own additions.
+
+**Use the spec's field name.** A bundle that invents a parallel vocabulary for something the format
+already names has stopped being portable, which is one of the four properties OKF exists to provide.
+
+### The tier we could claim today, and why not to
+
+⚠️ **OKF derives its trust tier from the *presence* of a verifying actor, not from what was
+verified:**
+
+- no `verified` key ⇒ **unverified** — where every page here sits
+- `verified` by non-`human:` actors only ⇒ **machine-confirmed**
+- `verified` by a `human:<id>` actor ⇒ **human-reviewed**
+
+**So adding `verified: { by: process:check_okf, at: … }` to every page would promote this whole
+library to machine-confirmed, mechanically, today.** And it would be a true statement producing a
+false impression: **the two gates confirm shape and reference resolution. Neither reads a claim.**
+
+That is this estate's own Declared Circle — *a claim may not range wider than the check behind it* —
+and it is *true against the wrong reference point* one layer up. **A consumer reading
+`machine-confirmed` will not assume it means the frontmatter parsed.**
+
+**The honest route is an attestation that says what it checked**, per page, which the spec's list
+form already allows. Whether to take it is the Composer's. Nothing here is promoted.
+
 ## The rule
 
 **A page that makes a claim about something outside this library carries the address that claim came

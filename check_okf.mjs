@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 /**
  * OKF v0.2 conformance check for this bundle.
- * Spec: GoogleCloudPlatform/knowledge-catalog/okf/SPEC.md, §8 and §9 re-read 2026-08-28.
+ * Spec: Open Knowledge Format v0.2 — GoogleCloudPlatform/knowledge-catalog/okf/SPEC.md
+ *   https://raw.githubusercontent.com/GoogleCloudPlatform/knowledge-catalog/main/okf/SPEC.md
+ *   §8 and §9 re-read 2026-08-28. Address added 2026-09-05: this file had cited the spec
+ *   by bare path since it was written, so every run gated a merge against a document no
+ *   reader of this bundle could open.
  *
  * MUST (§11): every non-reserved .md has parseable YAML frontmatter with a
  * non-empty `type`; reserved names (index.md, log.md) follow §8/§9.
