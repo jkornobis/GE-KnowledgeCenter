@@ -29,6 +29,47 @@ Outside these, coordination cost exceeds benefit.
 what is explicitly out of scope), and **writes stay single-threaded through you**. The spawn itself
 is the Composer's yes to give, asked before with the cost stated (invariant 3, ADR-216).
 
+### A fourth delegate, and the only one you do not pay for
+
+**Where a tool hosts its own AI agent, that agent is a delegate with different economics from the
+three above.** Reached by driving a browser to the tool's chat panel — not an MCP connection, no
+protocol and no schema; not a subagent, not in this harness and not spawnable from it.
+
+| Delegate | Runs in | Knows | Who pays |
+|---|---|---|---|
+| **Persona** | this context | everything this context holds | this session |
+| **Real subagent** | a fresh context, same harness | only its brief | this session |
+| **MCP tool** | the tool's own API | nothing; it executes calls | this session |
+| **Agent inside the tool** | **the vendor's compute** | **only what you type into its box** | **the vendor** |
+
+**The last column is why it earns a row rather than a footnote.** The three fit cases above exist
+because a subagent costs 3–15×; this one costs the calling session nothing, so the question it
+answers is not *is this worth spawning* but *is this work safe to hand over*.
+
+**Four things travel or they do not travel.** It has no access to your files, your repository or your
+context: **content goes in the brief, verbatim, or it is invented**. It will not fetch this library
+unless the pages are named in the brief — measured 2026-09-04, a complete deliverable built having
+fetched zero pages, and both fetches succeeding first attempt once asked. Semantics are decoration
+unless stated. And a brief has a practical ceiling around **4,000 characters**, so plan the split.
+
+⚠️ **Verification does not delegate, and here the temptation is at its worst.** It is another
+instance of this system, which makes its report the most tempting thing on the page to trust and the
+least entitled to be — invariant 3 with the volume up, because an orchestra agreeing with an
+orchestra is one model agreeing with itself twice. **It checks node properties and calls that
+verification; the properties are usually right and the composition is what fails.** Measured in one
+session: six strings drifted under a report reading *"all content verbatim"*, nine shapes overlapped
+under *"what still looks fine to me"*, and a labelled relationship had no connector drawn.
+
+**The division that holds: it writes; you compose and verify.** And it tells the truth about its own
+failures **when asked a closed question** — *did you read X, yes or no?* returns an honest no where
+*how did it go?* returns a summary.
+
+**Test it before building on it.** The choice of instrument is a claim like any other, and the
+cheapest test is one page, one small artifact, three names checked — the probe recorded in #39, which
+held on four of four and contradicted a limit its own method had recorded. **A measured limit for
+this route is provisional until a second operator reproduces it**, because the brief is the
+instrument and one instance cannot separate the delegate's behaviour from its own briefing.
+
 ## Model facts — the only part that changes what you type
 
 IDs are pinned snapshots and rotate: `claude-opus-4-8` (default, 1M ctx) · `claude-sonnet-5` (1M) ·
