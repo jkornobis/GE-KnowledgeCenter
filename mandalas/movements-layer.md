@@ -166,10 +166,12 @@ design components* were dated against primary sources on 2026-09-02:
 
 | | attempt | evidence |
 |---|---|---|
-| 2017-04 | **react-sketchapp** (Airbnb) | 28 releases, last `v3.2.2` on **2020-05-04**, then nothing. Not archived. 14,863 stars. |
-| 2018-09 | **Framer X** | announced June 2018, shipped that autumn |
-| 2019 | **UXPin Merge** | teased late 2018, introduced 2019 — still shipping |
+| 2017-04 | **react-sketchapp** (Airbnb) | 28 releases, the last `v3.2.2` on **2020-05-04** and none since — but commits run on to **2025-11-06** and it is not archived. **Stopped shipping rather than died**, which is the sharper illustration. 14,862 stars, read 2026-09-05. |
+| 2018 | **Framer X** | announced June 2018, shipped that autumn — no month is claimed, because the sources give an announcement and a season, not a release date |
+| 2019 | **UXPin Merge** | beta end of February 2019, still shipping. **An earlier 2018 tease was recorded here and is withdrawn** — no source was found for it |
 | 2026 | **Figma Code layer** | the Composer's testimony; **no primary source yet**, so no month is claimed |
+
+⚠️ **Three of these rows once stated more than their sources carried, corrected 2026-09-05 (issue #8).** `then nothing` said a project had died when only its releases had stopped; a `2018-09` claimed a month from sources giving a season; a 2018 tease had no source at all. **The page refuses a month it cannot show for the 2026 row and did not hold itself to that for the other three** — which is the failure worth recording, not the three dates.
 
 **Every one of them serves that boundary exactly** — one decision, distributed
 everywhere, across the design/code line.
