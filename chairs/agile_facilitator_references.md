@@ -4,6 +4,25 @@ title: "Agile Facilitator — Field References (Routing & synthesis)"
 description: "Living reference notes for the Agile Facilitator's field"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+sources:
+  - resource: https://arxiv.org/abs/2503.13657
+    title: "MAST failure taxonomy"
+  - resource: https://www.augmentcode.com/guides/why-multi-agent-llm-systems-fail-and-how-to-fix-them
+    title: "Orchestrator as single point of failure"
+  - resource: https://arxiv.org/abs/2406.18665
+    title: "Router design — timing, signals, cost/quality"
+  - resource: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6572478
+    title: "Failure-attribution research since MAST (2026)"
+  - resource: https://arxiv.org/html/2602.09341v1
+    title: "Verification beyond majority vote"
+  - resource: https://arxiv.org/pdf/2505.19477
+    title: "LLM-as-judge bias in panels"
+  - resource: https://arxiv.org/html/2505.02279v1
+    title: "Agent interoperability protocols (MCP / A2A)"
+  - resource: https://doi.org/10.3390/fi18060326
+    title: "Orchestration topologies"
+  - resource: https://medium.com/@Micheal-Lanham/multi-agent-in-production-in-2026-what-actually-survived-f86de8bb1cd1
+    title: "\"More agents\" is often noise"
 ---
 
 # Agile Facilitator — Field References (Routing & synthesis)

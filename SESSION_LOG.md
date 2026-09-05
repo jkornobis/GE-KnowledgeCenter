@@ -4,6 +4,9 @@ title: "Session Log — the library end"
 description: "Episodic memory for GE-KnowledgeCenter: what each session played, what it left on the stand, and what waits on the Composer. Chronological, append-only, newest at the bottom."
 status: draft
 generated: { by: GrandEnsemble · Library instance, at: 2026-09-02T22:26:04+02:00 }
+sources:
+  - resource: https://github.com/jkornobis/GE-KnowledgeCenter/pull/4
+    title: "#4"
 ---
 
 # Session Log — the library end

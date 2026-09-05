@@ -5,6 +5,13 @@ description: "The highest Context7 benchmark in this library and the only one to
 status: draft
 serves: [Software Engineer, QA Engineer]
 generated: { by: human:jkornobis, at: 2026-08-26T16:53:30+02:00 }
+sources:
+  - resource: https://github.com/vitest-dev/vitest/issues/5277
+    title: "#5277"
+  - resource: https://github.com/vitest-dev/vitest/issues/4043
+    title: "#4043"
+  - resource: https://github.com/vitest-dev/vitest/issues/5883
+    title: "#5883"
 ---
 
 # Tool: Vitest

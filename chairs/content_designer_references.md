@@ -4,6 +4,27 @@ title: "Content Designer — Field References (Copy & vocabulary)"
 description: "Living reference notes for the Content Designer's field"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+sources:
+  - resource: https://maven.com/convocat/genai-design
+    title: "Designing language for AI/agentic interfaces"
+  - resource: https://www.iso.org/standard/78907.html
+    title: "ISO 24495-1:2023 plain language"
+  - resource: https://www.w3.org/WAI/cognitive/
+    title: "Cognitive accessibility (COGA)"
+  - resource: https://www.w3.org/TR/WCAG22/
+    title: "WCAG 2.2 language-facing criteria"
+  - resource: https://consciousstyleguide.com/
+    title: "Inclusive / bias-free terminology"
+  - resource: https://www.apa.org/about/apa/equity-diversity-inclusion/language-guidelines
+    title: "APA Inclusive Language Guidelines"
+  - resource: https://contentdesign.london/
+    title: "Terminology management & ContentOps"
+  - resource: https://cldr.unicode.org/
+    title: "Localization engineering & FR/EN parity"
+  - resource: https://unicode-org.github.io/icu/userguide/format_parse/messages/
+    title: "ICU MessageFormat"
+  - resource: https://www.nngroup.com/articles/tone-of-voice-dimensions/
+    title: "Voice-and-tone with measurable readability"
 ---
 
 # Content Designer — Field References (Copy & vocabulary)

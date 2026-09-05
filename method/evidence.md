@@ -4,6 +4,11 @@ title: "Evidence — the executable core"
 description: "The executable core and only that: when a real subagent is worth 3–15× a persona and the three fit cases that justify one, the model facts that change what you type, and a routing table to the research this page deliberately does not carry"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
+sources:
+  - resource: https://platform.claude.com/docs/en/about-claude/models/overview
+    title: "Models overview"
+  - resource: https://docs.claude.com/en/docs/build-with-claude/prompt-caching
+    title: "Prompt caching across models"
 ---
 
 # Evidence — the executable core

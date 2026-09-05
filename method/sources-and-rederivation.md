@@ -4,6 +4,9 @@ title: "Sources — the address a page can be re-derived from (Content Designer,
 description: "Why every principle, protocol, chair and tool page carries the address its claims came from: so a later session re-derives rather than re-searches, and gets the same reasoning instead of whatever ranked well that day"
 status: draft
 generated: { by: human:jkornobis, at: 2026-09-05T15:10:00+02:00 }
+sources:
+  - resource: https://raw.githubusercontent.com/GoogleCloudPlatform/knowledge-catalog/main/okf/SPEC.md
+    title: "okf/SPEC.md"
 ---
 
 # Sources — the address a page can be re-derived from

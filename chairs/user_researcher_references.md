@@ -4,6 +4,23 @@ title: "User Researcher — Field References (Research & sourcing)"
 description: "Living reference notes for the User Researcher's field"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+sources:
+  - resource: https://arxiv.org/html/2605.06635v1
+    title: "Post-hoc / retrofitted citations"
+  - resource: https://retractionwatch.com/category/artificial-intelligence/
+    title: "Fabricated reference detection"
+  - resource: https://retractionwatch.com/2025/11/19/ai-unreliable-identifying-retracted-research-papers-study/
+    title: "Retraction / integrity status checks"
+  - resource: https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/
+    title: "Groundedness / faithfulness metrics"
+  - resource: https://arxiv.org/html/2510.17853v4
+    title: "Attribution-alignment verification"
+  - resource: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12407253/
+    title: "Structured RoB / GRADE appraisal"
+  - resource: https://arxiv.org/pdf/2602.10881
+    title: "Extraction failure modes in synthesis"
+  - resource: https://arxiv.org/pdf/2606.13104
+    title: "Epistemic / authority bias"
 ---
 
 # User Researcher — Field References (Research & sourcing)

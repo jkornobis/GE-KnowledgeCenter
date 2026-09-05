@@ -4,6 +4,23 @@ title: "The Common Score Pivot — shared concerns and dependency vectors"
 description: "Two relation types over the same twelve chairs: undirected shared concerns, sixteen of twenty-eight carrying an external standard and twelve counted aloud as blank, and directed requires-serves dependencies that a shared-concern reading cannot see"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-26T18:40:00+02:00 }
+sources:
+  - resource: https://arxiv.org/abs/2503.13657
+  - resource: https://www.anthropic.com/research/reasoning-models-dont-say-think
+  - resource: https://www.w3.org/TR/coga-usable/
+  - resource: https://www.w3.org/TR/WCAG22/
+  - resource: https://www.iso.org/standard/78907.html
+  - resource: https://genai.owasp.org/llm-top-10/
+  - resource: https://slsa.dev/
+  - resource: https://www.designtokens.org/tr/drafts/format/
+  - resource: https://istqb.org/wp-content/uploads/2026/05/ISTQB-_CTAI_Syllabus_v2.0_Release.pdf
+  - resource: https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/
+  - resource: https://agents.md/
+  - resource: https://opengitops.dev/
+  - resource: https://www.sigstore.dev/
+  - resource: https://sre.google/workbook/implementing-slos/
+  - resource: https://opentelemetry.io/docs/
+  - resource: https://docs.evidentlyai.com/
 ---
 
 # The Common Score — Pivot Table

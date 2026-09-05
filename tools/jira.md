@@ -5,6 +5,19 @@ description: "Jira at logic level rather than project level: the fetch route tha
 status: draft
 serves: [Product Owner, Software Architect, the whole room]
 generated: { by: agent:agile-facilitator, at: 2026-09-01T16:20:23+02:00 }
+sources:
+  - resource: https://support.atlassian.com/jira-cloud-administration/docs/what-are-issue-types/
+    title: "what-are-issue-types"
+  - resource: https://support.atlassian.com/jira-cloud-administration/docs/configure-the-issue-type-hierarchy/
+    title: "configure-the-issue-type-hierarchy"
+  - resource: https://support.atlassian.com/jira-software-cloud/docs/configure-filters/
+    title: "What are board filters"
+  - resource: https://support.atlassian.com/jira-software-cloud/docs/example-jql-queries-for-board-filters/
+    title: "Example JQL queries for board filters"
+  - resource: https://support.atlassian.com/jira-software-cloud/docs/manage-custom-filters-in-team-managed-projects/
+    title: "Manage custom filters"
+  - resource: https://support.atlassian.com/jira-software-cloud/docs/jql-fields/
+    title: "JQL fields"
 ---
 
 # Tool: Jira — the logic, and the route to its documentation

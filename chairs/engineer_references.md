@@ -4,6 +4,33 @@ title: "Software Engineer — Field References (Code & APIs)"
 description: "Living reference notes for the Software Engineer's field"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T23:27:12+02:00 }
+sources:
+  - resource: https://owasp.org/API-Security/editions/2023/en/0x11-t10/
+    title: "OWASP API Security Top 10 (2023)"
+  - resource: https://zod.dev/
+    title: "Runtime schema validation — Zod / Standard Schema"
+  - resource: https://standardschema.dev/
+    title: "Standard Schema"
+  - resource: https://trpc.io/docs
+    title: "Typed end-to-end APIs — tRPC / REST / GraphQL"
+  - resource: https://graphql.org/learn/
+    title: "GraphQL"
+  - resource: https://docs.npmjs.com/generating-provenance-statements
+    title: "Supply-chain security — npm provenance"
+  - resource: https://securityscorecards.dev/
+    title: "OpenSSF Scorecard"
+  - resource: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-2.html
+    title: "Result types & typed errors"
+  - resource: https://vitest.dev/
+    title: "Modern test tooling — Vitest / Playwright / node:test"
+  - resource: https://nodejs.org/api/test.html
+    title: "node:test"
+  - resource: https://nodejs.org/api/esm.html
+    title: "ESM, Node LTS & runtimes"
+  - resource: https://oauth.net/2.1/
+    title: "Auth standards — OAuth 2.1 / JWT / PASETO"
+  - resource: https://datatracker.ietf.org/doc/rfc9700/
+    title: "RFC 9700"
 ---
 
 # Software Engineer — Field References (Code & APIs)

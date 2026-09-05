@@ -4,6 +4,29 @@ title: "Orchestra Prior Art — Comparable Systems (User Researcher)"
 description: "Where a persona-based orchestra sits against published multi-agent practice, plus the substrate facts on long-context rule decay and what the measurements actually support"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+sources:
+  - resource: https://www.anthropic.com/research/building-effective-agents
+    title: "Anthropic"
+  - resource: https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
+    title: "OpenAI guide"
+  - resource: https://cognition.com/blog/dont-build-multi-agents
+    title: "Cognition"
+  - resource: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+    title: "Anthropic context engineering"
+  - resource: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+    title: "Anthropic evals"
+  - resource: https://arxiv.org/abs/2503.13657
+    title: "arXiv:2503.13657"
+  - resource: https://www.anthropic.com/engineering/multi-agent-research-system
+    title: "research system"
+  - resource: https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html
+    title: "Breunig"
+  - resource: https://platform.claude.com/docs/en/docs/build-with-claude/context-windows
+    title: "Context windows"
+  - resource: https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00638/119630/
+    title: "Lost in the Middle (TACL)"
+  - resource: https://arxiv.org/pdf/2602.07962
+    title: "LOCA-bench: Benchmarking Language Agents Under Controllable and Extreme Context Growth"
 ---
 
 # Orchestra Prior Art — Comparable Systems (User Researcher)

@@ -4,6 +4,23 @@ title: "Product Owner — Field References (Purpose & scope)"
 description: "Living reference notes for the Product Owner's field"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+sources:
+  - resource: https://www.producttalk.org/opportunity-solution-trees/
+    title: "Opportunity Solution Trees & Continuous Discovery"
+  - resource: https://melissaperri.com/book
+    title: "Outcomes over Outputs / Build Trap"
+  - resource: https://amplitude.com/north-star
+    title: "North Star ↔ OKR linkage"
+  - resource: https://herbig.co/product-strategy-metrics-sandwich/
+    title: "strategy-metrics sandwich"
+  - resource: https://www.strategyzer.com/library/how-assumptions-mapping-can-focus-your-teams-on-running-experiments-that-matter
+    title: "Assumption Mapping & Riskiest-Assumption Testing"
+  - resource: https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/
+    title: "Prioritization — RICE + ODI"
+  - resource: https://strategyn.com/outcome-driven-innovation-process/
+    title: "Outcome-Driven Innovation"
+  - resource: https://hbr.org/2016/09/know-your-customers-jobs-to-be-done
+    title: "Jobs-to-be-Done for framing the WHY"
 ---
 
 # Product Owner — Field References (Purpose & scope)

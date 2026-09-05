@@ -4,6 +4,25 @@ title: "Agile Auditor — Field References (Pattern detection)"
 description: "Living reference notes for the Agile Auditor's field"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+sources:
+  - resource: https://arxiv.org/abs/2306.05685
+    title: "LLM-as-judge reliability limits"
+  - resource: https://arxiv.org/abs/2503.13657
+    title: "Multi-agent failure taxonomy (MAST)"
+  - resource: https://research.trychroma.com/context-rot
+    title: "Context rot / long-context degradation"
+  - resource: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6572478
+    title: "Failure-attribution research since MAST (2026)"
+  - resource: https://docs.evidentlyai.com/
+    title: "Drift / anomaly detection for LLM outputs"
+  - resource: https://arxiv.org/abs/2310.13548
+    title: "Sycophancy as a systemic failure"
+  - resource: https://www.anthropic.com/research/building-effective-agents
+    title: "Error propagation / cascading"
+  - resource: https://www.anthropic.com/research/reasoning-models-dont-say-think
+    title: "Reasoning unfaithfulness in chains-of-thought"
+  - resource: https://opentelemetry.io/docs/specs/semconv/gen-ai/
+    title: "Online eval signals & guardrails"
 ---
 
 # Agile Auditor — Field References (Pattern detection)

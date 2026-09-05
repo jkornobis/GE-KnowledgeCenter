@@ -5,6 +5,29 @@ description: "The Orchestrator's principles: NDT and the Greenfield Reset, the d
 status: draft
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-29T00:58:00+02:00 }
+sources:
+  - resource: https://academic.oup.com/comjnl/article/25/4/465/366384
+    title: "On Testing Non-Testable Programs"
+  - resource: https://eecs481.org/readings/testoracles.pdf
+    title: "The Oracle Problem in Software Testing: A Survey"
+  - resource: https://www.w3.org/WAI/WCAG22/Understanding/conformance
+    title: "scope of conformance"
+  - resource: https://www.equator-network.org/reporting-guidelines/prisma-scr/
+    title: "PRISMA-ScR"
+  - resource: https://www.istqb.guru/seven-principles-of-software-testing/
+    title: "ISTQB #2"
+  - resource: https://martinfowler.com/bliki/BoundedContext.html
+    title: "DDD's bounded context"
+  - resource: https://aclanthology.org/2024.tacl-1.41/
+    title: "Scope Ambiguities in Large Language Models"
+  - resource: https://en.wikipedia.org/wiki/Self-similarity
+    title: "Self-similarity"
+  - resource: https://atomicdesign.bradfrost.com/chapter-2/
+    title: "Atomic Design"
+  - resource: https://www.oreilly.com/radar/what-is-lean-ux/
+    title: "What is Lean UX?"
+  - resource: https://uxdx.com/method/
+    title: "UXDX Method"
 ---
 
 # Core Principles — the Orchestrator

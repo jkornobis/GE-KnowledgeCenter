@@ -5,6 +5,11 @@ description: "The FR/EN parity engine: two open issues against 1,472 Stack Overf
 status: draft
 serves: [Content Designer, Design Engineer]
 generated: { by: human:jkornobis, at: 2026-08-25T15:13:24+02:00 }
+sources:
+  - resource: https://github.com/i18next/i18next/issues/2172
+    title: "#2172"
+  - resource: https://github.com/i18next/i18next/issues/1418
+    title: "#1418"
 ---
 
 # Tool: i18next

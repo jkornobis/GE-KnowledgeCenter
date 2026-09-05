@@ -5,6 +5,13 @@ description: "Keyless signing and provenance for artifacts: why the CLI's own Co
 status: draft
 serves: [Software Architect, Reliability Engineer]
 generated: { by: human:jkornobis, at: 2026-08-25T15:13:24+02:00 }
+sources:
+  - resource: https://github.com/sigstore/cosign/issues/3913
+    title: "#3913"
+  - resource: https://github.com/sigstore/cosign/issues/2985
+    title: "#2985"
+  - resource: https://github.com/sigstore/cosign/issues/2307
+    title: "#2307"
 ---
 
 # Tool: Sigstore / Cosign

@@ -5,6 +5,13 @@ description: "The authoring end of the token chain: exports that silently lose r
 status: draft
 serves: [Design Engineer, UX Designer]
 generated: { by: human:jkornobis, at: 2026-08-26T16:53:30+02:00 }
+sources:
+  - resource: https://github.com/tokens-studio/figma-plugin/issues/3682
+    title: "#3682"
+  - resource: https://github.com/tokens-studio/figma-plugin/issues/2921
+    title: "#2921"
+  - resource: https://github.com/tokens-studio/figma-plugin/issues/3615
+    title: "#3615"
 ---
 
 # Tool: Tokens Studio

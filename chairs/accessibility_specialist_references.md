@@ -4,6 +4,24 @@ title: "Accessibility Specialist — Field References (Accessibility)"
 description: "Living reference notes for the Accessibility Specialist's field"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+sources:
+  - resource: https://www.etsi.org/deliver/etsi_en/301500_301599/301549/
+    title: "European Accessibility Act + EN 301 549"
+  - resource: https://www.w3.org/TR/wcag-3.0/
+    title: "WCAG 3.0 direction — March 2026 Working Draft"
+  - resource: https://www.ada.gov/resources/2024-03-08-web-rule/
+    title: "ADA Title II digital rule"
+  - resource: https://www.w3.org/WAI/ARIA/apg/
+    title: "WAI-ARIA 1.3 + APG patterns"
+  - resource: https://www.w3.org/TR/coga-usable/
+    title: "Cognitive accessibility — COGA \"Making Content Usable\""
+  - resource: https://www.w3.org/TR/wcag2mobile-22/
+    title: "Mobile & native app accessibility — WCAG2Mobile"
+  - resource: https://www.w3.org/WAI/standards-guidelines/act/rules/
+    title: "ACT Rules + automated tooling"
+  - resource: https://aria-at.w3.org/
+    title: "ARIA-AT — assistive-tech interoperability"
+  - resource: https://ec.europa.eu/social/main.jsp?catId=1202
 ---
 
 # Accessibility Specialist — Field References (Accessibility)

@@ -5,6 +5,15 @@ description: "The transform step of the token chain, and the direct descendant o
 status: draft
 serves: [Design Engineer, UX Designer, Software Engineer, Software Architect]
 generated: { by: human:jkornobis, at: 2026-08-26T16:53:30+02:00 }
+sources:
+  - resource: https://github.com/style-dictionary/style-dictionary/issues/119
+    title: "#119"
+  - resource: https://github.com/style-dictionary/style-dictionary/issues/1377
+    title: "#1377"
+  - resource: https://github.com/style-dictionary/style-dictionary/issues/266
+    title: "#266"
+  - resource: https://stackoverflow.com/questions/79332488/style-dictionary-reference-error-with-nested-namespace-from-figma-tokens-studio
+    title: "79332488"
 ---
 
 # Tool: Style Dictionary

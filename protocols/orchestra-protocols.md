@@ -5,6 +5,25 @@ description: "The Concert Quorum and the five-tier effort ladder, the Delegation
 status: draft
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-28T12:55:00+02:00 }
+sources:
+  - resource: https://www.anthropic.com/engineering/multi-agent-research-system
+    title: "Anthropic"
+  - resource: https://cognition.com/blog/dont-build-multi-agents
+    title: "Cognition"
+  - resource: https://theanarchistlibrary.org/library/daniel-al-rashid-what-do-anarchists-mean-by-federalism
+    title: "has no independent authority"
+  - resource: https://seedsforchange.org.uk/spokescouncil
+    title: "spokescouncil"
+  - resource: https://en.wikipedia.org/wiki/Citizens%27_assembly
+    title: "citizens' assembly"
+  - resource: https://www.anthropic.com/research/building-effective-agents
+    title: "Anthropic — building effective agents"
+  - resource: https://www.ibm.com/think/topics/ai-agent-orchestration
+    title: "IBM — AI agent orchestration"
+  - resource: https://addyosmani.com/blog/code-agent-orchestra/
+    title: "Addy Osmani — the code agent orchestra"
+  - resource: https://dora.dev/research/2025/
+    title: "DORA 2025"
 ---
 
 # Orchestra Protocols

@@ -5,6 +5,13 @@ description: "Traces, metrics and logs over OTLP: why every language SDK outscor
 status: draft
 serves: [Reliability Engineer, Software Architect, Agile Facilitator]
 generated: { by: human:jkornobis, at: 2026-08-25T14:47:07+02:00 }
+sources:
+  - resource: https://github.com/open-telemetry/opentelemetry-collector/issues/10858
+    title: "#10858"
+  - resource: https://github.com/open-telemetry/opentelemetry-collector/issues/14508
+    title: "#14508"
+  - resource: https://github.com/open-telemetry/opentelemetry-collector/issues/10780
+    title: "#10780"
 ---
 
 # Tool: OpenTelemetry
