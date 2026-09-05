@@ -320,17 +320,27 @@ is its tag, alone on the line:**
 [GE · Library · GE-KnowledgeCenter]
 ```
 
-Three fields: the system, the **role** a reader recognises, and the **repository the session works
-in** — which is the authoritative one, because the Composer's delivery rule keys the chair to the
-repository and nothing else. A role with no repository behind it is a nickname; the repository is
-the claim.
+Three fields: the system, the **role** a reader recognises, and **the repository or host the session
+works in** — which is the authoritative one, because the Composer's delivery rule keys the chair to
+where the session works and to nothing else. A role with nothing behind it is a nickname; the third
+field is the claim.
+
+⚠️ **That field said *repository* until 2026-09-05, and the rule was wrong rather than the tag that
+broke it.** The Tool Worker signs `[GE · Worker · the tower]` — a **host**, because it audits live
+instances on a machine rather than working inside a repository. Under the narrower wording that
+session had no third field to write and, by *no role, no tag, no write*, should not have been
+writing; it had just filed two tool audits this library accepted on all three admission rules.
+**A convention that would have barred good work is a convention with a missing case**, and the case
+is a session whose subject is a machine.
 
 **Why the first line and not the last.** A reader deciding whether to act on a request needs to know
 who is asking before they read it, not after. Same reason these rules sit in this file rather than
 in a protocol page: a marker read after the text it qualifies has already failed.
 
-**Four roles are named so far** (Composer, 2026-09-04): **Workshop** · **Library** · **Watcher** ·
-**Tool Worker** — *"the fourth named GE for the moment"*, so **the set is open and expected to grow.** Each
+**Six roles are named so far** (Composer, 2026-09-04 for the first four, 2026-09-05 for the rest):
+**Workshop** · **Library** · **Watcher** · **Tool Worker** · **Project Key** · and the **Worker** on the
+tower — *"the fourth named GE for the moment"* was said when there were four, and **the set is open
+and expected to grow** exactly as that predicted. It grew twice within a day of being written. Each
 is one session in one repository, and the Composer keeps one active session per repository so that
 the delivery rule's *"the chair is fixed by the repository the session is in"* has exactly one holder
 at a time rather than needing anyone to remember it.
