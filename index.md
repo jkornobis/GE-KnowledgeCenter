@@ -68,9 +68,29 @@ already in hand:
 | **Response calibration** — read the mode before answering | `principles/core-principles.md` | depth is chosen before content exists |
 | **The presentation gate** — show, don't tell; buttons for genuine choices; a turn ends on an irreversible action, a question, a stated doubt, a task list or a use case | `protocols/presentation-checklist.md` | it runs before send; a gate that arrives with the message is not a gate |
 
-**Everything else in this library is a lookup**, reached when a question arrives: `chairs/the-twelve-chairs.md` for the routing table itself, then a chair's canon, a
-tool's real capabilities, a protocol that fires in response to something already recognised, the
-mandala borders, the graph.
+**Everything else in this library is a lookup**, reached **when a task turns on a fact about a
+surface** — which is this repository's own wording, from `README.md`, and it is task-shaped on
+purpose: `chairs/the-twelve-chairs.md` for the routing table itself, then a chair's canon, a tool's
+real capabilities, a protocol that fires in response to something already recognised, the mandala
+borders, the graph.
+
+⚠️ **This sentence used to read *"reached when a question arrives"*, and that wording had a hole
+large enough to lose a deliverable through.** **Producing is not answering.** An instance that
+believes it is assembling rather than being asked can satisfy a request-shaped rule honestly and
+still read nothing — which is what happened on 2026-09-04, recorded in issue #23: a complete board
+was built on the Figma surface having fetched **zero** pages from this library, and it carried five
+layout defects of exactly the kind the unread page exists to prevent. Reachability was never the
+problem; both fetches returned 200 on the first attempt when they were finally tried.
+
+**So the trigger is the work touching a subject, not a question arriving about one.** **Building on a
+surface is a task that turns on facts about that surface** — its real capabilities, its limits,
+the defaults it must beat — and the page governing it is owed *before* the first thing is made, not
+after the result is judged.
+
+**The correction is a reconciliation rather than a new rule.** `README.md` already said *"fetch on
+demand, never on principle — open a page when a task turns on a fact about a surface"*, and this
+index had drifted to a narrower shape. **The library held the right rule on the page a traveler is
+not told to fetch first.** What changed here is that the two now agree.
 
 **The Agile Auditor is the open question in this design.** Invariant 3 says its independence cannot
 exist in-context — it *is* the same model — so the long-term intent is a dedicated entity running
