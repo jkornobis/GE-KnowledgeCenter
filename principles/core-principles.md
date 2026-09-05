@@ -405,6 +405,41 @@ Six disciplines converged on this independently, three of them placing it *first
 - **UXDX's continuous discovery** — the loop scoped to delivery granularity, validated continuously instead of in one big pass.
 - **CRUD** (database/API design) — Create, Read, Update, Delete: the four primitives recur at every scale of stored state, from a database row to a Figma skill to a line in `principles.md`; a *structural* instance, like Atomic Design, naming the reusable operations rather than the loop that tests which one fits.
 
+**The loop tests. The Composer's claim is that it also *generates*, and that is a different property**
+(Composer-originated, 2026-09-05: *"Fractal Design is the key of every Leap. Scale up or scale down
+reveal always new possibility."* **Chair Review has not run on this addition** — it is recorded with
+its trace, not ratified). Everything above treats a change of scale as a way to **check** something
+already in hand. He is claiming it is also how something not yet in hand is **found**: that a leap is
+what a change of scale produces, rather than what precedes one.
+
+**The trace, from the day it was said, because a claim about how discovery works is worth nothing
+without the discovery it explains.** Two moves, in opposite directions, four hours apart.
+
+**Scaling down found a defect that three separate fixes had already hidden.** Three failures had each
+been corrected on its own terms: a count reported as *"identical on both sides"* against a `main`
+that had moved; a tracker watch filtered on the tag in an item's body, which records who **opened**
+it and never who caused the update; a pull request GitHub called `MERGEABLE / CLEAN` while merging it
+would have reverted a day's screening, because the diff renders against a stale merge base. **Three
+domains, three fixes, no pattern — until they were compressed to one sentence**: *each was true about
+the object it examined and reported as a claim about a different object.* That is the row
+`method/agile_auditor_catalog.md` now carries, and it exists because the scale went **down**, to the
+shape the three share, not up.
+
+**Scaling up found a leap neither instance holding the parts could see.** Two open issues, unrelated
+on their faces: one proposing that only the Library may author pages here, whose stated cost is that
+drafting lands on the instance that did not do the research; one reporting that a tool hosting its
+own agent is a delegate **the vendor pays for**. Held at the same scale, the second pays the first's
+cost — **a governance rule that was too expensive becomes affordable, because the drafting it imposes
+no longer costs the drafting instance anything.** Neither author reached it: the first was reasoning
+about authorship, the second about economics, and the leap lives only where both are in view.
+
+**What that adds to the loop above, stated as narrowly as it can be.** The seven mechanisms all
+answer *is this claim true at this scale*. The move recorded here answers a different question —
+*what becomes visible at a scale nobody was working at* — and it has a distinct failure mode: not a
+false negative, but **nothing at all**, which looks exactly like there being nothing to find.
+**Scale-fit is a claim; scale-change is a search.** The first earns a test. The second earns being
+tried in both directions before a subject is called exhausted.
+
 **The stakes.** Failed: an untested scale-fit assertion doesn't cost one wrong answer — it compounds silently, because nothing marks it unverified, and it gets built on before anyone re-checks. Succeeded: a tested boundary becomes a *permanent* map, durable in a way a correct-but-untested guess never would have been, even if the guess had happened to be right.
 
 Sources: [Self-similarity](https://en.wikipedia.org/wiki/Self-similarity) · [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/) · [What is Lean UX?](https://www.oreilly.com/radar/what-is-lean-ux/) · [UXDX Method](https://uxdx.com/method/).
