@@ -6,6 +6,12 @@ status: draft
 serves: [Design Engineer, Software Engineer, Product Owner, User Researcher]
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+sources:
+  - resource: https://context7.com/docs/overview
+  - resource: https://context7.com/plans
+  - resource: https://github.com/upstash/context7
+  - resource: https://mcp.context7.com/mcp`
+  - resource: https://context7.com/dashboard
 ---
 
 # Tool: Context7

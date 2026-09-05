@@ -5,6 +5,21 @@ description: "The accessibility engine underneath most of the field: what it imp
 status: draft
 serves: [Accessibility Specialist, QA Engineer, Design Engineer]
 generated: { by: human:jkornobis, at: 2026-08-23T00:20:16+02:00 }
+sources:
+  - resource: https://github.com/dequelabs/axe-core/issues/5028
+    title: "#5028"
+  - resource: https://github.com/dequelabs/axe-core/issues/4350
+    title: "#4350"
+  - resource: https://github.com/dequelabs/axe-core/issues/4791
+    title: "#4791"
+  - resource: https://stackoverflow.com/questions/79248451/axe-core-accessibility-library-reports-incorrect-colour-values
+    title: "79248451"
+  - resource: https://stackoverflow.com/questions/79552838/why-do-i-get-err-invalid-file-url-path-when-using-axe-core-playwright-in-a-next
+    title: "79552838"
+  - resource: https://stackoverflow.com/questions/79686218/how-can-i-get-axe-core-to-run-when-state-changes-or-i-switch-to-a-different-page
+    title: "79686218"
+  - resource: https://stackoverflow.com/questions/79475170/are-axe-core-rules-conform-to-older-rules
+    title: "79475170"
 ---
 
 # Tool: axe-core

@@ -5,6 +5,13 @@ description: "Six yes/no gates run before a message leaves: is this decision det
 status: draft
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-28T18:20:00+02:00 }
+sources:
+  - resource: https://www.langchain.com/blog/making-it-easier-to-build-human-in-the-loop-agents-with-interrupt
+    title: "LangChain interrupt"
+  - resource: https://www.agno.com/blog/how-to-add-human-in-the-loop-controls-to-ai-agents-that-actually-run-in-production
+    title: "Agno, HITL in production"
+  - resource: https://www.anthropic.com/research/measuring-agent-autonomy
+    title: "measuring agent autonomy"
 ---
 
 

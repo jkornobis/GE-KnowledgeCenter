@@ -5,6 +5,13 @@ description: "The fileKey-scoped Figma MCP servers: 33 tools against the 27 once
 status: draft
 serves: [UX Designer, Design Engineer, Content Designer, Accessibility Specialist]
 generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
+sources:
+  - resource: https://developers.figma.com/docs/rest-api/rate-limits/
+    title: "Figma REST API"
+  - resource: https://context7.com/?q=figma
+    title: "context7.com/?q=figma"
+  - resource: https://mcp.figma.com/mcp`
+  - resource: https://mcp.figma.com/mcp
 ---
 
 # Tool: Figma MCP — the remote servers

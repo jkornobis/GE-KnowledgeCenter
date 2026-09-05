@@ -5,6 +5,17 @@ description: "Cross-browser E2E on one API: what it verifies, 141 open issues an
 status: draft
 serves: [QA Engineer, Accessibility Specialist, Design Engineer, UX Designer, Reliability Engineer]
 generated: { by: human:jkornobis, at: 2026-08-23T00:26:29+02:00 }
+sources:
+  - resource: https://github.com/microsoft/playwright/issues/14813
+    title: "#14813"
+  - resource: https://github.com/microsoft/playwright/issues/20749
+    title: "#20749"
+  - resource: https://github.com/microsoft/playwright/issues/13037
+    title: "#13037"
+  - resource: https://github.com/microsoft/playwright/issues/1122
+    title: "#1122"
+  - resource: https://github.com/microsoft/playwright/issues/2497
+    title: "#2497"
 ---
 
 # Tool: Playwright

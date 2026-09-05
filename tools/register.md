@@ -5,6 +5,57 @@ description: "The lever register: what leaps exist and which seats they serve, j
 status: draft
 serves: [User Researcher, Product Owner, Software Architect]
 generated: { by: human:jkornobis, at: 2026-08-22T23:51:16+02:00 }
+sources:
+  - resource: https://stevekinney.com/writing/driving-vs-debugging-the-browser
+    title: "stevekinney.com"
+  - resource: https://www.test-lab.ai/blog/chrome-mcp-vs-playwright-mcp
+    title: "test-lab.ai"
+  - resource: https://www.vibebrowser.app/blog/chrome-devtools-mcp-vs-playwright-mcp
+    title: "vibebrowser.app"
+  - resource: https://www.deque.com/axe/axe-core/
+    title: "deque.com/axe/axe-core"
+  - resource: https://www.deque.com/blog/a-closer-look-at-axe-mcp-server/
+    title: "deque.com/blog"
+  - resource: https://docs.deque.com/devtools-server/4.0.0/en/axe-mcp-server/
+    title: "docs.deque.com"
+  - resource: https://chatforest.com/reviews/figma-ai-design-agent-canvas-code-to-canvas-2026/
+    title: "chatforest.com"
+  - resource: https://aidatainsider.com/news/figma-unveils-ai-agents-and-code-native-design-tools-at-config-2026/
+    title: "aidatainsider.com"
+  - resource: https://qubika.com/blog/figma-config-2026-announcements-for-designers/
+    title: "qubika.com"
+  - resource: https://www.chulbuldesign.com/blog/figma-updates-2026
+    title: "chulbuldesign.com"
+  - resource: https://atomize.tools/blog/figma-design-tokens-guide/
+    title: "atomize.tools"
+  - resource: https://docs.tokens.studio/transform-tokens/style-dictionary
+    title: "docs.tokens.studio"
+  - resource: https://docs.tokens.studio/fundamentals/design-tokens/
+    title: "docs.tokens.studio"
+  - resource: https://www.figma.com/community/plugin/843461159747178978/tokens-studio-for-figma
+    title: "figma.com/community"
+  - resource: https://inhaq.com/blog/figma-to-code-design-softwareengineer-workflow
+    title: "inhaq.com"
+  - resource: https://github.com/5t3ph/a11y-color-tokens
+    title: "a11y-color-tokens"
+  - resource: https://finos.github.io/a11y-theme-builder/designers/how-to-work-with-tokens/
+    title: "FINOS A11y Theme Builder"
+  - resource: https://github.com/design-tokens/community-group/blob/main/technical-reports/format/types.md
+    title: "base types"
+  - resource: https://github.com/design-tokens/community-group/blob/main/technical-reports/format/composite-types.md
+    title: "composite types"
+  - resource: https://github.com/design-tokens/community-group/pull/86
+    title: "PR 86"
+  - resource: https://jsoncanvas.org/
+    title: "JSON Canvas"
+  - resource: https://docs.deps.dev/api/v3/
+    title: "docs.deps.dev/api/v3"
+  - resource: https://scorecard.dev/
+    title: "scorecard.dev"
+  - resource: https://github.com/ossf/scorecard
+    title: "ossf/scorecard"
+  - resource: https://docs.libraries.io/overview.html
+    title: "docs.libraries.io"
 ---
 
 # The lever register — what exists, ranked by the lineage

@@ -5,6 +5,17 @@ description: "Runtime validation at the trust boundary: 58 open issues and a gen
 status: draft
 serves: [Software Engineer, Software Architect, QA Engineer]
 generated: { by: human:jkornobis, at: 2026-08-25T14:47:07+02:00 }
+sources:
+  - resource: https://standardschema.dev/
+    title: "Standard Schema"
+  - resource: https://github.com/colinhacks/zod/issues/1403
+    title: "#1403"
+  - resource: https://github.com/colinhacks/zod/issues/3884
+    title: "#3884"
+  - resource: https://github.com/colinhacks/zod/issues/2893
+    title: "#2893"
+  - resource: https://github.com/colinhacks/zod/issues/2062
+    title: "#2062"
 ---
 
 # Tool: Zod

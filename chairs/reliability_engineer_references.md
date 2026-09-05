@@ -4,6 +4,27 @@ title: "Reliability Engineer — Field References (Reliability & runtime)"
 description: "Live-docs currency layer for reliability and runtime: Kubernetes, SLOs and error budgets, OpenTelemetry, IaC, GitOps, FinOps, incident practice"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+sources:
+  - resource: https://kubernetes.io/docs/home/
+    title: "Kubernetes & container orchestration"
+  - resource: https://sre.google/workbook/implementing-slos/
+    title: "SRE — SLOs, SLIs & error budgets"
+  - resource: https://opentelemetry.io/docs/
+    title: "Observability & OpenTelemetry"
+  - resource: https://www.finops.org/framework/
+    title: "FinOps"
+  - resource: https://opentofu.org/
+    title: "Infrastructure as Code (Terraform / OpenTofu)"
+  - resource: https://sre.google/resources/practices-and-processes/incident-management-guide/
+    title: "Incident management & blameless postmortems"
+  - resource: https://opengitops.dev/
+    title: "GitOps runtime delivery (Argo / Flux)"
+  - resource: https://argo-cd.readthedocs.io/
+    title: "Argo CD"
+  - resource: https://backstage.io/
+    title: "Platform engineering / internal developer platforms"
+  - resource: https://www.sigstore.dev/
+    title: "Runtime supply-chain verification (Sigstore / Cosign)"
 ---
 
 # Reliability Engineer — Field References (Reliability & runtime)

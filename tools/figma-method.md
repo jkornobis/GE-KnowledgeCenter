@@ -4,6 +4,51 @@ title: "The Figma method — how a design surface is actually played"
 description: "Eyes first and code second: the working loop for a design surface, what the eyes read in a structured file, and why text-only spatial reasoning collapses as a layout grows"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
+sources:
+  - resource: https://gregrobison.medium.com/drawing-conclusions-the-rise-of-visual-reasoning-in-ai-with-multimodal-visualization-of-thought-042856fd50af
+    title: "Multimodal Visualization-of-Thought"
+  - resource: https://arxiv.org/abs/2506.23918
+    title: "Thinking with Images for Multimodal Reasoning (arXiv 2506.23918)"
+  - resource: https://github.com/figma/mcp-server-guide/blob/main/skills/figma-use/SKILL.md
+    title: "figma-use SKILL.md"
+  - resource: https://hundredtabs.com/blog/figma-ai-design-agent-explained
+    title: "Figma AI design agent explained"
+  - resource: https://arxiv.org/abs/2606.24525
+    title: "VisCritic (arXiv 2606.24525)"
+  - resource: https://arxiv.org/html/2506.03143v1
+    title: "GUI-Actor, Microsoft (arXiv 2506.03143)"
+  - resource: https://uxdesign.cc/agentic-ai-design-systems-figma-a-practical-guide-6ab0b681718d
+    title: "Agentic AI, design systems & Figma — a practical guide (Vallaure, UX Collective)"
+  - resource: https://developers.figma.com/docs/plugins/updates/2026/06/10/update/
+    title: "Plugin API 2026-06-10"
+  - resource: https://www.figma.com/resource-library/design-tokens/
+    title: "Figma: design tokens"
+  - resource: https://atomize.tools/blog/figma-design-tokens-guide/
+    title: "atomize 2026 guide"
+  - resource: https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma
+    title: "Figma: variables guide"
+  - resource: https://help.figma.com/hc/en-us/articles/15871097384471-The-difference-between-variables-and-styles
+    title: "Figma: variables vs styles"
+  - resource: https://developers.figma.com/docs/plugins/api/VariableScope/
+    title: "Figma: VariableScope"
+  - resource: https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties
+    title: "Figma: component properties"
+  - resource: https://help.figma.com/hc/en-us/articles/38231200344599-Use-slots-to-build-flexible-components-in-Figma
+    title: "Figma Learn"
+  - resource: https://www.figma.com/blog/supercharge-your-design-system-with-slots/
+    title: "Figma blog"
+  - resource: https://developers.figma.com/docs/code-connect/
+    title: "Figma: Code Connect"
+  - resource: https://www.figma.com/blog/design-systems-ai-mcp/
+    title: "Figma: Design Systems & AI — why MCP servers are the unlock"
+  - resource: https://www.figma.com/blog/the-figma-agent-is-here/
+    title: "The Figma agent is here"
+  - resource: https://www.figma.com/blog/config-2026-recap/
+    title: "Config 2026 recap"
+  - resource: https://atomicdesign.bradfrost.com/table-of-contents/
+    title: "Atomic Design"
+  - resource: https://www.smashingmagazine.com/design-systems-book/
+    title: "Design Systems"
 ---
 
 # The Figma method — how a design surface is actually played

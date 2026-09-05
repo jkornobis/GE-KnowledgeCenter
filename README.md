@@ -3,6 +3,9 @@ type: Reference
 title: "GE-KnowledgeCenter"
 description: "What this bundle is, how to read it, what it will never carry, and how a page gets added"
 status: draft
+sources:
+  - resource: https://raw.githubusercontent.com/jkornobis/GE-KnowledgeCenter/main/index.md
+  - resource: https://raw.githubusercontent.com/jkornobis/GE-KnowledgeCenter/main/tools/axe-core.md
 ---
 
 # GE-KnowledgeCenter

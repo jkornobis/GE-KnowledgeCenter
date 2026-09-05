@@ -4,6 +4,27 @@ title: "Software Architect — Field References (Process & versioning)"
 description: "Living reference notes for the Software Architect's field"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+sources:
+  - resource: https://dora.dev/research/2025/
+    title: "DORA 2025 — AI as amplifier"
+  - resource: https://dora.dev/ai/roi/report/
+    title: "DORA — ROI of AI-assisted Software Development (2026.01)"
+  - resource: https://agents.md/
+    title: "Governance for AI-generated code"
+  - resource: https://trunkbaseddevelopment.com/
+    title: "Trunk-based development + feature flags"
+  - resource: https://slsa.dev/
+    title: "Supply-chain integrity (SLSA + SBOM)"
+  - resource: https://adr.github.io/madr/
+    title: "Modern ADR practice (MADR 3)"
+  - resource: https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
+    title: "EU Cyber Resilience Act"
+  - resource: https://dora.dev/capabilities/
+    title: "Progressive delivery & DORA recovery metrics"
+  - resource: https://semver.org/
+    title: "SemVer + Conventional Commits automation"
+  - resource: https://www.conventionalcommits.org/
+    title: "Conventional Commits"
 ---
 
 # Software Architect — Field References (Process & versioning)

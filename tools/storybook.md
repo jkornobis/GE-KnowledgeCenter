@@ -5,6 +5,13 @@ description: "The component workbench where a variant becomes a runnable story: 
 status: draft
 serves: [Design Engineer, Software Engineer, QA Engineer]
 generated: { by: human:jkornobis, at: 2026-08-23T00:26:29+02:00 }
+sources:
+  - resource: https://github.com/storybookjs/storybook/issues/11933
+    title: "#11933"
+  - resource: https://github.com/storybookjs/storybook/issues/15946
+    title: "#15946"
+  - resource: https://github.com/storybookjs/storybook/issues/24238
+    title: "#24238"
 ---
 
 # Tool: Storybook

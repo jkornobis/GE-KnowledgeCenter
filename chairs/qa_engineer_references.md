@@ -4,6 +4,25 @@ title: "QA Engineer — Field References (Testing & DoD)"
 description: "Living reference notes for the QA Engineer's field"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+sources:
+  - resource: https://istqb.org/wp-content/uploads/2026/05/ISTQB-_CTAI_Syllabus_v2.0_Release.pdf
+    title: "Testing AI/LLM systems — ISTQB CT-AI v2.0"
+  - resource: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+    title: "OWASP Top 10 for Agentic Applications (2026), ASI01–ASI10"
+  - resource: https://genai.owasp.org/llm-top-10/
+    title: "LLM security & red-teaming (LLM Top 10, 2025)"
+  - resource: https://docs.pact.io/
+    title: "Contract testing (consumer-driven)"
+  - resource: https://martinfowler.com/articles/practical-test-pyramid.html
+    title: "Test pyramid → honeycomb/diamond"
+  - resource: https://istqb.org/istqb-releases-certified-tester-ai-testing-ct-ai-syllabus-version-2-0/
+    title: "Data / ML pipeline testing"
+  - resource: https://stryker-mutator.io/
+    title: "Property-based & mutation testing"
+  - resource: https://hypothesis.readthedocs.io/
+    title: "Hypothesis"
+  - resource: https://docs.sonarsource.com/sonarqube-server/latest/instance-administration/analysis-functions/quality-gates/
+    title: "Continuous testing & quality gates"
 ---
 
 # QA Engineer — Field References (Testing & DoD)

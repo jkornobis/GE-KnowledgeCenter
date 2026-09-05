@@ -4,6 +4,8 @@ title: "The Grand Ensemble graph — the model as data"
 description: "The machine-readable form of the three rings and their borders: 104 nodes, 251 within-layer edges and 282 crossings, every evidence-bearing edge carrying the sentence that earns it"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-26T18:40:00+02:00 }
+sources:
+  - resource: https://raw.githubusercontent.com/jkornobis/GE-KnowledgeCenter/main/graph/grand_ensemble.json
 ---
 
 # The Grand Ensemble graph — the model as data
