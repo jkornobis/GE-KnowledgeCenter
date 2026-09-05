@@ -274,6 +274,31 @@ entry above it is history that must not be edited.
 
 ---
 
+## Where this library lives — two remotes, and only one of them is written to (ruled 2026-09-05)
+
+**GitHub is the origin. A Forgejo instance on the Composer's own server holds a redundant copy**, and
+is also the intended entry point for later MCP work against the library.
+
+**The copy is a pull mirror: Forgejo fetches from GitHub on its own schedule.** No session pushes to
+it and no session has to remember it exists.
+
+**That shape was chosen over three others, and the reason is the failure mode rather than the
+mechanics.** A second push URL on `origin` couples availability — a home server rebooting would fail
+a push to GitHub. Two remotes pushed by hand is what ran for one day and is forgettable by
+construction: a session that clones from GitHub sees one remote, pushes to it, and **silently widens
+the gap the copy exists to close, with no error, because nothing is wrong from where it stands.** A
+periodic push has the same flaw with a longer fuse. **The pull mirror is the only option a session
+cannot forget, because no session is in the loop.**
+
+⚠️ **So a `forgejo` remote in a working clone is a mistake, not a convenience.** The mirror is
+read-only by construction; pushing to it either fails or forks the copy away from its source. **If
+you find one configured, remove it** — during the day it was set up by hand, this instance pushed to
+both remotes on every commit, and that habit is the thing the ruling removes.
+
+**What a redundant copy does not do**, said plainly so nobody relies on it wrongly: it is not a
+history of what GitHub deleted, because it follows GitHub including deletions. It is a second place
+the content exists, not an audit trail.
+
 **What this library is not:** it is **public**, so it carries nothing internal to an employer and
 nothing under NDA — **nor the employer's name, nor anything derived from it** (ruled 2026-08-27). It carries **no project** — a concert is not the instrument, and each Composer carries
 their own in their own `project/` tree. And it carries no Composer Key and nothing personal: if
