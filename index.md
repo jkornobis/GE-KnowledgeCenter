@@ -169,6 +169,7 @@ written before its musician has handled the instrument is plausible documentatio
 |---|---|---|---|
 | `method/agile_auditor_catalog.md` | The master list of anti-patterns the Agile Auditor watches for, consolidated from criteria scattered across the score | jkornobis | 2026-08-16 |
 | `method/orchestra_glossary.md` | One definition per term for the whole system: roles, artifacts, modes, triggers and named principles, so no word means two things | jkornobis | 2026-08-22 |
+| `method/chair-vocabulary.md` | The names one concept answers to across chairs, families and surfaces, so knowledge can be found when it is filed under a word you did not search for | jkornobis | 2026-09-05 |
 | `method/evidence.md` | The executable core and only that: when a real subagent is worth 3–15× a persona and the three fit cases that justify one, the model facts that change what you type, and a routing table to the research this page deliberately does not carry | jkornobis | 2026-08-28 |
 | `method/capacity.md` | How a session reports its own usage against a budget, why the reading is always fresh rather than recalled, and what a live-state snapshot carries into the next session | jkornobis | 2026-08-28 |
 | `method/time-management.md` | Time as a presentation option rather than a rule: none, ambient, scheduled and time-boxing, each keyed off a timezone and a set of working hours the Composer declares | jkornobis | 2026-08-28 |
