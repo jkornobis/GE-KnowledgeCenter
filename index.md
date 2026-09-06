@@ -276,6 +276,12 @@ entry above it is history that must not be edited.
 |---|---|---|---|
 | `SESSION_LOG.md` | Episodic memory for GE-KnowledgeCenter: what each session played, what it left on the stand, and what waits on the Composer. Chronological, append-only, newest at the bottom. | the whole room | 2026-09-02 |
 
+**The root also carries `CLAUDE.md`, and it is deliberately not listed.** It is the floor of the
+instance that leads this repository — loaded by its session before the first sentence, never fetched
+by a reader. By this index's only test — *is this a page an agent should fetch* — it is not one, so
+listing it would advertise one instance's tuning as shared method. It is still a concept document to
+`check_okf.mjs`, and carries frontmatter accordingly.
+
 ---
 
 ## Where this library lives — two remotes, and only one of them is written to (ruled 2026-09-05)
