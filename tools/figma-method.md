@@ -5,6 +5,10 @@ description: "Eyes first and code second: the working loop for a design surface,
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
 sources:
+  - resource: https://www.figma.com/plugin-docs/api/AnnotationsAPI/
+    title: "AnnotationsAPI — the namespaced category surface rule 20 said did not exist"
+  - resource: https://github.com/jkornobis/GE-KnowledgeCenter/issues/34
+    title: "Three corrections to rule 20, measured on a live FigJam board"
   - resource: https://gregrobison.medium.com/drawing-conclusions-the-rise-of-visual-reasoning-in-ai-with-multimodal-visualization-of-thought-042856fd50af
     title: "Multimodal Visualization-of-Thought"
   - resource: https://arxiv.org/abs/2506.23918
@@ -298,17 +302,58 @@ Composer — *"a rewrite of a live gate… the Composer's call, not a merge deci
 loop and the QA Engineer's gate above stand unopposed, unchanged, and were never in doubt.
 `git revert` returns what left.
 
-**20. Annotations live on the node, and every node has the property.** `node.annotations` is an array
-on `FRAME` and on `TEXT`, empty by default — **verified read-only 2026-09-02** on a live file. An
-annotation is `{ labelMarkdown, categoryId }`, and it travels with the node through moves, renames and
-relayouts, which is what separates it from a comment beside the design. **Two failure modes are
-reported by the estate that hit them and are *not* reproduced here, so they are marked and not
-asserted:** cloning a node whose annotations carry **both** `label` and `labelMarkdown` throws *"Only
-one of label or labelMarkdown should be given"* — so set annotations fresh on a clone; and categories
-created inside a script that later fails are orphans, since a failed `use_figma` is atomic. **A gap
-found while checking:** no annotation-**category** API was locatable on this route —
-`figma.getLocalAnnotationCategoriesAsync` does not exist and no `figma` key matches `/annot/i`. The
-property is confirmed; the category surface is not.
+**20. Annotations live on the node, and only some node types have the property.** `node.annotations`
+is an array on `FRAME` and on `TEXT`, empty by default — **verified read-only 2026-09-02** on a live
+file. An annotation is `{ labelMarkdown, categoryId }`, and it travels with the node through moves,
+renames and relayouts, which is what separates it from a comment beside the design. **Two failure
+modes are reported by the estate that hit them and are *not* reproduced here, so they are marked and
+not asserted:** cloning a node whose annotations carry **both** `label` and `labelMarkdown` throws
+*"Only one of label or labelMarkdown should be given"* — so set annotations fresh on a clone; and
+categories created inside a script that later fails are orphans, since a failed `use_figma` is atomic.
+
+**20a. The category API exists, and this rule said it did not.** The claim corrected: *"no annotation
+category API was locatable on this route — `figma.getLocalAnnotationCategoriesAsync` does not exist
+and no `figma` key matches `/annot/i`."* **The first half is true of a name nobody offers; the second
+is false.** The surface is namespaced rather than top-level:
+
+```
+readonly annotations: AnnotationsAPI
+interface AnnotationsAPI {
+  getAnnotationCategoriesAsync(): Promise<AnnotationCategory[]>
+  getAnnotationCategoryByIdAsync(id: string): Promise<AnnotationCategory | null>
+```
+
+Measured by Project Key on 2026-09-04 against the shipped typings, and **re-derived here on 2026-09-06
+against a different build of the same file** — 467,107 bytes where theirs read 452,967 — so the claim
+holds across two versions rather than one read. **The general rule this is an instance of:** a
+top-level probe answers only about the top level. Searching `figma` for `/annot/i` and finding nothing
+was a true statement about the wrong reference point, and `figma.annotations` sat one level down.
+
+**20b. In FigJam the property exists on exactly one node type.** `'annotations' in node` is **true**
+for `TEXT` and **false** for `SECTION`, `SHAPE_WITH_TEXT`, `STICKY` and `CONNECTOR`; FigJam has no
+`FRAME` at all. **A section, a sticky, a shape and a connector cannot be annotated** — which removes
+every obvious carrier a board reader would reach for. Measured on a live board, 2026-09-04.
+
+**20c. Writing an annotation can be refused, and reading gives no warning of it.** The rule above is
+explicit that it was *verified read-only*; this is the missing half. A write returned *"Cannot call
+node.annotations: you don't have permission to edit annotations on this file"*. **So a workflow may be
+designed against a property that reads perfectly and cannot be set** — check the write before building
+on it.
+
+**20d. An agent cannot read comments at all, and that is the routing decision.** The string `comment`
+occurs **zero** times in the 467,107 bytes of the plugin typings — counted here, not inherited.
+**Anything a person records as a comment is invisible to the delegate that must act on it.**
+
+| carrier | reachable by an agent |
+|---|---|
+| comment | **no** — no surface of any kind |
+| annotation | `FRAME` and `TEXT` only, and the write may be refused |
+| **node `name`** | **yes** — every node has one, a tree read returns it, it survives moves and renames |
+| a text node on the canvas | yes, and it is what the human half reads |
+
+**So instructions left for an agent belong in the node name**, and the annotation is for the person.
+That is the inversion worth holding: the field designed for commentary is the one the commentator
+cannot reach.
 
 **21. A text node carries hyperlinks per range.** `setRangeHyperlink(start, end, { type: "NODE", value:
 nodeId })` and its `getRangeHyperlink` pair are **both functions — verified 2026-09-02**, alongside a
