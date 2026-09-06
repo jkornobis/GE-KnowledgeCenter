@@ -32,7 +32,7 @@
  *
  * Requires node ≥ 18 for global fetch. No dependencies, by design — this library ships none.
  */
-import { readFileSync, readdirSync, statSync } from "node:fs";
+import { readFileSync, readdirSync, lstatSync } from "node:fs";
 import { join, relative } from "node:path";
 
 const ROOT = process.cwd();
@@ -47,7 +47,8 @@ const walk = (d) =>
     if (SKIP.has(n)) return [];
     const p = join(d, n);
     let st;
-    try { st = statSync(p); } catch { return []; }   // a dangling symlink is not a finding here
+    try { st = lstatSync(p); } catch { return []; }  // unreadable or vanished mid-walk
+    if (st.isSymbolicLink()) return [];              // never leave the repository — see the gates
     return st.isDirectory() ? walk(p) : n.endsWith(".md") ? [p] : [];
   });
 

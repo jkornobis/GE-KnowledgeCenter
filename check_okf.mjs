@@ -15,7 +15,7 @@
  * Reserved files were skipped until 2026-08-28, so `conformant` meant the concept
  * documents only — silent about the one file every consumer reads first.
  */
-import { readdirSync, readFileSync, statSync, existsSync } from "node:fs";
+import { readdirSync, readFileSync, statSync, lstatSync, existsSync } from "node:fs";
 import { join, relative, dirname } from "node:path";
 
 const ROOT = process.cwd();
@@ -29,7 +29,15 @@ const ACTOR_LEGACY = new Set(["agent:agile-facilitator"]);
 const walk = (d) => readdirSync(d).flatMap((n) => {
   if (n === ".git" || n === "node_modules") return [];
   const p = join(d, n);
-  return statSync(p).isDirectory() ? walk(p) : p.endsWith(".md") ? [p] : [];
+  let st;
+  try { st = lstatSync(p); } catch { return []; }   // unreadable or vanished mid-walk
+  // ⚠️ A symlink is never followed. `canvas/` points at an Obsidian vault outside this
+  // repository — the Composer's visual surface, where the mandalas are traced as
+  // Excalidraw drawings. Those drawings are `*.excalidraw.md` files: markdown by
+  // extension, not pages by nature, and validating them here would be this gate
+  // reporting on someone else's tree. git already ignores the link; so does this.
+  if (st.isSymbolicLink()) return [];
+  return st.isDirectory() ? walk(p) : p.endsWith(".md") ? [p] : [];
 });
 
 const ISO = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(Z|[+-]\d{2}:\d{2})$/;
