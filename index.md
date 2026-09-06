@@ -18,8 +18,10 @@ directory, it is history; if it has one and is not in a table below, report it r
 it. `check_links.mjs` in this bundle holds that line for `.md` and `.json`
 references only. **It does not read script names at all** — `scripts/` is declared provenance and `.mjs` is
 outside its pattern — so the script names cited across these pages are provenance by construction, never links
-it has checked and passed. **And two bare names are exceptions to the history rule, because they are runnable
-files in this bundle rather than another estate's coordinates: `check_okf.mjs` and `check_links.mjs`.**
+it has checked and passed. **And three bare names are exceptions to the history rule, because they are runnable
+files in this bundle rather than another estate's coordinates: `check_okf.mjs`, `check_links.mjs` and
+`sweep_links.mjs`** — the first two are gates and fail a merge; the third is a sweep, reports and
+never blocks.
 
 **And a provenance path may have a living sibling here.** The extraction remapped the files without remapping the
 cross-references, so **18 of the 48 provenance citations in these pages name a document this library also holds

@@ -20,6 +20,12 @@ import { join, relative, dirname } from "node:path";
 
 const ROOT = process.cwd();
 const RESERVED = new Set(["index.md", "log.md"]);
+const ACTOR = /^(human:[A-Za-z0-9._-]+|agent:ge-[a-z0-9-]+|process:[A-Za-z0-9._-]+)$/;
+// Written before the 2026-09-06 ruling, when the field named a CHAIR rather than an
+// instance. They are warned about and never rewritten: which instance wrote a given
+// page is not recoverable from git, the API or the text, and assigning one from a guess
+// is the failure the whole convention exists to prevent. Untagged is the honest state.
+const ACTOR_LEGACY = new Set(["agent:agile-facilitator"]);
 const walk = (d) => readdirSync(d).flatMap((n) => {
   if (n === ".git" || n === "node_modules") return [];
   const p = join(d, n);
@@ -138,6 +144,22 @@ for (const abs of walk(ROOT)) {
   const st = fm.match(/^status:\s*(\S+)/m);
   if (st && !["draft", "stable", "deprecated"].includes(st[1]))
     fails.push(`${rel}: status '${st[1]}' is not draft|stable|deprecated (§5.4)`);
+
+  // Actor vocabulary, ruled 2026-09-06: generated.by names WHOEVER PRODUCED THE TEXT —
+  // `agent:ge-<role>` where an instance wrote it, `human:<id>` only where the Composer
+  // authored the words, `process:<name>` where a script emitted it.
+  //
+  // ⚠️ This checks the SHAPE and can never check the CLAIM. It cannot know whether a
+  // human really wrote a page — which is the failure it was built after: 74 of 80 pages
+  // said `human:jkornobis` and instances had written most of them. What it does catch is
+  // the field drifting back out of the vocabulary into a prose name, which is how two of
+  // them stayed wrong for four days.
+  const by = fm.match(/\bby:\s*([^,}\n]+?)\s*[,}]/);
+  if (!by) warns.push(`${rel}: no 'generated.by' actor (§4.1 recommended, actor vocabulary 2026-09-06)`);
+  else if (ACTOR_LEGACY.has(by[1]))
+    warns.push(`${rel}: generated.by '${by[1]}' is the pre-2026-09-06 form naming a chair, not an instance; not rewritten, because the instance is not recoverable`);
+  else if (!ACTOR.test(by[1]))
+    fails.push(`${rel}: generated.by '${by[1]}' is not human:<id> | agent:ge-<role> | process:<name> (actor vocabulary, ruled 2026-09-06)`);
 }
 
 const line = (a) => a.forEach((s) => console.log("  " + s));
