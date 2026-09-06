@@ -56,6 +56,12 @@ only route in, so an unlisted page is not in the library.
     SESSION_LOG.md          at this root — APPEND ONLY, several instances write here
     issues + PRs            jkornobis/GE-KnowledgeCenter on Forgejo
     Wekan                   "Knowledge Center - Dedicated Board" · "Discussions GE Board"
+    decisions               an issue on GE-Workshop, where the ADR log lives — not here
+
+**A decision is traced at GE-Workshop or it does not exist** (Composer, 2026-09-06). The ADR log is
+at that end, not this one; I supply the decision, what it reverses and the artifact behind it, and
+the Workshop writes the record — one author per artifact. Issue creation is irreversible for an
+agent on this forge, so it is filed once and well-formed, never as a draft.
 
 **And the orchestra's shared memory is this repository, never an assistant's memory store.** A rule,
 a protocol or a correction is written where any instance fetches it: a session opened in a new
