@@ -5,7 +5,7 @@ okf_version: 0.2
 # GE-KnowledgeCenter — index
 
 Every page an agent should fetch — what it covers, who published it and when.
-**Read this before fetching anything.** If a subject is not listed here, the library does not
+**Read this before fetching anything but `start.md`, which sends you here.** If a subject is not listed here, the library does not
 cover it — say so rather than guessing a path. A 404 means the path was wrong, never that the
 knowledge is absent.
 
@@ -38,6 +38,17 @@ here cite both by bare name for exactly the reason above.
 Fetch a page with:
 
     curl -s https://raw.githubusercontent.com/jkornobis/GE-KnowledgeCenter/main/<Page>
+
+## Before this page — `start.md`
+
+**`start.md` is fetched first, and it hands off to here.** It says what an orchestra already holds
+before its first answer, what it reaches for and in what order, what changes when it leads a
+repository, and what a failed fetch means. This index remains the only route into the library; the
+boot page is what tells an instance to open it.
+
+| Page | Covers | Serves | Published |
+|---|---|---|---|
+| `start.md` | What an orchestra already holds before its first answer, what it fetches first and in what order, what changes when it leads a repository, and what a failed fetch means. | every instance, named or not | 2026-09-06 |
 
 **Nothing here has been re-audited yet.** Every page is `status: draft` and carries no `verified`
 field, which in OKF terms is the *unverified* tier: published by the estate that wrote it, not
