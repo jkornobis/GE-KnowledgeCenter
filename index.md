@@ -334,8 +334,13 @@ place the content is read, not a second history.
 **What this library is not:** it is **public**, so it carries nothing internal to an employer and
 nothing under NDA — **nor the employer's name, nor anything derived from it** (ruled 2026-08-27). It carries **no project** — a concert is not the instrument, and each Composer carries
 their own in their own `project/` tree. And it carries no Composer Key and nothing personal: if
-key material travels everywhere, it *is* everywhere. It carries what is true about an instrument
-**for whoever plays it**, never one estate's history.
+key material travels everywhere, it *is* everywhere. **Nor the addresses of a Composer's own
+infrastructure** (ruled 2026-09-06) — a private forge, a home doc site, a server hostname. They are
+not secrets, and that is not the argument: a public library naming where one person's machine lives
+publishes an attack surface for no reader's benefit, since every fetch it would enable is one an
+unauthenticated caller cannot make anyway. **An estate's addresses belong in that estate's own
+files**, which is where every instance already reads them. It carries what is true about an
+instrument **for whoever plays it**, never one estate's history.
 
 **This library is the GrandEnsemble's shared memory. An assistant's own memory is not** (ruled
 2026-09-06). A rule, a protocol or a correction is recorded here, where any instance fetches it —

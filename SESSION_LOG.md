@@ -693,3 +693,33 @@ token. A deploy key with write access replaced it.
 entry above names *9 commits ahead* as the day's live hazard; that is closed, and the failure mode
 it described — a publish surface answering 200 with a frozen library — is now a thing to check
 rather than a thing happening. Forgejo issue #4 closed with the same evidence.
+
+---
+
+## Session 2026-09-06 — correction: a screening purge, and this page was edited
+
+*This page is append-only and two entries above it were edited anyway. That is recorded here rather
+than left to be discovered.*
+
+**What was removed.** Every address of the Composer's own infrastructure — a private forge and a
+doc site — from `CLAUDE.md` and from the two entries of this log written today. **This session put
+them there**, and the push mirror published them to a public repository whose own rule says it
+carries nothing personal. Screening should have caught it at the first commit; what caught it was
+the outward sweep, four hours later, reporting five 404s from a host that answers 404 to anonymous
+callers.
+
+**Why the page was edited rather than corrected below.** The append-only rule protects a *claim*
+from being quietly rewritten — a session that read something wrong writes its correction as a new
+entry. **A leaked identifier is not a claim**, and leaving it in place while writing an entry saying
+it should not be there publishes it twice. The estate applied the same exception to an employer's
+name.
+
+**Forward-only, and the limit is stated rather than implied.** The published copy's history still
+holds every address written before that commit. Removing those means rewriting a branch other
+instances read, which is the worse of the two.
+
+**And the commit that did the purge over-claimed.** `fb9780a` says it added the index clause and
+this entry; a failed assertion stopped both from being written and the commit went out anyway,
+carrying only the removals. The removals were real and verified; the two additions arrived one
+commit later. **A commit message is an artifact like any other and this one was not checked against
+what it contained** — the same defect as claiming a page was read.
