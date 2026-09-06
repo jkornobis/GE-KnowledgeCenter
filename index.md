@@ -295,30 +295,39 @@ listing it would advertise one instance's tuning as shared method. It is still a
 
 ---
 
-## Where this library lives — two remotes, and only one of them is written to (ruled 2026-09-05)
+## Where this library lives — Forgejo writes, GitHub publishes (ruled 2026-09-06, reversing 2026-09-05)
 
-**GitHub is the origin. A Forgejo instance on the Composer's own server holds a redundant copy**, and
-is also the intended entry point for later MCP work against the library.
+**Instances write to the Forgejo instance on the Composer's own server. GitHub is the published read
+surface** — every orchestra fetches this library from `raw.githubusercontent.com`, and that address
+is written into `start.md`, this index, the skill floor and the machine's own route file.
 
-**The copy is a pull mirror: Forgejo fetches from GitHub on its own schedule.** No session pushes to
-it and no session has to remember it exists.
+**The link between them is a push mirror: Forgejo pushes to GitHub on its own schedule.** No session
+pushes to GitHub and no session has to remember it exists — which is the same property the previous
+ruling was reaching for, pointed the other way.
 
-**That shape was chosen over three others, and the reason is the failure mode rather than the
-mechanics.** A second push URL on `origin` couples availability — a home server rebooting would fail
-a push to GitHub. Two remotes pushed by hand is what ran for one day and is forgettable by
-construction: a session that clones from GitHub sees one remote, pushes to it, and **silently widens
-the gap the copy exists to close, with no error, because nothing is wrong from where it stands.** A
-periodic push has the same flaw with a longer fuse. **The pull mirror is the only option a session
-cannot forget, because no session is in the loop.**
+**The ruling of 2026-09-05 said the reverse, and it described something that was never built.**
+Measured 2026-09-06, asked of the machine rather than read from this page: the Forgejo repository
+answers `mirror: false`, no interval, no source URL. It is a plain writable repository, which is why
+three pushes to it that day succeeded — while the ruling on this page called such a push *"a
+mistake"* and told the next session to remove its only remote. **Four commits sat on Forgejo alone
+before anyone looked.**
 
-⚠️ **So a `forgejo` remote in a working clone is a mistake, not a convenience.** The mirror is
-read-only by construction; pushing to it either fails or forks the copy away from its source. **If
-you find one configured, remove it** — during the day it was set up by hand, this instance pushed to
-both remotes on every commit, and that habit is the thing the ruling removes.
+⚠️ **So a `github` remote in a working clone is a mistake, symmetric to the one this replaces.** The
+published copy is written by the mirror, never by a session; a second push URL couples one machine's
+availability to the other's, and a hand-pushed pair is forgettable by construction.
 
-**What a redundant copy does not do**, said plainly so nobody relies on it wrongly: it is not a
-history of what GitHub deleted, because it follows GitHub including deletions. It is a second place
-the content exists, not an audit trail.
+⚠️ **A publish surface that stops receiving content fails silently, and this is the failure mode to
+watch.** A stale `raw.githubusercontent.com` returns 200 with a library that stopped on some past
+afternoon — no error anywhere, because nothing is wrong from where the reader stands. **Compare the
+two heads before trusting a fetch that matters**, and treat a gap as the mirror being down rather
+than as history:
+
+    git ls-remote <forgejo>/GE-KnowledgeCenter.git main
+    curl -s https://api.github.com/repos/jkornobis/GE-KnowledgeCenter/commits/main
+
+**What the published copy does not do**, said plainly so nobody relies on it wrongly: it is not an
+audit trail of what the source deleted, because it follows the source including deletions. It is the
+place the content is read, not a second history.
 
 **What this library is not:** it is **public**, so it carries nothing internal to an employer and
 nothing under NDA — **nor the employer's name, nor anything derived from it** (ruled 2026-08-27). It carries **no project** — a concert is not the instrument, and each Composer carries
