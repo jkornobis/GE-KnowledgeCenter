@@ -755,3 +755,63 @@ proposed before the evidence was gathered and confirmed by it.
 records six hues chosen by measured HSL distance and then *"verified as rendered swatches
 side-by-side with the existing palette before use, not trusted from the arithmetic alone."* Written
 2026-07 after an exact-hex collision. The claim behind that sentence had never been written down.
+
+---
+
+## Session 2026-09-07 — End Day: the day the library learned to measure itself
+
+*Closing entry, written at the Composer's `End Day GE`. The session ran from the instance's own
+tuning through to a colour wheel; this records what it played, what is open, and what waits on him.
+**Nothing is compacted**, and the conflict named on 2026-09-06 is why: `End Day GE` asks for it and
+this page is append-only. A session choosing which of the two rules to break is not the resolution.*
+
+**Played.**
+
+**The instance tuned itself and the estate moved.** A floor at the root, `start.md` as the page any
+orchestra fetches first, the two-remotes ruling reversed against the machine, a push mirror built
+and verified, the shared-memory and decision-tracing rules made resident, the backlog re-filed onto
+the forge that now holds it, and a screening purge of the Composer's own infrastructure addresses.
+Each is a commit with its argument; none is restated here.
+
+**Six measurement scripts, and none of them writes.** `sweep_links.mjs` (outward addresses, reports
+and never blocks), `propose_vectors.mjs` (shared-neighbourhood candidates, hold-out measured at
+12 of 54 in its own top 100), `measure_stability.mjs` (scale invariance, robustness, and the
+black-hole test), `find_perturbations.mjs` (four residuals, never averaged), `measure_coupling.mjs`
+(the warrant border against a null model), `classify_bodies.mjs` (Neptune, singularity, the belt).
+**That they all read and never write is not a discipline anyone chose** — it is the only shape
+available, because the corpus they measure lives at the Workshop and only its derived graph lives
+here.
+
+**What the measurements found, in one line each.** Self-similarity is real — three layers at three
+scales carry nearly the same shape. Stability is real and is **redundancy, not centrality**: hubs
+cost 11 points more than random at 30% removal, and there is no black hole, five bodies sharing a
+quarter of the betweenness. The warrant border is **closed** — nothing unwarranted, nothing inert —
+**fans out** 1.7 to 3.1, and is **modular in two families of seven** against a null model. And three
+independent measurements landed on the same pair: **Spotlighting and The Harmony Principle**, 100%
+asserted, orbiting no chair, the two bodies the corpus has nothing else like.
+
+**Three corrections that were caught by building rather than by review**, and each invalidated
+something already said: the KIN residual counted cross-border neighbours and made every well-
+connected body look misfiled (12 strong candidates fell to 9); the Pluto test was **starved by
+precedence**, not empty, and its binary slid from 2 bodies to 17 across the same grid with no
+plateau; and the modularity claim had **no baseline**, which made a three-edge family look like the
+most modular in the corpus.
+
+**Open on the stand.** Filed rather than left here — #6 the belt has no name, #7 twelve Neptune
+predictions are unread, #8 the wheel has no radius and the existing render may be the better base,
+#9 the seventh protocol family is still unnamed. The day's decisions are on the Workshop's #2, with
+the new principle at its #4 and two findings on the tower's #2 and #3.
+
+**Pending the Composer's word.** The radius, and whether the mandala review render becomes the base
+instead of the swatch wheel — **his own question, and the better one**: that render draws individual
+bodies and their edges, and every subject this session pursued is about a single body.
+
+**Corrections that became protocol.** *An authorization probe against a write endpoint is a write* —
+this session created a file on the forge by probing a scope it had just been granted. *A permission
+row is not a capability* — the collaborator row said write while the token scope refused every push,
+and only the forge's own refusal named it. *A commit message is an artifact and must be checked
+against its diff* — one went out claiming two edits a failed assertion had prevented.
+
+**Not run: fair copy.** The estate's third gesture was not performed, and the reason is worth
+stating rather than omitting: it ends in a deploy, the session is long, and a tired context is the
+wrong one to publish from.
