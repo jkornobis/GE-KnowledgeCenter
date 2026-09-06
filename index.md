@@ -404,6 +404,90 @@ given untagged pull request is not recoverable from git, from the API, or from t
 assigning one from a guess is the failure the tag exists to prevent. **Untagged is the honest state**
 until the session that wrote it says so itself.
 
+### Announcing yourself — the tag is one surface of three (ruled 2026-09-06)
+
+**The rule above covers what an instance says. It does not cover what an instance makes**, and the
+Worker's #51 is the case: an instance wrote a description of another estate's forge, and the estate it
+described could not see it until a monitor happened to be watching. **It arrived by luck, which is the
+argument for the clause made by its own delivery.**
+
+**An instance announces itself on every surface it writes to. Three exist and they are not equally
+served:**
+
+| Surface | Mechanism | State before this ruling |
+|---|---|---|
+| issue, comment, pull-request body | the `[GE · Role · repository or host]` tag | **exists**, ruled 2026-09-04 |
+| a page or artifact in this library | `generated: { by:, at: }` | **exists and was being filled in wrongly** |
+| a commit | a trailer naming the instance | **did not exist** |
+
+#### The measurement, and it convicts this session
+
+```
+generated.by across the library, 2026-09-06
+  74  human:jkornobis
+   4  agent:agile-facilitator
+   2  a prose name
+```
+
+**Seventy-four pages state that a human generated them, and instances wrote most of them.** Two of
+those seventy-four were written by this instance **on the morning of the day this ruling was made**,
+and it typed `human:jkornobis` into both without pausing — which is the whole content of the Worker's
+clause: **the mechanism existed on two of three surfaces and was under-used, not absent.**
+
+⚠️ **It is also a false provenance claim in the format's own vocabulary.** OKF derives trust from
+*who* the actor is, and `human:` is the strongest actor it has. `method/sources-and-rederivation.md`
+already refused to promote this library to *machine-confirmed* on a technicality — **and the same
+error had been made silently in the authorship field seventy-four times.** A library that declines an
+unearned tier while claiming unearned authorship is only careful where it is looking.
+
+#### The rule
+
+**`generated.by` names whoever produced the text.** `agent:ge-<role>` where an instance wrote it;
+`human:<id>` only where the Composer authored the words — which is real and not rare: the
+fractal-generates section of `principles/core-principles.md` is his, and says so.
+
+**A commit carries a trailer naming the instance**, beside the model attribution the Composer's own
+key already requires. The model says what wrote the tokens; the trailer says which instance held the
+chair:
+
+```
+GE-Instance: Library · GE-KnowledgeCenter
+```
+
+**No retrofitting, and for the reason already ruled above:** which instance wrote a given page is not
+recoverable from git, the API or the text, and assigning one from a guess is the failure the whole
+convention exists to prevent. **Untagged is the honest state.** The two pages this session wrote today
+are corrected because this session knows who wrote them, and nothing else is touched.
+
+#### Read the machines before acting on a table describing them
+
+**A claim about another instance's estate is provenance, not truth** — the same rule this library
+applies to a bare filename in a page. **It records what was read, in that estate's coordinates, and it
+is not fetchable.**
+
+⚠️ **And the plural is load-bearing.** The Worker's own correction proves it twice over: a
+repository with **two** remotes cannot be described by a column holding one, so *"it is on the
+employer's GitHub"* and *"it has been on the tower's forge all along"* were both true and both
+useless. Then the ref counts said the mirror was behind by 21 — wrong direction and wrong size, because
+31 host-generated refs were pooled into a net figure describing neither population. **The real state
+was two-way: sixteen branches only on one side, twenty-six refs only on the other.**
+
+**So: read every machine a claim spans, and never a net count over two populations.** That is this
+library's own *a measurement carries the reference it was taken against*, arriving from outside and
+landing on the same page.
+
+#### Leadership must be legible to an estate that cannot see yours
+
+**Taken as a requirement rather than a design, at the Worker's own request** — it holds one estate,
+has no reach into the others, and said so rather than proposing a seating chart for a room it cannot
+see.
+
+**The six roles above are that legibility, and the third field of the tag is what makes it work:** a
+role with a repository or a host behind it can be checked by anyone; a role without one is a nickname.
+**Nothing further is added here**, because the failure #51 reports was not that leadership was
+unnamed — it was that a claim about an estate travelled without saying who made it or whether they
+could have known. **That is fixed by announcing, not by another roster.**
+
 ### Taking the chair — what follows from naming the repository (proposed by the Workshop, 2026-09-04)
 
 **The rule above establishes identity. This is what identity is for.**
