@@ -221,6 +221,12 @@ introduced them: *"Action and action in button must share same name."*
 
 ### The table explains, the buttons only choose
 
+**They are two different acts, and that is the whole rule** (Composer, 2026-09-07): *"question is
+about decision, explanation is knowledge management before that question."* Explanation belongs to
+the body of the message and happens **before**; the question carries only what is needed to choose.
+A button that explains is the decision surface doing knowledge work, which is a category error
+rather than a length problem — the length is only how it shows.
+
 **An option is a recommended action with a reason, never an explanation.** The table before the
 question carries four columns and always these: **Rank · Name · What · Why.** Rank is the glyph.
 Name is the identifier, reused verbatim in the button. What is the action in one clause. Why is what
