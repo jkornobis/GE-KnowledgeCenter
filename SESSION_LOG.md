@@ -677,3 +677,19 @@ actually wrong was the forge's own refusal message** — `token does not have at
 scope(s): [write:repository]` — which is the estate's rule about reading the machine, arriving one
 layer deeper than usual: not *ask the machine instead of the note*, but *ask the machine the
 question you actually have*.
+
+---
+
+## Session 2026-09-06 — correction: the push mirror is live
+
+*Correction to the entry above, written as its own entry because this page is append-only.*
+
+**The mirror is built and running.** The Composer configured it with the Tower instance, over SSH
+after token authentication was refused — GitHub answered *"Password authentication is not supported
+for Git operations"*, which is what it says when the password field holds anything but a working
+token. A deploy key with write access replaced it.
+
+**Verified, both heads read fresh:** `f42736d` on Forgejo and `f42736d` on GitHub, 13:22 CEST. The
+entry above names *9 commits ahead* as the day's live hazard; that is closed, and the failure mode
+it described — a publish surface answering 200 with a frozen library — is now a thing to check
+rather than a thing happening. Forgejo issue #4 closed with the same evidence.
