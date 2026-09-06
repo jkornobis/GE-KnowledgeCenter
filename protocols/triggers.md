@@ -84,7 +84,11 @@ Two permanent time-management methods; typing one switches to it and turns the o
 `Metronome` starts a **one-off Focused box** on a single subject — a transient time-box layered *above* the permanent method (including None) without changing it: `Metronome 25m` / `Metronome for [subject]`. Work against the box (segment, track, fit the rest via Program). Ends when the subject is done or on `Dismiss` / `Metronome off`. One at a time — a transient overlay, not a permanent method. See `time.md`.
 
 ## Fair copy
-Re-sync all documentation surfaces to the current source of truth, verify with search that no stale references remain, (in a repo) commit both remotes, and deploy the site to Pages (`origin`-only, `docs-site/scripts/deploy-pages.mjs`). Fires implicitly on every major rule change; typeable on demand.
+Re-sync all documentation surfaces to the current source of truth, verify with search that no stale references remain, (in a repo) commit and push to **the one remote a session writes to**, and deploy the site to Pages (`origin`-only, `docs-site/scripts/deploy-pages.mjs`). Fires implicitly on every major rule change; typeable on demand.
+
+**Run the outward sweep as part of it** (ruled 2026-09-06). External addresses rot slowly and nothing else looks at them; a fair copy is when a stale citation actually costs something, so `sweep_links.mjs` runs here rather than on a schedule. It never blocks — it reports, and what it finds becomes work or an issue, not a red gate.
+
+⚠️ **"Commit both remotes" is what this said until 2026-09-06 and it is no longer true.** A published copy is written by a mirror, not by a session; a session that pushes to both couples one host's availability to the other's and is forgettable by construction. Which remote a session writes to is its own repository's ruling — see that repository's index or floor, never this page.
 
 ## Capacity check
 No special phrase required — any Composer message stating a usage percentage (with or without a token count) is a Capacity Report. Recalibrates a running tokens-per-point rate, estimates remaining budget, and gives a compact sized readout. **Auto-triggers wrap-up posture at ~90%+**: no new expensive/subagent-heavy work proposed, offers to Checkpoint, names what's deferred. Full mechanism, cost tiers, and the reasoning for keeping this out of SKILL.md's always-on block: `capacity.md`.
