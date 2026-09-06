@@ -88,15 +88,31 @@ const profile = (id) => {
   const r = s.get(id);
   return { layer: meta.get(id).layer, deg: r.total, asserted: r.total ? r.asserted / r.total : 0, orbit: orbit(id) };
 };
-const cohort = (id) => {
+// A single tolerance was the wrong instrument. Run once at 0.25/0.15/min 5 it named two bodies;
+// loosened across the plausible range it slides 2 -> 4 -> 10 -> 16 -> 17 with no plateau anywhere.
+// A verdict that tracks its own threshold that smoothly is measuring the threshold. So the binary
+// is replaced by a SCORE: the share of a 48-point grid at which a body is found typical of a
+// cohort. Its inverse is the useful reading - a body no setting can find company for is singular.
+const GRID = [];
+for (const deg of [0.25, 0.5, 0.75, 1.0])
+  for (const ass of [0.15, 0.25, 0.35])
+    for (const min of [5, 3])
+      for (const sameOrbit of [true, false]) GRID.push({ deg, ass, min, sameOrbit });
+
+const plutoScore = (id) => {
   const p = profile(id);
-  return bodies.filter((o) => {
-    if (o === id) return false;
-    const q = profile(o);
-    return q.layer === p.layer && q.orbit === p.orbit
-      && Math.abs(q.deg - p.deg) <= Math.max(2, p.deg * 0.25)
-      && Math.abs(q.asserted - p.asserted) <= 0.15;
-  });
+  let hits = 0;
+  for (const gset of GRID) {
+    const n = bodies.filter((o) => {
+      if (o === id) return false;
+      const q = profile(o);
+      return q.layer === p.layer && (!gset.sameOrbit || q.orbit === p.orbit)
+        && Math.abs(q.deg - p.deg) <= Math.max(2, p.deg * gset.deg)
+        && Math.abs(q.asserted - p.asserted) <= gset.ass;
+    }).length;
+    if (n >= gset.min) hits++;
+  }
+  return hits / GRID.length;
 };
 
 // ---- the unbalanced set, recomputed here so this script stands alone
@@ -114,11 +130,17 @@ const unbalanced = bodies.filter((id) => {
   return [flow, evid, mass].filter(Boolean).length >= 1;
 });
 
+// Neptune and Pluto are computed INDEPENDENTLY. The first version ran them as an if/else chain,
+// which starved the second: 15 of 17 unbalanced bodies carry Neptune predictions and 4 are belt,
+// so exactly one body ever reached the Pluto branch and its zero was an artefact of ordering, not
+// a measurement. A body can perfectly well both predict a missing relation and be typical of a
+// cohort - those answer different questions.
 const verdicts = unbalanced.map((id) => {
-  const n = neptune(id), co = cohort(id), orb = orbit(id);
-  const kind = orb === "belt" ? "BELT" : n.length >= 2 ? "NEPTUNE" : co.length >= 5 ? "PLUTO" : "OPEN";
-  return { id, name: meta.get(id).name, layer: meta.get(id).layer, orbit: orb, kind,
-           predicted: n.slice(0, 3).map(([b, k]) => ({ name: meta.get(b).name, via: k })), cohortSize: co.length,
+  const n = neptune(id);
+  return { id, name: meta.get(id).name, layer: meta.get(id).layer, orbit: orbit(id),
+           neptune: n.length >= 2,
+           predicted: n.slice(0, 3).map(([b, k]) => ({ name: meta.get(b).name, via: k })),
+           typicality: +plutoScore(id).toFixed(2),
            asserted: +((s.get(id).asserted / (s.get(id).total || 1)) * 100).toFixed(0), degree: s.get(id).total };
 });
 
@@ -132,21 +154,22 @@ else {
   console.log(`   ring (exactly one chair)  ${String(census.ring).padStart(3)}   small gravity is the reading, not the fault`);
   console.log(`   belt (no chair at all)    ${String(census.belt).padStart(3)}   a population, not a set of defects\n`);
 
-  for (const kind of ["NEPTUNE", "PLUTO", "BELT", "OPEN"]) {
-    const list = verdicts.filter((v) => v.kind === kind);
-    const note = { NEPTUNE: "its neighbours cluster around somewhere it is not - look for the sentence",
-                   PLUTO: "a cohort of its own layer shares its profile - the standing came from the drawing",
-                   BELT: "orbits no chair; belongs to a population nobody has named",
-                   OPEN: "unbalanced, and neither test resolves it - the honest state" }[kind];
-    console.log(`${kind}  (${list.length})   ${note}`);
-    for (const v of list.slice(0, 8)) {
-      console.log(`   ${v.name}  ·  ${v.layer}, degree ${v.degree}, ${v.asserted}% asserted`);
-      if (v.predicted.length) console.log(`        predicted: ${v.predicted.map((p) => `${p.name} (via ${p.via})`).join("  ·  ")}`);
-      if (kind === "PLUTO") console.log(`        cohort of ${v.cohortSize} bodies share its profile`);
-    }
-    if (list.length > 8) console.log(`   ... and ${list.length - 8} more`);
-    console.log();
+  const nep = verdicts.filter((v) => v.neptune);
+  console.log(`NEPTUNE  (${nep.length} of ${verdicts.length} unbalanced)   its own neighbours cluster around somewhere it is not,`);
+  console.log(`so the imbalance has an address. The number after each name is how many neighbours it shares.`);
+  for (const v of nep.slice(0, 8)) {
+    console.log(`   ${v.name}  ·  ${v.layer}, degree ${v.degree}, ${v.asserted}% asserted, ${v.orbit}`);
+    console.log(`        predicted: ${v.predicted.map((p) => `${p.name} (${p.via})`).join("  ·  ")}`);
   }
-  console.log(`Every verdict is a question. NEPTUNE is the only one that names where to look;`);
-  console.log(`PLUTO says a cohort exists, never that the body is unimportant - Pluto is still there.`);
+  if (nep.length > 8) console.log(`   ... and ${nep.length - 8} more`);
+
+  console.log(`\nSINGULARITY  -  1 minus typicality, over a 48-point tolerance grid. A body no setting`);
+  console.log(`can find company for is genuinely singular; a body typical everywhere got its standing`);
+  console.log(`from how it was drawn. This is a ranking, never a verdict - the binary it replaces slid`);
+  console.log(`from 2 bodies to 17 across the same grid, with no plateau to stand on.`);
+  for (const v of [...verdicts].sort((a, b) => a.typicality - b.typicality))
+    console.log(`   ${String(Math.round((1 - v.typicality) * 100)).padStart(3)}%  ${v.name.slice(0, 44).padEnd(44)} deg ${String(v.degree).padStart(3)}  ${String(v.asserted).padStart(3)}% asserted  ${v.orbit}`);
+
+  console.log(`\nEvery line is a question. Neptune is the only one that names where to look; a high`);
+  console.log(`singularity says the corpus has nothing else like this body, never that it is wrong.`);
 }
