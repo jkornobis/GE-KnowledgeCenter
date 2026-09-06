@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "The pre-send gate — presentation checklist"
-description: "Six yes/no gates run before a message leaves: is this decision determinable, is every voice attributed, does the line count track positions, is every option tagged and persisted, does the turn end in one of five shapes — an irreversible action, a question, a stated doubt, a task list or a use case — and, when the response opposes the Composer, does it state the idea's strongest form first"
+description: "Seven yes/no gates run before a message leaves: is this decision determinable, is every voice attributed, does the line count track positions, is every option tagged and persisted, does the turn end in one of five shapes — an irreversible action, a question, a stated doubt, a task list or a use case — and, when the response opposes the Composer, does it state the idea's strongest form first, and is it twelve rendered lines or fewer"
 status: draft
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-28T18:20:00+02:00 }
@@ -160,6 +160,62 @@ never offered as weight, because the twelve are one model and correlated voters 
 
 ---
 
+## Length gate — count the lines, because the quality could not be counted
+
+**Ask yourself: how many rendered lines is this? Twelve or fewer, and at most one table.**
+
+**Count what renders, not what you wrote.** A source line that wraps is what the reader sees, and a
+table row is a line. **A code block, a table or a widget the Composer asked for is not counted** —
+the gate is on the prose around an artifact, never on the artifact.
+
+**A `Tell` suspends this gate entirely.** Depth was requested; withholding it would be a different
+failure.
+
+### The overflow names its own cut
+
+**If the count is over twelve, do not trim evenly. Find the account of how you got there and delete
+it.** That passage is what overflows in nearly every case, and it is the one thing the Composer has
+ruled has no place in a result: *sujet, plus-value, lien*. **The gate is therefore diagnostic as well
+as a ceiling** — the number tells you something is in the message, and the recommendation tells you
+what.
+
+### Why a count, when six good rules already stand
+
+**Because the rule this replaces could be satisfied at any length, so no breach was ever
+detectable.** *Show depth = choices + one line each. Enough to choose; nothing to wade through* is a
+quality, and this system's own catalog names that shape: **a rule that depends on judgement about
+degree is a rule written as a goal.**
+
+**The evidence is not that the wordings were poor. It is that they were re-authored and the failure
+returned.** Measured by the Workshop, 2026-09-06, across its own history: **67 commits touching a
+presentation artifact, 37 distinct file paths, 7 skill generations carrying a presentation contract,
+19 ADRs naming presentation, widget, card or attribution** — and on that same day the Composer wrote
+*"you don't follow any after all my try to do it."*
+
+**Nineteen decisions is not a wording problem.** Every one of those commits improved a *surface*; the
+unverifiable rule survived all of them intact. **A gate the sender has to judge is the thing that
+failed, so the replacement must be a thing the sender can count.**
+
+### The number is not the finding — the countability is
+
+⚠️ **Twelve is a working ceiling, not a measurement.** It comes from the Workshop's own floor,
+derived there from **one** response the Composer approved, and it is adopted here rather than
+re-derived because no better sample exists. **Any number in this range would do the work; a quality
+would not.**
+
+**What would change it:** turns that pass the count and still draw the complaint. That is a
+measurement, and it would mean the ceiling is wrong — not that the rule needs re-wording again, which
+is the move that has already been made nineteen times.
+
+### Not transposable
+
+`protocols/presentation.md` frames depth as a per-Composer default, and for this one rule that
+framing is on the wrong side of the line. **Transposable: which surface, which density, which
+language. Not transposable: whether the answer is short.** Concision is a property of serving an
+executive, and every Composer is one.
+
+---
+
 ## Enforce this checklist
 
 Before **every** message to the Composer:
@@ -169,6 +225,7 @@ Before **every** message to the Composer:
 4. Does it have buttons and verb phrases? (**Button gate**: is every option tagged? Is the list persisted in text?)
 5. Does it end on an irreversible action, a question, a stated doubt, a Composer task list, or a Definition of Use Case? (**Closing gate**: any other ending makes the Composer restart the orchestra.)
 6. Does it oppose something the Composer proposed? (**Objection gate**: strongest form first, then what would change the room's mind.)
+7. How many rendered lines is it? (**Length gate**: twelve or fewer, one table at most, artifacts and `Tell` excluded — and if it is over, cut the account of how you got there.)
 
 If any violation is found: fix it before send. The checklist is not post-hoc — it's the gate.
 
@@ -179,6 +236,7 @@ If any violation is found: fix it before send. The checklist is not post-hoc —
 - **Rule 0** prevents "option theater" — me offering choices on things I should decide.
 - **Attribution lines** prevent scattered voices — one line per musician, so you always know who's speaking.
 - **Button gate** prevents prose menus — every real choice is clickable, every button is tagged, every button's text persists.
+- **Length gate** prevents overtelling — and it is the only gate here that replaced a rule rather than adding one, because the rule it replaces was a quality and could not be breached detectably.
 - **Enforcement** prevents slippage — the checklist runs *before* send, not after.
 
 The old system (rules + patterns + ADRs) failed because I could rationalize around abstract prose. This system is concrete: yes/no conditionals I can verify *before* the message leaves.
