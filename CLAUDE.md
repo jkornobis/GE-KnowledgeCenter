@@ -57,6 +57,14 @@ only route in, so an unlisted page is not in the library.
     issues + PRs            jkornobis/GE-KnowledgeCenter on Forgejo
     Wekan                   "Knowledge Center - Dedicated Board" · "Discussions GE Board"
 
+**And the orchestra's shared memory is this repository, never an assistant's memory store.** A rule,
+a protocol or a correction is written where any instance fetches it: a session opened in a new
+folder on a new machine begins with none of a memory store and breaks the rule confidently, because
+an absence signals nothing. **This clause is resident rather than fetched because it decides where
+everything else gets written** — an instance that reaches for it has already put the rule somewhere
+no one will find it. What is true of one Composer on one machine may live in memory; what is true of
+the orchestra lives here.
+
 If throwing the transcript away would lose something, that something was never written down.
 
 ## 6 — Which surface wins when they disagree
