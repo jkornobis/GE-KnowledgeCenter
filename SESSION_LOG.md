@@ -580,3 +580,100 @@ generated them, two of them written by this instance the same morning, typed wit
 pausing.* **The mechanism existed and was under-used, which is a quieter failure than an
 absent one** — a library that refuses an unearned trust tier on a technicality while making
 an unearned authorship claim seventy-four times is careful only where it is looking.
+
+---
+
+## Session 2026-09-06 — the instance tunes itself, on the tower
+
+*Second entry for this date. The first records the library being told how to speak; this one
+records the library end **moving** — onto the Composer's server, into its own Forgejo repository,
+writing as its own account for the first time. Six Composer rulings, all filed at GE-Workshop
+[#2](https://git.jkosvr.fr/jkornobis/GE-Workshop/issues/2).*
+
+**Played.**
+
+**This repository has a floor** (`39773a5`). `CLAUDE.md` at the root, six clauses, written under the
+method the Tower published at `https://serverdoc.jkosvr.fr/ge-reglage-instance/` and read as
+reference rather than direction — *an instance that received its floor from a neighbour holds a
+description of itself written by someone who could not see it*. What it leads and where it stops ·
+which account it writes as · what this library may never carry · what counts as done · where the
+record lives · which surface wins. It grew twice in the same session, both times into an existing
+clause rather than as a seventh, because the method it follows says a floor that grows stops being
+read.
+
+**`start.md` — the page any instance fetches before it fetches the index** (`9c1a8bd`). Requested by
+the Composer for every GE start, named or not. The seam it had to resolve was that `index.md` also
+claimed first read; the boot page hands off rather than competing, and the index's opening was
+amended in the same commit so only one page holds the slot.
+
+**The two-remotes ruling was reversed, and the machine is what reversed it** (`3181eff`). The page
+had said since 2026-09-05 that GitHub was origin, that Forgejo was a read-only pull mirror, and that
+a `forgejo` remote in a working clone was *"a mistake — remove it"*. Asked of the machine rather
+than read from the page: `mirror: false`, no interval, no source URL. **The architecture was never
+built**, and the page was instructing the next session to delete the only remote its work reaches.
+Now: instances write to Forgejo, a push mirror publishes to GitHub, and a `github` remote in a
+working clone is the symmetric mistake.
+
+**Two rulings about where a rule lives, and both ended up resident.** *The GrandEnsemble's shared
+memory is this library, not an assistant's memory store* went into `index.md` (`dcce031`) and then
+into the floor (`eca4fbe`) — because a rule that decides where rules are written cannot itself be
+fetched. *A decision is traced at GE-Workshop or it does not exist* went straight to the floor
+(`70bbf29`), and GE-Workshop #2 is its first application: six decisions, each with the reversal it
+carries and the commit behind it, and **no ADR written there** — one author per artifact.
+
+**Two concision rules were ruled and had left no trace here** (`d19cabd`). A grep for them across
+the tree returned one hit, in this log, in a line saying they were recorded *outside* this
+repository. An action's name is an identifier reused verbatim in table, prose and button; the rank
+glyph leads the action cell rather than taking a column of its own. Filed under the length gate,
+because both are concision rules rather than layout preferences.
+
+**The backlog moved to the forge that now holds the work.** All four cards cited GitHub numbers that
+resolve to nothing on Forgejo, whose counter starts at 1. Re-filed as
+[#2](https://git.jkosvr.fr/jkornobis/GE-KnowledgeCenter/issues/2),
+[#3](https://git.jkosvr.fr/jkornobis/GE-KnowledgeCenter/issues/3),
+[#4](https://git.jkosvr.fr/jkornobis/GE-KnowledgeCenter/issues/4) and
+[#5](https://git.jkosvr.fr/jkornobis/GE-KnowledgeCenter/issues/5), each card retitled and carrying a
+comment naming what it was. #28's subject changed with the ruling and is now *configure the push
+mirror*.
+
+**Open on the stand.**
+
+- **The push mirror is not built, and this is the day's live hazard.** Forgejo is **9 commits ahead**
+  of GitHub, and every orchestra fetches this library from `raw.githubusercontent.com`. A publish
+  surface that stops receiving content answers `200` with a library frozen at 12:38 CEST — no error,
+  nothing wrong from where the reader stands. Configuring it needs repository admin, which this
+  account does not have, and a GitHub token, which no instance here holds. Card #4.
+- **#5 and #59 are one question from two sides** — how far a gate reaches, outward to 231 unread
+  external addresses and inward to two frontmatter fields never checked. Unchanged from the entry
+  above; neither is urgent.
+- **The four GitHub issues are left open.** Issues do not travel through a git push mirror, and no
+  instance on this machine holds a GitHub credential. The Forgejo copies name their originals.
+- **This instance's role slug is written two ways.** `tools/forgejo.md` and `tools/wekan.md` carry
+  `generated: { by: agent:ge-library }`; the account, the token files and everything written today
+  say `ge-knowledgecenter`. One of the two is wrong and nothing checks it — which is the same shape
+  as the `human:jkornobis` finding in the entry above, one field lower.
+- **`~/scripts/carte-commun.sh` signs as GE-Tower whichever instance runs it**, because it sources
+  the generic `~/.config/wekan-api.env` symlink. The Tower's file, so the Tower's ruling; surfaced
+  rather than changed.
+
+**Pending the Composer's word.** The push mirror, and the gate-reach ruling that answers #5 and #59
+together.
+
+**Corrections that became protocol.**
+
+**An authorization probe against a write endpoint is a write.** Testing whether this account's token
+had write scope, this session POSTed `{}` to the contents endpoint expecting a validation refusal.
+The forge accepted it and **created a file** (`76cc674`, removed in `fa54a5b`). The probe was
+designed to be harmless on the assumption it would fail; it was run *after* the scope changed, so it
+succeeded. **A probe whose safety depends on being refused is not a probe, it is an action with an
+optimistic prediction attached.** The two commits stay in history rather than being force-pushed
+away — a rewrite of a branch other instances read is the worse of the two.
+
+**Ask the account, and read the refusal — a permission row is not a capability.**
+`forgejo-droits.sh` reported `ECRITURE` on this repository while every push returned 403, because
+the row describes the *collaborator* and the block was the *token scope*. Neither the repository
+permissions, the branch state nor the mirror flag named it. **The only surface that said what was
+actually wrong was the forge's own refusal message** — `token does not have at least one of required
+scope(s): [write:repository]` — which is the estate's rule about reading the machine, arriving one
+layer deeper than usual: not *ask the machine instead of the note*, but *ask the machine the
+question you actually have*.
