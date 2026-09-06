@@ -30,6 +30,14 @@ own entry rather than rewriting history. Every claim carries the artifact behind
 — a commit, a PR, an issue number — because an entry that cannot be checked is
 worth less than no entry.
 
+**And compaction never edits either — append-only wins** (Composer, 2026-09-06, settling it
+against a close-of-day routine that asked for a closed subject to be compacted here). A
+finished subject is closed by a **closing entry that supersedes the earlier ones and names
+them**; those entries stay as written. The reasoning is on
+[`protocols/session_journal.md`](protocols/session_journal.md), and the short form is that a
+sequence of readings that were wrong before they were right is the most valuable thing this
+file holds. **The file only grows, and that is the accepted price.**
+
 **Reading it cold.** A session resuming here should read the last entry first, then
 work backwards only as far as it needs. *Pending the Composer's word* is the field
 that matters most: it names what a session must not decide on its own.
