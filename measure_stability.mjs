@@ -99,8 +99,44 @@ const robust = [0.05, 0.1, 0.2, 0.3].map((f) => {
   };
 });
 
+// ---- 4 - the black-hole test: does one body sit on everything?
+// The Composer, 2026-09-06: "a black hole appear to break the balance of system". A hub-and-spoke
+// system has that failure mode by construction — preferential attachment runs away until every
+// route passes through one body. Betweenness is the direct test: the share of all shortest paths
+// a body sits on. A true singularity approaches 100% for one node.
+const brandes = () => {
+  const V = [...layerOf.keys()], bc = new Map(V.map((v) => [v, 0]));
+  for (const s of V) {
+    const S = [], Pd = new Map(V.map((v) => [v, []])), sig = new Map(V.map((v) => [v, 0]));
+    const d = new Map(V.map((v) => [v, -1]));
+    sig.set(s, 1); d.set(s, 0);
+    const Q = [s];
+    for (let i = 0; i < Q.length; i++) {
+      const v = Q[i]; S.push(v);
+      for (const w of adj.get(v)) {
+        if (d.get(w) < 0) { d.set(w, d.get(v) + 1); Q.push(w); }
+        if (d.get(w) === d.get(v) + 1) { sig.set(w, sig.get(w) + sig.get(v)); Pd.get(w).push(v); }
+      }
+    }
+    const delta = new Map(V.map((v) => [v, 0]));
+    while (S.length) {
+      const w = S.pop();
+      for (const v of Pd.get(w)) delta.set(v, delta.get(v) + (sig.get(v) / sig.get(w)) * (1 + delta.get(w)));
+      if (w !== s) bc.set(w, bc.get(w) + delta.get(w));
+    }
+  }
+  return bc;
+};
+const bc = brandes();
+const bcTotal = [...bc.values()].reduce((a, b) => a + b, 0);
+const norm = ((N - 1) * (N - 2)) / 2;
+const central = [...bc].sort((a, b) => b[1] - a[1]).slice(0, 5)
+  .map(([id, v]) => ({ name: (G.layers[layerOf.get(id)]?.nodes ?? G.movements.nodes).find((n) => n.id === id)?.name ?? id,
+                       paths: +((v / norm) * 100).toFixed(1), share: +((v / bcTotal) * 100).toFixed(1) }));
+const top5share = central.reduce((t, c) => t + c.share, 0);
+
 if (asJson) {
-  console.log(JSON.stringify({ N, M, mean, top20, alpha, shape, robust }, null, 2));
+  console.log(JSON.stringify({ N, M, mean, top20, alpha, shape, robust, central, top5share }, null, 2));
 } else {
   console.log(`meta-mandala - ${N} nodes, ${M} undirected vectors, mean degree ${mean.toFixed(2)}\n`);
   console.log(`1 - degree shape`);
@@ -120,4 +156,11 @@ if (asJson) {
   console.log(`\n   The gap between the two columns is the whole test. A hub-dependent system - a`);
   console.log(`   solar system being the extreme case - shatters when its hubs go and shrugs at`);
   console.log(`   random loss. A redundant mesh degrades the same way under both.`);
+
+  console.log(`\n4 - black hole: does one body sit on everything?`);
+  for (const c of central)
+    console.log(`   ${String(c.paths).padStart(5)}% of all shortest paths   ${c.name}`);
+  console.log(`   top body holds ${central[0].share}% of total betweenness; top five hold ${top5share.toFixed(1)}%`);
+  console.log(`   A singularity approaches 100% for one body. Five sharing a quarter of it is the`);
+  console.log(`   opposite reading: load distributed, no attractor, nothing to fall into.`);
 }
