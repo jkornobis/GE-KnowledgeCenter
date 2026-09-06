@@ -588,12 +588,12 @@ an unearned authorship claim seventy-four times is careful only where it is look
 *Second entry for this date. The first records the library being told how to speak; this one
 records the library end **moving** — onto the Composer's server, into its own Forgejo repository,
 writing as its own account for the first time. Six Composer rulings, all filed at GE-Workshop
-[#2](https://git.jkosvr.fr/jkornobis/GE-Workshop/issues/2).*
+GE-Workshop #2.*
 
 **Played.**
 
 **This repository has a floor** (`39773a5`). `CLAUDE.md` at the root, six clauses, written under the
-method the Tower published at `https://serverdoc.jkosvr.fr/ge-reglage-instance/` and read as
+method the Tower published on the estate's own doc site — address held off this page — and read as
 reference rather than direction — *an instance that received its floor from a neighbour holds a
 description of itself written by someone who could not see it*. What it leads and where it stops ·
 which account it writes as · what this library may never carry · what counts as done · where the
@@ -629,10 +629,10 @@ because both are concision rules rather than layout preferences.
 
 **The backlog moved to the forge that now holds the work.** All four cards cited GitHub numbers that
 resolve to nothing on Forgejo, whose counter starts at 1. Re-filed as
-[#2](https://git.jkosvr.fr/jkornobis/GE-KnowledgeCenter/issues/2),
-[#3](https://git.jkosvr.fr/jkornobis/GE-KnowledgeCenter/issues/3),
-[#4](https://git.jkosvr.fr/jkornobis/GE-KnowledgeCenter/issues/4) and
-[#5](https://git.jkosvr.fr/jkornobis/GE-KnowledgeCenter/issues/5), each card retitled and carrying a
+#2,
+#3,
+#4 and
+#5, each card retitled and carrying a
 comment naming what it was. #28's subject changed with the ruling and is now *configure the push
 mirror*.
 

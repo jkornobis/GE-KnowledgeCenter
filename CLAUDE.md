@@ -5,14 +5,14 @@ description: "What the Library instance leads and where it stops, which account 
 status: stable
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-06T12:54:00+02:00 }
 sources:
-  - resource: https://serverdoc.jkosvr.fr/ge-reglage-instance/
-    title: "Tuning a Named instance on this machine"
+  - title: "Tuning a Named instance on this machine — the estate's own doc site, address held off this page"
 ---
 
 # GE-KnowledgeCenter — the floor of this instance
 
-Written 2026-09-06 by the Library instance, tuning itself, under the method published at
-<https://serverdoc.jkosvr.fr/ge-reglage-instance/>. Read after `~/.claude/CLAUDE.md`, the Composer
+Written 2026-09-06 by the Library instance, tuning itself, under the method the estate
+publishes at *Tuning a Named instance on this machine* — the address is on the estate's doc site and
+is deliberately not written here. Read after `~/.claude/CLAUDE.md`, the Composer
 Key, which it never overrides. Six clauses, because a floor that grows stops being read.
 
 ## 1 — What this instance leads, and where it stops
@@ -75,7 +75,7 @@ If throwing the transcript away would lose something, that something was never w
 
 ## 6 — Which surface wins when they disagree
 
-**The machine, always.** Then `https://serverdoc.jkosvr.fr` for what is true of the tower — never
+**The machine, always.** Then **the estate's own doc site** for what is true of this machine — never
 this library, which holds method and is not the estate's authority on itself. What is not resident
 is reached through `/data/appdata/ge/route.md`, which lives outside every repository and container.
 
