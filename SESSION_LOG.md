@@ -489,3 +489,86 @@ the same repository, thirteen heads, `main` identical on both sides.
 **Corrections that became protocol.** None new. The one from the entry above — *a
 screening sweep reads history, not tips, and re-runs after any push by another
 instance* — is the day's last and the one most worth carrying.
+
+---
+
+## Session 2026-09-06 — the day the library was told how to speak
+
+*Four merges, three of them rules about the orchestra rather than knowledge about
+tools. Written at the Composer's `Close the session`. **2026-09-05 closed without a
+checkpoint** — that day's work is in `git log` and in PRs #37 through #47, and is not
+paraphrased here, because an entry reconstructed from a diff is the thing this log
+says it is not.*
+
+**Played.**
+
+**The two tool pages, authored here from the Worker's audits** (PR #54). `tools/wekan.md`
+and `tools/forgejo.md`, 237 lines standing on 39,000 characters of audit that stayed
+where they were. The pair carries what neither audit could alone: Wekan answers **200**
+to a valid call, to no token and to a route that does not exist, where Forgejo answers
+404, 401, 403, 404 — **one surface demonstrates what correct status codes are worth, and
+it is the one without them.** The sharpest single finding is Wekan's: an API-created list
+is never drawn, `sort` is neither set nor accepted, and a card moved into one leaves every
+screen while staying in the database. Audits #35 and #36 closed with credit.
+
+**Rule 20 of `tools/figma-method.md` was wrong and is corrected** (PR #55). It declared
+that no annotation-category API existed; `figma.annotations.getAnnotationCategoriesAsync()`
+does. Project Key measured it against 452,967 bytes of typings and **this session
+re-derived it against a different build, 467,107 bytes**, so the correction rests on two
+reads of two versions. **Added here: the counted zero** — `comment` appears nowhere in
+those bytes, which turns three API facts into a routing decision. *Instructions left for an
+agent belong in the node `name`; the annotation is for the person.*
+
+**The presentation checklist gained a seventh gate, and it is a count** (PR #56). The rule
+it replaces was a quality — *nothing to wade through* — satisfiable at any length, so no
+breach was ever detectable. The Workshop counted its own history against it: **67 commits,
+7 skill generations, 19 ADRs**, and the Composer still writing *"you don't follow any after
+all my try to do it."* Twelve rendered lines, one table, artifacts and `Tell` excluded —
+and the gate is **diagnostic**: an overflow names its own cut, because what overflows is
+the account of how the answer was reached.
+
+**An instance now announces itself on three surfaces** (PR #57). The tag ruled 09-04 covers
+what an instance *says*; it never covered what an instance *makes*. `generated.by` on a
+page and a `GE-Instance:` commit trailer are the other two, and the trailer did not exist.
+
+**Two Composer rulings on presentation, recorded outside this repository.** The Eisenhower
+emoji moved into the **Rank** cell, and reference links now sit on their own line **inside
+each action's cell**, flush, no leading space. Both are Score Key, not library.
+
+**Open on the stand.**
+
+- **#48 and #59 ask the same question from two sides** — how far `check_okf.mjs` should
+  reach. Outward, to 231 external addresses nothing reads; inward, to two frontmatter
+  fields that never vary and are never checked. **One ruling answers both** and neither is
+  filed as urgent.
+- **The Forgejo half of the work-item key is unmeasured.** GitHub indexes comment bodies —
+  measured today, so the carrier decision holds there. **Forgejo is the surface being
+  promoted to origin and nobody has checked it**, and it cannot be checked from here.
+- **The two new tool pages are `status: draft`**, like all 81. Promotion is the Composer's
+  and is now #59.
+
+**Pending the Composer's word.**
+
+- **The pull mirror, or an amended ruling.** `index.md` has said since 09-05 that a
+  `forgejo` remote in a working clone is a mistake. **This session pushed to one by hand,
+  twice, because the mirror is still not configured** — recorded on #28 rather than quietly
+  corrected. Until one of the two happens, every session meets the same choice and resolves
+  it differently.
+- **A conflict this entry does not resolve.** `End Day GE` asks for one closed subject to be
+  **compacted** in this log; this page's own convention is **append-only, never edit an
+  earlier entry**. Compaction as usually meant would rewrite four entries about the history
+  rewrite. **Nothing was compacted**, and the conflict is surfaced rather than settled by a
+  session choosing which of the Composer's two rules to break.
+
+**Corrections that became protocol.**
+
+**A measurement about another estate must read every machine the claim spans, and never a
+net count over two populations.** The Worker corrected itself twice on #51 to reach it — a
+repository with two remotes cannot be described by a column holding one, and a net ref count
+hid a two-way divergence in both directions. It is now on `index.md` beside the signing rule.
+
+**And the one this session earned against itself:** *seventy-four pages claimed a human
+generated them, two of them written by this instance the same morning, typed without
+pausing.* **The mechanism existed and was under-used, which is a quieter failure than an
+absent one** — a library that refuses an unearned trust tier on a technicality while making
+an unearned authorship claim seventy-four times is careful only where it is looking.
