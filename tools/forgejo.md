@@ -4,7 +4,7 @@ title: "Tool: Forgejo"
 description: "The forge an orchestra records on: correct HTTP semantics where the kanban surface has none, bidirectional issue dependencies, boards absent from the API entirely, and issues an agent can create and never delete"
 status: draft
 serves: [Software Engineer, Software Architect, Product Owner, Agile Facilitator, User Researcher]
-generated: { by: agent:ge-library, at: 2026-09-06T09:35:00+02:00 }
+generated: { by: agent:ge-knowledgecenter, at: 2026-09-06T09:35:00+02:00 }
 sources:
   - resource: https://github.com/jkornobis/GE-KnowledgeCenter/issues/36
     title: "Tool Audit: Forgejo — the full audit this page comments on"

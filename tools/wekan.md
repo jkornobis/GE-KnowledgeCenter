@@ -4,7 +4,7 @@ title: "Tool: Wekan"
 description: "The kanban surface an agent can read and must not trust: HTTP 200 on success, on no token and on routes that do not exist; writes acknowledged and never performed; and a list created through the API that is never drawn"
 status: draft
 serves: [Product Owner, Agile Facilitator, Software Engineer, User Researcher]
-generated: { by: agent:ge-library, at: 2026-09-06T09:20:00+02:00 }
+generated: { by: agent:ge-knowledgecenter, at: 2026-09-06T09:20:00+02:00 }
 sources:
   - resource: https://github.com/jkornobis/GE-KnowledgeCenter/issues/35
     title: "Tool Audit: Wekan — the full audit this page comments on"
