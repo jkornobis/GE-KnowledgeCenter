@@ -5,8 +5,8 @@ description: "Eyes first and code second: the working loop for a design surface,
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
 sources:
-  - resource: https://www.figma.com/plugin-docs/api/AnnotationsAPI/
-    title: "AnnotationsAPI — the namespaced category surface rule 20 said did not exist"
+  - resource: https://www.figma.com/plugin-docs/api/Annotation/
+    title: "Annotation — the namespaced category surface rule 20 said did not exist; the page carries getAnnotationCategoriesAsync and AnnotationCategory, and is no longer named AnnotationsAPI"
   - resource: https://github.com/jkornobis/GE-KnowledgeCenter/issues/34
     title: "Three corrections to rule 20, measured on a live FigJam board"
   - resource: https://gregrobison.medium.com/drawing-conclusions-the-rise-of-visual-reasoning-in-ai-with-multimodal-visualization-of-thought-042856fd50af

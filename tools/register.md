@@ -34,8 +34,8 @@ sources:
     title: "docs.tokens.studio"
   - resource: https://www.figma.com/community/plugin/843461159747178978/tokens-studio-for-figma
     title: "figma.com/community"
-  - resource: https://inhaq.com/blog/figma-to-code-design-softwareengineer-workflow
-    title: "inhaq.com"
+  - resource: https://developers.figma.com/docs/code-connect/
+    title: "Code Connect — Figma's own documentation, replacing a blog article that 404'd"
   - resource: https://github.com/5t3ph/a11y-color-tokens
     title: "a11y-color-tokens"
   - resource: https://finos.github.io/a11y-theme-builder/designers/how-to-work-with-tokens/
@@ -196,7 +196,7 @@ Spans: **UX Designer ↔ Software Engineer**, with the Design Engineer as the se
 | **Figma Variables** | product feature | included (Figma) | native token storage since Config 2023; the standard place design decisions live | [atomize.tools](https://atomize.tools/blog/figma-design-tokens-guide/) | 2026-08-05 |
 | **Style Dictionary** | tool (build) | OSS | transforms tokens into development-ready code; **Tokens Studio's team joined the project in Aug 2023**, so the two are no longer competing stacks | [docs.tokens.studio](https://docs.tokens.studio/transform-tokens/style-dictionary) | 2026-08-05 |
 | **Tokens Studio** | plugin (Figma) | freemium | imports from and **two-way syncs with Figma Variables**, with a stronger export pipeline than Variables alone | [docs.tokens.studio](https://docs.tokens.studio/fundamentals/design-tokens/) · [figma.com/community](https://www.figma.com/community/plugin/843461159747178978/tokens-studio-for-figma) | 2026-08-05 |
-| **Code Connect** | product feature | seat-gated (Figma) | maps Figma components to code components **1:1** — pillar #1 of the industrialization mission, already in this session's toolset | [inhaq.com](https://inhaq.com/blog/figma-to-code-design-softwareengineer-workflow) · this session's own tool documentation | 2026-08-05 |
+| **Code Connect** | product feature | seat-gated (Figma) | maps Figma components to code components **1:1** — pillar #1 of the industrialization mission, already in this session's toolset | [developers.figma.com](https://developers.figma.com/docs/code-connect/) · this session's own tool documentation | 2026-08-05 |
 
 **The published shape of the whole pipeline**, for orientation: Dev Mode → tokens as JSON via Tokens Studio → Style Dictionary transform → Code Connect for the component mapping, with git as single source of truth and CI validating the crossing.
 
