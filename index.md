@@ -335,6 +335,14 @@ their own in their own `project/` tree. And it carries no Composer Key and nothi
 key material travels everywhere, it *is* everywhere. It carries what is true about an instrument
 **for whoever plays it**, never one estate's history.
 
+**This library is the GrandEnsemble's shared memory. An assistant's own memory is not** (ruled
+2026-09-06). A rule, a protocol or a correction is recorded here, where any instance fetches it —
+never in a per-installation memory store, whatever the host offers. The Composer's reason is the
+whole argument: *a session started in a new folder, on a new machine, begins with none of it.* **A
+rule kept in memory is one the next instance breaks without ever having seen it**, and it breaks it
+confidently, because nothing signals an absence. What belongs in a memory store is what is true of
+one Composer on one machine; what is true of the orchestra belongs here.
+
 **Three rules on what enters it, and one on what leaves** (ruled 2026-09-01). They sit here rather
 than in a protocol page for the reason this index already gives: a rule fetched by the thing it
 constrains is not a constraint, and this is the only page read first. The reasoning behind them is
