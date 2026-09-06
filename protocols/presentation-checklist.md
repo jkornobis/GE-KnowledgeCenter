@@ -207,6 +207,33 @@ would not.**
 measurement, and it would mean the ceiling is wrong — not that the rule needs re-wording again, which
 is the move that has already been made nineteen times.
 
+### The same thing is named once — repetition is length the count does not see
+
+**An action gets one name, and that string is reused verbatim everywhere it appears:** the ranked
+table's action cell, any sentence referring to it, the button `header`, the option label. **Options
+are named actions, not descriptions of outcomes.**
+
+**A renamed action is a second action.** The reader has to establish that the row and the button are
+the same thing before choosing between them, and that reconciliation is exactly the work the length
+gate exists to remove — it simply does not show up in the line count. Ruled by the Composer
+2026-09-06, dismissing a question whose buttons were phrased differently from the table that
+introduced them: *"Action and action in button must share same name."*
+
+### The rank glyph leads the action cell — never a column of its own
+
+**A ranked close-out puts its priority glyph at the head of the action cell.** A column holding one
+glyph renders wide and empty-headed: a phantom column, paid for in width on every row. Reference
+links sit on their own line **inside** the action's cell, flush, no leading space.
+
+⚠️ **Both rules are recorded here rather than in an assistant's memory, and the Composer gave the
+reason: a session started in a new folder, on a new machine, begins with none of it.** Memory is
+per-installation; this library is fetched. A presentation rule that lives only in memory is a rule
+the next instance breaks without ever having seen it.
+
+**Which glyphs, and what they mean, is the Composer's Score Key, not this page.** The mechanism is
+shared; the vocabulary is theirs. A page that hardcoded one Composer's set would be the shared
+system edited to suit one person.
+
 ### Not transposable
 
 `protocols/presentation.md` frames depth as a per-Composer default, and for this one rule that
