@@ -219,6 +219,24 @@ gate exists to remove — it simply does not show up in the line count. Ruled by
 2026-09-06, dismissing a question whose buttons were phrased differently from the table that
 introduced them: *"Action and action in button must share same name."*
 
+### The table explains, the buttons only choose
+
+**An option is a recommended action with a reason, never an explanation.** The table before the
+question carries four columns and always these: **Rank · Name · What · Why.** Rank is the glyph.
+Name is the identifier, reused verbatim in the button. What is the action in one clause. Why is what
+it buys the reader — not how it works.
+
+**The buttons then carry Rank and Name and nothing more.** A paragraph repeated under each button is
+the table said twice, and it spends the vertical space the table exists to save. Ruled by the
+Composer 2026-09-07, after a question whose three options ran to three lines each and filled half a
+screen: *"always recommend next action with a reason, instead of just explication, Rank, Name, What
+and Why. A table before the question and the question itself become simple as Rank - Name choice.
+And not take half of Vertical Space."*
+
+**This sits beside the length gate because its failure is countable.** *Explain less* is a quality;
+*the options occupy more than the table above them* is a thing the sender can see before pressing
+send.
+
 ### The rank glyph leads the action cell — never a column of its own
 
 **A ranked close-out puts its priority glyph at the head of the action cell.** A column holding one
