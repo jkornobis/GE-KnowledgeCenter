@@ -723,3 +723,35 @@ this entry; a failed assertion stopped both from being written and the commit we
 carrying only the removals. The removals were real and verified; the two additions arrived one
 commit later. **A commit message is an artifact like any other and this one was not checked against
 what it contained** — the same defect as claiming a page was read.
+
+---
+
+## Session 2026-09-06 — a principle was named, and it could not be written here
+
+*Short entry. The work is on the Workshop's issue #4; this records why it went there.*
+
+**The Composer named a new principle: The Ugly Duckling, cluster Balance.** Its claim — *taste is
+perceiving a system's imbalance directly; the eye holds a whole set at once and the outlier declares
+itself, without the numbers and faster than any check that uses them.* Its seed, `The eye picks the
+space`: a swatch even in one arithmetic and wrong to the eye means the arithmetic was in the wrong
+space, not that the eye is imprecise.
+
+**It could not be authored from this end, and the reason is structural rather than procedural.**
+`project/principles_candidate.md` is the source of every principle and it lives in `GE-Workshop`.
+`graph/grand-ensemble-graph.md` states the graph is *"derived mechanically from the same sources and
+regenerated rather than hand-edited"* — so adding a node here would both break that rule and put a
+principle in the derived artifact while its source said nothing. **This library holds the derived
+graph and not the corpus it derives from**, which is worth naming: a principle cannot be born here,
+only measured here.
+
+**The evidence was searched rather than recalled.** An HSL wheel rotates hue at fixed intervals and
+the arithmetic is even while the perception is not — at `L=50%` yellow reads about three times
+brighter than blue. Perceptually uniform spaces (CIELAB, Oklab/OKLCH, CAM16-derived HCT) exist to
+close that gap, and Material 3's tonal palettes reduce chroma until a colour fits the target gamut.
+**The clipped swatch obeyed every rule it was given and still looks wrong** — which is the seed,
+proposed before the evidence was gathered and confirmed by it.
+
+**And the practice was already in force here, unnamed.** `mandalas/border-protocols-principles.md`
+records six hues chosen by measured HSL distance and then *"verified as rendered swatches
+side-by-side with the existing palette before use, not trusted from the arithmetic alone."* Written
+2026-07 after an exact-hex collision. The claim behind that sentence had never been written down.
