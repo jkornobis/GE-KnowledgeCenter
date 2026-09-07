@@ -69,17 +69,21 @@ const G = JSON.parse(readFileSync("graph/grand_ensemble.json", "utf8"));
 // not a parameter. Same corpus, same 13 sectors, same encodings; only the projection and the
 // ground change. None is proposed as correct and the default is merely the first one built.
 //
-//     node render_solar.mjs                     deep      the built default
-//     node render_solar.mjs --variant=orrery    orrery    flat, lit, instrument-like
+//     node render_solar.mjs                     orrery    THE BASE, ruled 2026-09-07
+//     node render_solar.mjs --variant=deep      deep      tilted, heavy vignette, atmospheric
 //     node render_solar.mjs --variant=faceon    faceon    near-circular, colour forward
 //
+// ⚠️ ORRERY IS THE BASE BY RULING, NOT BY DEFAULTING. The Composer chose it on 2026-09-07 from
+// the three rendered side by side. The other two are kept and still build: the reason variants
+// exist here is his ruling that no single projection is true — "isn't one display to rule them
+// all" — and deleting the runners-up would quietly convert a choice into the only thing available.
 const VARIANTS = {
   deep:   { tilt: 0.50, bg: "#080b14", vignette: 0.85, ring: 1.0, glow: 74, ink: "#9fb0cc", dim: "#7f8ea8", title: "#e8eefb", sat: 0, light: 0 },
   orrery: { tilt: 0.30, bg: "#0e1220", vignette: 0.30, ring: 1.7, glow: 56, ink: "#b9c6dc", dim: "#8d9cb6", title: "#f2f6ff", sat: -6, light: +4 },
   faceon: { tilt: 0.86, bg: "#05060c", vignette: 0.00, ring: 0.8, glow: 88, ink: "#a9b8d2", dim: "#8595af", title: "#f4f8ff", sat: +10, light: +6 },
 };
-const VNAME = (process.argv.find((a) => a.startsWith("--variant=")) || "--variant=deep").split("=")[1];
-const V = VARIANTS[VNAME] || VARIANTS.deep;
+const VNAME = (process.argv.find((a) => a.startsWith("--variant=")) || "--variant=orrery").split("=")[1];
+const V = VARIANTS[VNAME] || VARIANTS.orrery;
 
 const W = 1600, H = 900, CX = W / 2, CY = H / 2 + 14, TILT = V.tilt;   // orthographic, not perspective
 
