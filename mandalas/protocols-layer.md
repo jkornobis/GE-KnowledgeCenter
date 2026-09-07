@@ -79,12 +79,18 @@ chair-count reading**, held by no chair, which is not detachment: **no chair ope
 Composer holds.** What read as the family's weakness in two independent measurements is its
 definition.
 
-⚠️ **And this page and `border-protocols-principles.md` disagree about whether the placeholder was
-ever ratified.** That page records the Composer ratifying *Session & Interface* on **2026-08-14** —
-*"The name is settled; the warrants are not."* This page, written two days later, calls the same
-label *"a placeholder, not a decision."* **Both statements are left standing**: which is right is not
-recoverable from either page, and the ruling above settles the name either way. The disagreement is
-recorded rather than resolved, because resolving it would mean choosing which page to disbelieve.
+⚠️ **This page said the label was never decided, and it was wrong — the source settles it.**
+`border-protocols-principles.md` records the Composer ratifying *Session & Interface* on
+**2026-08-14**, and `project/protocols_mandala_source.md` carries the same fact in the family heading
+itself: *"name ratified by the Composer, 2026-08-14 — it had carried 'working family name' since the
+family was formed."* **So the name was settled and this page went stale two days later**, and stayed
+stale for three weeks while being cited as the live statement.
+
+**Recorded rather than quietly fixed, because the failure was in the checking and not in the
+writing.** This session first reported the two pages as an unresolvable disagreement — *"not
+recoverable from either page"* — which was true of the two pages and false of the question, since the
+source was one fetch away and was not fetched. **Reading two derived pages and calling their conflict
+irresolvable is the same defect as recalling a page instead of reading it**, one level up.
 
 **The prediction that page made has since been overtaken.** It argued the family *"was formed by
 exclusion rather than by a shared principle"*, on the evidence that 13 of its protocols were then
