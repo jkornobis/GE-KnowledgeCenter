@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="Inter, Helvetica, Arial, sans-serif">
+<defs>
+  <radialGradient id="starGlow"><stop offset="0" stop-color="#fffdf4" stop-opacity=".95"/><stop offset=".55" stop-color="#ffeec0" stop-opacity=".35"/><stop offset="1" stop-color="#ffeec0" stop-opacity="0"/></radialGradient>
+  <radialGradient id="coronaBand"><stop offset="0" stop-color="#ffe9b0" stop-opacity="0"/><stop offset=".72" stop-color="#ffe9b0" stop-opacity=".13"/><stop offset="1" stop-color="#ffe9b0" stop-opacity="0"/></radialGradient>
+  <radialGradient id="vignette"><stop offset=".55" stop-color="#05070e" stop-opacity="0"/><stop offset="1" stop-color="#05070e" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1600" height="900" fill="#05060c"/>
+<g id="spacetime">
+<ellipse cx="800" cy="464" rx="144.2" ry="124.0" fill="none" stroke="hsl(210 30% 22%)" stroke-width="0.8"/>
+<ellipse cx="800" cy="464" rx="175.5" ry="150.9" fill="none" stroke="hsl(210 30% 23%)" stroke-width="0.8"/>
+<ellipse cx="800" cy="464" rx="206.8" ry="177.8" fill="none" stroke="hsl(210 30% 24%)" stroke-width="0.8"/>
+<ellipse cx="800" cy="464" rx="238.0" ry="204.7" fill="none" stroke="hsl(210 30% 25%)" stroke-width="0.8"/>
+<ellipse cx="800" cy="464" rx="269.3" ry="231.6" fill="none" stroke="hsl(210 30% 26%)" stroke-width="0.8"/>
+<ellipse cx="800" cy="464" rx="300.6" ry="258.5" fill="none" stroke="hsl(210 30% 27%)" stroke-width="0.8"/>
+<ellipse cx="800" cy="464" rx="331.8" ry="285.4" fill="none" stroke="hsl(210 30% 28%)" stroke-width="0.8"/>
+<line x1="800.0" y1="369.2" x2="800.0" y2="126.4" stroke="hsl(0 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="851.2" y1="380.1" x2="982.5" y2="165.0" stroke="hsl(28 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="890.7" y1="410.2" x2="1123.1" y2="272.2" stroke="hsl(55 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="909.4" y1="452.6" x2="1189.7" y2="423.3" stroke="hsl(83 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="903.1" y1="497.6" x2="1167.1" y2="583.7" stroke="hsl(111 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="873.1" y1="535.0" x2="1060.3" y2="716.7" stroke="hsl(138 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="826.4" y1="556.0" x2="894.0" y2="791.8" stroke="hsl(166 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="773.6" y1="556.0" x2="706.0" y2="791.8" stroke="hsl(194 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="726.9" y1="535.0" x2="539.7" y2="716.7" stroke="hsl(222 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="696.9" y1="497.6" x2="432.9" y2="583.7" stroke="hsl(249 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="690.6" y1="452.6" x2="410.3" y2="423.3" stroke="hsl(277 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="709.3" y1="410.2" x2="476.9" y2="272.2" stroke="hsl(305 40% 30%)" stroke-width=".6" opacity=".45"/>
+<line x1="748.8" y1="380.1" x2="617.5" y2="165.0" stroke="hsl(332 40% 30%)" stroke-width=".6" opacity=".45"/>
+</g>
+<rect width="1600" height="900" fill="url(#vignette)"/>
+<g id="sectors">
+<text x="800.0" y="142.1" fill="hsl(0 45% 52%)" font-size="10" text-anchor="middle" opacity=".85">Governance</text>
+<text x="975.6" y="179.3" fill="hsl(28 45% 52%)" font-size="10" text-anchor="start" opacity=".85">Safety</text>
+<text x="1111.0" y="282.4" fill="hsl(55 45% 52%)" font-size="10" text-anchor="start" opacity=".85">Structure</text>
+<text x="1175.1" y="427.8" fill="hsl(83 45% 52%)" font-size="10" text-anchor="start" opacity=".85">Learning</text>
+<text x="1153.3" y="582.2" fill="hsl(111 45% 52%)" font-size="10" text-anchor="start" opacity=".85">Epistemics</text>
+<text x="1050.6" y="710.2" fill="hsl(138 45% 52%)" font-size="10" text-anchor="start" opacity=".85">Balance</text>
+<text x="890.4" y="782.5" fill="hsl(166 45% 52%)" font-size="10" text-anchor="middle" opacity=".85">Roster &amp; Ensemble</text>
+<text x="709.6" y="782.5" fill="hsl(194 45% 52%)" font-size="10" text-anchor="middle" opacity=".85">Scale &amp; Effort</text>
+<text x="549.4" y="710.2" fill="hsl(222 45% 52%)" font-size="10" text-anchor="end" opacity=".85">Quality &amp; Verification</text>
+<text x="446.7" y="582.2" fill="hsl(249 45% 52%)" font-size="10" text-anchor="end" opacity=".85">Decision &amp; Escalation</text>
+<text x="424.9" y="427.8" fill="hsl(277 45% 52%)" font-size="10" text-anchor="end" opacity=".85">Learning &amp; Pattern</text>
+<text x="489.0" y="282.4" fill="hsl(305 45% 52%)" font-size="10" text-anchor="end" opacity=".85">Trust boundary</text>
+<text x="624.4" y="179.3" fill="hsl(332 45% 52%)" font-size="10" text-anchor="end" opacity=".85">Session &amp; Interface</text>
+</g>
+<circle cx="800" cy="464" r="121.942252948353" fill="url(#coronaBand)"/>
+<ellipse cx="800" cy="464" rx="87.942252948353" ry="75.6" fill="none" stroke="#ffe9b0" stroke-width=".9" stroke-dasharray="2 5" opacity=".55"/>
+<circle cx="800.0" cy="388.4" r="5.1" fill="#ffeec8" opacity=".92"><title>A choice offered is a bug — Corona, degree 9</title></circle>
+<circle cx="827.2" cy="392.1" r="5.1" fill="#ffeec8" opacity=".92"><title>The reader sets the distance — Corona, degree 6</title></circle>
+<circle cx="851.7" cy="402.8" r="4.3" fill="#ffeec8" opacity=".92"><title>Request quality check — Corona, degree 4</title></circle>
+<circle cx="871.1" cy="419.5" r="3.9" fill="#ffeec8" opacity=".92"><title>Post-edit skill budget — Corona, degree 3</title></circle>
+<circle cx="883.6" cy="440.6" r="3.9" fill="#ffeec8" opacity=".92"><title>Declared-set check — Corona, degree 3</title></circle>
+<circle cx="887.9" cy="464.0" r="3.9" fill="#ffeec8" opacity=".92"><title>Button gate — Corona, degree 3</title></circle>
+<circle cx="883.6" cy="487.4" r="3.9" fill="#ffeec8" opacity=".92"><title>Disagreement handling — Corona, degree 3</title></circle>
+<circle cx="871.1" cy="508.5" r="3.9" fill="#ffeec8" opacity=".92"><title>Usage ledger — Corona, degree 3</title></circle>
+<circle cx="851.7" cy="525.2" r="3.9" fill="#ffeec8" opacity=".92"><title>Session-start digest — Corona, degree 3</title></circle>
+<circle cx="827.2" cy="535.9" r="3.9" fill="#ffeec8" opacity=".92"><title>Solo / Dismiss — Corona, degree 3</title></circle>
+<circle cx="800.0" cy="539.6" r="3.9" fill="#ffeec8" opacity=".92"><title>Program — Corona, degree 3</title></circle>
+<circle cx="772.8" cy="535.9" r="3.0" fill="#ffeec8" opacity=".92"><title>Open score / Close score — Corona, degree 1</title></circle>
+<circle cx="748.3" cy="525.2" r="3.9" fill="#ffeec8" opacity=".92"><title>Make it so — Corona, degree 3</title></circle>
+<circle cx="728.9" cy="508.5" r="3.9" fill="#ffeec8" opacity=".92"><title>Tell — Corona, degree 3</title></circle>
+<circle cx="716.4" cy="487.4" r="3.4" fill="#ffeec8" opacity=".92"><title>Help — Corona, degree 2</title></circle>
+<circle cx="712.1" cy="464.0" r="4.3" fill="#ffeec8" opacity=".92"><title>Composer Key — Corona, degree 4</title></circle>
+<circle cx="716.4" cy="440.6" r="3.9" fill="#ffeec8" opacity=".92"><title>Change Score Key — Corona, degree 3</title></circle>
+<circle cx="728.9" cy="419.5" r="3.4" fill="#ffeec8" opacity=".92"><title>Time methods (Ambient / None) — Corona, degree 2</title></circle>
+<circle cx="748.3" cy="402.8" r="3.4" fill="#ffeec8" opacity=".92"><title>Metronome — Corona, degree 2</title></circle>
+<circle cx="772.8" cy="392.1" r="4.7" fill="#ffeec8" opacity=".92"><title>Capacity check — Corona, degree 5</title></circle>
+<circle cx="800" cy="464" r="88" fill="url(#starGlow)"/>
+<circle cx="800" cy="464" r="15.5" fill="#fffdf2"/>
+<circle cx="800" cy="464" r="15.5" fill="none" stroke="#fff6d8" stroke-width=".8" opacity=".7"/>
+<title>the Composer — 4.9% of shortest paths, rank 6 of 117</title>
+<circle cx="466.9" cy="298.6" r="9" fill="#cfd8ea" opacity=".95"/>
+<text x="449.6" y="294.0" fill="#a9b8d2" font-size="11.5" text-anchor="end">Agile Facilitator</text>
+<line x1="466.9" y1="298.6" x2="637.2" y2="688.7" stroke="#cfd8ea" stroke-width=".8" opacity="0.34"/>
+<circle cx="607.7" cy="177.6" r="7.5" fill="#cfd8ea" opacity=".95"/>
+<text x="597.7" y="166.7" fill="#a9b8d2" font-size="11.5" text-anchor="end">Agile Auditor</text>
+<line x1="607.7" y1="177.6" x2="533.9" y2="597.1" stroke="#cfd8ea" stroke-width=".8" opacity="0.17"/>
+<circle cx="1184.6" cy="464.0" r="7.5" fill="#cfd8ea" opacity=".95"/>
+<text x="1204.6" y="468.0" fill="#a9b8d2" font-size="11.5" text-anchor="start">QA Engineer</text>
+<line x1="1184.6" y1="464.0" x2="956.6" y2="691.9" stroke="#cfd8ea" stroke-width=".8" opacity="0.35"/>
+<circle cx="1133.1" cy="629.4" r="7.5" fill="#cfd8ea" opacity=".95"/>
+<text x="1150.4" y="642.0" fill="#a9b8d2" font-size="11.5" text-anchor="start">Accessibility Specialist</text>
+<line x1="1133.1" y1="629.4" x2="888.9" y2="717.5" stroke="#cfd8ea" stroke-width=".8" opacity="0.46"/>
+<circle cx="1133.1" cy="298.6" r="7.5" fill="#cfd8ea" opacity=".95"/>
+<text x="1150.4" y="294.0" fill="#a9b8d2" font-size="11.5" text-anchor="start">UX Designer</text>
+<line x1="1133.1" y1="298.6" x2="969.6" y2="685.0" stroke="#cfd8ea" stroke-width=".8" opacity="0.33"/>
+<circle cx="992.3" cy="177.6" r="7.5" fill="#cfd8ea" opacity=".95"/>
+<text x="1002.3" y="166.7" fill="#a9b8d2" font-size="11.5" text-anchor="start">Content Designer</text>
+<line x1="992.3" y1="177.6" x2="1084.5" y2="565.0" stroke="#cfd8ea" stroke-width=".8" opacity="0.27"/>
+<circle cx="992.3" cy="750.4" r="7.5" fill="#cfd8ea" opacity=".95"/>
+<text x="1002.3" y="769.3" fill="#a9b8d2" font-size="11.5" text-anchor="start">Design Engineer</text>
+<line x1="992.3" y1="750.4" x2="879.6" y2="719.7" stroke="#cfd8ea" stroke-width=".8" opacity="0.23"/>
+<circle cx="466.9" cy="629.4" r="7.5" fill="#cfd8ea" opacity=".95"/>
+<text x="449.6" y="642.0" fill="#a9b8d2" font-size="11.5" text-anchor="end">Product Owner</text>
+<line x1="466.9" y1="629.4" x2="662.6" y2="700.9" stroke="#cfd8ea" stroke-width=".8" opacity="0.36"/>
+<circle cx="415.4" cy="464.0" r="7.5" fill="#cfd8ea" opacity=".95"/>
+<text x="395.4" y="468.0" fill="#a9b8d2" font-size="11.5" text-anchor="end">User Researcher</text>
+<line x1="415.4" y1="464.0" x2="648.2" y2="694.3" stroke="#cfd8ea" stroke-width=".8" opacity="0.27"/>
+<circle cx="607.7" cy="750.4" r="7.5" fill="#cfd8ea" opacity=".95"/>
+<text x="597.7" y="769.3" fill="#a9b8d2" font-size="11.5" text-anchor="end">Software Engineer</text>
+<line x1="607.7" y1="750.4" x2="702.6" y2="715.1" stroke="#cfd8ea" stroke-width=".8" opacity="0.34"/>
+<circle cx="800.0" cy="794.8" r="7.5" fill="#cfd8ea" opacity=".95"/>
+<text x="800.0" y="816.0" fill="#a9b8d2" font-size="11.5" text-anchor="middle">Software Architect</text>
+<line x1="800.0" y1="794.8" x2="813.8" y2="728.5" stroke="#cfd8ea" stroke-width=".8" opacity="0.14"/>
+<circle cx="800.0" cy="133.2" r="7.5" fill="#cfd8ea" opacity=".95"/>
+<text x="800.0" y="120.0" fill="#a9b8d2" font-size="11.5" text-anchor="middle">Reliability Engineer</text>
+<line x1="800.0" y1="133.2" x2="1103.0" y2="417.3" stroke="#cfd8ea" stroke-width=".8" opacity="0.14"/>
+<circle cx="816.9" cy="232.9" r="7.8" fill="hsl(0 56% 62%)" opacity=".93"><title>Dèmos Kratos — Governance, degree 18, evidence 39%</title></circle>
+<circle cx="767.1" cy="315.7" r="6.6" fill="hsl(0 77% 71%)" opacity=".93"><title>The Composer Principle — Governance, degree 14, evidence 79%</title></circle>
+<circle cx="850.5" cy="236.5" r="6.0" fill="hsl(0 56% 62%)" opacity=".93"><title>The Agile Facilitator is an agent, not the Composer — Governance, degree 12, evidence 42%</title></circle>
+<circle cx="783.1" cy="232.9" r="10.2" fill="hsl(0 56% 62%)" opacity=".93"><title>How rules actually hold (structure over prose) — Governance, degree 26, evidence 31%</title></circle>
+<circle cx="987.1" cy="261.7" r="6.6" fill="hsl(28 49% 59%)" opacity=".93"><title>Overshoot — Safety, degree 14, evidence 21%</title></circle>
+<circle cx="860.1" cy="293.9" r="5.4" fill="hsl(28 70% 68%)" opacity=".93"><title>The deletion protocol — Safety, degree 10, evidence 70%</title></circle>
+<circle cx="947.0" cy="270.0" r="7.5" fill="hsl(28 56% 62%)" opacity=".93"><title>NDT — Safety, degree 17, evidence 29%</title></circle>
+<circle cx="925.1" cy="258.9" r="8.4" fill="hsl(28 56% 62%)" opacity=".93"><title>Too Big Too Soon — Safety, degree 20, evidence 40%</title></circle>
+<circle cx="890.3" cy="274.6" r="4.2" fill="hsl(28 63% 65%)" opacity=".93"><title>The Delegation Brief — Safety, degree 6, evidence 50%</title></circle>
+<circle cx="970.2" cy="363.0" r="6.0" fill="hsl(55 70% 68%)" opacity=".93"><title>Unison — Structure, degree 12, evidence 67%</title></circle>
+<circle cx="1001.1" cy="422.8" r="6.6" fill="hsl(83 70% 68%)" opacity=".93"><title>The Kintsugi Paradox — Learning, degree 14, evidence 64%</title></circle>
+<circle cx="1006.0" cy="449.2" r="6.3" fill="hsl(83 70% 68%)" opacity=".93"><title>The professional mantra — Learning, degree 13, evidence 62%</title></circle>
+<circle cx="1038.0" cy="462.4" r="11.4" fill="hsl(83 63% 65%)" opacity=".93"><title>Episteme vs. doxa — Learning, degree 32, evidence 53%</title></circle>
+<circle cx="996.9" cy="409.9" r="8.4" fill="hsl(83 70% 68%)" opacity=".93"><title>The cobbler's children — Learning, degree 20, evidence 60%</title></circle>
+<circle cx="1099.9" cy="481.5" r="5.7" fill="hsl(83 49% 59%)" opacity=".93"><title>The Composer as Neuron — Learning, degree 11, evidence 27%</title></circle>
+<circle cx="1004.2" cy="435.9" r="6.6" fill="hsl(83 70% 68%)" opacity=".93"><title>Extending the Thirteenth Floor — Learning, degree 14, evidence 64%</title></circle>
+<circle cx="993.3" cy="527.1" r="5.4" fill="hsl(111 70% 68%)" opacity=".93"><title>The Turing Game — Epistemics, degree 10, evidence 60%</title></circle>
+<circle cx="1002.8" cy="571.2" r="6.6" fill="hsl(111 63% 65%)" opacity=".93"><title>The Absolute Ear — Epistemics, degree 14, evidence 57%</title></circle>
+<circle cx="942.0" cy="485.5" r="8.1" fill="hsl(111 84% 74%)" opacity=".93"><title>The Declared Circle — Epistemics, degree 19, evidence 95%</title></circle>
+<circle cx="988.4" cy="589.1" r="7.2" fill="hsl(138 63% 65%)" opacity=".93"><title>Design by absence — Balance, degree 16, evidence 44%</title></circle>
+<circle cx="973.9" cy="603.8" r="5.1" fill="hsl(138 63% 65%)" opacity=".93"><title>Serendipity — Balance, degree 9, evidence 44%</title></circle>
+<circle cx="977.3" cy="672.8" r="5.4" fill="hsl(138 49% 59%)" opacity=".93"><title>The Interval Principle — Balance, degree 10, evidence 20%</title></circle>
+<circle cx="999.3" cy="657.5" r="6.6" fill="hsl(138 49% 59%)" opacity=".93"><title>Response calibration — Balance, degree 14, evidence 21%</title></circle>
+<circle cx="969.6" cy="709.3" r="4.8" fill="hsl(138 42% 56%)" opacity=".93"><title>Art as Felt Science — Balance, degree 8, evidence 13%</title></circle>
+<circle cx="842.0" cy="610.5" r="4.8" fill="hsl(166 77% 71%)" opacity=".93"><title>Concert Quorum — Roster &amp; Ensemble, degree 8, evidence 75%</title></circle>
+<circle cx="860.1" cy="576.7" r="5.4" fill="hsl(166 84% 74%)" opacity=".93"><title>Minimum Duet — Roster &amp; Ensemble, degree 10, evidence 90%</title></circle>
+<circle cx="833.9" cy="612.1" r="4.5" fill="hsl(166 77% 71%)" opacity=".93"><title>Instrument families — Roster &amp; Ensemble, degree 7, evidence 86%</title></circle>
+<circle cx="811.0" cy="641.6" r="3.3" fill="hsl(166 70% 68%)" opacity=".93"><title>Ensemble sizes — Roster &amp; Ensemble, degree 3, evidence 67%</title></circle>
+<circle cx="850.0" cy="608.7" r="5.1" fill="hsl(166 77% 71%)" opacity=".93"><title>Canonical duets — Roster &amp; Ensemble, degree 9, evidence 78%</title></circle>
+<circle cx="853.9" cy="579.0" r="4.2" fill="hsl(166 84% 74%)" opacity=".93"><title>Agent routing table — Roster &amp; Ensemble, degree 6, evidence 100%</title></circle>
+<circle cx="847.5" cy="581.1" r="3.6" fill="hsl(166 84% 74%)" opacity=".93"><title>Chamber / Echo / Antiphony — Roster &amp; Ensemble, degree 4, evidence 100%</title></circle>
+<circle cx="825.8" cy="613.3" r="4.2" fill="hsl(166 77% 71%)" opacity=".93"><title>Sequential handoffs — Roster &amp; Ensemble, degree 6, evidence 83%</title></circle>
+<circle cx="817.6" cy="614.2" r="3.9" fill="hsl(166 77% 71%)" opacity=".93"><title>Personas vs real subagents — Roster &amp; Ensemble, degree 5, evidence 80%</title></circle>
+<circle cx="779.7" cy="613.9" r="5.1" fill="hsl(194 77% 71%)" opacity=".93"><title>Effort-scaling rubric — Scale &amp; Effort, degree 9, evidence 78%</title></circle>
+<circle cx="792.3" cy="587.9" r="5.1" fill="hsl(194 84% 74%)" opacity=".93"><title>Artifact pipeline — Scale &amp; Effort, degree 9, evidence 89%</title></circle>
+<circle cx="738.0" cy="633.6" r="4.5" fill="hsl(194 70% 68%)" opacity=".93"><title>Unit loop — Scale &amp; Effort, degree 7, evidence 71%</title></circle>
+<circle cx="758.0" cy="610.5" r="4.5" fill="hsl(194 77% 71%)" opacity=".93"><title>Doc sharding — Scale &amp; Effort, degree 7, evidence 86%</title></circle>
+<circle cx="768.8" cy="612.5" r="5.1" fill="hsl(194 77% 71%)" opacity=".93"><title>Spawn &amp; load-balancing pivot — Scale &amp; Effort, degree 9, evidence 78%</title></circle>
+<circle cx="725.7" cy="630.0" r="4.2" fill="hsl(194 70% 68%)" opacity=".93"><title>Lots — Scale &amp; Effort, degree 6, evidence 67%</title></circle>
+<circle cx="713.8" cy="625.6" r="4.2" fill="hsl(194 70% 68%)" opacity=".93"><title>Fortissimo — Scale &amp; Effort, degree 6, evidence 67%</title></circle>
+<circle cx="693.9" cy="584.2" r="5.1" fill="hsl(222 77% 71%)" opacity=".93"><title>Definition of Done — Quality &amp; Verification, degree 9, evidence 78%</title></circle>
+<circle cx="699.2" cy="587.5" r="7.2" fill="hsl(222 77% 71%)" opacity=".93"><title>Independent Verification — Quality &amp; Verification, degree 16, evidence 81%</title></circle>
+<circle cx="662.9" cy="597.1" r="5.4" fill="hsl(222 70% 68%)" opacity=".93"><title>Execution discipline — Quality &amp; Verification, degree 10, evidence 70%</title></circle>
+<circle cx="657.2" cy="592.6" r="4.5" fill="hsl(222 70% 68%)" opacity=".93"><title>Runtime rule-adherence spot-check — Quality &amp; Verification, degree 7, evidence 71%</title></circle>
+<circle cx="646.3" cy="582.9" r="3.9" fill="hsl(222 70% 68%)" opacity=".93"><title>THE WHIP — Quality &amp; Verification, degree 5, evidence 60%</title></circle>
+<circle cx="726.3" cy="570.6" r="5.1" fill="hsl(222 84% 74%)" opacity=".93"><title>Attribution format — Quality &amp; Verification, degree 9, evidence 89%</title></circle>
+<circle cx="611.6" cy="589.1" r="3.6" fill="hsl(222 63% 65%)" opacity=".93"><title>Tool-failure watch — Quality &amp; Verification, degree 4, evidence 50%</title></circle>
+<circle cx="688.7" cy="580.7" r="5.1" fill="hsl(222 77% 71%)" opacity=".93"><title>Fair copy — Quality &amp; Verification, degree 9, evidence 78%</title></circle>
+<circle cx="721.7" cy="568.1" r="4.8" fill="hsl(222 84% 74%)" opacity=".93"><title>Chair Review — Quality &amp; Verification, degree 8, evidence 100%</title></circle>
+<circle cx="641.2" cy="577.9" r="3.9" fill="hsl(222 70% 68%)" opacity=".93"><title>Risk-tier re-ask — Quality &amp; Verification, degree 5, evidence 60%</title></circle>
+<circle cx="651.6" cy="587.8" r="4.2" fill="hsl(222 70% 68%)" opacity=".93"><title>Tool Audit — Quality &amp; Verification, degree 6, evidence 67%</title></circle>
+<circle cx="534.8" cy="504.1" r="4.5" fill="hsl(249 56% 62%)" opacity=".93"><title>Task entry — Decision &amp; Escalation, degree 7, evidence 43%</title></circle>
+<circle cx="677.1" cy="528.9" r="3.3" fill="hsl(249 84% 74%)" opacity=".93"><title>Rule 0 gate — Decision &amp; Escalation, degree 3, evidence 100%</title></circle>
+<circle cx="606.7" cy="527.1" r="5.1" fill="hsl(249 70% 68%)" opacity=".93"><title>Show, don't tell — Decision &amp; Escalation, degree 9, evidence 67%</title></circle>
+<circle cx="642.5" cy="530.6" r="4.8" fill="hsl(249 77% 71%)" opacity=".93"><title>Proactive consultation — Decision &amp; Escalation, degree 8, evidence 75%</title></circle>
+<circle cx="600.6" cy="511.1" r="3.3" fill="hsl(249 70% 68%)" opacity=".93"><title>Roadmap cadence — Decision &amp; Escalation, degree 3, evidence 67%</title></circle>
+<circle cx="603.1" cy="409.9" r="4.5" fill="hsl(277 70% 68%)" opacity=".93"><title>Knowledge-Pivot — Learning &amp; Pattern, degree 7, evidence 71%</title></circle>
+<circle cx="596.7" cy="431.5" r="5.4" fill="hsl(277 70% 68%)" opacity=".93"><title>Pattern ledger (fires at 3) — Learning &amp; Pattern, degree 10, evidence 70%</title></circle>
+<circle cx="624.9" cy="474.2" r="5.4" fill="hsl(277 77% 71%)" opacity=".93"><title>Opera House cycle — Learning &amp; Pattern, degree 10, evidence 80%</title></circle>
+<circle cx="624.8" cy="455.3" r="5.4" fill="hsl(277 77% 71%)" opacity=".93"><title>Checkpoint the session — Learning &amp; Pattern, degree 10, evidence 80%</title></circle>
+<circle cx="655.6" cy="378.3" r="3.6" fill="hsl(305 77% 71%)" opacity=".93"><title>Spotlighting — Trust boundary, degree 4, evidence 75%</title></circle>
+<circle cx="668.1" cy="413.9" r="5.1" fill="hsl(305 84% 74%)" opacity=".93"><title>Delegation Brief — Trust boundary, degree 9, evidence 89%</title></circle>
+<circle cx="676.8" cy="356.5" r="3.6" fill="hsl(305 77% 71%)" opacity=".93"><title>Multilingual Composer — Trust boundary, degree 4, evidence 75%</title></circle>
+<circle cx="671.3" cy="324.8" r="4.5" fill="hsl(332 70% 68%)" opacity=".93"><title>Auditorium — Session &amp; Interface, degree 7, evidence 71%</title></circle>
+<circle cx="739.9" cy="293.9" r="3.9" fill="hsl(332 70% 68%)" opacity=".93"><title>Play mute / Play loud — Session &amp; Interface, degree 5, evidence 60%</title></circle>
+<circle cx="848.1" cy="556.6" r="5" fill="none" stroke="#ff9ecb" stroke-width="1.6"/>
+<text x="857.1" y="560.6" fill="#ff9ecb" font-size="10.5">Spotlighting</text>
+<circle cx="751.9" cy="556.6" r="5" fill="none" stroke="#ff9ecb" stroke-width="1.6"/>
+<text x="760.9" y="560.6" fill="#ff9ecb" font-size="10.5">The Empty Hands</text>
+<line x1="706.5" y1="417.6" x2="466.9" y2="298.6" stroke="#7fd4ff" stroke-width="1" stroke-dasharray="3 4" opacity=".8"/>
+<circle cx="706.5" cy="417.6" r="8" fill="none" stroke="#7fd4ff" stroke-width="1.4" stroke-dasharray="3 3"/>
+<text x="450.9" y="272.6" fill="#7fd4ff" font-size="10.5" text-anchor="end">declared: the entry point every chair reaches through</text>
+<text x="450.9" y="284.6" fill="#5f92b4" font-size="10" text-anchor="end">measured: 5th of 117, 5.0% of shortest paths</text>
+<text x="40" y="40" fill="#f4f8ff" font-size="19">The meta-mandala as a solar system — faceon</text>
+<text x="40" y="62" fill="#8595af" font-size="11.5">angle = sector (13) · radius = evidence, earned inward · saturation constant per ring · size = degree</text>
+<text x="40" y="78" fill="#8595af" font-size="11.5">evidence = (earned + corroborated) / all vectors — this render's own scalar, not issue #8's</text>
+<circle cx="46" cy="782" r="5" fill="#fffdf2"/>
+<text x="60" y="786" fill="#a9b8d2" font-size="11.5">the star — the Composer, 4.9% of paths, rank 6</text>
+<circle cx="46" cy="803" r="5" fill="#ffeec8"/>
+<text x="60" y="807" fill="#a9b8d2" font-size="11.5">the Corona — 20 bodies that orbit him, not a chair</text>
+<circle cx="46" cy="824" r="5" fill="#5a6a86"/>
+<text x="60" y="828" fill="#a9b8d2" font-size="11.5">Spacetime — 5 Structure principles, drawn as the rings themselves</text>
+<circle cx="46" cy="845" r="5" fill="#ff9ecb"/>
+<text x="60" y="849" fill="#a9b8d2" font-size="11.5">neither — Spotlighting, The Empty Hands</text>
+<circle cx="46" cy="866" r="5" fill="#7fd4ff"/>
+<text x="60" y="870" fill="#a9b8d2" font-size="11.5">declared standing vs measured standing</text>
+<circle cx="46" cy="887" r="5" fill="#cfd8ea"/>
+<text x="60" y="891" fill="#a9b8d2" font-size="11.5">chair spoke — points at its bodies; faint = they point everywhere</text>
+<text x="1560" y="782" fill="#5a6a86" font-size="10.5" text-anchor="end">The Fractal Loop</text>
+<text x="1560" y="799" fill="#5a6a86" font-size="10.5" text-anchor="end">The Opera House Principle</text>
+<text x="1560" y="816" fill="#5a6a86" font-size="10.5" text-anchor="end">The Nested Opera Houses Corollary</text>
+<text x="1560" y="833" fill="#5a6a86" font-size="10.5" text-anchor="end">The Non-Euclidean Corollary</text>
+<text x="1560" y="850" fill="#5a6a86" font-size="10.5" text-anchor="end">The Harmony Principle</text>
+<text x="1560" y="764" fill="#7f8ea8" font-size="11" text-anchor="end">Spacetime — the geometry, not bodies in it</text>
+</svg>

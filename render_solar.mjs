@@ -65,8 +65,37 @@
 import { readFileSync } from "node:fs";
 const G = JSON.parse(readFileSync("graph/grand_ensemble.json", "utf8"));
 
-const W = 1600, H = 900, CX = W / 2, CY = H / 2 + 14, TILT = 0.50;   // orthographic, not perspective
-const SHELLS = 7, R0 = 246, R1 = 566, RCHAIR = 656, RCORONA = 150;
+// ---- VARIANTS. Three coherent characters, not a grid of knobs — the Composer judges a picture,
+// not a parameter. Same corpus, same 13 sectors, same encodings; only the projection and the
+// ground change. None is proposed as correct and the default is merely the first one built.
+//
+//     node render_solar.mjs                     deep      the built default
+//     node render_solar.mjs --variant=orrery    orrery    flat, lit, instrument-like
+//     node render_solar.mjs --variant=faceon    faceon    near-circular, colour forward
+//
+const VARIANTS = {
+  deep:   { tilt: 0.50, bg: "#080b14", vignette: 0.85, ring: 1.0, glow: 74, ink: "#9fb0cc", dim: "#7f8ea8", title: "#e8eefb", sat: 0, light: 0 },
+  orrery: { tilt: 0.30, bg: "#0e1220", vignette: 0.30, ring: 1.7, glow: 56, ink: "#b9c6dc", dim: "#8d9cb6", title: "#f2f6ff", sat: -6, light: +4 },
+  faceon: { tilt: 0.86, bg: "#05060c", vignette: 0.00, ring: 0.8, glow: 88, ink: "#a9b8d2", dim: "#8595af", title: "#f4f8ff", sat: +10, light: +6 },
+};
+const VNAME = (process.argv.find((a) => a.startsWith("--variant=")) || "--variant=deep").split("=")[1];
+const V = VARIANTS[VNAME] || VARIANTS.deep;
+
+const W = 1600, H = 900, CX = W / 2, CY = H / 2 + 14, TILT = V.tilt;   // orthographic, not perspective
+
+// ⚠️ THE FIGURE IS SCALED TO ITS OWN PROJECTION, and it is not cosmetic. Vertical extent is
+// radius × tilt, so a near-face-on variant is more than twice as tall as a flat one at the same
+// radii. Built with fixed radii, `faceon` pushed four chairs and their labels off the top and
+// bottom of the canvas — the drawing silently deleting a twelfth of its own content, which is the
+// same failure class as the caption that ran off the left edge. FIT is derived, never tuned.
+const SHELLS = 7;
+const _RCHAIR = 656;
+// Both axes, because they bind in opposite directions: vertical extent is radius x tilt, so a
+// flat variant is free vertically and immediately overruns the CHAIR LABELS horizontally — which
+// is what `orrery` did the moment the vertical constraint alone let it grow. 176px is the label
+// budget either side, measured against the longest chair name.
+const FIT = Math.max(0.55, Math.min((H / 2 - 104) / (_RCHAIR * TILT + 26), (W / 2 - 176) / _RCHAIR));
+const R0 = 246 * FIT, R1 = 566 * FIT, RCHAIR = _RCHAIR * FIT, RCORONA = 150 * FIT;
 
 // ---- the Composer's two namings, carried as data. Naming a population is authorship.
 const SPACETIME = ["The Fractal Loop", "The Opera House Principle", "The Nested Opera Houses Corollary",
@@ -101,8 +130,8 @@ const SECTORS = ["Governance", "Safety", "Structure", "Learning", "Epistemics", 
   "Learning & Pattern", "Trust boundary", "Session & Interface"];
 const sectorAngle = (s) => { const i = SECTORS.indexOf(s); return (i < 0 ? 0 : i) / SECTORS.length * 2 * Math.PI - Math.PI / 2; };
 const hue = (s) => Math.round((Math.max(0, SECTORS.indexOf(s)) / SECTORS.length) * 360);
-const sat = (shell) => 74 - shell * 7;          // CONSTANT PER RING — the ruling
-const light = (shell) => 68 - shell * 3;
+const sat = (shell) => 74 - shell * 7 + V.sat;   // CONSTANT PER RING — the ruling
+const light = (shell) => 68 - shell * 3 + V.light;
 
 const project = (r, a) => [CX + r * Math.cos(a), CY + r * TILT * Math.sin(a)];
 const ringR = (shell) => R0 + (R1 - R0) * (shell / (SHELLS - 1));
@@ -138,15 +167,15 @@ P(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0
 P(`<defs>
   <radialGradient id="starGlow"><stop offset="0" stop-color="#fffdf4" stop-opacity=".95"/><stop offset=".55" stop-color="#ffeec0" stop-opacity=".35"/><stop offset="1" stop-color="#ffeec0" stop-opacity="0"/></radialGradient>
   <radialGradient id="coronaBand"><stop offset="0" stop-color="#ffe9b0" stop-opacity="0"/><stop offset=".72" stop-color="#ffe9b0" stop-opacity=".13"/><stop offset="1" stop-color="#ffe9b0" stop-opacity="0"/></radialGradient>
-  <radialGradient id="vignette"><stop offset=".55" stop-color="#05070e" stop-opacity="0"/><stop offset="1" stop-color="#05070e" stop-opacity=".85"/></radialGradient>
+  <radialGradient id="vignette"><stop offset=".55" stop-color="#05070e" stop-opacity="0"/><stop offset="1" stop-color="#05070e" stop-opacity="${V.vignette}"/></radialGradient>
 </defs>`);
-P(`<rect width="${W}" height="${H}" fill="#080b14"/>`);
+P(`<rect width="${W}" height="${H}" fill="${V.bg}"/>`);
 
 // ---- SPACETIME: the ring system itself, drawn before anything sits in it
 P(`<g id="spacetime">`);
 for (let s = 0; s < SHELLS; s++) {
   const r = ringR(s);
-  P(`<ellipse cx="${CX}" cy="${CY}" rx="${r.toFixed(1)}" ry="${(r * TILT).toFixed(1)}" fill="none" stroke="hsl(210 30% ${22 + s}%)" stroke-width="1"/>`);
+  P(`<ellipse cx="${CX}" cy="${CY}" rx="${r.toFixed(1)}" ry="${(r * TILT).toFixed(1)}" fill="none" stroke="hsl(210 30% ${22 + s + (V.ring > 1 ? 12 : 0)}%)" stroke-width="${V.ring}"/>`);
 }
 for (const s of SECTORS) {                                   // the quadrant spokes
   const a = sectorAngle(s), [x1, y1] = project(R0 - 34, a), [x2, y2] = project(RCHAIR + 8, a);
@@ -175,7 +204,7 @@ corona.forEach((id, i) => {
 });
 
 // ---- THE STAR, at the size its betweenness earns
-P(`<circle cx="${CX}" cy="${CY}" r="74" fill="url(#starGlow)"/>`);
+P(`<circle cx="${CX}" cy="${CY}" r="${V.glow}" fill="url(#starGlow)"/>`);
 P(`<circle cx="${CX}" cy="${CY}" r="15.5" fill="#fffdf2"/>`);
 P(`<circle cx="${CX}" cy="${CY}" r="15.5" fill="none" stroke="#fff6d8" stroke-width=".8" opacity=".7"/>`);
 P(`<title>the Composer — 4.9% of shortest paths, rank 6 of 117</title>`);
@@ -209,7 +238,7 @@ chairList.forEach((n) => {
   P(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${facil ? 9 : 7.5}" fill="#cfd8ea" opacity=".95"/>`);
   const anchor = Math.cos(a) < -0.25 ? "end" : Math.cos(a) > 0.25 ? "start" : "middle";
   const [lx, ly] = project(RCHAIR + 20, a);
-  P(`<text x="${lx.toFixed(1)}" y="${(ly + 4).toFixed(1)}" fill="#9fb0cc" font-size="11.5" text-anchor="${anchor}">${esc(n.name)}</text>`);
+  P(`<text x="${lx.toFixed(1)}" y="${(ly + 4).toFixed(1)}" fill="${V.ink}" font-size="11.5" text-anchor="${anchor}">${esc(n.name)}</text>`);
   // the spoke points at where this chair's bodies ACTUALLY are; its opacity is the resultant
   // length R, so a chair whose bodies point everywhere draws a spoke you can barely see.
   const cm = chairMean.get(n.id);
@@ -252,14 +281,14 @@ P(`<text x="${tx.toFixed(1)}" y="${(fy - 14).toFixed(1)}" fill="#5f92b4" font-si
 
 // ---- legend
 const L0 = 40, T0 = 40, LEGY = H - 118;
-P(`<text x="${L0}" y="${T0}" fill="#e8eefb" font-size="19">The meta-mandala as a solar system</text>`);
-P(`<text x="${L0}" y="${T0 + 22}" fill="#7f8ea8" font-size="11.5">angle = sector (13) · radius = evidence, earned inward · saturation constant per ring · size = degree</text>`);
-P(`<text x="${L0}" y="${T0 + 38}" fill="#7f8ea8" font-size="11.5">evidence = (earned + corroborated) / all vectors — this render's own scalar, not issue #8's</text>`);
+P(`<text x="${L0}" y="${T0}" fill="${V.title}" font-size="19">The meta-mandala as a solar system — ${VNAME}</text>`);
+P(`<text x="${L0}" y="${T0 + 22}" fill="${V.dim}" font-size="11.5">angle = sector (13) · radius = evidence, earned inward · saturation constant per ring · size = degree</text>`);
+P(`<text x="${L0}" y="${T0 + 38}" fill="${V.dim}" font-size="11.5">evidence = (earned + corroborated) / all vectors — this render's own scalar, not issue #8's</text>`);
 const items = [["#fffdf2", "the star — the Composer, 4.9% of paths, rank 6"], ["#ffeec8", `the Corona — ${corona.length} bodies that orbit him, not a chair`],
   ["#5a6a86", `Spacetime — ${SPACETIME.length} Structure principles, drawn as the rings themselves`], ["#ff9ecb", "neither — Spotlighting, The Empty Hands"], ["#7fd4ff", "declared standing vs measured standing"], ["#cfd8ea", "chair spoke — points at its bodies; faint = they point everywhere"]];
 items.forEach(([c, t], i) => {
   P(`<circle cx="${L0 + 6}" cy="${LEGY + i * 21}" r="5" fill="${c}"/>`);
-  P(`<text x="${L0 + 20}" y="${LEGY + 4 + i * 21}" fill="#9fb0cc" font-size="11.5">${esc(t)}</text>`);
+  P(`<text x="${L0 + 20}" y="${LEGY + 4 + i * 21}" fill="${V.ink}" font-size="11.5">${esc(t)}</text>`);
 });
 SPACETIME.forEach((n, i) => {
   P(`<text x="${W - 40}" y="${LEGY + i * 17}" fill="#5a6a86" font-size="10.5" text-anchor="end">${esc(n)}</text>`);
