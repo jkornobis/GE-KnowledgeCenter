@@ -66,6 +66,31 @@ Learning & Pattern · Trust boundary). The trigger procedures fit none of them, 
 below under the working name **Session & Interface**. That label is naming, therefore authorship —
 it is a placeholder, not a decision.
 
+⚠️ **Named by the Composer 2026-09-07: THE BATON.** The placeholder stood for two months and the
+name that replaces it was chosen on what the thirteen protocols actually share, read from their own
+seeds: **every one of them is operated by the Composer.** Not one fires on its own. *Session &
+Interface* named a surface where these name a hand — the baton is the instrument of direction, and
+these are the controls it holds.
+
+**It also dissolves two things this family was measured as failing at.** It is the **best-earned
+family in the corpus** — 8 of its 13 protocols carry no asserted edge at all — because the Composer
+states these and they are recorded in his words. And it puts **11 of its 13 on the outer ring of any
+chair-count reading**, held by no chair, which is not detachment: **no chair operates a control the
+Composer holds.** What read as the family's weakness in two independent measurements is its
+definition.
+
+⚠️ **And this page and `border-protocols-principles.md` disagree about whether the placeholder was
+ever ratified.** That page records the Composer ratifying *Session & Interface* on **2026-08-14** —
+*"The name is settled; the warrants are not."* This page, written two days later, calls the same
+label *"a placeholder, not a decision."* **Both statements are left standing**: which is right is not
+recoverable from either page, and the ruling above settles the name either way. The disagreement is
+recorded rather than resolved, because resolving it would mean choosing which page to disbelieve.
+
+**The prediction that page made has since been overtaken.** It argued the family *"was formed by
+exclusion rather than by a shared principle"*, on the evidence that 13 of its protocols were then
+unwarranted. Measured 2026-09-06: **0 of 59 protocols in the whole corpus stand on no principle**,
+and this family carries 18 warrants. The shared principle was there; it was unwritten, not absent.
+
 ---
 
 ## 2. Nodes — every protocol is a taijitu
