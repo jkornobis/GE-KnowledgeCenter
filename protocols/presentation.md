@@ -1,12 +1,23 @@
 ---
 type: Protocol
 title: "Presentation — show, don't tell"
-description: "The contract for how a result reaches the person who asked: Rule 0 on whether a choice exists at all, the surface-to-decision-shape mapping, the routing table from content type to widget to markdown fallback, and the per-Composer override mechanism"
+description: "The contract for how a result reaches the person who asked: the one logic every rule derives from, Rule 0 on whether a choice exists at all, the surface-to-decision-shape mapping, the routing table from content type to widget to markdown fallback, and the per-Composer override mechanism with the one thing it may not override"
 status: draft
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-27T09:10:00+02:00 }
 ---
 
+
+## The logic
+
+> **The message costs the Composer the decision, and nothing else. Everything behind the decision is
+> record, not message.**
+
+**Unified 2026-09-07.** Every rule on this page is a corollary of that sentence, and
+`presentation-checklist.md` states the same logic with the seven counted checks that enforce it —
+including **the three acts** (admit · record · tell) and **the quorum** (Agile Facilitator · Content
+Designer · Product Owner) that decides what is worth surfacing before a message exists. Neither is
+repeated here; this page is the spec, that page is the gate.
 
 **⚠️ OPERATIONAL GATE: Read `presentation-checklist.md` before every message.** This file is the *spec* (why + rules); the checklist is the *enforcement* (pre-send verification, yes/no gates). The checklist is not optional and is not post-hoc — it runs before send and blocks violations.
 
@@ -29,9 +40,9 @@ Before choosing *how* to show a decision, decide *whether* it is one. **A choice
    - **Every option is estimated — recommended or not (Composer standing rule, 2026-07-20).** Not only the best one. Each option's **label ends with its verdict tag**: `(Recommended)` / `(Viable)` / `(Not advised)`. The recommended option(s) come first. In a **multi-select**, more than one option may read `(Recommended)`; in a single-select, exactly one leads. A rejected-but-listed option carries `(Not advised)` so the Composer sees it was weighed, not omitted. No option ever ships without a verdict — "order implies it" is the exact behavior this rule replaces.
    - **Persist the options in text, always (Composer standing rule, 2026-07-20).** The `AskUserQuestion` widget **collapses to only the chosen label once picked** — Claude Code offers no re-expand control (harness-level, not skill-controllable). So whenever buttons are shown, **also list the 2–4 options with their verdict tags compactly in the message body**, one line each, so they survive the collapse in scroll-back. This lets the Composer re-read what he chose among, or course-correct after a too-fast pick. Reinforce that **a pick commits nothing** — it is advice to the Agile Facilitator, always reversible by typing ("what were the options?" / "switch to the second"). The widget is the belt; the persisted text list is the suspenders.
 2. **Results → show the artifact.** For design/visual/structured output, **render it** (inline visual) or lay it out as a scannable table — not prose. A rendered mockup or diagram beats a paragraph describing it. Design results especially: show the thing.
-3. **Show depth = choices + one line each.** Enough to choose; nothing to wade through. No rationale paragraph up front unless asked.
+3. **Show depth = choices + one line each.** Enough to choose; nothing to wade through. No rationale paragraph up front unless asked. ⚠️ **This wording is a quality and was satisfiable at any length** — it is superseded operationally by the counted form in `presentation-checklist.md` (twelve rendered lines, one table). Kept here because it names the intent the count exists to enforce.
 4. **The tell is one keyword away.** After anything shown, the full reasoning/trade-offs/sources expand on **"Tell"** (routing internals: "Open score"). Offer nothing more by default.
-5. **Process narration is tell, not show.** Verifying state before each tool call (NDT, the Fractal Loop) is correct and still happens — but narrating it turn by turn ("confirmed X, now clicking Y") is reasoning-as-prose, the exact thing this rule exists to hide by default. Do the checks silently; surface only the outcome and the final artifact. A Composer who asked for the synthetic conclusion gets the conclusion — the checks still ran, they just aren't performed *at* them.
+5. **Process narration is tell, not show — and a correction is process narration.** Verifying state before each tool call (NDT, the Fractal Loop) is correct and still happens — but narrating it turn by turn ("confirmed X, now clicking Y") is reasoning-as-prose, the exact thing this rule exists to hide by default. Do the checks silently; surface only the outcome and the final artifact. A Composer who asked for the synthetic conclusion gets the conclusion — the checks still ran, they just aren't performed *at* them. **The same holds for revising a claim**: an error is admitted by accepting it and acting on it, recorded in the commit or the issue, and told only when it moves a decision the Composer holds. Narrating the revision is the checks performed *at* him, one layer up (2026-09-07).
 6. **Receipts don't need the card (ADR-141).** The card ceremony — icon, name, host frame — is for voice: judgment, synthesis, diagnosis, a decision frame. A bare confirmation that only restates a tool result already visible above it (a git push echo, "file saved", a commit hash) is one plain-text line, no `show_widget` call. Card every turn regardless of content is over-applying invariant 8, not honoring it.
 
 ## Match the surface to the shape of the decision
@@ -52,6 +63,12 @@ The **Auditorium / Note Picker** (ADR-197) is the canonical example of the third
 Auditorium and Program are already "show" surfaces — numbered, ranked (descending), actionable. This generalizes that posture to *every* decision and result. The **Composer-authors invariant** is the *why*; this is *how it looks*.
 
 ## Per-Composer overrides — the Score Key
+
+⚠️ **One thing on this page is not transposable, and this section used to imply it was.** Which
+surface, which density, which language — all a Composer's to set. **Whether the answer is short is
+not**: concision is a property of serving an executive, and every Composer is one. The counted form
+lives in `presentation-checklist.md` and no key overrides it (2026-09-07).
+
 The rules above are *defaults*. Each Composer transposes them into their own **key** via `Change Score Key` — decision UI, show depth, tell-access, results-table defaults (density/columns), didactic level, language, and **time management** (none / ambient — see `time.md`). Preferences persist in the Score Key section of their Composer Key; the shared system stays fixed, only the rendering changes per person. Read the active Score Key at session start and honor it over these defaults.
 
 ## Widget display — the standard (Composer-approved 2026-07-02; attribution cards removed 2026-07-23)
