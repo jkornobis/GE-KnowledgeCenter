@@ -988,3 +988,78 @@ invisible to `check_okf`, `check_links` and the source, each one deleting conten
 
 ***A scalar that cannot be reproduced is not inherited.*** Five formulations, none matching; the
 render defines its own and says so rather than borrowing authority from numbers it cannot produce.
+
+---
+
+## Session 2026-09-07 — coda: the Workshop answered, and the graph under the day was stale
+
+*Appended at 22:35 to the entry above, not folded into it. The session continued past its own
+checkpoint and three things changed after it was written.*
+
+**The Workshop answered both questions, and one answer invalidated a number in this log.**
+
+**`GE-Workshop#12` — `musicians` is a closed set by design** (ADR-200: *exactly twelve, never
+invent, never rename, never substitute*), so the thirteenth-musician form of the star question dies
+cleanly. **But a fourth layer is structurally ordinary here** — `movements` already sits outside
+`layers` with its own edge vocabulary — so the schema objection is gone and only the Composer's
+decision remains. **And they measured the absence at their end: 5 nodes name him, 0 are him,
+consistently across five bodies written months apart. The absence is authored, not lost.**
+
+**`GE-Workshop#13` — the Composer ruled A: the page is the connection, the protocol is left alone.**
+Their argument is better than the one I filed: `B` is *write the rule more firmly*, and this estate
+ran that experiment three times in twenty-four hours on the buttons rule and lost every time. **A
+case in a list is only reachable by a session that already noticed it had a gap** — which is the
+failure one level up, relocated rather than escaped. They recorded the countable form for whenever
+it returns: *a comparison that ranks candidates before requirements are written refuses to rank.*
+
+**And the fact I had not checked: the graph this library holds was twelve days stale.**
+
+```
+here    2026-08-26   33 principles · 59 protocols · 540 edges
+source  2026-09-07   35 principles · 59 protocols · 552 edges
+```
+
+**Every measurement in the entry above was made on it.** Refreshed, everything re-derived:
+
+```
+belt              27 -> 29        the two new principles are chairless
+THE CORONA        20 -> 22
+SPACETIME + two    7 ->  7        unchanged
+the star         4.9% rank 6  ->  5.5% RANK 3 of 119
+most central     Software Architect 6.2%  ->  Episteme vs. doxa 6.6%
+```
+
+**The conclusion survives and two of its headline numbers do not.** There is still no black hole and
+the centre still decentralises. But *"rank 6, behind five bodies"* is **rank 3**, and the most
+central body in the corpus is not the one named above. **The Agile Facilitator is still fifth**, so
+the declared-versus-measured ruling is untouched. `orrery` was chosen from a drawing missing **The
+Ugly Duckling** — the principle the Composer named himself — and **Greenfield Reset**.
+
+**The Composer had already named this population from the other side, and nobody connected it.** The
+seventh protocol family was named **THE BATON** today (ADR-333): the 13 protocols formerly filed as
+*Session & Interface*, on the argument that *all thirteen are operated by the Composer and not one
+fires on its own — Session & Interface named a surface; these name a hand.* **That is THE CORONA
+reached from authorship rather than from measurement**, on the same day, in two repositories, by two
+instances neither of which knew the other was doing it.
+
+**And the rename would have failed silently.** `render_solar.mjs` hardcodes 13 sector names; with the
+corpus renaming one, all 13 Baton bodies would have drawn in the wrong direction with no error in
+the gates, the output, or the picture. Sector coverage is now checked in both directions.
+
+### Presentation, which is where the Composer asked the focus to go
+
+**`GE-Workshop#11` is closed: the Tower read section 4 and adopted the three acts** — *admit,
+record, tell* — and `agile-watcher#62` closed the same way at 22:26. **Both broadcasts landed.**
+
+**One thing was raised to the Composer and is unresolved:** the Composer Key on this machine still
+carries the earlier presentation clauses — Restitution, the buttons rule, the three-part task form,
+the Eisenhower close-out. **They are corollaries of section 4 rather than rivals**, but the Key is
+the copy that loads before the first token, and it is his to change.
+
+### The correction this coda owes its own subject
+
+**This session told its errors out loud repeatedly** — a mangled comment that changed nothing for
+him, a symlink misread, a scalar that would not reproduce. **Section 4 says an error is fixed in the
+record and said in the message only when it changes a decision he has taken or is about to take.**
+Two of those three qualified. **One did not, and was narrated anyway** — on the same day the rule
+was written here, by the instance that wrote it.
