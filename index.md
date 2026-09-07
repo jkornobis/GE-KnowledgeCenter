@@ -221,6 +221,7 @@ written before its musician has handled the instrument is plausible documentatio
 | `method/time-management.md` | Time as a presentation option rather than a rule: none, ambient, scheduled and time-boxing, each keyed off a timezone and a set of working hours the Composer declares | jkornobis | 2026-08-28 |
 | `method/design-review.md` | Why a review finds nothing until enough of the system exists to walk: the three layers of design knowledge and which of them a tool can actually see, the passes that each need the previous one as comparison surface, the prepare-versus-build boundary, and the three modalities a review surface needs before it is one | jkornobis | 2026-09-02 |
 | `method/ai-assistant-patterns.md` | Three patterns for a surface where an assistant mediates between a person and a process: why a static action menu is the absence of intelligence, why context-awareness and state-awareness are two different layers and only one of them is hard, and why every review board turns out to be case management | jkornobis | 2026-09-02 |
+| `method/software-selection.md` | Why 'is this project alive' and 'does this project suit me' need opposite instruments and opposite orders, the four steps that put weights before candidates, and the measured cost of running them backwards | Product Owner, User Researcher, Software Architect | 2026-09-07 |
 
 ## Recorded — provenance rather than working knowledge
 
