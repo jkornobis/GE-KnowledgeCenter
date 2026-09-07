@@ -815,3 +815,176 @@ against its diff* — one went out claiming two edits a failed assertion had pre
 **Not run: fair copy.** The estate's third gesture was not performed, and the reason is worth
 stating rather than omitting: it ends in a deploy, the session is long, and a tired context is the
 wrong one to publish from.
+
+---
+
+## Session 2026-09-07 — the belt was two things, and the star was safe to draw
+
+*Second entry for this date. The first is the End Day above, written at 11:16; this session opened
+at 14:07 on `New Day` and ran the afternoon. Appended, nothing above touched.*
+
+**It began by reading rather than recalling, and that is what found the work.** `New Day` fetched
+36 open issues across five repositories and both Wekan boards. Two things had moved since the
+morning: the Tower had closed the presentation broadcast (`jkosvr-tower#8`) confirming section 4
+needed nothing at their end, and had filed **`jkosvr-tower#9`** — a wiki comparison had cost three
+rounds and one retracted recommendation because no selection method was in play.
+
+**And the morning's own closing entry was already wrong when it was written.** It listed #7 and #9
+as open on the stand; both had been closed at 09:52 and 10:38, *before* 11:16. It was composed from
+context instead of from the tracker. The log is append-only so it stands; this is the correction.
+
+### The Composer asked for a session transcript to be read, and it held three unfiled things
+
+The claude.ai URL was 403 — it needs a browser session — but it was the Remote Control bridge for a
+**local** session, `5f84ad1b`, on disk: 2,263 lines, 2026-09-06 12:35 → 2026-09-07 11:16, 25 of his
+turns. All 25 read. Three things existed in no repository, no tracker and no log:
+
+- **The colour circle was the brief and only the measurements had been written down.** *"White star
+  in center, orbits crossing every quadrant of colors but stable at same saturation level."* #8 held
+  four radii, a Spearman matrix and the r=+0.87 collapse, and nothing about the shape they were
+  meant to produce. **A construction built from the measurements alone would have been a correct
+  graph and the wrong drawing.**
+- **Mycelium was deferred, not dropped** — *"a shape to test after"*, *"failed because too early"*.
+  A deferral with no card is a drop. Filed as #10, parked, with the question it carries that a
+  gravity model structurally cannot answer: how principles and protocols couple.
+- **The `/canvas` surface had been asked for and never built.** Filed at `jkosvr-tower#10`, then
+  **corrected within the hour**: `canvas/` is a symlink to a real configured Obsidian vault with
+  `.obsidian`, Syncthing, a shared Excalidraw library and a folder per instance. I had run `ls` and
+  not `ls -la`. **A symlink reads exactly like a directory until you ask.** What is actually missing
+  is the tracing, not the surface. The Composer parked it.
+
+### The belt is not a residue. It is two populations and two singletons
+
+`#6` asked what the 27 chairless bodies are. Read together, from their own `title`/`seed` fields
+rather than their names, they part on one question — **who the body is addressed to.**
+
+**Twenty are the Composer's own surface.** *the Composer opened it; only the Composer closes it* ·
+*the score is shared, the key is personal* · *the tie is not the Agile Facilitator's to break*.
+**They orbit no chair because they belong to him, and he is not one of the twelve.** The graph has
+three layers; `musicians` holds exactly the twelve; five nodes are *about* him and none **is** him.
+**Not a missing edge twenty times — a missing centre, once.** He named them **THE CORONA**.
+
+**Five are the system describing its own shape** — scale invariance, structure contains itself,
+recursion base case, map is not the territory, the entry order. The belt's *heaviest* bodies, The
+Fractal Loop at degree 18. A chair is a domain; these are about the whole. He named them
+**SPACETIME**.
+
+**Two belong to neither** and stay singletons rather than being rounded into a population that fits
+them badly: Spotlighting (third independent measurement to land on it) and The Empty Hands — **the
+only body of 92 with no title and no seed**, while the mandalas call it *"the most covered of the
+four."*
+
+**A rival explanation was tested and failed.** Twelve principles carry `live: false`, four of them
+in Spacetime, which would have made the whole finding a filing artefact. Cross-tabulated, a not-live
+principle is planet-bound four times and three belt principles are live. **The flag correlates and
+does not explain.** What `live` means is still unknown and is recorded as open: all twelve also
+carry `enacted: true`.
+
+### The star was measured before it was drawn, and the worry did not materialise
+
+`add_star.mjs` injects a Composer node **in memory** and reports the deltas. It writes nothing, and
+that is not a discipline anyone chose: the corpus lives at the Workshop and only the derived graph
+lives here, so editing it would invent evidence.
+
+```
+                        star share   rank      top-5 concentration   mean path
+  baseline, no star          —         —            27.7%              2.340
+  NAMED    (8 bodies)      0.6%     45/117          27.3%              2.339
+  CORONA  (20 bodies)      4.9%      6/117          26.2%              2.293
+  BELT    (27 bodies)      8.4%      1/117          29.2%              2.266
+```
+
+**No black hole, and the direction is the opposite of the fear** — *"a black hole appear to break
+the balance of system"*. At the ruled binding the star is **rank 6**, behind the Software Architect,
+Episteme vs. doxa, How rules actually hold, the Agile Auditor and the Agile Facilitator, and
+**top-5 concentration falls.** Adding the centre decentralises.
+
+**And the weakest joint was looked for on purpose.** The non-circular binding — only bodies whose
+own text contains "composer" — is 8 bodies and lands the star at rank 45. **The Corona rests on
+reading what the seeds mean, not on the word appearing in them.**
+
+**One measured contradiction of a stated intuition**, reported because a drawing built on it would
+have inherited it silently: *"the system make revolution around Facilitator"* — measured, the
+Facilitator is **fifth at 5.0%** in every binding and the Software Architect is first at 6.2%. His
+ruling: **draw both channels and let the gap show**, declared standing beside measured standing.
+
+### Written, and what each one cost
+
+**`method/software-selection.md`** answers `jkosvr-tower#9`. Two doors — *is it alive* needs no
+requirements, *does it suit me* means nothing until they are written. QSOS's four steps, whose whole
+value is that weights are set **before** candidates. **An eliminatory requirement has no weight; it
+has a veto.** Then Door 1 was run on the frameworks themselves: `chaoss.community`, `scorecard.dev`
+and `ossf/scorecard` answer 200; **`qsos.org` and `osspal.org` do not resolve.** Not a retraction —
+a dead *service* is a dead instrument, an *ordering of four steps* does not rot — but the sources
+reach QSOS through its encyclopaedia entry rather than a link that fails. **The estate's own Door 1
+catching the estate's own sources.**
+
+**`render_solar.mjs`** draws #8, and is the only script in this bundle that writes. Angle is sector,
+radius is evidence **running inward** — *"make them earn their place in the system"* — saturation is
+constant per ring, size is degree. The star is drawn at the size rank 6 earns and its glow was
+reduced once for that reason. The Corona is its halo. **Spacetime is not plotted**: the five label
+the ring system, because a body cannot hold the metric it moves in.
+
+**Three projections, and the Composer chose `orrery`** — flat, lit, the ring system as the subject.
+`deep` and `faceon` are kept and still build, because the ruling behind having variants is that no
+single projection is true.
+
+**And the evidence scalar is this render's own, said on the drawing's face.** #8 records
+`14·9·33·19·12·2·3`; five formulations were tried and **none reproduces it.** The original is not
+recoverable from this graph. Printing the old distribution beside a scalar that does not produce it
+would have been invisible and worse.
+
+### What rendering taught that neither the gates nor the source could
+
+**Three defects, all found by rasterising and looking.**
+
+- **Chairs took three attempts.** In list order they sat nowhere near the bodies they hold — a
+  picture asserting a relationship the graph does not contain. At the **circular mean** of their own
+  bodies all twelve collapsed into one illegible arc, **and that is the data talking**: a chair whose
+  bodies spread across many sectors has a mean direction with almost no meaning. The resolution
+  splits the jobs — **ordered** by mean direction (data), **spaced** evenly (layout), with the true
+  direction as a spoke **whose opacity is the resultant length.** The dispersion became information.
+- **The declared/measured caption ran off the left edge**, silently deleting the finding it exists
+  to carry. Clamped.
+- **The variants overflowed in two opposite directions** — `faceon` off the top and bottom,
+  `orrery` off the left and right — because vertical extent is radius × tilt. Fixed as a formula
+  over both axes, so a fourth variant cannot reintroduce it.
+
+**All three are the drawing deleting its own content, and none is visible in the source or to a
+gate.** `check_okf` and `check_links` passed every intermediate state.
+
+### Fair copy, and one thing it found
+
+245 addresses across 41 pages. **225 answered → 226; 1 dead → 0.** The dead one was not rot: it was
+the fetch template in `index.md`, written with a `<Page>` placeholder, so the sweep resolved a bare
+directory. **A template that cannot be checked is indistinguishable from rot**, and the fix is an
+address that is both. `qsos.org` and `osspal.org` show as silent, which **corroborates** the new
+method page rather than contradicting it.
+
+**No Pages step here** — this repository has no `docs-site`; the mirror publishes, and today's
+merges are live on it.
+
+### Filed as questions rather than decided
+
+**`GE-Workshop#12`** — does a Composer node belong in a graph whose third layer is the twelve
+chairs? With the measurement, and an explicit *no reply owed if the answer is no*.
+**`GE-Workshop#13`** — `Request quality check` says *one upfront question prevents the three-round
+loop*, and it **did not fire** on a textbook instance of itself. Should the protocol name the case,
+or is the new page the connection? The protocol layer is shared; the library has no standing there.
+
+### Open on the stand
+
+**`#8`** — the Corona band is the part not settled by choosing a projection, and the palette is
+untouched. **`live: false`** — twelve principles, not-live and enacted at once, unexplained.
+**`#10`, `jkosvr-tower#10`, `#2`, `#3`** — parked with their reasons intact.
+
+### Corrections that became method
+
+***`ls` is not `ls -la`, and a symlink reads exactly like a directory until you ask.*** An issue was
+filed claiming a surface did not exist when three of its four parts did.
+
+***A drawing is verified by looking at it, not by passing its gates.*** Three defects, each one
+invisible to `check_okf`, `check_links` and the source, each one deleting content.
+
+***A scalar that cannot be reproduced is not inherited.*** Five formulations, none matching; the
+render defines its own and says so rather than borrowing authority from numbers it cannot produce.
