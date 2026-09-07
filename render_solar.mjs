@@ -129,9 +129,14 @@ const evidence = (id) => { const r = st.get(id); return r.t ? r.good / r.t : 0; 
 const shellOf = (id) => Math.min(SHELLS - 1, Math.max(0, SHELLS - 1 - Math.floor(evidence(id) * SHELLS - 1e-9)));
 
 // ---- 13 sectors, in a stated order so the drawing is reproducible
+// ⚠️ SECTOR NAMES ARE THE CORPUS'S, AND THE CORPUS RENAMES THEM. `Session & Interface` became
+// `The Baton` upstream on 2026-09-07 — the Composer's seventh protocol family, 13 nodes, named for
+// the fact that all thirteen are operated by him and not one fires on its own. This list is
+// hardcoded, so a rename upstream silently drops every body of that family into the fallback
+// sector until it is edited here. Checked against the graph on every refresh, never assumed.
 const SECTORS = ["Governance", "Safety", "Structure", "Learning", "Epistemics", "Balance",
   "Roster & Ensemble", "Scale & Effort", "Quality & Verification", "Decision & Escalation",
-  "Learning & Pattern", "Trust boundary", "Session & Interface"];
+  "Learning & Pattern", "Trust boundary", "The Baton"];
 const sectorAngle = (s) => { const i = SECTORS.indexOf(s); return (i < 0 ? 0 : i) / SECTORS.length * 2 * Math.PI - Math.PI / 2; };
 const hue = (s) => Math.round((Math.max(0, SECTORS.indexOf(s)) / SECTORS.length) * 360);
 const sat = (shell) => 74 - shell * 7 + V.sat;   // CONSTANT PER RING — the ruling

@@ -50,9 +50,9 @@
       "name": "Trust boundary",
       "document": "project/protocols_mandala_source.md#trust-boundary"
     },
-    "Session & Interface": {
-      "name": "Session & Interface",
-      "document": "project/protocols_mandala_source.md#session--interface"
+    "The Baton": {
+      "name": "The Baton",
+      "document": "project/protocols_mandala_source.md#the-baton"
     }
   },
   "layers": {
@@ -65,7 +65,6 @@
           "cluster": "Governance",
           "seed": "Silence of the sovereign",
           "sources": [],
-          "live": true,
           "firstName": "Dèmos Kratos",
           "lastName": "Governance",
           "familyDoc": "project/principles_candidate.md#governance",
@@ -98,7 +97,6 @@
           "cluster": "Governance",
           "seed": "Proposal, not decree",
           "sources": [],
-          "live": true,
           "firstName": "The Composer Principle",
           "lastName": "Governance",
           "familyDoc": "project/principles_candidate.md#governance",
@@ -130,7 +128,6 @@
           "cluster": "Governance",
           "seed": "Agent's ceiling",
           "sources": [],
-          "live": true,
           "firstName": "The Agile Facilitator is an agent, not the Composer",
           "lastName": "Governance",
           "familyDoc": "project/principles_candidate.md#governance",
@@ -156,7 +153,6 @@
           "cluster": "Governance",
           "seed": "Determinable exception",
           "sources": [],
-          "live": true,
           "firstName": "A choice offered is a bug",
           "lastName": "Governance",
           "familyDoc": "project/principles_candidate.md#governance",
@@ -187,7 +183,6 @@
               "href": "https://en.wikipedia.org/wiki/Memento_(film)"
             }
           ],
-          "live": true,
           "sourceNotes": [
             "— Leonard cannot hold state between sessions, so everything he needs must live outside him. **The distinction the film is built on is exactly this principle's:** what must never be lost is **tattooed** — structural, on the body, not editable in passing — while everything merely written on a Polaroid or a note can be annotated, discarded, or quietly rewritten. **The rules that hold are the ones he made unchangeable; the ones written as prose are the ones that betray him.** The failure mode is stated in the same object: he is the only witness to his own record, so the record cannot check him."
           ],
@@ -223,7 +218,6 @@
           "cluster": "Safety",
           "seed": "Doing the right thing wrongly",
           "sources": [],
-          "live": true,
           "firstName": "Overshoot",
           "lastName": "Safety",
           "familyDoc": "project/principles_candidate.md#safety",
@@ -251,7 +245,6 @@
           "cluster": "Safety",
           "seed": "The seventh turn reveals",
           "sources": [],
-          "live": true,
           "firstName": "The deletion protocol",
           "lastName": "Safety",
           "familyDoc": "project/principles_candidate.md#safety",
@@ -279,7 +272,6 @@
           "cluster": "Safety",
           "seed": "Inspection changes state",
           "sources": [],
-          "live": true,
           "firstName": "NDT",
           "lastName": "Safety",
           "familyDoc": "project/principles_candidate.md#safety",
@@ -305,6 +297,27 @@
           "enacted": true
         },
         {
+          "id": "principles:greenfieldreset",
+          "name": "Greenfield Reset",
+          "title": "Invisible drift",
+          "cluster": "Safety",
+          "seed": "Invisible drift",
+          "sources": [],
+          "firstName": "Greenfield Reset",
+          "lastName": "Safety",
+          "familyDoc": "project/principles_candidate.md#safety",
+          "layer": "principles",
+          "doc": "project/principles_candidate.md#greenfieldreset",
+          "icon": "layers_clear",
+          "iconStatus": "proposed",
+          "iconFrom": "project/icon_registry.md",
+          "groundsChairs": [],
+          "groundedKind": "gap",
+          "boundaryWhy": null,
+          "yang": [],
+          "enacted": false
+        },
+        {
           "id": "principles:toobigtoosoon",
           "name": "Too Big Too Soon",
           "title": "Minimum viable scope",
@@ -316,7 +329,6 @@
               "href": "https://en.wikipedia.org/wiki/Explorers_(film)"
             }
           ],
-          "live": true,
           "sourceNotes": [
             "— the children build the craft and reach the aliens, and **the aliens turn out to be children too**, who learned everything from broadcast television and were not ready for the meeting. The failure is not capability; it is arriving before you are formed."
           ],
@@ -351,7 +363,6 @@
           "cluster": "Safety",
           "seed": "The page doesn't get a vote",
           "sources": [],
-          "live": true,
           "firstName": "Spotlighting",
           "lastName": "Safety",
           "familyDoc": "project/principles_candidate.md#safety",
@@ -376,7 +387,6 @@
           "cluster": "Safety",
           "seed": "Untested is unspecified",
           "sources": [],
-          "live": true,
           "firstName": "The Delegation Brief",
           "lastName": "Safety",
           "familyDoc": "project/principles_candidate.md#safety",
@@ -420,7 +430,6 @@
               "href": "https://uxdx.com/method/"
             }
           ],
-          "live": true,
           "sourceNotes": [],
           "firstName": "The Fractal Loop",
           "lastName": "Structure",
@@ -459,7 +468,6 @@
               "href": "https://www.cnn.com/2013/03/14/health/pi-day-memorizing-numbers"
             }
           ],
-          "live": false,
           "sourceNotes": [
             "— π recited to **22,514 digits** (Oxford, 2004) and recalled not as a list but as **a walk through a landscape**, coloured hills and valleys per stretch of digits (",
             "). The terrain is known by traversing it, never by reading it off — which is the venue entered before it is conducted in."
@@ -487,7 +495,6 @@
           "cluster": "Structure",
           "seed": "Map is not the territory",
           "sources": [],
-          "live": false,
           "sourceNotes": [
             "William Gibson (*Neuromancer*)",
             "H.P. Lovecraft",
@@ -518,7 +525,6 @@
           "cluster": "Structure",
           "seed": "Recursion base case",
           "sources": [],
-          "live": false,
           "firstName": "The Nested Opera Houses Corollary",
           "lastName": "Structure",
           "familyDoc": "project/principles_candidate.md#structure",
@@ -549,7 +555,6 @@
               "href": "https://en.wikipedia.org/wiki/How_Deep_Is_Your_Love_(Bee_Gees_song)"
             }
           ],
-          "live": false,
           "sourceNotes": [
             "— three brothers, three independent lines, one chord; the a cappella is where the parallelism stops being an arrangement and becomes audible."
           ],
@@ -586,7 +591,6 @@
               "href": "https://martinfowler.com/bliki/BoundedContext.html"
             }
           ],
-          "live": true,
           "sourceNotes": [
             "design tokens as this principle's design-domain instance — Jina Anne, Salesforce (2014)",
             "single source of truth, following relational normalization (Codd, 1970)",
@@ -625,7 +629,6 @@
               "href": "https://en.wikipedia.org/wiki/Kintsugi"
             }
           ],
-          "live": false,
           "sourceNotes": [
             "— the mend is lacquer dusted with gold, so **the repair is illuminated rather than hidden**, and what you look at is the break. Nobody is asked to forgive the crack; you are shown it in gold and the bowl is worth more for having it. The entry is named for the craft and then asks more of it than the craft does: the corollary wants the gold *stronger* than the ceramic, which is a claim about the repair holding, where kintsugi's claim is that the history is worth seeing."
           ],
@@ -655,7 +658,6 @@
           "cluster": "Learning",
           "seed": "The admission IS the fix",
           "sources": [],
-          "live": true,
           "firstName": "The professional mantra",
           "lastName": "Learning",
           "familyDoc": "project/principles_candidate.md#learning",
@@ -688,7 +690,6 @@
               "href": "https://plato.stanford.edu/entries/plato-metaphysics/"
             }
           ],
-          "live": true,
           "sourceNotes": [
             "— the two words this entry is named for, at the place they were separated. Socrates does not define doxa, he asks a question about a person: the man who loves beautiful things but will not hear of beauty itself — **is he awake, or dreaming?** And dreaming is defined as *taking a likeness for the thing it resembles*, asleep or awake. That is the whole of \"confident hallucination\" in one image, and it is why the anti-pattern here is not-knowing-that-you-don't-know rather than lying: the dreamer is sincere. Knowledge and belief are then split by what they admit — knowledge only what is true, belief both true and false — which is the asymmetry the practical rule prices."
           ],
@@ -736,7 +737,6 @@
           "cluster": "Learning",
           "seed": "Blind spot is always self",
           "sources": [],
-          "live": true,
           "firstName": "The cobbler's children",
           "lastName": "Learning",
           "familyDoc": "project/principles_candidate.md#learning",
@@ -784,7 +784,6 @@
               "href": "https://en.wikipedia.org/wiki/The_Thirteenth_Floor"
             }
           ],
-          "live": true,
           "sourceNotes": [
             "— John Murdoch discovers he can **tune** — reshape the physical world with his mind alone. Not merely that he is inside the construction, but that **the mind is the organ that shapes it**, and no prophecy told him so; he finds the capacity by using it",
             "— Neo understanding he is **part of** the system he believed he was observing",
@@ -816,7 +815,6 @@
           "cluster": "Learning",
           "seed": "Reader you'll never meet",
           "sources": [],
-          "live": false,
           "firstName": "Extending the Thirteenth Floor",
           "lastName": "Learning",
           "familyDoc": "project/principles_candidate.md#learning",
@@ -851,7 +849,6 @@
               "href": "https://en.wikipedia.org/wiki/Contact_(1997_American_film)"
             }
           ],
-          "live": false,
           "sourceNotes": [
             ", from Carl Sagan — the film **opens on a single continuous pull-back** from Earth out past the solar system, so distance is the reading instrument rather than the subject; and its closing sub-plot turns on the signal's origin being **possibly far nearer than it appears, or pretending to be**. Distance is not a property of the thing. It is a claim the reader makes, and it can be wrong."
           ],
@@ -893,7 +890,6 @@
               "href": "https://en.wikipedia.org/wiki/Daft_Punk%27s_Electroma"
             }
           ],
-          "live": false,
           "sourceNotes": [],
           "firstName": "The Turing Game",
           "lastName": "Epistemics",
@@ -946,7 +942,6 @@
               "href": "https://en.wikipedia.org/wiki/Gaston_Bachelard"
             }
           ],
-          "live": false,
           "sourceNotes": [
             "— the ear this entry is named for **identifies a note without a reference tone**: nothing external has to fail first, the judgement is already inside. That is what makes the wrong note unbearable rather than debatable — you do not deduce it, you wince. And it is the exact claim the entry makes about an LLM holding output against a target: the comparison was available the whole time, and the failure is not making it."
           ],
@@ -1002,7 +997,6 @@
               "href": "https://martinfowler.com/bliki/BoundedContext.html"
             }
           ],
-          "live": true,
           "sourceNotes": [
             "*by analogy only, not precedent —*  (Kamath, Schuster, Vajjala & Reddy, TACL 12, 2024, 738–754) studies **quantifier** scope in sentence semantics, the same failure shape one level down in the grammar; User Researcher re-scoped this citation at Chair Review, and the MIT Press mirror returns 403"
           ],
@@ -1044,7 +1038,6 @@
               "href": "https://en.wikipedia.org/wiki/Karate"
             }
           ],
-          "live": false,
           "sourceNotes": [
             "**空手 — *kara* (empty) + *te* (hand)**, the reading Funakoshi Gichin established () — the art is named for what the hand does **not** hold",
             "*The Karate Kid* — Miyagi giving Daniel-san the etymology when he asks to be taught weapons. Recorded as the Composer remembers it, from the French dub; the scene is a recollection, not a verified citation."
@@ -1077,7 +1070,6 @@
               "href": "https://en.wikipedia.org/wiki/Tao_Te_Ching"
             }
           ],
-          "live": true,
           "sourceNotes": [
             "— thirty spokes share one hub, and it is the **emptiness at the centre** that makes the wheel useful; the vessel's hollow, the room's doors and windows. Not an analogy for this principle but the same argument, 2,500 years earlier."
           ],
@@ -1120,7 +1112,6 @@
               "href": "https://en.wikipedia.org/wiki/The_Three_Princes_of_Serendip"
             }
           ],
-          "live": true,
           "sourceNotes": [
             "— Horace Walpole coined the word on 28 January 1754 in a letter to Horace Mann, and gave it two halves in one breath: discoveries made *\"by accidents and sagacity, of things which they were not in quest of\"*. **Sagacity is the half that gets dropped**, and dropping it is exactly how this principle gets misread as drift. The accident supplies the material; the reading of it is work.",
             "— the 1557 tale Walpole took it from, and the scene that carries it: asked about a camel they have never seen, the princes describe it lame, blind in one eye, missing a tooth, carrying butter on one side and honey on the other — from the dragged fourth print, the grass cropped on one side of the road, the chewed lumps, the flies and the ants. They were not looking for the camel. They were also not guessing."
@@ -1159,7 +1150,6 @@
               "href": "https://en.wikipedia.org/wiki/Music_Sounds_Better_with_You"
             }
           ],
-          "live": false,
           "sourceNotes": [],
           "firstName": "The Interval Principle",
           "lastName": "Balance",
@@ -1192,7 +1182,6 @@
               "href": "https://en.wikipedia.org/wiki/Legato"
             }
           ],
-          "live": true,
           "sourceNotes": [
             "guitar **hammer-on / pull-off** () — the same hand sounding a note without a new attack. Effort matched to what the phrase needs rather than to what the hand is capable of."
           ],
@@ -1239,7 +1228,6 @@
               "href": "https://en.wikipedia.org/wiki/Music_Sounds_Better_with_You"
             }
           ],
-          "live": false,
           "sourceNotes": [],
           "firstName": "Art as Felt Science",
           "lastName": "Balance",
@@ -1258,6 +1246,27 @@
             "showdonttell"
           ],
           "enacted": true
+        },
+        {
+          "id": "principles:uglyduckling",
+          "name": "The Ugly Duckling",
+          "title": "The eye picks the space",
+          "cluster": "Balance",
+          "seed": "The eye picks the space",
+          "sources": [],
+          "firstName": "The Ugly Duckling",
+          "lastName": "Balance",
+          "familyDoc": "project/principles_candidate.md#balance",
+          "layer": "principles",
+          "doc": "project/principles_candidate.md#uglyduckling",
+          "icon": "preview",
+          "iconStatus": "proposed",
+          "iconFrom": "project/icon_registry.md",
+          "groundsChairs": [],
+          "groundedKind": "gap",
+          "boundaryWhy": null,
+          "yang": [],
+          "enacted": false
         }
       ],
       "edges": [
@@ -1622,6 +1631,66 @@
           "kin": "sibling"
         },
         {
+          "a": "principles:greenfieldreset",
+          "b": "principles:ndt",
+          "type": "C",
+          "status": "corroborated",
+          "why": "**It is the other half of NDT, not its opposite.** `brain/brain_principles.md` states the sequence and it is the whole of the relationship: **NDT first (verify the current state) → the decision to reset → controlled destruction and rebuild.** NDT prevents *accidental* destruction; the Reset is *intentional* destruction at a known boundary.",
+          "id": "principles:greenfieldreset+ndt:C",
+          "union": "Safety — Safety",
+          "kin": "sibling"
+        },
+        {
+          "a": "principles:deletionprotocol",
+          "b": "principles:greenfieldreset",
+          "type": "D",
+          "status": "asserted",
+          "why": "Deletion protocol (D, \"turn your tongue seven times\" before an irreversible act)",
+          "id": "principles:deletionprotocol+greenfieldreset:D",
+          "union": "Safety — Safety",
+          "kin": "sibling"
+        },
+        {
+          "a": "principles:dmoskratos",
+          "b": "principles:greenfieldreset",
+          "type": "D",
+          "status": "corroborated",
+          "why": "**ADR-74 added `Greenfield Copy`: the copy is taken before the gate is asked.** ADR-75 then named that protocol's two checks as Dèmos Kratos in the Composer's own words — *\"l'orchestre vérifie une première fois, et le compositeur la deuxième, aucun risque de tyrannie\"* — and asked for it written plainly rather than left implicit, so a new Composer meets the principle demonstrated in a mechanism be",
+          "id": "principles:dmoskratos+greenfieldreset:D",
+          "union": "Governance — Safety",
+          "kin": "partner"
+        },
+        {
+          "a": "principles:fractalloop",
+          "b": "principles:greenfieldreset",
+          "type": "S",
+          "status": "corroborated",
+          "why": "**Written as an entry 2026-09-07**, on the Composer's ruling, after it was found running live with no candidate entry behind it — a `LIVE-ONLY`, seven weeks inside the Fractal Loop's mechanism table and absent from the graph.",
+          "id": "principles:fractalloop+greenfieldreset:S",
+          "union": "Safety — Structure",
+          "kin": "partner"
+        },
+        {
+          "a": "principles:greenfieldreset",
+          "b": "principles:kintsugiparadox",
+          "type": "T",
+          "status": "asserted",
+          "why": "Kintsugi Paradox (T, genuine tension and the estate holds both answers: Kintsugi repairs a break and shows the gold, the Reset rebuilds and shows nothing — which one an artefact earns is not settled here)",
+          "id": "principles:greenfieldreset+kintsugiparadox:T",
+          "union": "Learning — Safety",
+          "kin": "partner"
+        },
+        {
+          "a": "principles:epistemevsdoxa",
+          "b": "principles:greenfieldreset",
+          "type": "S",
+          "status": "asserted",
+          "why": "Episteme vs doxa (S, \"rebuild from source\" is only true if the source is verified)",
+          "id": "principles:epistemevsdoxa+greenfieldreset:S",
+          "union": "Learning — Safety",
+          "kin": "partner"
+        },
+        {
           "a": "principles:designbyabsence",
           "b": "principles:toobigtoosoon",
           "type": "T",
@@ -1736,7 +1805,7 @@
           "b": "principles:operahouseprinciple",
           "type": "D",
           "status": "corroborated",
-          "why": "**Dating note — resolved 2026-07-29 by command, and the flag was wrong about where.** `grep` over this file and the live `references/principles.md` finds \"Nested Opera Houses\" in this entry **only in its Connections row**, never in the mechanism list, which holds exactly seven items — none dated after 2026-07-16.",
+          "why": "doxa a single claim 4 Declared-set check the set a claim was checked against 5 NDT a target's state, before mutating it 6 Independent Verification a finding, and whether one context can check it 7 Tool Audit a surface's real capability 8 Knowledge-Pivot a new fact against the cross-domain map 9 Unit loop a unit against a definition written first 10 Lots a batch of units 11 Effort-scaling rubric ho",
           "id": "principles:fractalloop+operahouseprinciple:D",
           "union": "Structure — Structure",
           "kin": "sibling"
@@ -1746,7 +1815,7 @@
           "b": "principles:nestedoperahousescorollary",
           "type": "E",
           "status": "corroborated",
-          "why": "**Dating note — resolved 2026-07-29 by command, and the flag was wrong about where.** `grep` over this file and the live `references/principles.md` finds \"Nested Opera Houses\" in this entry **only in its Connections row**, never in the mechanism list, which holds exactly seven items — none dated after 2026-07-16.",
+          "why": "The finding the old note actually established still stands and is worth keeping: \"Nested Opera Houses\" appears in this entry's *Connections* row only, never in the mechanism list, so the flag that started it was pointing at the wrong row.",
           "id": "principles:fractalloop+nestedoperahousescorollary:E",
           "union": "Structure — Structure",
           "kin": "sibling"
@@ -1783,10 +1852,20 @@
         },
         {
           "a": "principles:fractalloop",
+          "b": "principles:overshoot",
+          "type": "?",
+          "status": "earned",
+          "why": "That is what separates `Rule 0 gate`, `Button gate`, `Request quality check`, `Definition of Done`, `THE WHIP` and `Attribution format` — all real checks, none of them loops — from the twenty-three, which are ordered here by the scale of the thing they take: ``` 1 Overshoot a single input, before acting on it 2 Response calibration how much to say in one reply 3 Episteme vs.",
+          "id": "principles:fractalloop+overshoot:?",
+          "union": "Safety — Structure",
+          "kin": "partner"
+        },
+        {
+          "a": "principles:fractalloop",
           "b": "principles:ndt",
           "type": "?",
           "status": "earned",
-          "why": "doxa (a single claim), NDT (a target's state), Lots (a unit of work), Response calibration (how much to say), Effort-scaling rubric (how many voices), Greenfield Reset (accumulated patches), Chair Review (a knowledge claim).",
+          "why": "doxa a single claim 4 Declared-set check the set a claim was checked against 5 NDT a target's state, before mutating it 6 Independent Verification a finding, and whether one context can check it 7 Tool Audit a surface's real capability 8 Knowledge-Pivot a new fact against the cross-domain map 9 Unit loop a unit against a definition written first 10 Lots a batch of units 11 Effort-scaling rubric ho",
           "id": "principles:fractalloop+ndt:?",
           "union": "Safety — Structure",
           "kin": "partner"
@@ -1796,7 +1875,7 @@
           "b": "principles:fractalloop",
           "type": "?",
           "status": "earned",
-          "why": "Seven existing mechanisms already run this loop, each at its own scale: Episteme vs.",
+          "why": "That is what separates `Rule 0 gate`, `Button gate`, `Request quality check`, `Definition of Done`, `THE WHIP` and `Attribution format` — all real checks, none of them loops — from the twenty-three, which are ordered here by the scale of the thing they take: ``` 1 Overshoot a single input, before acting on it 2 Response calibration how much to say in one reply 3 Episteme vs.",
           "id": "principles:epistemevsdoxa+fractalloop:?",
           "union": "Learning — Structure",
           "kin": "partner"
@@ -1816,7 +1895,7 @@
           "b": "principles:responsecalibration",
           "type": "?",
           "status": "earned",
-          "why": "doxa (a single claim), NDT (a target's state), Lots (a unit of work), Response calibration (how much to say), Effort-scaling rubric (how many voices), Greenfield Reset (accumulated patches), Chair Review (a knowledge claim).",
+          "why": "That is what separates `Rule 0 gate`, `Button gate`, `Request quality check`, `Definition of Done`, `THE WHIP` and `Attribution format` — all real checks, none of them loops — from the twenty-three, which are ordered here by the scale of the thing they take: ``` 1 Overshoot a single input, before acting on it 2 Response calibration how much to say in one reply 3 Episteme vs.",
           "id": "principles:fractalloop+responsecalibration:?",
           "union": "Balance — Structure",
           "kin": "partner"
@@ -2580,6 +2659,56 @@
           "id": "principles:artasfeltscience+composerasneuron:S",
           "union": "Balance — Learning",
           "kin": "partner"
+        },
+        {
+          "a": "principles:artasfeltscience",
+          "b": "principles:uglyduckling",
+          "type": "S",
+          "status": "asserted",
+          "why": "Art as Felt Science (S, both hold that felt understanding carries what a measure does not — this principle's nearest kin, and the reason Balance is the cluster)",
+          "id": "principles:artasfeltscience+uglyduckling:S",
+          "union": "Balance — Balance",
+          "kin": "sibling"
+        },
+        {
+          "a": "principles:epistemevsdoxa",
+          "b": "principles:uglyduckling",
+          "type": "D",
+          "status": "asserted",
+          "why": "Episteme vs doxa (D, taste is a verification method and owes the same declaration as any other: whether its verdict was checked or believed)",
+          "id": "principles:epistemevsdoxa+uglyduckling:D",
+          "union": "Balance — Learning",
+          "kin": "partner"
+        },
+        {
+          "a": "principles:absoluteear",
+          "b": "principles:uglyduckling",
+          "type": "S",
+          "status": "asserted",
+          "why": "The Absolute Ear (S, repeated failure is a tool-search signal — a visible wrongness is that signal one layer down, the space at fault rather than the value)",
+          "id": "principles:absoluteear+uglyduckling:S",
+          "union": "Balance — Epistemics",
+          "kin": "partner"
+        },
+        {
+          "a": "principles:declaredcircle",
+          "b": "principles:uglyduckling",
+          "type": "D",
+          "status": "asserted",
+          "why": "The Declared Circle (D, the cardinality limit above is that rule applied to the eye: a perception may not range wider than the whole it can hold)",
+          "id": "principles:declaredcircle+uglyduckling:D",
+          "union": "Balance — Epistemics",
+          "kin": "partner"
+        },
+        {
+          "a": "principles:composerprinciple",
+          "b": "principles:uglyduckling",
+          "type": "D",
+          "status": "corroborated",
+          "why": "A swatch qualifies; a ninety-two node graph does not - Sets with no shared dimension to be uneven *in* — the eye needs a space before it can tell you the wrong one was used - Where the \"outlier\" is the intended signal: an accent, an error state, a highlight - Any judgement the Composer has not delegated — the eye that rules is his, and the orchestra's reading is a proposal (Composer Principle) **P",
+          "id": "principles:composerprinciple+uglyduckling:D",
+          "union": "Balance — Governance",
+          "kin": "partner"
         }
       ]
     },
@@ -3130,7 +3259,7 @@
           "id": "protocols:taskentry",
           "name": "Task entry",
           "family": "Decision & Escalation",
-          "yang": "three same-shape requests with no use case → the quorum names the suspicion **first, and offers no methodology until the problem is stated**; then the plan is written with the Composer, his verification steps in it; then executed",
+          "yang": "three same-shape requests with no use case → the quorum names the suspicion **first, and offers no methodology until the problem is stated**; then the plan is written with the Composer, his verification steps in it, in one four-part statement — intent played back, methodology named, tasks estimated, reasons given — agreed once as a whole, defined by all twelve; then executed by a peer team of 2 or more",
           "seed": "a task is entered at a scale, or it is entered by accident",
           "definedAt": "`project/protocol_proposal_task_entry.md:1`",
           "sources": [],
@@ -3418,15 +3547,15 @@
         {
           "id": "protocols:solodismiss",
           "name": "Solo / Dismiss",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "one musician alone, persists until dismissed",
           "seed": "the Composer opened it; only the Composer closes it",
           "definedAt": "`triggers.md:9`",
           "sources": [],
           "firstName": "Solo / Dismiss",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "the Composer opened it; only the Composer closes it",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:9",
           "entry": "Composer",
@@ -3437,15 +3566,15 @@
         {
           "id": "protocols:auditorium",
           "name": "Auditorium",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "12 ideas with impact → Product Owner ranks descending → synthesis",
           "seed": "breadth is delivered once, then depth by choice",
           "definedAt": "`triggers.md:12`",
           "sources": [],
           "firstName": "Auditorium",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "breadth is delivered once, then depth by choice",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:12",
           "entry": "Composer",
@@ -3456,15 +3585,15 @@
         {
           "id": "protocols:program",
           "name": "Program",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "play numbered notes in the given order, one at a time",
           "seed": "unlisted notes are postponed, not deleted",
           "definedAt": "`triggers.md:23`",
           "sources": [],
           "firstName": "Program",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "unlisted notes are postponed, not deleted",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:23",
           "entry": "Composer",
@@ -3475,15 +3604,15 @@
         {
           "id": "protocols:playmuteplayloud",
           "name": "Play mute / Play loud",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "advise and draft, execute nothing, until unmuted",
           "seed": "counsel and action are different acts",
           "definedAt": "`triggers.md:26`",
           "sources": [],
           "firstName": "Play mute / Play loud",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "counsel and action are different acts",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:26",
           "entry": "Composer",
@@ -3494,15 +3623,15 @@
         {
           "id": "protocols:openscoreclosescore",
           "name": "Open score / Close score",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "expose routing and internals until closed",
           "seed": "the machinery is inspectable on request",
           "definedAt": "`triggers.md:36`",
           "sources": [],
           "firstName": "Open score / Close score",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "the machinery is inspectable on request",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:36",
           "entry": "Composer",
@@ -3513,15 +3642,15 @@
         {
           "id": "protocols:makeitso",
           "name": "Make it so",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "execute the plan just discussed, no re-confirmation",
           "seed": "agreement already happened; don't re-ask",
           "definedAt": "`triggers.md:39`",
           "sources": [],
           "firstName": "Make it so",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "agreement already happened; don't re-ask",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:39",
           "entry": "Composer",
@@ -3532,15 +3661,15 @@
         {
           "id": "protocols:tell",
           "name": "Tell",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "expand the reasoning behind what was just shown",
           "seed": "the reasoning is owed, but not by default",
           "definedAt": "`triggers.md:45`",
           "sources": [],
           "firstName": "Tell",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "the reasoning is owed, but not by default",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:45",
           "entry": "Composer",
@@ -3551,15 +3680,15 @@
         {
           "id": "protocols:help",
           "name": "Help",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "print the command manual; changes nothing, runs nothing",
           "seed": "a reference is not an action",
           "definedAt": "`triggers.md:73`",
           "sources": [],
           "firstName": "Help",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "a reference is not an action",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:73",
           "entry": "Composer",
@@ -3570,15 +3699,15 @@
         {
           "id": "protocols:composerkey",
           "name": "Composer Key",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "read / write / update the personal layer, with read-back",
           "seed": "persisting identity needs consent",
           "definedAt": "`triggers.md:48`",
           "sources": [],
           "firstName": "Composer Key",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "persisting identity needs consent",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:48",
           "entry": "Composer",
@@ -3589,15 +3718,15 @@
         {
           "id": "protocols:changescorekey",
           "name": "Change Score Key",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "re-set presentation preferences, persist to the Key",
           "seed": "the score is shared; the key is personal",
           "definedAt": "`triggers.md:54`",
           "sources": [],
           "firstName": "Change Score Key",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "the score is shared; the key is personal",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:54",
           "entry": "Composer",
@@ -3608,15 +3737,15 @@
         {
           "id": "protocols:timemethodsambientnone",
           "name": "Time methods (Ambient / None)",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "switch the permanent time behaviour, persist to the Key",
           "seed": "no time behaviour is the honest default",
           "definedAt": "`triggers.md:61`",
           "sources": [],
           "firstName": "Time methods (Ambient / None)",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "no time behaviour is the honest default",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:61",
           "entry": "Composer",
@@ -3627,15 +3756,15 @@
         {
           "id": "protocols:metronome",
           "name": "Metronome",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "one-off focused box above the permanent method",
           "seed": "a transient overlay is not a method",
           "definedAt": "`triggers.md:64`",
           "sources": [],
           "firstName": "Metronome",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "a transient overlay is not a method",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:64",
           "entry": "Composer",
@@ -3646,15 +3775,15 @@
         {
           "id": "protocols:capacitycheck",
           "name": "Capacity check",
-          "family": "Session & Interface",
+          "family": "The Baton",
           "yang": "any stated usage % recalibrates the budget; wrap-up posture at ~90%",
           "seed": "the Agile Facilitator cannot read its own usage",
           "definedAt": "`triggers.md:70`",
           "sources": [],
           "firstName": "Capacity check",
-          "lastName": "Session & Interface",
+          "lastName": "The Baton",
           "title": "the Agile Facilitator cannot read its own usage",
-          "familyDoc": "project/protocols_mandala_source.md#session--interface",
+          "familyDoc": "project/protocols_mandala_source.md#the-baton",
           "layer": "protocols",
           "doc": "triggers.md:70",
           "entry": "Composer",
@@ -3711,7 +3840,7 @@
           "status": "earned",
           "why": "*\"`Change Score Key` is the **specialized subset** for presentation preferences.\"* — `triggers.md:52`",
           "id": "protocols:changescorekey+composerkey:E",
-          "union": "Session & Interface — Session & Interface",
+          "union": "The Baton — The Baton",
           "kin": "sibling"
         },
         {
@@ -3721,7 +3850,7 @@
           "status": "earned",
           "why": "*\"a transient time-box layered **above the permanent method**.\"* — `triggers.md:64`",
           "id": "protocols:metronome+timemethodsambientnone:E",
-          "union": "Session & Interface — Session & Interface",
+          "union": "The Baton — The Baton",
           "kin": "sibling"
         },
         {
@@ -3731,7 +3860,7 @@
           "status": "earned",
           "why": "*\"the **'tell' layer** of Show-don't-tell.\"* — `triggers.md:45`",
           "id": "protocols:showdonttell+tell:E",
-          "union": "Decision & Escalation — Session & Interface",
+          "union": "Decision & Escalation — The Baton",
           "kin": "partner"
         },
         {
@@ -3941,7 +4070,7 @@
           "status": "earned",
           "why": "*\"The ranked table is **numbered** — it is a **Program surface**.\"* — `triggers.md:12`",
           "id": "protocols:auditorium+program:D",
-          "union": "Session & Interface — Session & Interface",
+          "union": "The Baton — The Baton",
           "kin": "sibling"
         },
         {
@@ -3951,7 +4080,7 @@
           "status": "earned",
           "why": "twelve voices produce the disagreement the protocol routes — `triggers.md:12`",
           "id": "protocols:auditorium+disagreementhandling:D",
-          "union": "Decision & Escalation — Session & Interface",
+          "union": "Decision & Escalation — The Baton",
           "kin": "partner"
         },
         {
@@ -3991,7 +4120,7 @@
           "status": "earned",
           "why": "*\"Auto-triggers wrap-up posture at ~90%+ … offers to Checkpoint.\"* — `triggers.md:70`",
           "id": "protocols:capacitycheck+checkpointthesession:D",
-          "union": "Learning & Pattern — Session & Interface",
+          "union": "Learning & Pattern — The Baton",
           "kin": "partner"
         },
         {
@@ -4031,7 +4160,7 @@
           "status": "earned",
           "why": "a solo still gets its attribution line — `presentation-checklist.md:22`",
           "id": "protocols:attributionformat+solodismiss:D",
-          "union": "Quality & Verification — Session & Interface",
+          "union": "Quality & Verification — The Baton",
           "kin": "partner"
         },
         {
@@ -4041,7 +4170,7 @@
           "status": "earned",
           "why": "*\"the **only sanctioned exception** to the Minimum Duet Rule.\"* — `triggers.md:9`",
           "id": "protocols:minimumduet+solodismiss:T",
-          "union": "Roster & Ensemble — Session & Interface",
+          "union": "Roster & Ensemble — The Baton",
           "kin": "partner"
         },
         {
@@ -4051,7 +4180,7 @@
           "status": "earned",
           "why": "*\"**Not a new trigger.** `Program` owns Composer-chosen numbered sequencing; Lots are the Agile Facilitator's own phasing.\"* — `protocols.md:124`",
           "id": "protocols:lots+program:T",
-          "union": "Scale & Effort — Session & Interface",
+          "union": "Scale & Effort — The Baton",
           "kin": "partner"
         },
         {
@@ -4091,7 +4220,7 @@
           "status": "earned",
           "why": "*\"a wall of twelve voices answering 'what's the contrast minimum?'\"* is the rubric's named anti-pattern — `protocols.md:25`",
           "id": "protocols:auditorium+effortscalingrubric:T",
-          "union": "Scale & Effort — Session & Interface",
+          "union": "Scale & Effort — The Baton",
           "kin": "partner"
         },
         {
@@ -4121,7 +4250,7 @@
           "status": "earned",
           "why": "one withholds all execution, the other executes without re-confirmation — `triggers.md:26,39`",
           "id": "protocols:makeitso+playmuteplayloud:T",
-          "union": "Session & Interface — Session & Interface",
+          "union": "The Baton — The Baton",
           "kin": "sibling"
         },
         {
@@ -4141,7 +4270,7 @@
           "status": "earned",
           "why": "one asks before proceeding, the other forbids re-asking — `protocols.md:159`, `triggers.md:39`",
           "id": "protocols:makeitso+requestqualitycheck:T",
-          "union": "Quality & Verification — Session & Interface",
+          "union": "Quality & Verification — The Baton",
           "kin": "partner"
         },
         {
@@ -4201,7 +4330,7 @@
           "status": "earned",
           "why": "wrap-up posture suppresses higher tiers — `triggers.md:70`",
           "id": "protocols:capacitycheck+effortscalingrubric:C",
-          "union": "Scale & Effort — Session & Interface",
+          "union": "Scale & Effort — The Baton",
           "kin": "partner"
         },
         {
@@ -4291,7 +4420,7 @@
           "status": "earned",
           "why": "both treat context as a finite budget, one structurally, one live",
           "id": "protocols:capacitycheck+docsharding:S",
-          "union": "Scale & Effort — Session & Interface",
+          "union": "Scale & Effort — The Baton",
           "kin": "partner"
         },
         {
@@ -4311,7 +4440,7 @@
           "status": "earned",
           "why": "*(also E)* — the general layer and its presentation subset",
           "id": "protocols:changescorekey+composerkey:S",
-          "union": "Session & Interface — Session & Interface",
+          "union": "The Baton — The Baton",
           "kin": "sibling"
         },
         {
@@ -4331,7 +4460,7 @@
           "status": "earned",
           "why": "both are surfaces the Composer reads rather than acts on",
           "id": "protocols:help+showdonttell:S",
-          "union": "Decision & Escalation — Session & Interface",
+          "union": "Decision & Escalation — The Baton",
           "kin": "partner"
         },
         {
@@ -4969,6 +5098,7 @@
           "type": "D",
           "status": "corroborated",
           "why": "Shared concern — **Design tokens & design-to-code (Code Connect)** ([the standard behind it](https://www.designtokens.org/tr/drafts/format/)) (VII Design / X Tools), which `brain/common_score_pivot.md:56` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "one-sided",
           "id": "musicians:designengineer+uxdesigner:D",
           "union": "Strings — Strings",
           "kin": "sibling"
@@ -4979,6 +5109,7 @@
           "type": "D",
           "status": "corroborated",
           "why": "Shared concern — **Accessibility designed-in (WCAG 2.2 / APCA)** ([the standard behind it](https://www.w3.org/TR/WCAG22/)) (VII Design / VIII Web-A11y), which `brain/common_score_pivot.md:52` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:accessibilityspecialist+uxdesigner:D",
           "union": "Strings — Woodwinds",
           "kin": "partner"
@@ -4989,6 +5120,7 @@
           "type": "E",
           "status": "corroborated",
           "why": "Shared concern — **Design tokens & design-to-code (Code Connect)** ([the standard behind it](https://www.designtokens.org/tr/drafts/format/)) (VII Design / X Tools), which `brain/common_score_pivot.md:56` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "one-sided",
           "id": "musicians:designengineer+uxdesigner:E",
           "union": "Strings — Strings",
           "kin": "sibling"
@@ -4999,6 +5131,7 @@
           "type": "D",
           "status": "corroborated",
           "why": "Shared concern — **LLM security & adversarial testing (OWASP)** ([the standard behind it](https://genai.owasp.org/llm-top-10/)) (IX Craft), which `brain/common_score_pivot.md:54` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:qaengineer+softwareengineer:D",
           "union": "Brass — Woodwinds",
           "kin": "partner"
@@ -5039,6 +5172,7 @@
           "type": "D",
           "status": "corroborated",
           "why": "Shared concern — **Verification ≠ agreement (LLM-as-judge bias)** ([the standard behind it](https://www.anthropic.com/research/reasoning-models-dont-say-think)) (XI NLP / V Research), which `brain/common_score_pivot.md:50` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:agilefacilitator+qaengineer:D",
           "union": "Lead & meta — Woodwinds",
           "kin": "partner"
@@ -5079,6 +5213,7 @@
           "type": "D",
           "status": "corroborated",
           "why": "Shared concern — **Citation faithfulness / groundedness** ([the standard behind it](https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/)) (V Research), which `brain/common_score_pivot.md:58` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:agilefacilitator+userresearcher:D",
           "union": "Harp — Lead & meta",
           "kin": "partner"
@@ -5109,6 +5244,7 @@
           "type": "E",
           "status": "corroborated",
           "why": "Shared concern — **MAST failure taxonomy** ([the standard behind it](https://arxiv.org/abs/2503.13657)) (III Systems), which `brain/common_score_pivot.md:49` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:agileauditor+agilefacilitator:E",
           "union": "Lead & meta — Lead & meta",
           "kin": "sibling"
@@ -5118,7 +5254,8 @@
           "b": "musicians:reliabilityengineer",
           "type": "E",
           "status": "corroborated",
-          "why": "Shared concern — **Code that must run in production** (IX Craft), which `brain/common_score_pivot.md:61` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "why": "Shared concern — **Code that must run in production** ([the standard behind it](https://github.com/jkornobis/MyOwn-Orchestrator/blob/main/agents/agent_softwareengineer.md)) (IX Craft), which `brain/common_score_pivot.md:61` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:reliabilityengineer+softwareengineer:E",
           "union": "Brass — Brass",
           "kin": "sibling"
@@ -5129,6 +5266,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Supply-chain integrity (SLSA / SBOM / provenance)** ([the standard behind it](https://slsa.dev/)) (IX Craft / I Process), which `brain/common_score_pivot.md:55` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "one-sided",
           "id": "musicians:softwarearchitect+softwareengineer:S",
           "union": "Brass — Brass",
           "kin": "sibling"
@@ -5139,6 +5277,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Delivery → runtime handoff (GitOps, DORA)** ([the standard behind it](https://opengitops.dev/)) (I Process), which `brain/common_score_pivot.md:62` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:reliabilityengineer+softwarearchitect:S",
           "union": "Brass — Brass",
           "kin": "sibling"
@@ -5148,7 +5287,8 @@
           "b": "musicians:userresearcher",
           "type": "S",
           "status": "corroborated",
-          "why": "Shared concern — **Outcomes over outputs / de-risk before build** (IV Philosophy / V Research), which `brain/common_score_pivot.md:60` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "why": "Shared concern — **Outcomes over outputs / de-risk before build** ([the standard behind it](https://github.com/jkornobis/MyOwn-Orchestrator/blob/main/agents/agent_productowner.md)) (IV Philosophy / V Research), which `brain/common_score_pivot.md:60` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:productowner+userresearcher:S",
           "union": "Harp — Harp",
           "kin": "sibling"
@@ -5159,6 +5299,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Automated a11y coverage ceiling → manual test scope** (VIII Web-A11y / IX Craft), which `brain/common_score_pivot.md:69` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:accessibilityspecialist+qaengineer:S",
           "union": "Woodwinds — Woodwinds",
           "kin": "sibling"
@@ -5169,6 +5310,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Accessibility designed-in (WCAG 2.2 / APCA)** ([the standard behind it](https://www.w3.org/TR/WCAG22/)) (VII Design / VIII Web-A11y), which `brain/common_score_pivot.md:52` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:contentdesigner+uxdesigner:S",
           "union": "Strings — Strings",
           "kin": "sibling"
@@ -5178,7 +5320,8 @@
           "b": "musicians:productowner",
           "type": "S",
           "status": "corroborated",
-          "why": "Shared concern — **Risk vs. scope before a structural decision** (— *(act unassigned — see the recovery note below)*), which `brain/common_score_pivot.md:75` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "why": "Shared concern — **Risk vs. scope before a structural decision** ([the standard behind it](https://github.com/jkornobis/MyOwn-Orchestrator/blob/main/brain/orchestra_decisions_log.md)) (— *(act unassigned — see the recovery note below)*), which `brain/common_score_pivot.md:75` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:productowner+softwarearchitect:S",
           "union": "Brass — Harp",
           "kin": "partner"
@@ -5219,6 +5362,7 @@
           "type": "D",
           "status": "corroborated",
           "why": "Shared concern — **Verification ≠ agreement (LLM-as-judge bias)** ([the standard behind it](https://www.anthropic.com/research/reasoning-models-dont-say-think)) (XI NLP / V Research), which `brain/common_score_pivot.md:50` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:agileauditor+qaengineer:D",
           "union": "Lead & meta — Woodwinds",
           "kin": "partner"
@@ -5269,6 +5413,7 @@
           "type": "D",
           "status": "corroborated",
           "why": "Shared concern — **Observability signals ≈ anomaly detection** ([the standard behind it](https://docs.evidentlyai.com/)) (III Systems / XI NLP), which `brain/common_score_pivot.md:66` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:agileauditor+reliabilityengineer:D",
           "union": "Brass — Lead & meta",
           "kin": "partner"
@@ -5289,6 +5434,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Cognitive accessibility (COGA)** ([the standard behind it](https://www.w3.org/TR/coga-usable/)) (II Cognition / VIII Web-A11y), which `brain/common_score_pivot.md:51` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:accessibilityspecialist+contentdesigner:S",
           "union": "Strings — Woodwinds",
           "kin": "partner"
@@ -5299,6 +5445,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **LLM security & adversarial testing (OWASP)** ([the standard behind it](https://genai.owasp.org/llm-top-10/)) (IX Craft), which `brain/common_score_pivot.md:54` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:softwareengineer+userresearcher:S",
           "union": "Brass — Harp",
           "kin": "partner"
@@ -5309,6 +5456,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **LLM security & adversarial testing (OWASP)** ([the standard behind it](https://genai.owasp.org/llm-top-10/)) (IX Craft), which `brain/common_score_pivot.md:54` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:qaengineer+userresearcher:S",
           "union": "Harp — Woodwinds",
           "kin": "partner"
@@ -5319,6 +5467,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Govern AI-generated code (DORA 2025)** ([the standard behind it](https://agents.md/)) (I Process), which `brain/common_score_pivot.md:59` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:qaengineer+softwarearchitect:S",
           "union": "Brass — Woodwinds",
           "kin": "partner"
@@ -5329,6 +5478,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Uptime & latency as an accessibility floor** ([the standard behind it](https://sre.google/workbook/implementing-slos/)) (VIII Web-A11y), which `brain/common_score_pivot.md:64` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:accessibilityspecialist+reliabilityengineer:S",
           "union": "Brass — Woodwinds",
           "kin": "partner"
@@ -5339,6 +5489,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Observability dashboards (data-viz)** ([the standard behind it](https://opentelemetry.io/docs/)) (VII Design), which `brain/common_score_pivot.md:65` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:reliabilityengineer+uxdesigner:S",
           "union": "Brass — Strings",
           "kin": "partner"
@@ -5349,6 +5500,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Semantic naming & i18n as governed vocabulary** (VI Communication / XI NLP), which `brain/common_score_pivot.md:67` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:contentdesigner+designengineer:S",
           "union": "Strings — Strings",
           "kin": "sibling"
@@ -5359,6 +5511,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Accessibility shifted left into components** (VIII Web-A11y / X Tools), which `brain/common_score_pivot.md:68` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:accessibilityspecialist+designengineer:S",
           "union": "Strings — Woodwinds",
           "kin": "partner"
@@ -5369,6 +5522,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Accessibility law as a scope constraint (EAA / EN 301 549)** (IV Philosophy / VIII Web-A11y), which `brain/common_score_pivot.md:70` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:accessibilityspecialist+productowner:S",
           "union": "Harp — Woodwinds",
           "kin": "partner"
@@ -5379,6 +5533,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Falsifiability — assumption tests & BDD scenarios** (V Research), which `brain/common_score_pivot.md:71` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:productowner+qaengineer:S",
           "union": "Harp — Woodwinds",
           "kin": "partner"
@@ -5389,6 +5544,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Wireframe as hypothesis — opportunity tree → design brief** (I Process / VII Design), which `brain/common_score_pivot.md:72` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:productowner+uxdesigner:S",
           "union": "Harp — Strings",
           "kin": "partner"
@@ -5399,6 +5555,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Conway's Law — team language shapes architecture** (III Systems / XI NLP), which `brain/common_score_pivot.md:73` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:contentdesigner+softwarearchitect:S",
           "union": "Brass — Strings",
           "kin": "partner"
@@ -5409,6 +5566,7 @@
           "type": "D",
           "status": "corroborated",
           "why": "Shared concern — **Component contract as executable spec** (IX Craft / X Tools), which `brain/common_score_pivot.md:74` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:designengineer+qaengineer:D",
           "union": "Strings — Woodwinds",
           "kin": "partner"
@@ -5418,7 +5576,8 @@
           "b": "musicians:productowner",
           "type": "C",
           "status": "corroborated",
-          "why": "Shared concern — **Outcomes over outputs / de-risk before build** (IV Philosophy / V Research), which `brain/common_score_pivot.md:60` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "why": "Shared concern — **Outcomes over outputs / de-risk before build** ([the standard behind it](https://github.com/jkornobis/MyOwn-Orchestrator/blob/main/agents/agent_productowner.md)) (IV Philosophy / V Research), which `brain/common_score_pivot.md:60` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:productowner+userresearcher:C",
           "union": "Harp — Harp",
           "kin": "sibling"
@@ -5429,6 +5588,7 @@
           "type": "S",
           "status": "corroborated",
           "why": "Shared concern — **Accessibility designed-in (WCAG 2.2 / APCA)** ([the standard behind it](https://www.w3.org/TR/WCAG22/)) (VII Design / VIII Web-A11y), which `brain/common_score_pivot.md:52` names as connecting these chairs. The common score is knowledge belonging to no single musician; two chairs reading the same page of it are related by it. Stated, not argued.",
+          "watched": "unknown",
           "id": "musicians:accessibilityspecialist+uxdesigner:S",
           "union": "Strings — Woodwinds",
           "kin": "partner"
@@ -5896,7 +6056,7 @@
       "a": "protocols:playmuteplayloud",
       "b": "principles:serendipity",
       "id": "cross:playmuteplayloud+serendipity:warrant",
-      "union": "Balance — Session & Interface",
+      "union": "Balance — The Baton",
       "kin": "partner"
     },
     {
@@ -5908,7 +6068,7 @@
       "a": "protocols:playmuteplayloud",
       "b": "principles:responsecalibration",
       "id": "cross:playmuteplayloud+responsecalibration:warrant",
-      "union": "Balance — Session & Interface",
+      "union": "Balance — The Baton",
       "kin": "partner"
     },
     {
@@ -6196,7 +6356,7 @@
       "a": "protocols:solodismiss",
       "b": "principles:agilefacilitatorisanagentnotthecomposer",
       "id": "cross:agilefacilitatorisanagentnotthecomposer+solodismiss:warrant",
-      "union": "Governance — Session & Interface",
+      "union": "Governance — The Baton",
       "kin": "partner"
     },
     {
@@ -6208,7 +6368,7 @@
       "a": "protocols:auditorium",
       "b": "principles:responsecalibration",
       "id": "cross:auditorium+responsecalibration:warrant",
-      "union": "Balance — Session & Interface",
+      "union": "Balance — The Baton",
       "kin": "partner"
     },
     {
@@ -6220,7 +6380,7 @@
       "a": "protocols:auditorium",
       "b": "principles:toobigtoosoon",
       "id": "cross:auditorium+toobigtoosoon:warrant",
-      "union": "Safety — Session & Interface",
+      "union": "Safety — The Baton",
       "kin": "partner"
     },
     {
@@ -6232,7 +6392,7 @@
       "a": "protocols:program",
       "b": "principles:deletionprotocol",
       "id": "cross:deletionprotocol+program:warrant",
-      "union": "Safety — Session & Interface",
+      "union": "Safety — The Baton",
       "kin": "partner"
     },
     {
@@ -6244,7 +6404,7 @@
       "a": "protocols:openscoreclosescore",
       "b": "principles:readersetsthedistance",
       "id": "cross:openscoreclosescore+readersetsthedistance:warrant",
-      "union": "Learning — Session & Interface",
+      "union": "Learning — The Baton",
       "kin": "partner"
     },
     {
@@ -6256,7 +6416,7 @@
       "a": "protocols:makeitso",
       "b": "principles:achoiceofferedisabug",
       "id": "cross:achoiceofferedisabug+makeitso:warrant",
-      "union": "Governance — Session & Interface",
+      "union": "Governance — The Baton",
       "kin": "partner"
     },
     {
@@ -6268,7 +6428,7 @@
       "a": "protocols:tell",
       "b": "principles:intervalprinciple",
       "id": "cross:intervalprinciple+tell:warrant",
-      "union": "Balance — Session & Interface",
+      "union": "Balance — The Baton",
       "kin": "partner"
     },
     {
@@ -6280,7 +6440,7 @@
       "a": "protocols:tell",
       "b": "principles:readersetsthedistance",
       "id": "cross:readersetsthedistance+tell:warrant",
-      "union": "Learning — Session & Interface",
+      "union": "Learning — The Baton",
       "kin": "partner"
     },
     {
@@ -6292,7 +6452,7 @@
       "a": "protocols:help",
       "b": "principles:agilefacilitatorisanagentnotthecomposer",
       "id": "cross:agilefacilitatorisanagentnotthecomposer+help:warrant",
-      "union": "Governance — Session & Interface",
+      "union": "Governance — The Baton",
       "kin": "partner"
     },
     {
@@ -6304,7 +6464,7 @@
       "a": "protocols:composerkey",
       "b": "principles:composerprinciple",
       "id": "cross:composerkey+composerprinciple:warrant",
-      "union": "Governance — Session & Interface",
+      "union": "Governance — The Baton",
       "kin": "partner"
     },
     {
@@ -6316,7 +6476,7 @@
       "a": "protocols:composerkey",
       "b": "principles:ndt",
       "id": "cross:composerkey+ndt:warrant",
-      "union": "Safety — Session & Interface",
+      "union": "Safety — The Baton",
       "kin": "partner"
     },
     {
@@ -6328,7 +6488,7 @@
       "a": "protocols:changescorekey",
       "b": "principles:unison",
       "id": "cross:changescorekey+unison:warrant",
-      "union": "Session & Interface — Structure",
+      "union": "Structure — The Baton",
       "kin": "partner"
     },
     {
@@ -6340,7 +6500,7 @@
       "a": "protocols:timemethodsambientnone",
       "b": "principles:designbyabsence",
       "id": "cross:designbyabsence+timemethodsambientnone:warrant",
-      "union": "Balance — Session & Interface",
+      "union": "Balance — The Baton",
       "kin": "partner"
     },
     {
@@ -6352,7 +6512,7 @@
       "a": "protocols:metronome",
       "b": "principles:howrulesactuallyholdstructureoverprose",
       "id": "cross:howrulesactuallyholdstructureoverprose+metronome:warrant",
-      "union": "Governance — Session & Interface",
+      "union": "Governance — The Baton",
       "kin": "partner"
     },
     {
@@ -6364,7 +6524,7 @@
       "a": "protocols:capacitycheck",
       "b": "principles:cobblerschildren",
       "id": "cross:capacitycheck+cobblerschildren:warrant",
-      "union": "Learning — Session & Interface",
+      "union": "Learning — The Baton",
       "kin": "partner"
     },
     {
@@ -6376,7 +6536,7 @@
       "a": "protocols:capacitycheck",
       "b": "principles:epistemevsdoxa",
       "id": "cross:capacitycheck+epistemevsdoxa:warrant",
-      "union": "Learning — Session & Interface",
+      "union": "Learning — The Baton",
       "kin": "partner"
     },
     {
@@ -7796,7 +7956,7 @@
       "a": "musicians:agilefacilitator",
       "b": "protocols:auditorium",
       "id": "cross:agilefacilitator+auditorium:enacts",
-      "union": "Lead & meta — Session & Interface",
+      "union": "Lead & meta — The Baton",
       "kin": "partner"
     },
     {
@@ -8748,7 +8908,7 @@
       "a": "musicians:productowner",
       "b": "protocols:auditorium",
       "id": "cross:auditorium+productowner:enacts",
-      "union": "Harp — Session & Interface",
+      "union": "Harp — The Baton",
       "kin": "partner"
     },
     {
@@ -8860,7 +9020,7 @@
       "a": "musicians:userresearcher",
       "b": "protocols:playmuteplayloud",
       "id": "cross:playmuteplayloud+userresearcher:enacts",
-      "union": "Harp — Session & Interface",
+      "union": "Harp — The Baton",
       "kin": "partner"
     },
     {
@@ -9042,7 +9202,7 @@
       "a": "musicians:softwarearchitect",
       "b": "protocols:playmuteplayloud",
       "id": "cross:playmuteplayloud+softwarearchitect:enacts",
-      "union": "Brass — Session & Interface",
+      "union": "Brass — The Baton",
       "kin": "partner"
     },
     {
@@ -9571,6 +9731,7 @@
       "refs": "Agile Facilitator / Agile Auditor",
       "url": "https://arxiv.org/abs/2503.13657",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 49
     },
     {
@@ -9589,6 +9750,7 @@
       "refs": "Agile Facilitator / Agile Auditor / QA Engineer",
       "url": "https://www.anthropic.com/research/reasoning-models-dont-say-think",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 50
     },
     {
@@ -9605,6 +9767,7 @@
       "refs": "Accessibility Specialist / Content Designer",
       "url": "https://www.w3.org/TR/coga-usable/",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 51
     },
     {
@@ -9623,6 +9786,7 @@
       "refs": "Accessibility Specialist / UX Designer / Content Designer",
       "url": "https://www.w3.org/TR/WCAG22/",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 52
     },
     {
@@ -9639,6 +9803,7 @@
       "refs": "Content Designer / Accessibility Specialist",
       "url": "https://www.iso.org/standard/78907.html",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 53
     },
     {
@@ -9657,6 +9822,7 @@
       "refs": "Software Engineer / QA Engineer / User Researcher",
       "url": "https://genai.owasp.org/llm-top-10/",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 54
     },
     {
@@ -9673,6 +9839,7 @@
       "refs": "Software Engineer / Software Architect",
       "url": "https://slsa.dev/",
       "provisional": false,
+      "watched": "one-sided",
       "sourceLine": 55
     },
     {
@@ -9689,6 +9856,7 @@
       "refs": "UX Designer / design_softwareengineer",
       "url": "https://www.designtokens.org/tr/drafts/format/",
       "provisional": false,
+      "watched": "one-sided",
       "sourceLine": 56
     },
     {
@@ -9705,6 +9873,7 @@
       "refs": "QA Engineer / Agile Auditor",
       "url": "https://istqb.org/wp-content/uploads/2026/05/ISTQB-_CTAI_Syllabus_v2.0_Release.pdf",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 57
     },
     {
@@ -9723,6 +9892,7 @@
       "refs": "User Researcher / Agile Facilitator / QA Engineer",
       "url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 58
     },
     {
@@ -9741,6 +9911,7 @@
       "refs": "Software Architect / Software Engineer / QA Engineer",
       "url": "https://agents.md/",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 59
     },
     {
@@ -9755,8 +9926,9 @@
       ],
       "act": "IV Philosophy / V Research",
       "refs": "Product Owner / User Researcher",
-      "url": null,
+      "url": "https://github.com/jkornobis/MyOwn-Orchestrator/blob/main/agents/agent_productowner.md",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 60
     },
     {
@@ -9771,8 +9943,9 @@
       ],
       "act": "IX Craft",
       "refs": "reliability_engineer / Software Engineer",
-      "url": null,
+      "url": "https://github.com/jkornobis/MyOwn-Orchestrator/blob/main/agents/agent_softwareengineer.md",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 61
     },
     {
@@ -9789,6 +9962,7 @@
       "refs": "reliability_engineer / Software Architect",
       "url": "https://opengitops.dev/",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 62
     },
     {
@@ -9807,6 +9981,7 @@
       "refs": "reliability_engineer / Software Engineer / Software Architect",
       "url": "https://www.sigstore.dev/",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 63
     },
     {
@@ -9823,6 +9998,7 @@
       "refs": "reliability_engineer / Accessibility Specialist",
       "url": "https://sre.google/workbook/implementing-slos/",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 64
     },
     {
@@ -9839,6 +10015,7 @@
       "refs": "reliability_engineer / UX Designer",
       "url": "https://opentelemetry.io/docs/",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 65
     },
     {
@@ -9855,6 +10032,7 @@
       "refs": "reliability_engineer / Agile Auditor",
       "url": "https://docs.evidentlyai.com/",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 66
     },
     {
@@ -9871,6 +10049,7 @@
       "refs": "design_softwareengineer / Content Designer",
       "url": null,
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 67
     },
     {
@@ -9887,6 +10066,7 @@
       "refs": "design_softwareengineer / Accessibility Specialist",
       "url": null,
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 68
     },
     {
@@ -9903,6 +10083,7 @@
       "refs": "Accessibility Specialist / QA Engineer",
       "url": null,
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 69
     },
     {
@@ -9919,6 +10100,7 @@
       "refs": "Product Owner / Accessibility Specialist",
       "url": null,
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 70
     },
     {
@@ -9935,6 +10117,7 @@
       "refs": "Product Owner / QA Engineer",
       "url": null,
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 71
     },
     {
@@ -9951,6 +10134,7 @@
       "refs": "Product Owner / UX Designer",
       "url": null,
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 72
     },
     {
@@ -9967,6 +10151,7 @@
       "refs": "Content Designer / Software Architect",
       "url": null,
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 73
     },
     {
@@ -9983,6 +10168,7 @@
       "refs": "design_softwareengineer / QA Engineer",
       "url": null,
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 74
     },
     {
@@ -9997,8 +10183,9 @@
       ],
       "act": "— *(act unassigned — see the recovery note below)*",
       "refs": "Product Owner / Software Architect",
-      "url": null,
+      "url": "https://github.com/jkornobis/MyOwn-Orchestrator/blob/main/brain/orchestra_decisions_log.md",
       "provisional": false,
+      "watched": "unknown",
       "sourceLine": 75
     },
     {
@@ -10015,6 +10202,7 @@
       "refs": "design_softwareengineer / reliability_engineer",
       "url": null,
       "provisional": true,
+      "watched": "unknown",
       "sourceLine": 76
     }
   ],
