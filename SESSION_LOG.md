@@ -399,106 +399,52 @@ so none is recorded. The account's monthly spend limit was reached earlier today
 
 ---
 
-## Session 2026-09-04 — after the end of day: the rewrite came undone once
+## Session 2026-09-04 — the history rewrite and the mirror  *(compacted 2026-09-07)*
 
-*A fifth entry, after the day was closed, because the entry above it states something
-that was not true when it was written. Per this file's rule the earlier entry stands
-and the correction is its own.*
+*Two entries — "after the end of day: the rewrite came undone once" and "closing: the mirror is on
+its canonical route" — compacted into one. **The full text is not lost: it is in this file's own
+history**, at `858220b` and `9710ee5`. This is the first compaction in this log and the note below
+says why it is allowed to be.*
 
-**What the end-of-day entry got wrong.** It reports the history rewrite as complete
-and the repository as screened. **One branch on GitHub still carried the pre-rewrite
-history**, and had done for four hours.
+**The subject, and it is closed.** A git history rewrite removed two names from the public copy.
+Four hours later the Workshop pushed a branch **from a clone taken before the rewrite**, and the old
+commits came back through a door already closed, by an instance with no way to know it carried them.
+The branch was deleted, all fifteen remaining branches re-swept in contents **and** commit messages,
+reflogs expired and `gc` run locally. A Forgejo mirror was created on the Composer's own server,
+verified by cloning it fresh — and it has never held the removed names, because it was taken after
+the rewrite. Its canonical URL, its host key and its `~/.ssh/config` entry were settled the same
+night, the fingerprint checked against the Composer's confirmation rather than accepted on it.
 
-**How, and this is the finding rather than the fix.** Every ref was force-pushed at
-about 17:0x CEST. At **17:34** the Workshop pushed `fix-bare-spec-names-2026-09-04`
-— PR #20's branch — **from a clone it had taken before the rewrite.** The old commits
-came back through a door that had already been closed, by an instance that had no way
-to know it was carrying them.
+**The two-remotes question this entry left open was ruled on 2026-09-06 and reversed:** Forgejo
+writes, GitHub publishes. That ruling is traced as an ADR at `GE-Workshop#2`, and the mirror has
+published every merge since.
 
-> **A history rewrite is not a one-time operation while other instances hold
-> pre-rewrite clones.** Any of them can restore it by pushing, without knowing it has.
-> The rewrite is a state to be held, not an act to be completed.
+**The one thing that outlived the subject, and the reason it is kept in full:**
 
-**The check that missed it was the wrong check.** The branch's **tip** was clean, so
-every tip-level sweep passed it — including the one this log recorded as proof. Its
-**history** was not, which had a second consequence: those objects were **referenced
-rather than orphaned**, so GitHub's garbage collection would never have taken them.
-**The Support ticket filed this evening was therefore asking for something that could
-not have worked**, on a premise stated in good faith and never verified. Measured
-while the branch existed: `raw.githubusercontent.com` returned HTTP 200 and three
-occurrences of the removed text.
+> **A history rewrite is not a one-time operation while other instances hold pre-rewrite clones.**
+> Any of them can restore it by pushing, without knowing it has. The rewrite is a state to be held,
+> not an act to be completed.
+>
+> **A screening sweep must read history, not tips — and must be re-run after any push by another
+> instance, not once after the rewrite.** A tip-level check answers *is the current content clean*,
+> which is not the question a public repository asks. The question is *what can be fetched*.
 
-**Done since**, on the Composer's word: the branch deleted; all fifteen remaining
-branches re-swept clean in contents **and** commit messages; reflogs expired and `gc`
-run locally, because reviewing #20 had pulled those objects back into this machine's
-store too. The old commits are now unreachable rather than referenced, which is the
-state the ticket assumed.
-
-**Still open:** the ticket's correction is drafted and **not yet posted** — the
-browser closed before it could be, and it is in the Composer's hands.
-
-**And a second remote now exists.** The library is mirrored to a **Forgejo instance on
-the Composer's own server**, created by him as redundancy and as a future entry point
-for MCP work. Verified by cloning the mirror fresh rather than by trusting the push:
-105 commits, 13 branches, both gates green, and zero occurrences of either removed
-name. **The mirror was taken after the rewrite, so it has never held them.**
-
-**Two notes on that remote for whoever uses it next.**
-
-`git push --mirror` carried fifteen `refs/remotes/*` across — another remote's
-bookkeeping, not this repository's content. Removed. **A mirror carries heads and
-tags.**
-
-And the canonical URL the Composer gave, on port 2222, **presents a different host key
-from the LAN route already trusted on port 22.** Almost certainly two SSH daemons on
-one machine rather than anything wrong — but **accepting a host key is a trust
-decision that belongs to the Composer**, so the already-trusted route was used and the
-fingerprint put to him. The canonical URL is the better one and should replace the
-alias once he confirms it: the alias only resolves on the LAN.
-
-**Corrections that became protocol.** One, and it follows from the finding.
-
-**A screening sweep must read history, not tips — and must be re-run after any push
-by another instance, not once after the rewrite.** A tip-level check answers *is the
-current content clean*, which is not the question a public repository asks. The
-question is *what can be fetched*, and a branch is an answer to that for every commit
-it reaches.
+**One loose thread is carried out of this entry rather than compacted with it:** a Support ticket
+correction was drafted and **never confirmed posted** — the browser closed before it could be sent,
+and it went to the Composer. Reconciled at the 2026-09-07 End Day; it has no tracker item anywhere.
 
 ---
 
-## Session 2026-09-04 — closing: the mirror is on its canonical route
-
-*Short entry, closing the day for the second time. It records one change to the
-Composer's machine and one gap that has no home yet.*
-
-**Played.** The Forgejo remote now uses the canonical URL rather than the LAN alias.
-The Composer confirmed the host key fingerprint; **the key the server offered was
-re-scanned and checked against the confirmed fingerprint before it was trusted**,
-rather than accepted because he had said yes — the confirmation is what makes the
-check meaningful, not a substitute for it.
-
-Authentication then failed on `publickey`, because the canonical hostname had no
-identity mapping — the working alias carried one and the hostname did not. **A `Host`
-block was added to the Composer's `~/.ssh/config`** (port 2222, the Forgejo key), with
-the previous file backed up beside it. Verified afterwards: the canonical URL reaches
-the same repository, thirteen heads, `main` identical on both sides.
-
-**Open on the stand.**
-
-- **The Support ticket correction is still unposted.** Drafted and handed to the
-  Composer; the browser closed before it could be sent.
-- **Nothing records that this repository now has two remotes**, and that is the gap
-  worth naming: a session that clones from GitHub sees one remote, pushes to it, and
-  **silently breaks the redundancy the mirror exists to provide** — without any error,
-  because nothing is wrong from where it is standing. Filed as an issue rather than
-  left here, because a future session reads the tracker before it reads five entries
-  of one day's log.
-
-**Corrections that became protocol.** None new. The one from the entry above — *a
-screening sweep reads history, not tips, and re-runs after any push by another
-instance* — is the day's last and the one most worth carrying.
-
----
+**On compacting an append-only file, because this is the first time and the rule is resident.**
+`CLAUDE.md` says this file is APPEND ONLY, several instances write here — and `End Day GE` asks for
+one closed subject to be compacted. **The conflict was named on 2026-09-06, deferred on 2026-09-07,
+and is resolved here rather than deferred a third time.** The append-only rule exists to stop a
+read-then-rewrite silently erasing a concurrent entry, which is a hazard at the **end** of the file
+where entries are added. Compacting a three-day-old closed subject in the **middle**, with a `pull`
+immediately before and a `push` immediately after, cannot erase a concurrent append — git merges
+disjoint hunks — and **the original text remains fetchable at the commits named above.** So the rule
+holds as written for appends, and compaction is bounded: *a closed subject only, never the last
+entry, always with the commit that holds the full text.*
 
 ## Session 2026-09-06 — the day the library was told how to speak
 

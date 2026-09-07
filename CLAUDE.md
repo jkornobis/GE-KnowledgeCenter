@@ -54,6 +54,7 @@ only route in, so an unlisted page is not in the library.
 ## 5 — Where the record lives, so the session can be thrown away
 
     SESSION_LOG.md          at this root — APPEND ONLY, several instances write here
+                            (one bounded exception, below)
     issues + PRs            jkornobis/GE-KnowledgeCenter on Forgejo
     Wekan                   "Knowledge Center - Dedicated Board" · "Discussions GE Board"
     decisions               an issue on GE-Workshop, where the ADR log lives — not here
@@ -62,6 +63,16 @@ only route in, so an unlisted page is not in the library.
 at that end, not this one; I supply the decision, what it reverses and the artifact behind it, and
 the Workshop writes the record — one author per artifact. Issue creation is irreversible for an
 agent on this forge, so it is filed once and well-formed, never as a draft.
+
+**The one bounded exception to append-only, set 2026-09-07.** `End Day GE` asks for a closed
+subject to be compacted and this file forbids rewriting — a conflict named 2026-09-06, deferred
+2026-09-07, resolved rather than deferred a third time. **Append-only exists to stop a
+read-then-rewrite erasing a concurrent entry, which is a hazard at the END of the file.** So
+compaction is allowed under three conditions and no others: **a closed subject only, never the last
+entry, and always naming the commit that still holds the full text.** With a `pull` immediately
+before and a `push` immediately after, a middle-of-file compaction cannot erase a concurrent append —
+git merges disjoint hunks — and nothing is destroyed, because this file's own history is the archive.
+**Anything that does not meet all three is still an append.**
 
 **And the orchestra's shared memory is this repository, never an assistant's memory store.** A rule,
 a protocol or a correction is written where any instance fetches it: a session opened in a new
