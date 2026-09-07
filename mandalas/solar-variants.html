@@ -1,0 +1,37 @@
+<!doctype html><meta charset="utf-8">
+<title>The meta-mandala as a solar system — three variants</title>
+<style>
+ :root{color-scheme:dark}
+ body{margin:0;background:#06080f;color:#c8d3e6;font:14px/1.55 Inter,Helvetica,Arial,sans-serif}
+ header{padding:28px 40px 8px;max-width:1120px}
+ h1{font-size:22px;font-weight:600;margin:0 0 10px;color:#eef3ff}
+ p{margin:0 0 8px;color:#8fa0bc}
+ b{color:#c8d3e6;font-weight:600}
+ figure{margin:0;padding:14px 0 34px}
+ figcaption{padding:0 40px 8px;color:#8fa0bc;max-width:1120px}
+ figcaption strong{color:#e6ecf9}
+ img{display:block;width:100%;height:auto}
+ hr{border:0;border-top:1px solid #1a2133;margin:0 40px}
+</style>
+<header>
+<h1>The meta-mandala as a solar system — three variants</h1>
+<p><b>Same corpus, same 13 sectors, same encodings.</b> Only the projection and the ground change:
+angle is sector, radius is evidence running inward, saturation is constant per ring, size is degree.
+The star is drawn at the size its betweenness earns — 4.9% of shortest paths, rank 6.</p>
+<p><b>None of the three is proposed as correct.</b> Regenerate any of them with
+<code>node render_solar.mjs --variant=deep|orrery|faceon</code>.</p>
+</header>
+<figure>
+ <figcaption><strong>deep</strong> — tilt 0.50, heavy vignette. Reads as a photograph of a system: depth first, the outer rings falling into the dark. The ground competes with the low-saturation outer rings, which is the trade.</figcaption>
+ <img src="solar-deep.svg" alt="deep variant">
+</figure>
+<hr>
+<figure>
+ <figcaption><strong>orrery</strong> — tilt 0.30, lifted ground, thicker rings. Reads as an instrument rather than a photograph: the ring system is the subject and every orbit is legible end to end. Flattest, so the bodies crowd vertically.</figcaption>
+ <img src="solar-orrery.svg" alt="orrery variant">
+</figure>
+<hr>
+<figure>
+ <figcaption><strong>faceon</strong> — tilt 0.86, no vignette, colour forward. Closest to the colour circle the whole subject started from: <em>“it's a solar system, white star in center, orbits crossing every quadrant of colors.”</em> Loses almost all depth, and the figure must shrink to fit its own height.</figcaption>
+ <img src="solar-faceon.svg" alt="faceon variant">
+</figure>

@@ -22,7 +22,8 @@ it has checked and passed. **And ten bare names are exceptions to the history ru
 files in this bundle rather than another estate's coordinates: `check_okf.mjs`, `check_links.mjs`,
 `sweep_links.mjs`, `propose_vectors.mjs`, `measure_stability.mjs`, `find_perturbations.mjs`, `measure_coupling.mjs`, `classify_bodies.mjs`, `add_star.mjs` and `render_solar.mjs`** — the first two are gates and
 fail a merge; the third is a sweep, reports and never blocks; **the last one is the only one that
-writes**, drawing `mandalas/solar-system.svg` from the same graph — a picture is an artefact rather
+writes**, drawing `mandalas/solar-deep.svg`, `solar-orrery.svg` and `solar-faceon.svg` from the same
+graph — three projections of one construction, compared side by side in `mandalas/solar-variants.html` — a picture is an artefact rather
 than a measurement, and it is kept separate from the six for that reason; **the six between them** read
 `graph/grand_ensemble.json` and write nothing at all, one proposing **hypotheses**, one measuring
 whether this corpus carries the stability signature of a natural network, one ranking the
