@@ -79,6 +79,47 @@ SINGLE-MAINTAINER RISK                     one person is a availability, not a c
 
 **And read Scorecard as *is this tended*, never as *is this good*.** Several of its checks are genuine maintenance signals; a high score is not a promise that anyone answers issues.
 
+### And one question Door 1 did not ask, added 2026-09-07
+
+**Before judging an add-on by its age, determine the host's release model.** An add-on's age means
+nothing on its own; it means something only **relative to the software it attaches to.**
+
+**The Composer, 2026-09-07:**
+
+> *"A stable tool is an LTS; age is an issue for a rolling-release one, because plugins and themes
+> can break. You must determine whether the software you manage is closer to Debian or Arch."*
+
+```
+is there a stable / LTS / maintenance branch, or is main the product?
+release cadence — per year, or per day?
+who holds the interface still, and is that one person?
+```
+
+**Why the instinctive test is not enough, measured.** Two unmaintained community themes for a kanban
+product, from 2019 and 2020, were checked selector by selector against the running client bundle:
+**47 of 51 still present (92%)** and **23 of 23 (100%)**. On that evidence both are adoptable.
+
+**The release model reverses it.** That project published **100 releases in six weeks** — about 2.4
+a day, bursts of eight — with **no stable branch, no LTS, no maintenance branch**, and one human
+doing it. **`main` is the product and every user is on the rolling edge.** So 92% and 100% are
+**snapshots with a shelf life measured in days**, not properties of the themes.
+
+**And the confound is removed by the Composer's own second case**, which is the stronger one:
+
+> *"FoundryVTT updates a lot and impacts community plugins, for example."*
+
+**Its module ecosystem is large and actively maintained** — rich by every measure Door 1 has — and
+its majors still break modules wholesale. **So the variable is the host's velocity, not the add-on's
+health.** The kanban case could be read as one fragile project; this one cannot.
+
+⚠️ **The consequence, and it is the part invisible at selection time — which is exactly when this
+page is read.** On a rolling or fast-major host, **the cost of an add-on is not its installation. It
+is the re-test at every upgrade, paid by the operator, forever.** A well-maintained add-on on a
+fast-moving host is a maintenance subscription, taken on by whoever installs it.
+
+*Found by the Tower against a live instance and raised as `GE-KnowledgeCenter#18`; the second case
+is the Composer's, reported as domain experience rather than measured here.*
+
 ---
 
 ## DOOR 2 — does it suit me?
