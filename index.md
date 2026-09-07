@@ -49,9 +49,15 @@ half already travels as `tools/chair-levers.md` while the rest is one estate's o
 Figma product-surface audit, which cannot be published because it names an employer's systems. Pages
 here cite both by bare name for exactly the reason above.
 
-Fetch a page with:
+Fetch a page with — a live address, and the shape for any other:
 
-    curl -s https://raw.githubusercontent.com/jkornobis/GE-KnowledgeCenter/main/<Page>
+    curl -s https://raw.githubusercontent.com/jkornobis/GE-KnowledgeCenter/main/start.md
+                                                                            ^^^^^^^^ any `Page` from the tables below
+
+*It was written with a `<Page>` placeholder until 2026-09-07, which made it the only address
+`sweep_links.mjs` has ever reported dead here: the sweep resolves what is written, and what was
+written was a directory. A template that cannot be checked is indistinguishable from rot, and the
+fix is an address that is both.*
 
 ## Before this page — `start.md`
 
