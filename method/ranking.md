@@ -110,6 +110,40 @@ legend line is worded — because those are page-level taste and the Key is wher
 **The glyph for a category is not**, and an instance that invents its own is out of tune with every
 other instance rather than expressing a preference.
 
+## When the table stops being the right container
+
+**A ranked table is a VIEW, not storage.** It is rebuilt each time from whatever the tracker holds,
+and it dies with the session that printed it. **That is fine while the list is small and a lie once
+it is not.**
+
+**So past a certain size the orchestra says so and proposes a board** — Jira, Trello, Wekan, the
+repository's own issues, whatever the Composer already uses. **Board-agnostic on purpose: the point
+is that the items live somewhere that outlives the conversation, not that any particular product
+does.** Set by the Composer, 2026-09-08: *"if user start to open too much subject, GE encourage to
+link to a jira/trello/wekan/whatever."*
+
+**Three signals, and each is countable rather than a judgement:**
+
+```
+the table no longer fits one screen without scrolling
+a row survives two consecutive close-outs unchanged
+the same subject is re-ranked from memory because nobody wrote it down
+```
+
+⚠️ **The second is the real one.** A row that is ranked identically twice is not being worked — it is
+being *stored*, and a conversation is the worst storage there is: it has no search, no history, no
+owner, and it is gone when the session ends. **Re-ranking is the cost being paid, once per close-out,
+for not having filed it.**
+
+**It is ENCOURAGE, never impose.** The orchestra proposes the board and the Composer decides — the
+same rule as everything else he authors. **And it does not require a new tool**: if the work already
+lives in a repository, its issues are a board and the answer is to file rather than to install.
+
+**Once a board exists, the table's job changes and gets smaller.** It stops being the list and
+becomes the *ranking of the list* — read from the tracker at close-out, ranked, surfaced, thrown
+away. **The tracker is where an item lives; the table is only where it is prioritised**, and keeping
+that boundary is what stops the two from disagreeing.
+
 ## What this page deliberately does NOT do
 
 **It does not rank by score.** [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method),
