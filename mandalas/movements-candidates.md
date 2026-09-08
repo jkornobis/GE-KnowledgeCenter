@@ -26,7 +26,7 @@ sources:
     title: "What is content design — GOV.UK"
   - resource: https://en.wikipedia.org/wiki/Contextual_inquiry
     title: "Contextual inquiry"
-  - resource: https://en.wikipedia.org/wiki/Ma_(negative_space)
+  - resource: https://en.wikipedia.org/wiki/Ma_%28negative_space%29
     title: "Ma — negative space"
   - resource: https://en.wikipedia.org/wiki/Cyberpunk
     title: "Cyberpunk"
@@ -127,7 +127,7 @@ Simulation cinema, 1998–99 · French touch
 
 **These are aesthetic lineages, and matching a chair to one is precisely the judgement this page
 refuses.** Evidence of the kind used above does not exist for them: no manifesto names a chair, no
-specification descends from [ma](https://en.wikipedia.org/wiki/Ma_(negative_space)) or from
+specification descends from [ma](https://en.wikipedia.org/wiki/Ma_%28negative_space%29) or from
 [cyberpunk](https://en.wikipedia.org/wiki/Cyberpunk) or from [French house](https://en.wikipedia.org/wiki/French_house).
 
 **What can be said without assigning anything:** they are the only five movements the corpus holds
