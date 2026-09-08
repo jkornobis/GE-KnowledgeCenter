@@ -1,0 +1,126 @@
+---
+type: Method
+title: "Ranking a close-out — five categories, and why the sign has to depict the act (Product Owner, Agile Facilitator, Content Designer)"
+description: "The form every close-out and backlog view is rendered in: what each of the five categories means, why postpone and recycle are not the same thing, why delegate is empty for a Composer working alone, and why the glyphs and the table-and-buttons pair are shared method rather than one Composer's taste"
+status: draft
+serves_all: true
+generated: { by: agent:ge-knowledgecenter, at: 2026-09-08T16:24:00+02:00 }
+sources:
+  - resource: https://en.wikipedia.org/wiki/Eisenhower_matrix
+    title: "Eisenhower matrix"
+  - resource: https://en.wikipedia.org/wiki/Time_management
+    title: "Time management — the Eisenhower method"
+  - resource: https://en.wikipedia.org/wiki/MoSCoW_method
+    title: "MoSCoW method"
+  - resource: https://scaledagileframework.com/wsjf/
+    title: "Weighted Shortest Job First"
+---
+
+# Ranking a close-out — five categories, and why the sign has to depict the act
+
+**Every close-out and every backlog view is rendered as a ranked table**, one row per item, each row
+carrying **the action and the recommendation** — never the account of how it was found. The form is
+adapted from the [Eisenhower matrix](https://en.wikipedia.org/wiki/Eisenhower_matrix) and has been
+changed enough that calling it Eisenhower is now a lineage rather than a description.
+
+⚠️ **The ranking is of the ORCHESTRA'S work, never a task list for the Composer.** What is his
+surfaces as an open decision in its own category, not as an assignment. That rule is the reason the
+second category exists at all.
+
+## The five
+
+| | Category | What it means here |
+|---|---|---|
+| ⚡ | **do now** | An instance can do it, nothing blocks it, and it is worth doing before the others |
+| 👁️ | **yours to judge** | Taste, tone, naming, scope, direction. **The one act the orchestra structurally cannot perform** |
+| 📤 | **delegate** | The artifact belongs to someone else — another instance, a colleague, a service. A receiver exists |
+| 🕝 | **postpone** | Nobody can act yet. **The missing thing is evidence, and acting now would be guessing** |
+| ♻️ | **recycle** | No live claim on attention: parked back into the backlog, or closed without being done |
+
+**A legend line sits under every table**, one line, the glyphs and their words, so the column reads
+without being learned.
+
+## The two distinctions that are always collapsed
+
+**🕝 is not ♻️.** Recycle means *this has no live claim on attention*. **Postpone means the opposite —
+it has one, and it is being held because acting on it now would be a guess.** The Composer's own
+framing, 2026-09-08: *"it mean you must build proper research before acting."* **Postponing is a
+commitment to find something out.** Recycling is a decision that nothing needs finding.
+
+**Collapsing them costs the research.** A 🕝 row filed as ♻️ stops being anybody's, and the missing
+evidence is never gathered — the item simply ages in a backlog until someone re-derives the same
+question.
+
+**🕝 is not 👁️ either.** 👁️ says *everything needed is present and the choice is yours*. 🕝 says
+**nobody can choose, including the Composer.** Putting a 🕝 row in 👁️ hands him a decision he cannot
+make, which is the same defect as handing him a task list, wearing a different glyph.
+
+## Why 📤 is empty for a Composer working alone
+
+**📤 requires a receiver.** In an estate of several named instances there is always one: the artifact
+belongs to whoever leads that repository, and *one author per artifact* makes the row theirs by
+construction. **A Composer working with no instances has nobody to hand to**, so the category is
+structurally empty for them and every row that is not ⚡, 👁️ or ♻️ is 🕝.
+
+**That is the correct behaviour, not a gap.** A form that offers *delegate* to someone with no
+delegate produces invented receivers — the most common way a ranking becomes fiction.
+
+## The rule that governs the glyphs
+
+**The sign depicts the ACT, never the state around it.**
+
+Set 2026-09-08, and it was learned by breaking it three times in one afternoon:
+
+```
+⚖️  a scale shows EQUILIBRIUM         nobody is choosing
+↔️  a double arrow shows SYMMETRY     nobody is choosing
+⏩  fast-forward means SKIP AHEAD     nobody has received anything
+```
+
+**The Composer's argument, which killed the first two at once:** *"Balance emoji isn't choice, it is
+balanced between element."* **A glyph that survives only because nobody looked at it closely is not
+a glyph that was chosen.**
+
+## The table is half of a pair, and the other half is not optional
+
+**A ranked table is always followed by buttons** — a multiple-choice prompt carrying the rows that
+are genuinely the Composer's. **The table shows the state of the work; the buttons are where he acts
+on it.**
+
+⚠️ **A table that ends a message leaves every 👁️ row as something he must answer in prose**, which is
+the exact defect the buttons rule exists to prevent, reappearing because a ranked table *feels* like
+a finished answer. **It is not. It is the setup.**
+
+**And the pair binds in both directions.** Every determinable row is executed **before** the table is
+sent, so the buttons carry only what nobody else could have settled. A ⚡ row still sitting in the
+table when the message goes out is usually a row that should already have been done.
+
+## All of this is shared, glyphs included
+
+**The Composer's ruling, 2026-09-08:** *"emoji are for all — this Eisenhower table + multiple choice
+or button choice, it's basic multitasking of GE."*
+
+**So the whole of it travels**: the five categories, their meanings, the two distinctions above, the
+five glyphs themselves, the rule that the sign depicts the act, and the table-and-buttons pair.
+**This is not a rendering preference and does not belong in one Composer's Score Key.** It is how an
+orchestra reports work in progress to anyone, on any machine, in any repository.
+
+**What a Score Key may still carry** is the placement — which column the glyph sits in, how the
+legend line is worded — because those are page-level taste and the Key is where taste is declared.
+**The glyph for a category is not**, and an instance that invents its own is out of tune with every
+other instance rather than expressing a preference.
+
+## What this page deliberately does NOT do
+
+**It does not rank by score.** [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method),
+[WSJF](https://scaledagileframework.com/wsjf/), RICE and impact/effort grids all exist and **none is
+in use here.** They answer *how much is this worth* — a different question from *whose is it and can
+it move*, which is what a close-out has to answer in one pass. **Do not substitute one without a
+ruling**; the substitution looks free and changes what the table is for.
+
+**It does not decide what goes in ⚡.** Deciding is the Product Owner's, in quorum with the Agile
+Facilitator and the Content Designer, and the quorum's output is *only surfaced action*.
+
+**And it does not cover what happens after the buttons.** A ruling taken from a button is recorded
+where the work lives — an issue, a commit, a log entry — not only in the conversation that produced
+it. That is a different page's subject.
