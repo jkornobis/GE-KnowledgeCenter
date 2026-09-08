@@ -45,33 +45,33 @@
 </g>
 <circle cx="800" cy="464" r="121.942252948353" fill="url(#coronaBand)"/>
 <ellipse cx="800" cy="464" rx="87.942252948353" ry="75.6" fill="none" stroke="#ffe9b0" stroke-width=".9" stroke-dasharray="2 5" opacity=".55"/>
-<circle cx="800.0" cy="388.4" r="5.1" fill="#ffeec8" opacity=".92"><title>A choice offered is a bug — Corona, degree 10</title></circle>
-<circle cx="823.7" cy="391.2" r="5.1" fill="#ffeec8" opacity=".92"><title>Greenfield Reset — Corona, degree 6</title></circle>
-<circle cx="845.7" cy="399.4" r="5.1" fill="#ffeec8" opacity=".92"><title>The reader sets the distance — Corona, degree 6</title></circle>
-<circle cx="864.3" cy="412.4" r="4.7" fill="#ffeec8" opacity=".92"><title>The Ugly Duckling — Corona, degree 5</title></circle>
-<circle cx="878.1" cy="429.2" r="4.3" fill="#ffeec8" opacity=".92"><title>Request quality check — Corona, degree 4</title></circle>
-<circle cx="886.1" cy="448.6" r="3.9" fill="#ffeec8" opacity=".92"><title>Post-edit skill budget — Corona, degree 3</title></circle>
-<circle cx="887.7" cy="469.2" r="3.9" fill="#ffeec8" opacity=".92"><title>Declared-set check — Corona, degree 3</title></circle>
-<circle cx="882.9" cy="489.3" r="3.9" fill="#ffeec8" opacity=".92"><title>The Reduction — Corona, degree 3</title></circle>
-<circle cx="871.8" cy="507.6" r="3.9" fill="#ffeec8" opacity=".92"><title>Button gate — Corona, degree 3</title></circle>
-<circle cx="855.5" cy="522.7" r="3.9" fill="#ffeec8" opacity=".92"><title>Disagreement handling — Corona, degree 3</title></circle>
-<circle cx="835.0" cy="533.4" r="3.9" fill="#ffeec8" opacity=".92"><title>Usage ledger — Corona, degree 3</title></circle>
-<circle cx="812.0" cy="538.9" r="3.9" fill="#ffeec8" opacity=".92"><title>Session-start digest — Corona, degree 3</title></circle>
-<circle cx="788.0" cy="538.9" r="3.9" fill="#ffeec8" opacity=".92"><title>Solo / Dismiss — Corona, degree 3</title></circle>
-<circle cx="765.0" cy="533.4" r="3.9" fill="#ffeec8" opacity=".92"><title>Program — Corona, degree 3</title></circle>
-<circle cx="744.5" cy="522.7" r="3.0" fill="#ffeec8" opacity=".92"><title>Open score / Close score — Corona, degree 1</title></circle>
-<circle cx="728.2" cy="507.6" r="3.9" fill="#ffeec8" opacity=".92"><title>Make it so — Corona, degree 3</title></circle>
-<circle cx="717.1" cy="489.3" r="3.9" fill="#ffeec8" opacity=".92"><title>Tell — Corona, degree 3</title></circle>
-<circle cx="712.3" cy="469.2" r="3.4" fill="#ffeec8" opacity=".92"><title>Help — Corona, degree 2</title></circle>
-<circle cx="713.9" cy="448.6" r="4.3" fill="#ffeec8" opacity=".92"><title>Composer Key — Corona, degree 4</title></circle>
-<circle cx="721.9" cy="429.2" r="3.9" fill="#ffeec8" opacity=".92"><title>Change Score Key — Corona, degree 3</title></circle>
-<circle cx="735.7" cy="412.4" r="3.4" fill="#ffeec8" opacity=".92"><title>Time methods (Ambient / None) — Corona, degree 2</title></circle>
-<circle cx="754.3" cy="399.4" r="3.4" fill="#ffeec8" opacity=".92"><title>Metronome — Corona, degree 2</title></circle>
-<circle cx="776.3" cy="391.2" r="4.7" fill="#ffeec8" opacity=".92"><title>Capacity check — Corona, degree 5</title></circle>
+<circle cx="800.0" cy="388.4" r="5.1" fill="#ffeec8" opacity="0.92"><title>A choice offered is a bug — Corona, degree 10</title></circle>
+<circle cx="823.7" cy="391.2" r="5.1" fill="#ffeec8" opacity="0.92"><title>Greenfield Reset — Corona, degree 6</title></circle>
+<circle cx="845.7" cy="399.4" r="5.1" fill="#ffeec8" opacity="0.92"><title>The reader sets the distance — Corona, degree 6</title></circle>
+<circle cx="864.3" cy="412.4" r="4.7" fill="#ffeec8" opacity="0.92"><title>The Ugly Duckling — Corona, degree 5</title></circle>
+<circle cx="878.1" cy="429.2" r="4.3" fill="#ffeec8" opacity="0.92"><title>Request quality check — Corona, degree 4</title></circle>
+<circle cx="886.1" cy="448.6" r="3.9" fill="#ffeec8" opacity="0.92"><title>Post-edit skill budget — Corona, degree 3</title></circle>
+<circle cx="887.7" cy="469.2" r="3.9" fill="#ffeec8" opacity="0.92"><title>Declared-set check — Corona, degree 3</title></circle>
+<circle cx="882.9" cy="489.3" r="3.9" fill="#ffeec8" opacity="0.92"><title>The Reduction — Corona, degree 3</title></circle>
+<circle cx="871.8" cy="507.6" r="3.9" fill="#ffeec8" opacity="0.92"><title>Button gate — Corona, degree 3</title></circle>
+<circle cx="855.5" cy="522.7" r="3.9" fill="#ffeec8" opacity="0.92"><title>Disagreement handling — Corona, degree 3</title></circle>
+<circle cx="835.0" cy="533.4" r="3.9" fill="#ffeec8" opacity="0.92"><title>Usage ledger — Corona, degree 3</title></circle>
+<circle cx="812.0" cy="538.9" r="3.9" fill="#ffeec8" opacity="0.92"><title>Session-start digest — Corona, degree 3</title></circle>
+<circle cx="788.0" cy="538.9" r="3.9" fill="#ffeec8" opacity="0.92"><title>Solo / Dismiss — Corona, degree 3</title></circle>
+<circle cx="765.0" cy="533.4" r="3.9" fill="#ffeec8" opacity="0.92"><title>Program — Corona, degree 3</title></circle>
+<circle cx="744.5" cy="522.7" r="3.0" fill="#ffeec8" opacity="0.92"><title>Open score / Close score — Corona, degree 1</title></circle>
+<circle cx="728.2" cy="507.6" r="3.9" fill="#ffeec8" opacity="0.92"><title>Make it so — Corona, degree 3</title></circle>
+<circle cx="717.1" cy="489.3" r="3.9" fill="#ffeec8" opacity="0.92"><title>Tell — Corona, degree 3</title></circle>
+<circle cx="712.3" cy="469.2" r="3.4" fill="#ffeec8" opacity="0.92"><title>Help — Corona, degree 2</title></circle>
+<circle cx="713.9" cy="448.6" r="4.3" fill="#ffeec8" opacity="0.92"><title>Composer Key — Corona, degree 4</title></circle>
+<circle cx="721.9" cy="429.2" r="3.9" fill="#ffeec8" opacity="0.92"><title>Change Score Key — Corona, degree 3</title></circle>
+<circle cx="735.7" cy="412.4" r="3.4" fill="#ffeec8" opacity="0.92"><title>Time methods (Ambient / None) — Corona, degree 2</title></circle>
+<circle cx="754.3" cy="399.4" r="3.4" fill="#ffeec8" opacity="0.92"><title>Metronome — Corona, degree 2</title></circle>
+<circle cx="776.3" cy="391.2" r="4.7" fill="#ffeec8" opacity="0.92"><title>Capacity check — Corona, degree 5</title></circle>
 <circle cx="800" cy="464" r="88" fill="url(#starGlow)"/>
 <circle cx="800" cy="464" r="15.5" fill="#fffdf2"/>
 <circle cx="800" cy="464" r="15.5" fill="none" stroke="#fff6d8" stroke-width=".8" opacity=".7"/>
-<title>the Composer — 4.9% of shortest paths, rank 6 of 117</title>
+<title>the Composer — the centre the graph does not contain; run add_star.mjs for its standing</title>
 <circle cx="466.9" cy="298.6" r="9" fill="#cfd8ea" opacity=".95"/>
 <text x="449.6" y="294.0" fill="#a9b8d2" font-size="11.5" text-anchor="end">Agile Facilitator</text>
 <line x1="466.9" y1="298.6" x2="632.7" y2="686.2" stroke="#cfd8ea" stroke-width=".8" opacity="0.34"/>
@@ -180,12 +180,12 @@
 <line x1="706.5" y1="417.6" x2="466.9" y2="298.6" stroke="#7fd4ff" stroke-width="1" stroke-dasharray="3 4" opacity=".8"/>
 <circle cx="706.5" cy="417.6" r="8" fill="none" stroke="#7fd4ff" stroke-width="1.4" stroke-dasharray="3 3"/>
 <text x="450.9" y="272.6" fill="#7fd4ff" font-size="10.5" text-anchor="end">declared: the entry point every chair reaches through</text>
-<text x="450.9" y="284.6" fill="#5f92b4" font-size="10" text-anchor="end">measured: 5th of 117, 5.0% of shortest paths</text>
-<text x="40" y="40" fill="#f4f8ff" font-size="19">The meta-mandala as a solar system — faceon</text>
+<text x="450.9" y="284.6" fill="#5f92b4" font-size="10" text-anchor="end">measured: fifth by shortest paths, not first (add_star.mjs)</text>
+<text x="40" y="40" fill="#f4f8ff" font-size="19">The meta-mandala as a solar system — faceon · corona ring</text>
 <text x="40" y="62" fill="#8595af" font-size="11.5">angle = sector (13) · radius = evidence, earned inward · saturation constant per ring · size = degree</text>
 <text x="40" y="78" fill="#8595af" font-size="11.5">evidence = (earned + corroborated) / all vectors — this render's own scalar, not issue #8's</text>
 <circle cx="46" cy="782" r="5" fill="#fffdf2"/>
-<text x="60" y="786" fill="#a9b8d2" font-size="11.5">the star — the Composer, 4.9% of paths, rank 6</text>
+<text x="60" y="786" fill="#a9b8d2" font-size="11.5">the star — the Composer, drawn at the size its betweenness earns (add_star.mjs)</text>
 <circle cx="46" cy="803" r="5" fill="#ffeec8"/>
 <text x="60" y="807" fill="#a9b8d2" font-size="11.5">the Corona — 23 bodies that orbit him, not a chair</text>
 <circle cx="46" cy="824" r="5" fill="#5a6a86"/>

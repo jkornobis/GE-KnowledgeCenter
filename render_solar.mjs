@@ -37,10 +37,11 @@
  *
  * THE STAR — the Composer, at the centre, and the graph does not contain him. `musicians` holds
  * exactly the twelve chairs; there are five nodes ABOUT him and none that IS him (issue #6).
- * He is drawn at the size his BETWEENNESS earns and no larger: `add_star.mjs` measured him at
- * 4.9% of shortest paths, RANK 6 — behind the Software Architect, Episteme vs. doxa, How rules
- * actually hold, the Agile Auditor and the Agile Facilitator. A star drawn with the weight of a
- * singularity would assert 100% where the corpus says 4.9%.
+ * He is drawn at the size his BETWEENNESS earns and no larger — a star drawn with the weight of a
+ * singularity would assert a dominance the corpus refuses. THE FIGURE IS DELIBERATELY NOT QUOTED
+ * HERE. This header carried "4.9%, rank 6" until 2026-09-08, by which time the corpus had moved
+ * twice and the true standing was 5.7% at rank 2 — the number went stale inside the file that
+ * depends on it. `add_star.mjs` measures it and is re-run; this draws it and points at that.
  *
  * THE CORONA — the twenty bodies that orbit no chair because they orbit HIM: the interface and
  * the conduct of a session. Named by the Composer, 2026-09-07. They have no sector, so they have
@@ -72,6 +73,7 @@ const G = JSON.parse(readFileSync("graph/grand_ensemble.json", "utf8"));
 //     node render_solar.mjs                     orrery    THE BASE, ruled 2026-09-07
 //     node render_solar.mjs --variant=deep      deep      tilted, heavy vignette, atmospheric
 //     node render_solar.mjs --variant=faceon    faceon    near-circular, colour forward
+//     node render_solar.mjs --corona=ring|cloud|named       how the band is drawn
 //
 // ⚠️ ORRERY IS THE BASE BY RULING, NOT BY DEFAULTING. The Composer chose it on 2026-09-07 from
 // the three rendered side by side. The other two are kept and still build: the reason variants
@@ -202,21 +204,65 @@ for (const sName of SECTORS) {
 }
 P(`</g>`);
 
-// ---- CORONA band + the twenty
+// ---- THE CORONA. Three treatments of the same bodies, because the band is the part of this
+// figure a projection choice does not settle, and the Composer judges a picture rather than a knob.
+//
+//   ring   even angles at one radius. The built default, and it reads as a NECKLACE: twenty-three
+//          equal beads on a dotted line, which says "a list" where the finding says "an atmosphere".
+//   cloud  radius carries degree — the better connected sit closer in — with a deterministic
+//          angular offset so equal-degree bodies do not stack. No dotted ellipse at all. An
+//          atmosphere has no edge, and drawing one asserts a boundary the corpus does not have.
+//   named  the cloud, plus every body named down the left margin. The Corona is the one population
+//          whose MEMBERSHIP is the finding, and a picture that shows twenty-three anonymous dots
+//          withholds exactly the thing that was argued.
+//
+// ⚠️ NO RANDOMNESS ANYWHERE. Scattering by `Math.random` would give a different picture on every
+// run, and a drawing that cannot be reproduced cannot be argued with. The offset below is a hash
+// of the index — arbitrary, and identical on every machine forever.
+const CORONA_STYLE = (process.argv.find((a) => a.startsWith("--corona=")) || "--corona=ring").split("=")[1];
+const jitter = (i) => (((i * 2654435761) % 1000) / 1000 - 0.5);   // deterministic, in [-0.5, 0.5]
+const degMax = Math.max(1, ...corona.map((id) => st.get(id).deg));
+
 P(`<circle cx="${CX}" cy="${CY}" r="${RCORONA + 34}" fill="url(#coronaBand)"/>`);
-P(`<ellipse cx="${CX}" cy="${CY}" rx="${RCORONA}" ry="${(RCORONA * TILT).toFixed(1)}" fill="none" stroke="#ffe9b0" stroke-width=".9" stroke-dasharray="2 5" opacity=".55"/>`);
-corona.forEach((id, i) => {
-  const a = (i / corona.length) * 2 * Math.PI - Math.PI / 2;
-  const [x, y] = project(RCORONA, a);
+if (CORONA_STYLE === "ring")
+  P(`<ellipse cx="${CX}" cy="${CY}" rx="${RCORONA}" ry="${(RCORONA * TILT).toFixed(1)}" fill="none" stroke="#ffe9b0" stroke-width=".9" stroke-dasharray="2 5" opacity=".55"/>`);
+
+const coronaSorted = CORONA_STYLE === "ring" ? corona : [...corona].sort((x, y) => st.get(y).deg - st.get(x).deg);
+const coronaPos = new Map();
+coronaSorted.forEach((id, i) => {
+  const base = (i / coronaSorted.length) * 2 * Math.PI - Math.PI / 2;
+  const d = st.get(id).deg / degMax;
+  const a = CORONA_STYLE === "ring" ? base : base + jitter(i) * 0.34;
+  const r = CORONA_STYLE === "ring" ? RCORONA : RCORONA * (1.30 - 0.52 * d + jitter(i + 7) * 0.16);
+  const [x, y] = project(r, a);
+  coronaPos.set(id, { x, y });
   const rr = 2.6 + Math.min(6, st.get(id).deg) * .42;
-  P(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rr.toFixed(1)}" fill="#ffeec8" opacity=".92"><title>${esc(meta.get(id).name)} — Corona, degree ${st.get(id).deg}</title></circle>`);
+  const op = CORONA_STYLE === "ring" ? .92 : (.52 + .44 * d).toFixed(2);
+  P(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rr.toFixed(1)}" fill="#ffeec8" opacity="${op}"><title>${esc(meta.get(id).name)} — Corona, degree ${st.get(id).deg}</title></circle>`);
 });
+if (CORONA_STYLE === "named") {
+  // Down the margin, not on the dots: 23 labels at the band's own radius would collide with the
+  // inner rings and with each other, and a leader line to each would draw a starburst.
+  // RIGHT margin, right-aligned. The left is where the declared/measured caption lands, and that
+  // caption follows the Agile Facilitator's rim position — which is DERIVED and moves with the
+  // corpus. A list anchored opposite a moving label collides eventually; this one cannot.
+  const col = W - 40, top = 128;
+  P(`<text x="${col}" y="${top - 14}" fill="${V.ink}" font-size="11.5" text-anchor="end">THE CORONA — ${coronaSorted.length} bodies that orbit the Composer, not a chair</text>`);
+  coronaSorted.forEach((id, i) => {
+    P(`<text x="${col}" y="${top + i * 13.4}" fill="${V.dim}" font-size="9.6" text-anchor="end">${esc(meta.get(id).name)}</text>`);
+  });
+}
 
 // ---- THE STAR, at the size its betweenness earns
 P(`<circle cx="${CX}" cy="${CY}" r="${V.glow}" fill="url(#starGlow)"/>`);
 P(`<circle cx="${CX}" cy="${CY}" r="15.5" fill="#fffdf2"/>`);
 P(`<circle cx="${CX}" cy="${CY}" r="15.5" fill="none" stroke="#fff6d8" stroke-width=".8" opacity=".7"/>`);
-P(`<title>the Composer — 4.9% of shortest paths, rank 6 of 117</title>`);
+// ⚠️ NO MEASURED NUMBER IS FROZEN INTO THIS DRAWING. It carried "4.9% of paths, rank 6" until
+// 2026-09-08, by which point the corpus had moved twice and the true figure was 5.7% at rank 2.
+// A number hardcoded in a picture goes stale in silence — the third instance of that class here in
+// two days, after the `live` field and the renamed sector. The measurement lives in add_star.mjs,
+// which is re-run, and the drawing points at it instead of quoting it.
+P(`<title>the Composer — the centre the graph does not contain; run add_star.mjs for its standing</title>`);
 
 // ---- the twelve chairs, on their own ring
 // ⚠️ A CHAIR'S PLACEMENT IS DATA IN ITS ORDER AND LEGIBILITY IN ITS SPACING, and the two are
@@ -286,14 +332,14 @@ let tx = fx + lab * 16, anc = lab < 0 ? "end" : "start";
 if (anc === "end" && tx - TW < PAD) { tx = PAD + TW; }
 if (anc === "start" && tx + TW > W - PAD) { tx = W - PAD - TW; }
 P(`<text x="${tx.toFixed(1)}" y="${(fy - 26).toFixed(1)}" fill="#7fd4ff" font-size="10.5" text-anchor="${anc}">declared: the entry point every chair reaches through</text>`);
-P(`<text x="${tx.toFixed(1)}" y="${(fy - 14).toFixed(1)}" fill="#5f92b4" font-size="10" text-anchor="${anc}">measured: 5th of 117, 5.0% of shortest paths</text>`);
+P(`<text x="${tx.toFixed(1)}" y="${(fy - 14).toFixed(1)}" fill="#5f92b4" font-size="10" text-anchor="${anc}">measured: fifth by shortest paths, not first (add_star.mjs)</text>`);
 
 // ---- legend
 const L0 = 40, T0 = 40, LEGY = H - 118;
-P(`<text x="${L0}" y="${T0}" fill="${V.title}" font-size="19">The meta-mandala as a solar system — ${VNAME}</text>`);
+P(`<text x="${L0}" y="${T0}" fill="${V.title}" font-size="19">The meta-mandala as a solar system — ${VNAME} · corona ${CORONA_STYLE}</text>`);
 P(`<text x="${L0}" y="${T0 + 22}" fill="${V.dim}" font-size="11.5">angle = sector (13) · radius = evidence, earned inward · saturation constant per ring · size = degree</text>`);
 P(`<text x="${L0}" y="${T0 + 38}" fill="${V.dim}" font-size="11.5">evidence = (earned + corroborated) / all vectors — this render's own scalar, not issue #8's</text>`);
-const items = [["#fffdf2", "the star — the Composer, 4.9% of paths, rank 6"], ["#ffeec8", `the Corona — ${corona.length} bodies that orbit him, not a chair`],
+const items = [["#fffdf2", "the star — the Composer, drawn at the size its betweenness earns (add_star.mjs)"], ["#ffeec8", `the Corona — ${corona.length} bodies that orbit him, not a chair`],
   ["#5a6a86", `Spacetime — ${SPACETIME.length} Structure principles, drawn as the rings themselves`], ["#ff9ecb", "neither — Spotlighting, The Empty Hands"], ["#7fd4ff", "declared standing vs measured standing"], ["#cfd8ea", "chair spoke — points at its bodies; faint = they point everywhere"]];
 items.forEach(([c, t], i) => {
   P(`<circle cx="${L0 + 6}" cy="${LEGY + i * 21}" r="5" fill="${c}"/>`);
