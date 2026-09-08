@@ -275,6 +275,7 @@ graph yet. It is the first page in `mandalas/` written from outside this library
 | `mandalas/border-chairs-principles.md` | The second border, grounds: which principle each chair requires to do its job, every edge quoting the chair's own sentence — plus the 2026-08-15 re-measurement to read before quoting anything | the whole room | 2026-08-17 |
 | `mandalas/border-chairs-protocols.md` | The third border, enacts: which protocols each chair puts into practice. The one that closes the triangle, after which the meta-mandala can be a result rather than a premise | the whole room | 2026-08-17 |
 | `mandalas/movements-layer.md` | Twelve cultural movements carrying 7 internal edges and 0 crossings to anything else. The measurement, the reason, the Composer's claim that chairs ARE movements, and the one border that is already earned | the whole room | 2026-09-02 |
+| `mandalas/movements-candidates.md` | Evidence gathered per chair and per movement so the Composer can rule rather than guess: seven borders with a date on both sides, two contested, three chairs with no candidate among the twelve, and five movements no craft evidence can reach | the whole room | 2026-09-08 |
 
 ### Graph — the model as data, for traversing rather than reading
 
