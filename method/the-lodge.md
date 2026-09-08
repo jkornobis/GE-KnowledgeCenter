@@ -1,7 +1,7 @@
 ---
 type: Method
-title: "The lodge — five instruments that carried craft across generations, and which of them this orchestra actually has (Software Architect, UX Designer, Content Designer)"
-description: "What a cathedral lodge used to keep a hundred-year project coherent across people who never met — the tracing floor, the template, the mark, the lodge itself and the drawing that outlived everyone — mapped one by one onto what an orchestra working across sessions has and lacks, and the three lessons that survive the translation"
+title: "The lodge — six instruments that carried knowledge across generations, and which of them this orchestra actually has (Software Architect, UX Designer, Content Designer)"
+description: "What a cathedral lodge used to keep a hundred-year project coherent across people who never met, and the catalogue Alexandria wrote fifteen centuries before it — six instruments mapped one by one onto what an orchestra working across sessions has and lacks, the entry structure that let a copy be checked, and the four lessons that survive the translation"
 status: draft
 serves_all: true
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-09T00:12:00+02:00 }
@@ -16,6 +16,10 @@ sources:
     title: "Cologne Cathedral — Riss F and the completion of 1880"
   - resource: https://arxiv.org/pdf/1805.08453
     title: "Rule-based drawing, analysis and generation of graphs for mason's mark design"
+  - resource: https://en.wikipedia.org/wiki/Pinakes
+    title: "Pinakes — Callimachus's catalogue, c. 250 BCE"
+  - resource: https://brewminate.com/pinakes-callimachus-of-cyrene-and-his-work-at-the-ancient-library-of-alexandria/
+    title: "Callimachus of Cyrene and his work at the ancient Library of Alexandria"
 ---
 
 # The lodge
@@ -27,7 +31,30 @@ started. Coherence has to live in objects, because it cannot live in a memory.
 **This is not decoration.** The instruments the lodges used map, one for one, onto what an orchestra
 needs — and the mapping is worth making because **three of the five are answers we have not built.**
 
-## The five instruments
+## The oldest instrument, and it predates the lodges by fifteen centuries
+
+**Callimachus, at Alexandria around 250 BCE: the *Pinakes* — *Tables of those who were outstanding in
+every phase of culture, and their writings*, in 120 volumes.** Classes first — poetry, prose,
+philosophy, law — then genre, then alphabetical by author. A hierarchy crossed with facets, and the
+point at which the index stops being an inventory and becomes a discipline.
+
+**Two things about it matter more than its age.**
+
+**It was not a shelf list.** It catalogued *all Greek literature*, not the building's holdings — **a
+map of a field rather than of a room.** A reader consulted it to find out what existed on a subject,
+which is a different act from finding out what is downstairs.
+
+**And every entry carried the opening line of the work and its total line count.** The incipit says
+*this is the right work*; the line count says *and this copy is complete*. **Identity and integrity,
+in an age when every copy was made by hand and could quietly lose a page.** Entries also carried the
+author's teachers and students — a lineage field, under that name.
+
+⚠️ **What survived of it: eight fragments, and citations in other people's books.** The index
+outlived the library, was lost in its turn, and reaches us only because others quoted it. **A record
+survives by being cited elsewhere, not by being kept somewhere** — which is a rule this orchestra
+already runs and has never seen demonstrated at that scale.
+
+## The five instruments of the lodge
 
 | Instrument | What it was | What it solved |
 |---|---|---|
@@ -37,7 +64,7 @@ needs — and the mapping is worth making because **three of the five are answer
 | **The lodge** — *Bauhütte* | The workshop on the site: an institution, not a person, that trained in place | **It outlives the master.** The apprentice learns where the work is, not from a book |
 | **The kept drawing** | Cologne's façade drawing, *Riss F*, made around 1290 and kept for five centuries. Rediscovered in 1814, it was the basis on which the building was finished in **1880** | A specification that outlived everyone who could explain it, and still built the thing |
 
-## The three lessons that survive the translation
+## The four lessons that survive the translation
 
 ### 1 — The floor was consulted because it was underfoot
 
@@ -68,6 +95,17 @@ being translated, and being used at a different scale; a number does not survive
 **This is the same rule this orchestra keeps rediscovering under other names** — re-derive rather than
 recall, cite the script rather than the figure. It is older than every tool that carries it.
 
+### 4 — The entry carried its own check
+
+Callimachus did not only say *this work exists*. He said **what its first line is and how many lines
+it has** — so a reader holding a scroll could establish that it was the right one and that nothing
+had fallen out of it. **A catalogue entry that cannot be checked against the thing it describes is a
+claim, not a record.**
+
+This is the same instinct as lesson 3 pointed at a different target: not *re-derive the value*, but
+**carry enough with the reference that a later reader can tell whether what they are holding is what
+was meant.**
+
 ## What this orchestra has, and what it lacks
 
 | Instrument | Here |
@@ -77,6 +115,7 @@ recall, cite the script rather than the figure. It is older than every tool that
 | The kept drawing | **Have.** The graph and the decision record are the specification that outlives its authors |
 | The template | **Barely.** Lever indexes keyed by intent exist for **2 of the 12 chairs**. The rest of the library is filed by *kind of page* — tool, method, protocol — which is filing by who made it rather than by the part it makes |
 | The tracing floor | **Missing.** Drawings exist; none of them is in anyone's path. There is no surface a working session crosses without choosing to |
+| The catalogue | **Shelf list only.** `index.md` names every page with a description — what is downstairs. **No entry says what question the page answers, and none carries a check that the copy is intact** |
 
 ## What this framing does not license
 
