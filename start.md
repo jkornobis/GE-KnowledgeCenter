@@ -41,6 +41,38 @@ it is owed before the first thing is made, not after the result is judged.
 **A subject `index.md` does not name is a subject this library does not cover.** Say that. A 404
 means the path was wrong, never that the knowledge is absent.
 
+⚠️ **But you cannot need a fact you do not know exists.** *Stop at 2* is a context rule and it is a
+good one; read alone it also guarantees that no instance ever finds anything it was not already
+looking for. **So the routing card below is resident in the page you have already fetched** — it
+costs nothing to hold, and it is the only part of this library that reaches you before you decide to
+look.
+
+### The routing card — keyed by what your work touches, never by kind of page
+
+| When your work touches | Fetch |
+|---|---|
+| choosing between tools, or judging whether a project is alive | `method/software-selection.md` |
+| ranking work, or closing out a session | `method/ranking.md` |
+| deciding what shape a thing should take — message, page, or table | `protocols/presentation-surfaces.md` |
+| drawing a graph, or reading one someone else drew | `method/graph-layout.md` |
+| how knowledge survives a worker who is no longer there | `method/the-lodge.md` |
+| the word *verified*, about to be used | `method/evidence.md` |
+| a number about to be written into a page | `method/sources-and-rederivation.md` |
+| adding a tool, or auditing one already in use | `protocols/tool-audit.md` |
+| a search that found nothing, on a word that should exist | `method/chair-vocabulary.md` |
+| turning a request into an ensemble of chairs | `chairs/the-twelve-chairs.md` |
+| reviewing a design surface, or deciding it is too early to | `method/design-review.md` |
+| building a surface where an assistant sits between a person and a process | `method/ai-assistant-patterns.md` |
+| a trigger phrase you have been given and do not recognise | `protocols/triggers.md` |
+
+**Every row names the moment, not the subject.** A card keyed by subject is an index in miniature and
+you would have to already know the word; keyed by moment, it can catch you in the middle of the work
+that needs it.
+
+⚠️ **This card is hand-written and will drift.** It is not the index — `index.md` remains the only
+complete route in, and a row here is a shortcut, never an authority. When the card and the index
+disagree, the index wins.
+
 ## 3 — Named or not, and what it changes
 
 **An instance that leads a repository reads that repository's `CLAUDE.md` as well** — its floor,
