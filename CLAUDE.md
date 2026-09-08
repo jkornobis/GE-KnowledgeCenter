@@ -32,9 +32,15 @@ another instance's page I comment only if I have something, and never to agree.
     sh ~/scripts/forgejo-droits.sh ge-knowledgecenter    ECRITURE here; lecture elsewhere
     sh ~/scripts/jetons-verifier.sh ge-knowledgecenter   both tokens live
 
-**The generic `~/.config/forgejo-api.env` and `wekan-api.env` symlinks point at another instance.**
-Anything of mine that touches those surfaces names `-ge-knowledgecenter` explicitly, or it signs
-with the wrong hand and looks perfectly correct doing it.
+**There is no generic `~/.config/forgejo-api.env` or `wekan-api.env` any more** — deleted
+2026-09-07 on the Composer's ruling (`jkosvr-tower#13`), verified absent here 2026-09-08. Until then
+they were symlinks to another instance's file, and anything sourcing them **signed with the wrong
+hand and looked perfectly correct doing it.**
+
+**So the rule is unchanged and its enforcement moved from discipline to the machine:** everything of
+mine names `-ge-knowledgecenter` explicitly. What used to mis-sign silently now **fails loudly**,
+which is the ruling's whole argument. *A script that breaks after this date because the generic path
+is gone is behaving correctly; do not restore the link.*
 
 ## 3 — What this library may never carry
 

@@ -263,14 +263,21 @@ feeling the pace of Science is Science."*
 sourced to Daft Punk's *Touch*, *Electroma* and *Music Sounds Better With You*.
 It `grounds` the Accessibility Specialist.
 
-Two observations, offered without a conclusion:
+One observation, offered without a conclusion:
 
-- It is marked **`live: false`** — the principle that licenses feeling as the
-  origin of a thesis is itself recorded as not live.
 - Its `doc` points at `project/principles_candidate.md#artasfeltscience`, and
   there is **no `project/` directory in this repository**. The principle's own
   document is not in the mirror, so a reader arriving from the graph cannot get
   to it.
 
-Whether either is deliberate is not this page's to say. Both are the kind of
-thing the corpus records rather than leaves to be noticed.
+Whether that is deliberate is not this page's to say. It is the kind of thing the
+corpus records rather than leaves to be noticed.
+
+⚠️ **A second observation stood here until 2026-09-08 and is withdrawn: that the
+principle was marked `live: false`.** The field no longer exists — removed from the
+corpus on **2026-08-29** by the Composer's call (`GE-Workshop#26`). This library's
+graph copy predated the removal by three days and carried the ghost for a further
+ten, so the observation was true of the copy and never of the corpus. **The
+withdrawal is kept rather than deleted**, because the failure it demonstrates is
+the one worth reading: *a derived copy can go on reporting a field its source has
+deleted, and nothing local can tell.* Its home is `GE-KnowledgeCenter#21`.
