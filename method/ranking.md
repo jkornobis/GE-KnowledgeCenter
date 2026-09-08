@@ -135,9 +135,57 @@ being *stored*, and a conversation is the worst storage there is: it has no sear
 owner, and it is gone when the session ends. **Re-ranking is the cost being paid, once per close-out,
 for not having filed it.**
 
+### Look at the host before proposing a tool
+
+**Before naming an external board, check what the runtime already gives you** — a plan mode, a todo
+list, a task panel, a built-in tracker. Set by the Composer, 2026-09-08: *"checking if the AI model
+where GE runs has a basic plan, to-do tasker, kanban board — to use it and make task persistent."*
+**Proposing an install when the host already has the thing is noise, and it is the failure the
+tool-discovery protocol exists to prevent one layer up.**
+
+⚠️ **But the feature is not the answer until its LIFETIME is checked, and this is where the reasoning
+usually stops too early.** *"Storage in conversation doesn't survive"* is the whole argument — and
+**most host task features are session-scoped too.** A todo panel that resets when the conversation
+ends is a better *view* of the same volatile list. It is not storage, and treating it as storage is
+the original defect with a nicer interface.
+
+```
+does it survive the session?          if no, it is a view — useful, not a board
+does it survive the machine?          a local file is storage until the disk is not there
+can another instance read it?         a board nobody else can open is a private note
+does it hold WHY, not only WHAT?      a title with no reasoning cannot be re-judged later
+```
+
+**Three answers, and only the third is a board:**
+
+| The host offers | What it actually is | Use it for |
+|---|---|---|
+| a todo list scoped to the session | a **view** | staging what this session will do |
+| a file it writes into the project | **storage**, if the project is under version control | anything that must outlive the session |
+| an issue tracker or kanban it can reach | a **board** | anything another instance or another day must find |
+
+**Measured for this instance rather than assumed:** the runtime here exposes no persistent task
+surface of its own. Persistence is the repository's issue tracker and a Wekan board reached over
+their APIs — **so every item that must survive is filed there, and nothing is kept in the
+conversation on purpose.**
+
 **It is ENCOURAGE, never impose.** The orchestra proposes the board and the Composer decides — the
 same rule as everything else he authors. **And it does not require a new tool**: if the work already
 lives in a repository, its issues are a board and the answer is to file rather than to install.
+
+### And once it is on a board, it leaves the table
+
+**A row unchanged across two consecutive close-outs drops out of the ranked table** and the message
+links the tracker instead (ruled 2026-09-08). **The table shrinks to what actually moved, which is
+the only thing that makes it worth reading.**
+
+**Nothing is lost by dropping it** — that is precisely what having a board buys, and a row that is
+both on a board and in every table is being maintained twice. **What replaces it is one line at the
+foot naming the count and the address**, so the rest of the stand is one click away rather than
+re-read every time.
+
+⚠️ **The test is "unchanged", not "old".** A row that moved — got evidence, changed category, gained
+a ruling — stays however long it has been open. **It is repetition that earns removal, not age.**
 
 **Once a board exists, the table's job changes and gets smaller.** It stops being the list and
 becomes the *ranking of the list* — read from the tracker at close-out, ranked, surfaced, thrown
