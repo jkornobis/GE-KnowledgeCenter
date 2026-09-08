@@ -1372,3 +1372,77 @@ end of one page.** A tutorial needs a learner, a safe first task and a guarantee
 the three exists here yet.
 
 ---
+
+## Session 2026-09-09 — the lodge, and the three instruments this library does not have
+
+*First entry for this date. The night ran past the End Day close-out, on a subject the Composer
+opened and would not let go of.*
+
+**He asked what the library is for and answered it himself:** *"Library is here to be a library, give
+book index to read when musicians in a chair need it."* Then the diagnosis — *"GE worker lacking of
+curiosity because they have no tool for serendipity"* — and then the history that reframed all of it:
+*"Physical tools exist to these chair since long time ago, to build cathedral over a century."*
+
+### The lodge, written as method
+
+`method/the-lodge.md`, merged in **PR #46** and extended in **PR #47**. **Six instruments that carried
+knowledge across generations, and an honest scoreboard rather than an analogy.**
+
+```text
+the lodge          HAVE     the repository outlives the session
+the mark           HAVE     which instance is speaking is a rule, and it holds
+the kept drawing   HAVE     the graph and the decision record
+the template       BARELY   lever indexes for 2 of 12 chairs
+the tracing floor  MISSING  drawings exist; none is in anyone's path
+the catalogue      SHELF    index.md names what is downstairs, not what answers what
+```
+
+**Four lessons survived the translation, and the first is the one that changes the work.** *The floor
+was consulted because it was underfoot* — **discovery is a property of placement, not of content**, so
+a library in another room can never answer the question nobody knew to ask. **The second:** the floor
+was ephemeral and the template durable — the conversation is plaster and is meant to be scraped; the
+page is the object that carries a decision into a hand. **The third:** a mason recorded a compass
+procedure, not a measurement, because a procedure survives copying and a number does not — the same
+rule this estate had rediscovered three hours earlier by deleting a figure and pointing at the script.
+
+**And the fourth came from Alexandria.** The Composer: *"We probably invent database and facet in
+Alexandria Library."* He is right. Callimachus, c. 250 BCE, 120 volumes: classes, then genre, then
+alphabetical by author — **a hierarchy crossed with facets**, and **not a shelf list**: it catalogued
+all Greek literature rather than the building's holdings. **A map of a field rather than of a room**,
+which is exactly the distinction between the index this library has and the one a musician needs.
+Every entry carried the work's **opening line and its total line count** — identity and integrity, a
+checksum twenty-two centuries early. ⚠️ **Eight fragments survive, and what we know comes from other
+people quoting it: a record survives by being cited elsewhere, not by being kept somewhere.**
+
+### What was measured, because the scoreboard had to be earned
+
+```text
+type      13 values; 4 of them cover 72 of 87 pages; 8 are one-page types
+status    86 draft, 1 stable — a facet with one value
+serves    50 of 87 declare an audience
+join      0 of 107 graph nodes point at a page here; every path field aims at another repository
+latent    83 of 85 pages already name a graph node in their prose — 886 name-hits
+```
+
+**That last line changes the size of the problem.** Tagging 87 pages is a project; **deriving the
+page↔node index from prose that already exists is a script** — and neighbourhood retrieval then runs
+on machinery this repository already has. The limit is stated with it: naive substring matching,
+filtered to names of six characters or more, and it must be hand-checked before anyone trusts it.
+
+### Filed, so the scoreboard is not the only place the gaps live
+
+`#48` the catalogue and the zero join · `#49` the template gap, **and why writing the other ten
+indexes would be wrong** — an index written before its musician has handled the instrument is
+plausible documentation, not craft · `#50` the tracing floor, with MCP named as **one** candidate and
+ownership deliberately undecided on his ruling *research first*.
+
+### And the warning that came out of the same history
+
+The lodges became the Freemasons: as the cathedrals stopped, the working lodges admitted honorary
+members until the non-masons outnumbered the masons. **The craft left and the ceremony stayed.**
+
+⚠️ **This orchestra has every ingredient for that** — twelve chairs, seven protocol families, glyphs,
+mandalas, named triggers. **The test is only ever whether stone is still being cut. A protocol that
+has not changed an artifact in a month is regalia.**
+
+---
