@@ -25,7 +25,9 @@ fail a merge; **the next two report and never block** — one sweeps outward add
 whether this bundle's copy of `graph/grand_ensemble.json` is still the corpus's, **and it takes the
 corpus's location as an argument because this library carries no estate's address**; **the last one
 writes always**, drawing `mandalas/solar-deep.svg`, `solar-orrery.svg` and `solar-faceon.svg` from the same
-graph — three projections of one construction, compared side by side in `mandalas/solar-variants.html` — a picture is an artefact rather
+graph — three projections of one construction, compared side by side in `mandalas/solar-variants.html` —
+and `mandalas/corona-ring.svg`, `corona-cloud.svg` and `corona-named.svg` under `--corona=`, three
+treatments of the one band a projection choice does not settle, compared in `mandalas/corona-variants.html` — a picture is an artefact rather
 than a measurement, and it is kept separate from the six for that reason; **the six between them** read
 `graph/grand_ensemble.json` and write nothing at all, one proposing **hypotheses**, one measuring
 whether this corpus carries the stability signature of a natural network, one ranking the
