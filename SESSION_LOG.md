@@ -1334,3 +1334,41 @@ palette. `#2` waits on seven movement verdicts. `#22` waits on GitHub Support. `
 pages in eighty-four, no tutorial — waits on whether this library should serve *doing*.
 
 ---
+
+## Session 2026-09-08 — coda: he ruled at the handoff, and one rejection became a criterion
+
+*Appended to the entry above, not folded into it. The End Day ranking ended in four rulings and the
+entry's "none of it is mine to close" was overtaken within the hour.*
+
+**Camera: A is the default, B is a reversible mode.** The mandala stays a map, and a map can be
+memorised; re-centring is permitted precisely because leaving it restores the map exactly. Posted to
+`GE-Workshop#61` with the order it implies.
+
+**The movement borders, in two passes.** Confirmed: Agile Facilitator and Product Owner ↔ **Agile**,
+Software Engineer ↔ **Software craft**. Split: **Agile Auditor → Lean, QA Engineer → Agile**.
+Rejected: Software Architect ↔ contract-first, Reliability Engineer ↔ SRE.
+
+**Two of his rulings changed the page rather than filling it.**
+
+⚠️ **The rejections gave the page a criterion it did not have: a date on both sides makes a
+candidate ADMISSIBLE, not equivalent.** A movement is a lineage crossing the craft that more than one
+chair could plausibly stand in; a practice, a role or a discipline bounded to one chair's territory
+is not, however well dated. **And it caught the two rows with the strongest movement-side evidence —
+SRE is the best-dated entry on the page and fell anyway.** Strength of evidence and correctness of
+scale are independent, and the page had only ever measured the first.
+
+**And the split refused a framing this library built.** The two contested rows were presented as *the
+same shape, the same unresolved direction* — one question asked twice. They are not: the Auditor's
+method is go-and-see, which is Lean's; QA's practices here are Agile's. **The page manufactured the
+deadlock it then reported.**
+
+**The SRE row was recorded unruled and re-asked rather than inferred from its absence** in the first
+selection. That is the reason the second ruling exists at all, and it is kept on the page.
+
+**`#38`: the library should teach.** He took the largest of three answers. Recorded with what it does
+*not* authorise — no sweep, no conversion of the 47 well-shaped pages — and with the question
+sharpened from *should this library serve doing* to **who is the learner, and what can they do at the
+end of one page.** A tutorial needs a learner, a safe first task and a guaranteed outcome; none of
+the three exists here yet.
+
+---
