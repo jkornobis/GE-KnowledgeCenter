@@ -86,6 +86,25 @@ Two permanent time-management methods; typing one switches to it and turns the o
 ## Fair copy
 Re-sync all documentation surfaces to the current source of truth, verify with search that no stale references remain, (in a repo) commit and push to **the one remote a session writes to**, and deploy the site to Pages (`origin`-only, `docs-site/scripts/deploy-pages.mjs`). Fires implicitly on every major rule change; typeable on demand.
 
+**And re-sync any DERIVED COPY against its source** (ruled 2026-09-08). A fair copy re-syncs
+documentation surfaces to the current source of truth, and a copy of another repository's derived
+artifact is one — it simply has a source no gate can see. **A stale copy passes every local check:
+valid frontmatter, resolvable references, perfect internal consistency. It fails nothing because
+there is nothing it could fail.** In this bundle that is `check_corpus_freshness.mjs`, which reports
+and never blocks and takes the source as an argument. **The case that ruled it:** a graph copy went
+twelve days stale, a whole day's measurements were published against it, and it was found only
+because another instance mentioned in passing that the source had moved.
+
+⚠️ **Compare counts, membership, vocabulary AND field names.** A rename is worse than an addition —
+an addition is data you do not have, a rename is data you have and is wrong — and a *removed field*
+is worse than either: it goes on being read, and every claim built on it is confident and false.
+
+**And the Composer ruled the boundary of this clause rather than only its content** (2026-09-08):
+**a derived copy is in, a local convenience is out.** A vault, a scratch directory or a working copy
+outside the repository may need re-syncing on one machine and does not generalise to another
+Composer — *"the graph copy is a real source-of-truth surface; the vault is one machine's
+convenience."* Those are compared by hand when they matter, not by this trigger.
+
 **Run the outward sweep as part of it** (ruled 2026-09-06). External addresses rot slowly and nothing else looks at them; a fair copy is when a stale citation actually costs something, so `sweep_links.mjs` runs here rather than on a schedule. It never blocks — it reports, and what it finds becomes work or an issue, not a red gate.
 
 ⚠️ **"Commit both remotes" is what this said until 2026-09-06 and it is no longer true.** A published copy is written by a mirror, not by a session; a session that pushes to both couples one host's availability to the other's and is forgettable by construction. Which remote a session writes to is its own repository's ruling — see that repository's index or floor, never this page.
