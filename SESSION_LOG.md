@@ -1213,3 +1213,83 @@ Three glyphs failed the moment the test was stated.
 📤 with no receiver was not a small edge case; it was 🕝 wearing the wrong name.
 
 ***Checking that a host has a feature is half the check. The other half is how long it lives.***
+
+---
+
+## Session 2026-09-08 — evening: the surfaces, and an audit that refuted its own page
+
+*Third entry for this date. Appended.*
+
+**The Composer named the environment an orchestra has to build for itself** — a task planner, a
+reading surface for long explanation instead of *"prose bombing"* the chat, a table to summarise
+data — **and asked for a named authority to defer to when the presentation rules do not reach a
+case.**
+
+### The surfaces
+
+`protocols/presentation-surfaces.md`. **Three surfaces and one question: what does the reader have to
+do with it.** The message carries the decision and what it costs, and is read once with no way back.
+A `.md` page carries the explanation, because it is re-read, linked and survives the session. A table
+carries data with more than two dimensions, because a reader compares **rows**.
+
+**Prose bombing fails twice at once** — unreadable now, lost immediately after. **And the reverse
+test turned out to be the sharper one: a page nobody returns to was a decision written in the wrong
+place.**
+
+**A table is wrong three ways**, and each has already cost something here: one row is a sentence
+wearing a grid; a column empty for most rows is a phantom column — the same argument that moved the
+Eisenhower glyph out of a column of its own that afternoon; cells of prose add alignment to the
+reading cost without adding comparison.
+
+### The fallback, and why one address rather than three
+
+**Diátaxis**, ruled after the full account was given. Two other candidates were probed live and
+**rejected as fallbacks for the same reason**: a syntax spec and an editorial style guide answer
+questions this estate has already answered, and **a fallback list long enough to need routing is a
+second set of rules.** It is named for what our rules leave most open — *what shape a document should
+take*. **And it is for silence, not for disagreement:** where these rules speak, they win.
+
+### The audit, which was ruled as a measurement and refuted the page that ordered it
+
+The page asserted, in its own first version, that **most pages here are explanation laid out as
+reference** — the failure Diátaxis is best known for naming. **It was written without measuring.**
+
+```
+kind \ layout      explanation-shaped   mixed   reference-shaped   total
+explanation                        18      13                  5      36
+reference                           6       9                 29      44
+how-to                              2       1                  1       4
+```
+
+**Five pages, not most — and the opposite mismatch is more common at six**, tool cards carrying a
+card's worth of facts in nine-tenths prose. **47 of 84 align.** The library is broadly well-shaped
+and the claim was wrong.
+
+⚠️ **What the audit did find is a different thing entirely: two of the four kinds barely exist here.**
+Four how-to pages out of eighty-four, **no tutorial at all**, and all four how-tos are the orchestra's
+own housekeeping rather than work in a domain. `method/software-selection.md` is the sharpest case —
+it exists *because* a comparison ran three rounds with no method, and it is **explanation**: it says
+why the order matters and never *do this, then this*. Filed as `#38`, with a sweep explicitly ruled
+out.
+
+### Also played
+
+**`method/ranking.md`** — the ranking form stopped being one Composer's taste and became shared
+method, on his ruling that *"emoji are for all"*. Five categories, because 📤 requires a receiver and
+a Composer working alone has none, so 🕝 **postpone** is the honest fourth. **And postpone is neither
+recycle nor yours-to-judge** — it has a live claim, and nobody can act, the Composer included.
+
+**Fair copy**, with one dead address that had been written eight hours earlier by this instance: a
+bare parenthesis inside a markdown link target ends the link at the first `)`. **Broken for readers,
+not only for the sweep.**
+
+**And `fair copy` gained a clause** — re-sync any derived copy against its source — with the boundary
+he ruled: *a derived copy is in, a local convenience is out.*
+
+### Corrections that became protocol
+
+***An assertion inside a page about presentation is still an assertion.*** The library was accused of
+a plausible defect it does not have, in the very page naming the framework that made the accusation
+checkable. **The fallback earned its place by catching the page that named it.**
+
+***The value was the check, not the verdict.***
