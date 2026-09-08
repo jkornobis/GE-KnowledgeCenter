@@ -1118,3 +1118,98 @@ later made impossible. The finding was untouched and only the address of the fix
 **Nothing is `do now`.** Every open item is a ruling of the Composer's or sits with another instance
 — the Corona treatment, seven movement verdicts, the Composer node, the Key against §4, the Support
 ticket; and at the other ends, `jkosvr-tower#18` scheduling and `GE-Workshop#35`.
+
+---
+
+## Session 2026-09-08 — afternoon: the ranking form stopped being one Composer's taste
+
+*Appended to the morning's entry. Twelve merges on the day.*
+
+**It began as a glyph change and turned into a method page**, because each of the Composer's
+objections was about the same thing: **a sign must depict the act, never the state around it.**
+
+```
+⚖️  a scale shows EQUILIBRIUM         "Balance emoji isn't choice, it is balanced between element"
+↔️  a double arrow shows SYMMETRY     the same defect in another costume
+⏩  fast-forward means SKIP AHEAD     nobody has received anything
+```
+
+**Three glyphs failed one test, inside one conversation.** What replaced them: ⚡ **do now**,
+👁️ **yours to judge** — chosen because his own definition of taste is perception, *"seeing unbalance
+of a system of color and shape concepts by eyes"* — 📤 **delegate**, and ♻️ **recycle**. **And the
+glyph moved into the first column, joined to the number**, so it stops sliding with the length of
+whatever the action is called.
+
+**The word moved with the sign.** That quadrant was never Eisenhower's *schedule it for later*: it
+is **the one act the orchestra structurally cannot perform**, and calling it *decide* hid that.
+
+### The fifth category, and the question that produced it
+
+**He asked what the form does for a Composer who does not run four instances.** The answer exposed a
+category the four-glyph set had been hiding: **📤 requires a receiver.** With no named instances
+there is nobody to hand to, so *delegate* is structurally empty and the honest fourth is
+🕝 **postpone** — *"it mean you must build proper research before acting."*
+
+**And postpone is not recycle.** Recycle means *no live claim on attention*; postpone means the
+opposite — it has one, and acting now would be a guess. **Nor is it yours-to-judge**, which says
+everything needed is present. **Postpone says nobody can choose, the Composer included.**
+
+⚠️ **The stand had a 🕝 row all along and no category for it.** `#22` — whether the 2026-09-04
+Support ticket correction was posted — had been ranked as his to judge for a day. **He cannot judge
+it either.** Nobody can until the thread is read.
+
+### The correction that changed the page's own scope, mid-draft
+
+The page was written claiming the *categories* were shared method and the *glyphs* were one
+Composer's rendering taste. **He rejected the split:** *"emoji are for all — this Eisenhower table +
+multiple choice or button choice, it's basic multitasking of GE."*
+
+**So all of it travels**, and `method/ranking.md` exists rather than a longer Score Key. **His Key
+shrank from 3,792 characters to 1,868** and now points at the repository instead of carrying the
+method — which is this estate's own rule about where orchestra memory lives, applied to the Key for
+the first time.
+
+### And two rulings about where work is kept at all
+
+**When the Composer opens too many subjects, the orchestra proposes a board** — Jira, Trello, Wekan,
+the repository's own issues, whatever he already uses. **A ranked table is a view, not storage.**
+Three signals, each countable: it stops fitting a screen; **a row survives two consecutive close-outs
+unchanged**; a subject is re-ranked from memory. **The second is the real one — a row ranked
+identically twice is not being worked, it is being stored**, and the re-ranking is the price paid,
+once per close-out, for not having filed it.
+
+**Then the guard that keeps that rule honest.** He asked whether the runtime itself offers a plan or
+todo or kanban, to make tasks persistent — and the answer had to carry its own caveat: **most host
+task features are session-scoped too.** *Storage in conversation doesn't survive* is the whole
+argument, and **a todo panel that resets at the end of the conversation is a better view of the same
+volatile list.** Four questions decide it — does it survive the session, the machine, can another
+instance read it, does it hold *why* rather than only *what*. **Measured here: this runtime exposes
+no persistent task surface, so persistence is the tracker and the board, and nothing is kept in the
+conversation on purpose.**
+
+**Last, a rendering ruling that follows from all of it:** a row unchanged across two close-outs
+**leaves the table**, replaced by one line naming the count and the address. **The test is
+*unchanged*, not *old*** — repetition earns removal, and a row that moved stays however long it has
+been open.
+
+### Also played
+
+**Fair copy.** 258 addresses, and **the one dead entry was written eight hours earlier by this
+instance**: a bare parenthesis inside a markdown link target ends the link at the first `)`, so
+`[ma](…/Ma_(negative_space))` resolved to a 404 **for readers, not only for the sweep**.
+Percent-encoded, 200 by hand, zero dead after.
+
+**And `fair copy` gained a clause on his ruling:** re-sync any **derived copy** against its source.
+He also ruled its boundary — *a derived copy is in, a local convenience is out* — so the vault
+comparison run that same hour is deliberately **not** in the trigger: *"the graph copy is a real
+source-of-truth surface; the vault is one machine's convenience."*
+
+### Corrections that became protocol
+
+***A sign that survives only because nobody looked at it closely is not a sign that was chosen.***
+Three glyphs failed the moment the test was stated.
+
+***A category that is structurally empty for some readers is a category that is hiding another one.***
+📤 with no receiver was not a small edge case; it was 🕝 wearing the wrong name.
+
+***Checking that a host has a feature is half the check. The other half is how long it lives.***
