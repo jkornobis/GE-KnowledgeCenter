@@ -62,6 +62,8 @@ The **Auditorium / Note Picker** (ADR-197) is the canonical example of the third
 ## Relationship to existing surfaces
 Auditorium and Program are already "show" surfaces — numbered, ranked (descending), actionable. This generalizes that posture to *every* decision and result. The **Composer-authors invariant** is the *why*; this is *how it looks*.
 
+**And WHICH surface carries a thing at all is `protocols/presentation-surfaces.md`** (added 2026-09-08) — the message carries the decision, a `.md` page carries the explanation, a table carries data with more than two dimensions. **That page also holds this estate's fallback:** where no rule of ours reaches a case, defer to **Diátaxis**, named by the Composer for the question these rules leave most open — *what shape a document should take*. **This page is not the fallback's superior or its subordinate: where our rules speak they win, and the fallback is for silence rather than for disagreement.**
+
 ## Per-Composer overrides — the Score Key
 
 ⚠️ **One thing on this page is not transposable, and this section used to imply it was.** Which
