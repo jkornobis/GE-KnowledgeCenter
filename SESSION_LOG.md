@@ -937,78 +937,27 @@ render defines its own and says so rather than borrowing authority from numbers 
 
 ---
 
-## Session 2026-09-07 — coda: the Workshop answered, and the graph under the day was stale
+## Session 2026-09-07 — coda: the Workshop answered, and the graph under the day was stale  *(compacted 2026-09-08)*
 
-*Appended at 22:35 to the entry above, not folded into it. The session continued past its own
-checkpoint and three things changed after it was written.*
+**Full text: commit `7f45e4b`.** Compacted because the subject is closed and its numbers have moved
+twice since — keeping them here would make this log a source of stale measurements, which is the
+exact defect the entry was about.
 
-**The Workshop answered both questions, and one answer invalidated a number in this log.**
+**What it recorded.** The Workshop answered `#12` — `musicians` is a closed set by design (ADR-200),
+so the thirteenth-musician form of the star question dies; a fourth layer is structurally ordinary,
+so only the Composer's decision remains, and it is still open. `#13` ruled *the page is the
+connection*. `GE-Workshop#11` and `agile-watcher#62` both closed: section 4 landed on all three
+estates.
 
-**`GE-Workshop#12` — `musicians` is a closed set by design** (ADR-200: *exactly twelve, never
-invent, never rename, never substitute*), so the thirteenth-musician form of the star question dies
-cleanly. **But a fourth layer is structurally ordinary here** — `movements` already sits outside
-`layers` with its own edge vocabulary — so the schema objection is gone and only the Composer's
-decision remains. **And they measured the absence at their end: 5 nodes name him, 0 are him,
-consistently across five bodies written months apart. The absence is authored, not lost.**
+**And the finding that outlived it: the graph this library held was twelve days stale**, so every
+measurement in the entry above it was made on a dead copy. The conclusion survived; two headline
+numbers did not. **The figures written here are themselves superseded — re-derive with
+`add_star.mjs`, never quote this entry.** The permanent answer is `check_corpus_freshness.mjs`,
+built the next morning.
 
-**`GE-Workshop#13` — the Composer ruled A: the page is the connection, the protocol is left alone.**
-Their argument is better than the one I filed: `B` is *write the rule more firmly*, and this estate
-ran that experiment three times in twenty-four hours on the buttons rule and lost every time. **A
-case in a list is only reachable by a session that already noticed it had a gap** — which is the
-failure one level up, relocated rather than escaped. They recorded the countable form for whenever
-it returns: *a comparison that ranks candidates before requirements are written refuses to rank.*
-
-**And the fact I had not checked: the graph this library holds was twelve days stale.**
-
-```
-here    2026-08-26   33 principles · 59 protocols · 540 edges
-source  2026-09-07   35 principles · 59 protocols · 552 edges
-```
-
-**Every measurement in the entry above was made on it.** Refreshed, everything re-derived:
-
-```
-belt              27 -> 29        the two new principles are chairless
-THE CORONA        20 -> 22
-SPACETIME + two    7 ->  7        unchanged
-the star         4.9% rank 6  ->  5.5% RANK 3 of 119
-most central     Software Architect 6.2%  ->  Episteme vs. doxa 6.6%
-```
-
-**The conclusion survives and two of its headline numbers do not.** There is still no black hole and
-the centre still decentralises. But *"rank 6, behind five bodies"* is **rank 3**, and the most
-central body in the corpus is not the one named above. **The Agile Facilitator is still fifth**, so
-the declared-versus-measured ruling is untouched. `orrery` was chosen from a drawing missing **The
-Ugly Duckling** — the principle the Composer named himself — and **Greenfield Reset**.
-
-**The Composer had already named this population from the other side, and nobody connected it.** The
-seventh protocol family was named **THE BATON** today (ADR-333): the 13 protocols formerly filed as
-*Session & Interface*, on the argument that *all thirteen are operated by the Composer and not one
-fires on its own — Session & Interface named a surface; these name a hand.* **That is THE CORONA
-reached from authorship rather than from measurement**, on the same day, in two repositories, by two
-instances neither of which knew the other was doing it.
-
-**And the rename would have failed silently.** `render_solar.mjs` hardcodes 13 sector names; with the
-corpus renaming one, all 13 Baton bodies would have drawn in the wrong direction with no error in
-the gates, the output, or the picture. Sector coverage is now checked in both directions.
-
-### Presentation, which is where the Composer asked the focus to go
-
-**`GE-Workshop#11` is closed: the Tower read section 4 and adopted the three acts** — *admit,
-record, tell* — and `agile-watcher#62` closed the same way at 22:26. **Both broadcasts landed.**
-
-**One thing was raised to the Composer and is unresolved:** the Composer Key on this machine still
-carries the earlier presentation clauses — Restitution, the buttons rule, the three-part task form,
-the Eisenhower close-out. **They are corollaries of section 4 rather than rivals**, but the Key is
-the copy that loads before the first token, and it is his to change.
-
-### The correction this coda owes its own subject
-
-**This session told its errors out loud repeatedly** — a mangled comment that changed nothing for
-him, a symlink misread, a scalar that would not reproduce. **Section 4 says an error is fixed in the
-record and said in the message only when it changes a decision he has taken or is about to take.**
-Two of those three qualified. **One did not, and was narrated anyway** — on the same day the rule
-was written here, by the instance that wrote it.
+**Also here:** THE CORONA and **The Baton** were the same population named from two ends on one day
+by two instances, neither aware of the other. And a corpus rename would have drawn 13 bodies in the
+wrong direction with no error anywhere — sector coverage is now checked both ways.
 
 ---
 
@@ -1293,3 +1242,95 @@ a plausible defect it does not have, in the very page naming the framework that 
 checkable. **The fallback earned its place by catching the page that named it.**
 
 ***The value was the check, not the verdict.***
+
+## Session 2026-09-08 — night: the camera, and the chair I had been skipping
+
+*Fourth entry for this date. Appended.*
+
+**The Composer opened the vault, looked at the meta-mandala, and stopped it.** *"You didn't
+understand my wish about meta-mandala, so no more work on that drawing in obsidian until I say so."*
+Recorded on `#10` rather than remembered — scoped to the Obsidian canvas, and it names the condition
+for restarting: **ask him what the mandala is FOR, before anything is drawn again.**
+
+### The behaviour he actually wanted described
+
+He pointed at **NASA's Eyes on the Solar System** and asked what of it already exists in the
+Workshop's mandala review page. **Its selection loop is there almost exactly; its camera and its
+clock are not there at all.**
+
+Eyes is two ideas and everything else follows: **a camera bound to a target** — the view belongs to
+an object, not to a viewport — and **the transit**, where clicking travels rather than cuts, so you
+see the distance you crossed and never lose your bearings. A third is easy to miss: **approaching
+changes what is drawn, not only how large it is.**
+
+**The finding: the page's own description promises what it does not do.** `review.mdx` reads *"one
+object, read at whatever distance you choose"*, and there is no way to change distance. **And the
+camera is already in their building** — `d3-zoom` sits vendored beside the review assets, loaded by
+`grand-ensemble.html` and not by this page. That page has pan and zoom **and still no fly-to**. The
+transit is missing on both surfaces, and it is the piece that carries the meaning.
+
+**The fork is real and it is his:** the camera moves and the mandala never does — a map, which can be
+memorised — or the mandala re-centres on what you pick, which is the ride-along and burns the
+memorised map on every click. Eyes composes them as default plus a reversible mode. Filed whole as
+`GE-Workshop#61`.
+
+### Where a dot goes — the study, now shared method
+
+`method/graph-layout.md`, merged in **PR #39**. Three answers to one question — what decides a
+node's position — and the discovery that **this library's mandalas have been *semantic substrates*
+since they were first drawn** (Shneiderman and Aris, 2006) and nobody had the name. The name brings
+prior art and a lesson never applied: **the substrate is always paired with a control on LINK
+visibility, because the clutter is in the edges rather than the nodes.** Our surfaces filter edge
+*types* and have never offered a control on edge *quantity*.
+
+⚠️ **And the warning that now travels with every force drawing:** distance in a force-directed
+layout measures nothing, and every viewer reads it as similarity regardless. **The drawing gives no
+sign.** That is an argument for authored positions whenever a corpus is small enough to author, and
+it is not aesthetic.
+
+**Three dimensions buy capacity, never clarity** — Ware and Franck's +200% readable graph size with
+motion and stereo together, quoted with the same work's longer decision times and with occlusion,
+which no setting removes. **A third axis earns its place by carrying an encoding, never by existing.**
+
+### What is installed on the vault, measured rather than looked up
+
+Six plugins, all enabled. **3D Graph v1.0.5 carries Three.js, WebGL, `3d-force-graph` and
+`d3-force-3d`** — read off the bundle on disk after a web summary claimed D3. **Juggl 1.5.0 is
+Cytoscape**: flat. So the vault holds **two graph plugins with opposite engines answering opposite
+questions**, and the 3D one has never been configured. 240 notes, 2 canvases.
+
+### The chair I had been skipping
+
+**The Composer set the division of labour:** *"I use you like the initial researcher; so Workshop,
+who's in charge of documentation, will be in charge of implementation."* Written into clause 1 of
+this instance's floor, **PR #40**.
+
+**Why it needed writing.** The clause already said *issue elsewhere, then stop* — which constrains
+**where** I act and says nothing about **what shape** the work takes. Read alone its honest
+interpretation is still *propose the change, politely*. **A proposal that arrives as a patch has
+skipped a chair.**
+
+### Two defects, and one is a tool that fails by answering
+
+**The variants page carried a star figure from the stale graph** — *"4.9% of shortest paths, rank
+6"*, against today's 5.7% rank 2, or 9.1% rank 1 on the belt binding. The 2026-09-07 refresh
+regenerated every projection and stripped the frozen figures out of `render_solar.mjs`, and missed
+this one because **an HTML review page was not thought of as a thing that carries measurements.**
+**Third appearance of one defect — a value copied out of a moving source and then trusted** — so it
+was fixed by *removing* the number, not updating it. PR #41.
+
+⚠️ **And `grep` returned 0 for every pattern on a 173 KB UTF-8 file, silently.** The file has a
+39,000-character line; the tool classified it as binary and, with `-o`, reported nothing rather than
+`binary file matches`. **Two readings were made from that zero before it was caught** — the second
+only because a `tail` of the same file plainly showed the word the count said was absent. `grep -a`
+is the fix. **The lesson is the shape, not the flag: a search that finds nothing and a search that
+refuses to look are the same output.** Any zero from a search over an unfamiliar file is confirmed
+by a positive control before it is believed.
+
+### Open, and none of it is mine to close
+
+`GE-Workshop#61` waits on the Composer's A/B ruling. `#8` waits on the Corona treatment and the
+palette. `#2` waits on seven movement verdicts. `#22` waits on GitHub Support. `#38` — four how-to
+pages in eighty-four, no tutorial — waits on whether this library should serve *doing*.
+
+---
