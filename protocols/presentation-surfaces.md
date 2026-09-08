@@ -72,10 +72,36 @@ and it explicitly does not impose an implementation.
 estate's, decided by its Composer, and a general framework cannot know what a Score Key says. **Reach
 for Diátaxis when there is no rule, not when there is one you dislike.**
 
-**And one thing it will tell you about this library, which is worth knowing before it is used:** most
-pages here are **explanation** — why a thing is the way it is — laid out as **reference**. That is the
-most common failure Diátaxis names, and finding it stated by an outside framework rather than by an
-instance is precisely why a fallback is named at all.
+### The library measured against it, 2026-09-08
+
+**This section replaced an assertion.** It said *"most pages here are explanation laid out as
+reference"* — the failure Diátaxis is best known for naming. **It was written without measuring, and
+the measurement does not support it.** Eighty-four pages, layout counted mechanically as the prose
+share of each page's non-heading lines, kind assigned by rule from the page's own `type` and subject:
+
+```
+kind \ layout      explanation-shaped   mixed   reference-shaped   total
+explanation                        18      13                  5      36
+reference                           6       9                 29      44
+how-to                              2       1                  1       4
+```
+
+**Explanation-dressed-as-reference is five pages, not most** — `mandalas/protocols-layer.md`,
+`method/multiagent_canon_audit.md`, `tools/chair-levers.md`, `protocols/presentation.md`,
+`method/prior_art_bmad.md`. **And the opposite mismatch is slightly more common at six**: tool pages
+carrying a card's worth of facts in nine-tenths prose — `cowork`, `claude-desktop`,
+`figma-mcp-desktop`, `pdf-reading`, `wekan`, `forgejo`.
+
+⚠️ **What the audit did find is not a mis-shaping at all. It is that two of the four kinds barely
+exist here: four how-to pages out of eighty-four, and no tutorial.** Everything is *why* or *what*;
+almost nothing is *how to do a thing*. **Whether that is correct for a library read by instances
+rather than by people learning is an open question and not this page's** — it is filed rather than
+answered.
+
+**And the episode is the argument for naming a fallback, more than the finding would have been.** An
+instance asserted a plausible failure in its own library, in a page about presentation, and the
+framework it had just adopted is what made the claim checkable. **The value was the check, not the
+verdict.**
 
 ## What this protocol deliberately does NOT do
 
