@@ -62,16 +62,27 @@ date that can be named.
 
 | Chair | Candidate movement | Movement-side, dated | Chair-side | Verdict |
 |---|---|---|---|---|
-| **Agile Facilitator** | Agile | **2001** — the [Manifesto](https://agilemanifesto.org/); the [Scrum Guide](https://scrumguides.org/)'s Scrum Master is defined as a facilitator, not a manager | routing, interpreting intention, synthesising — the chair *is* facilitation | |
-| **Product Owner** | Agile | **[Scrum Guide](https://scrumguides.org/)** — *Product Owner* is a named Scrum role, not a general title | the chair carries the name unchanged | |
-| **Reliability Engineer** | SRE | **2003** — the role named at Google by Ben Treynor; the [SRE book](https://sre.google/sre-book/introduction/), 2016 | error budgets, toil, the operability of what ships | |
-| **Software Engineer** | Software craft | **2009** — the [Manifesto for Software Craftsmanship](https://manifesto.softwarecraftsmanship.org/) | craft over completion; the chair's whole register | |
+| **Agile Facilitator** | Agile | **2001** — the [Manifesto](https://agilemanifesto.org/); the [Scrum Guide](https://scrumguides.org/)'s Scrum Master is defined as a facilitator, not a manager | routing, interpreting intention, synthesising — the chair *is* facilitation | **CONFIRMED** |
+| **Product Owner** | Agile | **[Scrum Guide](https://scrumguides.org/)** — *Product Owner* is a named Scrum role, not a general title | the chair carries the name unchanged | **CONFIRMED** |
+| **Reliability Engineer** | SRE | **2003** — the role named at Google by Ben Treynor; the [SRE book](https://sre.google/sre-book/introduction/), 2016 | error budgets, toil, the operability of what ships | *no verdict — see below* |
+| **Software Engineer** | Software craft | **2009** — the [Manifesto for Software Craftsmanship](https://manifesto.softwarecraftsmanship.org/) | craft over completion; the chair's whole register | **CONFIRMED** |
 | **Design Engineer** | Design systems | already argued in `mandalas/movements-layer.md` with dated evidence on both sides | design↔code | **argued** |
 | **UX Designer** | Design systems | as above | design & UX | **argued** |
-| **Software Architect** | Contract-first API design | the [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) lineage — the contract precedes the implementation | boundaries and their agreements | |
+| **Software Architect** | Contract-first API design | the [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) lineage — the contract precedes the implementation | boundaries and their agreements | **REJECTED — too narrow** |
 
-**The verdict column is empty on purpose.** It is the Composer's, and it is the whole reason this
-table exists in this shape.
+**Ruled by the Composer, 2026-09-08.** Three confirmed, one rejected, one left without a verdict —
+and the shape of the answer is more interesting than the count.
+
+**`Software Architect ↔ contract-first API design` was REJECTED as too narrow**, and the reason is a
+sizing rule the rest of this page did not have: **contract-first is a practice, not a movement the
+size of Agile or SRE.** The chair is bigger than its API face. Evidence being dated on both sides
+makes a candidate *admissible*; it does not make the two things the same kind of object. Any future
+row has to pass that test as well.
+
+⚠️ **`Reliability Engineer ↔ SRE` was not selected in the pass that confirmed the other three, and
+it is recorded as unruled rather than rejected.** It is the best-dated row on the page — named at
+Google in 2003, booked in 2016 — so an omission is more likely than a judgement, and guessing which
+would be this library writing a verdict it was not given. **It is re-asked, not assumed.**
 
 ## The two that are contested, and the contest is the finding
 
@@ -87,6 +98,15 @@ unresolved direction.**
 
 ⚠️ **Neither is weak evidence. Both are two pieces of good evidence disagreeing**, which is a
 different thing and should not be resolved by picking the tidier one.
+
+**Ruled by the Composer, 2026-09-08: they SPLIT. Agile Auditor → Lean, QA Engineer → Agile.**
+
+**And the ruling refuses the premise both rows shared.** The page presented them as *the same shape,
+the same unresolved direction* — one question asked twice. They are not. **The Auditor's method is
+go-and-see, which is Lean's** whatever it is auditing; **QA's practices in this estate are Agile's**,
+whatever their Lean ancestry. The chairs sit at different points on a lineage the graph already
+records as `agile succeeds lean`, and treating them as a pair was the error that made the contest
+look unresolvable.
 
 ## The three chairs the twelve movements cannot reach
 
