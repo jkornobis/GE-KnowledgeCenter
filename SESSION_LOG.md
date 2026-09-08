@@ -1009,3 +1009,112 @@ him, a symlink misread, a scalar that would not reproduce. **Section 4 says an e
 record and said in the message only when it changes a decision he has taken or is about to take.**
 Two of those three qualified. **One did not, and was narrated anyway** — on the same day the rule
 was written here, by the instance that wrote it.
+
+---
+
+## Session 2026-09-08 — the morning the copy stopped being able to lie quietly
+
+*New Day, read from the trackers rather than from context. Six merges. Appended; nothing above
+touched.*
+
+**It opened by finding two things this repository was asserting and the machine had made false.**
+
+**The floor named symlinks that no longer exist.** The Composer ruled `~/.config/forgejo-api.env`
+and `wekan-api.env` deleted; the Tower executed at 23:06, twelve hours after this instance had
+posted a comment on their issue naming that exact dependency. **A stale *resident* clause is worse
+than a stale fetched one** — nothing re-reads it against the machine. The rule did not change; what
+changed is that mis-signing used to be silent and now fails loudly, which was the ruling's argument.
+
+**And `live: false` was never real.** The Workshop answered overnight: **the field was removed from
+the corpus on 2026-08-29**, three days after the copy this library was holding. So yesterday's
+cross-tabulation measured a phantom, and the question filed about what the field meant has an
+answer — *it means nothing, it is not there.* The Corona/Spacetime reading is untouched; it never
+rested on the flag. The withdrawal is kept in place on `mandalas/movements-layer.md` rather than
+deleted, because the failure is the readable part.
+
+### The instrument that closes the class
+
+`check_corpus_freshness.mjs`. **Report-only, refresh opt-in, and the corpus's address is an argument
+rather than a line in the file** — this library carries no estate's location, so `--source=` or
+`GE_CORPUS_GRAPH`, token via `GE_CORPUS_TOKEN`, never printed. Unconfigured it says so and exits 0;
+so does an unreachable source. **A check that goes red on another repository's ordinary commit is
+one its operator learns to ignore.**
+
+**Four comparisons, each a failure this estate has actually had:** counts, membership, **vocabulary**
+— *a rename is worse than an addition, because it is data you have and it is wrong* — and **fields**,
+which is the `live` case and the one nothing else could see.
+
+**Verified by replaying the failure rather than by asserting the design.** Yesterday's copy against
+today's corpus reports all three of yesterday's defects, by name.
+
+**Then its first live run found the copy stale again, twelve hours after the last refresh.** The
+Reduction had been registered as protocol #32 overnight.
+
+```
+belt      29 -> 30        Corona   22 -> 23
+the star  5.5% rank 3  ->  5.7% RANK 2 of 120
+```
+
+**And that produced a finding nobody went looking for: the star has climbed rank 6 → 3 → 2 across
+three refreshes in a day, and it is not drift.** Every body added in that window is one the Composer
+operates. **The thing the graph does not contain is growing, and faster than the rest of the
+corpus.** Reported to `GE-Workshop#12`, where the decision sits.
+
+### The movements layer, and a ruling that inverted the finding
+
+`#2` asked for the eleven undrawn movement↔chair borders. **Its own remedy had expired**: it said an
+instance could record the absence in `graph/grand_ensemble.json`, and that file is a copy of a
+derived artifact — an edit would be inventing evidence, and since this morning it would also report
+as drift. **The remedy moved to `GE-Workshop#35`; the finding did not.**
+
+**The half an instance may do was done: `mandalas/movements-candidates.md`.** The bar was **a date on
+both sides or it is not a candidate** — a resemblance is not evidence, because every chair resembles
+every movement a little. **Seven cleared it** with an empty verdict column. **Two are contested
+between Lean and Agile with good evidence pulling both ways**, left contested on purpose: picking the
+tidier answer would have destroyed the finding.
+
+**Three chairs could not be reached at all** — Accessibility Specialist, Content Designer, User
+Researcher — each with a real dated lineage, none of the three among the twelve movements.
+
+⚠️ **The Composer's ruling inverted what that means: the layer is the orchestra's, and it is
+incomplete.** Not his own lineage. **So they are not three unreachable chairs — they are three
+movements the layer does not have**, candidates 13, 14 and 15, and the absence at the Workshop is a
+`gap` in the strict sense rather than `empty-by-design`.
+
+### The Corona band, and a defect closed at its third occurrence
+
+Three treatments under `--corona=`: **ring** — the built default, and it reads as a *necklace* of
+equal beads, with a dotted ellipse drawing an edge the corpus does not have; **cloud** — radius
+carries degree, no ellipse, depth instead of a list; **named** — the cloud plus every body named down
+the right margin, because **the Corona is the one population whose membership IS the finding** and
+twenty-three anonymous dots withhold exactly what was argued. **No randomness: the scatter is a hash
+of the index, so every run draws the same picture.**
+
+**And every measured figure came out of the drawing.** It carried *"4.9% of paths, rank 6"* in its
+legend, tooltip and header while the true standing was 5.7% at rank 2.
+
+```
+the `live` field       deleted upstream, read here for ten days
+`Session & Interface`  renamed upstream, hardcoded in the renderer
+"4.9%, rank 6"         frozen into the picture it describes
+```
+
+**One shape three times in two days: a value copied out of a moving source and then trusted.** The
+qualitative claim stays — *"fifth, not first"* is the finding and the decimal never was.
+
+### Corrections that became protocol
+
+***Text bound for a forge goes through a quoted heredoc, never a double-quoted string.*** Backticks
+in one are run as commands and substituted with the empty output of a failure, so the artifact leaves
+correct and arrives wrong with no error anywhere. **Second occurrence in twenty-four hours, both
+published** — a ruling that read *"** is the base**"* and a PR body that lost every code span. Now in
+the floor, because a wording proved insufficient once already.
+
+***An issue's remedy can expire while its finding stands.*** `#2` proposed an action that ownership
+later made impossible. The finding was untouched and only the address of the fix had moved.
+
+### Open on the stand
+
+**Nothing is `do now`.** Every open item is a ruling of the Composer's or sits with another instance
+— the Corona treatment, seven movement verdicts, the Composer node, the Key against §4, the Support
+ticket; and at the other ends, `jkosvr-tower#18` scheduling and `GE-Workshop#35`.
