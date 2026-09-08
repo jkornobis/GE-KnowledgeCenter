@@ -86,6 +86,7 @@
             "disagreementhandling",
             "chamberechoantiphony",
             "minimumduet",
+            "reduction",
             "canonicalduets"
           ],
           "enacted": true
@@ -117,6 +118,7 @@
           "boundaryWhy": null,
           "yang": [
             "multilingualcomposer",
+            "reduction",
             "composerkey"
           ],
           "enacted": true
@@ -165,6 +167,7 @@
           "groundedKind": "gap",
           "boundaryWhy": null,
           "yang": [
+            "reduction",
             "makeitso",
             "taskentry",
             "rule0gate"
@@ -309,7 +312,7 @@
           "layer": "principles",
           "doc": "project/principles_candidate.md#greenfieldreset",
           "icon": "layers_clear",
-          "iconStatus": "proposed",
+          "iconStatus": "ratified",
           "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": "gap",
@@ -674,6 +677,7 @@
           "groundedKind": null,
           "boundaryWhy": null,
           "yang": [
+            "runtimeruleadherencespotcheck",
             "toolfailurewatch"
           ],
           "enacted": true
@@ -758,9 +762,9 @@
           "yang": [
             "independentverification",
             "runtimeruleadherencespotcheck",
+            "canonicalduets",
             "capacitycheck",
-            "chairreview",
-            "canonicalduets"
+            "chairreview"
           ],
           "enacted": true
         },
@@ -1260,7 +1264,7 @@
           "layer": "principles",
           "doc": "project/principles_candidate.md#uglyduckling",
           "icon": "preview",
-          "iconStatus": "proposed",
+          "iconStatus": "ratified",
           "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": "gap",
@@ -3252,7 +3256,7 @@
           "layer": "protocols",
           "doc": "project/protocol_warrant_map.md:47",
           "icon": "select_all",
-          "iconStatus": "proposed",
+          "iconStatus": "ratified",
           "iconFrom": "project/icon_registry.md"
         },
         {
@@ -3270,7 +3274,25 @@
           "layer": "protocols",
           "doc": "project/protocol_proposal_task_entry.md:1",
           "icon": "door_open",
-          "iconStatus": "proposed",
+          "iconStatus": "ratified",
+          "iconFrom": "project/icon_registry.md"
+        },
+        {
+          "id": "protocols:reduction",
+          "name": "The Reduction",
+          "family": "Decision & Escalation",
+          "yang": "the three chairs that decide what reaches the Composer at all, before a message exists — **Product Owner** ranks by impact and cuts the most, **Content Designer** gives each surviving action one name reused verbatim, **Agile Facilitator** holds the decision/record split; everything considered and dropped goes to the record, recoverable",
+          "seed": "the score is reduced to what two hands can play, and what is cut is written down",
+          "definedAt": "`brain/orchestra_decisions_log.md:ADR-338`",
+          "sources": [],
+          "firstName": "The Reduction",
+          "lastName": "Decision & Escalation",
+          "title": "the score is reduced to what two hands can play, and what is cut is written down",
+          "familyDoc": "project/protocols_mandala_source.md#decision--escalation",
+          "layer": "protocols",
+          "doc": "brain/orchestra_decisions_log.md:ADR-338",
+          "icon": "compress",
+          "iconStatus": "ratified",
           "iconFrom": "project/icon_registry.md"
         },
         {
@@ -5736,6 +5758,18 @@
       "kin": "partner"
     },
     {
+      "from": "independentverification",
+      "to": "cobblerschildren",
+      "kind": "warrant",
+      "status": "asserted",
+      "why": "Strongest warrant in the set — three independent principles (`project/protocol_warrant_map.md`)",
+      "a": "protocols:independentverification",
+      "b": "principles:cobblerschildren",
+      "id": "cross:cobblerschildren+independentverification:warrant",
+      "union": "Learning — Quality & Verification",
+      "kin": "partner"
+    },
+    {
       "from": "disagreementhandling",
       "to": "dmoskratos",
       "kind": "warrant",
@@ -5901,6 +5935,30 @@
       "b": "principles:ndt",
       "id": "cross:ndt+risktierreask:warrant",
       "union": "Quality & Verification — Safety",
+      "kin": "partner"
+    },
+    {
+      "from": "runtimeruleadherencespotcheck",
+      "to": "cobblerschildren",
+      "kind": "warrant",
+      "status": "asserted",
+      "why": "\"A rule not mechanically re-emitted is a wish\" (`project/protocol_warrant_map.md`)",
+      "a": "protocols:runtimeruleadherencespotcheck",
+      "b": "principles:cobblerschildren",
+      "id": "cross:cobblerschildren+runtimeruleadherencespotcheck:warrant",
+      "union": "Learning — Quality & Verification",
+      "kin": "partner"
+    },
+    {
+      "from": "runtimeruleadherencespotcheck",
+      "to": "professionalmantra",
+      "kind": "warrant",
+      "status": "asserted",
+      "why": "\"A rule not mechanically re-emitted is a wish\" (`project/protocol_warrant_map.md`)",
+      "a": "protocols:runtimeruleadherencespotcheck",
+      "b": "principles:professionalmantra",
+      "id": "cross:professionalmantra+runtimeruleadherencespotcheck:warrant",
+      "union": "Learning — Quality & Verification",
       "kin": "partner"
     },
     {
@@ -6096,6 +6154,18 @@
       "kin": "partner"
     },
     {
+      "from": "canonicalduets",
+      "to": "cobblerschildren",
+      "kind": "warrant",
+      "status": "earned",
+      "why": "*\"some pairs are load-bearing\"* — and this is **not** thin, though it was written as thin an hour earlier on the strength of a 2026-07-27 verdict nobody had re-run. `Dèmos Kratos` now carries a **Corollary — Minimum Duet**: *\"no output reaches the Composer from a single voice unless that voice was explicitly asked for solo. A lone persona agreeing with itself is not the orchestra checking itself.\"* A principle requiring a second voice is exactly what the old finding said did not exist (`project/protocol_warrant_map.md`)",
+      "a": "protocols:canonicalduets",
+      "b": "principles:cobblerschildren",
+      "id": "cross:canonicalduets+cobblerschildren:warrant",
+      "union": "Learning — Roster & Ensemble",
+      "kin": "partner"
+    },
+    {
       "from": "sequentialhandoffs",
       "to": "harmonyprinciple",
       "kind": "warrant",
@@ -6168,6 +6238,42 @@
       "kin": "partner"
     },
     {
+      "from": "reduction",
+      "to": "dmoskratos",
+      "kind": "warrant",
+      "status": "asserted",
+      "why": "Recorded in `project/protocol_warrant_map.md`, which carries no note for this protocol.",
+      "a": "protocols:reduction",
+      "b": "principles:dmoskratos",
+      "id": "cross:dmoskratos+reduction:warrant",
+      "union": "Decision & Escalation — Governance",
+      "kin": "partner"
+    },
+    {
+      "from": "reduction",
+      "to": "composerprinciple",
+      "kind": "warrant",
+      "status": "asserted",
+      "why": "Recorded in `project/protocol_warrant_map.md`, which carries no note for this protocol.",
+      "a": "protocols:reduction",
+      "b": "principles:composerprinciple",
+      "id": "cross:composerprinciple+reduction:warrant",
+      "union": "Decision & Escalation — Governance",
+      "kin": "partner"
+    },
+    {
+      "from": "reduction",
+      "to": "achoiceofferedisabug",
+      "kind": "warrant",
+      "status": "asserted",
+      "why": "Recorded in `project/protocol_warrant_map.md`, which carries no note for this protocol.",
+      "a": "protocols:reduction",
+      "b": "principles:achoiceofferedisabug",
+      "id": "cross:achoiceofferedisabug+reduction:warrant",
+      "union": "Decision & Escalation — Governance",
+      "kin": "partner"
+    },
+    {
       "from": "artifactpipeline",
       "to": "agilefacilitatorisanagentnotthecomposer",
       "kind": "warrant",
@@ -6213,18 +6319,6 @@
       "b": "principles:howrulesactuallyholdstructureoverprose",
       "id": "cross:howrulesactuallyholdstructureoverprose+independentverification:warrant",
       "union": "Governance — Quality & Verification",
-      "kin": "partner"
-    },
-    {
-      "from": "independentverification",
-      "to": "cobblerschildren",
-      "kind": "warrant",
-      "status": "asserted",
-      "why": "Strongest warrant in the set — three independent principles (`project/protocol_warrant_map.md`)",
-      "a": "protocols:independentverification",
-      "b": "principles:cobblerschildren",
-      "id": "cross:cobblerschildren+independentverification:warrant",
-      "union": "Learning — Quality & Verification",
       "kin": "partner"
     },
     {
@@ -6309,18 +6403,6 @@
       "b": "principles:howrulesactuallyholdstructureoverprose",
       "id": "cross:howrulesactuallyholdstructureoverprose+runtimeruleadherencespotcheck:warrant",
       "union": "Governance — Quality & Verification",
-      "kin": "partner"
-    },
-    {
-      "from": "runtimeruleadherencespotcheck",
-      "to": "cobblerschildren",
-      "kind": "warrant",
-      "status": "asserted",
-      "why": "\"A rule not mechanically re-emitted is a wish\" (`project/protocol_warrant_map.md`)",
-      "a": "protocols:runtimeruleadherencespotcheck",
-      "b": "principles:cobblerschildren",
-      "id": "cross:cobblerschildren+runtimeruleadherencespotcheck:warrant",
-      "union": "Learning — Quality & Verification",
       "kin": "partner"
     },
     {
@@ -6825,18 +6907,6 @@
       "b": "principles:dmoskratos",
       "id": "cross:canonicalduets+dmoskratos:warrant",
       "union": "Governance — Roster & Ensemble",
-      "kin": "partner"
-    },
-    {
-      "from": "canonicalduets",
-      "to": "cobblerschildren",
-      "kind": "warrant",
-      "status": "asserted",
-      "why": "*\"some pairs are load-bearing\"* — and this is **not** thin, though it was written as thin an hour earlier on the strength of a 2026-07-27 verdict nobody had re-run. `Dèmos Kratos` now carries a **Corollary — Minimum Duet**: *\"no output reaches the Composer from a single voice unless that voice was explicitly asked for solo. A lone persona agreeing with itself is not the orchestra checking itself.\"* A principle requiring a second voice is exactly what the old finding said did not exist (`project/protocol_warrant_map.md`)",
-      "a": "protocols:canonicalduets",
-      "b": "principles:cobblerschildren",
-      "id": "cross:canonicalduets+cobblerschildren:warrant",
-      "union": "Learning — Roster & Ensemble",
       "kin": "partner"
     },
     {
