@@ -54,6 +54,12 @@ finding of mine about another estate's work travels as an issue; the text stays 
 the root; both exit non-zero on failure. **Neither reads the outside**: not one http address, not
 the `sources[].resource` fields. An external link is checked by hand or it is unchecked.
 
+**Any text bound for a forge, a page or a commit is written through a quoted heredoc — never a
+double-quoted shell string.** Backticks in one are run as commands and substituted with the empty
+output of a failure, so the artifact leaves correct and arrives wrong, with no error anywhere. Set
+2026-09-08 after it published two mangled bodies in twenty-four hours; twice is a pattern, and the
+defect is invisible at the point it happens.
+
 **A merge that adds a page adds its `index.md` row in the same breath.** That index states it is the
 only route in, so an unlisted page is not in the library.
 
