@@ -102,9 +102,21 @@ different thing and should not be resolved by picking the tidier one.
 the honest reading is not *these chairs have no movement* — it is **the movements layer is not a
 complete map of where the chairs come from**, and three chairs are the evidence.
 
-**That is a question for the Composer and not a defect to fix here.** The layer may be his own
-lineage rather than the orchestra's; if so, the absence is by design and belongs in `absences` with
-that reason, which is what `GE-Workshop#35` proposes recording.
+**Ruled by the Composer, 2026-09-08: the layer is the orchestra's, and it is incomplete.** Not his
+own lineage — it is meant to map where the chairs come from, and it is missing at least three.
+
+**So these three are not unreachable chairs. They are candidate movements the layer does not yet
+have**, and the absence recorded at `GE-Workshop#35` is a `gap` in the strict sense the corpus
+already uses: *an instrument not yet built, not an absent relation.*
+
+```
+candidate 13   WCAG / the accessibility standards lineage    1999 · 2008 · 2018
+candidate 14   content design as a named practice            from 2014
+candidate 15   contextual inquiry and design ethnography     from the late 1980s
+```
+
+**Adding them is the corpus's act and not this library's** — the movements layer is derived from a
+source another repository owns. Proposed there rather than written here.
 
 ## And five movements no craft evidence can reach
 
@@ -148,5 +160,6 @@ the roster is twelve and closed. That is not a defect either.
 12 movements 5 claimed · 1 contested (Lean) · 1 craft with no free seat (DevOps) · 5 aesthetic
 ```
 
-**Eleven borders were undrawn. Seven now have evidence, two have a question, and three have an
-answer that is about the list rather than about the chair.**
+**Eleven borders were undrawn. Seven now have evidence, two have a question, and three had an
+answer about the list rather than about the chair — which the Composer then ruled on: the list is
+short, and those three chairs are waiting for movements that do not exist yet.**
