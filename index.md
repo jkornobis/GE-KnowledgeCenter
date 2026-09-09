@@ -262,15 +262,22 @@ It records what was true when it was written, which is the whole of its value.
 
 ### Mandalas — the three layers and the borders between them
 
-**The model, and how each edge was earned.** Three rings — 33 principles, 59 protocols, 12 chairs —
-and three borders carrying 282 crossings between them: `warrant` (a protocol puts a principle into
-practice), `grounds` (a chair requires a principle), `enacts` (a chair puts a protocol into practice).
+**The model, and how each edge was earned.** Three rings — principles, protocols, and the twelve
+chairs — and three borders carrying the crossings between them: `warrant` (a protocol puts a
+principle into practice), `grounds` (a chair requires a principle), `enacts` (a chair puts a protocol
+into practice).
+
+⚠️ **The counts are deliberately not written here.** This paragraph said *33 principles, 59
+protocols, 282 crossings*; the corpus holds more of each, and it has moved twice in a fortnight.
+**Re-derive from `graph/grand_ensemble.json`**, which is regenerated mechanically and never
+hand-edited. The twelve chairs are the exception and are stated, because that number is fixed by
+invariant rather than by measurement.
 **Every edge quotes the sentence that earns it**, and every page opens by declaring the set it
 searched before it searched it.
 
 **A fourth ring has a page and no border.** `mandalas/movements-layer.md`, added 2026-09-02, covers
-the 12 cultural movements — the only layer in the graph with **0** of those 282 crossings touching
-it. The page argues one movement-to-chair border in prose and leaves eleven undrawn; none is in the
+the 12 cultural movements — **the only layer in the graph with 0 crossings touching it**, which is
+still true and is the one number on this subject worth stating, because it is the finding. The page argues one movement-to-chair border in prose and leaves eleven undrawn; none is in the
 graph yet. It is the first page in `mandalas/` written from outside this library.
 
 | Page | Covers | Serves | Published |
@@ -285,10 +292,13 @@ graph yet. It is the first page in `mandalas/` written from outside this library
 
 ### Graph — the model as data, for traversing rather than reading
 
-**The mandala pages are the reasoning; this is its result in machine-readable form.** 104 nodes
-across three rings, 251 within-layer edges, 282 crossings — every evidence-bearing edge carrying
-the sentence that earns it and a `status` saying how well it is held. Derived mechanically from
-the pages above and regenerated, never hand-edited.
+**The mandala pages are the reasoning; this is its result in machine-readable form.** Every
+evidence-bearing edge carries the sentence that earns it and a `status` saying how well it is held.
+Derived mechanically from the pages above and regenerated, never hand-edited.
+
+**Its node and edge counts are read from the file, not from this line.** They were written here as
+*104 nodes, 251 within-layer edges, 282 crossings* and were wrong on all three by the time anyone
+read them — the artifact is the authority on its own size.
 
 | Page | Covers | Serves | Published |
 |---|---|---|---|
