@@ -1,5 +1,5 @@
 ---
-type: Concept
+type: Method
 title: "The Figma method — how a design surface is actually played"
 description: "Eyes first and code second: the working loop for a design surface, what the eyes read in a structured file, and why text-only spatial reasoning collapses as a layout grows"
 status: draft
