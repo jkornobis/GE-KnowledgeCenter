@@ -40,6 +40,37 @@ second category exists at all.
 **A legend line sits under every table**, one line, the glyphs and their words, so the column reads
 without being learned.
 
+## When each category is worked — and it inverts the printed order
+
+**Ruled by the Composer, 2026-09-09:** *"new day means new tokens, best time of the GE to cleanup
+the recycle task before the do now and decide."*
+
+```text
+the order the table PRINTS   ⚡ do now · 👁️ judge · 📤 delegate · 🕝 postpone · ♻️ recycle
+the order a session WORKS    ♻️ recycle first, on a fresh window
+                             then ⚡ do now, then 👁️ judge
+```
+
+**A ranking says what matters. It does not say what a given hour is good for**, and those are
+different questions — this page answered only the first until today.
+
+**Recycle work is cheap in judgement and expensive in context.** Sweeps, dead references, stale
+citations: a long tail of small decisions, each trivial, that fills a window. **Deferred to the
+second half of a session it becomes unaffordable**, and a thing deferred for being unaffordable is
+deferred again — which is how a recycle list becomes permanent.
+
+**And a fresh window is when cleanup is safest.** A sweep done carelessly late in a long session is
+how a record gets deleted to satisfy a path check.
+
+⚠️ **Recycle first must not become recycle only.** A session that spends its fresh window on cleanup
+and reports a tidy backlog has done the cheapest work available and called it a day. **The rule is
+about order, not proportion.**
+
+*Measured 2026-09-09 at the Workshop end, which is where the ruling came from: a recycle pass run
+first took one repository's dead references from 55 to 35, six of them on the published site telling
+a visitor to read a file that does not exist. None of it needed the Composer, and all of it would
+have been unaffordable four hours later.*
+
 ## The two distinctions that are always collapsed
 
 **🕝 is not ♻️.** Recycle means *this has no live claim on attention*. **Postpone means the opposite —
