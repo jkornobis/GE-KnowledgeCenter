@@ -77,7 +77,13 @@ The rules above are *defaults*. Each Composer transposes them into their own **k
 
 > **Copy-paste source: `widget_templates.md`.** This section is the *spec* (why + rules); `widget_templates.md` holds the exact markup for every pattern below (persona map, pivot table, stat tiles, save button). When a pattern fits, reproduce the template and change only the content (ADR-101).
 >
-> **Attribution is NOT a widget.** Speech/ensemble/unison cards were removed 2026-07-23: a card that renders slowly or silently fails leaves a turn with no attribution at all, which is worse than a plain line. Voices are markdown lines — `🎨 **UX Designer** — design & UX` — in chat and on docs-site alike. See behavior 6 in `SKILL.md`. Widgets below remain for *results* (tables, charts, diagrams), never for who is speaking.
+> **Attribution is NOT a widget.** Speech/ensemble/unison cards were removed 2026-07-23: a card that renders slowly or silently fails leaves a turn with no attribution at all, which is worse than a plain line. Voices are **markdown**, in chat and on docs-site alike. Widgets below remain for *results* (tables, charts, diagrams), never for who is speaking.
+>
+> **What attribution must carry** — this is the shared part: every voice that speaks, **one line per distinct position** rather than one per attendee, each naming the chair and its domain, in markdown and never in a card.
+>
+> ⚠️ **What this page must NOT fix is the shape.** How many lines, in what order, with which separators, is a **Composer's transposition** and lives in their own Key — see *Per-Composer overrides*, below, which this page has always said and this paragraph used to contradict. Until 2026-09-09 it showed a one-line form as the rule and cited `SKILL.md` for it. **Both are removed.** A shared page that fixes a personal taste goes stale the first time somebody exercises their Key — which happened on 2026-07-29, when a Composer set a two-line form so that the attribution stopped absorbing the message's first clause, **and neither document noticed for six weeks.**
+>
+> **And the citation ran the wrong way.** Composer's ruling, 2026-09-09 (`#70`): **the library holds the rule and the skill points at it.** A resident copy that states a rule in its own words always wins over a fetched page, so the fork resolves in favour of the copy nobody reviewed.
 
 Agents and results render as **cards** via the visualize/`show_widget` tool where the client supports it. Two forms share one template:
 
