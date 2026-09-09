@@ -26,6 +26,7 @@
  *     node map_pages.mjs                    the census, per layer and per tier
  *     node map_pages.mjs --page=start.md    the evidence for one page, line by line
  *     node map_pages.mjs --node="The Baton" which pages name one body
+ *     node map_pages.mjs --chair="UX Designer"   the reading index for one chair
  *     node map_pages.mjs --json             machine-readable
  */
 import { readFileSync, readdirSync, lstatSync } from "node:fs";
@@ -132,6 +133,72 @@ if (one) {
   for (const h of mine)
     console.log(`  ${h.tier === "strong" ? "STRONG" : "weak  "} ${String(h.count).padStart(2)}x  ${h.name}${h.ambiguous ? "  ⚠ ambiguous" : ""}\n         ${h.layer} · line ${h.lineNo}: ${h.line}`);
   if (!mine.length) console.log("  none — this page names nothing the corpus holds");
+  process.exit(0);
+}
+
+// ---- THE READING INDEX FOR ONE CHAIR, which is the thing this join was built for: the Composer,
+// 2026-09-08 — "Library is here to be a library, give book index to read when musicians in a chair
+// need it."
+//
+// Two routes, and the second is the one no hand-written index would have found. DIRECT is every
+// page that names the chair. BOUND is every principle and protocol the corpus ties to that chair,
+// and the pages that explain THOSE — a page can be owed to a chair without ever naming it.
+//
+// ⚠️ And the third list is the point: bodies bound to the chair that NO page explains. That is the
+// chair's own gap, derived rather than guessed, and it is per-chair rather than for the library as
+// a whole.
+const oneChair = arg("chair");
+if (oneChair) {
+  const chairNode = G.layers.musicians.nodes.find((n) => (n.name || n.id) === oneChair);
+  if (!chairNode) {
+    console.log(`no such chair: ${oneChair}`);
+    console.log(`   ${G.layers.musicians.nodes.map((n) => n.name || n.id).join(" · ")}`);
+    process.exit(0);
+  }
+  const id = chairNode.id;
+  const nameOf = new Map(nodes.map((n) => [n.id, n.name]));
+  const bound = new Map();                      // body id -> how it is tied
+  const tie = (a, b, k) => { if (a === id && b !== id) bound.set(b, k); if (b === id && a !== id) bound.set(a, k); };
+  for (const L of Object.values(G.layers)) for (const e of L.edges || []) tie(e.a, e.b, e.type || "edge");
+  for (const c of G.cross || []) tie(c.a, c.b, c.kind || "cross");
+
+  // Ranked by how often a page names the body, and TRUNCATED. A body "explained by forty pages" is
+  // not an index entry, it is the search result an index exists to replace — the first version of
+  // this printed exactly that and was unreadable.
+  // ⚠️ A CATALOGUE PAGE WINS EVERY RANKING AND EXPLAINS NOTHING. The four mandala pages enumerate
+  // the whole corpus, so they name every body and outrank the page actually about it. They are not
+  // excluded — a layer catalogue is a legitimate place to start — they are LABELLED, so a reader can
+  // see at a glance that the top hit is a list rather than an explanation.
+  const distinct = {};
+  for (const h of hits) if (h.tier === "strong") (distinct[h.page] = distinct[h.page] || new Set()).add(h.name);
+  const isCatalogue = (p) => (distinct[p]?.size || 0) >= 25;
+
+  const pagesFor = (nm, k = 3) => hits.filter((h) => h.name === nm && h.tier === "strong")
+    .sort((a, b) => b.count - a.count)
+    .map((h) => `${h.page} (${h.count})${isCatalogue(h.page) ? " [catalogue]" : ""}`).slice(0, k);
+
+  console.log(`${oneChair} — the reading index, derived\n`);
+  const direct = hits.filter((h) => h.name === oneChair && h.tier === "strong").sort((a, b) => b.count - a.count);
+  console.log(`DIRECT — ${direct.length} pages name this chair; the eight that name it most:`);
+  for (const h of direct.slice(0, 8)) console.log(`   ${String(h.count).padStart(3)}x  ${h.page}${isCatalogue(h.page) ? "  [catalogue]" : ""}`);
+
+  // ⚠️ Chair-to-chair edges are dropped. A chair tied to another chair is a working relation, not
+  // something to read — leaving them in put "Agile Facilitator, explained by 40 pages" at the top
+  // of every chair's index.
+  const chairIds = new Set(G.layers.musicians.nodes.map((n) => n.id));
+  const rows = [...bound].filter(([b]) => !chairIds.has(b))
+    .map(([b, k]) => ({ body: nameOf.get(b) || b, how: k, pages: pagesFor(nameOf.get(b) || b) }))
+    .filter((r) => !!r.body).sort((a, b) => b.pages.length - a.pages.length);
+  const explained = rows.filter((r) => r.pages.length);
+  console.log(`\nBOUND — ${rows.length} principles and protocols the corpus ties to this chair; ${explained.length} are explained somewhere`);
+  for (const r of explained)
+    console.log(`   ${r.body}  (${r.how})\n        ${r.pages.join("  ·  ")}`);
+
+  const orphan = rows.filter((r) => !r.pages.length);
+  console.log(`\n⚠️ THIS CHAIR'S GAP — ${orphan.length} bodies bound to it that no page explains`);
+  for (const r of orphan) console.log(`   ${r.body}  (${r.how})`);
+  console.log(`\n[catalogue] = a page that names 25+ bodies. It lists this one; it does not explain it.`);
+  console.log(`Derived, not authored. Check any row before acting on it:  node map_pages.mjs --page=<path>`);
   process.exit(0);
 }
 
