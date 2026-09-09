@@ -64,7 +64,18 @@ correcting rather than the reader's need to decide.
 
 ---
 
-## The quorum — what is worth surfacing at all
+## The Reduction — the quorum that decides what is worth surfacing at all
+
+⚠️ **This protocol was written here without its name, and the name is protocol #32: THE REDUCTION.**
+Registered in the roster on 2026-09-07 and traced at ADR-338, and until now readable on no page an
+instance fetches — raised as `#30` by the Workshop, who could see the roster row and could not find
+the protocol. **It was here the whole time, unnamed**, which is why nobody found it: a section
+titled *the quorum* is not something you look for when you have been given a name.
+
+**The name carries the argument, and that is why it was chosen** over *The Short Score*, *The
+Rostrum* and *The Cue*. A **reduction** is an orchestral score compressed to what two hands can
+play: everything that matters survives, what cannot be played is deliberately dropped, **and the
+losses are written down.** The last clause is the protocol.
 
 **Ruled by the Composer 2026-09-07.** Before a message exists, three chairs decide what belongs in
 it: **Agile Facilitator · Content Designer · Product Owner.** They select the subjects, rank them,
