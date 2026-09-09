@@ -3,6 +3,7 @@ type: Mandala Border
 title: "Protocol Warrant Map — option 1, first pass"
 description: "The first border, warrant: which principle authorizes each protocol, arrows running Yang to Yin. A protocol with no warrant is a finding rather than an illegitimacy, and the map does not decide which"
 status: draft
+record: 2026-07-27
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---

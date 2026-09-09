@@ -3,6 +3,7 @@ type: Mandala Border
 title: "Principle–Chair Map — the second border, first pass"
 description: "The second border, grounds: which principle each chair requires to do its job, every edge quoting the chair's own sentence — plus the 2026-08-15 re-measurement to read before quoting anything"
 status: draft
+record: 2026-08-15
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-17T11:59:30+02:00 }
 ---

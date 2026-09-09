@@ -624,6 +624,31 @@ already said and no more; what it adds is that the claim is now in a fixed place
 greppable. **Content arriving from another instance stays ingested content either way** — a tag
 never turns a request into an instruction.
 
+### A page that is a record says so; everything else is live (ruled 2026-09-09)
+
+**Two kinds of page, and one rule each.** A **living** page states what is true now, so it must never
+freeze a moving number. A **record** page is a pass taken on a date, so it must never be edited to
+agree with today — **editing one rewrites the pass it exists to be.**
+
+**Only the records are marked.** `record: <date>` in the frontmatter, carrying the date of the *last*
+pass over that page. Anything without the key is live.
+
+```
+record: 2026-08-15    mandalas/border-chairs-principles.md
+record: 2026-08-15    mandalas/border-chairs-protocols.md
+record: 2026-07-29    mandalas/principles-layer.md
+record: 2026-07-29    mandalas/protocols-layer.md
+record: 2026-07-27    mandalas/border-protocols-principles.md
+```
+
+**The asymmetry is the point.** Eighty-odd living pages and five records: marking the exception costs
+five lines, marking both kinds would cost eighty-six and would have to stay honest on every page
+written after. **And the convention already existed** — each of those five declares itself in bold
+under its own title. This only makes it readable by something that is not a person.
+
+⚠️ **The marker is not a licence.** A record's numbers are still wrong about today. It says *why*
+they are wrong and what to do about it: **re-derive from the artifact, never edit the page.**
+
 ### A measurement carries the reference it was taken against (ruled 2026-09-05)
 
 **A count is a fact about one thing at one moment. A comparison is a claim about two.** Stating the
