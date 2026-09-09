@@ -961,112 +961,25 @@ wrong direction with no error anywhere — sector coverage is now checked both w
 
 ---
 
-## Session 2026-09-08 — the morning the copy stopped being able to lie quietly
+## Session 2026-09-08 — the morning the copy stopped being able to lie quietly  *(compacted 2026-09-09)*
 
-*New Day, read from the trackers rather than from context. Six merges. Appended; nothing above
-touched.*
+**Full text: commit `4cd2064`.** Compacted because the subject closed the same day and the tool has
+since been superseded in scope by two more instruments built on the same argument.
 
-**It opened by finding two things this repository was asserting and the machine had made false.**
+**What it recorded.** The graph this library holds had gone stale twice in twenty-four hours, and
+every measurement taken on it was wrong in the same silent way. `check_corpus_freshness.mjs` was
+built as the permanent answer — report-only, opt-in refresh, exits 0 always, comparing counts,
+membership, vocabulary and field names. It was verified by replaying the 2026-09-07 failure and
+detecting all three defects: two added principles, the `Session & Interface` → `The Baton` rename,
+and a removed `live` field.
 
-**The floor named symlinks that no longer exist.** The Composer ruled `~/.config/forgejo-api.env`
-and `wekan-api.env` deleted; the Tower executed at 23:06, twelve hours after this instance had
-posted a comment on their issue naming that exact dependency. **A stale *resident* clause is worse
-than a stale fetched one** — nothing re-reads it against the machine. The rule did not change; what
-changed is that mis-signing used to be silent and now fails loudly, which was the ruling's argument.
+⚠️ **And the defect class it named outlived the tool: a value copied out of a moving source and then
+trusted.** It has since appeared in `render_solar.mjs`, in an HTML review page, in four places on
+`index.md` and in the index's own description of a checklist — and produced two further instruments,
+`check_frozen_counts.mjs` and the `record:` convention that lets a checker tell a living page from a
+dated pass. **The tool was the answer to one instance; the class needed a vocabulary.**
 
-**And `live: false` was never real.** The Workshop answered overnight: **the field was removed from
-the corpus on 2026-08-29**, three days after the copy this library was holding. So yesterday's
-cross-tabulation measured a phantom, and the question filed about what the field meant has an
-answer — *it means nothing, it is not there.* The Corona/Spacetime reading is untouched; it never
-rested on the flag. The withdrawal is kept in place on `mandalas/movements-layer.md` rather than
-deleted, because the failure is the readable part.
-
-### The instrument that closes the class
-
-`check_corpus_freshness.mjs`. **Report-only, refresh opt-in, and the corpus's address is an argument
-rather than a line in the file** — this library carries no estate's location, so `--source=` or
-`GE_CORPUS_GRAPH`, token via `GE_CORPUS_TOKEN`, never printed. Unconfigured it says so and exits 0;
-so does an unreachable source. **A check that goes red on another repository's ordinary commit is
-one its operator learns to ignore.**
-
-**Four comparisons, each a failure this estate has actually had:** counts, membership, **vocabulary**
-— *a rename is worse than an addition, because it is data you have and it is wrong* — and **fields**,
-which is the `live` case and the one nothing else could see.
-
-**Verified by replaying the failure rather than by asserting the design.** Yesterday's copy against
-today's corpus reports all three of yesterday's defects, by name.
-
-**Then its first live run found the copy stale again, twelve hours after the last refresh.** The
-Reduction had been registered as protocol #32 overnight.
-
-```
-belt      29 -> 30        Corona   22 -> 23
-the star  5.5% rank 3  ->  5.7% RANK 2 of 120
-```
-
-**And that produced a finding nobody went looking for: the star has climbed rank 6 → 3 → 2 across
-three refreshes in a day, and it is not drift.** Every body added in that window is one the Composer
-operates. **The thing the graph does not contain is growing, and faster than the rest of the
-corpus.** Reported to `GE-Workshop#12`, where the decision sits.
-
-### The movements layer, and a ruling that inverted the finding
-
-`#2` asked for the eleven undrawn movement↔chair borders. **Its own remedy had expired**: it said an
-instance could record the absence in `graph/grand_ensemble.json`, and that file is a copy of a
-derived artifact — an edit would be inventing evidence, and since this morning it would also report
-as drift. **The remedy moved to `GE-Workshop#35`; the finding did not.**
-
-**The half an instance may do was done: `mandalas/movements-candidates.md`.** The bar was **a date on
-both sides or it is not a candidate** — a resemblance is not evidence, because every chair resembles
-every movement a little. **Seven cleared it** with an empty verdict column. **Two are contested
-between Lean and Agile with good evidence pulling both ways**, left contested on purpose: picking the
-tidier answer would have destroyed the finding.
-
-**Three chairs could not be reached at all** — Accessibility Specialist, Content Designer, User
-Researcher — each with a real dated lineage, none of the three among the twelve movements.
-
-⚠️ **The Composer's ruling inverted what that means: the layer is the orchestra's, and it is
-incomplete.** Not his own lineage. **So they are not three unreachable chairs — they are three
-movements the layer does not have**, candidates 13, 14 and 15, and the absence at the Workshop is a
-`gap` in the strict sense rather than `empty-by-design`.
-
-### The Corona band, and a defect closed at its third occurrence
-
-Three treatments under `--corona=`: **ring** — the built default, and it reads as a *necklace* of
-equal beads, with a dotted ellipse drawing an edge the corpus does not have; **cloud** — radius
-carries degree, no ellipse, depth instead of a list; **named** — the cloud plus every body named down
-the right margin, because **the Corona is the one population whose membership IS the finding** and
-twenty-three anonymous dots withhold exactly what was argued. **No randomness: the scatter is a hash
-of the index, so every run draws the same picture.**
-
-**And every measured figure came out of the drawing.** It carried *"4.9% of paths, rank 6"* in its
-legend, tooltip and header while the true standing was 5.7% at rank 2.
-
-```
-the `live` field       deleted upstream, read here for ten days
-`Session & Interface`  renamed upstream, hardcoded in the renderer
-"4.9%, rank 6"         frozen into the picture it describes
-```
-
-**One shape three times in two days: a value copied out of a moving source and then trusted.** The
-qualitative claim stays — *"fifth, not first"* is the finding and the decimal never was.
-
-### Corrections that became protocol
-
-***Text bound for a forge goes through a quoted heredoc, never a double-quoted string.*** Backticks
-in one are run as commands and substituted with the empty output of a failure, so the artifact leaves
-correct and arrives wrong with no error anywhere. **Second occurrence in twenty-four hours, both
-published** — a ruling that read *"** is the base**"* and a PR body that lost every code span. Now in
-the floor, because a wording proved insufficient once already.
-
-***An issue's remedy can expire while its finding stands.*** `#2` proposed an action that ownership
-later made impossible. The finding was untouched and only the address of the fix had moved.
-
-### Open on the stand
-
-**Nothing is `do now`.** Every open item is a ruling of the Composer's or sits with another instance
-— the Corona treatment, seven movement verdicts, the Composer node, the Key against §4, the Support
-ticket; and at the other ends, `jkosvr-tower#18` scheduling and `GE-Workshop#35`.
+**Scheduling remains the Tower's** — `jkosvr-tower#18`, open.
 
 ---
 
@@ -1444,5 +1357,88 @@ members until the non-masons outnumbered the masons. **The craft left and the ce
 ⚠️ **This orchestra has every ingredient for that** — twelve chairs, seven protocol families, glyphs,
 mandalas, named triggers. **The test is only ever whether stone is still being cut. A protocol that
 has not changed an artifact in a month is regalia.**
+
+---
+
+## Session 2026-09-09 — End Day: the day the library learned to find itself, and audited its own floor
+
+*Second entry for this date. Appended. Twelve pull requests, all merged, all gates quoted.*
+
+### The join, and three defects in one instrument in one day
+
+**`map_pages.mjs`** — the page↔corpus join `#48` measured as missing, derived from prose rather than
+authored. **83 of 85 pages already named a body of the corpus**, so the join was latent and needed a
+script rather than eighty-seven hand-written tags.
+
+⚠️ **Three false-positive classes, and every one was found by reading the output rather than by
+designing it.** `Agile` matched inside `Agile Facilitator`; the same pair hard-wrapped across two
+lines left `Agile` alone at the end of one; and a stop-list meant to stop `Tell` matching half the
+library **manufactured six false absences** — `protocols/triggers.md` carries `## Tell / Tell me
+more` as its own heading. **The instrument reported eight unexplained bodies in the morning. One was
+real, six were mine, and the last is ungrounded in the corpus and not this library's to explain.**
+
+**`The Reduction` was the real one — and it was already written here, without its name**, under a
+heading called *the quorum*. `#30` was filed by the Workshop, who could see the roster row and could
+not find the protocol. **The remedy was a word, not a page**, and the join found it independently
+four hours before the fix.
+
+### What the instrument then said about its own author
+
+**20 of 85 pages were joined only through their own frontmatter.** Nine tool pages and four chair
+references are the honest boundary — **a third of this library is about the outside world.** The
+other six were a debt, and **five of them were written by this instance in the previous three days**:
+graph-layout, the-lodge, ranking, design-review, sources-and-rederivation, presentation-surfaces —
+all arguing from Shneiderman, Ware, Diátaxis and the medieval lodges, and **naming not one body of
+the corpus they serve.** The library's newest method was unreachable from its own model.
+
+### The Composer ruled six times, and two rulings changed the pages rather than filling them
+
+```text
+mark only the exceptions        record: <date> on five pages; everything unmarked is live
+the library should teach        learner = an instance's first contribution here
+serves stays                    declared is not derived
+start.md §4, NARROW             the presentation core stated once, re-broadcast to three estates
+titles select, Read All reads   adopted; #53 and #63 deliberately not taken
+the last pass, [standing]       a rule this instance had taken without asking
+```
+
+**The tutorial tripped the gate it teaches** — `check_links.mjs` exited 1 on its own example
+filename — and the fix became a step in it rather than a silent workaround.
+
+### The audit the day turned on itself
+
+⚠️ **`Read All` was in no page of this library.** He named it a capital lesson for any Named instance
+on 2026-09-07, and it lived only in one Composer's personal Key, on one machine, in a file no other
+instance fetches. **This session then demonstrated the cost: it worked for hours from memory while
+seven issues were filed on its own tracker by other instances, two carrying Composer rulings on
+pages it owned.** It is now `method/reading-a-tracker.md`.
+
+**A merge lied.** `HTTP 200`, `merged: true`, a real merge-commit SHA — and `main` still pointed at
+the base, the page 404 on the server, the branch already deleted. **Three success signals agreed and
+all three were wrong.** Recovered from `refs/pull/67/head`; six earlier merges the same day were then
+checked file-by-file and all had landed. `#68`. **A merge is verified against `main`, never against
+the response to the merge call.**
+
+**And Refresh GE found drift in this instance's own floor**: clause 1 claimed the token reaches four
+repositories. It reaches **five** — `jkosvr-documentation` was never in the count. Small in size and
+not in shape: **unknown access is unaudited access.**
+
+### Recycle, run first on a fresh window, which is now the ruled order
+
+```text
+check_okf recommendations unmet    12 -> 5, and the five are principled
+index rows not carrying the page's description    7 -> 0
+```
+
+**One of the seven was not merely short but wrong:** the index told readers *"six yes/no gates"* on a
+page carrying **seven checks**. **No pattern in `check_frozen_counts.mjs` would ever see it** — that
+script compares corpus nouns, not counts of sections. **The class is wider than the check.**
+
+### Open, and none of it is mine to close
+
+`#8` corona and palette · `#42` whether the marker becomes a gate · `#48` `status`, still 86 draft
+and 1 stable · `#49` where a derived index is published · `#50` ownership of a server · `#57` the
+movements the Watcher handed over · `#70` awaiting the Workshop's ledger evidence · `#22` awaiting
+GitHub Support · `#10` and `#29` stopped by his own ruling on the vault.
 
 ---
