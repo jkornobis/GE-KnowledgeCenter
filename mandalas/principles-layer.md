@@ -3,6 +3,7 @@ type: Mandala Layer
 title: "The Principles Mandala — source of truth, re-derived"
 description: "The principles ring re-derived from the principle bodies rather than inherited: the declared circle, both taijitu seeds read from source, and where the two derivation methods agree and part"
 status: draft
+record: 2026-07-29
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---

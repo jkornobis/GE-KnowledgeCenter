@@ -3,6 +3,7 @@ type: Mandala Layer
 title: "The Protocols Mandala — source of truth"
 description: "The protocols ring: every protocol as a taijitu of the maxim it holds and the practice it asks for, with protocol-to-protocol edges each earned by a quote, and what the graph shows before it is drawn"
 status: draft
+record: 2026-07-29
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
 ---

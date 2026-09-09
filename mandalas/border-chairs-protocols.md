@@ -3,6 +3,7 @@ type: Mandala Border
 title: "The Protocol–Chair map"
 description: "The third border, enacts: which protocols each chair puts into practice. The one that closes the triangle, after which the meta-mandala can be a result rather than a premise"
 status: draft
+record: 2026-08-15
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-17T11:59:30+02:00 }
 ---
