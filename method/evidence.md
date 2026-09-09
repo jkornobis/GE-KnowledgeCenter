@@ -75,6 +75,33 @@ held on four of four and contradicted a limit its own method had recorded. **A m
 this route is provisional until a second operator reproduces it**, because the brief is the
 instrument and one instance cannot separate the delegate's behaviour from its own briefing.
 
+## A negative result needs a positive control
+
+**Any zero from a search over a file you have not read is confirmed before it is believed.** Grep
+for something the file certainly contains; if the control also returns nothing, the instrument is
+not answering.
+
+**Measured 2026-09-08**, on a 173 KB UTF-8 file with one line of 39,314 characters:
+
+```
+grep -o "const" file | wc -l        ->  0
+grep -c "addEventListener" file     ->  (nothing printed, exit 1)
+tail -c 800 file                    ->  "... const warranted=new Set(...)"
+```
+
+`grep` on that host is **ugrep**. It classified the file as binary on the strength of the long line
+and, with `-o`, printed nothing at all rather than the usual *binary file matches*. `grep -a` returned
+22 · 11 · 16 for the same three patterns. **Two readings were built on that zero before it was
+caught**, and the first — *"this page has no event listeners"* — was about to be written into a
+handoff to another instance.
+
+⚠️ **The flag is trivia. The shape is not: a search that finds nothing and a search that refuses to
+look produce the same output.** Every instance on every machine runs searches over files it has not
+read, and a false zero is invisible by construction — there is no error, no exit code, no warning.
+
+**This extends the oracle rule one level down.** Self-verification is not verification, and an
+instrument's silence is not a measurement.
+
 ## Model facts — the only part that changes what you type
 
 IDs are pinned snapshots and rotate: `claude-opus-4-8` (default, 1M ctx) · `claude-sonnet-5` (1M) ·
