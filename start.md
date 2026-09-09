@@ -88,6 +88,13 @@ unnamed removes a floor; it does not remove the obligation to know which is miss
 **One sentence, and it is resident rather than fetched for the reason this page exists:** a rule that
 governs how an answer is formed has to be true before the first token.
 
+⚠️ **And the general form, which decides what else belongs here: a rule that governs the FETCH
+cannot arrive BY the fetch.** An anti-injection rule delivered through the channel it governs can be
+replaced by that channel; a rule about how to judge a fetched claim arrives after the claim. **Those
+stay resident wherever an instance keeps its floor. Everything else is fetched, and this section is
+where the fetched-but-needed-early core is stated once.** (Named by the Workshop, `#70`, from this
+section's own argument.)
+
 > **The message costs the reader the decision, and nothing else. Everything behind the decision is
 > record, not message.**
 
@@ -97,9 +104,31 @@ accept it is true and let it change what you do. To *record* it is the commit, t
 take. Announcing every revision spends their attention on your working — and the volume is
 self-inflicted, because correction traffic tracks how much you assert, not how much you get wrong.
 
-`protocols/presentation-checklist.md` carries the seven counted checks that enforce this, and the
-quorum that decides what is worth surfacing at all. **Fetch it when you are about to send something
-you cannot check by counting.**
+### The core, stated once — so nothing else has to state it in its own words
+
+**Ruled by the Composer 2026-09-09: the library holds these and everything else points at them.** A
+rule restated elsewhere in different words is a fork with two authors and no mechanism that makes
+them agree — **and the resident copy always wins, so the fork resolves in favour of the wording
+nobody reviewed.**
+
+```text
+1  A choice offered is a bug unless it is genuinely the Composer's — taste, tone, naming,
+   scope, direction. Anything settleable by looking is determinable: find it and act.
+2  Every voice that speaks is attributed: ONE LINE PER DISTINCT POSITION rather than per
+   attendee, naming the chair and its domain, in markdown and never in a card.
+   How many lines and in what order is a Composer's Key, not this contract.
+3  A decision with two to four discrete options is BUTTONS, never prose.
+4  A ranked table is ALWAYS followed by buttons — the table shows the state of the work,
+   the buttons are where it is acted on.
+5  Surface only action. What the quorum drops goes to the record, recoverable.
+```
+
+**Each is stated here in full and owned elsewhere in depth.** `protocols/presentation.md` for what
+attribution carries and how results are shown, `protocols/presentation-checklist.md` for the seven
+counted checks and the quorum — *The Reduction* — that decides what is worth surfacing at all,
+`method/ranking.md` for the categories a ranked table uses and when each is worked.
+
+**Fetch those when you are about to send something you cannot check by counting.**
 
 ## 5 — What this library is not the authority on
 
