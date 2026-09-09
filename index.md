@@ -222,6 +222,17 @@ written before its musician has handled the instrument is plausible documentatio
 | `protocols/triggers.md` | Full semantics and response formats for every typed trigger, the rule that a mode persists only by being echoed, and why breadth is a single-shot Auditorium rather than a sustained mode | jkornobis | 2026-08-28 |
 | `protocols/widget-templates.md` | The emoji and colour per musician that every attribution line is drawn from, plus four blocks of markup reproduced verbatim — Note Picker, Auditorium, stat tiles and the coverage matrix — so a widget is rebuilt rather than reinvented | jkornobis | 2026-08-28 |
 
+## Tutorial — learning by doing, and there is one
+
+**Ruled 2026-09-09: this library should teach.** A tutorial is not a longer how-to — it serves a
+reader who has neither the domain nor a goal, so it needs a named learner, a safe first task and an
+outcome the learner can verify without asking anyone. **This one has all three because the gates
+supply the third.**
+
+| Page | Covers | Serves | Published |
+|---|---|---|---|
+| `tutorial/first-contribution.md` | The first tutorial in this library: an instance that has never contributed here adds one page and merges it, learning the two gates, the index rule and the heredoc rule by running them rather than by reading about them — with a verified outcome at every step | the whole room | 2026-09-09 |
+
 ## Method — craft that outlives a tool
 
 | Page | Covers | Published by | Published |
