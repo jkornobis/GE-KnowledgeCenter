@@ -9,6 +9,15 @@ generated: { by: human:jkornobis, at: 2026-08-17T11:59:30+02:00 }
 
 # The Protocol–Chair map
 
+**Status: ANALYSIS ARTIFACT.** Derives which protocols each chair enacts. Authors no protocol and
+rewrites nothing. Drawn 2026-08-02 and recomputed 2026-08-15 with the enactment pass — **its counts
+are the record of those passes, not a reading of the corpus today.** Re-derive from
+`graph/grand_ensemble.json` before quoting any number here.
+
+*(This line was missing until 2026-09-09. Its three siblings have carried one since the day each was
+written; this page is the only border that never declared what kind of document it is, which is why
+its numbers read as current for five weeks.)*
+
 The third of three borders. Sibling to [`protocol_warrant_map.md`](protocol_warrant_map.md)
 (Protocols ↔ Principles) and [`principle_chair_map.md`](principle_chair_map.md) (Principles ↔ Chairs).
 With this one drawn, the triangle closes and the meta mandala can be a *result* rather than a premise.
