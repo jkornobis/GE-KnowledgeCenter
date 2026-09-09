@@ -646,6 +646,13 @@ agree with today — **editing one rewrites the pass it exists to be.**
 **Only the records are marked.** `record: <date>` in the frontmatter, carrying the date of the *last*
 pass over that page. Anything without the key is live.
 
+**The date is the LAST pass, not the first — `[standing]`, levelled by the Composer 2026-09-09.**
+Because what a reader needs from the key is *how stale these numbers are*, and that is the most
+recent reading, not the day the page was produced. ⚠️ **It is recorded with its level because it was
+not one when it was written:** an instance took it as a sub-decision inside a ruling about something
+else, and it bound five pages and this section before anyone chose it — the case
+`method/recording-a-rule.md` exists to name.
+
 ```
 record: 2026-08-15    mandalas/border-chairs-principles.md
 record: 2026-08-15    mandalas/border-chairs-protocols.md
