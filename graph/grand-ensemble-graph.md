@@ -1,7 +1,7 @@
 ---
 type: Method
 title: "The Grand Ensemble graph — the model as data"
-description: "The machine-readable form of the three rings and their borders: 104 nodes, 251 within-layer edges and 282 crossings, every evidence-bearing edge carrying the sentence that earns it"
+description: "The machine-readable form of the three rings and their borders, every evidence-bearing edge carrying the sentence that earns it and a status saying how well it is held — with its own size read from the file rather than frozen in a sentence"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-26T18:40:00+02:00 }
 sources:

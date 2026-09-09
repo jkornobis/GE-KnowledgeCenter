@@ -40,8 +40,11 @@ Read from `graph/grand_ensemble.json` on 2026-09-02:
 | `cross` edges in the graph | **282** |
 | cross edges touching `movements:*` | **0** |
 
-By endpoint prefix the 282 crossings are `protocols` 210, `principles` 173,
-`musicians` 181. The movements layer touches none of them.
+*Measured 2026-09-02. The totals have moved since and the zero has not — re-derive from
+`graph/grand_ensemble.json` rather than quoting the row above.*
+
+By endpoint prefix, at that reading, the crossings were `protocols` 210, `principles` 173,
+`musicians` 181. The movements layer touched none of them, **and still touches none.**
 
 **It is the most richly modelled layer in the corpus and the only disconnected
 one.** Its nodes carry a `boundary`, a `period`, the principles they `carry`,
