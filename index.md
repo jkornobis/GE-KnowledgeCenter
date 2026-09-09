@@ -151,7 +151,7 @@ and each page names the chairs it serves, so the link runs both ways.
 | `tools/figma-mcp-desktop.md` | The selection-scoped Figma MCP server: seven tools that take no parameters at all, why that shape is the tell, and the per-agent registration that leaves it unwired | UX Designer, Design Engineer | 2026-08-25 |
 | `tools/i18next.md` | The FR/EN parity engine: two open issues against 1,472 Stack Overflow questions, and three of the top six are one problem — markup inside a translated string | Content Designer, Design Engineer | 2026-08-25 |
 | `tools/jira.md` | Jira at logic level rather than project level: the fetch route that works and the two that fail, the primitives a work item and a board actually are, and the craft slots left deliberately empty until an orchestra has experimented with a real instance | Product Owner, Software Architect, the whole room | 2026-09-01 |
-| `tools/lineage.md` | Twelve chairs, each with the origin it started from, the leap that changed it, the current best-in-class, and the years between the two | the whole room | 2026-08-16 |
+| `tools/lineage.md` | Twelve chairs, each with the origin it started from, the leap that changed it, the current best-in-class, and the years between the two — the index a chair's tool pages hang from | the whole room | 2026-08-16 |
 | `tools/style-dictionary.md` | The transform step of the token chain, and the direct descendant of the design-tokens leap: an eight-year-old architectural issue, and a mirror that scores 33 against the repo's 80 | Design Engineer, UX Designer, Software Engineer, Software Architect | 2026-08-26 |
 | `tools/tokens-studio.md` | The authoring end of the token chain: exports that silently lose resolution, no group-level description, and a tag with zero questions whose friction is filed under the tool downstream | Design Engineer, UX Designer | 2026-08-26 |
 | `tools/vitest.md` | The highest Context7 benchmark in this library and the only one to rise sharply: 906 questions of which the top five are all config and module resolution, not a single assertion among them | Software Engineer, QA Engineer | 2026-08-26 |
@@ -183,14 +183,14 @@ written before its musician has handled the instrument is plausible documentatio
 | Page | Covers | Serves | Published |
 |---|---|---|---|
 | `tools/yang/ux_designer.md` | UX Designer lever index for Figma: seven intents keyed to the Plugin API call that serves them, each row naming the tempting wrong default it exists to beat | UX Designer | 2026-08-16 |
-| `tools/yang/design_engineer.md` | Design Engineer lever index for the token crossing: Figma Variables and Code Connect keyed by intent, plus the trap in publish --force | Design Engineer | 2026-08-16 |
+| `tools/yang/design_engineer.md` | Design Engineer lever index for the token crossing: Figma Variables and Code Connect keyed by intent, each row naming the default it must beat, plus the trap in publish --force | Design Engineer | 2026-08-16 |
 | `tools/figma-method.md` | Eyes first and code second: the working loop for a design surface, what the eyes read in a structured file, and why text-only spatial reasoning collapses as a layout grows | the whole room | 2026-08-28 |
 
 ## Chairs — what a seat knows
 
 | Page | Covers | Published by | Published |
 |---|---|---|---|
-| `chairs/the-twelve-chairs.md` | What each seat is, the four instrument families, the routing table that turns a request into an ensemble, and the canonical duets — including the chair that never plays solo and the one that belongs to no family | jkornobis | 2026-08-26 |
+| `chairs/the-twelve-chairs.md` | What each seat is, the four instrument families, the routing table that turns a request into an ensemble, and the canonical duets — the layer a traveler needs before any chair's references are worth opening | jkornobis | 2026-08-26 |
 | `chairs/accessibility_specialist_references.md` | Living reference notes for the Accessibility Specialist's field | jkornobis | 2026-08-16 |
 | `chairs/agile_auditor_references.md` | Living reference notes for the Agile Auditor's field | jkornobis | 2026-08-16 |
 | `chairs/agile_facilitator_references.md` | Living reference notes for the Agile Facilitator's field | jkornobis | 2026-08-16 |
@@ -207,9 +207,9 @@ written before its musician has handled the instrument is plausible documentatio
 | Page | Covers | Published by | Published |
 |---|---|---|---|
 | `protocols/orchestra-protocols.md` | The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, Spotlighting — plus the spawn gate, the risk-tier re-ask, Lots, the runtime spot-check and the roadmap cadence, added 2026-08-26, and Chamber, Echo and Antiphony, added 2026-08-27, and Execution discipline, added 2026-08-28 | the whole room | 2026-08-28 |
-| `protocols/presentation.md` | How a result reaches the person who asked: Rule 0 on whether a choice exists at all, the surface-to-decision-shape mapping, the content-type routing table with a markdown fallback for every widget, and the per-Composer override mechanism that keeps the shared contract shared | jkornobis | 2026-08-27 |
+| `protocols/presentation.md` | The contract for how a result reaches the person who asked: the one logic every rule derives from, Rule 0 on whether a choice exists at all, the surface-to-decision-shape mapping, the routing table from content type to widget to markdown fallback, and the per-Composer override mechanism with the one thing it may not override | jkornobis | 2026-08-27 |
 | `protocols/presentation-surfaces.md` | Three surfaces and the one question that picks between them: the message carries the decision, the page carries the explanation, the table carries the data — plus the named authority to defer to when no rule here covers the case | Content Designer, Agile Facilitator | 2026-09-08 |
-| `protocols/presentation-checklist.md` | Six yes/no gates run before a message leaves: is this decision determinable, is every voice attributed, does the line count track positions, is every option tagged and persisted, does the turn end in one of five shapes — an irreversible action, a question, a stated doubt, a task list or a use case — and, when the response opposes the Composer, does it state the idea's strongest form first | jkornobis | 2026-08-27 |
+| `protocols/presentation-checklist.md` | The message costs the Composer the decision and nothing else; everything behind it is record. Seven checks derive from that one logic — determinable or his, attributed, actionable, ended in one of five shapes, opposed with the steelman first, counted, and named once — plus the three acts that separate admitting an error from telling it, and the quorum that decides what is worth surfacing at all | jkornobis | 2026-08-27 |
 | `protocols/pane-guard.md` | Four registers for a surface the orchestra can both read and act on: what the Browser pane is and where it does not exist, the same four registers mapped onto the terminal, green through black, Spotlighting turned from a reading discipline into an actuation one, and the measurement proving no property of the instrument stands between a read and a commit | jkornobis | 2026-08-29 |
 | `protocols/agile_facilitator_score.md` | How the router reads intention rather than keywords: the interpreter model, the six response modes, the chat triggers, and conversation versus execution | jkornobis | 2026-08-17 |
 | `protocols/orchestra_test_harness.md` | Testing a multi-agent system's own behaviour: BDD scenarios, the invariant and capability eval sets, the standard grader prompt, and why a grader must be constant | jkornobis | 2026-08-17 |
@@ -322,7 +322,7 @@ read them — the artifact is the authority on its own size.
 
 | Page | Covers | Serves | Published |
 |---|---|---|---|
-| `principles/core-principles.md` | The Orchestrator's principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobbler's children, and the oracle rule that an instrument is not its own oracle — plus The Composer as Neuron, added 2026-08-27, and Honest but kind, the register every exchange is spoken in, added 2026-08-29 | the whole room | 2026-08-29 |
+| `principles/core-principles.md` | The Orchestrator's principles: NDT and the Greenfield Reset, the deletion protocol, Demos Kratos and why an orchestra cannot self-legitimate, overshoot, the cobbler's children, the oracle rule that an instrument is not its own oracle and its companion — make self-questioning rather than proving someone wrong, added 2026-09-06 — plus The Composer as Neuron, added 2026-08-27, and Honest but kind, the register every exchange is spoken in, added 2026-08-29 | the whole room | 2026-08-29 |
 
 ## Session log — this repository's own state
 

@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "Orchestra Protocols"
-description: "The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, and Spotlighting — plus Chamber, Echo and Antiphony, added 2026-08-27, and Execution discipline, added 2026-08-28"
+description: "The Concert Quorum and the five-tier effort ladder, the Delegation Brief, personas versus real subagents and their economics, Independent Verification, the routing table, the Definition of Done, Spotlighting — plus the spawn gate, the risk-tier re-ask, Lots, the runtime spot-check and the roadmap cadence, added 2026-08-26, and Chamber, Echo and Antiphony, added 2026-08-27, and Execution discipline, added 2026-08-28"
 status: draft
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-28T12:55:00+02:00 }
