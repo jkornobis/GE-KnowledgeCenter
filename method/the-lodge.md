@@ -134,3 +134,15 @@ The instruments and dates above are taken from the sources listed and were not m
 mapping is an argument, not a finding**: nobody has shown that an orchestra's failure modes are the
 same failure modes, only that the two face the same structural problem — coherence across workers
 who never meet.
+
+## Where this sits in the corpus
+
+**Not graph edges — claims by this page about what it stands next to.**
+
+**`Serendipity`** — *path wasn't planned*. **The tracing floor is that principle's mechanism.** A
+principle that says discovery is a method needs something that produces discovery, and *underfoot*
+is the answer the lodges found: not a better search, a surface in the path.
+
+**`Unison`** — *a decision and its implementation are one thing in two materials*. **The template is
+the clearest instance anyone has built.** The full-size drawing on the plaster and the moulding cut
+from it are one decision in two materials, and the template is what carries it between them.

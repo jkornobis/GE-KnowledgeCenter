@@ -206,3 +206,18 @@ Facilitator and the Content Designer, and the quorum's output is *only surfaced 
 **And it does not cover what happens after the buttons.** A ruling taken from a button is recorded
 where the work lives — an issue, a commit, a log entry — not only in the conversation that produced
 it. That is a different page's subject.
+
+## Where this sits in the corpus
+
+**Not a graph edge — a claim by this page about what it stands next to.** The corpus is the
+Workshop's; these are the bodies this page is about, named so an instance holding one can find the
+other.
+
+**`The Reduction`** — *the score is reduced to what two hands can play, and what is cut is written
+down*. **That protocol is the act; this page is the form its output takes.** The Reduction decides
+what survives; the five categories decide how the survivors are rendered. Neither is usable without
+the other, and they were written a day apart without either naming the first.
+
+**`Minimum Duet`** — *a solo has no counterweight*. The ranking is taken in quorum, and the reason is
+the same one that protocol exists for: **the chair that decides what reaches the Composer is the
+chair best placed to hide its own errors.**
