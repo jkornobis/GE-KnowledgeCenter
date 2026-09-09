@@ -47,10 +47,18 @@ const byName = new Map();
 for (const n of nodes) { if (!byName.has(n.name)) byName.set(n.name, []); byName.get(n.name).push(n); }
 const ambiguous = [...byName].filter(([, v]) => v.length > 1).map(([k]) => k);
 
-// ---- ORDINARY ENGLISH IS THE WHOLE PROBLEM. Four bodies are named with words that appear in
-// normal prose constantly — `Tell` is a trigger the Composer uses in conversation, and it would
-// match half the library. They are not excluded (a page really may be about `Tell`), they are
-// forced to WEAK, so nothing downstream can treat them as established.
+// ---- ORDINARY ENGLISH IS THE WHOLE PROBLEM. Six bodies are named with words that appear in normal
+// prose constantly — `Tell` is a trigger the Composer uses in conversation, and it would match half
+// the library.
+//
+// ⚠️ The first version forced these to WEAK unconditionally, and that was a worse error than the one
+// it prevented. `protocols/triggers.md` carries `## Tell / Tell me more` as its own heading;
+// `principles/core-principles.md` carries `## Unison`. Six bodies were reported as explained by NO
+// page while their own section headings sat in the library — a false negative that reads exactly
+// like a gap, and would have sent someone to write a page that already existed.
+//
+// So a common name is weak in prose and STRONG when the text is deliberate about it: a heading, or
+// backticks. Precision where it was needed, without inventing an absence.
 const COMMON = new Set(["Tell", "Help", "Lots", "Program", "Unison", "NDT"]);
 
 // A hit is STRONG when the text is doing something deliberate with the name:
@@ -117,7 +125,7 @@ for (const page of pages) {
     if (!r) continue;
     const count = r.count, firstNo = lineOf(r.at) + 1, first = lines[firstNo - 1].trim();
     const deliberate = new RegExp(`(^#{1,6} .*|\`[^\`]*)${esc(name)}`, "m").test(src);
-    const strong = !COMMON.has(name) && (name.length >= STRONG_LEN || deliberate || count > 2);
+    const strong = deliberate || (!COMMON.has(name) && (name.length >= STRONG_LEN || count > 2));
     hits.push({ page, name, layer: defs[0].layer, ambiguous: defs.length > 1,
                 tier: strong ? "strong" : "weak", count, lineNo: firstNo, line: first.slice(0, 120) });
   }
@@ -251,9 +259,17 @@ if (asJson) {
   console.log(`either a page about something else entirely, or a gap worth a look.`);
   for (const p of orphanPages) console.log(`   ${p}`);
 
-  console.log(`\nBODIES NO PAGE NAMES STRONGLY (${orphanNodes.length} of ${byName.size}) — the reverse gap, and the`);
-  console.log(`more interesting one: a body the corpus holds and this library never explains.`);
-  for (const n of orphanNodes.slice(0, 20)) console.log(`   ${byName.get(n)[0].layer.padEnd(11)} ${n}`);
+  // ⚠️ TWO KINDS OF ABSENCE, AND ONLY ONE IS THIS LIBRARY'S. A body the corpus grounds and no page
+  // explains is a debt here. A body the corpus itself marks ungrounded — `groundedKind: gap`, or
+  // never enacted — is not: the library cannot explain what the corpus has not settled. Reporting
+  // them in one list made The Ugly Duckling look like a page nobody wrote.
+  const raw = new Map();
+  for (const [layer, L] of Object.entries(G.layers)) for (const n of L.nodes) raw.set(n.name || n.id, n);
+  const state = (nm) => { const n = raw.get(nm) || {}; return n.groundedKind === "gap" || n.enacted === false ? "ungrounded in the corpus" : "grounded — this library owes it a page"; };
+
+  console.log(`\nBODIES NO PAGE NAMES STRONGLY (${orphanNodes.length} of ${byName.size}) — the reverse gap, and`);
+  console.log(`the more interesting one. Split, because only one kind is a debt here.`);
+  for (const n of orphanNodes.slice(0, 20)) console.log(`   ${byName.get(n)[0].layer.padEnd(11)} ${n.padEnd(28)} ${state(n)}`);
   if (orphanNodes.length > 20) console.log(`   ... and ${orphanNodes.length - 20} more`);
 
   console.log(`\n⚠️ Nothing here is established. Check one page before trusting any of it:`);
