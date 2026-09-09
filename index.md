@@ -302,7 +302,7 @@ read them — the artifact is the authority on its own size.
 
 | Page | Covers | Serves | Published |
 |---|---|---|---|
-| `graph/grand-ensemble-graph.md` | How to read the dataset: the four edge statuses and why collapsing them loses the only thing the graph adds over a diagram, plus two provenance caveats about paths written in the source repo's coordinates | the whole room | 2026-08-26 |
+| `graph/grand-ensemble-graph.md` | The machine-readable form of the three rings and their borders, every evidence-bearing edge carrying the sentence that earns it and a status saying how well it is held — with its own size read from the file rather than frozen in a sentence | the whole room | 2026-08-26 |
 | `graph/grand_ensemble.json` | The dataset itself, 472 KB — three layers, the movements, the shared concerns and the three borders, with every node's résumé and every edge's `why` | the whole room | 2026-08-26 |
 
 
