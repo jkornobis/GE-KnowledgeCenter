@@ -170,3 +170,11 @@ The pass model, the Double Diamond framing and the three-modality claim are **on
 recorded and unreplicated.** The craft in §6 is the Composer's and stands on his authority. The measured
 items in §8 and the rules in `tools/figma-method.md` are this estate's own readings, dated. **Nothing
 here has been run twice by two hands, and the difference is marked throughout rather than averaged away.**
+
+## Where this sits in the corpus
+
+**Not a graph edge — a claim by this page about what it stands next to.**
+
+**`Too Big Too Soon`** — *minimum viable scope*. **The prepare-versus-build boundary is that
+principle applied to reviewing rather than to building.** A review run before enough of the system
+exists to walk does not find little; it finds nothing, and reports it as a pass.

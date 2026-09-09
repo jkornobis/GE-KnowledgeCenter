@@ -114,3 +114,12 @@ how prose reads is `protocols/presentation.md` and the Composer's Score Key.
 **And it names one authority, not three.** Two more were on the table — a syntax spec and an editorial
 style guide — and were **rejected as fallbacks for the same reason: they answer questions this estate
 has already answered.** A fallback list long enough to need routing is a second set of rules.
+
+## Where this sits in the corpus
+
+**Not a graph edge — a claim by this page about what it stands next to.**
+
+**`Show, don't tell`** — *showing is cheaper to judge than telling*. **That protocol says which
+register to use; this page says which surface carries it.** A thing shown in the wrong surface is
+not cheaper to judge — a table of prose and a page nobody returns to both cost the reader more than
+the telling would have.

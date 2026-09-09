@@ -131,3 +131,12 @@ The Ware and Franck figures come from a 1996 study whose display hardware no lon
 *direction* of the finding — motion beats stereo, 3D buys capacity and costs time — has been
 reproduced since; the exact percentages should be treated as an order of magnitude, not a
 measurement of a modern screen.
+
+## Where this sits in the corpus
+
+**Not a graph edge — a claim by this page about what it stands next to.**
+
+**`Episteme vs. doxa`** — *the known unknown*. **A force-directed layout is a doxa machine that
+renders as episteme.** Its distances are opinion produced by a simulation, and they arrive drawn
+with the same authority as a measurement. The principle asks that the two be told apart; this page
+says the drawing gives no sign, which is why the telling has to be done in the legend.

@@ -191,3 +191,11 @@ specification, it is the file. Where it is a field, it is a curated index.
 **A page with no address is not wrong. It is unre-derivable**, which is a different and quieter
 failure: it will be believed, and it cannot be checked without doing the original work again — badly,
 against a search that ranks the past first.
+
+## Where this sits in the corpus
+
+**Not a graph edge — a claim by this page about what it stands next to.**
+
+**`Episteme vs. doxa`** — *the known unknown*. A figure carried without the reference it was taken
+against is doxa wearing the clothes of a measurement. **Carrying the address is what makes the
+difference legible to a later reader**, who otherwise has only the number and the confidence.
