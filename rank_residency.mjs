@@ -30,7 +30,8 @@
  * whole corpus, so they name every body while being lists rather than explanations. They are
  * labelled and excluded from the recommendation, never from the table.
  *
- * Token figures are chars / 3.7 and are APPROXIMATE. The exact figures for a session are billed
+ * Token figures are chars / 4 and are APPROXIMATE — the divisor is a CONVENTION, not a fact, and it
+ * is 4 across this estate so two instances can compare. The exact figures for a session are billed
  * usage, and `method/the-floor.md` says how to read them. Do not mix the two in one sentence.
  *
  * Requires node >= 18. No dependencies. Reads the graph and the pages, writes nothing, exits 0.
@@ -87,7 +88,7 @@ for (const p of pages) {
     const deliberate = new RegExp(`(^#{1,6} .*|\`[^\`]*)${esc(name)}`, "m").test(src);
     if (deliberate || (!COMMON.has(name) && (name.length >= 14 || count > 2))) strong++;
   }
-  rows.push({ p, tok: Math.round(src.length / 3.7), bodies: strong, moment: card.includes("`" + p + "`") });
+  rows.push({ p, tok: Math.round(src.length / 4), bodies: strong, moment: card.includes("`" + p + "`") });
 }
 for (const r of rows) r.inbound = inbound[r.p];
 
@@ -126,5 +127,5 @@ if (none.length) {
   for (const r of none.sort((a, b) => b.tok - a.tok)) console.log(`   ${String(r.tok).padStart(6)} tok  ${r.p}`);
 }
 console.log(`\n⚠️ Nothing here measures whether a page is ever fetched. It ranks a proxy, and a page can`);
-console.log(`serve well and score badly. Token figures are chars/3.7 and approximate — the exact ones`);
+console.log(`serve well and score badly. Token figures are chars/4 and approximate — the exact ones`);
 console.log(`are billed usage, and method/the-floor.md says how to read them.`);
