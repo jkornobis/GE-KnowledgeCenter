@@ -1,7 +1,7 @@
 ---
 type: Mandala Layer
 title: "The Movements Mandala — the layer with no page, and the border nobody drew"
-description: "Twelve cultural movements carrying 7 internal edges and 0 crossings to anything else. The measurement, the reason, the Composer's claim that chairs ARE movements, and the one border that is already earned"
+description: "Twelve cultural movements that carried 7 internal edges and no crossings at all until 2026-09-10: the measurement, the reason it was the shadow of a missing document, the Composer's claim that chairs ARE movements, and the seven descends-from edges that closed it"
 status: draft
 serves_all: true
 generated: { by: agent:ge-watcher, at: 2026-09-02T20:46:37+02:00 }
@@ -40,13 +40,29 @@ Read from `graph/grand_ensemble.json` on 2026-09-02:
 | `cross` edges in the graph | **282** |
 | cross edges touching `movements:*` | **0** |
 
-*Measured 2026-09-02. The totals have moved since and the zero has not — re-derive from
-`graph/grand_ensemble.json` rather than quoting the row above.*
+*Measured 2026-09-02, and the row above is now history.*
 
-By endpoint prefix, at that reading, the crossings were `protocols` 210, `principles` 173,
-`musicians` 181. The movements layer touched none of them, **and still touches none.**
+⚠️ **THE ZERO CLOSED ON 2026-09-10.** The corpus carries **seven** crossings touching
+`movements:*`, under a new edge kind — `descends-from` — one per chair the Composer ruled:
 
-**It is the most richly modelled layer in the corpus and the only disconnected
+```text
+agileauditor      -descends-from-  lean            earned
+agilefacilitator  -descends-from-  agile           earned
+productowner      -descends-from-  agile           earned
+qaengineer        -descends-from-  agile           asserted
+softwareengineer  -descends-from-  softwarecraft   earned
+designengineer    -descends-from-  designsystems   earned
+uxdesigner        -descends-from-  designsystems   asserted
+```
+
+**The split he ruled survived into the graph** — the Auditor descends from Lean and QA from Agile,
+which is the distinction this layer's evidence could not make on its own.
+
+**By endpoint prefix, at the 2026-09-02 reading**, the crossings were `protocols` 210, `principles`
+173, `musicians` 181, and the movements layer touched none of them. **Re-derive from
+`graph/grand_ensemble.json`; every number in this section is a record of that day.**
+
+**It was the most richly modelled layer in the corpus and the only disconnected
 one.** Its nodes carry a `boundary`, a `period`, the principles they `carry`,
 dated `works`, and a `rootless` field whose phrasing is the most careful
 epistemics anywhere in this repository:
@@ -213,6 +229,11 @@ why   No mandala argues this border, so the builder has nothing to derive:
       movements, "they define themselves as they play, create tools to answer
       their questionning."
 ```
+
+⚠️ **This absence was proposed and is now moot.** The seven `descends-from` edges above are the
+border it said was unwritten, and the entry is kept as the record of the argument that produced
+them: **the zero was never a fact about the world — it was the shadow of a missing document, and
+writing the document is what closed it.**
 
 The precedent for that wording is the corpus's own: *"That is a `gap` — an
 instrument not yet built — not an absent relation."*
