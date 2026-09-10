@@ -72,6 +72,7 @@ result is judged.
 | building a surface where an assistant sits between a person and a process | `method/ai-assistant-patterns.md` |
 | a trigger phrase you have been given and do not recognise | `protocols/triggers.md` |
 | opening a tracker, or ranking from one | `method/reading-a-tracker.md` |
+| looking for a page and not finding it | `method/finding-a-page.md` |
 | about to write a rule down somewhere durable | `method/recording-a-rule.md` |
 | your first contribution to this library | `tutorial/first-contribution.md` |
 | about to sign, publish, or write a claim onto a page | `protocols/library-conventions.md` |
