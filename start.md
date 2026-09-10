@@ -55,7 +55,7 @@ look.
 | ranking work, or closing out a session | `method/ranking.md` |
 | deciding what shape a thing should take — message, page, or table | `protocols/presentation-surfaces.md` |
 | drawing a graph, or reading one someone else drew | `method/graph-layout.md` |
-| how knowledge survives a worker who is no longer there | `method/the-lodge.md` |
+| building something a later session has to be able to use | `method/the-lodge.md` |
 | the word *verified*, about to be used | `method/evidence.md` |
 | a number about to be written into a page | `method/sources-and-rederivation.md` |
 | adding a tool, or auditing one already in use | `protocols/tool-audit.md` |
@@ -64,12 +64,18 @@ look.
 | reviewing a design surface, or deciding it is too early to | `method/design-review.md` |
 | building a surface where an assistant sits between a person and a process | `method/ai-assistant-patterns.md` |
 | a trigger phrase you have been given and do not recognise | `protocols/triggers.md` |
+| opening a tracker, or ranking from one | `method/reading-a-tracker.md` |
+| about to write a rule down somewhere durable | `method/recording-a-rule.md` |
+| your first contribution to this library | `tutorial/first-contribution.md` |
 
 **Every row names the moment, not the subject.** A card keyed by subject is an index in miniature and
 you would have to already know the word; keyed by moment, it can catch you in the middle of the work
 that needs it.
 
-⚠️ **This card is hand-written and will drift.** It is not the index — `index.md` remains the only
+⚠️ **This card is hand-written and it drifts — measured, not predicted.** Three pages written in the
+forty-eight hours after it was made had no row until 2026-09-10, and one row was keyed to a
+*subject* rather than to a moment, which is the one thing the card is supposed not to do. **A
+hand-kept index of a moving library goes stale at the speed the library moves.** It is not the index — `index.md` remains the only
 complete route in, and a row here is a shortcut, never an authority. When the card and the index
 disagree, the index wins.
 
