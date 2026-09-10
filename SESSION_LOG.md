@@ -983,98 +983,27 @@ dated pass. **The tool was the answer to one instance; the class needed a vocabu
 
 ---
 
-## Session 2026-09-08 — afternoon: the ranking form stopped being one Composer's taste
+## Session 2026-09-08 — afternoon: the ranking form stopped being one Composer's taste  *(compacted 2026-09-11)*
 
-*Appended to the morning's entry. Twelve merges on the day.*
+**Full text: commit `5a58fd0`.** Compacted because the subject is settled and the page it produced
+has since absorbed everything the entry argued for.
 
-**It began as a glyph change and turned into a method page**, because each of the Composer's
-objections was about the same thing: **a sign must depict the act, never the state around it.**
+**What it recorded.** The Eisenhower close-out form was rewritten three times in one afternoon and
+then stopped being a Composer's taste at all: *"emoji are for all; this Eisenhower table + multiple
+choice or button choice, it's basic multitasking of GE."* It became `method/ranking.md` — five
+categories, the glyph joined to the number in the first column, a legend under every table, and the
+rule that a table is always followed by buttons.
 
-```
-⚖️  a scale shows EQUILIBRIUM         "Balance emoji isn't choice, it is balanced between element"
-↔️  a double arrow shows SYMMETRY     the same defect in another costume
-⏩  fast-forward means SKIP AHEAD     nobody has received anything
-```
+**Three distinctions survived and are on the page:** postpone is not recycle, postpone is not
+yours-to-judge, and delegate is empty for a Composer working alone. **The sign depicts the ACT, never
+the state.**
 
-**Three glyphs failed one test, inside one conversation.** What replaced them: ⚡ **do now**,
-👁️ **yours to judge** — chosen because his own definition of taste is perception, *"seeing unbalance
-of a system of color and shape concepts by eyes"* — 📤 **delegate**, and ♻️ **recycle**. **And the
-glyph moved into the first column, joined to the number**, so it stops sliding with the length of
-whatever the action is called.
+**And the Composer Key shrank from 3 792 to 1 868 characters** by pointing at the page instead of
+restating it — the first instance of a rule this estate has since applied to a skill, an index and a
+register: *state it once, point at it everywhere else.*
 
-**The word moved with the sign.** That quadrant was never Eisenhower's *schedule it for later*: it
-is **the one act the orchestra structurally cannot perform**, and calling it *decide* hid that.
-
-### The fifth category, and the question that produced it
-
-**He asked what the form does for a Composer who does not run four instances.** The answer exposed a
-category the four-glyph set had been hiding: **📤 requires a receiver.** With no named instances
-there is nobody to hand to, so *delegate* is structurally empty and the honest fourth is
-🕝 **postpone** — *"it mean you must build proper research before acting."*
-
-**And postpone is not recycle.** Recycle means *no live claim on attention*; postpone means the
-opposite — it has one, and acting now would be a guess. **Nor is it yours-to-judge**, which says
-everything needed is present. **Postpone says nobody can choose, the Composer included.**
-
-⚠️ **The stand had a 🕝 row all along and no category for it.** `#22` — whether the 2026-09-04
-Support ticket correction was posted — had been ranked as his to judge for a day. **He cannot judge
-it either.** Nobody can until the thread is read.
-
-### The correction that changed the page's own scope, mid-draft
-
-The page was written claiming the *categories* were shared method and the *glyphs* were one
-Composer's rendering taste. **He rejected the split:** *"emoji are for all — this Eisenhower table +
-multiple choice or button choice, it's basic multitasking of GE."*
-
-**So all of it travels**, and `method/ranking.md` exists rather than a longer Score Key. **His Key
-shrank from 3,792 characters to 1,868** and now points at the repository instead of carrying the
-method — which is this estate's own rule about where orchestra memory lives, applied to the Key for
-the first time.
-
-### And two rulings about where work is kept at all
-
-**When the Composer opens too many subjects, the orchestra proposes a board** — Jira, Trello, Wekan,
-the repository's own issues, whatever he already uses. **A ranked table is a view, not storage.**
-Three signals, each countable: it stops fitting a screen; **a row survives two consecutive close-outs
-unchanged**; a subject is re-ranked from memory. **The second is the real one — a row ranked
-identically twice is not being worked, it is being stored**, and the re-ranking is the price paid,
-once per close-out, for not having filed it.
-
-**Then the guard that keeps that rule honest.** He asked whether the runtime itself offers a plan or
-todo or kanban, to make tasks persistent — and the answer had to carry its own caveat: **most host
-task features are session-scoped too.** *Storage in conversation doesn't survive* is the whole
-argument, and **a todo panel that resets at the end of the conversation is a better view of the same
-volatile list.** Four questions decide it — does it survive the session, the machine, can another
-instance read it, does it hold *why* rather than only *what*. **Measured here: this runtime exposes
-no persistent task surface, so persistence is the tracker and the board, and nothing is kept in the
-conversation on purpose.**
-
-**Last, a rendering ruling that follows from all of it:** a row unchanged across two close-outs
-**leaves the table**, replaced by one line naming the count and the address. **The test is
-*unchanged*, not *old*** — repetition earns removal, and a row that moved stays however long it has
-been open.
-
-### Also played
-
-**Fair copy.** 258 addresses, and **the one dead entry was written eight hours earlier by this
-instance**: a bare parenthesis inside a markdown link target ends the link at the first `)`, so
-`[ma](…/Ma_(negative_space))` resolved to a 404 **for readers, not only for the sweep**.
-Percent-encoded, 200 by hand, zero dead after.
-
-**And `fair copy` gained a clause on his ruling:** re-sync any **derived copy** against its source.
-He also ruled its boundary — *a derived copy is in, a local convenience is out* — so the vault
-comparison run that same hour is deliberately **not** in the trigger: *"the graph copy is a real
-source-of-truth surface; the vault is one machine's convenience."*
-
-### Corrections that became protocol
-
-***A sign that survives only because nobody looked at it closely is not a sign that was chosen.***
-Three glyphs failed the moment the test was stated.
-
-***A category that is structurally empty for some readers is a category that is hiding another one.***
-📤 with no receiver was not a small edge case; it was 🕝 wearing the wrong name.
-
-***Checking that a host has a feature is half the check. The other half is how long it lives.***
+**What the entry could not know:** on 2026-09-09 the page gained the axis it never had — **when** each
+category is worked, recycle first on a fresh window — which is the half the afternoon never reached.
 
 ---
 
@@ -1440,5 +1369,100 @@ script compares corpus nouns, not counts of sections. **The class is wider than 
 and 1 stable · `#49` where a derived index is published · `#50` ownership of a server · `#57` the
 movements the Watcher handed over · `#70` awaiting the Workshop's ledger evidence · `#22` awaiting
 GitHub Support · `#10` and `#29` stopped by his own ruling on the vault.
+
+---
+
+## Session 2026-09-10/11 — End Day: the catalogue stopped being the way in
+
+*Second entry for 2026-09-10, written past midnight. Twelve pull requests, all merged, all gates
+quoted. The subject ran from "rank what to keep in memory" to a retrieval architecture, and the
+Composer turned it twice with one sentence each.*
+
+### The question could not be answered as asked
+
+*"Can we rank usefulness to keep in memory to the GE?"* — **there is no keep-or-drop control.**
+Everything read is re-sent in full on every subsequent request; a page cannot be evicted. So the
+rankable quantity is **worth having read**, and the cost of a read is **size × every turn that
+follows it.**
+
+`rank_residency.mjs` ranks the constant half. Its first run found `README.md` serving nothing
+measurable and **`tools/register.md` at 19 662 tokens for twelve bodies** — the most expensive
+substantial page in the library.
+
+### Three pages, one pattern, and it is Diátaxis arriving from the cost side
+
+```text
+index.md        20 291 -> 13 588   48 % routes · 52 % conventions
+presentation    29 891             rules + the page's own changelog
+register.md     19 662 ->  9 003   a register + criteria + two dated passes
+```
+
+**Each mixed a lookup surface with rules and with history, and because everything read stays, a
+reader who wanted one line paid for all three.** ⚠️ **The test is not length: a long page of one kind
+is fine; a short page of three kinds is the defect.**
+
+### And then the sentence that made the splitting beside the point
+
+**"Nobody enters a library and reads the index file of the librarian."**
+
+`start.md` had been telling every instance the index was the only route in — handing every reader the
+librarian's catalogue at the door. **The routing card became the first route and the index became the
+guarantee.** ~13 500 tokens left the mandatory arrival of every session, at four instances.
+
+### The card, and what Germany added in 1951
+
+His second turn: *"back to the card system of german library — name, tag and physical hyperlink of
+where's the book."* **Checked before building: the card is 18th century** — Linnaeus, and 300 000
+slips in Vienna by 1780. **What Luhmann's Zettelkasten added in 1951 was the address.** A card that
+knows where it is and points at others **is a graph node on paper.**
+
+`card.mjs`: name · seed · tags · **derived shelfmark** · links. Nineteen structure cards as entry
+points — Luhmann kept his outside the box, and so does this. And `--task`, which pulls several cards
+and draws **only the edges between them**: the task mandala **cut** from the meta-mandala rather than
+built beside it.
+
+⚠️ **Its first run corrected a number I had given him that morning.** *117 of 118 bodies named* is not
+coverage. **A catalogue lists a body; it does not explain it.** 72 explained · **47 catalogues only** ·
+1 nowhere.
+
+### The third turn, and it solved what arithmetic could not
+
+*"The client and the librarian work together to finding knowledge."* — the reference interview.
+
+**A card for a central body is a card for the whole library**: 34 neighbours, 101 of 119 within two
+hops. **Weighting by centrality was the obvious fix and it is the wrong one** — it drops what the
+reader might have wanted and never says so. ⚠️ **A librarian does not narrow silently. It asks** — and
+the signal was already in the graph: **how many groups the neighbours fall into.** One group answers;
+fourteen groups asks, showing every group and its size.
+
+### The target this library owes the corpus, third answer
+
+Two were refused by measurement rather than argument. *Explain everything* is 47 pages nobody asked
+for. *Explain the load-bearing* died on the data: **explained and unexplained have medians one apart
+and the middle band is a coin flip.** **What got explained is what somebody happened to write.**
+
+**Ruled: a body a page's rule leans on must be explained here; a body no page leans on is owed
+nothing.** ⚠️ And the honest state is printed by the instrument: **6 pages of 97 declare, 7 bodies
+leaned on, 0 owed — the target is met because almost nothing has been declared.**
+
+### What the Workshop found that neither gate can see
+
+**Their deployed skill was one commit behind: committed 3 200, installed 4 074.** A trim made,
+reviewed, merged — **and still billed.**
+
+```text
+size  ×  requests  ×  how long the deployed copy lags the reviewed one
+```
+
+**Every check either estate runs reads the repository. Nothing reads what loads.** They also corrected
+the divisor — `÷ 3.7` here against their `÷ 4`, 8 % apart, **enough to make two instances'
+attributions incomparable while both look precise.** The estate uses 4.
+
+### The zero closed
+
+**Seven `descends-from` crossings now touch the movements layer** — the Composer's seven rulings,
+emitted by the corpus within forty-eight hours. ⚠️ **And I had re-affirmed *the zero has not moved*
+twice in the day before it moved**, neither time re-derived. **The frozen-measurement class arriving
+as a stale finding rather than a stale number**, which is worse: a finding is what other people quote.
 
 ---
