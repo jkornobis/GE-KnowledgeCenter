@@ -59,6 +59,7 @@ look.
 | the word *verified*, about to be used | `method/evidence.md` |
 | a number about to be written into a page | `method/sources-and-rederivation.md` |
 | adding a tool, or auditing one already in use | `protocols/tool-audit.md` |
+| weighing a tool against another, or filling a lever entry | `method/judging-a-tool.md` |
 | a search that found nothing, on a word that should exist | `method/chair-vocabulary.md` |
 | turning a request into an ensemble of chairs | `chairs/the-twelve-chairs.md` |
 | reviewing a design surface, or deciding it is too early to | `method/design-review.md` |
