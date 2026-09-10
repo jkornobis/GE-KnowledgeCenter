@@ -95,6 +95,50 @@ deliberately not here.
   word cost once. Deleting the **file** is untouched by this: still a Greenfield Reset boundary,
   still the deletion protocol's five statements in full.
 
+## A page declares what its rule leans on, and that is what this library owes the corpus (ruled 2026-09-10)
+
+**The question this settles: which bodies of the corpus does this library owe an explanation?**
+
+**A body a page's rule DEPENDS ON must be explained here. A body no page leans on is owed nothing,
+however connected it is.**
+
+**The declaration is a section, `## Where this sits in the corpus`**, naming the bodies in backticks
+with one sentence each on what the page takes from them. ⚠️ **It is a claim by the page, never a
+graph edge** — the corpus is authored elsewhere, and inventing an edge here is the defect these same
+pages warn about.
+
+    node map_pages.mjs --leans     what is leaned on, what is met, what is owed
+
+### Why not by how connected a body is, which was tried first
+
+**Measured 2026-09-10, before the rule was written:**
+
+```text
+degree band   explained   not   explained %
+   0- 3          13         1     93%
+   3- 6          13        16     45%
+   6-10          19        15     56%
+  10-15           7         9     44%
+  15-20           5         4     56%
+  20-+           15         2     88%
+
+median degree — explained 8 · not explained 7
+```
+
+**The middle of the distribution is a coin flip and the medians are one apart.** Whether a body is
+explained here has almost nothing to do with how connected it is. **A link threshold would have
+invented a target rather than recovered one** — obliging a page at twelve links and excusing nine,
+with no defence for the line.
+
+**The 93% in the bottom band is the tell:** low-degree bodies are almost all explained because they
+are *recent* — written at the same moment as the page that introduced them. **What got explained is
+what somebody happened to write.**
+
+⚠️ **And the honest state of this rule today: 6 pages of 97 declare anything, 7 bodies are leaned
+on, 0 are owed.** The target is met because almost nothing has been declared, not because the
+library is complete. **The measure becomes meaningful only as pages declare**, and a page that
+states a rule and declares nothing is not in breach — it is unmeasured.
+
 ## Signing — which instance is speaking (ruled 2026-09-04)
 
 **Every GrandEnsemble instance writes to GitHub as the same person.** One account, one git identity,

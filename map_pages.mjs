@@ -155,6 +155,56 @@ if (one) {
 // ⚠️ And the third list is the point: bodies bound to the chair that NO page explains. That is the
 // chair's own gap, derived rather than guessed, and it is per-chair rather than for the library as
 // a whole.
+// ---- WHAT A PAGE LEANS ON, which is the target this library owes the corpus.
+//
+// Ruled by the Composer 2026-09-10, after link count was measured and refused: a body is owed an
+// explanation here IF ONE OF OUR OWN PAGES' RULES DEPENDS ON IT. Degree does not define it — the
+// explained and unexplained have medians one apart, and the middle of the distribution is a coin
+// flip. What a page leans on is self-defining and defensible; what a body is connected to is not.
+//
+// The declaration is the section `## Where this sits in the corpus`, and the bodies are the
+// backticked names inside it. ⚠️ It is a CLAIM BY THE PAGE, never a graph edge — the corpus is
+// authored elsewhere and inventing an edge here is the defect these same pages warn about.
+const leans = () => {
+  const out = new Map();                       // body -> [pages]
+  for (const page of pages) {
+    const src = readFileSync(page, "utf8");
+    const i = src.indexOf("## Where this sits in the corpus");
+    if (i === -1) continue;
+    const rest = src.slice(i + 4);
+    const end = rest.indexOf("\n## ");
+    const block = end === -1 ? rest : rest.slice(0, end);
+    for (const m of block.matchAll(/`([^`]+)`/g)) {
+      if (!byName.has(m[1])) continue;
+      if (!out.has(m[1])) out.set(m[1], []);
+      if (!out.get(m[1]).includes(page)) out.get(m[1]).push(page);
+    }
+  }
+  return out;
+};
+
+if (argv.includes("--leans")) {
+  const L = leans();
+  const declared = [...new Set([...L.values()].flat())];
+  console.log(`what this library leans on\n`);
+  console.log(`   pages declaring a dependency   ${declared.length} of ${pages.length}`);
+  console.log(`   distinct bodies leaned on      ${L.size} of ${byName.size}\n`);
+  // a page naming 25+ distinct bodies is a catalogue: it lists, it does not explain
+  const distinct = new Map();
+  for (const h of hits) if (h.tier === "strong") distinct.set(h.page, (distinct.get(h.page) || new Set()).add(h.name));
+  const isCat = (p) => (distinct.get(p)?.size || 0) >= 25;
+  const explained = (nm) => hits.some((h) => h.name === nm && h.tier === "strong" && !isCat(h.page));
+  const owed = [], met = [];
+  for (const [nm, ps] of [...L].sort()) (explained(nm) ? met : owed).push([nm, ps]);
+  console.log(`MET — leaned on, and explained by a page that is not a catalogue (${met.length})`);
+  for (const [nm, ps] of met) console.log(`   ${nm.padEnd(34)} leaned on by ${ps.length}`);
+  console.log(`\n⚠️ OWED — leaned on by a rule here, explained nowhere but a catalogue (${owed.length})`);
+  for (const [nm, ps] of owed) console.log(`   ${nm.padEnd(34)} leaned on by ${ps.join(" · ")}`);
+  console.log(`\nThe target is this list and nothing wider: a body no page leans on is owed nothing,`);
+  console.log(`however connected it is. ${pages.length - declared.length} pages declare nothing yet.`);
+  process.exit(0);
+}
+
 const oneChair = arg("chair");
 if (oneChair) {
   const chairNode = G.layers.musicians.nodes.find((n) => (n.name || n.id) === oneChair);
