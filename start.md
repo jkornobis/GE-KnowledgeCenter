@@ -67,6 +67,7 @@ look.
 | opening a tracker, or ranking from one | `method/reading-a-tracker.md` |
 | about to write a rule down somewhere durable | `method/recording-a-rule.md` |
 | your first contribution to this library | `tutorial/first-contribution.md` |
+| about to sign, publish, or write a claim onto a page | `protocols/library-conventions.md` |
 
 **Every row names the moment, not the subject.** A card keyed by subject is an index in miniature and
 you would have to already know the word; keyed by moment, it can catch you in the middle of the work
