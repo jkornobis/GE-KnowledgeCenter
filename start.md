@@ -29,23 +29,29 @@ own floor halfway through a task has already produced work the floor was suppose
 
 ## 2 — What you fetch, and in what order
 
-    1  this page          you are here
-    2  index.md           the only route into this library; every path is taken from it
-    3  a page it names    when the work turns on a fact you do not hold
+    1  this page           you are here — and the card below is already in your hands
+    2  the routing card    if a row names what you are doing, fetch the page it names. No index.
+    3  index.md            when the card does not reach. The complete route, and the guarantee
+    4  a page it names     when the work turns on a fact you do not hold
 
-**Stop at 2 until a task needs 3.** Fetching on principle is how a session spends its context on
-pages it never uses. The trigger is *the work touching a subject*, not a question arriving about
-one — building on a surface is work that turns on facts about that surface, and the page governing
-it is owed before the first thing is made, not after the result is judged.
+**Ruled by the Composer 2026-09-10, and his sentence is the argument:** *nobody enters a library and
+reads the index file of the librarian.* **The card is the librarian and the index is the catalogue.**
+A reader asks; the catalogue is what the librarian consults when the asking does not resolve.
 
-**A subject `index.md` does not name is a subject this library does not cover.** Say that. A 404
-means the path was wrong, never that the knowledge is absent.
+⚠️ **The index is still the only complete route in, and that has not changed.** It is the one
+guarantee that nothing here is unreachable. What changed is that it is no longer the *first* thing
+read — because it is the second-largest page in the library, and a session that wanted one path was
+carrying all of them for the rest of its life.
 
-⚠️ **But you cannot need a fact you do not know exists.** *Stop at 2* is a context rule and it is a
-good one; read alone it also guarantees that no instance ever finds anything it was not already
-looking for. **So the routing card below is resident in the page you have already fetched** — it
-costs nothing to hold, and it is the only part of this library that reaches you before you decide to
-look.
+**A card miss is not evidence of absence.** The card is hand-written and it drifts — measured, three
+pages in two days. **If no row names what you are doing, fetch the index**, and a subject the *index*
+does not name is a subject this library does not cover. **A 404 means the path was wrong, never that
+the knowledge is absent.**
+
+**And the old rule stands underneath all of it:** fetching on principle is how a session spends its
+context on pages it never uses. The trigger is *the work touching a subject*, not a question arriving
+about one — the page governing a surface is owed before the first thing is made on it, not after the
+result is judged.
 
 ### The routing card — keyed by what your work touches, never by kind of page
 
