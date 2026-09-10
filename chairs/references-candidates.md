@@ -61,11 +61,11 @@ reading recommendation** — it is what the corpus says the chair answers to, an
 because a references file that ignored it would describe a different chair.
 
 ```text
-UX Designer        10 principles and protocols · 29 pages name the chair
+UX Designer        10 corpus bodies · 29 pages name the chair
                    grounds: The Composer Principle · Episteme vs. doxa · The Declared Circle
                             The Turing Game · Unison
                    enacts:  Canonical duets · Proactive consultation
-Design Engineer    14 principles and protocols · 36 pages name the chair
+Design Engineer    14 corpus bodies · 36 pages name the chair
                    grounds: The Composer Principle · Episteme vs. doxa · The Declared Circle
                             Unison · The cobbler's children
                    enacts:  Canonical duets · Minimum Duet

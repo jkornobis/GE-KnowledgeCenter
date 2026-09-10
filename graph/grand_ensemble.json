@@ -1,6 +1,6 @@
 {
   "generated": "derived by scripts/build_grand_ensemble.mjs — do not hand-edit",
-  "note": "Every dot carries a résumé: firstName (the node), lastName (its family), title (its seed), doc and familyDoc. Every edge is a couple with its own id and `union` — the two last names joined — plus `kin` (sibling within a family, partner across two) and the pair the corpus never had: `status` (corroborated · earned · asserted · hypothesis) and `why` (the sentence that earns it, or the reason it is absent). `sources` is on all three layers and means one thing everywhere: the work — a film, a text, a record — that TEACHES the node, carrying the sentence that teaches it and not merely a citation. It is distinct from `definedAt` (protocols: where the rule is written) and from `canon` (musicians: the discipline's authorities). Whether a chair's references belong to the seat or to whoever occupies it is NOT decided here.",
+  "note": "Every dot carries a résumé: firstName (the node), lastName (its family), title (its seed), doc and familyDoc. Every edge is a couple with its own id and `union` — the two last names joined — plus `kin` (sibling within a family, partner across two) and the pair the corpus never had: `status` (corroborated · earned · asserted · hypothesis) and `why` (the sentence that earns it, or the reason it is absent). `sources` is on all three layers and means one thing everywhere: the work — a film, a text, a record — that TEACHES the node, carrying the sentence that teaches it and not merely a citation. It is distinct from `definedAt` (protocols: where the rule is written) and from `canon` (musicians: the discipline's authorities). Whether a chair's references belong to the seat or to whoever occupies it is NOT decided here. ⚠️ PATHS IN THIS FILE ARE PROVENANCE, NEVER LINKS (Composer, 2026-09-08). `doc`, `familyDoc`, `iconFrom` and `definedAt` name where a body is WRITTEN, in the estate that owns the corpus — 229 of them point into `project/`, plus `brain/` and `scripts/`. A copy of this graph in another repository resolves NONE of them, and that is correct rather than broken: the same convention as the roster’s `Source` column, which points at prose pages, project files, a pattern ledger and executable code alike. Resolving them to URLs was considered and refused — it would bind the corpus to a host, which is exactly what a library carrying no estate must not inherit.",
   "families": {
     "Governance": {
       "name": "Governance",
@@ -72,7 +72,7 @@
           "doc": "project/principles_candidate.md#dmoskratos",
           "icon": "how_to_vote",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Agile Auditor",
             "Software Engineer",
@@ -105,7 +105,7 @@
           "doc": "project/principles_candidate.md#composerprinciple",
           "icon": "draw",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Agile Facilitator",
             "Agile Auditor",
@@ -137,7 +137,7 @@
           "doc": "project/principles_candidate.md#agilefacilitatorisanagentnotthecomposer",
           "icon": "support_agent",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": null,
           "boundaryWhy": null,
@@ -162,7 +162,7 @@
           "doc": "project/principles_candidate.md#achoiceofferedisabug",
           "icon": "alt_route",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": "gap",
           "boundaryWhy": null,
@@ -196,7 +196,7 @@
           "doc": "project/principles_candidate.md#howrulesactuallyholdstructureoverprose",
           "icon": "rule",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": null,
           "boundaryWhy": null,
@@ -228,7 +228,7 @@
           "doc": "project/principles_candidate.md#overshoot",
           "icon": "speed",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Agile Auditor"
           ],
@@ -255,7 +255,7 @@
           "doc": "project/principles_candidate.md#deletionprotocol",
           "icon": "delete_forever",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Agile Auditor",
             "Software Architect"
@@ -282,7 +282,7 @@
           "doc": "project/principles_candidate.md#ndt",
           "icon": "troubleshoot",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Software Architect"
           ],
@@ -342,7 +342,7 @@
           "doc": "project/principles_candidate.md#toobigtoosoon",
           "icon": "compress",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "QA Engineer",
             "Product Owner",
@@ -373,7 +373,7 @@
           "doc": "project/principles_candidate.md#spotlighting",
           "icon": "security",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": "gap",
           "boundaryWhy": null,
@@ -397,7 +397,7 @@
           "doc": "project/principles_candidate.md#delegationbrief",
           "icon": "assignment",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Software Engineer",
             "Product Owner"
@@ -441,7 +441,7 @@
           "doc": "project/principles_candidate.md#fractalloop",
           "icon": "all_inclusive",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": "boundary",
           "boundaryWhy": "the same shape at every zoom level — *which* level to test at is the Composer's call",
@@ -482,7 +482,7 @@
           "doc": "project/principles_candidate.md#operahouseprinciple",
           "icon": "theater_comedy",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": "boundary",
           "boundaryWhy": "the venue and the score are the frame the work sits in, and the frame is chosen, not inhabited",
@@ -512,7 +512,7 @@
           "doc": "project/principles_candidate.md#noneuclideancorollary",
           "icon": "public",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": "boundary",
           "boundaryWhy": "the first measurement collapses the superposition, and choosing when to measure is choosing the scale",
@@ -535,7 +535,7 @@
           "doc": "project/principles_candidate.md#nestedoperahousescorollary",
           "icon": "layers",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": "boundary",
           "boundaryWhy": "nesting is where one level ends and another begins, which is a boundary decision by definition",
@@ -568,7 +568,7 @@
           "doc": "project/principles_candidate.md#harmonyprinciple",
           "icon": "graphic_eq",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": "boundary",
           "boundaryWhy": "independent lines resolving into one chord — the resolution is heard from outside the lines",
@@ -606,7 +606,7 @@
           "doc": "project/principles_candidate.md#unison",
           "icon": "sync_lock",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "UX Designer",
             "Design Engineer",
@@ -642,7 +642,7 @@
           "doc": "project/principles_candidate.md#kintsugiparadox",
           "icon": "healing",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "QA Engineer",
             "Reliability Engineer"
@@ -668,7 +668,7 @@
           "doc": "project/principles_candidate.md#professionalmantra",
           "icon": "workspace_premium",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Agile Auditor",
             "Content Designer",
@@ -704,7 +704,7 @@
           "doc": "project/principles_candidate.md#epistemevsdoxa",
           "icon": "fact_check",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Agile Facilitator",
             "Agile Auditor",
@@ -748,7 +748,7 @@
           "doc": "project/principles_candidate.md#cobblerschildren",
           "icon": "self_improvement",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Design Engineer",
             "Accessibility Specialist",
@@ -800,7 +800,7 @@
           "doc": "project/principles_candidate.md#composerasneuron",
           "icon": "sync_alt",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "QA Engineer"
           ],
@@ -826,7 +826,7 @@
           "doc": "project/principles_candidate.md#extendingthethirteenthfloor",
           "icon": "stairs",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Software Architect",
             "Reliability Engineer"
@@ -902,7 +902,7 @@
           "doc": "project/principles_candidate.md#turinggame",
           "icon": "contact_support",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "UX Designer",
             "Content Designer"
@@ -956,7 +956,7 @@
           "doc": "project/principles_candidate.md#absoluteear",
           "icon": "handyman",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Agile Auditor",
             "User Researcher"
@@ -1011,7 +1011,7 @@
           "doc": "project/principles_candidate.md#declaredcircle",
           "icon": "select_all",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Agile Auditor",
             "UX Designer",
@@ -1053,7 +1053,7 @@
           "doc": "project/principles_candidate.md#emptyhands",
           "icon": "front_hand",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [],
           "groundedKind": "gap",
           "boundaryWhy": null,
@@ -1084,7 +1084,7 @@
           "doc": "project/principles_candidate.md#designbyabsence",
           "icon": "crop_free",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "QA Engineer",
             "User Researcher"
@@ -1127,7 +1127,7 @@
           "doc": "project/principles_candidate.md#serendipity",
           "icon": "auto_awesome",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "QA Engineer"
           ],
@@ -1162,7 +1162,7 @@
           "doc": "project/principles_candidate.md#intervalprinciple",
           "icon": "space_bar",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Content Designer"
           ],
@@ -1196,7 +1196,7 @@
           "doc": "project/principles_candidate.md#responsecalibration",
           "icon": "tune",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Content Designer"
           ],
@@ -1240,7 +1240,7 @@
           "doc": "project/principles_candidate.md#artasfeltscience",
           "icon": "palette",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html",
+          "iconFrom": "project/icon_registry.md",
           "groundsChairs": [
             "Accessibility Specialist"
           ],
@@ -1859,7 +1859,7 @@
           "b": "principles:overshoot",
           "type": "?",
           "status": "earned",
-          "why": "That is what separates `Rule 0 gate`, `Button gate`, `Request quality check`, `Definition of Done`, `THE WHIP` and `Attribution format` — all real checks, none of them loops — from the twenty-three, which are ordered here by the scale of the thing they take: ``` 1 Overshoot a single input, before acting on it 2 Response calibration how much to say in one reply 3 Episteme vs.",
+          "why": "That is what separates `Rule 0 gate`, `Button gate`, `Request quality check`, `Definition of Done`, `THE WHIP` and `Attribution format` — all real checks, none of them loops — from the twenty-three, which are ordered here by the scale of the thing they take: ```text 1 Overshoot a single input, before acting on it 2 Response calibration how much to say in one reply 3 Episteme vs.",
           "id": "principles:fractalloop+overshoot:?",
           "union": "Safety — Structure",
           "kin": "partner"
@@ -1879,7 +1879,7 @@
           "b": "principles:fractalloop",
           "type": "?",
           "status": "earned",
-          "why": "That is what separates `Rule 0 gate`, `Button gate`, `Request quality check`, `Definition of Done`, `THE WHIP` and `Attribution format` — all real checks, none of them loops — from the twenty-three, which are ordered here by the scale of the thing they take: ``` 1 Overshoot a single input, before acting on it 2 Response calibration how much to say in one reply 3 Episteme vs.",
+          "why": "That is what separates `Rule 0 gate`, `Button gate`, `Request quality check`, `Definition of Done`, `THE WHIP` and `Attribution format` — all real checks, none of them loops — from the twenty-three, which are ordered here by the scale of the thing they take: ```text 1 Overshoot a single input, before acting on it 2 Response calibration how much to say in one reply 3 Episteme vs.",
           "id": "principles:epistemevsdoxa+fractalloop:?",
           "union": "Learning — Structure",
           "kin": "partner"
@@ -1899,7 +1899,7 @@
           "b": "principles:responsecalibration",
           "type": "?",
           "status": "earned",
-          "why": "That is what separates `Rule 0 gate`, `Button gate`, `Request quality check`, `Definition of Done`, `THE WHIP` and `Attribution format` — all real checks, none of them loops — from the twenty-three, which are ordered here by the scale of the thing they take: ``` 1 Overshoot a single input, before acting on it 2 Response calibration how much to say in one reply 3 Episteme vs.",
+          "why": "That is what separates `Rule 0 gate`, `Button gate`, `Request quality check`, `Definition of Done`, `THE WHIP` and `Attribution format` — all real checks, none of them loops — from the twenty-three, which are ordered here by the scale of the thing they take: ```text 1 Overshoot a single input, before acting on it 2 Response calibration how much to say in one reply 3 Episteme vs.",
           "id": "principles:fractalloop+responsecalibration:?",
           "union": "Balance — Structure",
           "kin": "partner"
@@ -2734,7 +2734,7 @@
           "doc": "protocols.md:4",
           "icon": "groups",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:minimumduet",
@@ -2752,7 +2752,7 @@
           "doc": "protocols.md:107",
           "icon": "group",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:instrumentfamilies",
@@ -2770,7 +2770,7 @@
           "doc": "brain_protocols.md:105",
           "icon": "category",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:ensemblesizes",
@@ -2788,7 +2788,7 @@
           "doc": "brain_protocols.md:113",
           "icon": "format_list_numbered",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:canonicalduets",
@@ -2806,7 +2806,7 @@
           "doc": "brain_protocols.md:120",
           "icon": "link",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:agentroutingtable",
@@ -2824,7 +2824,7 @@
           "doc": "brain_protocols.md:179",
           "icon": "route",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:chamberechoantiphony",
@@ -2842,7 +2842,7 @@
           "doc": "protocols.md:6",
           "icon": "hearing",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:sequentialhandoffs",
@@ -2860,7 +2860,7 @@
           "doc": "protocols.md:113",
           "icon": "arrow_forward",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:personasvsrealsubagents",
@@ -2896,7 +2896,7 @@
           "doc": "protocols.md:14",
           "icon": "signal_cellular_alt",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:artifactpipeline",
@@ -2914,7 +2914,7 @@
           "doc": "protocols.md:27",
           "icon": "account_tree",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:unitloop",
@@ -2932,7 +2932,7 @@
           "doc": "protocols.md:46",
           "icon": "loop",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:docsharding",
@@ -2950,7 +2950,7 @@
           "doc": "protocols.md:59",
           "icon": "content_cut",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:spawnloadbalancingpivot",
@@ -2968,7 +2968,7 @@
           "doc": "protocols.md:68",
           "icon": "call_split",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:lots",
@@ -2986,7 +2986,7 @@
           "doc": "protocols.md:124",
           "icon": "view_week",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:fortissimo",
@@ -3023,7 +3023,7 @@
           "doc": "protocols.md:110",
           "icon": "task_alt",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:independentverification",
@@ -3041,7 +3041,7 @@
           "doc": "protocols.md:104",
           "icon": "verified_user",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:executiondiscipline",
@@ -3059,7 +3059,7 @@
           "doc": "protocols.md:121",
           "icon": "checklist",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:runtimeruleadherencespotcheck",
@@ -3113,7 +3113,7 @@
           "doc": "protocols.md:164",
           "icon": "quiz",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:attributionformat",
@@ -3131,7 +3131,7 @@
           "doc": "brain_protocols.md:279",
           "icon": "badge",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:toolfailurewatch",
@@ -3149,7 +3149,7 @@
           "doc": "scripts/hooks/tool-failure-watch.mjs",
           "icon": "build",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:faircopy",
@@ -3203,7 +3203,7 @@
           "doc": "protocols.md:133",
           "icon": "warning",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:toolaudit",
@@ -3347,7 +3347,7 @@
           "doc": "presentation.md:1",
           "icon": "visibility",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:disagreementhandling",
@@ -3365,7 +3365,7 @@
           "doc": "protocols.md:4, brain_protocols.md:88",
           "icon": "forum",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:proactiveconsultation",
@@ -3383,7 +3383,7 @@
           "doc": "brain_protocols.md:159",
           "icon": "campaign",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:roadmapcadence",
@@ -3401,7 +3401,7 @@
           "doc": "protocols.md:170",
           "icon": "flag",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:knowledgepivot",
@@ -3419,7 +3419,7 @@
           "doc": "protocols.md:167",
           "icon": "hub",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:patternledgerfiresat3",
@@ -3437,7 +3437,7 @@
           "doc": "brain/patterns.md:1",
           "icon": "pattern",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:operahousecycle",
@@ -3455,7 +3455,7 @@
           "doc": "principles_candidate.md:344 (registered to the protocol layer 2026-07-28)",
           "icon": "theater_comedy",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:checkpointthesession",
@@ -3528,7 +3528,7 @@
           "doc": "protocols.md:178",
           "icon": "security",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:delegationbrief",
@@ -3546,7 +3546,7 @@
           "doc": "protocols.md:92",
           "icon": "assignment",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:multilingualcomposer",
@@ -3564,7 +3564,7 @@
           "doc": "brain_protocols.md:139",
           "icon": "translate",
           "iconStatus": "ratified",
-          "iconFrom": "project/qa/mandala-review.html"
+          "iconFrom": "project/icon_registry.md"
         },
         {
           "id": "protocols:solodismiss",
@@ -8750,7 +8750,7 @@
       "toLayer": "protocols",
       "kind": "enacts",
       "status": "earned",
-      "why": "QA Engineer — \"**The QA Engineer gates the task tier** — a task isn't 'ready' until its Definition of Done is explicit.\" — and the *Tasks* row of its Lead chair(s) column reads \"QA Engineer (DoD) + the executing domain chair\" (`project/protocol_chair_map.md`, class: protocol-declared)",
+      "why": "QA Engineer — \"**The QA Engineer gates the task tier** — a task isn't 'ready' until its Definition of Done is explicit.\" — and its *Tasks* stage reads \"QA Engineer + the executing chair\" — the Definition of Done is what the QA Engineer brings to that pair (`project/protocol_chair_map.md`, class: protocol-declared)",
       "a": "musicians:qaengineer",
       "b": "protocols:artifactpipeline",
       "id": "cross:artifactpipeline+qaengineer:enacts",
@@ -9352,7 +9352,7 @@
       "toLayer": "protocols",
       "kind": "enacts",
       "status": "earned",
-      "why": "Software Architect — its own **Lead chair(s)** column: *Plan* → \"Software Architect (+ the domain chairs in play)\"; *Epics* → \"Software Architect + Product Owner\" (`project/protocol_chair_map.md`, class: protocol-declared)",
+      "why": "Software Architect — its own stage list: *Plan* → \"how; Software Architect\"; *Epics* → \"workstreams; Software Architect + Product Owner\" (`project/protocol_chair_map.md`, class: protocol-declared)",
       "a": "musicians:softwarearchitect",
       "b": "protocols:artifactpipeline",
       "id": "cross:artifactpipeline+softwarearchitect:enacts",
@@ -9442,6 +9442,104 @@
       "id": "cross:operahousecycle+reliabilityengineer:enacts",
       "union": "Brass — Learning & Pattern",
       "kin": "partner"
+    },
+    {
+      "from": "agileauditor",
+      "to": "lean",
+      "fromLayer": "musicians",
+      "toLayer": "movements",
+      "kind": "descends-from",
+      "status": "earned",
+      "why": "the Auditor's method is Lean's, not a borrowing of it: *genchi genbutsu* — go and see the actual place — and the Five Whys asked without looking for someone to blame, both cited in this entry's own works. The chair's whole reach is going to the artifact rather than to the report about it.",
+      "a": "musicians:agileauditor",
+      "b": "movements:lean",
+      "id": "cross:agileauditor+lean:descends-from",
+      "union": null,
+      "kin": "partner"
+    },
+    {
+      "from": "agilefacilitator",
+      "to": "agile",
+      "fromLayer": "musicians",
+      "toLayer": "movements",
+      "kind": "descends-from",
+      "status": "earned",
+      "why": "the chair is named for a role this movement invented. [The Scrum Guide](https://scrumguides.org/scrum-guide.html), already a work on this entry, defines an accountability whose job is the process rather than the product, and no earlier movement has one: Lean has the line manager and the engineer, not the facilitator.",
+      "a": "musicians:agilefacilitator",
+      "b": "movements:agile",
+      "id": "cross:agile+agilefacilitator:descends-from",
+      "union": null,
+      "kin": "partner"
+    },
+    {
+      "from": "productowner",
+      "to": "agile",
+      "fromLayer": "musicians",
+      "toLayer": "movements",
+      "kind": "descends-from",
+      "status": "earned",
+      "why": "defined **by name** in the same work. The Product Owner is one of the Scrum Guide's three accountabilities, and the chair takes the name unchanged, which is as direct as a border in this file gets.",
+      "a": "musicians:productowner",
+      "b": "movements:agile",
+      "id": "cross:agile+productowner:descends-from",
+      "union": null,
+      "kin": "partner"
+    },
+    {
+      "from": "qaengineer",
+      "to": "agile",
+      "fromLayer": "musicians",
+      "toLayer": "movements",
+      "kind": "descends-from",
+      "status": "asserted",
+      "why": "and the word is the author's rather than the grader's: the Composer split this row from Lean on 2026-09-08. The reasoning recorded with the ruling is that QA's practices are Agile's — the increment is the unit under test — where the Auditor's are Lean's. No work cited here says it, so it is asserted rather than earned, and the split is what the record holds.",
+      "a": "musicians:qaengineer",
+      "b": "movements:agile",
+      "id": "cross:agile+qaengineer:descends-from",
+      "union": null,
+      "kin": "partner"
+    },
+    {
+      "from": "softwareengineer",
+      "to": "softwarecraft",
+      "fromLayer": "musicians",
+      "toLayer": "movements",
+      "kind": "descends-from",
+      "status": "earned",
+      "why": "stated by this entry's own prose two paragraphs up, and it was written before any border was ruled: *\"the Software Engineer's whole canon is that list\"* — SOLID, DRY, KISS, YAGNI, bounded context. The chair's canon and this movement's vessel are the same set of rules.",
+      "a": "musicians:softwareengineer",
+      "b": "movements:softwarecraft",
+      "id": "cross:softwarecraft+softwareengineer:descends-from",
+      "union": null,
+      "kin": "partner"
+    },
+    {
+      "from": "designengineer",
+      "to": "designsystems",
+      "fromLayer": "musicians",
+      "toLayer": "movements",
+      "kind": "descends-from",
+      "status": "earned",
+      "why": "this entry already carries the evidence and states it as a finding: *\"the Design Engineer has no canon, because this one has not finished producing its vessel.\"* A chair whose canon is missing **because the movement has not finished** is a chair inside that movement, not beside it.",
+      "a": "musicians:designengineer",
+      "b": "movements:designsystems",
+      "id": "cross:designengineer+designsystems:descends-from",
+      "union": null,
+      "kin": "partner"
+    },
+    {
+      "from": "uxdesigner",
+      "to": "designsystems",
+      "fromLayer": "musicians",
+      "toLayer": "movements",
+      "kind": "descends-from",
+      "status": "asserted",
+      "why": ". Argued before the ruling and never cited. The ground is that a design system moves where a decision lives, which is the UX Designer's territory rather than the Design Engineer's alone; the corpus records no sentence saying so, and the pairing rule that keeps these two chairs together is a rule of the roster, not evidence about this movement.",
+      "a": "musicians:uxdesigner",
+      "b": "movements:designsystems",
+      "id": "cross:designsystems+uxdesigner:descends-from",
+      "union": null,
+      "kin": "partner"
     }
   ],
   "movements": {
@@ -9460,6 +9558,7 @@
             "href": "https://en.wikipedia.org/wiki/Tao_Te_Ching"
           }
         ],
+        "chairs": [],
         "layer": "movements",
         "rootless": "nothing recorded. This is the corpus's root, not a claim that it had no ancestor."
       },
@@ -9487,6 +9586,7 @@
             "href": "https://en.wikipedia.org/wiki/Karate"
           }
         ],
+        "chairs": [],
         "layer": "movements"
       },
       {
@@ -9503,6 +9603,7 @@
             "href": "https://en.wikipedia.org/wiki/Neuromancer"
           }
         ],
+        "chairs": [],
         "layer": "movements",
         "rootless": "not recorded. New Wave science fiction is the obvious parent and the corpus cites none of it, so the line is left undrawn rather than assumed. **Gap.**"
       },
@@ -9529,6 +9630,7 @@
             "href": "https://en.wikipedia.org/wiki/The_Thirteenth_Floor"
           }
         ],
+        "chairs": [],
         "layer": "movements"
       },
       {
@@ -9555,6 +9657,7 @@
             "href": "https://en.wikipedia.org/wiki/Music_Sounds_Better_with_You"
           }
         ],
+        "chairs": [],
         "layer": "movements",
         "rootless": "not recorded. The documented parents are [Chicago and Detroit house, and 1970s disco](https://en.wikipedia.org/wiki/French_house), and the corpus cites no work from either, so the edge is not drawn. **Gap — and the clearest one: a movement three principles depend on, hanging from nothing.**"
       },
@@ -9578,6 +9681,13 @@
           {
             "label": "Takeuchi & Nonaka — *The New New Product Development Game* (HBR, 1986)",
             "href": "https://hbr.org/1986/01/the-new-new-product-development-game"
+          }
+        ],
+        "chairs": [
+          {
+            "chair": "agileauditor",
+            "status": "earned",
+            "why": "the Auditor's method is Lean's, not a borrowing of it: *genchi genbutsu* — go and see the actual place — and the Five Whys asked without looking for someone to blame, both cited in this entry's own works. The chair's whole reach is going to the artifact rather than to the report about it."
           }
         ],
         "layer": "movements",
@@ -9606,6 +9716,23 @@
             "href": "https://scrumguides.org/scrum-guide.html"
           }
         ],
+        "chairs": [
+          {
+            "chair": "agilefacilitator",
+            "status": "earned",
+            "why": "the chair is named for a role this movement invented. [The Scrum Guide](https://scrumguides.org/scrum-guide.html), already a work on this entry, defines an accountability whose job is the process rather than the product, and no earlier movement has one: Lean has the line manager and the engineer, not the facilitator."
+          },
+          {
+            "chair": "productowner",
+            "status": "earned",
+            "why": "defined **by name** in the same work. The Product Owner is one of the Scrum Guide's three accountabilities, and the chair takes the name unchanged, which is as direct as a border in this file gets."
+          },
+          {
+            "chair": "qaengineer",
+            "status": "asserted",
+            "why": "and the word is the author's rather than the grader's: the Composer split this row from Lean on 2026-09-08. The reasoning recorded with the ruling is that QA's practices are Agile's — the increment is the unit under test — where the Auditor's are Lean's. No work cited here says it, so it is asserted rather than earned, and the split is what the record holds."
+          }
+        ],
         "layer": "movements"
       },
       {
@@ -9631,6 +9758,13 @@
             "href": "https://martinfowler.com/bliki/BoundedContext.html"
           }
         ],
+        "chairs": [
+          {
+            "chair": "softwareengineer",
+            "status": "earned",
+            "why": "stated by this entry's own prose two paragraphs up, and it was written before any border was ruled: *\"the Software Engineer's whole canon is that list\"* — SOLID, DRY, KISS, YAGNI, bounded context. The chair's canon and this movement's vessel are the same set of rules."
+          }
+        ],
         "layer": "movements"
       },
       {
@@ -9650,6 +9784,18 @@
           {
             "label": "Design Tokens format",
             "href": "https://www.designtokens.org/tr/drafts/format/"
+          }
+        ],
+        "chairs": [
+          {
+            "chair": "designengineer",
+            "status": "earned",
+            "why": "this entry already carries the evidence and states it as a finding: *\"the Design Engineer has no canon, because this one has not finished producing its vessel.\"* A chair whose canon is missing **because the movement has not finished** is a chair inside that movement, not beside it."
+          },
+          {
+            "chair": "uxdesigner",
+            "status": "asserted",
+            "why": ". Argued before the ruling and never cited. The ground is that a design system moves where a decision lives, which is the UX Designer's territory rather than the Design Engineer's alone; the corpus records no sentence saying so, and the pairing rule that keeps these two chairs together is a rule of the roster, not evidence about this movement."
           }
         ],
         "layer": "movements"
@@ -9672,6 +9818,7 @@
             "href": "https://martinfowler.com/bliki/BoundedContext.html"
           }
         ],
+        "chairs": [],
         "layer": "movements"
       },
       {
@@ -9690,6 +9837,7 @@
             "href": "https://sre.google/workbook/implementing-slos/"
           }
         ],
+        "chairs": [],
         "layer": "movements"
       },
       {
@@ -9708,6 +9856,7 @@
             "href": "https://opentelemetry.io/docs/"
           }
         ],
+        "chairs": [],
         "layer": "movements"
       }
     ],
@@ -10288,6 +10437,18 @@
       "to": "*tools*",
       "kind": "empty-by-design",
       "why": "The UX Designer's reach ends where taste begins, and no instrument should fill it (Composer Principle). Every other unfilled reach is a gap to close; this one is a boundary to hold."
+    },
+    {
+      "from": "musicians",
+      "to": "movements",
+      "kind": "gap",
+      "why": "**Zero borders until 2026-09-09**, across twelve movements and twelve chairs, and nothing in the corpus recorded it — so the layer read as *finished* rather than *empty*. The Composer ruled 2026-09-08 that the movements layer is **the orchestra's and incomplete**, which settles the kind: the undrawn borders are missing, not correct. Had the layer been his own lineage the absence would have been `empty-by-design` and the silence would have been right. **`gap` is a fourth kind, added the same day** — the corpus had been using the word in prose for a month (see the falsified entry above: *\"an instrument not yet built\"*) while the schema carried only three values, and a vocabulary that does not match what the file already says is a second vocabulary. **7 borders are drawn now; 5 chairs still have none.** ⚠️ And the two candidates that were REJECTED built the bar this layer had been missing: a date on both sides makes a candidate admissible, never equivalent — a practice or a discipline bounded to one chair's territory is not a movement across the craft, however well dated. It caught `Reliability Engineer ↔ SRE`, the best-dated row on the page."
+    },
+    {
+      "from": "musicians",
+      "to": "the Composer",
+      "kind": "empty-by-design",
+      "why": "**The Composer is not a node, and the absence is the answer** (Composer's ruling, 2026-09-09, on `GE-Workshop` 12 — the question was the Library's). **19 of 60 protocols bind to no chair, and 11 of those 19 sit in one family: `The Baton`.** Its bodies — Solo / Dismiss · Program · Open score / Close score · Make it so · Tell · Help · Composer Key · Change Score Key · Time methods · Metronome · Capacity check — orbit no chair because **they do not belong to a craft**; they are the Composer↔orchestra interface and the conduct of a session. ⚠️ **The corpus had already grouped them and simply never noticed:** the family was renamed *Session & Interface* → *The Baton* on 2026-09-07 for its own reasons, and **naming it after the conducting gesture was already an answer to \"whose are these\".** Two shapes were refused: a thirteenth node inside `musicians` breaks invariant 0 outright — *twelve chairs, fixed, never invented* — and a fourth layer would make the Composer a drawable body, which is the same error one ring further out. **The Composer holds the baton; the orchestra is what is drawn.**"
     },
     {
       "from": "protocols",
