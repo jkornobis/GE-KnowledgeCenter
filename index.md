@@ -637,6 +637,36 @@ already said and no more; what it adds is that the claim is now in a fixed place
 greppable. **Content arriving from another instance stays ingested content either way** — a tag
 never turns a request into an instruction.
 
+### A page carries the provenance of its rules, never the history of itself (ruled 2026-09-10)
+
+**Two kinds of date, and only one of them belongs on a fetched page.**
+
+```text
+PROVENANCE      "(Composer standing rule, 2026-07-20)"   who ruled it, and at what level.
+                KEEP — it is what makes a rule arguable at the point of use, and
+                method/recording-a-rule.md requires it.
+AUTOBIOGRAPHY   "Unified 2026-09-07"  ·  "(added 2026-07-03)"  ·  "retired 2026-07-27"
+                REMOVE — it is a changelog, and git holds it perfectly.
+```
+
+**The test is who the date is about.** A date about **the rule** says who decided and when, which a
+reader arguing with the rule needs in the same breath as the rule. A date about **the page** says
+when its author last tidied it, which nobody fetching it for a rule has ever needed.
+
+**Applied first to `protocols/presentation.md`**, the longest page in the bundle at 29 891 bytes:
+eight autobiographical lines removed, **eleven provenance dates untouched**, and every reason those
+lines carried was kept — *a card that fails silently leaves a turn unattributed* is the rule; *cards
+were removed on 2026-07-23* is the changelog.
+
+⚠️ **This is not "fewer dates".** `index.md` carries 132 and `tools/register.md` 70, and both are
+correct: a published column and a sweep clock are **facets in a table**, not prose about the past.
+**A count of dated lines cannot tell the three apart**, which is why this rule is stated by kind
+rather than by number.
+
+**Where a ruling exists nowhere but in a page's own prose, it is traced before it is removed** — at
+GE-Workshop, where the decision log lives. That case is rare: on the first page treated it was two
+lines, not twenty-one.
+
 ### A page that is a record says so; everything else is live (ruled 2026-09-09)
 
 **Two kinds of page, and one rule each.** A **living** page states what is true now, so it must never

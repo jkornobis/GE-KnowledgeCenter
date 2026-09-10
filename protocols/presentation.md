@@ -13,7 +13,7 @@ generated: { by: human:jkornobis, at: 2026-08-27T09:10:00+02:00 }
 > **The message costs the Composer the decision, and nothing else. Everything behind the decision is
 > record, not message.**
 
-**Unified 2026-09-07.** Every rule on this page is a corollary of that sentence, and
+**Every rule on this page is a corollary of that sentence, and**
 `presentation-checklist.md` states the same logic with the seven counted checks that enforce it —
 including **the three acts** (admit · record · tell) and **the quorum** (Agile Facilitator · Content
 Designer · Product Owner) that decides what is worth surfacing before a message exists. Neither is
@@ -62,7 +62,7 @@ The **Auditorium / Note Picker** (ADR-197) is the canonical example of the third
 ## Relationship to existing surfaces
 Auditorium and Program are already "show" surfaces — numbered, ranked (descending), actionable. This generalizes that posture to *every* decision and result. The **Composer-authors invariant** is the *why*; this is *how it looks*.
 
-**And WHICH surface carries a thing at all is `protocols/presentation-surfaces.md`** (added 2026-09-08) — the message carries the decision, a `.md` page carries the explanation, a table carries data with more than two dimensions. **That page also holds this estate's fallback:** where no rule of ours reaches a case, defer to **Diátaxis**, named by the Composer for the question these rules leave most open — *what shape a document should take*. **This page is not the fallback's superior or its subordinate: where our rules speak they win, and the fallback is for silence rather than for disagreement.**
+**And WHICH surface carries a thing at all is `protocols/presentation-surfaces.md`** — the message carries the decision, a `.md` page carries the explanation, a table carries data with more than two dimensions. **That page also holds this estate's fallback:** where no rule of ours reaches a case, defer to **Diátaxis**, named by the Composer for the question these rules leave most open — *what shape a document should take*. **This page is not the fallback's superior or its subordinate: where our rules speak they win, and the fallback is for silence rather than for disagreement.**
 
 ## Per-Composer overrides — the Score Key
 
@@ -77,11 +77,11 @@ The rules above are *defaults*. Each Composer transposes them into their own **k
 
 > **Copy-paste source: `widget_templates.md`.** This section is the *spec* (why + rules); `widget_templates.md` holds the exact markup for every pattern below (persona map, pivot table, stat tiles, save button). When a pattern fits, reproduce the template and change only the content (ADR-101).
 >
-> **Attribution is NOT a widget.** Speech/ensemble/unison cards were removed 2026-07-23: a card that renders slowly or silently fails leaves a turn with no attribution at all, which is worse than a plain line. Voices are **markdown**, in chat and on docs-site alike. Widgets below remain for *results* (tables, charts, diagrams), never for who is speaking.
+> **Attribution is NOT a widget, and never a card.** A card that renders slowly or silently fails leaves a turn with no attribution at all, which is worse than a plain line. Voices are **markdown**, in chat and on docs-site alike. Widgets below remain for *results* (tables, charts, diagrams), never for who is speaking.
 >
 > **What attribution must carry** — this is the shared part: every voice that speaks, **one line per distinct position** rather than one per attendee, each naming the chair and its domain, in markdown and never in a card.
 >
-> ⚠️ **What this page must NOT fix is the shape.** How many lines, in what order, with which separators, is a **Composer's transposition** and lives in their own Key — see *Per-Composer overrides*, below, which this page has always said and this paragraph used to contradict. Until 2026-09-09 it showed a one-line form as the rule and cited `SKILL.md` for it. **Both are removed.** A shared page that fixes a personal taste goes stale the first time somebody exercises their Key — which happened on 2026-07-29, when a Composer set a two-line form so that the attribution stopped absorbing the message's first clause, **and neither document noticed for six weeks.**
+> ⚠️ **What this page must NOT fix is the shape.** How many lines, in what order, with which separators, is a **Composer's transposition** and lives in their own Key — see *Per-Composer overrides*, below. **A shared page that fixes a personal taste goes stale the first time somebody exercises their Key — which happened on 2026-07-29, when a Composer set a two-line form so that the attribution stopped absorbing the message's first clause, **and neither document noticed for six weeks.**
 >
 > **And the citation ran the wrong way.** Composer's ruling, 2026-09-09 (`#70`): **the library holds the rule and the skill points at it.** A resident copy that states a rule in its own words always wins over a fetched page, so the fork resolves in favour of the copy nobody reviewed.
 
@@ -163,7 +163,7 @@ The orchestra displays through the `visualize`/`show_widget` tool, choosing the 
 
 **Belt-and-suspenders:** every widget has a **markdown fallback** — a table/list/prose — because widgets render only in supporting clients. The widget is the belt; markdown is the suspenders. A result is never lost to a client that can't render the widget. Call `read_me` (visualize) before the first widget each session; keep explanatory text in the response, the visual in the widget.
 
-## Routing — content type → widget → fallback (added 2026-07-03)
+## Routing — content type → widget → fallback
 
 The **text layer is GitHub-Flavored Markdown** (GFM) — headings, tables, lists, task-lists, code, links, blockquotes; no colour, interactivity, or HTML. Anything richer is a **widget** (`visualize`/`show_widget`), which renders only where the client supports it. Route results to a widget where the client renders them, or the GFM fallback where it doesn't. Attribution is exempt: always a markdown line, never probed.
 
@@ -184,9 +184,9 @@ The **text layer is GitHub-Flavored Markdown** (GFM) — headings, tables, lists
 | Status / KPI | stat tiles | table |
 | Reasoning / the "tell" | — | plain GFM |
 
-**This applies to the orchestra's own turns, not only results handed over.** A musician *talking* — solo or multi-voice — is always a markdown attribution line, never a widget (2026-07-23: cards removed as an attribution surface). Show-don't-tell governs how the orchestra itself speaks; for attribution specifically, plain and reliable beats rich and fragile.
+**This applies to the orchestra's own turns, not only results handed over.** A musician *talking* — solo or multi-voice — is always a markdown attribution line, never a widget. Show-don't-tell governs how the orchestra itself speaks; for attribution specifically, plain and reliable beats rich and fragile.
 
-**Attribution must not go silent.** The historical drift was routing every voice through a widget, then quietly dropping back to unattributed prose when the widget was slow — caught live three times. Cards were removed for exactly this (2026-07-23): the format can no longer fail to render, so an unattributed voice is now a plain omission with no excuse behind it. Every voice, every send, one markdown line.
+**Attribution must not go silent.** The historical drift was routing every voice through a widget, then quietly dropping back to unattributed prose when the widget was slow — caught live three times. Cards are not an attribution surface for exactly this reason: a format that cannot fail to render means so an unattributed voice is now a plain omission with no excuse behind it. Every voice, every send, one markdown line.
 
 - **A musician's flag, alert, or warning gets its own attribution line**, and **any multi-voice exchange gets one line per distinct position** (or one shared line if they agree). This is what a Composer needs to read first, not skim past in a wall of unattributed prose.
 - **Any table matching a routing-table row is attempted as a widget before the GFM fallback**, not the reverse. Defaulting to markdown because a widget "felt like overhead" for a routine classification or reference table is exactly the drift this closes.
@@ -203,7 +203,7 @@ The **text layer is GitHub-Flavored Markdown** (GFM) — headings, tables, lists
 
 ## Provenance and what is missing here
 
-**Published 2026-08-27 from the running skill's own reference.** Two things a reader should know
+**Taken from the running skill's own reference.** Two things a reader should know
 before relying on it.
 
 **`widget_templates.md` is not in this library.** This page repeatedly names it as the copy-paste
