@@ -191,6 +191,7 @@ written before its musician has handled the instrument is plausible documentatio
 | Page | Covers | Published by | Published |
 |---|---|---|---|
 | `chairs/the-twelve-chairs.md` | What each seat is, the four instrument families, the routing table that turns a request into an ensemble, and the canonical duets — the layer a traveler needs before any chair's references are worth opening | jkornobis | 2026-08-26 |
+| `chairs/references-candidates.md` | Ten chairs carry a field-reference file and two do not; this assembles the candidates for both so the Composer can tier rather than gather — what the corpus already binds to each chair, what this library already holds, and external sources with every address verified to resolve, with the tier column deliberately empty | UX Designer, Design Engineer | 2026-09-10 |
 | `chairs/accessibility_specialist_references.md` | Living reference notes for the Accessibility Specialist's field | jkornobis | 2026-08-16 |
 | `chairs/agile_auditor_references.md` | Living reference notes for the Agile Auditor's field | jkornobis | 2026-08-16 |
 | `chairs/agile_facilitator_references.md` | Living reference notes for the Agile Facilitator's field | jkornobis | 2026-08-16 |
