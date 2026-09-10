@@ -33,6 +33,8 @@
  *     node card.mjs "The Reduction"
  *     node card.mjs --structure
  *     node card.mjs --structure="Balance"
+ *     node card.mjs --ask="Episteme vs. doxa"           the librarian asks back
+ *     node card.mjs --ask="Episteme vs. doxa" --in="Epistemics"
  *     node card.mjs --task="The Reduction,Minimum Duet,Dèmos Kratos"
  *     node card.mjs "The Reduction" --json
  */
@@ -102,6 +104,57 @@ const render = (c) => {
   if (c.links.length > 10) console.log(`│    … and ${c.links.length - 10} more`);
   console.log(`└─`);
 };
+
+// ---- THE REFERENCE INTERVIEW — the librarian asks back.
+//
+// The Composer, 2026-09-10: "the client and the librarian work together to finding knowledge."
+// That is the reference interview, and it is the answer to a problem this file could not solve by
+// arithmetic. A card for a CENTRAL body is a card for the whole library: `Episteme vs. doxa` has 34
+// neighbours and reaches 101 of 119 bodies within two hops. Weighting by centrality was the obvious
+// fix and it is the wrong one — it silently drops what the reader might have wanted.
+//
+// ⚠️ A LIBRARIAN DOES NOT NARROW SILENTLY. It asks. And the signal for whether to ask is already in
+// the graph: how many GROUPS the neighbours fall into.
+//
+//     The Reduction         3 neighbours, 1 group     answer — there is nothing to ask
+//     Serendipity           9 neighbours, 5 groups    one question narrows it
+//     Episteme vs. doxa    34 neighbours, 14 groups   ask, or return the library
+//
+// The question writes itself from the groups, so nothing is invented and nothing is hidden: the
+// reader sees every group and its size, and chooses. Luhmann solved the same problem structurally
+// with entry points kept outside the box; this is the conversational half of it.
+const ASK_ABOVE = 2;                                    // 1 group is an answer, not a question
+
+const askMode = arg("ask");
+if (askMode) {
+  const id = byName.get(askMode);
+  if (!id) { console.log(`no card for "${askMode}". Try: node card.mjs --structure`); process.exit(0); }
+  const nb = adj.get(id).map((e) => e.to);
+  const uniq = [...new Set(nb)];
+  const by = new Map();
+  for (const x of uniq) { const g = group(meta.get(x)); if (!by.has(g)) by.set(g, []); by.get(g).push(nameOf(x)); }
+  const groups = [...by].sort((a, b) => b[1].length - a[1].length);
+  console.log(`${askMode} — ${uniq.length} neighbours in ${groups.length} group(s)\n`);
+  if (groups.length <= ASK_ABOVE) {
+    console.log(`  ANSWER — nothing to ask. The whole neighbourhood:\n`);
+    for (const [g, ns] of groups) for (const n of ns) console.log(`    ${n.slice(0, 44).padEnd(46)} ${g}`);
+    process.exit(0);
+  }
+  const pick = arg("in");
+  if (pick) {
+    const ns = by.get(pick);
+    if (!ns) { console.log(`  no group "${pick}" among its neighbours.`); process.exit(0); }
+    console.log(`  narrowed to ${pick} — ${ns.length}:\n`);
+    for (const n of ns) console.log(`    ${n}`);
+    process.exit(0);
+  }
+  console.log(`  ⚠️ Too wide to answer. Which of these are you asking about?\n`);
+  for (const [g, ns] of groups)
+    console.log(`    ${String(ns.length).padStart(2)}  ${g.padEnd(24)} ${ns.slice(0, 3).join(" · ")}${ns.length > 3 ? " …" : ""}`);
+  console.log(`\n  node card.mjs --ask="${askMode}" --in="<group>"   to take one`);
+  process.exit(0);
+}
+
 
 // ---- STRUCTURE CARDS — the entry points, kept outside the box.
 const groups = new Map();
