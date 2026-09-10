@@ -33,9 +33,14 @@ the floor  =   request 1's write + read
 **That is the whole method.** It is exact — these are billed figures, not estimates — and any
 instance can run it on itself in one pass.
 
-⚠️ **Do not mix it with file sizes.** A `chars ÷ 3.7` estimate of what is *in* the floor is useful
-for attribution and is approximate; the transcript figures are not approximate, and quoting the two
-in the same table without saying which is which is how a measurement becomes a guess.
+⚠️ **Do not mix it with file sizes.** A `chars ÷ 4` estimate of what is *in* the floor is useful for
+attribution and is approximate; the transcript figures are not approximate, and quoting the two in
+the same table without saying which is which is how a measurement becomes a guess.
+
+⚠️ **And the divisor is a convention rather than a fact.** This page first used `÷ 3.7` and the
+Workshop's tooling uses `÷ 4`; the two disagree by about 8 %, which is enough to make two instances'
+attributions incomparable while both look precise. **The estate uses 4.** Any figure derived with a
+different one must say so.
 
 ## Two instances, measured independently
 
@@ -69,6 +74,47 @@ the privilege of being cheap to re-read afterwards.**
 **So the economy at arrival is not *read less*. It is *grow the prompt fewer times*** — every
 determinable lookup issued in one parallel block, and every question the session must ask folded
 into the one message that asks.
+
+## What is in a floor, apportioned — and it is not what either of us first said
+
+**The Workshop's first attribution put the account's connector surface in the same block as the
+host's own prompt, which read as blaming the connectors for 72 % of the floor. Corrected by them
+before anyone acted on it:**
+
+```text
+host system prompt + resident tool schemas        ~17 475   40 %
+harness scaffolding — deferred tool names,
+  skills listing, agent roster, env block         ~11 300   26 %
+the instruction layer an estate authors           ~11 214   26 %
+account connector surface — ~150 tool names
+  across six surfaces, plus their instructions     ~2 900    7 %
+```
+
+**The connectors are under 7 %.** The mass is the host's own prompt, **which no method page and no
+configuration reaches.** That matters because it decides which lever is worth pulling: detaching
+unused surfaces is free and recovers little. **The lever is round trips, not attachments.**
+
+## ⚠️ A measurement of a repository is not a measurement of what loads
+
+**Found at the Workshop end, 2026-09-10, and it is the sharpest thing in this subject.**
+
+```text
+the skill as committed     3 200 tok
+the skill as installed     4 074 tok      one commit behind
+paid                         874 tok  x every request  x every session, until deployed
+```
+
+**A trim had been made, reviewed and merged, and was still being billed** — because the floor is set
+by what is *installed*, and every check either estate runs reads the *repository*.
+
+**So the cost of anything resident has a third factor nobody measures:**
+
+```text
+size  ×  requests  ×  how long the deployed copy lags the reviewed one
+```
+
+**The third factor is invisible to every gate in this estate.** A page can be corrected, merged and
+still be wrong in the only copy that matters.
 
 ## ⚠️ And over a whole session the floor is not the story
 
