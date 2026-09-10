@@ -5,8 +5,8 @@ description: "Living reference notes for the Software Engineer's field"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T23:27:12+02:00 }
 sources:
-  - resource: https://owasp.org/API-Security/editions/2023/en/0x11-t10/
-    title: "OWASP API Security Top 10 (2023)"
+  - resource: https://github.com/OWASP/API-Security
+    title: "OWASP API Security Top 10 (2023) — project repository"
   - resource: https://zod.dev/
     title: "Runtime schema validation — Zod / Standard Schema"
   - resource: https://standardschema.dev/
@@ -38,7 +38,7 @@ sources:
 Living reference notes for the Software Engineer's field. Sourced from an **independent field audit** (2026-07-02, real subagent, not persona self-assessment). The through-line: *the API attack surface and the runtime/tooling baseline moved* past a "TypeScript + Clean Code" snapshot. Re-verify versions before citing.
 
 ## Critical
-- **[OWASP API Security Top 10 (2023)](https://owasp.org/API-Security/editions/2023/en/0x11-t10/)** — The dominant attack surface is now authorization logic, not injection: BOLA (broken object-level auth), broken object-property-level auth, unrestricted resource consumption. These are the bugs a TS API Software Engineer ships daily.
+- **[OWASP API Security Top 10 (2023)](https://github.com/OWASP/API-Security)** — The dominant attack surface is now authorization logic, not injection: BOLA (broken object-level auth), broken object-property-level auth, unrestricted resource consumption. These are the bugs a TS API Software Engineer ships daily.
 - **[Runtime schema validation — Zod / Standard Schema](https://zod.dev/)** — TypeScript types vanish at runtime, so trust-boundary data (request bodies, env, API responses) needs runtime validation. Zod 4 and the cross-library [Standard Schema](https://standardschema.dev/) spec are the baseline, not hand-written guards.
 - **[Typed end-to-end APIs — tRPC / REST / GraphQL](https://trpc.io/docs)** — Choosing between tRPC (TS-monorepo, zero-codegen type safety), OpenAPI-typed REST, and [GraphQL](https://graphql.org/learn/) is a core design decision; a REST-only Software Engineer under-serves full-stack TS teams.
 
