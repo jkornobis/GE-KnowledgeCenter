@@ -61,9 +61,15 @@ finding of mine about another estate's work travels as an issue; the text stays 
 
 ## 4 — What counts as done here
 
-**Both gates, run and quoted, never assumed** — `node check_okf.mjs` and `node check_links.mjs` at
-the root; both exit non-zero on failure. **Neither reads the outside**: not one http address, not
-the `sources[].resource` fields. An external link is checked by hand or it is unchecked.
+**All three gates, run and quoted, never assumed** — `node check_okf.mjs`, `node check_links.mjs`
+and `node check_frozen_counts.mjs --strict` at the root; all three exit non-zero on failure.
+**None of them reads the outside**: not one http address, not the `sources[].resource` fields. An
+external link is checked by hand or it is unchecked.
+
+**The third one joined on 2026-09-11 and holds less than its name suggests** (`#42`): it proves no
+*live* page disagrees with the graph copy **this repository ships** — not that the copy is the
+corpus's, which needs an address this library deliberately does not carry. Internal agreement is
+the only thing a gate here can honestly hold.
 
 **Any text bound for a forge, a page or a commit is written through a quoted heredoc — never a
 double-quoted shell string.** Backticks in one are run as commands and substituted with the empty

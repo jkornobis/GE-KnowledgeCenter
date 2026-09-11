@@ -12,11 +12,26 @@
  * 2026-09-09 is what makes this checkable at all: before it, there was nothing to tell the two
  * kinds apart.
  *
- * ⚠️ IT REPORTS AND DOES NOT GATE, and the reason is in its own output. It cannot tell a count
- * STATED as current from a count QUOTED as formerly wrong — index.md deliberately quotes "33
+ * ⚠️ IT COULD NOT GATE UNTIL 2026-09-11, and the obstacle was one case: it cannot tell a count
+ * STATED as current from a count QUOTED as formerly wrong. index.md deliberately quotes "33
  * principles, 59 protocols, 282 crossings" so a reader can see what moved, and that line is
  * indistinguishable from the defect by any pattern. A check that fires on a correction teaches its
- * operator to ignore checks. `--strict` exits 1 for anyone who decides to wire it into a gate.
+ * operator to ignore checks, so the case was given a marker rather than a heuristic:
+ *
+ *     <!-- quoted: <why> -->   anywhere in a paragraph, and that paragraph's numbers are read as
+ *                              a former value on purpose. Paragraph-scoped, because the retraction
+ *                              and the figure it retracts are one argument and wrap across lines.
+ *
+ * ⚠️ THE MARKER IS COUNTED AND PRINTED ON EVERY RUN, passing or failing. A silencer that is
+ * invisible in the output is a silencer nobody audits, and this file exists because a number went
+ * unread for twelve days.
+ *
+ * WHAT --strict PROVES, AND WHAT IT DOES NOT. It proves that no live page disagrees with the graph
+ * copy THIS REPOSITORY SHIPS. It does not prove the copy is the corpus's — that is
+ * check_corpus_freshness.mjs, it needs a source address this library deliberately does not carry,
+ * and it is report-only for the reason written in its own header. Internal agreement is the only
+ * thing a gate here can honestly hold; the copy's currency is a separate question with a separate
+ * instrument.
  *
  * Only five nouns are compared, and each is derivable from the graph with no interpretation:
  * principles, protocols, chairs, movements, crossings. `nodes` is deliberately excluded — "104
@@ -25,7 +40,7 @@
  * Requires node >= 18. No dependencies. Reads the graph and the pages, writes nothing.
  *
  *     node check_frozen_counts.mjs            the report
- *     node check_frozen_counts.mjs --strict   exit 1 if anything is stale
+ *     node check_frozen_counts.mjs --strict   exit 1 if anything is stale — this is the gate
  */
 import { readFileSync, readdirSync, lstatSync } from "node:fs";
 import { join } from "node:path";
@@ -50,15 +65,45 @@ const walk = (d) => readdirSync(d).flatMap((n) => {
 });
 
 const NOUN = new RegExp(`\\b(\\d{1,4})\\s+(${Object.keys(truth).join("|")})\\b`, "g");
+const MARK = "<!-- quoted:";
 const findings = [];
-let live = 0, records = 0;
+let live = 0, records = 0, quotedBlocks = 0;
+const marked = new Set();
 
 for (const path of walk(".").map((p) => p.replace(/^\.\//, ""))) {
   if (path === "SESSION_LOG.md") continue;                  // the journal is a record by nature
   const src = readFileSync(path, "utf8").replace(/\r\n/g, "\n");
   if (/^record:\s*\S+/m.test(src.slice(0, src.indexOf("\n---", 4) + 1))) { records++; continue; }
   live++;
-  src.split("\n").forEach((line, i) => {
+  const lines = src.split("\n");
+
+  // A paragraph carrying the marker is a retraction: the figure in it is quoted BECAUSE it is
+  // wrong. Scoped to the paragraph rather than the line because the retraction and the figure it
+  // retracts are one argument, and prose wraps — index.md's says "this paragraph said" on one
+  // line and the numbers on the next two.
+  // ⚠️ A marker shown INSIDE a fenced block is an example of the marker, not a use of it — the
+  // page that documents this convention has to print it to teach it, and would otherwise silence
+  // itself and inflate the count below.
+  let fenced = false;
+  const isMark = lines.map((l) => {
+    if (l.trimStart().startsWith("```")) { fenced = !fenced; return false; }
+    return !fenced && l.includes(MARK);
+  });
+
+  const silenced = new Set();
+  let start = 0;
+  for (let i = 0; i <= lines.length; i++) {
+    if (i < lines.length && lines[i].trim() !== "") continue;
+    if (isMark.slice(start, i).some(Boolean)) {
+      quotedBlocks++;
+      marked.add(path);
+      for (let j = start; j < i; j++) silenced.add(j);
+    }
+    start = i + 1;
+  }
+
+  lines.forEach((line, i) => {
+    if (silenced.has(i)) return;
     NOUN.lastIndex = 0;
     let m;
     while ((m = NOUN.exec(line))) {
@@ -79,6 +124,8 @@ for (const path of walk(".").map((p) => p.replace(/^\.\//, ""))) {
 
 console.log(`check_frozen_counts — live pages only, against graph/grand_ensemble.json\n`);
 console.log(`   read      ${String(live).padStart(3)} live · ${records} marked \`record:\` and skipped`);
+console.log(`   silenced  ${String(quotedBlocks).padStart(3)} paragraph(s) marked \`<!-- quoted: \`${marked.size ? " in " + [...marked].join(", ") : ""}`);
+console.log(`             named on every run, passing or failing — a silencer nobody sees is a silencer nobody audits`);
 console.log(`   corpus    ${Object.entries(truth).map(([k, v]) => `${k} ${v}`).join(" · ")}\n`);
 
 if (!findings.length) {
@@ -90,7 +137,10 @@ if (!findings.length) {
     console.log(`   ${f.path}:${f.lineNo}   says ${f.said} ${f.noun}, corpus holds ${f.is}`);
     console.log(`        ${f.line}`);
   }
-  console.log(`\nA live page must not freeze a moving number. Remove it and name the artifact, or`);
-  console.log(`mark the page \`record: <date>\` if it is a pass rather than a statement about now.`);
+  console.log(`\nA live page must not freeze a moving number. Three ways out, and they are not`);
+  console.log(`interchangeable — each one says a different thing about the page:`);
+  console.log(`   remove it and name the artifact      the number was a statement about now`);
+  console.log(`   mark the page \`record: <date>\`       the page is a pass, not a statement about now`);
+  console.log(`   mark the paragraph \`<!-- quoted: \`   the figure is quoted BECAUSE it is wrong`);
 }
 if (strict && findings.length) process.exit(1);
