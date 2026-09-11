@@ -37,6 +37,28 @@
  * principles, protocols, chairs, movements, crossings. `nodes` is deliberately excluded — "104
  * nodes across three rings" and "119 nodes" are both sayable and mean different sets.
  *
+ * ⚠️ WHAT IT DELIBERATELY DOES NOT READ, decided 2026-09-11 by sweeping for it rather than by
+ * taste (#42). Two things were candidates and both were measured first:
+ *
+ *   percentages and ranks   62 live lines carry one. NOT ONE is derivable inside this bundle:
+ *                           they are cited from outside (the ~30-40% axe ceiling, MAST's 42/37/21,
+ *                           Ware & Franck's +60/+120/+200), or CSS values and thresholds that are
+ *                           not measurements at all, or readings of something that is not here --
+ *                           a session's token floor, a Figma file, another repository. **A gate
+ *                           needs a derivable reference and there is none**, which is a stronger
+ *                           reason than the pattern being hard.
+ *
+ *   .mjs and .html          two corpus counts live outside the pages, both in script headers, and
+ *                           reading them would need the marker convention inside code comments for
+ *                           a class of two. One was stale and is de-frozen instead
+ *                           (classify_bodies.mjs, "27 of the 92", corpus 95).
+ *
+ * ⚠️ AND THE `of` EXEMPTION HAS A KNOWN BLIND SPOT, stated because it was found in the wild rather
+ * than reasoned about: `27 of the 92 principles` is skipped, and its 92 WAS a corpus total that had
+ * gone stale. The exemption tolerates a stale denominator by design -- "41 of 59 protocols" is
+ * correct as of some pass -- so a total used as a denominator is invisible here. That is a
+ * deliberate hole, not an oversight, and closing it would mean guessing which role a number plays.
+ *
  * Requires node >= 18. No dependencies. Reads the graph and the pages, writes nothing.
  *
  *     node check_frozen_counts.mjs            the report

@@ -22,9 +22,11 @@
  *             is. The work is reclassification, never deletion — the corpus retires by naming
  *             what leaves and why.
  *
- *   BELT      it orbits no chair. Not one body to fix but a population nobody has named: 27 of
- *             the 92 principles and protocols are bound to no chair at all. The work is to say
- *             what the set is.
+ *   BELT      it orbits no chair. Not one body to fix but a population nobody has named: a
+ *             standing minority of the principles and protocols is bound to no chair at all, and
+ *             THIS SCRIPT COUNTS IT — read the run, never this line. The work is to say what the
+ *             set is. (Said "27 of the 92" until 2026-09-11, when the corpus held 95; a header
+ *             that states a count it is itself able to compute is the defect #42 is about.)
  *
  * And the small-gravity reading, which is not a defect: a body bound to exactly ONE chair is that
  * chair's ring. Its low connection is its meaning, not its weakness — it belongs to one planet and
