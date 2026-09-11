@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node tracing_floor.mjs",
+            "timeout": 15,
+            "statusMessage": "Drawing the library's tracing floor..."
+          }
+        ]
+      }
+    ]
+  }
+}

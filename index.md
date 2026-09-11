@@ -18,26 +18,38 @@ directory, it is history; if it has one and is not in a table below, report it r
 it. `check_links.mjs` in this bundle holds that line for `.md` and `.json`
 references only. **It does not read script names at all** — `scripts/` is declared provenance and `.mjs` is
 outside its pattern — so the script names cited across these pages are provenance by construction, never links
-it has checked and passed. **And eleven bare names are exceptions to the history rule, because they are runnable
-files in this bundle rather than another estate's coordinates: `check_okf.mjs`, `check_links.mjs`,
-`sweep_links.mjs`, `check_corpus_freshness.mjs`, `propose_vectors.mjs`, `measure_stability.mjs`, `find_perturbations.mjs`, `measure_coupling.mjs`, `classify_bodies.mjs`, `add_star.mjs` and `render_solar.mjs`** — the first two are gates and
-fail a merge; **the next two report and never block** — one sweeps outward addresses, the other asks
-whether this bundle's copy of `graph/grand_ensemble.json` is still the corpus's, **and it takes the
-corpus's location as an argument because this library carries no estate's address**; **the last one
-writes always**, drawing `mandalas/solar-deep.svg`, `solar-orrery.svg` and `solar-faceon.svg` from the same
+it has checked and passed. **And every `*.mjs` at this bundle's root is an exception to the history rule**, because those are
+runnable files here rather than another estate's coordinates. **The rule is the location, not a
+list** — `ls *.mjs` is the authority, and what follows names only what each kind *does*.
+
+**Three fail a merge:** `check_okf.mjs` reads conformance, `check_links.mjs` reads resolution,
+`check_frozen_counts.mjs --strict` reads whether a live page states a corpus count the graph
+contradicts.
+
+**The reporters never block** — `sweep_links.mjs` sweeps outward addresses; `check_corpus_freshness.mjs`
+asks whether this bundle's copy of `graph/grand_ensemble.json` is still the corpus's, **and it takes
+the corpus's location as an argument because this library carries no estate's address**;
+`map_pages.mjs` joins these pages to the corpus; `rank_residency.mjs` weighs what a page costs to
+hold against what it answers; `card.mjs` returns a body as a card; `tracing_floor.mjs` draws the way
+in at the start of a session in this repository.
+
+**`render_solar.mjs` writes always**, drawing `mandalas/solar-deep.svg`, `solar-orrery.svg` and `solar-faceon.svg` from the same
 graph — three projections of one construction, compared side by side in `mandalas/solar-variants.html` —
 and `mandalas/corona-ring.svg`, `corona-cloud.svg` and `corona-named.svg` under `--corona=`, three
 treatments of the one band a projection choice does not settle, compared in `mandalas/corona-variants.html` — a picture is an artefact rather
-than a measurement, and it is kept separate from the six for that reason; **the six between them** read
+than a measurement, and it is kept separate from the analysis scripts for that reason. **Those** read
 `graph/grand_ensemble.json` and write nothing at all, one proposing **hypotheses**, one measuring
 whether this corpus carries the stability signature of a natural network, one ranking the
 bodies that sit furthest from what the structure predicts, one measuring how the warrant border
 couples protocols to principles, one asking what KIND of thing each imbalance is, and one measuring
 what changes when the Composer is added to the graph as the centre the corpus does not contain.
 
-*The count in this paragraph said **eight** and **the last two** while enumerating five reading
-scripts, corrected 2026-09-07 when the ninth was added. The clause had been extended twice without
-its own arithmetic being re-read — the defect this index records against other pages, in itself.*
+*De-frozen 2026-09-11 (`#42`), on its third failure. This clause used to enumerate the scripts and
+carry its own count: it said **eight** while enumerating five, corrected 2026-09-07 when the ninth
+was added, and said **eleven** when there were fifteen. **Extended three times without its own
+arithmetic being re-read** — the defect this index records against other pages, in itself, and the
+reason the list is now a location rather than a sentence. `check_frozen_counts.mjs` cannot see this
+class: the noun was `bare names`, not a corpus count.*
 
 **And a provenance path may have a living sibling here.** The extraction remapped the files without remapping the
 cross-references, so **18 of the 48 provenance citations in these pages name a document this library also holds
