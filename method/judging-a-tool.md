@@ -1,7 +1,7 @@
 ---
 type: Method
 title: "Judging a tool — the six questions, and they are the method rather than columns on a table (User Researcher, Product Owner, Software Architect)"
-description: "Lineage, posture, health, grip, why and licence: what each question asks of a tool, who answers it, and the schema a lever entry fills — separated from the register itself on 2026-09-10 because judging a tool and looking one up are different acts and only one of them needs the other page"
+description: "Lineage, posture, health, grip, why and licence: what each question asks of a tool, who answers it, and the schema a lever entry fills — separated from the register itself because judging a tool and looking one up are different acts and only one of them needs the other page"
 status: draft
 serves_all: true
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-10T22:05:00+02:00 }
@@ -12,8 +12,8 @@ sources:
 
 # Judging a tool
 
-**These questions lived inside `tools/register.md` until 2026-09-10.** They were separated because
-**judging a tool and looking one up are different acts**: the register answers *what exists*, and
+**These questions are separated from `tools/register.md` because judging a tool and looking one up
+are different acts**: the register answers *what exists*, and
 this answers *how it was weighed*. A reader who wants a lever should not have to carry the criteria,
 and a reader weighing a candidate should not have to carry the register.
 
@@ -79,7 +79,7 @@ Spans: **[Chair] ↔ [Chair]** — [what each side holds that must cross]. Multi
 | [name] | skill/tool/MCP/sub-agent/plugin/web UI (URL) | implements \| extends \| replaces \| no standard | carries \| reference only \| absent | ref-addressable \| eyes-only \| mixed \| blocked \| n/a | free \| OSS \| paid — [justification] | [one line] | [url] | YYYY-MM-DD |
 ```
 
-### `Why` — does the documentation carry the reason, or only the reference? (added 2026-08-08, ADR-268)
+### `Why` — does the documentation carry the reason, or only the reference? (ADR-268)
 
 **The Composer's criterion, stated as a ranking rule:** *"Best documented API or MCP are in our criteria the one that carry the WHY."* And his proof, which is this session's own worked example: *"API it's only a part of documentation, and well documented API rarely carry the why itself. Else you do arrow in figma without thinking."*
 
@@ -97,7 +97,7 @@ Spans: **[Chair] ↔ [Chair]** — [what each side holds that must cross]. Multi
 
 **One boundary: a pipe inherits, it does not carry.** Context7 serves whatever a library ships, so its `Why` value belongs to the source, never to Context7 itself. Judging the pipe by its payload would score the same server differently on every query.
 
-### `Posture` — does it implement the standard, or replace it? (added 2026-08-08, ADR-263)
+### `Posture` — does it implement the standard, or replace it? (ADR-263)
 
 **The Composer's rule, and the causal half is the part that predicts:** *"Open source tools are always more reliable because they don't pretend inventing the wheel."*
 
@@ -118,7 +118,7 @@ Spans: **[Chair] ↔ [Chair]** — [what each side holds that must cross]. Multi
 
 **Which is also why "always" is not carried into the rule.** Two paid candidates and their outcomes are already in this file and **neither was decided by the licence**: the axe MCP is paid, `extends`, and **cleared the bar**; Anima is paid and was **refused** for putting a wall in front of basic capability (ADR-262).
 
-### `Health` — stability and community (added 2026-08-08, ADR-263)
+### `Health` — stability and community (ADR-263)
 
 **The Composer's selection criteria, in his words: *"by lever, stability, community supporting it."*** The first is the ranking question this register already asks. The other two are the answer to OSS's real failure mode — **abandonment, single-maintainer risk, no obligation to answer** — and his point is that this is a *criterion to check*, not a reason to distrust the licence.
 
@@ -141,7 +141,7 @@ Spans: **[Chair] ↔ [Chair]** — [what each side holds that must cross]. Multi
 | `Grip` | what does it cost to hold — practised, or sight-read forever |
 | `Licence` | **may we use it, in this case** |
 
-### `Spanning layer … won by` — leap or arrival? (added 2026-08-08, ADR-263)
+### `Spanning layer … won by` — leap or arrival? (ADR-263)
 
 **The Composer:** *"Sometimes a tool wins only because is first, not by the leap it's doing."* The register ranks by the lineage question and models feature count as noise — **incumbency was a third force it did not model at all**, while already recording two instances of it as description:
 
@@ -158,7 +158,7 @@ A layer that won **by arrival** is not necessarily easy to displace — the acce
 
 **Where Discovery hunts, stated as a rule:** `won by: leap` → watch, do not hunt; out-leaping a genuine leap is rare and expensive. **`won by: arrival` → hunt here** — the position may be immovable while the *gaps* are open, and a gap left by history is the cheapest thing this method can find.
 
-### `Grip` — how the tool can be held (added 2026-08-08, ADR-262)
+### `Grip` — how the tool can be held (ADR-262)
 
 **Only meaningful for `web UI (URL)` candidates; `n/a` for everything else** — an MCP tool or a skill is called, not driven, so there is nothing to grip. Determined by **one `read_page`** before adopting anything, which makes it the cheapest field in the table.
 
