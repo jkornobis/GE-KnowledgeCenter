@@ -113,9 +113,54 @@ was meant.**
 | The lodge | **Have.** The repository is the institution that outlives the session |
 | The mark | **Have.** Which instance is speaking is a rule and it holds |
 | The kept drawing | **Have.** The graph and the decision record are the specification that outlives its authors |
-| The template | **Barely.** Lever indexes keyed by intent exist for **2 of the 12 chairs**. The rest of the library is filed by *kind of page* — tool, method, protocol — which is filing by who made it rather than by the part it makes |
+| The template | **Barely, and the reason is upstream** — see below. Lever indexes keyed by intent exist for **2 of the 12 chairs**, and four of the ten missing ones *cannot be cut*: no lever in the register serves them. The rest of the library is filed by *kind of page* — tool, method, protocol — which is filing by who made it rather than by the part it makes |
 | The tracing floor | **Missing.** Drawings exist; none of them is in anyone's path. There is no surface a working session crosses without choosing to |
 | The catalogue | **Shelf list only.** `index.md` names every page with a description — what is downstairs. **No entry says what question the page answers, and none carries a check that the copy is intact** |
+
+## Why the eight missing templates are not eight unwritten pages (measured 2026-09-11)
+
+**A template is cut from the full-size drawing. Where there is no drawing, there is nothing to cut** —
+and that, not authorship, is what the score above is measuring. `tools/register.md` holds **four
+levers**, and each one declares the seats it serves:
+
+| Chair | Levers registered for it | Lever index |
+|---|---|---|
+| Design Engineer | 4 of 4 | written |
+| UX Designer | 3 | written |
+| QA Engineer · Accessibility Specialist | 2 | none |
+| Software Engineer · Software Architect · Reliability Engineer · Content Designer | 1 | none |
+| **Agile Facilitator · Agile Auditor · Product Owner · User Researcher** | **none** | **not possible** |
+
+**The two that exist are the top of the distribution, not an arbitrary pair.** Nobody chose to write
+those two first — they are the two chairs the register actually serves, and the indexes followed the
+work. The order was earned rather than planned, which is the strongest evidence the constraint is
+holding.
+
+⚠️ **Four chairs have no lever at all, so writing them an index would mean inventing the drawing to
+justify the template.** Two of the four are anticipated in the register's predictive surface — the
+Product Owner and the User Researcher hold the *tool health as data* seam, whose state is
+`unconceptualized`, the only entry ever to carry that value. **The other two, the Agile Facilitator
+and the Agile Auditor, appear in no lever and no seam**, and that reads as correct rather than
+missing: their instrument is the orchestra, and the register is a register of instruments that are
+not it.
+
+**So the gap has three shapes and only one of them is writing:**
+
+```text
+of the twelve
+   2   have an index
+   6   have a lever and no index     -- earned when the chair has handled the instrument
+   2   have no lever, a seam exists  -- the register's work, not this library's
+   2   have no lever and no seam     -- and may be right to
+```
+
+*Written `2` rather than `2 chairs` on purpose: `check_frozen_counts.mjs` reads `N chairs` as a
+claim about the corpus total and fired on the first draft of this block. **A subset count and a
+total are the same shape in prose**, which is `#42`'s residue showing up in the very page that
+records the measurement.*
+<!-- quoted: `2 chairs` here is the SHAPE being discussed, not a count of anything -->
+
+**The template score stays *barely*, and the number that would move it is not in this repository.**
 
 ## What this framing does not license
 
