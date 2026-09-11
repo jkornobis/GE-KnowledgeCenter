@@ -291,6 +291,7 @@ protocols, 282 crossings*; the corpus holds more of each, and it has moved twice
 **Re-derive from `graph/grand_ensemble.json`**, which is regenerated mechanically and never
 hand-edited. The twelve chairs are the exception and are stated, because that number is fixed by
 invariant rather than by measurement.
+<!-- quoted: 33 / 59 / 282 are retracted here, not claimed — check_frozen_counts skips this paragraph -->
 **Every edge quotes the sentence that earns it**, and every page opens by declaring the set it
 searched before it searched it.
 
@@ -319,6 +320,7 @@ Derived mechanically from the pages above and regenerated, never hand-edited.
 **Its node and edge counts are read from the file, not from this line.** They were written here as
 *104 nodes, 251 within-layer edges, 282 crossings* and were wrong on all three by the time anyone
 read them — the artifact is the authority on its own size.
+<!-- quoted: 104 / 251 / 282 are retracted here, not claimed — check_frozen_counts skips this paragraph -->
 
 | Page | Covers | Serves | Published |
 |---|---|---|---|

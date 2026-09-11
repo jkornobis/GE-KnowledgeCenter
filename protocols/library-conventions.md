@@ -414,6 +414,37 @@ under its own title. This only makes it readable by something that is not a pers
 ⚠️ **The marker is not a licence.** A record's numbers are still wrong about today. It says *why*
 they are wrong and what to do about it: **re-derive from the artifact, never edit the page.**
 
+### A figure quoted BECAUSE it is wrong is marked in place (ruled 2026-09-11)
+
+**A third kind of number, and it broke the gate the other two made possible.** A living page may
+quote a value it is retracting — *"this paragraph said 33 principles, 59 protocols, 282 crossings"* —
+so a reader who remembers the old figure sees what moved. **By shape it is identical to the defect:
+a live page carrying a stale count.** No pattern separates them, and a check that fires on a
+correction teaches its operator to ignore checks.
+<!-- quoted: the example is itself a retraction — this page eats its own cooking -->
+
+**So the case is marked rather than guessed:**
+
+```
+<!-- quoted: <why> -->     anywhere in the paragraph; its numbers are read as retracted
+```
+
+**Paragraph-scoped, not line-scoped** — the retraction and the figure it retracts are one argument,
+and prose wraps: `index.md` says *"this paragraph said"* on one line and the numbers on the next two.
+
+⚠️ **Every marker is counted and printed on every run, passing or failing.** A silencer nobody can
+see in the output is a silencer nobody audits — and this whole subject exists because a number went
+unread for twelve days. Two paragraphs carry it today, both in `index.md`, and the report names the file — a marker shown inside a fenced block, as just above, is an example and is not counted.
+
+**The three outs are not interchangeable, and `check_frozen_counts.mjs` prints all three because
+choosing between them is a statement about the page:**
+
+| out | what it says |
+|---|---|
+| remove the figure, name the artifact | the number was a statement about now, and now moves |
+| `record: <date>` in the frontmatter | the page is a pass taken on a date, not a statement about now |
+| the `quoted:` comment in the paragraph | the figure is quoted *because* it is wrong |
+
 ### A measurement carries the reference it was taken against (ruled 2026-09-05)
 
 **A count is a fact about one thing at one moment. A comparison is a claim about two.** Stating the
