@@ -114,7 +114,7 @@ was meant.**
 | The mark | **Have.** Which instance is speaking is a rule and it holds |
 | The kept drawing | **Have.** The graph and the decision record are the specification that outlives its authors |
 | The template | **Barely, and the reason is upstream** — see below. Lever indexes keyed by intent exist for **2 of the 10 chairs the register can serve** (ruled 2026-09-11: the two meta chairs are out of its scope by kind), and four of the eight missing ones *cannot be cut yet*: no lever in the register serves them. The rest of the library is filed by *kind of page* — tool, method, protocol — which is filing by who made it rather than by the part it makes |
-| The tracing floor | **Missing.** Drawings exist; none of them is in anyone's path. There is no surface a working session crosses without choosing to |
+| The tracing floor | **Have, in one repository — built 2026-09-11** (`#50`). `tracing_floor.mjs` draws the nineteen entry points at the start of every session working here: ~408 tokens, underfoot, nothing stored. ⚠️ **A session in any other folder still crosses nothing** — the instrument is a hook, and a hook is per repository |
 | The catalogue | **Shelf list only.** `index.md` names every page with a description — what is downstairs. **No entry says what question the page answers, and none carries a check that the copy is intact** |
 
 ## Why the eight missing templates are not eight unwritten pages (measured 2026-09-11)
