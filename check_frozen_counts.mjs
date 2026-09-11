@@ -113,10 +113,12 @@ for (const path of walk(".").map((p) => p.replace(/^\.\//, ""))) {
       //   "0 crossings touch movements"  — a zero is never a corpus total; it is an absence claim,
       //                                    and none of the five truths can be zero.
       //   "41 of 59 protocols grounded"  — the number after `of` is the denominator of a subset,
-      //                                    stated correctly as of some pass.
+      //                                    stated correctly as of some pass. `of THE 10 chairs` is
+      //                                    the same construction and was missed until 2026-09-11,
+      //                                    when it fired on a live page stating a scope ruling.
       // Neither is a live page freezing a total, which is the only thing this looks for.
       if (said === 0) continue;
-      if (/\bof\s+$/.test(line.slice(0, m.index))) continue;
+      if (/\bof\s+(the\s+)?$/.test(line.slice(0, m.index))) continue;
       findings.push({ path, lineNo: i + 1, said, noun, is: truth[noun], line: line.trim().slice(0, 118) });
     }
   });

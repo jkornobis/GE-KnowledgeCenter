@@ -113,7 +113,7 @@ was meant.**
 | The lodge | **Have.** The repository is the institution that outlives the session |
 | The mark | **Have.** Which instance is speaking is a rule and it holds |
 | The kept drawing | **Have.** The graph and the decision record are the specification that outlives its authors |
-| The template | **Barely, and the reason is upstream** — see below. Lever indexes keyed by intent exist for **2 of the 12 chairs**, and four of the ten missing ones *cannot be cut*: no lever in the register serves them. The rest of the library is filed by *kind of page* — tool, method, protocol — which is filing by who made it rather than by the part it makes |
+| The template | **Barely, and the reason is upstream** — see below. Lever indexes keyed by intent exist for **2 of the 10 chairs the register can serve** (ruled 2026-09-11: the two meta chairs are out of its scope by kind), and four of the eight missing ones *cannot be cut yet*: no lever in the register serves them. The rest of the library is filed by *kind of page* — tool, method, protocol — which is filing by who made it rather than by the part it makes |
 | The tracing floor | **Missing.** Drawings exist; none of them is in anyone's path. There is no surface a working session crosses without choosing to |
 | The catalogue | **Shelf list only.** `index.md` names every page with a description — what is downstairs. **No entry says what question the page answers, and none carries a check that the copy is intact** |
 
@@ -129,7 +129,8 @@ levers**, and each one declares the seats it serves:
 | UX Designer | 3 | written |
 | QA Engineer · Accessibility Specialist | 2 | none |
 | Software Engineer · Software Architect · Reliability Engineer · Content Designer | 1 | none |
-| **Agile Facilitator · Agile Auditor · Product Owner · User Researcher** | **none** | **not possible** |
+| Product Owner · User Researcher | none — a seam is anticipated | not yet possible |
+| **Agile Facilitator · Agile Auditor** | **none, and out of the register's scope** (ruled 2026-09-11) | **not applicable** |
 
 **The two that exist are the top of the distribution, not an arbitrary pair.** Nobody chose to write
 those two first — they are the two chairs the register actually serves, and the indexes followed the
@@ -140,9 +141,10 @@ holding.
 justify the template.** Two of the four are anticipated in the register's predictive surface — the
 Product Owner and the User Researcher hold the *tool health as data* seam, whose state is
 `unconceptualized`, the only entry ever to carry that value. **The other two, the Agile Facilitator
-and the Agile Auditor, appear in no lever and no seam**, and that reads as correct rather than
-missing: their instrument is the orchestra, and the register is a register of instruments that are
-not it.
+and the Agile Auditor, appear in no lever and no seam** — and the Composer ruled that correct on
+2026-09-11: their instrument is the orchestra, which has no vendor, no version and no audit clock,
+and the register is a register of instruments that do. **So the denominator for this instrument is
+ten, not twelve**, and the ruling is recorded in `tools/register.md` rather than inferred here.
 
 **So the gap has three shapes and only one of them is writing:**
 
@@ -151,7 +153,7 @@ of the twelve
    2   have an index
    6   have a lever and no index     -- earned when the chair has handled the instrument
    2   have no lever, a seam exists  -- the register's work, not this library's
-   2   have no lever and no seam     -- and may be right to
+   2   OUT OF SCOPE by kind         -- ruled 2026-09-11; the denominator is ten
 ```
 
 *Written `2` rather than `2 chairs` on purpose: `check_frozen_counts.mjs` reads `N chairs` as a

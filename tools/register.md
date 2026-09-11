@@ -73,6 +73,19 @@ The distinction comes from `project/chair-gap-leap-thesis.md`, and it is split b
 
 *Scale is an input, not an output:* the altitude for every `Spans:` line in this file is **the orchestra's twelve chairs**. Read at a different altitude the seams move, and a claim that holds at every altitude is not falsifiable at any.
 
+**And the register does not serve all twelve — ruled by the Composer, 2026-09-11.** Measured the same
+day: the four levers above name eight chairs between them, and the **Agile Facilitator** and the
+**Agile Auditor** appear in no `Serves:` line and in no seam. **That is correct rather than missing.**
+This register lists instruments the estate deploys *onto* — surfaces with a vendor, a version and an
+audit clock. **A routing chair's instrument is the orchestra**, which has none of those, so there is
+nothing here for it to be served by.
+
+⚠️ **The consequence is a denominator, and it is why the ruling is recorded rather than assumed.** Any
+count of chair coverage against this register runs over **ten**, not twelve — `method/the-lodge.md`
+scores the lodge's template instrument that way. **An absence that has been examined and ruled
+correct is not the same object as one nobody has looked at**, and the seams section below exists
+precisely because the second kind is the method's most valuable output. This one is the first.
+
 ## Lever — reads a running interface
 
 Leap: the agent sees the artifact as **rendered**, not as source — the reading surface `agents/tools/README.md` names as the axis that actually separates deployment surfaces.
