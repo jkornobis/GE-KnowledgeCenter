@@ -26,8 +26,6 @@ sources:
 # The Common Score — Pivot Table
 ## 12 musicians × 11 acts = 132 connections
 
-Last updated: 2026-08-05 (**directed dependency vectors** added as a second relation type — rule 1 requires→serves from `agents/tools/roster.md` + `register.md`, ADR-222, four absent from the concern map including `Design Engineer → Software Engineer`; rule 2 knowledge-dependency, ADR-223, seeded from the Composer's lived cases — the QA Engineer asserts E2E and holds **zero** DOM). Previously 2026-07-23 (nine cross-domain links from the reference-file derivation — roadmap note 39 resolved as a capture gap, Chair-Reviewed ADR-195; the 2026-07-02 field-audit links remain below)
-
 **Read by row:** one musician's complete connection to all 11 fields.
 **Read by column:** one field as it plays through all 12 musicians.
 **Read by cell:** the specific intersection — where this musician meets this field.
@@ -92,7 +90,7 @@ The independent field audits (see each musician's `*_references.md`) surfaced kn
 | Risk vs. scope before a structural decision | Product Owner ↔ Software Architect | — *(act unassigned — see the recovery note below)* | Product Owner / Software Architect |  |
 | Core Web Vitals as a field-measured runtime signal *(provisional — one-sided evidence)* | Design Engineer ↔ Reliability Engineer | IX Craft / III Systems | design_softwareengineer / reliability_engineer |  |
 
-**Unison restored, 2026-08-13 — this table is the one home, and it had been the smallest copy.**
+**This table is the one home, and it had been the smallest copy.**
 The same list lived in three places: here, in `docs-site/src/components/PivotGraph.astro` (28 rows),
 and in the published table on `docs/pivot-graph.mdx` (19 rows). The build reported *"19 shared
 concerns absent from the published table"*, and reading all three showed that count was mostly wrong:
@@ -112,7 +110,7 @@ the citation for a source-of-truth row. The source now holds them and the page r
 dataset. Twelve rows are blank — the eight unpublished concerns, the provisional one, and the three
 de-cited below — and the build counts them aloud instead of implying they are cited.
 
-**De-cited 2026-08-26 — three self-citations left a column of external anchors.** *Outcomes over
+**Three self-citations were removed — they left a column of external anchors.** *Outcomes over
 outputs*, *Code that must run in production* and *Risk vs. scope before a structural decision*
 carried links to `agents/agent_productowner.md`, `agents/agent_softwareengineer.md` and
 `brain/orchestra_decisions_log.md` on a private mirror. **The Citation column's contract is outside
@@ -129,13 +127,13 @@ before anyone asked who could open them. **Same shape as the `figma.md` split**:
 looked principled and was file granularity. If an external source for any of the three is found, the
 cell takes it.
 
-**Dropped 2026-08-05 (ADR-237, roadmap note 41):** *Core Web Vitals as a field-measured runtime signal* — Design Engineer ↔ Reliability Engineer, the one edge ADR-195 admitted on one-sided evidence. An independent read (a real subagent, both reference files cold) returned **drop the link**, and the deciding evidence is not silence but a **recorded negative**: `reliability_engineer_references.md` carries a purpose-built *"Shared, not owned"* section, filled with exactly one row (DORA, pointing at the Software Architect) — the very shape this edge claimed — and it states at line 35 that the chair sits *"off the design→code axis by design."* The Design Engineer's own Core Web Vitals is a **pre-ship design budget**, not production telemetry; the phrase *"field-measured runtime signal"* was quotable from neither file and was the bridge doing the reaching. Dropping it costs no routing — the two chairs still meet at distance 2 through the Accessibility Specialist.
+**Dropped (ADR-237):** *Core Web Vitals as a field-measured runtime signal* — Design Engineer ↔ Reliability Engineer, the one edge ADR-195 admitted on one-sided evidence. An independent read (a real subagent, both reference files cold) returned **drop the link**, and the deciding evidence is not silence but a **recorded negative**: `reliability_engineer_references.md` carries a purpose-built *"Shared, not owned"* section, filled with exactly one row (DORA, pointing at the Software Architect) — the very shape this edge claimed — and it states at line 35 that the chair sits *"off the design→code axis by design."* The Design Engineer's own Core Web Vitals is a **pre-ship design budget**, not production telemetry; the phrase *"field-measured runtime signal"* was quotable from neither file and was the bridge doing the reaching. Dropping it costs no routing — the two chairs still meet at distance 2 through the Accessibility Specialist.
 
 **Standing signal:** the meta/AI-facing links (MAST, LLM-as-judge bias, evals, citation faithfulness) are the orchestra's own invariants re-derived from the field literature — outside corroboration, not self-agreement.
 
 ---
 
-## Dependency vectors — directed, requires → serves (added 2026-08-05, ADR-222)
+## Dependency vectors — directed, requires → serves (ADR-222)
 
 **A second relation type on the same twelve nodes, and it is not a rival edge set.** Everything above is an **undirected shared concern**: two chairs care about the same thing. These are **directed dependencies**: *chair A requires a lever that serves chair B*, so A's work rests on something B's work also rests on. **"My work depends on something that serves you" is not the same statement reversed**, which is why these carry an arrow and the concerns do not.
 
@@ -161,7 +159,7 @@ cell takes it.
 
 **Seven of eleven coincide with an existing concern edge.** That is the control: a derivation that agreed with nothing would be measuring itself.
 
-### Rule 2 — knowledge dependency (added 2026-08-05, ADR-223)
+### Rule 2 — knowledge dependency (ADR-223)
 
 **Rule 1 above emits a vector when a chair *requires a lever*. Rule 2 emits one when a chair's *stated practice rests on knowledge another chair holds*.** Same arrow, same map, different evidence — and rule 2 reaches what no lever names.
 
