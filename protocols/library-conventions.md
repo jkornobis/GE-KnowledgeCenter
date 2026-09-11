@@ -414,6 +414,26 @@ under its own title. This only makes it readable by something that is not a pers
 ⚠️ **The marker is not a licence.** A record's numbers are still wrong about today. It says *why*
 they are wrong and what to do about it: **re-derive from the artifact, never edit the page.**
 
+### `status` is the standard's field, not this library's (settled 2026-09-11)
+
+**It was reported as a dead field and it is not.** `#48` measured one value across the whole library
+and drew the obvious conclusion: a field that never varies costs a line on every page and
+discriminates nothing. **Both premises were wrong.**
+
+**It varies, once, and the exception is the one that should be.** Every page is `draft`; the one
+`stable` is `CLAUDE.md`, the instance floor — the only document here that is settled rather than in
+progress. A field whose single exception is exactly the right document is doing its job.
+
+**And it is not ours to drop.** `status` is OKF §5.4 with a closed vocabulary — `draft` · `stable` ·
+`deprecated` — checked by `check_okf.mjs`, which fails a page carrying anything else. `README.md`
+already reads the uniform value as a *conformance tier*: every page unverified, published by the
+estate that wrote it and not independently confirmed. **A value that is uniform because a claim
+about the whole library is true is not a value that says nothing.**
+
+⚠️ **So it stays, unchanged, and nothing is filled in.** The open question `#48` left — *make
+`draft`/`stable` mean something and then use it* — is answered by what is already written: it means
+the OKF tier, and a page becomes `stable` when it stops moving, as the floor did.
+
 ### A figure quoted BECAUSE it is wrong is marked in place (ruled 2026-09-11)
 
 **A third kind of number, and it broke the gate the other two made possible.** A living page may
