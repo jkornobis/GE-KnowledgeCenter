@@ -252,8 +252,9 @@ enforces is `protocols/presentation.md`; this page is the gate. The seven checks
 measurements come from that history intact — what the unification removed is the seven separate
 arguments for why each rule exists, now that they descend from one.
 
-**Two references point outside this library.** `widget_templates.md`, the persona map's home, is not
-published — its palette derives from one employer's brand and that derivation is the estate's call.
+**One reference points outside this library, and it used to be two.** The persona map's home is
+here, at `protocols/widget-templates.md` — this page claimed otherwise on 2026-09-07, ten days
+after the page had landed (`#85`).
 And `feedback-git-through-agilefacilitator` is a memory file in one estate's tree, cited as the owner
 of a branch-strategy default; **the rule that travels is that branch strategy is determinable and
 therefore the orchestra's to decide**, not the file recording one estate's version of it.

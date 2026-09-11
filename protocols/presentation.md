@@ -75,7 +75,7 @@ The rules above are *defaults*. Each Composer transposes them into their own **k
 
 ## Widget display — the standard (Composer-approved 2026-07-02; attribution cards removed 2026-07-23)
 
-> **Copy-paste source: `widget_templates.md`.** This section is the *spec* (why + rules); `widget_templates.md` holds the exact markup for every pattern below (persona map, pivot table, stat tiles, save button). When a pattern fits, reproduce the template and change only the content (ADR-101).
+> **Copy-paste source: `protocols/widget-templates.md`.** This section is the *spec* (why + rules); that page holds the exact markup for every pattern below (persona map, pivot table, stat tiles, save button). When a pattern fits, reproduce the template and change only the content (ADR-101).
 >
 > **Attribution is NOT a widget, and never a card.** A card that renders slowly or silently fails leaves a turn with no attribution at all, which is worse than a plain line. Voices are **markdown**, in chat and on docs-site alike. Widgets below remain for *results* (tables, charts, diagrams), never for who is speaking.
 >
@@ -206,13 +206,16 @@ The **text layer is GitHub-Flavored Markdown** (GFM) — headings, tables, lists
 **Taken from the running skill's own reference.** Two things a reader should know
 before relying on it.
 
-**`widget_templates.md` is not in this library.** This page repeatedly names it as the copy-paste
-source for the persona map and every markup pattern. That file's palette is derived from one
-employer's brand — named anchor colours, family hues stepped from them — and whether that
-derivation travels is the estate's decision, not this page's. **So the spec is here and the markup
-is not.** A reader implementing this contract supplies their own tokens; the *rules* about them —
-never colour as the sole signal, a word beside every coloured edge, an `sr-only` table behind every
-canvas — are all here and are the part that matters.
+⚠️ **This paragraph said `widget_templates.md` is not in this library. It was true for one day.**
+Written 2026-08-27; the page landed 2026-08-28 as `protocols/widget-templates.md` and nobody
+re-read the sentence for a fortnight (`#85`). **The markup is here**, screened — the persona map,
+the four blocks, and the palette as a set of stepped values with no brand named.
+
+**So both halves are here now: the spec on this page, the markup on that one.** What still does not
+travel is the *derivation* — whether stepping a family's hues from a house anchor is anyone else's
+to reuse is that estate's call and not this page's. A reader implementing this contract supplies
+their own tokens; the *rules* about them — never colour as the sole signal, a word beside every
+coloured edge, an `sr-only` table behind every canvas — are all here and are the part that matters.
 
 **The Score Key is deliberately absent, and this page is the reason it can be.** The section
 *Per-Composer overrides* above is the mechanism: **the rules on this page are defaults, and each

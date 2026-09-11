@@ -8,7 +8,13 @@ generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
 
 # Widget templates — the persona map and the recurring markup
 
-*Roadmap note 6 (ADR-101). The recurring `show_widget` patterns as canonical, verbatim-reproducible templates. `presentation.md` is the **spec** (why + rules); this is the **source** (exact markup to copy). When a pattern below fits, reproduce it and change only the content — do not re-derive the structure from prose each time.*
+*Roadmap note 6 (ADR-101). The recurring `show_widget` patterns as canonical, verbatim-reproducible templates. `protocols/presentation.md` is the **spec** (why + rules); this is the **source** (exact markup to copy). When a pattern below fits, reproduce it and change only the content — do not re-derive the structure from prose each time.*
+
+**Ported from `widget_templates.md`, and that file is in no repository this estate reaches** —
+searched 2026-09-10 by normalised basename across all five, 1 322 paths, no match and no near match
+(`#85`). **The pair is proven by mutual citation rather than inferred from a filename:** the spec
+page names this one as its copy-paste source and this one names the spec. Three other citations in
+that issue rest on a normalised name plus an absence, and are deliberately left unfixed.
 
 **What this fixes, honestly:** it removes per-widget structural re-derivation and prevents broken-first-try rebuilds (the real time-sink). It does **not** make the rendered output faster to emit — a `show_widget` call still streams all its tokens each time; there is no cached component in chat. The consistency and the avoided rebuilds are the win.
 
