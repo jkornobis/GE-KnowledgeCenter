@@ -1,7 +1,7 @@
 ---
 type: Method
 title: "Choosing a piece of software — two doors, and they are never the same question (Product Owner, User Researcher, Software Architect)"
-description: "Why 'is this project alive' and 'does this project suit me' need opposite instruments and opposite orders, the four steps that put weights before candidates, and the measured cost of running them backwards"
+description: "Why 'is this project alive' and 'does this project suit me' need opposite instruments and opposite orders, the four steps that put weights before candidates, the in-box check that precedes any candidate list, the eliminatory pair an unmaintained add-on makes with a rolling host, and the measured cost of running them backwards"
 status: draft
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-07T17:09:00+02:00 }
 sources:
@@ -48,6 +48,41 @@ A wiki was being chosen for the tower. **Three rounds of comparison produced one
 
 ---
 
+## STEP 0 — read what is already installed
+
+**Before either door. A candidate list is a commitment to comparison, and opening one costs more
+than it looks: every candidate is then scored against a gap, and nobody has checked that the gap is
+real.**
+
+> **Exhaust what ships in the box before importing a surface into it.**
+
+**Measured by the Tower against a live instance (`#110`).** A kanban product was audited for
+replacement on two complaints — one architectural, one cosmetic: the dark theme was ugly. Three
+replacement candidates were compared and **none was a net gain**, so the cosmetic half fell back to
+theming the incumbent, and two third-party stylesheets were evaluated selector by selector.
+
+**The application ships 25 themes, and two of them carry the exact look the third-party stylesheets
+were imitating.** Changing one profile field settled a complaint that had consumed an audit, two
+corrections and three rounds of comparison.
+
+**Why this is an ordering rule and not advice.** It is the same shape as the failure this whole page
+is built on: *the constraint existed from the first minute and was written down after two rounds of
+comparison.* Here the **answer** existed from the first minute. **A gap assumed rather than read is
+a requirement nobody wrote**, and Door 2 cannot filter what was never stated.
+
+⚠️ **And on a fast-moving host the in-box option is not merely the simpler one — it is the only
+surface that moves *with* the software.** Everything imported is re-tested at every upgrade, by
+whoever imported it, forever; what ships in the box is re-tested by the project.
+
+```text
+what is installed and unused?        shipped themes, bundled plugins, disabled features
+what does the current config set?    a default is not a limit
+is the complaint about the product,  a look that can be switched is not a missing capability
+  or about one setting?
+```
+
+---
+
 ## DOOR 1 — is it alive?
 
 **Run the free proxies before reaching for any framework.** They cost one page-load each and they caught two real cases on this estate in a single night:
@@ -79,7 +114,7 @@ SINGLE-MAINTAINER RISK                     one person is a availability, not a c
 
 **And read Scorecard as *is this tended*, never as *is this good*.** Several of its checks are genuine maintenance signals; a high score is not a promise that anyone answers issues.
 
-### And one question Door 1 did not ask, added 2026-09-07
+### And one question Door 1 did not ask
 
 **Before judging an add-on by its age, determine the host's release model.** An add-on's age means
 nothing on its own; it means something only **relative to the software it attaches to.**
@@ -118,7 +153,8 @@ is the re-test at every upgrade, paid by the operator, forever.** A well-maintai
 fast-moving host is a maintenance subscription, taken on by whoever installs it.
 
 *Found by the Tower against a live instance and raised as `GE-KnowledgeCenter#18`; the second case
-is the Composer's, reported as domain experience rather than measured here.*
+is the Composer's, reported as domain experience rather than measured here.* **Where this lands as a
+gate rather than a cost is under Door 2 — `unmaintained` against `rolling`, below.**
 
 ---
 
@@ -151,6 +187,31 @@ ELIMINATORY           removes the candidate. Nothing compensates for it.
 ```
 
 **Separating the two is step 1's real output**, and it is the step that gets skipped because it feels like paperwork before the interesting part.
+
+### The eliminatory pair Door 1 hands to Door 2 — `unmaintained` against `rolling`
+
+**Neither half is a veto alone.** An unmaintained add-on on an LTS host is a weighted criterion and
+often a cheap one: nothing under it moves. A maintained add-on on a rolling host is a weighted
+criterion too — someone is re-matching it. **The pair is eliminatory**, and the reason is that
+nobody is left to pay the re-test the host guarantees.
+
+**The measurement, from the same live instance (`#110`), is what makes it a gate rather than a
+worry:**
+
+```text
+100 releases in 42 days    ~2.4 per day, bursts of 8
+branches: 2                no stable · no LTS · no maintenance branch
+one human                  18 084 commits; the next contributor, 598
+```
+
+**So `92%` and `100%` selector coverage were snapshots, not properties** — and the breakage arrives
+as a **silent visual defect** rather than an error, which is what removes it from the operator's
+view until a user reports it.
+
+⚠️ **This is QSOS's eliminatory rule applied to the HOST rather than to the candidate.** Every
+instrument in Door 1 measures the candidate; **nothing in either door measured what the candidate
+must survive** until this pairing was written down. A vitality score answers *is anyone tending
+this*; it cannot answer *is anyone tending this against that*.
 
 ---
 
