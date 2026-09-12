@@ -1,7 +1,7 @@
 ---
 type: Method
 title: "The floor and the arrival — what a session costs before its first word, and what dominates after (Reliability Engineer, Agile Facilitator, Product Owner)"
-description: "A session's floor is the prompt that exists before any work: measurable in four lines of arithmetic from a transcript, reproduced here on two independently configured instances, with the finding that the floor dominates an arrival and is a small minority of a whole session — so the two economies available are not the same economy and do not pay in the same place"
+description: "A session's floor is the prompt that exists before any work: measurable in four lines of arithmetic from a transcript, reproduced here on two independently configured instances, with the finding that the floor dominates an arrival and is a small minority of a whole session — so the three economies available are not the same economy and do not pay in the same place, the third being that a pause past the cache lifetime re-buys the whole accumulated session at the write rate"
 status: draft
 serves_all: true
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-10T21:22:00+02:00 }
@@ -141,6 +141,80 @@ ADDS                          rest of the session
 **The second is larger and almost nobody measures it**, because a turn's addition looks small at the
 moment it is made and is paid for every time afterwards. **A digest read thirty turns deep has been
 paid for thirty times.**
+
+## ⚠️ A third economy — a pause past the cache lifetime re-buys the whole session
+
+**Found at the Workshop end and replicated here on three sessions.** A cached prompt has a
+lifetime. **Idle past it and the next request does not re-read the accumulated context at the read
+rate — it re-writes all of it at the write rate**, which is the most expensive token in the model.
+
+```text
+normal request     accumulated context re-read      x 0.10
+after a lapse      accumulated context re-WRITTEN   x 1.25
+```
+
+**It composes with the second economy rather than sitting beside it.** What a turn adds is billed at
+the read rate on every request after it — **and again in full at the write rate every time the
+session lapses.** So an early large read is dearer than the residency arithmetic alone suggests, by
+however many lapses follow it.
+
+### Past the lifetime, duration carries no information. Only SIZE does
+
+**Sixteen lapses in one session, sorted by how long the session sat idle:**
+
+```text
+ 64 min  ->  163 807 re-written
+ 69 min  ->  670 824          <- the largest in the set
+ 88 min  ->  127 457
+136 min  ->  495 855
+199 min  ->  250 006
+352 min  ->  621 698
+510 min  ->  279 181
+665 min  ->  334 912
+```
+
+**A sixty-nine-minute pause cost 5.3x an eighty-eight-minute one and 2.0x an eleven-hour one.**
+Beyond the expiry the clock stops carrying information entirely; what is billed is whatever the
+session had accumulated at the moment it stopped.
+
+> **The price of stopping rises all day, and the cheapest moment to stop is always the one you are
+> least inclined to.**
+
+### How to detect it, and three ways the detector goes wrong
+
+**The signature is the read collapsing** — one request reading far less than the previous request's
+accumulated total, while writing a large segment. **Three failures, each met rather than imagined:**
+
+**1 — do not key it on a clock.** *A long gap plus a large write* only correlates. Two lapses here
+measured 64 and 67 minutes and would have been reported as *one hour*, explained by a duration that
+had stopped mattering.
+
+**2 — do not key it on a constant.** The surviving cross-session prefix is not stable even on one
+machine: three sessions on the same estate floored at **17 480**, **17 475** and **0**. A detector
+comparing against a known number misses the third. **Compare against the previous request, which
+needs no constant.**
+
+**3 — the deduplication key must match the event's shape.** A response is written to a transcript in
+several chunks carrying the same usage, so lapses arrive in bursts. **Keying the burst by the minute
+counted one expiry twice here** — an identical re-write 0.6 minutes later — and moved the reported
+share from 7.8 % to 8.6 %. **Collapse by proximity, not by timestamp equality.**
+
+⚠️ **And two large re-writes were observed with no idle gap at all**, which no lapse explains.
+Recorded as unexplained rather than attributed: a cost model that accounts for twenty-two events of
+twenty-four should say which two it does not.
+
+### Quote the absolute, never the share
+
+```text
+   124 requests     22 %      the share of a session spent re-buying bought context
+   143 requests     13.5 %
+   649 requests      7.7 %
+ 2 367 requests      7.8 %
+```
+
+**The share falls as a session lengthens**, because ordinary residency grows underneath it while
+lapses do not. **So a percentage here is a fact about a session's length rather than about the
+economy.** The figure that transfers is the absolute: *tokens re-written x the write rate.*
 
 ## What this page does not claim
 
