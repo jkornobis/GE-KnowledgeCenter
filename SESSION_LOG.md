@@ -1467,95 +1467,30 @@ as a stale finding rather than a stale number**, which is worse: a finding is wh
 
 ---
 
-## Session 2026-09-11 — morning: the third gate, the floor underfoot, and five issues that closed against their own claims
+## Session 2026-09-11 — morning: the third gate, the floor underfoot, and five issues that closed against their own claims  *(compacted 2026-09-12 — full text at commit `13fdb48`)*
 
-*Nine pull requests, all merged, all three gates quoted on every one. New Day found an empty tracker
-and the work came from the backlog instead. The pattern of the morning was not building: **five of
-the six issues touched closed because a claim inside them turned out to be wrong, and three of those
-claims were mine.***
+*Nine pull requests, all merged. **Five of the six issues touched closed because a claim inside them
+turned out to be wrong, and three of those claims were mine.***
 
-### The gate that was one case away for two days
+**What shipped and still stands.** `check_frozen_counts.mjs` became the third gate, with
+`<!-- quoted: <why> -->` marking a figure quoted *because* it is wrong — paragraph-scoped, every
+marker counted and its file named on every run. And the **tracing floor**, a session-start hook
+rather than a hosted server: 408 tokens against the index's 13 095, printing on both failure paths
+because a silent floor and an absent floor are indistinguishable.
 
-`check_frozen_counts.mjs` had been report-only since it was written, for a reason in its own header:
-**it cannot tell a count STATED as current from a count QUOTED as formerly wrong.** All three of its
-remaining hits were deliberate retractions in `index.md`.
+**The closures, and what was wrong in each:** `#94` *indefensible under any target* · `#48` *status
+is a dead field* · `#85` *widget_templates.md is not here* · `#42` *a gate for percentages* ·
+`#50` *a server is the candidate*.
 
-**Marked rather than guessed.** `<!-- quoted: <why> -->` reads a paragraph's numbers as retracted;
-paragraph-scoped, because the retraction and the figure wrap across lines. A marker inside a fenced
-block is an example, not a use — found while writing the convention page, which would otherwise have
-silenced itself. **Every marker is counted and its file named on every run, passing or failing.**
+⚠️ **The lesson that outlived the day: a claim about what a library does not hold is the most
+perishable sentence anyone can write, and no gate here can check one.** `check_links.mjs` verifies
+that a path resolves; nothing notices a sentence saying a file is missing.
 
-It is the third gate (`CLAUDE.md` clause 4), and the floor states what it does **not** prove: page
-against the copy this repository ships, never page against the corpus.
-
-⚠️ **Three false-positive shapes surfaced on its first day, all by reading its output** — a
-code-block subset (`6 chairs`), `of the N`, and a sentence that *mentions* the shape rather than
-using it. Same first-day score as `map_pages.mjs`, same lesson.
-
-### The tracing floor — the instrument the lodge page scored MISSING
-
-Four shapes were measured on `#50` and the Composer ruled the cheapest: a session-start hook, not a
-hosted server. **The issue's own research had already conceded a server would add exactly one thing
-— presence — and presence measured at 408 tokens.**
-
-```text
-tracing_floor.mjs   1 633 chars  ~408 tok    the nineteen entry points, once per session
-index.md           52 380 chars ~13 095 tok   the catalogue it replaces AS THE WAY IN
-```
-
-**No process, no ownership ruling, no network.** Both failure paths print one line and exit 0 — and
-**print rather than fall silent**, because a silent floor and an absent floor are indistinguishable.
-⚠️ It fires only for sessions in this repository; the lodge row says *have, in one repository* rather
-than *have*. The only surface that travels further is the skill bundle, which is the Workshop's —
-filed there as `#112`, with the snapshot option marked as the trap their own `ge-load` text names.
-
-### Five closures, and what was wrong in each
-
-```text
-#94  "indefensible under any target"   -- the target ruled the next day says otherwise. Mine.
-#48  "status is a dead field"          -- it is OKF §5.4, the gate reads it, and its one
-                                          exception is CLAUDE.md, correctly. Mine.
-#85  "widget_templates.md is not here" -- true for ONE DAY on one page, and wrong the day it
-                                          was written on another. Mine, twice.
-#42  "a gate for percentages"          -- 62 live lines, not one derivable in this bundle
-#50  "a server is the candidate"       -- a file was
-```
-
-⚠️ **A claim about what a library does not hold is the most perishable sentence anyone can write, and
-no gate here can check one.** `check_links.mjs` verifies that a path resolves; nothing notices a
-sentence saying a file is missing. Twice in one morning, and `#2` was the same shape last night.
-
-### The template gap was never ten pages
-
-Measured against the register, which holds four levers, each declaring the seats it serves:
-**Design Engineer 4, UX Designer 3, six chairs with one or two, and four chairs with none at all.**
-
-**The two indexes that exist are the top of the distribution** — nobody chose them first; they are
-the two chairs the register serves, and the pages followed the work. **The order was earned rather
-than planned**, which is the strongest evidence the 2026-08-16 constraint is operating.
-
-**Ruled: the Agile Facilitator and the Agile Auditor are out of the register's scope by kind** — it
-lists instruments the estate deploys *onto*, and a routing chair's instrument is the orchestra.
-**The denominator is ten, not twelve**, and `#49` is now six chairs rather than ten.
-
-### The nudge that turned into a debt
-
-The last task was to ask the Workshop why `#70` and `#80` had sat for two days. **Reading the threads
-first showed `#70` had been waiting on me since the moment I asked for the evidence** — sent the same
-afternoon, acknowledged, never acted on.
-
-So the page was written instead: `method/reading-the-whole.md`. **The rule generalises past reading —
-a signal that is cheap to obtain is substituted for the one that was asked for: the head for the
-file, the tail for the report, the count for the content, the status code for the body.** And the
-asymmetry that makes it survive a budget: **a read spends context; a write built on half a read
-spends work.**
-
-**It declares what it leans on, and that discharged a debt nobody had named:** `The Absolute Ear`,
-15 links and catalogue-only, is now explained — *the comparison was available the whole time, and the
-failure is not making it.* ⚠️ **That is `#94`'s ruling working as intended: the body earned its page
-by being depended on, not by being connected.**
-
----
+**Two rulings still in force.** The Agile Facilitator and the Agile Auditor are **out of the
+register's scope by kind**, so chair coverage runs over ten and `#49` is six chairs rather than ten.
+And `method/reading-the-whole.md` was written — *a signal that is cheap to obtain is substituted for
+the one that was asked for* — after reading the threads showed `#70` had been waiting on me, not the
+other way round.
 
 ---
 
