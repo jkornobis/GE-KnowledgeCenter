@@ -12,9 +12,9 @@ sources:
 
 # Library conventions
 
-**These rules lived inside `index.md` until 2026-09-10.** They were moved because the index is the
-one page every session is told to fetch, and **over half of it was rules that fire when you act
-rather than routes to where things are.** Nothing changed but the address.
+**These rules sit here rather than in `index.md` because the index is the one page every session is
+told to fetch, and half its weight would otherwise be rules that fire when you act rather than
+routes to where things are.**
 
 **Each of these fires on a specific act** — signing something, publishing something, writing a claim
 onto a page. **None of them is needed to find a page**, which is what the index is for.
@@ -454,7 +454,7 @@ and prose wraps: `index.md` says *"this paragraph said"* on one line and the num
 
 ⚠️ **Every marker is counted and printed on every run, passing or failing.** A silencer nobody can
 see in the output is a silencer nobody audits — and this whole subject exists because a number went
-unread for twelve days. Two paragraphs carry it today, both in `index.md`, and the report names the file — a marker shown inside a fenced block, as just above, is an example and is not counted.
+unread for twelve days. The run names both the count and every file carrying one, so no figure here can go stale — a marker shown inside a fenced block, as just above, is an example and is not counted.
 
 **The three outs are not interchangeable, and `check_frozen_counts.mjs` prints all three because
 choosing between them is a statement about the page:**
