@@ -55,13 +55,10 @@ Not found under any name in the sources surveyed. Nearest relatives: evaluator-o
 - Anthropic production failures ([research system](https://www.anthropic.com/engineering/multi-agent-research-system)): overspawn, ghost-chasing, coordination noise — countered by the effort-scaling rubric in `brain_protocols.md`.
 - Context rot ([Breunig](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html)): poisoning/distraction/confusion/clash — countered by memory-file compaction and the Greenfield Reset.
 
-## Substrate facts — how the model itself behaves (moved from the skill, 2026-08-09)
+## Substrate facts — how the model itself behaves
 
-*Moved here by the per-claim existence check in ADR-279: eleven of twelve claims in
-`skill/*/references/evidence.md` already had a home in a knowledge file. **This one did not** — it
-existed only in `orchestra_decisions_log.md`, which records when something was decided rather than
-where it lives. It is load-bearing: it is the justification for the Invariants recency block, the
-most structural choice in `SKILL.md`.*
+*Load-bearing, and it is why it has a home here rather than only in a decision log: it is the
+justification for the Invariants recency block, the most structural choice in `SKILL.md` (ADR-279).*
 
 **Rule-adherence degrades over long context — the root of role regression.** Attention is a finite
 budget (n² pairwise); accuracy and recall drop as tokens grow ("context rot"); and accuracy is

@@ -9,10 +9,10 @@ generated: { by: human:jkornobis, at: 2026-08-29T13:05:00+02:00 }
 
 # The Pane Guard — agency on a rendered surface
 
-Written 2026-08-05 for roadmap note 47(ii). **QA Engineer chairs it** (every clause is a verification
-question); **the Reliability Engineer holds it** (agency at runtime is its ground).
+**QA Engineer chairs it** (every clause is a verification question); **the Reliability Engineer
+holds it** (agency at runtime is its ground).
 
-## What the pane is, precisely — corrected 2026-08-28
+## What the pane is, precisely
 
 **The Browser pane is Claude's own instrument, not a property of the surface being visited.** It
 ships with the client the orchestra is running in — `mcp__Claude_Browser__*` in Claude Code, and
@@ -50,8 +50,8 @@ that faster and more reliable. **It was never the thing that made it possible.**
 
 ---
 
-It is written **after** the capability entered daily use, not before, and that is the fact it exists to
-correct.
+**This guard is written after the capability entered daily use, not before, and that is the fact it
+exists to correct.**
 
 ## Why this exists, stated without softening
 

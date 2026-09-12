@@ -14,8 +14,7 @@ sources:
 # Evidence — the executable core
 
 **This file carries only the executable core. The research behind it lives in the repo**, because the
-skill executes and the repo remembers (`brain/brain_principles.md`). Every claim removed from here on
-2026-08-09 was checked to exist in a knowledge file first (ADR-279); nothing was dropped.
+skill executes and the repo remembers (`brain/brain_principles.md`).
 
 ## Spawning a real subagent
 

@@ -44,7 +44,7 @@ A report at or above ~90% switches the Agile Facilitator to **wrap-up posture** 
 
 At a Capacity Report or a Checkpoint, the current rate estimate and window-size estimate are worth carrying into the next session rather than re-derived from zero. This lives in the Composer's private auto-memory (a `feedback`-type memory, not this repo), so a fresh session starts pre-calibrated instead of guessing. The memory holds the *mechanism and the rate* — never dollar amounts, specific account tiers, or other financial specifics; those are the Composer's own business, not durable technical calibration data.
 
-## Cross-session state — closing the fresh-session gap (added 2026-07-18)
+## Cross-session state — closing the fresh-session gap (2026-07-18)
 
 **A rate alone isn't enough.** The rolling window resets on a timer, independent of anything a session does — so a number like "100%" reported near the end of one session means nothing to a fresh session unless it also knows *when* that was reported and *that a reset has likely happened since*. Without that, a new session either ignores the old number (loses real signal) or wrongly treats it as still current (assumes zero budget when the window may have fully reset).
 
