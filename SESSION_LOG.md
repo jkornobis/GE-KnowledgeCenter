@@ -1556,3 +1556,86 @@ failure is not making it.* ⚠️ **That is `#94`'s ruling working as intended: 
 by being depended on, not by being connected.**
 
 ---
+
+---
+
+## Session 2026-09-11/12 — End Day: the dating convention finally ran, and every estimate it produced was wrong
+
+*Six pull requests, all merged, all three gates quoted on every one. The day's work was `#70`, `#80`,
+`#110` and `#108`. **Its pattern was not the work — it was that every number I produced from a
+pattern instead of a reading was wrong, three times, in three different directions.***
+
+### The dating convention stopped being one page
+
+Ruled 2026-09-10, applied to one page, and then the thread drifted into a vocabulary question and
+left it there. Run properly today: **`presentation.md` 8 · the five worst pages 40 · the conventions
+page itself 2 · the residue 11.**
+
+```text
+the test        who is the date ABOUT — the rule, or the page
+kept            provenance · Chair Review verdicts · measurements with their reference
+                every struck line held in place for a reader who has the old text
+removed         "added <date>" on a section · "Last updated / Previously" · "moved verbatim"
+                a dated first-run record · two "briefly Mode A" language changelogs
+```
+
+⚠️ **The page that rules on stale numbers was carrying one.** `library-conventions.md` said *"two
+paragraphs carry it today, both in `index.md`"*; the gate reports **four, across three files,
+including that page.** Wrong since the day it gained its own silencer, and nothing fired — the gate
+audits corpus counts, not its own tally. **The fix is not a fresher figure: the sentence now points
+at the run.**
+
+### Three estimates, three failures, one shape
+
+```text
+"29 pages, ~39 candidates"    the real residue was 11 across 9 pages
+                              47 of 58 flagged lines were PROVENANCE
+"a novel forge behaviour"     the third occurrence; #68 holds the other two
+"8.6 % of a session"          7.8 % — a minute-keyed dedupe counted one expiry twice
+```
+
+**A pattern tuned to find changelogs matches *corrected*, *amended*, *promoted*, *moved* — and
+cannot tell who the date is about**, which is the one thing the convention turns on.
+
+### A strip is not a delete
+
+**Twice, removing a sentence broke the next one.** `orchestra-protocols`' Definition of Done required
+the *"Last updated"* line removed two files earlier; `pane-guard` was left with *"It is written after
+the capability entered daily use"* and no antecedent. **Neither fails a gate. Neither is visible in a
+diff read hunk by hunk.**
+
+### The third economy, replicated and narrowed
+
+The Workshop found it on three events and asked this end to test it. **24 lapses across three
+sessions, 8 189 104 tokens re-written at the write rate.** Their central claim survives harder than
+their own data could carry it: **sorted by idle time, the cost is random** — 69 minutes cost 5.3x
+88 minutes and 2.0x eleven hours. Past the expiry only the accumulated size matters.
+
+⚠️ **Three detector corrections, and the third is mine.** The clock only correlates; the surviving
+prefix is not a constant (17 480 · 17 475 · 0 on one machine); and **a burst keyed by the minute
+counts one expiry twice.** Also narrowed: **the share is a fact about session length** — 22 % at 124
+requests, 7.8 % at 2 367 — so the absolute is what transfers.
+
+### The merge that reported success, for the third time
+
+`#113` returned 200, `merged: true`, a merge SHA — and `main` never moved, the SHA has never existed
+as an object, and the branch was deleted. **Recovered inside the minute, which breaks `#68`'s own
+closing rule: *re-read before recovering.*** It was safe only by the route taken — **a new branch and
+a second pull request, never a hand fast-forward** — and that distinction is now on the issue.
+
+⚠️ **And I reported it to the Workshop as novel.** `#68` was closed the day before with a corrected
+diagnosis I had not read, **because a closed issue is not in the open list and I read the list.**
+Reopened: two shapes share one symptom, and `#88`'s self-correction does not explain this one.
+
+### What the Composer ruled
+
+**`Big Score` is retired — the page wins.** The trigger had been gone from `agile_facilitator_score.md`
+since 2026-07-21 and live in his Key ever since; removed from the Key with read-back. **Seven weeks,
+no symptom: a trigger retired by absence never fails, so nothing surfaces the disagreement.**
+
+**And `#110`'s two proposals are library method now** — `STEP 0 — read what is already installed`,
+placed before both doors because it is an ordering rule, and `unmaintained` against `rolling` as an
+**eliminatory pair** rather than a cost. The Tower's framing is the part I would not have reached:
+**every instrument in that page measures the candidate, and nothing measured what the candidate must
+survive.**
+
