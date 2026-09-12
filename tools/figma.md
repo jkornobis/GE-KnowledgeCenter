@@ -10,8 +10,7 @@ generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
 # Tool: Figma — router
 
 Re-audit: 30 days — measured; inherits the Figma clock, the same basis and the same wording
-`tools/figma-method.md` already carries. **Added 2026-09-02, and the basis is a proposal rather than a
-reading:** `tools/README.md` already asserts *"30 days measured for `figma.md`"*, so this line makes the
+`tools/figma-method.md` already carries. **The basis is a proposal rather than a reading:** `tools/README.md` already asserts *"30 days measured for `figma.md`"*, so this line makes the
 page state what the README states about it instead of inventing a cadence. **This page still carries no
 `Audited` line**, because it argues below that it cannot honestly carry one — that conflict with
 `README.md` is filed in `index.md` under `Observed, not yet decided` rather than resolved here.
@@ -27,7 +26,7 @@ different failure modes and — decisively — **different registration**. It co
 |---|---|---|
 | [`figma-mcp-remote.md`](figma-mcp-remote.md) | the **remote** MCP servers — `fileKey` + `nodeId` | **working**, audited 2026-08-25 |
 | [`figma-mcp-desktop.md`](figma-mcp-desktop.md) | the **desktop** MCP server — selection-scoped, no parameters | **unwired**, audit blocked |
-| the product-surface audit — **deliberately unpublished** | the **product surface** — Skills UI, plugins, connectors, driven by eyes and hands | audited 2026-08-03, **and it stays home**: `index.md` rules it *"cannot be published because it names an employer's systems"*. It was linked here as a live route until 2026-09-01 |
+| the product-surface audit — **deliberately unpublished** | the **product surface** — Skills UI, plugins, connectors, driven by eyes and hands | audited 2026-08-03, **and it stays home**: `index.md` rules it *"cannot be published because it names an employer's systems"*. |
 
 **Read the identity table below before opening any of them**, because the three servers are told
 apart by their parameter shape and nothing else.

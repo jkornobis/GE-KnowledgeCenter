@@ -27,7 +27,7 @@ Each addition gets one of three verdicts, never silent approval:
 - **Revise** — the concept is sound but needs a caveat (e.g. "unproven, no live incident behind it yet" or "overlaps with an existing baseline — lower marginal value").
 - **Drop** — fails one or more lenses; not added, or removed if already merged.
 
-## Always submitted to the Composer — the confirmation gate (added 2026-07-04, ADR-82)
+## Always submitted to the Composer — the confirmation gate (2026-07-04, ADR-82)
 Nothing here auto-applies, unlike the Tool Audit's critical tier (which is a verified fact, not a judgment call). A knowledge-domain addition is inherently a judgment about relevance — the trio's verdict is a recommendation, the Composer decides.
 
 **This used to be a stated principle with no mechanism, and it failed exactly once that way** — a verdict was rendered and implemented in the same response, with no pause. Fixed with an explicit gate, not just a stronger sentence:

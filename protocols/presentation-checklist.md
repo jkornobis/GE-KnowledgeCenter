@@ -16,9 +16,7 @@ sources:
 
 # The pre-send gate
 
-*Unified 2026-09-07 at the Composer's instruction, after nineteen ADRs, sixty-seven commits and
-seven skill generations had each added a rule and none had held. The seven checks below are not
-seven rules. They are one rule under seven pressures.*
+*The seven checks below are not seven rules. They are one rule under seven pressures.*
 
 ---
 
@@ -247,8 +245,7 @@ shared system edited to suit one person.
 
 ## Provenance
 
-**Published 2026-08-27 from the running skill's own reference; unified 2026-09-07.** The spec this
-enforces is `protocols/presentation.md`; this page is the gate. The seven checks and their
+The spec this page enforces is `protocols/presentation.md`; this page is the gate. The seven checks and their
 measurements come from that history intact — what the unification removed is the seven separate
 arguments for why each rule exists, now that they descend from one.
 
