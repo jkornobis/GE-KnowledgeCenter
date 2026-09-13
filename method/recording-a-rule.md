@@ -69,6 +69,40 @@ someone could disagree with it.
 yes, and no Composer chose it, **it is a proposal wearing the clothes of a record** — and the honest
 form is to write it, name it as unlevelled, and ask.
 
+## Measured: how much of a real record predates the rule, and why the checker cannot see the gap
+
+**A repository can adopt this page, write the distinction into an invariant, and build a checker for
+it — and most of its own history still predates the idea.** Counted at the Workshop end by splitting
+their decision log on its own ADR headers rather than by eye:
+
+```text
+ADR entries in the log                     362
+entries carrying a `Level:` line            71
+entries carrying none                      291
+earliest entry that carries one         ADR-290
+```
+
+**The convention did not exist for the first 289 decisions**, and it holds imperfectly even after —
+three entries past ADR-290 still carry no level (293, 303, 308). **That ratio is the finding, not the
+gaps.** Anything reading the log historically is reading rules whose level nobody ever stated, and
+the absence is silent: an entry without a level does not look incomplete, it looks like an entry.
+
+**The instrument that exists there runs on every push and deliberately does not read the log.**
+`scripts/check_rule_levels.mjs` checks a diff, never the corpus, over a declared scope — the
+reference pages, the pattern ledger, the chair files, where a tag can be checked mechanically. Its
+own header states why the decision log is out of scope:
+
+> an ADR is a RECORD OF A DECISION and narrates rules constantly — "the rule is", "must", "never" —
+> while the rule it records lands in one of the four surfaces above, where the tag belongs and where
+> a session actually reads it. Tagging ADR prose would fire on nearly every entry, and a gate that
+> cries wolf teaches its own bypass.
+
+**The mechanism this leaves standing: narration and recording are indistinguishable to a grep.** A
+decision log will always say "must" and "never" about rules it is merely describing, at a rate no
+pattern can separate from the entries that are levelling something for the first time. A checker
+that tried would either miss real gaps or flag most of its own history — which is why the coverage
+figure above has to be read by a person, once, rather than enforced.
+
 ## What this page does not do
 
 **It sets no marker syntax for this library.** `[session]` and `[standing]` are how one estate's
