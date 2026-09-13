@@ -1574,3 +1574,57 @@ placed before both doors because it is an ordering rule, and `unmaintained` agai
 **every instrument in that page measures the candidate, and nothing measured what the candidate must
 survive.**
 
+## Session 2026-09-13 — End Day: five closes, one merge, and a board four cards behind its own tracker
+
+*New Day found one issue since the last checkpoint — `#116`, read in full and held open at the
+Composer's call, waiting on a second occurrence to say whether it generalises.*
+
+### The ranking pass closed three threads that had already finished
+
+`#108` (the third economy) and `#80` (the dating treatment) had both reached their own stated end
+several turns before anyone said so — every correction applied at both ends, every PR merged, the
+last open thread on each (the `Fires` vocabulary, six values, ADR-369) already ruled. Closed with a
+comment naming what settled each.
+
+`#70` closed on two things done in the same pass: behavior 9's two estate-specific endings ruled as
+**instances of the three universal ones**, not load-bearing shapes of their own — and GE-Workshop's
+ADR-level-coverage evidence (362 entries, 71 carrying a `Level:` line, none before ADR-290, the
+checker's own reason for never reading the log) folded into `method/recording-a-rule.md` —
+[PR #118](https://git.jkosvr.fr/jkornobis/GE-KnowledgeCenter/pulls/118), merged and **verified
+against `main` directly** at `4fd889c` rather than trusted from the merge call's own response, the
+same discipline `#68` cost a reopening to learn.
+
+### Two closed at the Composer's explicit request, archived rather than decided
+
+`#8` (the solar-system radius/render questions) and `#10` (Mycelium) were closed on his instruction
+mid-session, with one clarification worth keeping: **"close" meant archived, not destroyed** — both
+threads stand exactly as written, reopenable, nothing in either was actually resolved first.
+
+### The board had drifted, and reconciling it is what the ranking's own rule requires
+
+Reading the Wekan side for the first time this session found **four cards still sitting in
+Ready/In-progress/Blocked for issues already closed** — `#8`, `#10`, `#70`, `#80`. Moved to Done,
+each verified by a fresh fetch rather than the move call's own echoed response. `#108` was already
+correctly placed, likely by whichever pass closed it landing the card at the same time.
+
+### No-loss check
+
+Everything named this session now has a home: five issues closed with comments, one PR merged and
+independently verified, four board cards reconciled. The three `Discussions GE Board` cards were
+re-read for completeness rather than skipped on their titles — all three are already closed loops
+(two Tower self-corrections on their own tickets, one cross-instance broadcast pointing at `#68`,
+which is exactly where it is tracked).
+
+### What is still open, and why none of it moved
+
+```text
+#116   held for a second occurrence — the Composer's own ruling this session
+#68    reopened third occurrence — two shapes share one symptom, no way yet to tell them apart
+#49    unmeasured — where a derived lever index would publish, if anywhere
+#29    blocked by the Obsidian canvas stop — waits on him lifting it specifically, not on #10 closing
+#22    waiting on GitHub Support's confirmation
+```
+
+**None of the five is a gap this session failed to close.** Each is missing a specific thing —
+evidence, his hand, or an external reply — and manufacturing action on any of them would have been
+guessing rather than working.
