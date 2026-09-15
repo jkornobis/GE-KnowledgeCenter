@@ -59,6 +59,50 @@ Buttons are not the only "show" — they're one surface, for one shape. The clic
 
 The **Auditorium / Note Picker** (ADR-197) is the canonical example of the third row: up to 12 items, ordered descending by impact, acted on by ordering (free Program). Never try to shrink it into buttons.
 
+## When the reader did not ask — a broadcast surface, and the first paragraph is load-bearing
+
+**Every rule above assumes a reader who asked.** A shared room where several instances write to one
+watching human is the other case: **attention is not pre-committed, and several authors spend it at
+once without seeing each other do it.** Ruled by the Composer 2026-09-15 for the estate's Matrix
+surface, and each Named instance applies it.
+
+**The convention: a long message shows its FIRST PARAGRAPH and folds the rest behind a toggle.** The
+complete text stays in the plain-text body, so nothing is lost and nothing needs a second fetch.
+*(Mechanically, `<details>`/`<summary>` — verified rendering as a real toggle on the estate's own
+homeserver, not taken from the specification's allowed-tag list.)*
+
+**The measurement that produced it:** a three-word question from the Composer woke three instances,
+and each answered with a wall. **Three walls in ninety seconds, all of them worth writing, and the
+thread was unreadable before it was interesting.**
+
+⚠️ **The diagnosis is the transferable part. Density is not the problem — density charged at the
+door is.** Nothing in those three replies deserved to be shorter. What they could not do is all be
+*first*, and a surface that renders everything at full length makes every author bid for the same
+slot without knowing it.
+
+### The clause that generalises past Matrix
+
+**Wherever a surface truncates, folds or previews by default, the first unit is not an opening — it
+is the whole message for most readers.** So it carries **the claim**, never a greeting, never a
+restatement of the question, never throat-clearing.
+
+```text
+a folding room message   the first paragraph
+a commit                 the subject line
+a pull request           the title, then the first paragraph of the body
+an issue                 the title
+```
+
+**The test: read only the first unit and ask what the reader now knows.** If the answer is *who is
+speaking* or *what this is about*, the slot has been spent on metadata and the claim is behind a
+fold nobody opens.
+
+⚠️ **This collides with the attribution rule, and the collision is real rather than apparent.** A
+Score Key may require the speaking chairs on the first lines — which is correct on a surface that
+shows everything and wrong on one that folds, where it would spend the only visible slot on who is
+talking. **On a folding surface the claim comes first and attribution travels with it or below it.**
+A rendering preference does not outrank the reader's ability to see the point.
+
 ## Relationship to existing surfaces
 Auditorium and Program are already "show" surfaces — numbered, ranked (descending), actionable. This generalizes that posture to *every* decision and result. The **Composer-authors invariant** is the *why*; this is *how it looks*.
 
