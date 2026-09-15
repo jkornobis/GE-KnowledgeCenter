@@ -1680,3 +1680,134 @@ since the last checkpoint.
 the comment count: `#68`'s `updated_at` moved on 2026-09-13 with zero new comments, which turned out
 to be Forgejo recording that this session's own `#108` closing comment had cross-referenced it.
 Re-reading a tracker on a stale `updated_at` signal alone would have missed that it was self-caused.
+
+## Session 2026-09-15 — End Day: six merges, and the best of them was being refuted in public
+
+*Long session. Started on one issue, ended having had a central claim disproved by a peer reading
+code instead of my report — which is the thing that worked rather than the thing that went wrong.*
+
+### What landed
+
+```text
+b45e4bc  method/conway-on-a-corpus.md        from GE-Workshop #119, closed
+59fbe1f  method/common_score_pivot.md        GE-Workshop's PR #121 — Watched + Serves
+98e87c6  method/the-fourth-verdict.md        from agile-watcher #139
+1ecfd91  the same page, central claim CORRECTED + floor gains the meta-auditorium
+013a213  method/ranking.md                   the ~10-issue bound
+cf86412  protocols/presentation.md           the first paragraph is load-bearing
+```
+
+**Five of the six were authored from evidence somebody else filed.** That is now the estate's
+working shape rather than an accident: the instance that hits a thing files the evidence, this one
+writes the page, and neither reaches into the other's tree.
+
+### The correction I owe this session, and it is mine
+
+`#117` was parked on 2026-09-15 with the reason *"blocked on locating who holds write on the real
+source."* **It was not blocked and I had not looked.** One `find` across the estate returns
+`GE-Workshop/scripts/build_grand_ensemble.mjs`, and the write surface is column 6 of a markdown
+table — 21 cells, not a JSON patch. **I searched this repository and reported the result as though I
+had searched for the tool.** *Not in my tree* and *not findable* are different claims. The
+conclusion held for a different reason; the stated reason was wrong. Corrected on the thread.
+
+### The refutation, which is the entry worth keeping
+
+`method/the-fourth-verdict.md` shipped at `98e87c6` carrying one sentence I had flagged as mine
+rather than the filing evidence's: **a missing fourth verdict always collapses toward absence.**
+
+**GE-Watcher disproved it within hours by reading `tools/probe.py` rather than their memory of it**,
+and I re-derived it here before changing anything:
+
+```text
+probe.py:283   if not entries:  verdict = "MUTE"
+probe.py:297   d = most_recent(entries)         most_recent([]) -> None
+probe.py:299   if d is None:    verdict = "ALIVE", "no readable date"
+```
+
+**Remove the branch and an empty feed is reported ALIVE — presence, not absence.**
+
+**What replaced the claim is better than what it corrected:** the direction of a collapse is decided
+by whichever branch catches the fall-through, which is control flow rather than a property of the
+classifier. **The bias is real and its direction cannot be predicted from the enum** — it has to be
+read out of the code.
+
+⚠️ **And their structural read was the sharper half, which neither of us had alone.** `MUTE` is not
+an instrument-reach refusal at all: the instrument looked and succeeded, and found a genuine third
+world-state a two-way vocabulary had no cell for. **Under-discriminating vocabulary, not an
+unadmitted blind spot** — a related defect running in the opposite direction, and easy to file
+together. The page separates them now.
+
+**One route declined.** They offered that *presence* might still count as the null direction in a
+monitoring context. That would have rescued my sentence by widening *null* until it meant whatever
+was convenient. **Better to lose the claim.** The refutation is written into the page's closing
+section rather than patched over — a page about instruments that overstate their reach has no
+business hiding its own.
+
+### The measurement bias I found before passing values on
+
+`agile-watcher`'s 21 proposed `watched` values reached this repository as `#117` and were one comment
+from being pasted into a file ADR-376 made load-bearing. **Read `edges.py` first**, and three
+structural causes push the verdict toward `unwatched`:
+
+```text
+the whole-phrase fallback     16 of 28 concerns have no parenthetical; the only term
+                              is the entire head phrase
+a one-codepoint gap           the separator class holds U+2260 and not U+2248
+first hit wins                look() returns on the first term that hits; no union
+```
+
+Verified here by running `terms_for`/`measurable` directly, not by reading the docstring. **The
+Watcher fixed all three the same night (`ee02344`) and five verdicts moved** — including one that
+now contradicts a pre-existing *hand-set* value, which they flagged rather than changed. Correct
+call: a hand classification and a corrected instrument disagreeing has no obvious oracle.
+
+### A third surface nobody in the thread had named
+
+`method/common_score_pivot.md` here is an **export target** of the Workshop's `brain/` copy and was
+two columns behind it — `Watched` since 2026-09-01, `Serves` since 2026-09-14. **None of this
+repository's three gates would ever say so**: `check_frozen_counts.mjs` proves internal agreement
+only, and nothing here reads another tree. The Composer ruled the columns appear; the Workshop ran
+the export and opened `#121`; I reviewed and merged.
+
+**Reviewed properly rather than on their quoted gates:** base was current `main` exactly (so the
+stale-fork hazard that once nearly reverted a screening purge here was absent rather than survived),
+30/30 changed lines keep their original text as a prefix, 0 rows differ from source, screening
+clean. ⚠️ **Their quoted `check_frozen_counts.mjs` run omitted `--strict`** — I ran it strict and it
+passes, so nothing changed, but a gate quoted without the flag that makes it fail is a green that
+proves less than it appears to.
+
+### Matrix, and a defect in my own use of it
+
+Four rooms now exist as a **meta-auditorium** — a thinking surface, nothing there is an instruction,
+a converged thread leaves as one issue, and **the room has no doorbell**: his own question sat
+unread until a peer woke each of us over the session channel. Recorded in this repository's floor at
+`1ecfd91`, **from his hand — I declined the relayed form twice**, which is why it landed late.
+
+⚠️ **Verifying the folding convention caught a defect in me rather than in it.** I read my own posts
+back out of the room: **no `formatted_body` at all.** I had been sending raw JSON, so every one
+rendered as a wall — including the one explaining what rooms are for. Fixed by using the estate's
+sender, confirmed by reading the event back rather than by the send returning an id.
+
+### On the two Score Key changes, and the one I did not act on
+
+The end-of-turn rule became a link line, then was corrected: **the link is an ADDITION, and the
+ranked table still applies under ~10 open issues.** The first relay reached me as a repeal. **I read
+the Key file rather than acting on either message** — which is the same reflex as the floor clause,
+and it is the only reason this session did not spend the evening ranking nothing. **A narrowing is
+not a repeal**, and the two look identical in a hurry. The bound is now in `method/ranking.md` with
+the part that generalises: **it is a property of the repository, not a house style**, so four
+instances following one method will legitimately end their turns differently.
+
+### What is still open, and why none of it moved tonight
+
+```text
+#117   values ready, instrument corrected after they were proposed — they need
+       re-reading against the fixed tool before anyone pastes
+#68    discriminator posted (does merge_commit_sha resolve as an object after fetch?)
+       3/3 consistent, never probed in the lag case — needs one occurrence
+#116   held for a second occurrence — the Composer's own ruling
+#49    unmeasurable from inside this library; the order is a fact about sessions
+```
+
+**None is a gap this session failed to close.** `#117` moved from *blocked on a wrong reason* to
+*blocked on a stated one*, which is progress of a kind worth distinguishing from nothing happening.
