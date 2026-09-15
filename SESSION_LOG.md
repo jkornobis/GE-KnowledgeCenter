@@ -1628,3 +1628,55 @@ which is exactly where it is tracked).
 **None of the five is a gap this session failed to close.** Each is missing a specific thing —
 evidence, his hand, or an external reply — and manufacturing action on any of them would have been
 guessing rather than working.
+
+## Session 2026-09-14 — End Day: the Obsidian subject ended, and the oldest open issue closed on a verified 404
+
+*Short session, two closes, both by the Composer's own hand rather than found by this instance.*
+
+### #29 closed — not lifted, ended
+
+**"Obsidian is aborted."** `#29` had been waiting since 2026-09-08 for the vault's own stop to be
+lifted; it was not lifted, the subject was ended. Closed rather than left postponed indefinitely —
+the census taken 2026-09-08 (six plugins, their engines, 240 notes, 2 canvases) stands in the thread
+if the vault is ever picked back up, but there is no surface left to write the record into.
+
+### #22 closed — the oldest open issue on this tracker, and it went the way the ticket asked for
+
+Recovered on 2026-09-07 from a compaction that nearly lost it; it took a week and a message the
+Composer sent by hand. **GitHub Support confirmed, 2026-09-14 09:57 UTC:** *"I've cleared out
+unreferenced commits, and that link should now return a 404 error."*
+
+**Not taken on their word.** The same oracle discipline this issue used throughout — verify against
+the machine, never the report about the machine — applied one more time before closing:
+
+```text
+GET /jkornobis/GE-KnowledgeCenter/commit/9889566160810c7dc4d0be93cc810d56d85ca0a6   404
+GET raw.githubusercontent.com/.../9889566.../INDEX.md                              404
+```
+
+Both confirmed. The message sent named the SHA and all ten pull requests, not the one Support's
+first reply assumed — the exact gap the 2026-09-08 measurement had found and the reason the ticket
+would otherwise have half-succeeded.
+
+**One thing flagged rather than assumed, and it is closed too.** Support's reply also recommended
+rotating any leaked credentials. Nothing on this thread said whether that had happened; asked, and
+the Composer confirmed it already had. Recorded so the question doesn't sit open on a closed issue.
+
+### Board reconciled the same way as last time
+
+Both cards moved to Done, each verified by a fresh fetch rather than the move call's own response —
+and a full re-check of every non-Done list plus the Discussions board found nothing else has moved
+since the last checkpoint.
+
+### What is still open
+
+```text
+#116   held for a second occurrence
+#68    reopened third occurrence — two shapes, one symptom, no way yet to tell them apart
+#49    unmeasured — where a derived lever index would publish, if anywhere
+```
+
+**No new activity on any of the three since the last checkpoint** — checked the timeline, not just
+the comment count: `#68`'s `updated_at` moved on 2026-09-13 with zero new comments, which turned out
+to be Forgejo recording that this session's own `#108` closing comment had cross-referenced it.
+Re-reading a tracker on a stale `updated_at` signal alone would have missed that it was self-caused.
