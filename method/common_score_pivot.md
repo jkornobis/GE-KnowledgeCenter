@@ -59,36 +59,36 @@ Acts: I Process Methodologies · II Cognitive Science · III Systems Thinking ·
 
 The independent field audits (see each musician's `*_references.md`) surfaced knowledge that **connects musicians**, not just enriches one field. These are the new musician ↔ musician shared concerns — the cross-domain links the new knowledge created:
 
-| Shared concern | Connects | Act | Refs | Citation |
-|---|---|---|---|---|
-| MAST failure taxonomy | Agile Facilitator ↔ Agile Auditor | III Systems | Agile Facilitator / Agile Auditor | <https://arxiv.org/abs/2503.13657> |
-| Verification ≠ agreement (LLM-as-judge bias) | Agile Facilitator ↔ Agile Auditor ↔ QA Engineer | XI NLP / V Research | Agile Facilitator / Agile Auditor / QA Engineer | <https://www.anthropic.com/research/reasoning-models-dont-say-think> |
-| Cognitive accessibility (COGA) | Accessibility Specialist ↔ Content Designer | II Cognition / VIII Web-A11y | Accessibility Specialist / Content Designer | <https://www.w3.org/TR/coga-usable/> |
-| Accessibility designed-in (WCAG 2.2 / APCA) | Accessibility Specialist ↔ UX Designer ↔ Content Designer | VII Design / VIII Web-A11y | Accessibility Specialist / UX Designer / Content Designer | <https://www.w3.org/TR/WCAG22/> |
-| Plain language as accessibility (ISO 24495) | Content Designer ↔ Accessibility Specialist | VI Communication | Content Designer / Accessibility Specialist | <https://www.iso.org/standard/78907.html> |
-| LLM security & adversarial testing (OWASP) | Software Engineer ↔ QA Engineer ↔ User Researcher | IX Craft | Software Engineer / QA Engineer / User Researcher | <https://genai.owasp.org/llm-top-10/> |
-| Supply-chain integrity (SLSA / SBOM / provenance) | Software Engineer ↔ Software Architect | IX Craft / I Process | Software Engineer / Software Architect | <https://slsa.dev/> |
-| Design tokens & design-to-code (Code Connect) | UX Designer ↔ Design Engineer | VII Design / X Tools | UX Designer / design_softwareengineer | <https://www.designtokens.org/tr/drafts/format/> |
-| Evals for non-deterministic systems | QA Engineer ↔ Agile Auditor | IX Craft / III Systems | QA Engineer / Agile Auditor | <https://istqb.org/wp-content/uploads/2026/05/ISTQB-_CTAI_Syllabus_v2.0_Release.pdf> |
-| Citation faithfulness / groundedness | User Researcher ↔ Agile Facilitator ↔ QA Engineer | V Research | User Researcher / Agile Facilitator / QA Engineer | <https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/> |
-| Govern AI-generated code (DORA 2025) | Software Architect ↔ Software Engineer ↔ QA Engineer | I Process | Software Architect / Software Engineer / QA Engineer | <https://agents.md/> |
-| Outcomes over outputs / de-risk before build | Product Owner ↔ User Researcher | IV Philosophy / V Research | Product Owner / User Researcher |  |
-| Code that must run in production | Reliability Engineer ↔ Software Engineer | IX Craft | reliability_engineer / Software Engineer |  |
-| Delivery → runtime handoff (GitOps, DORA) | Reliability Engineer ↔ Software Architect | I Process | reliability_engineer / Software Architect | <https://opengitops.dev/> |
-| Runtime supply-chain verification (Sigstore) | Reliability Engineer ↔ Software Engineer ↔ Software Architect | IX Craft | reliability_engineer / Software Engineer / Software Architect | <https://www.sigstore.dev/> |
-| Uptime & latency as an accessibility floor | Reliability Engineer ↔ Accessibility Specialist | VIII Web-A11y | reliability_engineer / Accessibility Specialist | <https://sre.google/workbook/implementing-slos/> |
-| Observability dashboards (data-viz) | Reliability Engineer ↔ UX Designer | VII Design | reliability_engineer / UX Designer | <https://opentelemetry.io/docs/> |
-| Observability signals ≈ anomaly detection | Reliability Engineer ↔ Agile Auditor | III Systems / XI NLP | reliability_engineer / Agile Auditor | <https://docs.evidentlyai.com/> |
-| Semantic naming & i18n as governed vocabulary | Design Engineer ↔ Content Designer | VI Communication / XI NLP | design_softwareengineer / Content Designer |  |
-| Accessibility shifted left into components | Design Engineer ↔ Accessibility Specialist | VIII Web-A11y / X Tools | design_softwareengineer / Accessibility Specialist |  |
-| Automated a11y coverage ceiling → manual test scope | Accessibility Specialist ↔ QA Engineer | VIII Web-A11y / IX Craft | Accessibility Specialist / QA Engineer |  |
-| Accessibility law as a scope constraint (EAA / EN 301 549) | Product Owner ↔ Accessibility Specialist | IV Philosophy / VIII Web-A11y | Product Owner / Accessibility Specialist |  |
-| Falsifiability — assumption tests & BDD scenarios | Product Owner ↔ QA Engineer | V Research | Product Owner / QA Engineer |  |
-| Wireframe as hypothesis — opportunity tree → design brief | Product Owner ↔ UX Designer | I Process / VII Design | Product Owner / UX Designer |  |
-| Conway's Law — team language shapes architecture | Content Designer ↔ Software Architect | III Systems / XI NLP | Content Designer / Software Architect |  |
-| Component contract as executable spec | Design Engineer ↔ QA Engineer | IX Craft / X Tools | design_softwareengineer / QA Engineer |  |
-| Risk vs. scope before a structural decision | Product Owner ↔ Software Architect | — *(act unassigned — see the recovery note below)* | Product Owner / Software Architect |  |
-| Core Web Vitals as a field-measured runtime signal *(provisional — one-sided evidence)* | Design Engineer ↔ Reliability Engineer | IX Craft / III Systems | design_softwareengineer / reliability_engineer |  |
+| Shared concern | Connects | Act | Refs | Citation | Watched | Serves |
+|---|---|---|---|---|---|---|
+| MAST failure taxonomy | Agile Facilitator ↔ Agile Auditor | III Systems | Agile Facilitator / Agile Auditor | <https://arxiv.org/abs/2503.13657> | unknown | agilesurface |
+| Verification ≠ agreement (LLM-as-judge bias) | Agile Facilitator ↔ Agile Auditor ↔ QA Engineer | XI NLP / V Research | Agile Facilitator / Agile Auditor / QA Engineer | <https://www.anthropic.com/research/reasoning-models-dont-say-think> | unknown | agilesurface |
+| Cognitive accessibility (COGA) | Accessibility Specialist ↔ Content Designer | II Cognition / VIII Web-A11y | Accessibility Specialist / Content Designer | <https://www.w3.org/TR/coga-usable/> | unknown | wcag |
+| Accessibility designed-in (WCAG 2.2 / APCA) | Accessibility Specialist ↔ UX Designer ↔ Content Designer | VII Design / VIII Web-A11y | Accessibility Specialist / UX Designer / Content Designer | <https://www.w3.org/TR/WCAG22/> | unknown | wcag |
+| Plain language as accessibility (ISO 24495) | Content Designer ↔ Accessibility Specialist | VI Communication | Content Designer / Accessibility Specialist | <https://www.iso.org/standard/78907.html> | unknown | wcag |
+| LLM security & adversarial testing (OWASP) | Software Engineer ↔ QA Engineer ↔ User Researcher | IX Craft | Software Engineer / QA Engineer / User Researcher | <https://genai.owasp.org/llm-top-10/> | unknown | agilesurface |
+| Supply-chain integrity (SLSA / SBOM / provenance) | Software Engineer ↔ Software Architect | IX Craft / I Process | Software Engineer / Software Architect | <https://slsa.dev/> | one-sided | devops |
+| Design tokens & design-to-code (Code Connect) | UX Designer ↔ Design Engineer | VII Design / X Tools | UX Designer / design_softwareengineer | <https://www.designtokens.org/tr/drafts/format/> | one-sided | designsystems |
+| Evals for non-deterministic systems | QA Engineer ↔ Agile Auditor | IX Craft / III Systems | QA Engineer / Agile Auditor | <https://istqb.org/wp-content/uploads/2026/05/ISTQB-_CTAI_Syllabus_v2.0_Release.pdf> | unknown | agilesurface |
+| Citation faithfulness / groundedness | User Researcher ↔ Agile Facilitator ↔ QA Engineer | V Research | User Researcher / Agile Facilitator / QA Engineer | <https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/> | unknown | agilesurface |
+| Govern AI-generated code (DORA 2025) | Software Architect ↔ Software Engineer ↔ QA Engineer | I Process | Software Architect / Software Engineer / QA Engineer | <https://agents.md/> | unknown | softwarecraft |
+| Outcomes over outputs / de-risk before build | Product Owner ↔ User Researcher | IV Philosophy / V Research | Product Owner / User Researcher |  | unknown | lean |
+| Code that must run in production | Reliability Engineer ↔ Software Engineer | IX Craft | reliability_engineer / Software Engineer |  | unknown | devops |
+| Delivery → runtime handoff (GitOps, DORA) | Reliability Engineer ↔ Software Architect | I Process | reliability_engineer / Software Architect | <https://opengitops.dev/> | unknown | devops |
+| Runtime supply-chain verification (Sigstore) | Reliability Engineer ↔ Software Engineer ↔ Software Architect | IX Craft | reliability_engineer / Software Engineer / Software Architect | <https://www.sigstore.dev/> | unknown | devops |
+| Uptime & latency as an accessibility floor | Reliability Engineer ↔ Accessibility Specialist | VIII Web-A11y | reliability_engineer / Accessibility Specialist | <https://sre.google/workbook/implementing-slos/> | unknown | wcag |
+| Observability dashboards (data-viz) | Reliability Engineer ↔ UX Designer | VII Design | reliability_engineer / UX Designer | <https://opentelemetry.io/docs/> | unknown | sre |
+| Observability signals ≈ anomaly detection | Reliability Engineer ↔ Agile Auditor | III Systems / XI NLP | reliability_engineer / Agile Auditor | <https://docs.evidentlyai.com/> | unknown | sre |
+| Semantic naming & i18n as governed vocabulary | Design Engineer ↔ Content Designer | VI Communication / XI NLP | design_softwareengineer / Content Designer |  | unknown | designsystems |
+| Accessibility shifted left into components | Design Engineer ↔ Accessibility Specialist | VIII Web-A11y / X Tools | design_softwareengineer / Accessibility Specialist |  | unknown | wcag |
+| Automated a11y coverage ceiling → manual test scope | Accessibility Specialist ↔ QA Engineer | VIII Web-A11y / IX Craft | Accessibility Specialist / QA Engineer |  | unknown | wcag |
+| Accessibility law as a scope constraint (EAA / EN 301 549) | Product Owner ↔ Accessibility Specialist | IV Philosophy / VIII Web-A11y | Product Owner / Accessibility Specialist |  | unknown | wcag |
+| Falsifiability — assumption tests & BDD scenarios | Product Owner ↔ QA Engineer | V Research | Product Owner / QA Engineer |  | unknown | agile |
+| Wireframe as hypothesis — opportunity tree → design brief | Product Owner ↔ UX Designer | I Process / VII Design | Product Owner / UX Designer |  | unknown | agile |
+| Conway's Law — team language shapes architecture | Content Designer ↔ Software Architect | III Systems / XI NLP | Content Designer / Software Architect |  | unknown | — |
+| Component contract as executable spec | Design Engineer ↔ QA Engineer | IX Craft / X Tools | design_softwareengineer / QA Engineer |  | unknown | contractfirstapidesign |
+| Risk vs. scope before a structural decision | Product Owner ↔ Software Architect | — *(act unassigned — see the recovery note below)* | Product Owner / Software Architect |  | unknown | — |
+| Core Web Vitals as a field-measured runtime signal *(provisional — one-sided evidence)* | Design Engineer ↔ Reliability Engineer | IX Craft / III Systems | design_softwareengineer / reliability_engineer |  | unknown | sre |
 
 **This table is the one home, and it had been the smallest copy.**
 The same list lived in three places: here, in `docs-site/src/components/PivotGraph.astro` (28 rows),
