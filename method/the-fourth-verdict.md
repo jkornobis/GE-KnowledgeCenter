@@ -39,30 +39,46 @@ signal it cannot distinguish, a region it never drew. **Nothing about the corpus
 fires.** That is why collapsing it into the nearest world-verdict is not rounding: it converts a
 statement about the tool into a statement about the subject, and the reader has no way to tell.
 
-⚠️ **And the collapse always points the same way — toward absence.** *I could not look* never
-degrades into *I found something*; it degrades into *nothing is there*. **So a classifier missing its
-fourth verdict does not produce noise, it produces a systematic bias toward the null**, and the null
-is usually the interesting-looking result.
+⚠️ **The direction of the collapse is decided by where the fall-through lands — and it is not always
+toward absence.** This page claimed it was, and that claim was refuted the day it was published;
+the correction is kept in place because it is the more useful fact.
+
+A feed prober's *answers-but-contains-nothing* branch is the counterexample. Remove it, and an empty
+feed does not fall through to *missing* — it reaches a date check, finds no dates in no entries, and
+is reported **alive, no readable date**. **The missing verdict there manufactures presence, not
+absence.**
+
+**So the rule is not *collapse biases toward the null*. It is: a missing verdict collapses into
+whatever branch catches it next, and that branch is an accident of control flow rather than a
+property of the classifier.** Which is worse, because it cannot be predicted from the enum — it has
+to be read out of the code. **The bias exists; its direction is not knowable without looking.**
 
 ## Four implementations, and what the absence cost each one
 
 Filed as evidence by the estate that built them, dated, with the failure that forced each:
 
-| the instrument | the fourth verdict | what it refuses |
-|---|---|---|
-| a shared-concern classifier | `unmeasurable` | a concern with no short searchable term, reported as *watched by nobody* |
-| a timeline decay check | `unmeasurable` | a title whose subject cannot be lifted out of its sentence, reported as *quiet* |
-| a feed prober | `MUTE` · `LATER` | an address that answers with nothing, and a host that cannot answer *now* |
-| a coverage grid | `unsurveyed` | a region nobody drew, rendered identically to a region drawn empty |
+| the instrument | the fourth verdict | what it refuses | collapses into |
+|---|---|---|---|
+| a shared-concern classifier | `unmeasurable` | a concern with no short searchable term | *watched by nobody* |
+| a timeline decay check | `unmeasurable` | a title whose subject cannot be lifted out of its sentence | *quiet* |
+| a feed prober | `LATER` | a host that cannot answer *now* | *the address is wrong* |
+| a coverage grid | `unsurveyed` | a region nobody drew | *drawn, and empty* |
+
+⚠️ **A fifth state was filed with these four and does not belong beside them** — the prober's
+*answers-but-contains-nothing*. It is not an instrument-reach refusal: the instrument looked and
+succeeded, and what it found was **a genuine third state of the world** that a two-way enum had no
+cell for. That is a related defect with a different cause — **an under-discriminating vocabulary,
+not an unadmitted blind spot** — and it is the one whose collapse runs toward presence. Kept visible
+here because the two are easy to file together and pull in opposite directions.
 
 **The costs, measured rather than feared.** The decay check was built after a pass produced **115
 false *quiet* verdicts** from treating an editorial sentence as a searchable term. The
 shared-concern classifier was *already carrying* the documented rule and still shipped the false
 version for three separate reasons — a whole-phrase fallback, a separator class missing one
 codepoint, and a first-hit-wins loop — all three found and corrected on 2026-09-15, all three failing
-toward false absence. **The feed prober's two extra states each replaced a category error the estate
-had made repeatedly in prose before a tool could refuse it:** *an address that answers is not an
-address that contains*, and *cannot answer now* is not *is not there*.
+toward false absence. **The feed prober's extra states each replaced a category error the estate had
+made repeatedly in prose before a tool could refuse it:** *cannot answer now* is not *is not there*,
+and *an address that answers is not an address that contains*.
 
 ⚠️ **The second row is the one to read twice.** An instrument can hold this rule in its own docstring
 and violate it anyway, because the rule governs the *verdict* and the bug lives in the *term
@@ -131,8 +147,15 @@ and the second is structure**, and structure is what survives a session boundary
 family, different cause:** there the missing thing is a surface nobody asked, here it is a token
 nobody minted — and both publish a confident number that is really a statement about the method.
 
-⚠️ **One limit worth stating.** Every instrument above comes from one estate, and four
-implementations by the same hands is a convergent habit as much as a discovered law. **What
-generalises cleanly is the asymmetry** — that one verdict in the set describes the instrument rather
-than the world. Whether four is the natural number, or simply how many states these four tools
-happened to need, is not settled by this evidence.
+⚠️ **One limit worth stating, and it has already been exercised.** Every instrument above comes from
+one estate, and a handful of implementations by the same hands is a convergent habit as much as a
+discovered law. **What generalises cleanly is the asymmetry** — that one verdict in the set describes
+the instrument rather than the world. Whether the count is natural, or simply how many states these
+tools happened to need, is not settled by this evidence.
+
+**The first draft of this page overreached on exactly that point** and was refuted within hours by
+the estate that filed the evidence, reading its own code rather than its memory of it: the claim
+that a missing verdict always collapses toward absence, disproved by a branch whose removal
+manufactures *presence*. **The refutation is above, in place of the claim.** It is recorded here
+rather than quietly patched because a page about instruments that overstate their reach has no
+business hiding its own.
