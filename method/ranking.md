@@ -161,6 +161,37 @@ a row survives two consecutive close-outs unchanged
 the same subject is re-ranked from memory because nobody wrote it down
 ```
 
+### The bound, and it is a property of the REPOSITORY rather than the instance (ruled 2026-09-16)
+
+**Fewer than about ten open issues on the repository in hand: rank them in a table. More than that:
+a link to the tracker, and the count.** The Composer's words, correcting a first version of this
+rewrite that had repealed the table instead of narrowing it: *"Eisenhower table is valid for more
+less than 10 issues, or when composer asking it, but on line with links it just an addition to it."*
+
+**The reason is not the format, it is what a large tracker is made of.** His own:
+
+> *"tower have lot of issue opened, blocked, waiting time to be done, so working on GE 3 parts and
+> working and Tower isn't the same thing, even it's because each one a dedicated project I manage
+> alone for the moment."*
+
+**Past a certain size most rows are not actionable this turn** — open, blocked, or waiting on a hand
+or a third party — **and ranking what cannot move is the wall the ranked table was invented to
+replace**, rebuilt out of glyphs. A table of four live issues is a decision aid. A table of eighteen
+is the backlog printed sideways.
+
+⚠️ **So two instances following the same method will legitimately end their turns differently**, and
+neither is out of tune. **The bound is read off the repository, never off a house style** — a
+knowledge library with four live issues gets the table; an infrastructure tracker with eighteen gets
+the link. **An instance that adopts one behaviour for all its repositories has substituted a habit
+for the measurement.**
+
+**And the two are not alternatives.** The table answers *what should I act on*; the link answers
+*how big is the estate*. Where both apply the table comes first and the link closes. **A link is an
+addition to a ranking, never its replacement** — which is exactly the error that produced this
+clause: a complaint about one unreadable block was generalised into repealing a method set eight
+days earlier. **A narrowing is not a repeal**, and the difference is worth a paragraph because the
+two look identical in a hurry.
+
 ⚠️ **The second is the real one.** A row that is ranked identically twice is not being worked — it is
 being *stored*, and a conversation is the worst storage there is: it has no search, no history, no
 owner, and it is gone when the session ends. **Re-ranking is the cost being paid, once per close-out,
