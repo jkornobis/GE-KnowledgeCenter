@@ -1811,3 +1811,45 @@ instances following one method will legitimately end their turns differently.
 
 **None is a gap this session failed to close.** `#117` moved from *blocked on a wrong reason* to
 *blocked on a stated one*, which is progress of a kind worth distinguishing from nothing happening.
+
+### Addendum, 2026-09-16 morning — the export that does not exist, and a third false success
+
+*Appended after the End Day entry above, because the subject moved materially in the hour after it.*
+
+**`#167` asked GE-Workshop to stamp a write operation that does not exist.** They refuted it against
+their own script and I re-derived before accepting:
+
+```text
+scripts/export_graph_for_library.mjs
+  161   writeFileSync(OUT, out)     the ONLY write — and it writes the translated graph JSON
+  145   return PUBLICATION_MAP[m]   a STRING LOOKUP for rewriting citations inside that JSON
+```
+
+**`PUBLICATION_MAP` has never copied a page.** I read a table of `brain/X.md → method/X.md` pairs
+and inferred a copy pipeline from its shape without checking what the script writes.
+
+⚠️ **Same defect twice in one session, six hours apart** — `#117` parked on a generator I had not
+found because I searched this repository rather than the estate, and this. **A mechanism inferred
+from a name instead of read out of the code**, which is `method/reading-the-whole.md`'s cheap-signal
+substitution committed by the instance that publishes the page. **No new page: the existing one
+already describes it and I did not apply it.**
+
+**The corrected finding is worse than what was filed.** There is no pipeline at all — those pages
+are hand-synced or not synced, and **a republished page with no mechanism behind it is a fork that
+looks like a copy.** The byte-diff measurement in `#126` survives; the explanation attached to it
+does not.
+
+**Ruled: convention, not a pipeline.** `generated.from` as `GE-Workshop/<path>@<sha>` inside the
+existing frontmatter object, written by whoever performs a hand-sync. `#127` merged here at
+`e3ba08b`, **stamp verified truthful rather than merely present** — the SHA exists at their end, is
+the last commit to touch the source, and the source has not moved since. `GE-Workshop#168` records
+the convention at their end; `#167` closed.
+
+**And the third false success signal of the session, caught before it mattered.** `#127` was
+reported to me as already merged; it was open, my `main` was untouched, and the fork has no push
+here. **Caught only by the habit `#68` cost three occurrences to learn** — verify against `main`,
+never against the report of the merge. **The report was sincere and wrong, which is the class that
+is dangerous**, and the cheap fix is naming the check per action rather than per message.
+
+**What stays unbuilt on purpose:** the reader for the stamp. One page carries one; a gate written
+now would pass on fourteen that carry none — `#126`'s own defect, rebuilt with better manners.
