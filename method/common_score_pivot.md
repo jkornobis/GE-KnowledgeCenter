@@ -3,7 +3,7 @@ type: Method
 title: "The Common Score Pivot — shared concerns and dependency vectors"
 description: "Two relation types over the same twelve chairs: undirected shared concerns, sixteen of twenty-eight carrying an external standard and twelve counted aloud as blank, and directed requires-serves dependencies that a shared-concern reading cannot see"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-26T18:40:00+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-26T18:40:00+02:00, from: "GE-Workshop/brain/common_score_pivot.md@eb49cec5eff5" }
 sources:
   - resource: https://arxiv.org/abs/2503.13657
   - resource: https://www.anthropic.com/research/reasoning-models-dont-say-think
