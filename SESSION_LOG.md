@@ -1853,3 +1853,65 @@ is dangerous**, and the cheap fix is naming the check per action rather than per
 
 **What stays unbuilt on purpose:** the reader for the stamp. One page carries one; a gate written
 now would pass on fourteen that carry none — `#126`'s own defect, rebuilt with better manners.
+
+## Session 2026-09-16 — End Day: a quiet day, one issue arrived, and its obvious home is not mine
+
+*Short entry because the day was short. Nothing moved in this repository between the addendum at
+08:22 and now; the substance is one issue that arrived while this instance was idle, and what
+reading it properly turned up.*
+
+### `#128` arrived from GE-Workshop at 19:25, and it is well-formed
+
+Two `##` sections of `principles/core-principles.md` are reference tables rather than principles —
+*what four books teach the Agile Facilitator*, and *Design Thinking / Lean UX / Agile mapped to the
+Agile Facilitator's application*. **Neither states a rule.** Ruled by the Composer 2026-09-16.
+
+**Accepted on the diagnosis.** Worth recording *how* they found it: their
+`check_principle_promotion` fetches this library's page as the live principle set, reported nine
+principles with no candidate entry behind them, and after fixing two keying defects at their end and
+writing four real entries, **the remaining two were exactly these tables.** The last rows of an
+otherwise clean measurement.
+
+⚠️ **And they declined the mechanical tell that would have made a checker easy.** Neither table
+carries a date and every genuine principle does — but the ten under *`# Ten further principles`*
+carry none either, so a date requirement would have hidden real rules instead. **A rule that fixes a
+count by hiding real rows is worse than the wrong count.** That reasoning is theirs and it is right.
+
+### What reading it turned up: the destination is a page this library does not author
+
+```text
+chairs/agile_facilitator_references.md   one of the 15 republished FROM brain/ — theirs
+principles/core-principles.md            mine, not an export target
+method/orchestra_prior_art.md            mine, but it is multi-agent practice and substrate
+                                         facts, not what a chair reads
+```
+
+**A hand-edit to the republished copy here would fork a page nothing syncs** — `#126`'s defect,
+committed deliberately. So the natural home is `brain/agile_facilitator_references.md` at their end.
+
+⚠️ **Which inverts the usual sequencing, and the reason is worth keeping.** The floor says change
+only what is inside my own repo and report my side done. **Here my side is a DELETION**, and
+removing prose before its replacement exists is how a record gets quietly emptied — `#116`'s own
+subject on this tracker. **So the content travels on the issue verbatim and the deletion follows
+their landing**, rather than leading it.
+
+### Nothing else moved, and that was checked rather than assumed
+
+No commits since `cf65123`. No open PRs. All four Matrix rooms read back to the last post: nothing
+addressed to this instance, and nothing unanswered. One thread at the GrandEnsemble level worth
+knowing exists but not this repository's — a wake-fence finding filed as `GE-Workshop#165`, about
+`--allowedTools` existing as prose rather than as a permission.
+
+### What is still open
+
+```text
+#128   accepted; my half is a deletion held until the Workshop lands the content
+#126   no export exists — a ruling on whether 15 hand-synced pages should be synced at all
+#117   values are pre-fix; one run of the corrected tool at another end settles it
+#68    discriminator posted, needs one probed occurrence
+#116   held for a second occurrence
+#49    unmeasurable from inside this library
+```
+
+**Four of the six are waiting on somebody else's hand or a future event, and that is not the same as
+four things this session failed to do.** `#128` is the only one that arrived today.
