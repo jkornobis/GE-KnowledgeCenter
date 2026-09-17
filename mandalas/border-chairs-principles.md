@@ -322,7 +322,7 @@ false-positive table already rules that "`spike` belongs to Too Big Too Soon her
 exploration", and the review did not have that table. **Art as Felt Science** on the empathy map's
 "What do they feel?": the review marked it a weak, name-only reading and said so itself.*
 
-### 📐 Software Architect — 9 warrants
+### 📐 Software Architect — 10 warrants
 
 | Principle | Cluster | Evidence |
 |---|---|---|
@@ -335,6 +335,7 @@ exploration", and the review did not have that table. **Art as Felt Science** on
 | **The cobbler's children** | Learning | *"self-applying it retroactively to the Chair Review verdict two turns ago is what surfaced this gap"* — **re-evidenced**: the standard turned inward, and the inward turn exposing the defect |
 | **How rules actually hold** | Governance | *"The rule existed; nothing forced it to actually be applied at tag time."* |
 | **The professional mantra** | Learning | *"**Real gap this closes:** in one session, 14 tags were cut, every single one classified MINOR — including several that were pure corrections"* — the failure named precisely, once, with counts, then fixed |
+| **The skill executes; the repo remembers** | Structure | *"the Software Architect sets versioning strategy and **owns the ADRs**"* — the chair that owns the decision log is the chair that requires the rule sending an argument-for-a-rule there. ⚠️ **Ownership evidence, not the chair naming the principle**: added 2026-09-16 on the Composer's ruling, and open to being struck if that is too loose for this map's `Exclude` rule |
 
 ***"Richest chair on the floor" is withdrawn as a label even though the chair may still deserve it.***
 *As recorded, only **4** of the 7 edges stood: one dropped, two needed re-evidencing, and one of those
