@@ -1915,3 +1915,9 @@ knowing exists but not this repository's — a wake-fence finding filed as `GE-W
 
 **Four of the six are waiting on somebody else's hand or a future event, and that is not the same as
 four things this session failed to do.** `#128` is the only one that arrived today.
+
+**Next session's opening, ruled at this close-out:** measure whether the other fourteen republished
+pages have drifted — structure rather than bytes, both trees being on this machine. **The stamp
+reader was offered and declined**: one page carries a stamp, fourteen do not, so a reader written
+now passes on all fourteen, which is `#126`'s defect rebuilt with better manners. Method and the
+closing conditions are on `#126` rather than restated here.
