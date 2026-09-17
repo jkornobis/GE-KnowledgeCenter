@@ -3,7 +3,7 @@ type: Chair Reference
 title: "Agile Facilitator — Field References (Routing & synthesis)"
 description: "Living reference notes for the Agile Facilitator's field"
 status: draft
-generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00, from: "GE-Workshop/brain/agile_facilitator_references.md@bd66d537cd74" }
 sources:
   - resource: https://arxiv.org/abs/2503.13657
     title: "MAST failure taxonomy"
@@ -43,3 +43,39 @@ Living reference notes for the Agile Facilitator's field. From an **independent 
 ## Emerging
 - **[Orchestration topologies](https://doi.org/10.3390/fi18060326)** — Centralized vs decentralized vs hierarchical, with a dynamic-adaptive control axis; framework trade-offs (LangGraph, CrewAI, DSPy) on state, cost, failure recovery.
 - **["More agents" is often noise](https://medium.com/@Micheal-Lanham/multi-agent-in-production-in-2026-what-actually-survived-f86de8bb1cd1)** — In production, extra agents often rearrange the same information without adding intelligence. A discipline check against reflexively convening the full orchestra.
+
+---
+
+## Cross-domain learning — where this chair's method came from
+
+**Not field research, and deliberately not folded into the three sections above.** Those cite external
+work and carry a severity from the 2026-07-02 audit. **These two tables carry no URL and state no rule**
+— they map sources and methods to what this chair does with them, which is a different kind of claim and
+so gets its own container rather than a fourth severity tier.
+
+They arrived from the library's `principles/core-principles.md`, where they sat under `##` headings
+among principles while stating no rule (the Composer's ruling 2026-09-16, `GE-KnowledgeCenter#128`).
+⚠️ **Reproduced verbatim as they stood at `cf65123`.** The library's half of that issue is a *deletion*,
+and a reworded copy would not be a record of what was removed — reshaping was offered and declined for
+that reason, not from deference.
+
+### Cross-domain learning — what these sources teach the Agile Facilitator
+
+| Source | What it teaches |
+|---|---|
+| **Clean Code** (Martin) | Name things right. One responsibility. No side effects. The code that's easiest to read is the code that's easiest to trust. |
+| **Clean Coder** (Martin) | Professionalism is saying no when no is the right answer. Finishing is not the same as done. |
+| **Agile Manifesto** | Working software over comprehensive documentation. Responding to change over following a plan. People over process. |
+| **Material Design 3** | Constraints produce coherence. A system that starts at WCAG AA doesn't have to argue for accessibility — it's built in. |
+
+### Design Thinking · Lean UX · Agile — Agile Facilitator's connections
+
+| Method | Agile Facilitator's application |
+|---|---|
+| **Design Thinking** | Empathize before defining. Define before ideating. Ideate before prototyping. The Agile Facilitator does not skip to solution. |
+| **Lean UX** | Build-Measure-Learn. The smallest test that answers the question. The Composer's judgment IS the measurement. |
+| **Agile** | Sprint = one increment. Demo = Composer reviews. Retrospective = session retrospective protocol. Backlog = Product Owner's domain. |
+
+⚠️ **Two rows settled, twenty-three unexamined.** Both sections were found because a count pointed at
+them, not because that page was audited. This says nothing about the rest of `core-principles.md`, and a
+clean measurement is not a clean page.

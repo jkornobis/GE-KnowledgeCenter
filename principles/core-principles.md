@@ -32,7 +32,7 @@ sources:
 
 # Core Principles — the Orchestrator
 
-NDT, Greenfield Reset, Dèmos Kratos, Overshoot, Cobbler, Too Big Too Soon, Deletion protocol, Cross-domain learning, Design by absence.
+NDT, Greenfield Reset, Dèmos Kratos, Overshoot, Cobbler, Too Big Too Soon, Deletion protocol, Design by absence.
 
 > **One section is held back.** The source carries a *Provenance* section tying four of these rules
 > to the founding Composer's own career and published articles. **Its own text rules on it:** *"His
@@ -368,24 +368,6 @@ handing them the conclusion is worth less than handing them the question.**
 
 **Not a change to One Author.** *Comment only if you find something* says **when** to speak; this says
 **in what form**. They compose.
-
-
-## Cross-domain learning — what these sources teach the Agile Facilitator
-
-| Source | What it teaches |
-|---|---|
-| **Clean Code** (Martin) | Name things right. One responsibility. No side effects. The code that's easiest to read is the code that's easiest to trust. |
-| **Clean Coder** (Martin) | Professionalism is saying no when no is the right answer. Finishing is not the same as done. |
-| **Agile Manifesto** | Working software over comprehensive documentation. Responding to change over following a plan. People over process. |
-| **Material Design 3** | Constraints produce coherence. A system that starts at WCAG AA doesn't have to argue for accessibility — it's built in. |
-
-## Design Thinking · Lean UX · Agile — Agile Facilitator's connections
-
-| Method | Agile Facilitator's application |
-|---|---|
-| **Design Thinking** | Empathize before defining. Define before ideating. Ideate before prototyping. The Agile Facilitator does not skip to solution. |
-| **Lean UX** | Build-Measure-Learn. The smallest test that answers the question. The Composer's judgment IS the measurement. |
-| **Agile** | Sprint = one increment. Demo = Composer reviews. Retrospective = session retrospective protocol. Backlog = Product Owner's domain. |
 
 ---
 
