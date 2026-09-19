@@ -3,6 +3,7 @@ type: Mandala Layer
 title: "Movement candidates — dated evidence for eleven borders, and the three chairs the twelve movements cannot reach"
 description: "Evidence gathered per chair and per movement so the Composer can rule rather than guess: seven borders with a date on both sides, two contested, three chairs with no candidate among the twelve, and five movements no craft evidence can reach"
 status: draft
+record: 2026-09-08
 serves_all: true
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-08T10:55:00+02:00 }
 sources:
