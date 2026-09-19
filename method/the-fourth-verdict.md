@@ -120,6 +120,30 @@ to this case, which is a fact worth publishing about coverage.
 are different states and the second one does not become the first by waiting. Where both exist, they
 need separate tokens.
 
+## The pattern left the page and entered a runner (2026-09-19)
+
+**The clearest evidence this generalises is that it moved.** A gate runner in a peer estate could
+express only `PASS` and `RED` — so a check whose *looking* failed had two dishonest options: pass
+while blind, or **redden and blame the corpus for the instrument's own blind spot.** Its
+`UNRUNNABLE` state existed but was inferred from a missing binary, so no check could declare it for
+any other reason.
+
+**It can now print `UNRUNNABLE: <reason>` on its own line, honoured before the exit code.** The
+first real occasion, recorded at both ends:
+
+```text
+before   UNRUNNABLE: the published graph carries no from stamp
+after    ✓ the library publishes this repository's current graph
+```
+
+⚠️ **That transition is the argument for the third state, in one move: it did not pass while blind,
+and it did not redden while waiting on another repository.** A gate that blames a neighbouring
+corpus for its own inability to look is a gate that gets bypassed — and a bypassed gate is the
+`PASS`-while-blind failure with extra steps.
+
+**The general shape, for any runner:** a check declares that it could not look, and that declaration
+outranks its exit code. **An exit code has two values and the question has three.**
+
 ## When a fourth verdict is owed
 
 **The test is not whether the classifier is important. It is whether it can fail to look.**

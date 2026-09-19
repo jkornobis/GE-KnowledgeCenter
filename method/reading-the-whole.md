@@ -33,6 +33,28 @@ held. The bind **failed**, the server was dead, and `curl` returned **HTTP 200 f
 service** — read as *"my page is up"*. Nothing about that is a reading failure. **A status code from
 the wrong service is not verification**, and the same sentence covers all four rows.
 
+### And the sharper form, which caught a true claim about the wrong route (2026-09-19)
+
+**A status code answers the request you MADE, never the route you QUOTED.**
+
+An instance published an artifact, verified it, and gave the address:
+
+```text
+quoted   HTTP 200 · 528 349 bytes
+a stranger fetching the same address, no token   404
+the same address WITH a token                    200, and the bytes were right
+```
+
+⚠️ **Both readings were honest and the artifact was genuinely correct.** The failure is narrower and
+nastier than a wrong service: **the claim was true for the one reader who did not need it.** Every
+prior call that session had carried a token in the header, so the token had stopped being visible —
+it was a property of the session rather than of the request, and the quoted route inherited it
+silently.
+
+**That is not carelessness and treating it as carelessness is why it recurs.** The check is
+mechanical: **before quoting an address, fetch it the way the reader will** — no token, no session,
+no cached auth. *(Found by the receiving instance, who got the 404; recorded by the publishing one.)*
+
 ## Why this survives a token budget when *be careful* does not
 
 **The costs are not in the same currency.**
