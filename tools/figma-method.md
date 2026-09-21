@@ -172,7 +172,7 @@ Everything above builds *in* Figma. Code Connect is the return path — and the 
 
 ## Adjacent 2026 surfaces — know they exist, reach for them by name
 
-Config 2026 shipped surfaces next to this canvas method ([Config 2026 recap](https://www.figma.com/blog/config-2026-recap/)). Not part of the perceive-loop, but the honest choice when the task calls for them: **Code Layers** (turn a layer into live, iterable code inside the file), **Figma Motion** (timeline animation exporting to CSS/React/JSON — use the dedicated motion skill for implementation), **Shader fills/effects** (AI-generated materials as editable canvas controls), **Generative Plugins** (describe a tool, no dev environment), and the **enhanced Figma Agent** (custom skills + connectors like GitHub/Notion/Slack). Steer with the feature's real name; don't hand-build what a named surface already does.
+Config 2026 shipped surfaces next to this canvas method ([Config 2026 recap](https://www.figma.com/blog/config-2026-recap/)). Not part of the perceive-loop, but the honest choice when the task calls for them: **Code Layers** (turn a layer into live, iterable code inside the file), **Figma Motion** (timeline animation exporting to CSS/React/JSON — use the dedicated motion skill for implementation; `method/figma-motion.md` carries the keyframe/timing fundamentals recorded from a reference document, not yet verified against this live API), **Shader fills/effects** (AI-generated materials as editable canvas controls), **Generative Plugins** (describe a tool, no dev environment), and the **enhanced Figma Agent** (custom skills + connectors like GitHub/Notion/Slack). Steer with the feature's real name; don't hand-build what a named surface already does.
 
 ## Who plays it
 
@@ -381,6 +381,30 @@ serves those skills.
 by the estate that hit the ceiling and untested here:** `createImage()` carries a budget near 16 MP, so
 a 1920×1080 frame exports at 2× (8.3 MP) but not 3× (18.6 MP). Treat 2× as the practical maximum for a
 full screen and 3× as available for crops — see `method/design-review.md` for why the floor is 2×.
+
+**25. A `replace()` with no match is a silent no-op, and text nodes are where this bites.**
+*Reported by the design-review source document (`method/design-review.md`), not reproduced here —
+mark it as claimed, not verified.* `string.replace()` returns the original string unchanged when the
+search string does not match — no error, no throw. In a long text node, one differing character
+(curly vs. straight quote, em-dash vs. hyphen, a trailing space) makes the call succeed and do
+nothing. The stated countermeasure: read the actual text content before writing replacement code —
+never assume it matches what a different context showed you — and verify after every replace by
+checking whether the output actually changed.
+
+**26. A multi-part text collection is usually several nodes, not one.** *Same provenance as rule 25,
+same verification state.* A design annotated with a numbered list (①②③…) may hold each item as its
+**own** text node rather than one node containing the whole list. A script that searches a single
+node for the full sequence finds only the first item and silently misses the rest. Before running an
+operation across "the annotations" or "the findings" on a frame, enumerate all text nodes in the
+relevant subtree and treat each independently — do not assume the visual grouping is a data
+grouping.
+
+**27. Auto-layout grows the child's content, not always the parent frame.** *Same provenance and
+verification state as rules 25–26.* Adding even a short string (a bracketed tag, a status marker) to
+text near a frame's wrap boundary can push content below the frame's edge — auto-layout resizes the
+element that grew, but a fixed-height ancestor does not resize with it. Keep additions to
+already-tight text short, and re-screenshot after the edit rather than assuming a small text change
+is a safe one.
 
 ## IV — Reading list (from the same session)
 
