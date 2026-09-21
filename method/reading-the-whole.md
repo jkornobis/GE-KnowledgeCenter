@@ -125,6 +125,38 @@ answer is usually right about the instrument.
 **And it does not make anyone careful.** The only thing that has ever caught one of these is another
 read: a positive control, a second instrument, or a thread nobody had opened.
 
+## The removal case: a strip is not a delete (#116, settled 2026-09-21)
+
+**Reading the whole applies to what you remove, not only to what you act on.** A deletion is a
+two-sided edit — the text that remains was written against the text that left — and the eleven
+occurrences above are all *omission on the way in*. This is the same defect on the way out.
+
+**Filed 2026-09-12** after twice in one dating sweep: stripping `common_score_pivot.md`'s
+`Last updated:` header (correctly — it was a changelog) orphaned a Definition-of-Done requirement in
+`protocols/orchestra-protocols.md` that pointed at the now-gone line; stripping an autobiographical
+opening sentence from `protocols/pane-guard.md` left a bare *"It"* with nothing to refer to. The issue
+asked whether two occurrences in one pass, both found by the person who caused them, generalised —
+or were just the easiest possible case catching itself.
+
+**The second occurrence arrived five days later, from a different cut.** Closing #128 (removing two
+reference-table sections from `principles/core-principles.md`) turned up a third instance of the same
+shape: the page's own index line named one of the sections being removed, and would have pointed at
+nothing had the cut not checked for it. Different file, different remover, same defect — **it
+generalises.**
+
+Two distinct failures, and they want different answers:
+
+| | what breaks | reachable by a check? |
+|---|---|---|
+| **a reference to the removed thing** | another page requires, cites, or counts what is gone | **partly** — grep the removed string across the repo at removal time |
+| **a dangling antecedent** | *it*, *this*, *the above* lose their referent | **no** — only by reading the paragraph before and after |
+
+**Not a fourth gate.** The first class is a habit, run at removal time: before a commit that deletes a
+heading, a section, or a sentence, grep the exact string being removed across the rest of the
+repository — an index line, a cited requirement, a cross-reference all show up the same way. The
+second class is unreachable by any grep and stays a reading discipline: after a deletion, read the
+sentence immediately before and after the cut, not just the diff hunk containing it.
+
 ## Where its cases live
 
 | case | page |
