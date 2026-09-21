@@ -163,6 +163,14 @@ The source document's findings named a live engagement and are excluded. **The s
   Measured twice on one file, on two different pages: **1,530 of 6,939 instances with zero children on
   one (22%), 2,064 of 12,025 on the other (17.2%)**, hidden at 12.7% and 6.0%. The rate differs; the
   pattern holds.
+- **Continuity is checkable mechanically, not only walked.** *Recorded 2026-09-21, same provenance and
+  same unverified status as the rest of this page.* The claim above — that the interaction chain
+  between frames has no DOM edge — does not mean it cannot be audited without a human walking every
+  screen. The stated method: extract three strings per screen (the incoming user message, the opening
+  of the system's response, and the outgoing suggestion), then mechanically trace
+  `screen(n).outgoing → screen(n+1).incoming` across every consecutive pair. A mismatch is a broken
+  causal link, found by string comparison rather than by eye. **Untested here** — the source document
+  reports it as the technique that found its own worked example, but no second hand has run it.
 
 ## What this page does not establish
 
@@ -170,6 +178,21 @@ The pass model, the Double Diamond framing and the three-modality claim are **on
 recorded and unreplicated.** The craft in §6 is the Composer's and stands on his authority. The measured
 items in §8 and the rules in `tools/figma-method.md` are this estate's own readings, dated. **Nothing
 here has been run twice by two hands, and the difference is marked throughout rather than averaged away.**
+
+## 9 — Further reading: visual diff & review tooling (pointers, not evaluated)
+
+Carried over from the same source document, added 2026-09-21. **These are unread by this estate** —
+recorded as pointers because the source cited them, not because anyone here opened and judged them.
+Percy ([visual diff testing](https://percy.io/blog/visual-diff-testing/)) for pixel-by-pixel baseline
+comparison; BrowserStack ([visual comparison
+testing](https://www.browserstack.com/guide/visual-comparison-test)) for DOM-based vs. pixel-based
+comparison and SSIM tolerance thresholds; DiffQuery ([screenshot comparison
+workflows](https://www.diffquery.com/guide/visual-regression-testing-with-screenshot-comparison));
+QA Touch ([visual UI testing](https://www.qatouch.com/blog/visual-ui-testing/)) for fuzzy matching and
+dynamic-content exclusion; Virtuoso QA ([visual regression testing
+101](https://www.virtuosoqa.com/post/visual-regression-testing-101)) for multi-viewport and noise
+reduction; TestGrid ([visual testing methods](https://testgrid.io/blog/visual-testing/)) for a
+pixel/DOM/structural taxonomy of comparison techniques.
 
 ## Where this sits in the corpus
 

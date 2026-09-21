@@ -69,6 +69,7 @@ result is judged.
 | a search that found nothing, on a word that should exist | `method/chair-vocabulary.md` |
 | turning a request into an ensemble of chairs | `chairs/the-twelve-chairs.md` |
 | reviewing a design surface, or deciding it is too early to | `method/design-review.md` |
+| touching a Figma canvas, calling a Figma MCP tool, or asked anything about the Figma surface | `tools/figma.md` — the router; it names every Figma page this library holds |
 | building a surface where an assistant sits between a person and a process | `method/ai-assistant-patterns.md` |
 | a trigger phrase you have been given and do not recognise | `protocols/triggers.md` |
 | opening a tracker, or ranking from one | `method/reading-a-tracker.md` |

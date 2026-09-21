@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: Figma — router"
-description: "Router for the three Figma pages: the identity table that tells the three MCP servers apart by their parameter shape, and which route each page covers"
+description: "The one page an orchestra fetches first for anything Figma: every page this library holds on the surface, keyed by what the work needs, plus the identity table that tells the three MCP servers apart by their parameter shape"
 status: draft
 serves: [UX Designer, Design Engineer]
 generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
@@ -20,15 +20,26 @@ one surface, and it had grown to 485 lines covering three things with different 
 different failure modes and — decisively — **different registration**. It could never carry an honest
 `Audited` date, because part of its subject was always in a state the rest was not.
 
-**This page is now the router and the identity table. It carries no findings of its own.**
+**This page is now the router. It carries no findings of its own — every finding lives on the page
+that owns it, and this table is the one hop to reach it.** Widened 2026-09-21: Figma is the
+Composer's main working surface (`tools/README.md` already says so — *"figma.md is only the first
+page existing detailed because figma is my main working surface"*), the corpus on it has grown past
+the three MCP-shape pages this router used to cover, and a page split across `tools/` and `method/` is
+one an orchestra can fail to find by fetching only one of the two. **`start.md`'s routing card now
+sends any Figma-touching work here first** — see that page's row — so this table has to be complete,
+not partial.
 
-| Page | Route | State |
+| When the work is | Fetch | Verification state |
 |---|---|---|
-| [`figma-mcp-remote.md`](figma-mcp-remote.md) | the **remote** MCP servers — `fileKey` + `nodeId` | **working**, audited 2026-08-25 |
-| [`figma-mcp-desktop.md`](figma-mcp-desktop.md) | the **desktop** MCP server — selection-scoped, no parameters | **unwired**, audit blocked |
-| the product-surface audit — **deliberately unpublished** | the **product surface** — Skills UI, plugins, connectors, driven by eyes and hands | audited 2026-08-03, **and it stays home**: `index.md` rules it *"cannot be published because it names an employer's systems"*. |
+| mutating, inspecting, or building on the Figma canvas via the Plugin API | [`figma-method.md`](figma-method.md) | live-verified, claim by claim |
+| calling the **remote** MCP server — `fileKey` + `nodeId` | [`figma-mcp-remote.md`](figma-mcp-remote.md) | **working**, audited 2026-08-25 |
+| calling the **desktop** MCP server — selection-scoped, no parameters | [`figma-mcp-desktop.md`](figma-mcp-desktop.md) | **unwired**, audit blocked |
+| the product surface — Skills UI, plugins, connectors, driven by eyes and hands | the product-surface audit — **deliberately unpublished** | audited 2026-08-03, **and it stays home**: `index.md` rules it *"cannot be published because it names an employer's systems"* |
+| reviewing a multi-screen design system, or judging when it's too early to | [`../method/design-review.md`](../method/design-review.md) | recorded from a source document, screened, **not independently verified** |
+| a surface where an assistant proposes actions between a person and a process | [`../method/ai-assistant-patterns.md`](../method/ai-assistant-patterns.md) | recorded, the Composer's own rulings on one product — **not tested on a second** |
+| timeline animation — keyframes, easing, Figma Motion specifically | [`../method/figma-motion.md`](../method/figma-motion.md) | recorded from a reference sheet — **not run against the live API** |
 
-**Read the identity table below before opening any of them**, because the three servers are told
+**Read the identity table below before opening either MCP page**, because the three servers are told
 apart by their parameter shape and nothing else.
 
 ## Critical — re-audit 2026-08-08 (live schema introspection, not recalled)
