@@ -125,6 +125,8 @@ Reading note: high Trust ≠ high Bench — e.g. `glips/figma-context-mcp` (Trus
 
 **What is verified, by having done it rather than read it:** the connector's own server instructions declare `/figma-use` **MANDATORY before every `use_figma` call**, and serve skills as MCP resources at `skill://figma/<name>/SKILL.md` when no plugin is installed. Six are named on the route used here — `figma-use`, `figma-generate-design`, `figma-generate-library`, `figma-code-connect`, `figma-use-figjam`, `figma-create-new-file`. This session loaded `figma-use` before its first `use_figma` call and every call after.
 
+**Eight, not six, as of the 2026-09-22 re-audit.** The two new tool descriptions found that pass carry the same *"you MUST load the skill first"* clause: `create_shader`/`update_shader` name `figma-shaders`, and `create_generative_plugin`/`update_generative_plugin` name `figma-generative-plugins`. Neither was loaded this session — no shader or plugin was created — so this is a schema-read fact, not a used one, same caveat as the tools themselves.
+
 **Three things follow, and the third is the one worth arguing about.**
 
 1. **A tool that ships its own skills changes what a Tool Audit is for.** `protocols/tool-audit.md` assumes the orchestra discovers a surface's capabilities. Here the vendor supplies the operating instructions, versioned with the tool, and the audit's job shifts from *discovering* to *deciding whether to trust what shipped*.
