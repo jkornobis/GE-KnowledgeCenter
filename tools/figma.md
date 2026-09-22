@@ -32,7 +32,7 @@ not partial.
 | When the work is | Fetch | Verification state |
 |---|---|---|
 | mutating, inspecting, or building on the Figma canvas via the Plugin API | [`figma-method.md`](figma-method.md) | live-verified, claim by claim |
-| calling the **remote** MCP server — `fileKey` + `nodeId` | [`figma-mcp-remote.md`](figma-mcp-remote.md) | **working**, audited 2026-08-25 |
+| calling the **remote** MCP server — `fileKey` + `nodeId` | [`figma-mcp-remote.md`](figma-mcp-remote.md) | **working**, re-audited 2026-09-22 — 37 tools, Generative Plugins now a full family |
 | calling the **desktop** MCP server — selection-scoped, no parameters | [`figma-mcp-desktop.md`](figma-mcp-desktop.md) | **unwired**, audit blocked |
 | the product surface — Skills UI, plugins, connectors, driven by eyes and hands | the product-surface audit — **deliberately unpublished** | audited 2026-08-03, **and it stays home**: `index.md` rules it *"cannot be published because it names an employer's systems"* |
 | reviewing a multi-screen design system, or judging when it's too early to | [`../method/design-review.md`](../method/design-review.md) | recorded from a source document, screened, **not independently verified** |
