@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: Figma MCP — the remote servers"
-description: "The fileKey-scoped Figma MCP servers: 33 tools against the 27 once recorded, the bulk Code Connect planner, and what a live re-audit verified on 2026-08-25"
+description: "The fileKey-scoped Figma MCP servers: 37 tools against the 33 recorded 2026-08-25, Generative Plugins as a whole new MCP-reachable family, shaders gaining write, and a re-audit forced by the calendar rather than by a finding"
 status: draft
 serves: [UX Designer, Design Engineer, Content Designer, Accessibility Specialist]
 generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
@@ -12,13 +12,19 @@ sources:
     title: "context7.com/?q=figma"
   - resource: https://mcp.figma.com/mcp`
   - resource: https://mcp.figma.com/mcp
+  - resource: https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/
+    title: "Figma MCP server — tools and prompts (re-read 2026-09-22)"
+  - resource: https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server
+    title: "Guide to the Figma MCP server (re-read 2026-09-22)"
+  - resource: https://www.figma.com/blog/how-we-built-generative-plugins-and-shaders/
+    title: "Behind the Build: Generative Plugins and Shaders at Figma"
 ---
 
 # Tool: Figma MCP — the remote servers
 
-Audited 2026-08-25 by User Researcher. MCP-mediated, `fileKey` + `nodeId` scoped. Authenticated; **Full seat on the organisation tier**, verified live this session.
+Audited 2026-09-22 by User Researcher (re-audit; first pass 2026-08-25, superseded below). MCP-mediated, `fileKey` + `nodeId` scoped. Authenticated — verified by a live successful call this session, not by the environment's own connector-status banner, which is a finding in itself (see below).
 
-Re-audit: 30 days — measured; authority `agents/tools/yang/ux_designer.md` (four Config 2026 capabilities landed inside one audit interval)
+Re-audit: 30 days — measured; authority `agents/tools/yang/ux_designer.md` (four Config 2026 capabilities landed inside one audit interval, and this pass found more of the same shape)
 
 **Chair:** UX Designer carries this product (`roster.md`); Design Engineer requires the token lever it serves. Also `Serves:` Content Designer and Accessibility Specialist.
 **Lineage:** the UX Designer's leap — *design as a shared act*, Photoshop (1990) → **Figma** (Sept 2016, browser + multiplayer), against paper and paste-up. Lag **~40 years**. `project/tools_lineage_full.md`
@@ -217,3 +223,40 @@ across the estate. One page of one file is what was measured, and that is what i
 records a page `306:3` named for the project. The file's only top-level page today is `1840:2`,
 named for something else entirely. **The project record is stale** — noted here because it was found
 here, and it belongs in that file rather than this one.
+
+## Third pass — 2026-09-22, forced by the calendar (28 days, urgent)
+
+**Triggered by the re-audit cadence, not by a reported break.** The Composer asked for this one by the
+clock rather than by a symptom — *"28 days and lot has moved since"* — and the live count backs the
+premise: **37 tools now, against 33 on 2026-08-25.** One family that did not exist a month ago is now
+a full MCP surface; another gained write; one previously-verified tool could not be found at all.
+
+**0 · The environment's own connector-status banner was wrong, verified by immediately doing the thing it said would fail.** This session opened with a system notice listing Figma among MCP servers requiring authorisation before use. The next tool call — `get_metadata` against a real file — returned a full result. **This is the oracle rule from `tools/README.md` at the connector layer**: a self-report about a tool's state is not verification: an actual call is. Treat this specific banner as unreliable for this connector going forward; re-test rather than trust it.
+
+**1 · Generative Plugins are now a full MCP-reachable family — absent from the 33-tool inventory entirely.** `list_generative_plugins`, `get_generative_plugin`, `create_generative_plugin`, `update_generative_plugin`. `tools/figma-method.md`'s "Adjacent 2026 surfaces" note already named Generative Plugins as a Config 2026 capability to "reach for by name" rather than hand-build — that note was correct in kind and is now correct in fact: the surface is callable, not just announced. **Untested this session** — schema-verified only, the same caveat this page already carries for `list_file_components_for_code_connect`.
+
+**2 · Shaders were refactored, and the refactor is a capability gain, not a rename.** The 2026-08-25 pass recorded four kind-specific tools: `get_shader_effect`, `get_shader_fill`, `list_shader_effects`, `list_shader_fills` — read-only. The connector now exposes `list_shaders`, `get_shader`, `create_shader`, `update_shader`, `list_file_shaders` — a unified `kind: effect | fill` parameter replacing the four-way split, **plus `create_shader` and `update_shader`, which did not exist in any form last pass.** Shaders went from read-only to full CRUD in one interval. Both `create_shader` and `update_shader` declare a skill prerequisite (`figma-shaders`) in their own tool description, the same *"causes common, hard-to-debug failures if skipped"* shape already recorded for `figma-use`.
+
+**3 · Code Connect gained a guided suggest-then-confirm flow, and it bears directly on this page's own blocked number.** `get_code_connect_suggestions` (AI-suggested node→component mappings, review-with-the-user, `excludeMappingPrompt` to get a lightweight list of what's unmapped) paired with `send_code_connect_mappings` (bulk-save the approved set). This page already records *"0 of 121 components mapped"* as the mission's blocked number and named `list_file_components_for_code_connect` as the tool that makes bulk mapping *tractable*; this pair is what makes it *guided* rather than hand-authored per component. **Availability is schema-verified only — nothing has been run against the real file yet, which is the next Tool Audit action, not a claim made here.**
+
+**4 · `generate_figma_design` could not be found on this connector this session.** It was the primary "capture a live web page into Figma" tool, verified present 2026-08-25, and Figma's own current documentation (re-read this session) still lists it under Code to Design. **Absence from one session's tool list is not evidence of removal** — client-side registration can differ by surface, and this audit ran inside Claude Code, not the environment the 2026-08-25 pass used. Flagged rather than concluded: the next session that needs it should test directly rather than assume either way.
+
+**5 · `whoami` works and is useful — and this page screens what it returned.** The call resolves handle, email and the full plan/seat list, which is exactly the kind of account-identifying detail `index.md`'s standing rule keeps out of this library (the same rule that keeps the product-surface audit unpublished). **Recorded here: the capability, not the values** — `whoami` is confirmed live and functional, and it is the tool the server itself names as the debugging step for access or rate-limit issues. A musician who needs the actual seat/plan facts for this Composer's account should call it fresh rather than read them off a page.
+
+**6 · Weave — same state as 2026-08-25, re-verified rather than assumed carried forward.** `weave_list_tools` still returns the account-linking instruction; the family is present and still unprovisioned. Unchanged, and said so rather than silently reused from the last pass.
+
+**7 · The two/three-connector story from the 2026-08-25 pass does not reproduce here, and that is marked open rather than resolved.** That pass described *"two MCP routes to Figma, not one"*; `tools/figma.md`'s router still lists a desktop server (7 tools, no parameters, `mcp__Figma__*`) as a separate connection, audit-blocked. **This session's tool list carries exactly one Figma connector — 37 tools, all under one namespace, none of them zero-parameter except `whoami`.** No desktop-shaped server was observed. **Not concluded to be gone** — this audit did not run from a surface that would necessarily see it (the 2026-08-25 finding of the second route came from switching Figma's own desktop-app Preference and restarting the client, which no instrument here can do from inside this session). `figma-mcp-desktop.md` keeps its own **unverified-this-session** state rather than being rewritten from an absence.
+
+### Verified live, 2026-09-22
+
+| Claim | Result |
+|---|---|
+| Connector reachable | yes — a live `get_metadata` call succeeded, contradicting the session's own auth-status banner |
+| Tool inventory | **37**, against 33 recorded 2026-08-25 |
+| New family since | **Generative Plugins** (4 tools) — entirely absent last pass |
+| Changed family since | **Shaders** — 4 read-only tools → 5 tools with unified `kind` param, now including create/update |
+| New Code Connect flow | `get_code_connect_suggestions` + `send_code_connect_mappings` — AI-suggested, human-reviewed, bulk-saved |
+| `generate_figma_design` | **not found** in this session's tool list — flagged, not concluded |
+| `whoami` | works; account/plan values screened from this page per `index.md`'s standing rule |
+| Weave | present, still unlinked — same state as 2026-08-25 |
+| Second connector (desktop-shaped) | **not observed this session** — marked unverified rather than removed, see point 7 |

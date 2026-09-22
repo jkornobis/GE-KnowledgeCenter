@@ -109,3 +109,13 @@ connector that works today, and a local server that is running and unwired. Writ
 one surface, it cannot carry an `Audited` date honestly, because half its subject is always in the
 other state. **One page with two dated sections, or two pages, is the Composer's call**, and it is the
 thing blocking a clean date more than any missing measurement.
+
+## Fourth pass — 2026-09-22, consistent with every prior one
+
+**The 28-day remote re-audit (`figma-mcp-remote.md`) found no zero-parameter, desktop-shaped tool in
+this session's connector list at all.** Read together with this page's own three prior passes, that is
+not a new finding — it is the same one a fourth time: **this route has never been reachable from
+Claude Code**, because Figma registers the desktop server per agent, and only Claude Desktop has ever
+been the target the setup dialog names. Nothing here moved. `Audited` stays 2026-07-04, and the
+freshness check stays correctly red until whoever holds Claude Desktop clicks the one button the
+2026-08-25 pass identified.
