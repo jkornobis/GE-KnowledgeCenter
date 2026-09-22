@@ -38,6 +38,7 @@ not partial.
 | reviewing a multi-screen design system, or judging when it's too early to | [`../method/design-review.md`](../method/design-review.md) | recorded from a source document, screened, **not independently verified** |
 | a surface where an assistant proposes actions between a person and a process | [`../method/ai-assistant-patterns.md`](../method/ai-assistant-patterns.md) | recorded, the Composer's own rulings on one product — **not tested on a second** |
 | timeline animation — keyframes, easing, Figma Motion specifically | [`../method/figma-motion.md`](../method/figma-motion.md) | recorded from a reference sheet — **not run against the live API** |
+| mapping a whole team's folders and files — no MCP tool does this | [`../method/figma-team-map.md`](../method/figma-team-map.md) | sourced from current REST docs — **procedure not yet run end-to-end** |
 
 **Read the identity table below before opening either MCP page**, because the three servers are told
 apart by their parameter shape and nothing else.

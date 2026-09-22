@@ -133,6 +133,16 @@ Reading note: high Trust ≠ high Bench — e.g. `glips/figma-context-mcp` (Trus
 2. **The skill is a prerequisite, not a convenience** — the server states that skipping it *"causes common, hard-to-debug failures"*. That is a capability fact about the route and belongs on this page, not in method.
 3. **This is a vendor writing down the convention for its own instrument** — the thing `tools/chair-levers.md` calls a lever index and this library builds by hand, per chair, from a musician's own hands. **Whether a vendor-supplied skill can substitute for one is unresolved and is not decided here.** It arrives with the vendor's interests in it, and it has not been through a Chair Review.
 
+## Limit — no tool here enumerates a team (2026-09-22)
+
+**Every tool on this connector is `fileKey`-scoped or account-scoped; none is `teamId`-scoped.**
+Verified against the full 37-tool schema during the 2026-09-22 re-audit: no tool lists a team's
+folders, no tool lists the files inside a folder. `whoami` returns which plans/teams exist; nothing
+here walks into one. **A GE trying to map a team's files and folders through this connector is not
+missing a parameter — the capability is not on this surface.** The REST API is — see
+`method/figma-team-map.md` for the procedure, current endpoints, and why a procedure that worked a
+month ago on the old v1 `projects` endpoints can now return an incomplete picture.
+
 ## Limits — what a reaction is not (2026-09-01, corrected by the Composer)
 
 **Reactions carry navigation and component-state plumbing. They do not carry designed flow, and on a file under construction they are not supposed to.**
