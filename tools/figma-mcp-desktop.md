@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: Figma MCP — the desktop server"
-description: "The selection-scoped Figma MCP server: seven tools that take no parameters at all, why that shape is the tell, and the per-agent registration that leaves it unwired"
+description: "The selection-scoped Figma MCP server: seven tools that take no parameters at all — and why four passes chasing a per-agent registration missed the real mechanism, a loopback port scoped to whatever machine runs Figma's desktop app, which is never the tower this estate runs on"
 status: draft
 serves: [UX Designer, Design Engineer]
 generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
@@ -114,8 +114,63 @@ thing blocking a clean date more than any missing measurement.
 
 **The 28-day remote re-audit (`figma-mcp-remote.md`) found no zero-parameter, desktop-shaped tool in
 this session's connector list at all.** Read together with this page's own three prior passes, that is
-not a new finding — it is the same one a fourth time: **this route has never been reachable from
-Claude Code**, because Figma registers the desktop server per agent, and only Claude Desktop has ever
-been the target the setup dialog names. Nothing here moved. `Audited` stays 2026-07-04, and the
-freshness check stays correctly red until whoever holds Claude Desktop clicks the one button the
-2026-08-25 pass identified.
+not a new finding — it is the same one a fourth time: this route has never been reachable from Claude
+Code. **What this pass got wrong about *why*, corrected within the hour by the Composer's own
+screenshot: it is not about which agent Figma's dialog names.**
+
+## Fifth pass — 2026-09-22, the actual mechanism, verified rather than inferred
+
+**The Composer's screenshot of Figma's own "Set up third-party agents for Figma MCP" dialog showed
+`Claude Code CLI` already toggled on** — the same session this page. That directly falsified this
+page's four prior passes' shared assumption, which was *"only Claude Desktop has ever been the
+target."* Wrong: Claude Code CLI was a target, and was already enabled, and the tools still were not
+there. **The real mechanism, found by asking where this session actually runs rather than what Figma's
+dialog says:**
+
+```text
+hostname                                          kornobis-srv   (the tower — SSH, not the Composer's machine)
+curl http://127.0.0.1:3845/mcp   (the desktop server's documented local port)
+                                                   unreachable — nothing listens on this host
+```
+
+**The desktop MCP server is loopback-scoped to whatever machine runs the Figma desktop app —
+`127.0.0.1:3845`, sourced from Figma's own local-server-installation docs.** Figma's desktop app runs
+on the Composer's own machine. **This session runs on the tower, reached over SSH.** `127.0.0.1` on
+the tower is the tower, not the Composer's laptop — so no toggle, no per-agent registration, and no
+`claude mcp add` command run *here* can ever reach it. The mechanism is structural, not a missing
+click, and every prior pass on this page diagnosed the wrong layer: registration was checked, the
+account was checked, the per-agent dialog was checked — the one thing never checked was **which
+machine is asking.**
+
+**What would actually unblock it, named without doing any of them unprompted:** an SSH tunnel forwarding
+a tower-side port to `127.0.0.1:3845` on the Composer's machine (`ssh -R` from his side, or `-L` from a
+session already positioned there), or running a Claude Code session locally on the same machine as the
+Figma desktop app instead of on the tower. **Both are the Composer's call** — one is a standing tunnel
+on infrastructure he does not fully control from here, the other changes where a session runs.
+
+### The Audited date still does not move, and now for the right reason
+
+**Still 2026-07-04.** Not because a button is unclicked — four passes believed that and were
+increasingly precise about the wrong thing — but because **no session running on this host can ever
+audit this route live**, by construction. A live re-audit needs either the tunnel or a locally-run
+session; until one exists, `check_tool_audit_freshness.mjs`'s red is the only honest reading, and it
+will stay red past any cadence, correctly, for a structural reason rather than a procedural one.
+
+## Closed — the remote route already covers it, 2026-09-22
+
+**The Composer's own read, immediately after the mechanism above: this GE runs on the tower, the
+remote connector is already the one doing the work, and there is no reason to chase a loopback route
+this host structurally cannot reach.** `claude mcp list` on this host shows exactly one Figma entry —
+`https://mcp.figma.com/mcp`, connected — and Figma's own documentation (fetched during the 2026-09-22
+remote re-audit) states the remote server *"supports the broadest feature set, including
+write-to-canvas"*, with the desktop route positioned for *"specific organizational and enterprise use
+cases."* **Nothing this estate does from the tower needs the desktop route**, and the Figma desktop
+app itself remains the Composer's own client, for his own eyes and hands, independent of what any GE
+instance connects to.
+
+**This page's status changes from *blocked, needs a fix* to *out of scope by design.*** Not
+re-attempted going forward unless the Composer starts a Claude Code session locally on the same
+machine as Figma's desktop app — the one condition, named above, under which this route would ever be
+reachable. The four-pass diagnostic history stays, because it is what taught the actual mechanism; the
+open questions about Config 2026 capabilities specific to the desktop route (code layers, local Motion
+authoring) stay unanswered by design rather than by gap.

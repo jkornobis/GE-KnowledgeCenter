@@ -33,7 +33,7 @@ not partial.
 |---|---|---|
 | mutating, inspecting, or building on the Figma canvas via the Plugin API | [`figma-method.md`](figma-method.md) | live-verified, claim by claim |
 | calling the **remote** MCP server — `fileKey` + `nodeId` | [`figma-mcp-remote.md`](figma-mcp-remote.md) | **working**, re-audited 2026-09-22 — 37 tools, Generative Plugins now a full family |
-| calling the **desktop** MCP server — selection-scoped, no parameters | [`figma-mcp-desktop.md`](figma-mcp-desktop.md) | **unwired**, audit blocked |
+| calling the **desktop** MCP server — selection-scoped, no parameters | [`figma-mcp-desktop.md`](figma-mcp-desktop.md) | **out of scope by design** — loopback-scoped to the machine running Figma's desktop app; this estate runs on the tower, the remote server already covers it |
 | the product surface — Skills UI, plugins, connectors, driven by eyes and hands | the product-surface audit — **deliberately unpublished** | audited 2026-08-03, **and it stays home**: `index.md` rules it *"cannot be published because it names an employer's systems"* |
 | reviewing a multi-screen design system, or judging when it's too early to | [`../method/design-review.md`](../method/design-review.md) | recorded from a source document, screened, **not independently verified** |
 | a surface where an assistant proposes actions between a person and a process | [`../method/ai-assistant-patterns.md`](../method/ai-assistant-patterns.md) | recorded, the Composer's own rulings on one product — **not tested on a second** |

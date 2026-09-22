@@ -259,6 +259,8 @@ a full MCP surface; another gained write; one previously-verified tool could not
 
 **7 · The two/three-connector story from the 2026-08-25 pass does not reproduce here, and that is marked open rather than resolved.** That pass described *"two MCP routes to Figma, not one"*; `tools/figma.md`'s router still lists a desktop server (7 tools, no parameters, `mcp__Figma__*`) as a separate connection, audit-blocked. **This session's tool list carries exactly one Figma connector — 37 tools, all under one namespace, none of them zero-parameter except `whoami`.** No desktop-shaped server was observed. **Not concluded to be gone** — this audit did not run from a surface that would necessarily see it (the 2026-08-25 finding of the second route came from switching Figma's own desktop-app Preference and restarting the client, which no instrument here can do from inside this session). `figma-mcp-desktop.md` keeps its own **unverified-this-session** state rather than being rewritten from an absence.
 
+**Resolved the same day, and it is not what this point guessed.** `claude mcp list` on this host shows exactly one Figma entry — this remote connector — and `curl 127.0.0.1:3845` (the desktop server's documented local port) is unreachable from here because this session runs on the tower (`hostname` → `kornobis-srv`), not on the machine running Figma's desktop app. **Not an audit-blocked registration gap — a loopback port that was never going to be reachable from this host.** Full account in `figma-mcp-desktop.md`'s fifth pass, closed there as out of scope: this connector already covers what the estate needs.
+
 ### Verified live, 2026-09-22
 
 | Claim | Result |
