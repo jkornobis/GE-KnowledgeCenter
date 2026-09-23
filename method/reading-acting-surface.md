@@ -106,3 +106,5 @@ closed** — this page identifies that GE lacks a fleet-overview surface; it doe
 Sibling to `tools/figma-method.md` (Showing vs Reading Surface, reached from canvas work) and
 `method/ai-assistant-patterns.md` (state-driven surfacing, reached from one product's design session).
 **Same shape, three unrelated doors** — a stronger form of corroboration than any one of the three alone.
+**`method/agent-surface-invariants.md`** reduces this page and `method/agent-kanban-git-board.md` to four
+axes; read that one for what these findings add up to.

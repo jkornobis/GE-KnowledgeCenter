@@ -142,3 +142,5 @@ discipline has actually broken down in practice.
 Extends `method/reading-acting-surface.md`'s gap 3 (fleet overview) from the chat-session side to the
 board side, and is a third independent corroboration — after Figma canvas work and the four-product
 agent-UX research — of the same claim this skill already holds as invariant 2.
+**`method/agent-surface-invariants.md`** reduces this page and `method/reading-acting-surface.md` to four
+axes; read that one for what these findings add up to.
