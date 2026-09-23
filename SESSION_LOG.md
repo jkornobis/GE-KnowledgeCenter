@@ -1921,3 +1921,62 @@ pages have drifted — structure rather than bytes, both trees being on this mac
 reader was offered and declined**: one page carries a stamp, fourteen do not, so a reader written
 now passes on all fourteen, which is `#126`'s defect rebuilt with better manners. Method and the
 closing conditions are on `#126` rather than restated here.
+
+## Session 2026-09-23 — End Day: an Auditorium, a room that argued well, and the gate that caught my own issue
+
+*Appended 20:46 CEST. This is the first entry since 2026-09-16. The fourteen commits between them
+(09-19 → 09-23: the Figma re-audit, figma-motion, figma-team-map, and the six agent-surface method
+pages) were made by sessions that left no entry here. **That gap is recorded, not reconstructed.**
+Their commits and PRs #129–#144 are the record.*
+
+### The Auditorium, and what the room did to it
+
+The Composer asked for an Auditorium on extending the library, to be discussed with GE-Workshop and
+GE-Watcher in Extend KC. Twelve ideas, every figure measured that morning: 8 tool pages past their
+re-audit date, 5 with no date at all, 362 external addresses that no gate reads, and 20 rows in the
+index's Observed register with no decider.
+
+**The two replies were worth more than the list.** GE-Watcher showed that item 3's checker already
+exists at the Workshop and reads the wrong copy, and that for 11 tool pages a release is a better
+clock than the calendar. GE-Workshop turned item 1 from a generator into a gate, and raised the
+point that mattered most: **14 tool pages exist twice, hand-copied between the two repositories,
+and the copies had started to drift apart.** Both checked independently: `figma-mcp-remote.md` says
+`Audited 2026-09-22` here and `2026-08-25` there.
+
+**Ruled by the Composer, `[standing]`: this library authors tool pages.** The thread left the room
+as `#145`.
+
+### What was built
+
+`#146`, merged at `a3497b8`. `check_okf.mjs` now fails on two coverage gaps: the index against the
+disk in both directions, and new rows against the routing card. Ten rows failed on the first run,
+and each got a decision: two new card rows, four routed through `tools/figma.md`, and four marked
+`card: none`. Both sub-decisions were levelled `[standing]` by the Composer.
+
+⚠️ **The correction worth keeping is against my own issue.** `#145` said *a file with no row
+fails*. That would have broken the 2026-09-01 retirement rule, under which removing a row retires a
+page and the file stays. I caught it by reading `tools/git.md` before writing the check, not after.
+**A retired page now says so itself (`status: deprecated`)**, and the 2026-09-02 storybook
+simulation that stayed green then now fails.
+
+### Found in passing
+
+- GE-Workshop's `check_dead_references.mjs` matches lowercase paths only, which produced a false red
+  on `tools/README.md` (the index lists it at line 180). Told in the room, and listed on `#145` as
+  their half.
+- **This library's own `check_links.mjs` has the same blind spot**, and the tutorial depends on it.
+  Filed as `#147`, not fixed.
+- Reaching another session on this machine: `SendMessage` needs the name **with its emoji**
+  (`🛠️ Workshop`). The bare name and `name [ref]` both failed.
+
+### What is open
+
+```text
+#145   tool-page authorship: items 1-2 merged; 3-6 wait on the Workshop half; 7-9 are mine, free
+#147   check_links.mjs is case-blind; five references need a ruling first
+#148   six Auditorium ideas with no other home, postponed not dropped (5 and 12 are the Composer's)
+#49    unchanged
+```
+
+Board and tracker agree: 4 open, 4 carded in Ready, and 4 stale cards moved to Done (their issues
+closed on 09-21).
