@@ -75,6 +75,7 @@ result is judged.
 | putting an agent on a kanban or git-hosted board, or trusting a card's status | `method/agent-kanban-git-board.md` |
 | designing a new agent-progress surface from scratch — what has to be true regardless of tool | `method/agent-surface-invariants.md` |
 | deciding whether a stuck task or a silent Named GE session needs surfacing | `method/agent-surface-time-axis.md` |
+| checking whether a chair's job already exists as a dedicated, named agent in the industry | `method/agent-chair-industry-map.md` |
 | a trigger phrase you have been given and do not recognise | `protocols/triggers.md` |
 | opening a tracker, or ranking from one | `method/reading-a-tracker.md` |
 | looking for a page and not finding it | `method/finding-a-page.md` |
