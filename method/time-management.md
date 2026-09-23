@@ -41,3 +41,10 @@ Exactly **one** permanent method is active; default **None**. Each is its own tr
 ## Guardrails
 - **None is the default.** Never impose or silently assume a method; the Composer opts in.
 - **No method becomes a rest nudge.** Time awareness is factual and structural, not "you should rest."
+
+## Scope, stated once it could be named (2026-09-23)
+
+**Everything above watches the Composer** — his clock, his attention, his declared focus window. That is
+not a gap; it is what this page was ever for. A second, distinct application of time as an axis —
+watching a *task's* staleness rather than a person's — is `method/agent-surface-time-axis.md`, reachable
+only once this estate had a board for a task-facing clock to watch.
