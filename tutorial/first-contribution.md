@@ -64,6 +64,7 @@ description: "A page whose only purpose is to be added, checked, merged and remo
 status: draft
 serves_all: true
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-09T00:00:00+02:00 }
+card: none
 ---
 
 # Scratch
@@ -76,20 +77,26 @@ was not finished.
 rest are strongly recommended and the gate will tell you so by name. **Set `generated.at` to a real
 timestamp with an offset** — `2026-09-09T12:46:00+02:00` — because a gate checks the shape.
 
+**`card: none` says this page gets no row on the routing card in `start.md`**, the first route into
+this library, so a reader reaches it through the index. A page listed since 2026-09-10 has to make
+that decision one way or the other: either a card row keyed by the moment it is needed, or this line.
+
 **Check the runtime read it:**
 
 ```
 node check_okf.mjs
 ```
 
-You should see the document count rise by one and `✓ conformant`. **If it does not, read the failure
-line: it names the file and the missing field, and it is never mysterious.**
+You should see the document count rise by one — **and one failure, which is the point of this step:**
+`method/scratch-YOURS.md: on disk with no index row`. Nothing else should fail. **If something else
+does, read that line: it names the file and the missing field, and it is never mysterious.**
 
 ---
 
 ## 3 · Add the index row — in the same commit
 
-⚠️ **This is the rule most likely to catch you, and it is not enforced by any gate.**
+⚠️ **This is the rule most likely to catch you.** It went unenforced until 2026-09-23. Now
+`check_okf.mjs` fails on it, as you just saw.
 
 `index.md` states that it is the only route into this library. **A page that is not listed there is
 not in the library**, whatever else is true of it. Add a row under `## Method — craft that outlives
@@ -179,15 +186,15 @@ git rm method/scratch-YOURS.md
 Remove the index row, commit both, run both gates, open a pull request, merge.
 
 **You have now done the whole loop twice**, and the second time is the one that proves you can: a
-removal breaks the index rule exactly as easily as an addition, and the gate that catches a dangling
-path is `check_links.mjs`.
+removal breaks the index rule exactly as easily as an addition. `check_okf.mjs` catches both halves:
+a row left with no file, and a file left with no row that is not marked retired.
 
 ---
 
 ## What you learned, in the order it will matter
 
 ```text
-1  the index row is the library — no gate enforces it, and an unlisted page is not here
+1  the index row is the library — check_okf.mjs enforces it, and an unlisted page is not here
 2  both gates, run and quoted, never assumed — there is no CI to do it for you
 3  a quoted heredoc for any text bound for a forge, a page or a commit
 ```

@@ -8,6 +8,7 @@ generated: { by: agent:ge-knowledgecenter, at: 2026-09-15T11:23:00+02:00 }
 sources:
   - resource: https://en.wikipedia.org/wiki/Conway%27s_law
     title: "Conway's law"
+card: none
 ---
 
 # Conway's Law on a corpus

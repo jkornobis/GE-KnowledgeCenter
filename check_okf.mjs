@@ -14,6 +14,12 @@
  *
  * Reserved files were skipped until 2026-08-28, so `conformant` meant the concept
  * documents only — silent about the one file every consumer reads first.
+ *
+ * COVERAGE, beyond OKF (2026-09-23, GE-KnowledgeCenter#145). Two library rules no spec
+ * states, checked here because this is the gate that already reads the index:
+ *   · the index and the disk agree — every row names a file, and every page on disk is
+ *     either listed or RETIRED (`status: deprecated`), never merely forgotten
+ *   · a row added since the routing card existed has a card row, or says why it has none
  */
 import { readdirSync, readFileSync, statSync, lstatSync, existsSync } from "node:fs";
 import { join, relative, dirname } from "node:path";
@@ -122,7 +128,8 @@ const checkLog = (rel, src) => {
   }
 };
 
-for (const abs of walk(ROOT)) {
+const pages = walk(ROOT);
+for (const abs of pages) {
   const rel = relative(ROOT, abs).split("\\").join("/");
   const base = rel.split("/").pop();
   const src = read(abs);
@@ -170,8 +177,71 @@ for (const abs of walk(ROOT)) {
     fails.push(`${rel}: generated.by '${by[1]}' is not human:<id> | agent:ge-<role> | process:<name> (actor vocabulary, ruled 2026-09-06)`);
 }
 
+// ── Coverage: the index against the disk ────────────────────────────────────────────
+//
+// ⚠️ A page on disk with no row is NOT always a defect. `protocols/library-conventions.md`
+// ruled 2026-09-01 that removing a row RETIRES a page while the file and its history stay.
+// What this check refuses is the case nothing can tell apart from it: a row deleted by
+// accident. Measured 2026-09-02 — `tools/storybook.md` de-listed, the file kept, and both
+// gates stayed green. So a retirement is now declared where OKF already has the word for
+// it, `status: deprecated` (§5.4), and the reason travels in the commit that de-lists it.
+const UNLISTED = new Map([
+  ["index.md", "the index itself"],
+  ["CLAUDE.md", "the leading instance's floor, loaded and never fetched; index.md says why it is not listed"],
+  ["README.md", "the forge's landing page for a visitor; the index quotes it and does not route to it"],
+]);
+const fmOf = (rel) => frontmatter(read(join(ROOT, rel))) ?? "";
+const field = (fm, k) => (fm.match(new RegExp(`^${k}:\\s*(.+?)\\s*$`, "m")) || [])[1] ?? null;
+
+const indexSrc = existsSync(join(ROOT, "index.md")) ? read(join(ROOT, "index.md")) : "";
+const rows = new Map();                                   // path -> Published date, or null
+for (const m of indexSrc.matchAll(/^\|\s*`([^`]+)`\s*\|(.*)\|\s*$/gm)) {
+  const last = m[2].split("|").pop().trim();
+  rows.set(m[1], DATE.test(last) ? last : null);
+}
+for (const t of rows.keys())
+  if (!existsSync(join(ROOT, t))) fails.push(`index.md: row '${t}' names no file on disk`);
+
+for (const abs of pages) {
+  const rel = relative(ROOT, abs).split("\\").join("/");
+  if (UNLISTED.has(rel) || RESERVED.has(rel.split("/").pop())) continue;
+  const retired = field(fmOf(rel), "status") === "deprecated";
+  if (!rows.has(rel) && !retired)
+    fails.push(`${rel}: on disk with no index row — list it, or retire it with 'status: deprecated' (library-conventions: removing a row retires a page)`);
+  if (rows.has(rel) && retired)
+    fails.push(`${rel}: 'status: deprecated' says retired, and index.md still lists it`);
+}
+
+// ── Coverage: the routing card against new rows ─────────────────────────────────────
+//
+// `start.md` §2 carries the routing card, the FIRST route in since 2026-09-10 (8e8d9d3).
+// It is keyed by the moment a page is needed, which is judgement, so it stays authored —
+// generating it from frontmatter was proposed and refused on #145. What drifted was never
+// a wrong row; it was a new page with NO row and nobody deciding that: measured, ten rows
+// dated on or after that day with neither. So a row dated since then must have a card row,
+// or its page must say `card: none` (the index is its route) or `card: <path>` (a card row
+// routes to it — the Figma router, say). Rows dated before are the card's own starting set.
+const CARD_SINCE = "2026-09-10";
+const startSrc = existsSync(join(ROOT, "start.md")) ? read(join(ROOT, "start.md")) : "";
+const cardTable = startSrc.split(/^### The routing card/m)[1]?.split(/^## /m)[0] ?? "";
+const card = new Set([...cardTable.matchAll(/^\|[^|\n]+\|\s*`([^`]+\.md)`/gm)].map((m) => m[1]));
+if (!card.size) fails.push("start.md: no routing card found under '### The routing card'");
+
+for (const [t, date] of rows) {
+  if (!t.endsWith(".md") || card.has(t) || !existsSync(join(ROOT, t))) continue;
+  const decl = field(fmOf(t), "card");
+  if (decl === "none") continue;
+  if (decl !== null) {
+    if (!card.has(decl)) fails.push(`${t}: 'card: ${decl}' names a page with no routing-card row`);
+    continue;
+  }
+  if (date === null || date >= CARD_SINCE)
+    fails.push(`${t}: listed ${date ?? "undated"} with no routing-card row and no 'card:' declaration — add a row to start.md keyed by the moment it is needed, or declare 'card: none' / 'card: <page whose row routes to it>'`);
+}
+
 const line = (a) => a.forEach((s) => console.log("  " + s));
-console.log(`OKF v0.2 — ${concepts} concept documents, ${reserved} reserved\n`);
+console.log(`OKF v0.2 — ${concepts} concept documents, ${reserved} reserved`);
+console.log(`coverage — ${rows.size} index rows, ${card.size} routing-card rows\n`);
 if (fails.length) { console.log(`✗ ${fails.length} conformance failure(s):`); line(fails); }
 else console.log("✓ conformant");
 if (warns.length) { console.log(`\n≠ ${warns.length} recommendation(s) unmet:`); line(warns); }

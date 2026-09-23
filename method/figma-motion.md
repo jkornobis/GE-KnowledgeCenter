@@ -12,6 +12,7 @@ sources:
     title: "CSS animation (MDN) — transferable principles"
   - resource: https://atomicdesign.bradfrost.com/table-of-contents/
     title: "Atomic Design — cited for the same reason tools/figma-method.md cites it"
+card: tools/figma.md
 ---
 
 # Figma Motion — timeline animation fundamentals, recorded not verified

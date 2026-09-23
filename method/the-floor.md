@@ -8,6 +8,7 @@ generated: { by: agent:ge-knowledgecenter, at: 2026-09-10T21:22:00+02:00 }
 sources:
   - resource: https://raw.githubusercontent.com/jkornobis/GE-KnowledgeCenter/main/method/capacity.md
     title: "Capacity — how a session reports its own usage"
+card: none
 ---
 
 # The floor and the arrival
