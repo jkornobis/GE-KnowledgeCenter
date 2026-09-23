@@ -72,6 +72,7 @@ result is judged.
 | touching a Figma canvas, calling a Figma MCP tool, or asked anything about the Figma surface | `tools/figma.md` — the router; it names every Figma page this library holds |
 | building a surface where an assistant sits between a person and a process | `method/ai-assistant-patterns.md` |
 | designing how an agent shows its own progress, or how a person corrects it mid-task | `method/reading-acting-surface.md` |
+| putting an agent on a kanban or git-hosted board, or trusting a card's status | `method/agent-kanban-git-board.md` |
 | a trigger phrase you have been given and do not recognise | `protocols/triggers.md` |
 | opening a tracker, or ranking from one | `method/reading-a-tracker.md` |
 | looking for a page and not finding it | `method/finding-a-page.md` |
