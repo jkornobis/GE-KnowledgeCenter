@@ -1,7 +1,7 @@
 ---
 type: Method
 title: "Agents on a kanban or git board — what the ecosystem already builds, and what it says about this one"
-description: "Three findings from a live corner of the ecosystem (GitHub's own Issues/Projects agent integration, Hermes Kanban's multi-agent dispatcher, and Shipward's fix for the self-report problem): a third independent corroboration of this skill's oracle rule, and four concrete mechanisms this estate's Wekan+Forgejo setup does not have"
+description: "Four findings from a live corner of the ecosystem (GitHub's own Issues/Projects agent integration, Hermes Kanban's multi-agent dispatcher, Shipward's fix for the self-report problem, and the dedicated Scrum Master agent persona now packaged as its own Claude Code Skill): a third corroboration of this skill's oracle rule, four mechanisms this estate's Wekan+Forgejo setup does not have, and independent validation that the Agile Facilitator's separation from the working chairs is a real, converged-on pattern"
 status: draft
 serves: [Product Owner, Software Architect, Agile Auditor, the whole room]
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-23T00:00:00+02:00 }
@@ -14,6 +14,10 @@ sources:
     title: "Hermes Agent — Kanban (Multi-Agent Board)"
   - resource: https://amux.io/guides/kanban-board-for-agents/
     title: "amux — Kanban board for AI agents"
+  - resource: https://mcpmarket.com/tools/skills/scrum-master-agent
+    title: "Scrum Master Agent — Claude Code Skill"
+  - resource: https://dev.to/dpelleri/orchestro-trello-for-claude-code-with-a-built-in-scrum-master-1e3e
+    title: "Orchestro — Trello for Claude Code with a built-in Scrum Master"
 ---
 
 # Agents on a kanban or git board — what the ecosystem already builds, and what it says about this one
@@ -99,6 +103,31 @@ setup running several Named instances against one board:
   gets surfaced rather than silently aging. (Column semantics for any specific board are a Composer's
   own occupancy record, not this library's subject — `tools/README.md`'s shared/personal split — so this
   point is stated as a pattern absent from the *method*, not as a finding about any one board.)
+
+## 4 — Yes, a dedicated Scrum Master agent is a real, established pattern
+
+**Not a niche experiment — a distinct, named persona category, kept separate from the coding agent on
+purpose.** A packaged Claude Code Skill ("Scrum Master Agent," mcpmarket.com) describes itself as a
+"certified Scrum Master with expertise in facilitating agile teams," activating specifically for
+scrum-master-shaped work — impediment tracking (target: resolved within 48 hours), sprint velocity and
+burndown analytics, ceremony facilitation (planning, standups, retros), team-dynamics coaching. **It is
+explicitly not a generic utility toolkit** — the skill's own framing is persona-first: a role that reads
+the board and the team, distinct from an agent that writes code.
+
+**Orchestro** (a Trello-like board for Claude Code) ships a built-in Scrum Master with a narrower,
+mechanical job: decompose stories into tasks, set dependencies, and — its own words — **"keep the board
+honest."** Public detail on the exact enforcement mechanism is thin (marketing language over
+implementation), but the shape is clear: **a governance layer distinct from the agents doing the work**,
+not one more worker with board-write access.
+
+**This is the strongest single validation this research found for this skill's own architecture.** The
+Agile Facilitator chair — routes, does not decide, holds no domain authority of its own, and is
+explicitly *"an agent, never the Composer"* — is the same separation these products independently
+converged on: **a coordinating role kept apart from the roles that do domain work, so the two kinds of
+authority (what to build vs. whether the board's claims are true) don't collapse into one voice grading
+its own homework.** Three unrelated products (Orchestro, the packaged Skill, and this skill's own
+twelve-chair design) landing on "keep the coordinator separate from the workers" is closer to convergent
+validation than to coincidence.
 
 ## What this page does not do
 
