@@ -12,6 +12,7 @@ sources:
     title: "Figma REST API — Projects endpoints (v1, deprecated)"
   - resource: https://developers.figma.com/docs/rest-api/personal-access-tokens/
     title: "Figma REST API — personal access tokens"
+card: tools/figma.md
 ---
 
 # Mapping a Figma team's folders and files — the procedure, and why it stopped working

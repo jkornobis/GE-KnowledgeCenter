@@ -6,6 +6,7 @@ status: draft
 record: 2026-09-04
 serves_all: true
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-10T22:05:00+02:00 }
+card: none
 ---
 
 # Register sweeps

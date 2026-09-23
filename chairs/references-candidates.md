@@ -38,6 +38,7 @@ sources:
     title: "Figma Code Connect"
   - resource: https://tokens.studio/
     title: "Tokens Studio"
+card: none
 ---
 
 # Reference candidates for the two chairs that have none

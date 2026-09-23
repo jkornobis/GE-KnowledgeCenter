@@ -5,6 +5,7 @@ description: "The selection-scoped Figma MCP server: seven tools that take no pa
 status: draft
 serves: [UX Designer, Design Engineer]
 generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
+card: tools/figma.md
 ---
 
 # Tool: Figma MCP — the desktop server

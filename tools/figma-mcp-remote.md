@@ -18,6 +18,7 @@ sources:
     title: "Guide to the Figma MCP server (re-read 2026-09-22)"
   - resource: https://www.figma.com/blog/how-we-built-generative-plugins-and-shaders/
     title: "Behind the Build: Generative Plugins and Shaders at Figma"
+card: tools/figma.md
 ---
 
 # Tool: Figma MCP — the remote servers

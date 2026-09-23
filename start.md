@@ -64,6 +64,8 @@ result is judged.
 | building something a later session has to be able to use | `method/the-lodge.md` |
 | the word *verified*, about to be used | `method/evidence.md` |
 | a number about to be written into a page | `method/sources-and-rederivation.md` |
+| about to act on a head, a tail, a count or a status code instead of the whole thing | `method/reading-the-whole.md` |
+| building a check or a classifier that can fail to look | `method/the-fourth-verdict.md` |
 | adding a tool, or auditing one already in use | `protocols/tool-audit.md` |
 | weighing a tool against another, or filling a lever entry | `method/judging-a-tool.md` |
 | a search that found nothing, on a word that should exist | `method/chair-vocabulary.md` |
@@ -93,6 +95,11 @@ forty-eight hours after it was made had no row until 2026-09-10, and one row was
 hand-kept index of a moving library goes stale at the speed the library moves.** It is not the index — `index.md` remains the only
 complete route in, and a row here is a shortcut, never an authority. When the card and the index
 disagree, the index wins.
+
+**Since 2026-09-23 the drift is loud rather than silent** (`#145`). `check_okf.mjs` fails on any
+index row dated from 2026-09-10 on that has no row here **and** whose page does not declare
+`card: none` or `card: <the page whose row routes to it>`. It checks that a decision was made, never
+that it was a good one: a row's wording is judgement, and it stays written by hand.
 
 ## 3 — Named or not, and what it changes
 
