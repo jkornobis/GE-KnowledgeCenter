@@ -97,8 +97,9 @@ deliberately not here.
   **A retired page says so itself**, with `status: deprecated` in its frontmatter (the word OKF §5.4
   already has), and the commit that removes its row carries the why. `check_okf.mjs` fails a page
   on disk that has no row and does not say so, because until 2026-09-23 every check saw an
-  accidental de-listing and a retirement as the same event (measured 2026-09-02). *This is a
-  sub-decision inside this ruling, taken on `#145`.*
+  accidental de-listing and a retirement as the same event (measured 2026-09-02). *A
+  sub-decision inside this ruling, taken on `#145` and levelled `[standing]` by the Composer
+  2026-09-23.*
 
 ## A page declares what its rule leans on, and that is what this library owes the corpus (ruled 2026-09-10)
 

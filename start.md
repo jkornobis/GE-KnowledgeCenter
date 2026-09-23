@@ -96,7 +96,8 @@ hand-kept index of a moving library goes stale at the speed the library moves.**
 complete route in, and a row here is a shortcut, never an authority. When the card and the index
 disagree, the index wins.
 
-**Since 2026-09-23 the drift is loud rather than silent** (`#145`). `check_okf.mjs` fails on any
+**Since 2026-09-23 the drift is loud rather than silent** (`#145`, `[standing]`, levelled by the
+Composer the same day). `check_okf.mjs` fails on any
 index row dated from 2026-09-10 on that has no row here **and** whose page does not declare
 `card: none` or `card: <the page whose row routes to it>`. It checks that a decision was made, never
 that it was a good one: a row's wording is judgement, and it stays written by hand.
