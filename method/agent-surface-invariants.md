@@ -61,7 +61,10 @@ getting it for free.
 **D — absent.** No heartbeat, no stale-claim reclaim, no escalation threshold for a stuck block. A Named
 GE session that ends mid-task leaves whatever state it left, until a person or another instance happens
 to look. This is the axis with the least coverage of the four, and the one this research keeps landing on
-as a real gap rather than a restated strength.
+as a real gap rather than a restated strength. **`method/agent-surface-time-axis.md` goes deep on this one
+axis** — including why this estate's earlier Ambient/Metronome attempt (`method/time-management.md`,
+2026-08-28) was aimed at a human's attention rather than a task's, and was not wrong so much as early: the
+board this axis needs to watch did not exist yet.
 
 ## What this page does not do
 
