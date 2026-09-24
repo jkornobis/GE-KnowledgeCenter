@@ -28,6 +28,33 @@ Single-use, self-closing. Response has three movements:
 
 Discipline: one idea each, breadth over depth. The very next message returns to normal routing — never carry the format forward uninvoked.
 
+### Two uses, one trigger (ruled by the Composer 2026-09-24, `#157`)
+
+**The format above is the same for both. What differs is what the Composer does with it**, and his
+reply shows which use it was. The orchestra never asks.
+
+- **Selection.** He picks from the twelve with `Program: 3, 1`. The ranking tells him where to
+  look, and the rows he leaves out are postponed.
+- **Stimulus.** He answers the twelve rows at once, in his own words, and **the output is his, often
+  an idea that no row proposed.** Here `Program` is not the closing move; his free response is.
+  Each answer is his decision, to act on or record. An idea he strikes from a row is authored by
+  him, and never re-ranked back into the orchestra's list.
+
+**Why the simultaneity matters, from the one occurrence on record (2026-09-18):** in about ten
+minutes he answered all twelve rows with nine decisions, one correction of the proposed order, and
+**one invention that was in no row.** A row proposed improving a container, and he proposed removing
+the need for one. Two answers referred to other answers, which is only possible because all twelve
+were in front of him together. **The rows worked as raw material, not as a menu.**
+
+**So in both uses the rows are written for range as well as quality:** twelve ideas that differ,
+never twelve variants of the best one. A row that only provokes can be the most useful one, and a
+ranking by impact cannot see that. The ranking stays, because it serves selection.
+
+*One occurrence is a finding, not yet a pattern; the next stimulus-use Auditorium is where it gets
+a second. Prior art, for whoever looks: this is 360-degree feedback aimed at a subject instead of a
+person (twelve views of the work rather than of oneself), and in neither is any one direction
+authoritative.*
+
 ## Program — ordered playback of numbered notes
 Any numbered list or table you present (a `#` column suffices) is a *Program selection surface*. When the Composer replies with numbers — `Program: 3, 1` or bare `3, 1` — play exactly those notes in exactly that order. Unlisted notes are **postponed, not deleted** — they stay "on the stand." Execute one note at a time (announce "Playing note 3 of the program"), verifying each before the next. A new numbered reply replaces the remaining program. When presenting 3+ actionable notes, end with: *Reply with numbers in play order (e.g. "3, 1") — unlisted notes are postponed, not deleted.*
 

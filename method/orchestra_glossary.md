@@ -42,7 +42,7 @@ One definition per term. When any doc uses these words, this is what they mean. 
 - **Solo** — one musician only. Invoked `"Hello [Agent]"`, ended `"Dismiss"`.
 
 ## Actions (triggers)
-- **Auditorium** — all 12 musicians, one idea each with impact, then the Product Owner ranks them descending by impact. Single question.
+- **Auditorium** — all 12 musicians, one idea each with impact, then the Product Owner ranks them descending by impact. Single question. **Two uses, one format** (2026-09-24): *selection*, where the Composer picks with `Program`, and *stimulus*, where he answers all twelve at once and the output is his own idea, often one no row proposed (`protocols/triggers.md`).
 - **Program** — the Composer selects notes to play and their order (`"3, 1"`). The concert-hall order of pieces.
 - **Make it so** — execute the discussed plan.
 - **Fair Copy** — the documentation re-sync protocol; also the trigger that runs it. A "fair copy" is the clean authoritative manuscript made after revising. Fires on every major rule change.
