@@ -85,6 +85,7 @@ result is judged.
 | looking for a page and not finding it | `method/finding-a-page.md` |
 | about to write a rule down somewhere durable | `method/recording-a-rule.md` |
 | your first contribution to this library | `tutorial/first-contribution.md` |
+| about to file a finding here for the library to write a page from | `protocols/filing-evidence.md` |
 | about to sign, publish, or write a claim onto a page | `protocols/library-conventions.md` |
 
 **Every row names the moment, not the subject.** A card keyed by subject is an index in miniature and

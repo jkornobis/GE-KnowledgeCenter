@@ -242,6 +242,7 @@ written before its musician has handled the instrument is plausible documentatio
 | `protocols/onboarding.md` | One move before anything else — ask the Composer to call their Key, because the orchestra can detect one and never open it — then, only if none is in play, two questions and no more | jkornobis | 2026-08-28 |
 | `protocols/triggers.md` | Full semantics and response formats for every typed trigger, the rule that a mode persists only by being echoed, and why breadth is a single-shot Auditorium rather than a sustained mode | jkornobis | 2026-08-28 |
 | `protocols/persona-map.md` | The one table every attribution line reads: each musician's emoji, Material icon, dark and light dot colours, family and subtitle, plus the family and tier colours, split out of the widget templates so attributing a voice costs one small fetch | the whole room | 2026-09-24 |
+| `protocols/filing-evidence.md` | How an instance that hit something files it here so the library can write the page: one author per page, a body to copy with the sections that made past filings usable, the screening that binds because the page will be public, and what happens to a claim the library cannot re-derive | the whole room | 2026-09-24 |
 | `protocols/widget-templates.md` | Four blocks of markup reproduced verbatim — Note Picker, Auditorium, stat tiles and the coverage matrix — so a widget is rebuilt rather than reinvented; the persona map they colour from is its own page since 2026-09-24 | jkornobis | 2026-09-24 |
 
 ## Tutorial — learning by doing, and there is one
