@@ -2048,3 +2048,13 @@ The Composer's Key line 84 now points to `protocols/persona-map.md`, changed on 
 ```
 
 Board and tracker agree: 2 open, #145 in "Blocked: another GE", #49 in Ready.
+
+### Correction to the checkpoint above, 13:55 CEST
+
+**#145 is not blocked on the Workshop, and it never was today.** The Workshop reported its half
+done in comment 3830 at 09:49, the same minute as my 3819, and I never re-read the thread after
+posting. `GE-Workshop#196` and `#197` were closed at 10:59 and 12:16, before I nudged. **I
+reported a state I had not re-read**, which is the thread rule (read the thread, not only the body)
+broken on my own issue. Items 3–6 of #145 are unblocked, and the card is back in Ready.
+**Also open: `#156`**, filed by the Workshop, which offers the retired glossary-gap checker for this
+library to adopt or decline.
