@@ -4,9 +4,14 @@ title: "Lineage index — each chair's tool, and the lag before it arrived"
 description: "Twelve chairs, each with the origin it started from, the leap that changed it, the current best-in-class, and the years between the two — the index a chair's tool pages hang from"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+card: none
 ---
 
 # Lineage index — each chair's tool, and the lag before it arrived
+
+Audited 2026-08-23 — the date its rows were last assembled; not re-verified since.
+
+Re-audit: not applicable — an index with no upstream release; it moves when a chair reaches a new instrument, and a tool page's own `Audited` line always outranks its fourth column.
 
 **A chair's tool lineage is an index in itself.** Every row below names where the seat started, the
 leap that changed what it could do, the instrument that currently carries that leap, and the

@@ -15,6 +15,10 @@ card: none
 the pass that produced it and is not a reading of the register today. **Do not edit it to agree with
 the present** — that rewrites the pass it exists to be.
 
+Audited 2026-09-04 by User Researcher — the date of the last pass this record holds.
+
+Re-audit: not applicable — a record, correct as of the passes it records and never edited to agree with the present.
+
 ## Sweep 1 — 2026-08-05
 
 First sweep. Four levers, sixteen candidates. Web sources fetched this session; the registry arm failed and is recorded below rather than worked around. This is a **first pass, not a complete map**: it covers the levers the estate's live work already touches, and says nothing about the levers it does not.
