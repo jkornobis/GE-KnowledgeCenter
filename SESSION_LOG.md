@@ -1590,7 +1590,7 @@ comment naming what settled each.
 **instances of the three universal ones**, not load-bearing shapes of their own — and GE-Workshop's
 ADR-level-coverage evidence (362 entries, 71 carrying a `Level:` line, none before ADR-290, the
 checker's own reason for never reading the log) folded into `method/recording-a-rule.md` —
-[PR #118](https://git.jkosvr.fr/jkornobis/GE-KnowledgeCenter/pulls/118), merged and **verified
+PR `#118`, merged and **verified
 against `main` directly** at `4fd889c` rather than trusted from the merge call's own response, the
 same discipline `#68` cost a reopening to learn.
 
