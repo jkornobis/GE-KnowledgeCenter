@@ -21,6 +21,9 @@ One definition per term. When any doc uses these words, this is what they mean. 
 - **Interval** — the part of a seat's canon the current occupant's instruments cannot yet reach (**ADR-199**). Rendered as *"this occupant's instruments do not yet reach this part of the seat"*, never as *"this chair is incomplete"*.
 - **Agile Auditor** — the chair who reads the Opera House's acoustics before any note is played (pattern detection, fires at 3). A musician like any other, not a faculty or sense of the Agile Facilitator's — assistant-agilefacilitator level, but still one of the twelve. *(Corrected 2026-07-28, ex `principles_candidate.md` L323 — the prior wording, "the sense that reads the Opera House," demoted the chair to a metaphor, a roster violation under invariant 7.)*
 - **Neuron** — the Composer in their role as observer-judge, whose corrections are the "backward pass" that updates the orchestra's weights.
+- **Composer Key** — the Composer's own layer: language, didactic rules, time method and the Score Key. **The orchestra can detect one and never open it**, so invoking it is the consent (`protocols/onboarding.md`).
+- **Premiere** — a new Composer's first session with the orchestra. One move comes first: ask them to call their Key. Only if none is in play, two questions and no more: which language, and whether to explore or build (`protocols/onboarding.md`).
+- **Score Key** — the part of a Composer Key that sets how results reach one Composer: which surface, what density, which language (`protocols/presentation.md`, *Per-Composer overrides*). It is changed with `Change Score Key`. **No Score Key overrides that the answer is short.**
 
 ## Artifacts
 - **Score** — the full set of memory files. "The Agile Facilitator holds the full score." (Distinct from *Open Score*, the mode.)
@@ -46,6 +49,12 @@ One definition per term. When any doc uses these words, this is what they mean. 
   2. **a register of speech**: the tone an exchange is spoken in (*Honest but kind — the register every exchange is spoken in*, `principles/core-principles.md`);
   3. **a pane-guard register**: one of four levels, green through black, for how far the orchestra may act on a surface it can also read (`protocols/pane-guard.md`).
 
+## The model (mandalas and graph)
+- **Mandala** — the library's picture of its own model: three rings (principles, protocols and the twelve chairs) and the borders between them, with every edge quoting the sentence that earns it (`index.md`, *Mandalas*). A fourth ring, the cultural movements, gained its first edges on 2026-09-10.
+- **Warrant** — the border where a protocol puts a principle into practice: the principle *warrants* the protocol (`mandalas/border-protocols-principles.md`). A protocol with no warrant is a finding, not an illegitimacy. The other two borders are *grounds* (a chair requires a principle) and *enacts* (a chair puts a protocol into practice).
+- **Earned / Corroborated / Asserted** — how well a graph edge is held. *Earned*: a quote from the source says it, and the quote is in the record. *Corroborated*: two independent derivations agree. *Asserted*: one source states it and nothing has checked it. A fourth status, *hypothesis*, is proposed and not yet grounded (`graph/grand-ensemble-graph.md`). Read all four as the same and the graph adds nothing over a diagram.
+- **Inert** — on a mandala border, a principle or protocol that no chair declares. It means *not declared*, never *unused* (`mandalas/border-chairs-protocols.md`).
+
 ## Modes (persistent states)
 - **Open Score** — internals-visible mode; shows all routing. Invoked `"Open score"`, ended `"Close score"`. (Formerly "Debug.")
 - **Solo** — one musician only. Invoked `"Hello [Agent]"`, ended `"Dismiss"`.
@@ -56,6 +65,10 @@ One definition per term. When any doc uses these words, this is what they mean. 
 - **Make it so** — execute the discussed plan.
 - **Fair Copy** — the documentation re-sync protocol; also the trigger that runs it. A "fair copy" is the clean authoritative manuscript made after revising. Fires on every major rule change.
 - **Sweep** — a systematic re-check of an **entire declared set**, on a clock (30 days for `tools/register.md`) or on the trigger `Tool Discovery: sweep`. Numbered where it recurs — *Sweep 1*, *Sweep 2* — and what one sweep opens is carried forward rather than quietly dropped; an unrun one is a *sweep debt*. From the broom: **a sweep claims coverage, where a search may come back partial and still be a search.** The Declared Circle as a verb. Past tense **swept**.
+- **Chair Review** — three outside lenses, the Agile Auditor, the User Researcher and the Product Owner, on any proposed new knowledge domain for a chair, never the chair judging itself. It ends in a Keep, Revise or Drop verdict, and **nothing is built until the Composer's next word** (`protocols/chair-review.md`).
+- **Delegation Brief** — every delegation, to a chair or to a real subagent, is a four-part contract, not a topic name: objective, output format, sources and tools, boundaries (`protocols/orchestra-protocols.md`).
+- **Independent Verification** — when a check needs independence, the Agile Facilitator spawns a **real subagent** in a separate context, because personas in one context are one model and their agreement is not corroboration (`protocols/orchestra-protocols.md`, invariant 3).
+- **Multilingual Composer** — the protocol that asks every new Composer, at the premiere, which language the orchestra answers in: Mode A mirrors the input, Mode B is always English, Mode C is a fixed language (`protocols/orchestra-protocols.md`).
 - **Checkpoint the session** — append a state entry to the session journal (`SESSION_LOG.md`).
 
 ## Principles (named)
@@ -66,6 +79,9 @@ One definition per term. When any doc uses these words, this is what they mean. 
 - **NDT** — Non-Destructive Testing: verify current state before any operation.
 - **Overshoot** — the Agile Facilitator's failure mode: executing before parsing whether the input was a question.
 - **Too Big Too Soon** — scope creep as the default failure of ambition; ship the smallest judgeable thing first.
+- **Composer Principle** — the orchestra never votes on taste: on anything visual or subjective it offers options, never decisions, and the call is the Composer's (`mandalas/border-chairs-principles.md`).
+- **Opera House Principle** — *enter the venue before conducting*: read the setting before acting in it (`mandalas/principles-layer.md`). Its protocol form is the **Opera House cycle**: absorb, orient, map, Composer checkpoint, flow, execute, verify, learn (`mandalas/protocols-layer.md`).
+- **Fractal Loop** — one recursive shape at every scale: *test at a scale, let the result correct the map and not just the instance, recompose at the next scale up or down, repeat* (`principles/core-principles.md`).
 - **The fourth verdict** — a check or classifier that can fail to look carries a verdict meaning *I could not look*, and never emits the same value as *I looked and there is nothing there*: one describes the instrument, the other the world. `method/the-fourth-verdict.md`, where the direction a missing verdict collapses in is shown to depend on the code, not on the enum.
 
 ## Prohibited (end-user / product copy)
