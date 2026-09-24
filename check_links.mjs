@@ -24,7 +24,16 @@ import { readdirSync, readFileSync, statSync, lstatSync, existsSync } from "node
 import { join, dirname, relative, posix } from "node:path";
 
 const ROOT = process.cwd();
-const PROVENANCE = ["brain/", "project/", "agents/", "skill/", "skills/", "docs/", "scripts/"];
+const PROVENANCE = ["brain/", "project/", "agents/", "skill/", "skills/", "docs/", "scripts/",
+  // Other repositories' coordinates, declared 2026-09-24 (#147) when the pattern stopped
+  // ignoring capitals: the OKF spec's own repo, two skill folders quoted as they were read,
+  // and an MCP server's guide. Each is cited, none is a route into this library.
+  "GoogleCloudPlatform/", "okf/", "figma-bridge/", "grand-ensemble-alpha/", "mcp-server-guide/"];
+
+// A path a tutorial tells its reader to CREATE and then delete. It is checked by neither
+// rule: absent is correct on main, present is correct mid-tutorial, and this check cannot
+// tell a branch from main. So its presence is REPORTED, never failed.
+const EXAMPLES = new Map([["method/scratch-YOURS.md", "tutorial/first-contribution.md"]]);
 const walk = (d) => readdirSync(d).flatMap((n) => {
   if (n === ".git" || n === "node_modules") return [];
   const p = join(d, n);
@@ -41,7 +50,9 @@ const walk = (d) => readdirSync(d).flatMap((n) => {
 
 const files = walk(ROOT);
 const basenames = new Set(files.map((f) => relative(ROOT, f).split("\\").join("/").split("/").pop()));
-const REF = /`([a-z0-9_][a-z0-9_.\/-]*\.(?:md|json))`/g;
+// Capitals were outside this pattern until 2026-09-24 (#147), so `tools/README.md` and every
+// other path with one passed unread — and the tutorial's example relied on that on purpose.
+const REF = /`([A-Za-z0-9_][A-Za-z0-9_.\/-]*\.(?:md|json))`/g;
 
 // Two classes, reported apart, because they need different answers.
 //
@@ -53,7 +64,7 @@ const REF = /`([a-z0-9_][a-z0-9_.\/-]*\.(?:md|json))`/g;
 //   verbatim and declared as unfetchable on the pages that use them. A bare
 //   name is only reported when NO file of that basename exists anywhere here,
 //   and even then it is a candidate to check rather than a defect.
-const dead = [], bare = [], skipped = new Set();
+const dead = [], bare = [], skipped = new Set(), examples = new Set();
 
 for (const abs of files) {
   const rel = relative(ROOT, abs).split("\\").join("/");
@@ -61,6 +72,10 @@ for (const abs of files) {
   for (const m of src.matchAll(REF)) {
     const target = m[1];
     if (PROVENANCE.some((p) => target.startsWith(p))) { skipped.add(target); continue; }
+    if (EXAMPLES.has(target)) {
+      if (existsSync(join(ROOT, target))) examples.add(`${target}  — expected only while ${EXAMPLES.get(target)} is being followed`);
+      continue;
+    }
     if (!target.includes("/")) {
       if (!basenames.has(target)) bare.push(`${rel}: ${target}`);
       continue;
@@ -80,6 +95,8 @@ if (bareU.length) {
 ≈ ${bareU.length} bare filename(s) that exist nowhere here — provenance, or a page never published:`);
   for (const b of bareU) console.log(`  ${b}`);
 }
+
+if (examples.size) console.log(`\n· tutorial example present: ${[...examples].join("; ")}`);
 
 const deadU = uniq(dead);
 if (!deadU.length) { console.log("\n✓ no dead path-shaped references"); process.exit(0); }

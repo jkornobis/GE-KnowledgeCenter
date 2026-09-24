@@ -106,11 +106,12 @@ a tool`:
 | `method/scratch-YOURS.md` | A page whose only purpose is to be added, checked, merged and removed, so an instance learns this library's three edges by running them | the whole room | 2026-09-09 |
 ```
 
-⚠️ **The name is written `scratch-YOURS.md`, with capitals, and that is not a style choice.**
-`check_links.mjs` matches a backticked path and fails if it does not resolve — so writing the real
-filename in this tutorial would make *this page* carry a dead reference to a file that exists only
-while you are following it. **The gate caught exactly that while this page was being written.** The
-capitals put the example outside the pattern.
+⚠️ **`check_links.mjs` fails on a backticked path that does not resolve, and this page names a file
+that exists only while you are following it.** The gate caught exactly that while this page was
+being written. **So the example is declared by name inside the gate**: it is never failed, and while
+the file exists the gate prints one line saying so. Until 2026-09-24 the capitals did this job
+instead, because the pattern ignored them. That was a blind spot for every path with a capital
+letter, not only this one (`#147`).
 
 **The description must be the page's own, word for word.** The specification asks for it and
 `check_okf.mjs` will list a recommendation against you if it differs — which is how you will find
