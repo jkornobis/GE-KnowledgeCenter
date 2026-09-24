@@ -14,7 +14,7 @@ sources:
 
 # Tool: Wekan
 
-Audited **2026-09-05** by the Worker on a live self-hosted instance (`v11.46` + MongoDB), every
+Audited 2026-09-05 by the Worker on a live self-hosted instance (`v11.46` + MongoDB), every
 capability line executed rather than read. **Independently spot-checked 2026-09-06 by the Library
 instance**, unauthenticated, and by standing up a board through the interface.
 
