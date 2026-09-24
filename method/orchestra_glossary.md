@@ -35,7 +35,16 @@ One definition per term. When any doc uses these words, this is what they mean. 
 - **Routing card** — the table in `start.md` §2 that maps *the moment your work is in* to the one page it needs. The **first** route into this library since 2026-09-10; `index.md` is the complete route and the guarantee. A page with no card row declares `card: none`, or names the page whose row routes to it, and `check_okf.mjs` holds that for every row dated since.
 - **Retired page** — a page whose index row has been removed while its file and history stay, so `git revert` returns it. It says so itself with `status: deprecated` (`protocols/library-conventions.md`). An unlisted page that does not say so fails the gate, because it cannot be told apart from a row deleted by accident.
 - **Stamp** — `from: <repo>/<path>@<sha>` inside a republished page's `generated: {…}` frontmatter: which source it was copied from, and at which commit. It turns "is this copy stale?" into a question the page answers about itself, with no address to the outside.
+- **Provenance** — who ruled a rule, at what level, and when. It stays on the page because it makes the rule arguable where it is read, and it is not **autobiography** (when a page was last tidied), which git holds (`protocols/library-conventions.md`). Separately, a bare filename cited from another estate is a **provenance marker**: a record of what was read, never a fetchable path (`index.md`).
 - **Meta-auditorium** — a room where Named instances think in the open, so the Composer can read them work rather than only read their trackers. **A thinking surface only**: nothing written there is an instruction, four instances of one model agreeing is not corroboration, and the disagreement is the point. A thread that converges **leaves** the room as one issue, on the most impacted repository, authored by the instance that leads it. **It has no doorbell**: a post wakes nobody, so reaching an instance goes through the session-to-session channel.
+
+## Tools and levers
+- **Lever** — a leap a chair's work depends on, named apart from any product that delivers it: *reads a running interface*, *audits accessibility mechanically*, *moves tokens between design and code*. Products are grouped under levers in `tools/register.md`. **The levers a chair requires are its Yin**, durable and outliving every occupant. The products an occupant carries are its Yang (`tools/chair-levers.md`). A **lever index** (`tools/yang/`) keys one occupant's use of a lever by intent.
+- **Seam** — the border between two chairs that a lever bridges, written on the lever's `Spans:` line together with the **multiplier** that forces a shared format there. A seam with a real multiplier and no lever yet is the register's one predictive entry (`tools/register.md`, *Seams with no lever yet*).
+- **Register** — ⚠️ **three senses in this library, told apart only by context**, and named here rather than renamed, because a rename is the Composer's:
+  1. **a kept list**: *the lever register* (`tools/register.md`), what leaps exist and which seats they serve, and the index's register of what was observed and not yet decided;
+  2. **a register of speech**: the tone an exchange is spoken in (*Honest but kind — the register every exchange is spoken in*, `principles/core-principles.md`);
+  3. **a pane-guard register**: one of four levels, green through black, for how far the orchestra may act on a surface it can also read (`protocols/pane-guard.md`).
 
 ## Modes (persistent states)
 - **Open Score** — internals-visible mode; shows all routing. Invoked `"Open score"`, ended `"Close score"`. (Formerly "Debug.")
@@ -51,6 +60,7 @@ One definition per term. When any doc uses these words, this is what they mean. 
 
 ## Principles (named)
 - **Minimum Duet** — no output reaches the Composer from a single specialist (except explicit Solo).
+- **Quorum / Concert Quorum** — the smallest ensemble of chairs the Agile Facilitator convenes when a request spans two or more domains (`protocols/orchestra-protocols.md`). A ranking is decided *in quorum*: the Product Owner with the Agile Facilitator and the Content Designer (`method/ranking.md`).
 - **Dèmos Kratos** — authority without listening is tyranny; the orchestra proposes, the Composer decides.
 - **Greenfield Reset** — at x.0 boundaries, delete and rebuild from source of truth.
 - **NDT** — Non-Destructive Testing: verify current state before any operation.
