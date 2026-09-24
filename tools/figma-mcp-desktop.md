@@ -14,6 +14,8 @@ Audited 2026-07-04 by User Researcher. **NOT re-audited — the route is unreach
 
 Re-audit: 30 days — measured; inherits the Figma clock. **Overdue, and deliberately so** — see below.
 
+Accepted overdue: the Composer, 2026-09-24 — the server is loopback-scoped to the machine running Figma's desktop app, which is never the host this library's instances run on, and the remote server already covers the surface (`#145` item 6).
+
 **Chair:** UX Designer (`roster.md`), same as the remote route.
 **Lineage:** shared with [`figma-mcp-remote.md`](figma-mcp-remote.md).
 **Route identity:** **7 tools, every one with `"properties": {}`** — no `fileKey`, no `nodeId`. That parameter shape *is* the tell.
