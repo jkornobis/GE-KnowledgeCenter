@@ -53,9 +53,14 @@ sources:
     title: "Atomic Design"
   - resource: https://www.smashingmagazine.com/design-systems-book/
     title: "Design Systems"
+card: tools/figma.md
 ---
 
 # The Figma method — how a design surface is actually played
+
+Audited 2026-09-22 by User Researcher — a full-page sweep against that day's live re-audit of the remote server (commit `e535f41`).
+
+Re-audit: 30 days — measured; inherits the Figma clock, like the two connector pages, because a Figma release is what invalidates a rule here.
 
 ---
 name: figma-method
