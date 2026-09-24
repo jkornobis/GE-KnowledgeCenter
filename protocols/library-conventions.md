@@ -106,7 +106,10 @@ deliberately not here.
   past its cadence gets re-audited, **counted from 2026-09-24, not backwards** (ruled the same
   day). *The Library's reading, not ruled:* a new page is a new index
   row, not an edit. A re-audit counts when an overdue page's `Audited` line moves. A page overdue on
-  purpose (`tools/figma-mcp-desktop.md` today) is not in the pool. No gate counts this yet; the
+  purpose (`tools/figma-mcp-desktop.md` today) is not in the pool.
+  **Pages that are read come first** (ruled 2026-09-24, same day): an overdue page that no instance
+  fetched in the last 30 days goes to the back of the queue. On the day this was set, 7 of the 8
+  overdue tool pages had no reader in 19 days (the count and its limits are on `#148`). No gate counts this yet; the
   release clock of `#145` would tell which pages are really stale.
 
 ## A page declares what its rule leans on, and that is what this library owes the corpus (ruled 2026-09-10)

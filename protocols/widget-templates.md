@@ -1,12 +1,13 @@
 ---
 type: Protocol
-title: "Widget templates — the persona map and the recurring markup"
-description: "The emoji and colour per musician that every attribution line is drawn from, plus four blocks of markup reproduced verbatim — Note Picker, Auditorium, stat tiles and the coverage matrix — so a widget is rebuilt rather than reinvented"
+title: "Widget templates — the recurring markup"
+description: "Four blocks of markup reproduced verbatim — Note Picker, Auditorium, stat tiles and the coverage matrix — so a widget is rebuilt rather than reinvented; the persona map they colour from is its own page since 2026-09-24"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
+card: none
 ---
 
-# Widget templates — the persona map and the recurring markup
+# Widget templates — the recurring markup
 
 *Roadmap note 6 (ADR-101). The recurring `show_widget` patterns as canonical, verbatim-reproducible templates. `protocols/presentation.md` is the **spec** (why + rules); this is the **source** (exact markup to copy). When a pattern below fits, reproduce it and change only the content — do not re-derive the structure from prose each time.*
 
@@ -18,74 +19,18 @@ that issue rest on a normalised name plus an absence, and are deliberately left 
 
 **What this fixes, honestly:** it removes per-widget structural re-derivation and prevents broken-first-try rebuilds (the real time-sink). It does **not** make the rendered output faster to emit — a `show_widget` call still streams all its tokens each time; there is no cached component in chat. The consistency and the avoided rebuilds are the win.
 
-The other half of note 6 — real Astro components on `docs-site/`, written once and reused by reference — has shipped (ADR-127): `PivotTable.astro`, `StatTiles.astro`, and `SaveFooterButton.astro` in `docs-site/src/components/`, backed by a single persona-map source at `docs-site/src/data/musicians.ts` (mirrors the table below — update both together). **`PivotTable.astro` is now stale against the Note Picker merge below (ADR-197, 2026-07-27) — not yet ported.** Flagged, not silently left inconsistent: the chat-side template is the current standard; the docs-site component still reflects the old Pivot table until someone does that port. **Scoped 2026-08-06 (ADR-254), on the Composer question that caught the over-claim — *does the pivot table respect main branch definition?*: it does. The component is byte-identical on `main` and `dev`, and `main` has never heard of the Note Picker, so on the branch the site actually deploys from it is not stale at all — it is note 6 as shipped (ADR-127). *Stale* here is a dev-only statement about a dev-only standard, and the published site contradicts nothing.**
+The other half of note 6 — real Astro components on `docs-site/`, written once and reused by reference — has shipped (ADR-127): `PivotTable.astro`, `StatTiles.astro`, and `SaveFooterButton.astro` in `docs-site/src/components/`, backed by a single persona-map source at `docs-site/src/data/musicians.ts` (mirrors the table in `protocols/persona-map.md` — update both together). **`PivotTable.astro` is now stale against the Note Picker merge below (ADR-197, 2026-07-27) — not yet ported.** Flagged, not silently left inconsistent: the chat-side template is the current standard; the docs-site component still reflects the old Pivot table until someone does that port. **Scoped 2026-08-06 (ADR-254), on the Composer question that caught the over-claim — *does the pivot table respect main branch definition?*: it does. The component is byte-identical on `main` and `dev`, and `main` has never heard of the Note Picker, so on the branch the site actually deploys from it is not stale at all — it is note 6 as shipped (ADR-127). *Stale* here is a dev-only statement about a dev-only standard, and the published site contradicts nothing.**
 
-**Attribution cards were removed 2026-07-23.** `SpeechCard.astro`, `EnsembleCard.astro` and `UnisonRow.astro` are gone, along with their chat templates: a card that renders slowly or silently fails leaves a turn with no attribution, which is worse than a plain line. Voices are markdown lines everywhere now — see the persona map's emoji column below, and `AttributionExamples.astro` on the "How to read the orchestra" page.
+**Attribution cards were removed 2026-07-23.** `SpeechCard.astro`, `EnsembleCard.astro` and `UnisonRow.astro` are gone, along with their chat templates: a card that renders slowly or silently fails leaves a turn with no attribution, which is worse than a plain line. Voices are markdown lines everywhere now — see the emoji column in `protocols/persona-map.md`, and `AttributionExamples.astro` on the "How to read the orchestra" page.
 
 Every template here is a **result** surface (tables, tiles, pickers) — never attribution. Each carries: the Material Symbols font link, an `sr-only` heading for screen readers, `var(--…)` tokens for light/dark, and a shared 12px-radius `0.5px` border. Keep those verbatim.
 
 ---
 
-## Persona map — the single source (icon + colour)
+## Persona map — moved to `protocols/persona-map.md` (2026-09-24)
 
-Copy these exactly; never re-guess an icon or hex. Text-on-light contrast note: for a tier/priority *word*, use the darker shade in the right column, not the fill hex.
-
-Colours are **derived from a house brand palette** (2026-07-23). Each musician is a lightness step
-along its *family's* brand hue, so a chip reads family-first, musician-second.
-Two hexes per musician because one usually can't clear contrast against both a
-near-white and a near-black surface — same constraint as the tier words below.
-Strings is the exception: brand Red clears both (4.14:1 Canvas, 4.12:1 Midnight),
-so its three chairs carry one value each. Default to the dark column when the
-rendering surface is unknown.
-
-The palette these replaced was invented, not brand-derived, and failed colour-vision
-testing outright: Agile Auditor `#7F77DD` vs Software Engineer `#378ADD` measured ΔE **0.6**
-under deuteranopia — indistinguishable. Within a family the step is small by design
-(clearly legible at a shared edge, quiet in isolation), so **never let colour be the
-sole signal** — the icon and label carry identity, which is what a dichromat reads.
-
-Two deliberate trades to know before reusing these: **Woodwinds is green**, a hue the source palette
-doesn't ship — built at 153°, the midpoint of the palette's own 155° empty arc, at its
-mean chroma, because Sky read as merely one more blue. And in **light** surfaces
-**Strings and Harp sit at ΔE 9.4** under deuteranopia — accepted knowingly, and only
-safe because every family is rendered with an icon and a text label beside its colour.
-Never show a family as bare colour.
-Mirrored in `docs-site/src/data/musicians.ts` as `--mus-*` CSS variables; update both together.
-
-**Emoji column = THE attribution format** (not a fallback — the only one, since 2026-07-23).
-Format: `🎨 **UX Designer** — design & UX`. One line per voice; **line count tracks distinct
-positions, not attendance** — names joined on one line means the quorum agrees, said once.
-The emoji is the only glyph carrying colour in terminal markdown, so it does the job the
-dot hex does on a rendered surface; it can't match the hex, and that's fine. Picks mirror
-each chair's Material icon (`palette`→🎨, `architecture`→📐, `code`→💻) — never instrument
-or metaphor picks. The dot hexes remain for docs-site components and result widgets.
-
-| Musician | Material icon | Emoji (attribution) | Dot hex — dark | Dot hex — light | Family | Subtitle |
-|---|---|---|---|---|---|---|
-| Agile Facilitator | `hub` | 🔀 | `#2E5BC0` | `#00318D` | Lead & meta | routing & synthesis |
-| Agile Auditor | `hearing` | 👂 | `#4469D1` | `#173E9D` | Lead & meta | pattern detection |
-| UX Designer | `palette` | 🎨 | `#C73E00` | `#C73E00` | Strings | design & UX |
-| Design Engineer | `integration_instructions` | 🔗 | `#D14600` | `#D14600` | Strings | design-to-code fidelity |
-| Content Designer | `edit_note` | ✏️ | `#DB4E0B` | `#DB4E0B` | Strings | copy & vocabulary |
-| Accessibility Specialist | `accessibility_new` | ♿ | `#00904D` | `#00914E` | Woodwinds | accessibility & standards |
-| QA Engineer | `fact_check` | ☑️ | `#18A05B` | `#0DA15C` | Woodwinds | testing & DoD |
-| Software Engineer | `code` | 💻 | `#3D8DF6` | `#177CE3` | Brass | code & APIs |
-| Software Architect | `architecture` | 📐 | `#4995FF` | `#2B84EB` | Brass | process & versioning |
-| Reliability Engineer | `dns` | 📶 | `#549DFF` | `#3A8BF4` | Brass | reliability & runtime |
-| Product Owner | `explore` | 🧭 | `#F6A639` | `#B36E00` | Harp | purpose & scope |
-| User Researcher | `travel_explore` | 🔍 | `#FFB649` | `#C57D00` | Harp | research & sourcing |
-
-**Family colours** (the layer above — use for family chips and hulls):
-
-| Family | Dark | Light | Brand anchor |
-|---|---|---|---|
-| Lead & meta | `#2E5BC0` | `#003795` | Royal `#004AAC` |
-| Strings | `#D14600` | `#D14600` | Red `#D14600` — same both themes |
-| Woodwinds | `#009854` | `#0CA15C` | derived green (see note) |
-| Brass | `#4995FF` | `#3B8CF5` | True Blue `#4995FF` |
-| Harp | `#FFAE41` | `#C57D00` | Gold `#FFAE41` |
-
-**Priority / tier colours** (pivot tables, roadmaps): edge colours are themeless (decorative, 3:1 non-text threshold) — critical/2.0-defining `#FFAE41`, impactful `#004AAC`, recommended `#888780`. **Word colours are theme-dependent** (found via docs-site-a11y CI, ADR-135 — a single hex can't clear WCAG AA 4.5:1 against both a near-black and a near-white background): critical/2.0-defining word `#8A5B10` on light / `#D9A441` on dark; impactful word `#004AAC` on light / `#6EA8F5` on dark; recommended word `#5F5E5A` on light / `#B5B3AC` on dark. `show_widget` in chat can't detect the client's theme, so pick the pair matching the Composer's actual rendering surface if known, or default to the dark-mode value (docs-site defaults dark too).
+The emoji, icon and colour per musician, and the family and tier colours, now live on their own page
+so an attribution costs one small fetch rather than this whole page. Moved verbatim.
 
 ---
 
