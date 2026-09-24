@@ -69,6 +69,7 @@ result is judged.
 | adding a tool, or auditing one already in use | `protocols/tool-audit.md` |
 | weighing a tool against another, or filling a lever entry | `method/judging-a-tool.md` |
 | a search that found nothing, on a word that should exist | `method/chair-vocabulary.md` |
+| a house term you do not recognise, or are about to define in your own words | `method/orchestra_glossary.md` |
 | turning a request into an ensemble of chairs | `chairs/the-twelve-chairs.md` |
 | reviewing a design surface, or deciding it is too early to | `method/design-review.md` |
 | touching a Figma canvas, calling a Figma MCP tool, or asked anything about the Figma surface | `tools/figma.md` — the router; it names every Figma page this library holds |
