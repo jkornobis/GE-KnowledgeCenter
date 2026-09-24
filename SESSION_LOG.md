@@ -2083,3 +2083,35 @@ skip symlinks, as the gates do.
 
 **Open:** `#145` items 3–6 (unblocked, nothing waiting on the Workshop) and `#49`. Board and tracker
 agree, 2 and 2.
+
+### Checkpoint addendum, evening of 2026-09-24
+
+```text
+#162  098b608  forgejo and wekan: plain Audited dates, so both freshness checkers
+               read them the same way                                    #145 item 3
+#163  cfa0f7e  figma-mcp-desktop: "Accepted overdue: the Composer, 2026-09-24 — ..."
+               and the line format in tools/README                      #145 item 6
+#164  3de188e  the three undated pages dated, each on the clock that fits it:
+               figma-method 2026-09-22 on the 30-day Figma clock;
+               register-sweeps 2026-09-04 and lineage 2026-08-23, not applicable
+```
+
+**Item 6 is done on both sides.** GE-Workshop taught its freshness checker the accepted-overdue line
+(PR #209, `28af193`), and it reads `figma-mcp-desktop` as accepted, not stale. It needs both the
+decider and the date: remove either and the page reads stale again. **The freshness report is down
+to 6 genuinely stale pages** (i18next, playwright, style-dictionary, tokens-studio, vitest, zod).
+None of them had a reader in today's fetch count, so they go to the back of the upkeep ratio's queue.
+
+**Composer rulings:** accept figma-mcp-desktop's overdue state (item 6); date each undated page and
+put it on a clock (item 5); ask GE-Watcher about release feeds (item 4).
+
+**A fault of mine:** PR #164's verification block was **written from a prediction**. It said 7 stale
+pages plus one pending, when a re-run after the merge showed 6. It was corrected by a comment on the
+PR (4249).
+
+**For the record, from the Server instance, nothing to act on:** the forge's push mirror to GitHub
+carried a fetch refspec that could silently revert a merge landing during a mirror push. It was
+removed with the Composer's approval (jkosvr-tower#75). Checked at 18:47 CEST: main is `87eee7b` on
+both the forge and this clone, and no deleted branch has come back.
+
+**Open:** `#145` item 4 only, waiting on GE-Watcher's answer; `#49` unchanged.
