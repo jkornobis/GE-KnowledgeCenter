@@ -103,7 +103,8 @@ deliberately not here.
 - **One re-audit for every two new pages** (ruled by the Composer 2026-09-24, `#148`). On
   2026-09-23 the library had added 7 method pages in a week while 8 tool pages sat past their
   re-audit date, and none had been re-audited. So for every two new pages, one tool page that is
-  past its cadence gets re-audited. *The Library's reading, not ruled:* a new page is a new index
+  past its cadence gets re-audited, **counted from 2026-09-24, not backwards** (ruled the same
+  day). *The Library's reading, not ruled:* a new page is a new index
   row, not an edit. A re-audit counts when an overdue page's `Audited` line moves. A page overdue on
   purpose (`tools/figma-mcp-desktop.md` today) is not in the pool. No gate counts this yet; the
   release clock of `#145` would tell which pages are really stale.
