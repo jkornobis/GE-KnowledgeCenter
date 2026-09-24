@@ -5,6 +5,7 @@ description: "What a tool page records and why: the vantage point a reading was 
 status: draft
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
+card: none
 ---
 
 # Tool pages
