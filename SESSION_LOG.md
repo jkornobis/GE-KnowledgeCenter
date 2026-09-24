@@ -2058,3 +2058,28 @@ reported a state I had not re-read**, which is the thread rule (read the thread,
 broken on my own issue. Items 3–6 of #145 are unblocked, and the card is back in Ready.
 **Also open: `#156`**, filed by the Workshop, which offers the retired glossary-gap checker for this
 library to adopt or decline.
+
+### Checkpoint addendum, afternoon of 2026-09-24
+
+```text
+#158  9e83fc1  check_glossary_gap.mjs adopted from the Workshop as a reporter (reads this tree,
+               canary pinned to a3497b8, cut-off phrases and 4 products handled)   closes #156
+#159  92bff4c  triggers: the Auditorium's two uses, selection and stimulus         closes #157
+#160  28fe486  glossary: lever, seam, register (three senses), provenance, quorum
+#161  f04cd1c  glossary: the remaining 14 terms plus premiere
+```
+
+**The glossary gap went from 20 to 0** in one afternoon, measured by the adopted reporter after each
+merge. The 12 external names it lists are correctly undefined. One thing the reporter showed about
+itself: **defining terms spreads the words used to define them**. *Premiere* crossed the threshold
+because two new entries used it, and was defined in the same PR.
+
+**Composer rulings:** adopt the checker as a report; the Auditorium keeps one name for two uses (on
+GE-Workshop#184); **"register" keeps its three senses**, which the glossary names, with no rename.
+
+**A fault of mine caught on the way:** the first adapted run of the checker followed the `canvas/`
+link and counted 346 pages instead of 110. Every figure was inflated until the walk was changed to
+skip symlinks, as the gates do.
+
+**Open:** `#145` items 3–6 (unblocked, nothing waiting on the Workshop) and `#49`. Board and tracker
+agree, 2 and 2.
