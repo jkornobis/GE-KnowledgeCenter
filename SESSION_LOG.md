@@ -354,7 +354,7 @@ work up to that hour, and this covers what came after.*
 - **#22 merged with two corrections** under its own delegation of placement and
   wording — re-homed beside the rule it derives from, and its watch lesson's
   diagnosis replaced.
-- **A fifth instance appeared**, `GE-GraphtalkTeam-ProjectKey`, and filed **#23**
+- **A fifth instance appeared** (name withheld: it carried an employer's product name), and filed **#23**
   and **#24**. A `ge:projectkey` label was created and applied. **It qualifies by
   the definition in `index.md` rather than by anyone's permission** — the set is
   open and membership is the capability of holding a discussion here — but the
