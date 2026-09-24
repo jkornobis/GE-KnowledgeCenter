@@ -1980,3 +1980,71 @@ simulation that stayed green then now fails.
 
 Board and tracker agree: 4 open, 4 carded in Ready, and 4 stale cards moved to Done (their issues
 closed on 09-21).
+
+## Session 2026-09-24 — Checkpoint: #147 and #148 closed, two single-author rulings, two screening redactions
+
+*Appended 13:52 CEST. This is the same session as the 2026-09-23 End Day entry, continued after
+`New Day`. Nothing had arrived on the tracker overnight.*
+
+### Merged, in order
+
+```text
+#149  2d4abc4  check_links.mjs reads paths with capitals; 5 provenance prefixes and the tutorial
+               example declared                                               closes #147
+#150  38bb9a4  sweep_links.mjs reports answers / missing / later / refused; Published != audit
+               in the index; tools/README.md stops claiming a checker runs here   #145 items 7-9
+#151  1a86605  conventions: one re-audit for every two new pages               #148 idea 5
+#152  148dd4c  glossary: authored here; the Workshop's five entries merged verbatim; six new terms
+#153  955b36c  protocols/persona-map.md split out of widget-templates; re-audits go to read pages first
+#154  c35dda6  tools/storybook.md re-audited ahead of the ratio
+#155  82d332f  protocols/filing-evidence.md, the body a peer copies to file evidence here
+```
+
+Direct to main: `725d619` and `f208614` (redactions, below), and `b2f4f18` (the ratio counts from
+2026-09-24).
+
+### Composer rulings, all standing
+
+- **The library authors the orchestra glossary**, following the tool-page ruling of 09-23. The Workshop's
+  half is `GE-Workshop#196`.
+- **One re-audit for every two new pages**, counted from 2026-09-24, with **pages that are read going
+  first**.
+- **Ideas 11 and 12 declined**, with the fetch count as the reason for 12.
+- **Two redactions as named exceptions to append-only**: an infrastructure address (line 1593) and an
+  instance name carrying an employer's product name (line 357). **Git history is left as it is**, ruled
+  directly to the Workshop the same morning.
+
+### What the fetch count found
+
+In 19 days on this machine, **62 of 107 pages were never read by any instance**. The most-read page
+was fetched for a 12-row table. The 10 chair reference pages were read 0 times. The limits are on
+`#148`: one machine, 19 days, and reach is not value. This count is what re-pointed the ratio and
+split the persona map.
+
+### Mine to admit
+
+- **`ca1650b` was pushed with `check_okf` red.** I read the exit code after the push, not before.
+  It was never merged. The gate was right, and it caught its own day-old card rule on my own edit.
+- The first version of the sweep classed **401 as missing**. The first real run caught it on three
+  API template addresses.
+- The first version of the tutorial-example rule **failed the gate while the file existed**, which
+  would have broken the tutorial's step 3. My own fixture caught it before the commit.
+
+### Filed elsewhere, and whose they are
+
+```text
+GE-Workshop#196   retire brain/orchestra_glossary.md; check_glossary_gap's control will now fail
+GE-Workshop#197   the skill floor points at widget-templates for the persona map
+#145              the Workshop half: twins, --dir, lowercase pattern, ADR; then items 3-6
+```
+
+The Composer's Key line 84 now points to `protocols/persona-map.md`, changed on his ruling and read back to him.
+
+### Open
+
+```text
+#145   blocked on GE-Workshop
+#49    unchanged
+```
+
+Board and tracker agree: 2 open, #145 in "Blocked: another GE", #49 in Ready.
