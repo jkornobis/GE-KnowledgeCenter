@@ -34,7 +34,7 @@ Consolidated from the five pages that existed when this was written, each of whi
 
 So a page that says *"tool X can do Y"* is not yet a tool page. It becomes one when it says **how that was seen, from where, and on what date** — which is what makes the `Audited` line and the `UNVERIFIED` marks load-bearing rather than ceremonial, and what the reading-surface axis below is the deployment-surface case of.
 
-Each page carries an `Audited YYYY-MM-DD` line. Each page also carries a **`Re-audit: N days — <basis>`** line, whose authority is the chair's own page in `yang/` (ADR-267). `scripts/check_tool_audit_freshness.mjs` reads both and flags a page past **its own** cadence — 30 days measured for `figma.md`, 90 `default, not measured` elsewhere. A missing cadence line fails the check.
+Each page carries an `Audited YYYY-MM-DD` line. Each page also carries a **`Re-audit: N days — <basis>`** line, whose authority is the chair's own page in `yang/` (ADR-267). **No checker in this bundle reads them yet** (`#145`). One exists at the Workshop instance, `check_tool_audit_freshness.mjs`. It flags a page past **its own** cadence, and a missing cadence line fails it. But it reads that instance's own copy of these pages, which drifted from this one before the Composer ruled on 2026-09-23 that this library authors tool pages. Until it reads this directory, a page's freshness is checked by reading its two lines by hand. This line used to say that check ran here. It never did: there has never been a `scripts/` directory in this bundle.
 
 ## Why this subsystem exists at all (2026-08-08)
 
