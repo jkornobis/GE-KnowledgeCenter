@@ -16,7 +16,7 @@ sources:
 
 # Tool: Forgejo
 
-Audited **2026-09-05** by the Worker against a live self-hosted instance reporting
+Audited 2026-09-05 by the Worker against a live self-hosted instance reporting
 `16.0.3+gitea-1.22.0`, authenticated as a dedicated **non-admin** account with a scoped token
 (`write:issue` + `read:repository`) at Write level on one repository.
 
