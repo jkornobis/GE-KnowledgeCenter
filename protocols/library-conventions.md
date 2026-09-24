@@ -72,7 +72,7 @@ rule kept in memory is one the next instance breaks without ever having seen it*
 confidently, because nothing signals an absence. What belongs in a memory store is what is true of
 one Composer on one machine; what is true of the orchestra belongs here.
 
-**Three rules on what enters it, and one on what leaves** (ruled 2026-09-01). They sit here rather
+**Three rules on what enters it, one on what leaves** (ruled 2026-09-01), **and one on upkeep** (2026-09-24). They sit here rather
 than in a protocol page for the reason this index already gives: a rule fetched by the thing it
 constrains is not a constraint, and this is the only page read first. The reasoning behind them is
 deliberately not here.
@@ -100,6 +100,13 @@ deliberately not here.
   accidental de-listing and a retirement as the same event (measured 2026-09-02). *A
   sub-decision inside this ruling, taken on `#145` and levelled `[standing]` by the Composer
   2026-09-23.*
+- **One re-audit for every two new pages** (ruled by the Composer 2026-09-24, `#148`). On
+  2026-09-23 the library had added 7 method pages in a week while 8 tool pages sat past their
+  re-audit date, and none had been re-audited. So for every two new pages, one tool page that is
+  past its cadence gets re-audited. *The Library's reading, not ruled:* a new page is a new index
+  row, not an edit. A re-audit counts when an overdue page's `Audited` line moves. A page overdue on
+  purpose (`tools/figma-mcp-desktop.md` today) is not in the pool. No gate counts this yet; the
+  release clock of `#145` would tell which pages are really stale.
 
 ## A page declares what its rule leans on, and that is what this library owes the corpus (ruled 2026-09-10)
 
