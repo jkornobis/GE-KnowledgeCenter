@@ -18,11 +18,21 @@
  * a pipeline; nothing in this repository passes it.
  *
  *     node sweep_links.mjs              report to stdout
- *     node sweep_links.mjs --strict     exit 1 if anything is dead
+ *     node sweep_links.mjs --strict     exit 1 if anything is missing
  *     node sweep_links.mjs --json       machine-readable, for whatever files the issue
  *
- * A 403 or 429 is reported apart from a 404: those are the address refusing THIS caller, not the
- * address being gone. Counting them as rot is how a sweep teaches its reader to ignore it.
+ * FOUR VERDICTS, and only one of them is about the address (2026-09-24, #145 item 7). The rule
+ * is borrowed from agile-watcher's `probe.py` rather than learned again from scratch here:
+ *
+ *   answers   2xx/3xx. The address RESPONDS. Never printed as verified: a 200 says nothing about
+ *             whether the page still says what this library cites it for.
+ *   missing   any other 4xx/5xx. The one verdict on the ADDRESS, never on the source.
+ *   later     429, 502, 503, 504, a timeout, no answer. The address may be right and the host
+ *             cannot answer now. Filing these as dead is the mistake the Watcher made until
+ *             2026-08-30, and a 362-address sweep meets it on its first run.
+ *   refused   401, 403. The host answered and will not show THIS caller. It is not "later", since
+ *             waiting will not change it. It is the instrument's blind spot, not the world's
+ *             state (`method/the-fourth-verdict.md`).
  *
  * ⚠️ A 404 is not always rot: a host that requires authentication answers 404 to an anonymous
  * caller rather than 401, so a private repository's issues look exactly like deleted ones from
@@ -98,24 +108,26 @@ await Promise.all(
   })
 );
 
-const dead = results.filter((r) => r.status >= 400 && r.status !== 403 && r.status !== 429);
-const refused = results.filter((r) => r.status === 403 || r.status === 429);
-const silent = results.filter((r) => r.status === 0);
-const ok = results.length - dead.length - refused.length - silent.length;
+const LATER_CODES = new Set([429, 502, 503, 504]);   // agile-watcher probe.py, verbatim
+const later = results.filter((r) => r.status === 0 || LATER_CODES.has(r.status));
+const REFUSED_CODES = new Set([401, 403]);         // needs a login, or this caller is barred
+const refused = results.filter((r) => REFUSED_CODES.has(r.status));
+const missing = results.filter((r) => r.status >= 400 && !REFUSED_CODES.has(r.status) && !LATER_CODES.has(r.status));
+const answers = results.length - missing.length - later.length - refused.length;
 
 if (asJson) {
-  console.log(JSON.stringify({ total: results.length, ok, dead, refused, silent }, null, 2));
+  console.log(JSON.stringify({ total: results.length, answers, missing, later, refused }, null, 2));
 } else {
   const line = (a) => a.forEach((r) => {
     console.log(`  ${String(r.status || r.error).padEnd(8)} ${r.url}`);
     r.pages.forEach((p) => console.log(`           ${p}`));
   });
   console.log(`sweep — ${results.length} distinct addresses across ${new Set([...pages.values()].flatMap((s) => [...s])).size} pages\n`);
-  console.log(`  ${ok} answered · ${dead.length} dead · ${refused.length} refused this caller · ${silent.length} silent\n`);
-  if (dead.length)    { console.log(`✗ ${dead.length} dead:`); line(dead); console.log(); }
-  if (silent.length)  { console.log(`? ${silent.length} silent — no answer, which may be the network rather than the address:`); line(silent); console.log(); }
-  if (refused.length) { console.log(`· ${refused.length} refused this caller (403/429) — reported, never counted as rot:`); line(refused); console.log(); }
-  if (!dead.length)   console.log("✓ nothing dead");
+  console.log(`  ${answers} answer · ${missing.length} missing · ${later.length} later · ${refused.length} refused\n`);
+  if (missing.length) { console.log(`✗ ${missing.length} missing — a verdict on the address, never on the source:`); line(missing); console.log(); }
+  if (later.length)   { console.log(`? ${later.length} later — the host could not answer now (429/502/503/504, timeout, no answer):`); line(later); console.log(); }
+  if (refused.length) { console.log(`· ${refused.length} refused this caller (401/403) — the instrument's blind spot, never counted as rot:`); line(refused); console.log(); }
+  console.log(`${missing.length ? "✗" : "✓"} ${missing.length} missing. The ${answers} that answer RESPOND; none of them is verified to still say what it is cited for`);
 }
 
-process.exit(strict && dead.length ? 1 : 0);
+process.exit(strict && missing.length ? 1 : 0);
