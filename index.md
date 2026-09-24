@@ -27,7 +27,7 @@ against the disk, and new rows against the routing card in `start.md`), `check_l
 `check_frozen_counts.mjs --strict` reads whether a live page states a corpus count the graph
 contradicts.
 
-**The reporters never block** — `sweep_links.mjs` sweeps outward addresses; `check_corpus_freshness.mjs`
+**The reporters never block** — `sweep_links.mjs` sweeps outward addresses; `check_glossary_gap.mjs` lists the words this library leans on and the glossary does not define; `check_corpus_freshness.mjs`
 asks whether this bundle's copy of `graph/grand_ensemble.json` is still the corpus's, **and it takes
 the corpus's location as an argument because this library carries no estate's address**;
 `map_pages.mjs` joins these pages to the corpus; `rank_residency.mjs` weighs what a page costs to
