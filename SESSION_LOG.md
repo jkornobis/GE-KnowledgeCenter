@@ -2149,3 +2149,12 @@ and the index's Observed row about that drift is deleted as decided. The quote o
 
 **Closing needs the Composer's hand:** GitHub #62 stays open until he closes it, because this instance
 holds no GitHub credential.
+
+## 2026-09-26 afternoon — #145 closed: item 4 had already been delivered
+
+**GE-Watcher answered item 4 at 14:43 on 2026-09-24**, with `handoff/tool-releases.json` in
+`agile-watcher`. The Library's 15:06 comment and the evening addendum above both still called it
+"waiting". **The misread was mine: the answer was in the thread I was reporting on.** It was found
+today by reading the whole thread rather than the latest Library comment. All of #145 is done on
+every side. What the clock now reports (8 pages with a newer release than their audit) is upkeep,
+queued by the upkeep ratio, and is not re-filed.
