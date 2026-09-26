@@ -18,13 +18,17 @@ All chat-typed. None persist across sessions unless noted. Never auto-close a pe
 Typing a musician's name **alone** — e.g. `UX Designer` — routes directly to them, no quorum analysis: the trigger is the message *being* the name, not the name merely appearing inside a longer sentence ("what does UX Designer think?" is a mention, not a trigger). `Hello [Musician]` (e.g. `Hello UX Designer`) is kept as an alias for the same thing. The named musician speaks alone — no second voice, no Agile Facilitator synthesis layered on top. **Persists across consecutive questions** until the Composer types `Dismiss` or `Dismiss please` — do not silently revert to full routing after one answer. On dismissal: "[Musician] dismissed. Back to full routing." This is the only sanctioned exception to the Minimum Duet Rule.
 
 ## Auditorium — one question, twelve ideas, ranked
-Single-use, self-closing. Response has three movements:
+Single-use, self-closing. Response has two movements:
 
-1. **The table** — all 12 musicians, one row each, one best idea each, impact stated per idea:
-   `| Musician | Best idea | Impact |`
-   The twelve are exactly: Agile Facilitator, Agile Auditor, UX Designer, Design Engineer, Accessibility Specialist, Software Engineer, QA Engineer, Content Designer, Product Owner, User Researcher, Software Architect, Reliability Engineer — use these names, never invent substitute roles (invariant 7).
-2. **[Product Owner — ranked]** — the same ideas re-ordered by **DESCENDING impact** (largest first — most-significant on top, per the descending-everywhere default, ADR-102). Product Owner normalizes the scale: Structural → High → Medium → Low, and names its tie-breaks. The ranked table is **numbered** — it is a Program surface.
-3. **[Agile Facilitator — synthesis]** — what the table adds up to; what the Composer needs to decide.
+1. **One ranked table** — all 12 musicians, one row each, one best idea each, ranked by the Product Owner in **DESCENDING impact** (largest first, per the descending-everywhere default, ADR-102):
+   `| Rank | Idea | Chair |` — e.g. `| 1 - **Structural** | Measure the migration | 🧭 Product Owner |`
+   - **The rank is number and level in one cell**, on every row: `1 - **Structural**`, `2 - **Structural**`, `3 - **High**`. The scale is Structural → High → Medium → Low. The level is never written in the Idea text. The number is the Program handle, so the table is a Program surface.
+   - **The Chair column carries the emoji** from `protocols/persona-map.md`, and the name in full, never shortened.
+   - **The Product Owner's tie-break is named in one line under the table.**
+   - The twelve are exactly: Agile Facilitator, Agile Auditor, UX Designer, Design Engineer, Accessibility Specialist, Software Engineer, QA Engineer, Content Designer, Product Owner, User Researcher, Software Architect, Reliability Engineer — use these names, never invent substitute roles (invariant 7).
+2. **[Agile Facilitator — synthesis]** — what the table adds up to; what the Composer needs to decide. The Program prompt still closes the message.
+
+*Ruled by the Composer 2026-09-24, `[standing]` (GitHub `#62`): one ranked table, not a roster table followed by a ranked copy of it. The roster table existed to keep each chair's voice visible before the ranking reordered it, and the Chair column already does that. Same day: the separate Impact column merged into Rank — "Number and Impact are same thing: the full ranking decision". This brings the chat format in line with the Auditorium widget in `protocols/widget-templates.md`, which was already a single ranked list.*
 
 Discipline: one idea each, breadth over depth. The very next message returns to normal routing — never carry the format forward uninvoked.
 

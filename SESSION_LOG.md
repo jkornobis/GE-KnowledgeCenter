@@ -2134,3 +2134,18 @@ in this library as a checklist or a script, so there is nothing to add labels to
 written procedure is a finding, not filed tonight.
 
 **Correction to the entry above:** the screening finding was filed the same morning as `#166`, not left unfiled.
+
+## 2026-09-26 afternoon — GitHub #62 built: the Auditorium is one ranked table
+
+**The Composer's standing ruling of 2026-09-24, authored here.** `protocols/triggers.md` now renders an
+Auditorium as one table, `| Rank | Idea | Chair |`, where the rank cell holds number and level
+together (`1 - **Structural**`), with the Product Owner's tie-break named under it. The separate roster
+table and the Impact column are gone.
+
+**A stale copy retired rather than corrected.** `protocols/agile_facilitator_score.md` carried its own
+Auditorium format: ten rows under "all 12", ordered ascending. It is now a pointer to `triggers.md`,
+and the index's Observed row about that drift is deleted as decided. The quote on the mandala border
+(`mandalas/border-chairs-protocols.md`) is re-cut from the new text; the edge itself is unchanged.
+
+**Closing needs the Composer's hand:** GitHub #62 stays open until he closes it, because this instance
+holds no GitHub credential.
