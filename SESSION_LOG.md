@@ -2132,3 +2132,5 @@ has no such label, checked through the API. The Composer is editing it by hand, 
 the issue proposed. **The issue's second ask has no target yet:** screening is not written anywhere
 in this library as a checklist or a script, so there is nothing to add labels to. Screening as a
 written procedure is a finding, not filed tonight.
+
+**Correction to the entry above:** the screening finding was filed the same morning as `#166`, not left unfiled.
