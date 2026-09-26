@@ -2115,3 +2115,20 @@ removed with the Composer's approval (jkosvr-tower#75). Checked at 18:47 CEST: m
 both the forge and this clone, and no deleted branch has come back.
 
 **Open:** `#145` item 4 only, waiting on GE-Watcher's answer; `#49` unchanged.
+
+## 2026-09-26 morning — two GitHub issues from a fellow GE: #63 answered, #64 on the Composer's hand
+
+**#63, *Systemic Designer* in the Composer's meaning.** He ruled on the form: **a glossary entry**,
+the smallest step, and the one whose job is that no word means two things. It is under *Roles* in
+`method/orchestra_glossary.md`: his definition quoted verbatim, the four layers as one pattern at
+four scales, told apart from the academic field of *systemic design*, and linked to the Fractal
+Loop. **Not decided here:** at what level it binds (his), whether *mandala project* names such a
+project (open with `#13`), and whether the 2026-09-26 trace moves the Fractal Loop's 09-05 addition
+to Chair Review. **The issue stays open on GitHub**: this instance holds no GitHub credential, so it
+can neither comment nor close there.
+
+**#64, a label description on GitHub names a project repository.** It exists on GitHub only; Forgejo
+has no such label, checked through the API. The Composer is editing it by hand, using the wording
+the issue proposed. **The issue's second ask has no target yet:** screening is not written anywhere
+in this library as a checklist or a script, so there is nothing to add labels to. Screening as a
+written procedure is a finding, not filed tonight.
