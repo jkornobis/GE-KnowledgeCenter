@@ -32,7 +32,7 @@ asks whether this bundle's copy of `graph/grand_ensemble.json` is still the corp
 the corpus's location as an argument because this library carries no estate's address**;
 `map_pages.mjs` joins these pages to the corpus; `rank_residency.mjs` weighs what a page costs to
 hold against what it answers; `card.mjs` returns a body as a card; `tracing_floor.mjs` draws the way
-in at the start of a session in this repository.
+in at the start of a session in this repository. `check_screening.mjs` reads every surface both hosts publish (pages, labels, milestones, releases, issue and PR bodies, comments) for what floor §3 forbids. **Its terms live outside every repository**, because a list of what must never be published, committed here, would publish it, and a hit prints the term's line number, never the term. With no terms file it answers *could not look*, never *clean* (`#166`).
 
 **`render_solar.mjs` writes always**, drawing `mandalas/solar-deep.svg`, `solar-orrery.svg` and `solar-faceon.svg` from the same
 graph — three projections of one construction, compared side by side in `mandalas/solar-variants.html` —

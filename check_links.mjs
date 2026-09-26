@@ -28,7 +28,9 @@ const PROVENANCE = ["brain/", "project/", "agents/", "skill/", "skills/", "docs/
   // Other repositories' coordinates, declared 2026-09-24 (#147) when the pattern stopped
   // ignoring capitals: the OKF spec's own repo, two skill folders quoted as they were read,
   // and an MCP server's guide. Each is cited, none is a route into this library.
-  "GoogleCloudPlatform/", "okf/", "figma-bridge/", "grand-ensemble-alpha/", "mcp-server-guide/"];
+  "GoogleCloudPlatform/", "okf/", "figma-bridge/", "grand-ensemble-alpha/", "mcp-server-guide/",
+  // agile-watcher's handoff folder, declared 2026-09-26: the release clock (#145 item 4) lives there.
+  "handoff/"];
 
 // A path a tutorial tells its reader to CREATE and then delete. It is checked by neither
 // rule: absent is correct on main, present is correct mid-tutorial, and this check cannot
