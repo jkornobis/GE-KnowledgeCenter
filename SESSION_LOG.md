@@ -2188,3 +2188,5 @@ as open, and recommended dropping the field. The field was settled on 2026-09-11
 (`protocols/library-conventions.md`: it is OKF's, not ours to drop, and uniform because a claim
 about the library is true). I had not read that section. His answer, given on my framing, is
 brought back to him rather than executed.
+
+**Correction to the entry above:** 16 GitHub hits, not 15. #133 was redacted before the three-term run, so its 17 are 1 on Forgejo plus 16 on GitHub.
