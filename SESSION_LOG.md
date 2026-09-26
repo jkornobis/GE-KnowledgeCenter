@@ -2158,3 +2158,33 @@ holds no GitHub credential.
 today by reading the whole thread rather than the latest Library comment. All of #145 is done on
 every side. What the clock now reports (8 pages with a newer release than their audit) is upkeep,
 queued by the upkeep ratio, and is not re-filed.
+
+## 2026-09-26 evening — #166 built: screening reads every surface, on both hosts
+
+**`check_screening.mjs` at the root, a reporter.** It reads tracked files, then on Forgejo and GitHub
+the repository description, labels, milestones, releases, issue and PR bodies, and every comment.
+**Its terms live outside every repository** (`~/.config/ge-screening-terms.txt`, seeded with three),
+and a hit prints the term's line number, never the term. With no terms file, it answers *could not
+look*. A positive control hit all three surfaces.
+
+**Correcting #166 as I filed it:** it said a gate could not read GitHub. It can: public reads need
+no credential. Only writes do.
+
+**First real run: 17 hits.** All the pages are clean. One is my own PR body (#133). It named the
+employer and the project, and it is redacted. One is a GE-Workshop comment on #126, raised with them
+there and not edited: one author per artifact. **The other 15 are on GitHub** (a label, four issue
+bodies, ten comments, most from early September), and this instance cannot write there.
+
+**Not made a merge gate.** It would be red on purpose until the GitHub backlog is cleaned, and a
+gate that is red on purpose teaches its readers to ignore red (#145, item 6). It can be promoted once
+it runs clean.
+
+**Also fixed:** my #145 chapter above cited the Watcher's `handoff/` path, and `check_links.mjs`
+failed on main from `f0f2e63` until this merge. I pushed that log commit without running the gates.
+`handoff/` is now declared as provenance, as #147 did for other repositories' coordinates.
+
+**A misframing of mine, the same afternoon:** I put GitHub #59's `status` question to the Composer
+as open, and recommended dropping the field. The field was settled on 2026-09-11
+(`protocols/library-conventions.md`: it is OKF's, not ours to drop, and uniform because a claim
+about the library is true). I had not read that section. His answer, given on my framing, is
+brought back to him rather than executed.
