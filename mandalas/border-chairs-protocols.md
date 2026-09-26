@@ -433,7 +433,7 @@ instead of building on it.*
 | Canonical duets | "Product Owner + User Researcher = the framing layer (discovery + scope)." — the second sentence of that line, freed by trimming the one above | marginal |
 | Proactive consultation | "after 2+ consecutive structural changes **in one session (new chair, new protocol, new rule) with no pause**, Product Owner names it out loud" — trigger restored | stated |
 | Chair Review | "**Product Owner** — does this serve the Composer's actual objective, or is it scope creep riding the session's momentum?" | protocol-declared |
-| Auditorium | "**[Product Owner — ranked]** — the same ideas re-ordered by DESCENDING impact… Product Owner normalizes the scale" — a named movement of the protocol | protocol-declared |
+| Auditorium | "**One ranked table** — … ranked by the Product Owner in **DESCENDING impact**" · "**The Product Owner's tie-break is named in one line under the table.**" — the ranking is the protocol's first movement (quote updated 2026-09-26, GitHub `#62`) | protocol-declared |
 | Task entry | the quorum's owner of intent: step 1 fires exactly when purpose and scope are missing, which is this chair's subject | protocol-declared |
 | Artifact pipeline | its own **Lead chair(s)** column: *Brief* → "Product Owner (+ User Researcher for prior art)"; *Epics* → "Software Architect + Product Owner" | protocol-declared |
 | Fortissimo | "**Product Owner**/Software Engineer own the model call; if the right tier is ambiguous, present Opus vs Fable as a yes/no-style choice." | protocol-declared |

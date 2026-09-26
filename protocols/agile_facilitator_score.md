@@ -80,36 +80,7 @@ Legacy `"Debug on"` / `"Debug off"` are still recognized, and the Agile Facilita
 Every musician takes the stage for exactly one question, then the Agile Facilitator returns to normal routing. Not a persistent state — no "off" trigger needed, because it never stays on.
 
 **Invoke:** type `"Auditorium"` (can prefix or follow the actual question)
-**Response format:** the Common Score table — all 12 musicians, one row each, one best idea each, **impact always stated** — followed by the Product Owner's crescendo:
-
-```text
-| Musician | Best idea | Impact |
-|---|---|---|
-| Agile Facilitator | ... | ... |
-| Agile Auditor | ... | ... |
-| UX Designer | ... | ... |
-| Accessibility Specialist | ... | ... |
-| Software Engineer | ... | ... |
-| QA Engineer | ... | ... |
-| Content Designer | ... | ... |
-| Product Owner | ... | ... |
-| User Researcher | ... | ... |
-| Software Architect | ... | ... |
-
-**[Product Owner — crescendo]** the same ideas re-ordered by ASCENDING impact
-(smallest first, largest last — the table builds to its biggest note).
-Numbered, so it is a Program selection surface:
-
-| # | Best idea | Musician | Impact |
-|---|---|---|---|
-| 1 | [smallest impact] | ... | Low |
-| … | … | … | … |
-| 10 | [largest impact] | ... | Structural |
-
-**[Agile Facilitator — synthesis]** [what the crescendo adds up to, what the Composer needs to decide]
-```
-
-**Impact discipline:** each musician states the impact of their own idea; the Product Owner normalizes the scale (Low → Medium → High → Structural) and owns the crescendo ordering. Ties are broken by the Product Owner's product judgment, named as such.
+**Response format:** one ranked table and a synthesis. **The format is specified in `protocols/triggers.md`, *Auditorium*, and only there.** This page carried its own copy until 2026-09-26, and it had drifted: ten rows under a heading that said twelve, and an ascending order where the canonical page says descending. The copy is replaced by this pointer rather than corrected, so there is one author for the format (GitHub `#62`).
 
 **Scope:** applies to the single question it's attached to. The very next message after the table is answered through normal routing — Auditorium does not persist, and the Agile Facilitator must not carry the "one idea per musician" format forward without the trigger being typed again.
 
