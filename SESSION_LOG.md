@@ -2283,3 +2283,28 @@ as a separate pass.
 
 **A slip of mine:** my 18:54 update on #171 went out over GE-Workshop's 18:10 comment, which I had
 not read. The watch had shown only my own event. I have said so on #171.
+
+## 2026-09-27 — End Day GE (Library)
+
+**Played across 26–27 September:**
+- **GitHub #63:** a glossary entry, *Systemic Designer* (#165).
+- **GitHub #62:** the Auditorium is one ranked table (#167).
+- **#145 closed.** Item 4 had already been delivered.
+- **Screening built and made estate-wide:** #168, #172, #173. 22 leaks found, none of them in a page; GitHub redacted by deleting and reposting.
+- **The Use Case method:** #169, with the secret exception in #170.
+- **The correction token:** #174.
+- **The Auditorium on extending the library**, converged in Extend KC and filed as #171, with the Program 2, 3, 1.
+
+**No-loss check:**
+- Every subject named this session has a home: #166, #171, or a closed issue.
+- The Auditorium's ideas 5–12 had none; they are now recorded on #171.
+- Board: #145 moved to Done; #166 carded in *Blocked: Composer*; #171 in *In progress*.
+- The GitHub token expires 2026-12-26.
+- The originals of the redacted texts sit in `~/ge-screening-backup/`, outside every repository.
+
+**Open on the stand:**
+- #171 note 3, the Library's one-off reading of the four old logs, starting tomorrow.
+- GE-Workshop's gate exemptions and their ADR.
+- #171 note 1, the MCP librarian, later.
+
+**Pending the Composer's hand:** the four GitHub issues' old versions (#166).
