@@ -37,6 +37,9 @@ that carries it, so it travels further than any page.
 
 - **The terms live outside every repository.** A list of what must never be published, committed
   anywhere, publishes it. One file serves every instance on the machine.
+- **A term matches as a whole word unless it says otherwise.** A short term matched as a substring
+  fires inside hashes, lockfiles and database dumps: 140 false matches in one repository, measured
+  2026-09-27. A term that also appears glued inside a longer name is marked to match anywhere.
 - **No terms, or a surface that does not answer, gives *could not look*, never *clean***
   (`method/the-fourth-verdict.md`).
 - **Edit history is part of the surface.** On a public host, an edited comment keeps its earlier
