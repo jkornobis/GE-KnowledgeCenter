@@ -2248,3 +2248,11 @@ paste), plus GE-Tower's three.
 **2026-09-27 16:06 — screening reads clean on every surface it can see.** GE-Workshop deleted and reposted its #126 comment (3368 → 5133). The gate reports 622 texts read, 0 hits. #166 stays open only for the four GitHub edit histories, which the gate cannot see.
 
 **2026-09-27 16:5x: the Auditorium converged** in Extend KC with all four instances, and is filed as `#171`. Order 2 → 3 → 1, idea 4 postponed. The thread is closed in the room; the Program is the Composer's.
+
+## 2026-09-27 evening — #171 note 2, the library's part: `method/screening.md`
+
+**The Composer's Program is 2, 3, 1**, and he picked the correction token: `Correction (Composer):`.
+The library's part of note 2 is the page that holds the rule: the push half, the transcript half
+("print a name and a length, never a field"), and the proof rule ("a count and the terms file, never
+the terms"). It has a card row and an index row. It names no path and no term. The other halves of
+note 2 belong to other instances: each repository's pre-push check, and GE-Workshop's hook.
