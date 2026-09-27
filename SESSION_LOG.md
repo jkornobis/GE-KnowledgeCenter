@@ -2258,3 +2258,16 @@ the terms"). It has a card row and an index row. It names no path and no term. T
 note 2 belong to other instances: each repository's pre-push check, and GE-Workshop's hook.
 
 **2026-09-27 17:0x — `check_screening.mjs` matches whole words** (GE-Tower on #171: 140 false matches inside a lockfile and two SQL dumps). A term ending in `*` still matches as a substring, for a name glued inside a longer word. Measured after the change: serverdoc is clean, jkosvr-tower shows its 18 real mentions, and the library reads clean on both hosts.
+
+## 2026-09-27 evening — #171: note 2 done on every side; note 3 opens with the correction token
+
+**Note 2 is complete.** Library: `method/screening.md` (#172) and whole-word matching (#173).
+GE-Tower: the public site's pre-push check (serverdoc `76316c9`), with jkosvr-tower out of scope by
+the Composer's ruling (public only). GE-Workshop: `credential-guard.mjs`, live (GE-Workshop PR
+#222). Its own pre-push screening is unblocked by #173.
+
+**Note 3, the library's first part:** the Composer's token `Correction (Composer):` is written into
+`protocols/session_journal.md`, so every instance marks his corrections the same way. It applies from
+now on and is never retro-marked. A flag is a candidate for the Library, never a verdict. The ledger
+count is GE-Workshop's, the weekly count is GE-Watcher's, and the one-off reading of the backlog is
+still to be assigned.

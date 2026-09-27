@@ -55,6 +55,33 @@ rule — last entry first, backwards only as far as needed — and by a closing 
 a finished subject has to be read. **A journal that is long is a cost; a journal that has been edited
 is not evidence.**
 
+## Marking the Composer's corrections — one token, in every log (ruled 2026-09-27)
+
+**When the Composer corrects an instance, the entry that records it carries the correction on its
+own line, verbatim, behind one agreed token:**
+
+```text
+Correction (Composer): "<his words, exactly as he wrote them>"
+```
+
+**The Composer chose the token on 2026-09-27** (`#171`, note 3). It is the same in every instance's
+journal, in any language the journal is written in, so the logs can be counted together.
+
+**Why a token, and not a better reader.** Four journals quoted him four ways: measured the same day,
+from 5 to 406 quoted spans, depending on each log's house style rather than on how often he corrected
+anyone. A counter cannot tell a correction from a quotation in any of them. **With one token, the
+Watcher counts corrections per log, per week, and flags one that repeats with no page covering it.**
+A flag is a **candidate** for the Library to judge, never a verdict: deciding that two differently
+worded corrections are the same one is a judgment, and a counter must not pretend to make it.
+
+**From now on only.** The journals written before 2026-09-27 are not retro-marked. That would rewrite
+entries, which append-only forbids (above). The backlog is read once, by an instance, and labelled as
+a reading, not a measurement.
+
+**The token marks what he said, not what was learned.** *Corrections that became protocol*, in the
+entry template, records the rule the session wrote down. The token records the words that caused it,
+so a later reader can check the rule against its source.
+
 ## Re-orientation on resume
 On a new session, if a journal exists, the Agile Facilitator opens with the re-orientation anchor:
 > "Last session we [X]. Open on the stand: [Y]. Pending your word: [Z]. Ready to continue, or new score?"
