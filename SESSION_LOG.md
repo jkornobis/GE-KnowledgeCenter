@@ -2256,3 +2256,5 @@ The library's part of note 2 is the page that holds the rule: the push half, the
 ("print a name and a length, never a field"), and the proof rule ("a count and the terms file, never
 the terms"). It has a card row and an index row. It names no path and no term. The other halves of
 note 2 belong to other instances: each repository's pre-push check, and GE-Workshop's hook.
+
+**2026-09-27 17:0x — `check_screening.mjs` matches whole words** (GE-Tower on #171: 140 false matches inside a lockfile and two SQL dumps). A term ending in `*` still matches as a substring, for a name glued inside a longer word. Measured after the change: serverdoc is clean, jkosvr-tower shows its 18 real mentions, and the library reads clean on both hosts.

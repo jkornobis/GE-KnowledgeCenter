@@ -11,7 +11,13 @@
  * committed here, publishes it. They live in a file outside every repository:
  *
  *     $GE_SCREENING_TERMS, else ~/.config/ge-screening-terms.txt
- *     one term per line, matched case-insensitively as a substring; `#` starts a comment
+ *     one term per line, case-insensitive; `#` starts a comment
+ *     a term matches as a WHOLE WORD by default; end it with `*` to match it anywhere, as a substring
+ *
+ *     Whole word by default since 2026-09-27 (GE-Tower, #171): a short term matched as a substring
+ *     fired 140 times inside a lockfile's hashes and two SQL dumps, and a gate that is red on noise
+ *     teaches its readers to ignore red. `*` is for a term that also appears glued inside a longer
+ *     name, where a word boundary would miss it.
  *
  * ⚠️ AND A HIT PRINTS THE TERM'S LINE NUMBER, NEVER THE TERM. This output gets quoted into PR
  * bodies as verification; printing the term would carry the leak into the record of its fix.
@@ -41,7 +47,12 @@ if (!existsSync(termsPath)) {
 }
 const terms = readFileSync(termsPath, "utf8").split("\n")
   .map((l, i) => ({ line: i + 1, t: l.replace(/#.*/, "").trim().toLowerCase() }))
-  .filter((x) => x.t);
+  .filter((x) => x.t)
+  .map((x) => {
+    const sub = x.t.endsWith("*"), t = sub ? x.t.slice(0, -1) : x.t;
+    const esc = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return { line: x.line, re: new RegExp(sub ? esc : `(?<![\\p{L}\\p{N}])${esc}(?![\\p{L}\\p{N}])`, "iu") };
+  });
 if (!terms.length) {
   console.log(`✗ COULD NOT LOOK: ${termsPath} holds no terms. This is not a clean result.`);
   process.exit(2);
@@ -52,8 +63,8 @@ let read = 0;
 function scan(surface, where, text) {
   read++;
   if (!text) return;
-  const low = String(text).toLowerCase();
-  for (const { line, t } of terms) if (low.includes(t)) hits.push(`${surface}  ${where}  term #${line}`);
+  const s = String(text);
+  for (const { line, re } of terms) if (re.test(s)) hits.push(`${surface}  ${where}  term #${line}`);
 }
 
 // 1 — every tracked file, pages and scripts alike: a script ships as surely as a page does.
