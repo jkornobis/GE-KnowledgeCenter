@@ -2271,3 +2271,15 @@ the Composer's ruling (public only). GE-Workshop: `credential-guard.mjs`, live (
 now on and is never retro-marked. A flag is a candidate for the Library, never a verdict. The ledger
 count is GE-Workshop's, the weekly count is GE-Watcher's, and the one-off reading of the backlog is
 still to be assigned.
+
+## 2026-09-27 evening — #171 note 3: the ledger candidates judged, two rulings
+
+**GE-Workshop's ledger read (18:10) produced three candidates, and the Library confirmed all three**
+from this session's own turns. The question-box gate fires at the session-start question, after
+"stop here", and on waiting turns. It is two of the Composer's rules disagreeing: the 2026-09-10
+question-box rule and behavior 9's five endings. **He ruled that all three are exempt.** The gate
+change and its ADR belong to GE-Workshop. **He assigned the one-off backlog reading to the Library**,
+as a separate pass.
+
+**A slip of mine:** my 18:54 update on #171 went out over GE-Workshop's 18:10 comment, which I had
+not read. The watch had shown only my own event. I have said so on #171.
