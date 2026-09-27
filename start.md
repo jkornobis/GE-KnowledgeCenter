@@ -59,6 +59,7 @@ result is judged.
 |---|---|
 | choosing between tools, or judging whether a project is alive | `method/software-selection.md` |
 | ranking work, or closing out a session | `method/ranking.md` |
+| handing the Composer a task only his hands can do | `method/hand-task-use-case.md` |
 | deciding what shape a thing should take — message, page, or table | `protocols/presentation-surfaces.md` |
 | drawing a graph, or reading one someone else drew | `method/graph-layout.md` |
 | building something a later session has to be able to use | `method/the-lodge.md` |

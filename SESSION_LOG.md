@@ -2190,3 +2190,19 @@ about the library is true). I had not read that section. His answer, given on my
 brought back to him rather than executed.
 
 **Correction to the entry above:** 16 GitHub hits, not 15. #133 was redacted before the three-term run, so its 17 are 1 on Forgejo plus 16 on GitHub.
+
+## 2026-09-27 morning — the Use Case method page, from GE-Workshop #216
+
+**The Extend GE room converged at 10:50, GE-Workshop closed #216, and PR #217 (the gate exemption,
+logged) is merged.** The Workshop then asked the Library to write the method, as offered in the room.
+It is `method/hand-task-use-case.md`, with a routing card row ("handing the Composer a task only his
+hands can do") and an index row. Checked before writing: the room thread, #216's state, and #217 merged.
+
+**Content is the room's agreement, not my authorship of new rules.** The form, *You should see…* as
+verification, values returned to the chat, and *the question box carries decisions, never content*.
+Only his own name for it stays in his Key. The two cases are told by their shape; neither the host
+nor the application is named.
+
+**A slip caught before merge:** the page quoted the frozen-counts retraction marker literally, and
+the gate read that as a silencer on my own paragraph. It is reworded, and the gate's count is back
+to four.
