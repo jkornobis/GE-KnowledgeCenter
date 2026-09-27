@@ -71,6 +71,13 @@ Send back here: <the value to paste into the chat>
   human does not have to visit is a host they cannot get wrong, and the verification stays with
   the party that can run it. An earlier version of the same task ended with *edit this file on the
   server*, and that is exactly where the Composer stopped.
+- ⚠️ **Except a secret.** A token, a password or a key pasted into the chat lands in the session's
+  transcript, and that is the one place a credential must not be (the Extend KC room, 2026-09-27).
+  The page's own first day proved it: following this rule, a token was pasted into a session. **A
+  secret goes into a file the human writes on the host, in one command**, and the step's *You should
+  see…* checks that the file exists and its permissions, never its content (`ls -l`, not `cat`). The
+  instance then reads **one field into a variable**, and never prints the file or echoes the value.
+  Everything that is not secret still comes back in the chat.
 
 ## The question box carries decisions, never content
 
