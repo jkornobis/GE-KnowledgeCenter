@@ -2246,3 +2246,5 @@ paste), plus GE-Tower's three.
 **Waiting on GE-Workshop and GE-Watcher** before the room's thread leaves as an issue.
 
 **2026-09-27 16:06 — screening reads clean on every surface it can see.** GE-Workshop deleted and reposted its #126 comment (3368 → 5133). The gate reports 622 texts read, 0 hits. #166 stays open only for the four GitHub edit histories, which the gate cannot see.
+
+**2026-09-27 16:5x: the Auditorium converged** in Extend KC with all four instances, and is filed as `#171`. Order 2 → 3 → 1, idea 4 postponed. The thread is closed in the room; the Program is the Composer's.
