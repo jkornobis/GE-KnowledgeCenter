@@ -2206,3 +2206,24 @@ nor the application is named.
 **A slip caught before merge:** the page quoted the frozen-counts retraction marker literally, and
 the gate read that as a silencer on my own paragraph. It is reworded, and the gate's count is back
 to four.
+
+## 2026-09-27 afternoon — GitHub side cleaned: the token, 14 redactions, four issues closed
+
+**The Composer gave the library a fine-grained GitHub token**, stored as
+`~/.config/github-api-ge-knowledgecenter.env` (mode 600). It was checked before use: a write that
+creates nothing (an empty label payload) was accepted with 422 on this repository and refused with
+403 on two of his others. It expires 2026-12-26.
+
+**Closed on GitHub:** #59 (both halves answered; the 09-11 status convention stands, confirmed by him),
+#62 (Forgejo PR #167), #63 (PR #165), #64. The label is reworded to name the role.
+
+**The redaction method was his ruling, because GitHub keeps edit history public.** Editing a comment
+hides a leak and leaves it readable one click away. So each of the **9** comments (I had told him
+11) was **reposted redacted, then deleted**: repost first, so a failed delete loses nothing. The
+repost notes its original date. The 4 issue bodies (#23, #24, #26, #34) were edited, and their old
+revisions can only be deleted by hand, so that is his Use Case. Originals are backed up outside
+every repository, in `~/ge-screening-backup/` (mode 700).
+
+**`check_screening.mjs` after: 619 texts read, 1 hit**, which is GE-Workshop's own Forgejo comment on
+#126, raised with them on 2026-09-26. GitHub reads clean, apart from the edit history the gate
+cannot see.
