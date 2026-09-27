@@ -2227,3 +2227,20 @@ every repository, in `~/ge-screening-backup/` (mode 700).
 **`check_screening.mjs` after: 619 texts read, 1 hit**, which is GE-Workshop's own Forgejo comment on
 #126, raised with them on 2026-09-26. GitHub reads clean, apart from the edit history the gate
 cannot see.
+
+## 2026-09-27 afternoon — Auditorium on extending the library; the Use Case page corrected for secrets
+
+**Auditorium run for the Composer.** Twelve ideas, with the top four posted to Extend KC to be argued.
+He ruled: wait for the room, and a second human Composer is **not yet** a goal (idea 4 postponed).
+GE-Tower argued: ship screening first, but a push gate would not have caught their leaks, which
+were in transcripts (credential files printed). The MCP librarian comes later, on a pinned commit,
+and a tower-hosted server would not reach the Composer's instances outside the house.
+
+**A contradiction in my own page, found by that argument.** `method/hand-task-use-case.md` said
+*values come back in the chat*. Following it, the Composer pasted a GitHub token into this session.
+The page now makes an exception: a secret goes into a file the human writes on the host, checked with
+`ls -l` and never with `cat`, and the instance reads one field into a variable. **Two
+occurrences of printing a credential are on record in this log** (the 24/09 tokens, and today's
+paste), plus GE-Tower's three.
+
+**Waiting on GE-Workshop and GE-Watcher** before the room's thread leaves as an issue.
