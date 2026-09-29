@@ -18,17 +18,20 @@ All chat-typed. None persist across sessions unless noted. Never auto-close a pe
 Typing a musician's name **alone** — e.g. `UX Designer` — routes directly to them, no quorum analysis: the trigger is the message *being* the name, not the name merely appearing inside a longer sentence ("what does UX Designer think?" is a mention, not a trigger). `Hello [Musician]` (e.g. `Hello UX Designer`) is kept as an alias for the same thing. The named musician speaks alone — no second voice, no Agile Facilitator synthesis layered on top. **Persists across consecutive questions** until the Composer types `Dismiss` or `Dismiss please` — do not silently revert to full routing after one answer. On dismissal: "[Musician] dismissed. Back to full routing." This is the only sanctioned exception to the Minimum Duet Rule.
 
 ## Auditorium — one question, twelve ideas, ranked
-Single-use, self-closing. Response has two movements:
+Single-use, self-closing. Response has three movements:
 
 1. **One ranked table** — all 12 musicians, one row each, one best idea each, ranked by the Product Owner in **DESCENDING impact** (largest first, per the descending-everywhere default, ADR-102):
-   `| Rank | Idea | Chair |` — e.g. `| 1 - **Structural** | Measure the migration | 🧭 Product Owner |`
-   - **The rank is number and level in one cell**, on every row: `1 - **Structural**`, `2 - **Structural**`, `3 - **High**`. The scale is Structural → High → Medium → Low. The level is never written in the Idea text. The number is the Program handle, so the table is a Program surface.
+   `| Rank | Idea | Chair |` — e.g. `| 1 ⚡ - **Structural** | Measure the migration | 🧭 Product Owner |`
+   - **The rank is number, glyph and level in one cell**, on every row: `1 ⚡ - **Structural**`, `2 👁️ - **Structural**`, `3 🕝 - **High**`. The level (Structural → High → Medium → Low) says **how big** the idea is; the glyph from `method/ranking.md` (⚡ do now · 👁️ yours to judge · 📤 delegate · 🕝 postpone · ♻️ recycle) says **whose move** it is. The level is never written in the Idea text. The number is the Program handle, so the table is a Program surface. A legend line for the glyphs sits under the table.
    - **The Chair column carries the emoji** from `protocols/persona-map.md`, and the name in full, never shortened.
    - **The Product Owner's tie-break is named in one line under the table.**
    - The twelve are exactly: Agile Facilitator, Agile Auditor, UX Designer, Design Engineer, Accessibility Specialist, Software Engineer, QA Engineer, Content Designer, Product Owner, User Researcher, Software Architect, Reliability Engineer — use these names, never invent substitute roles (invariant 7).
-2. **[Agile Facilitator — synthesis]** — what the table adds up to; what the Composer needs to decide. The Program prompt still closes the message.
+2. **[Agile Facilitator — synthesis]** — what the table adds up to; what the Composer needs to decide.
+3. **A recommended Program, then buttons.** The recommendation **follows from the table**: the ⚡ rows in impact order, with the 👁️ rows named as his decisions rather than hidden inside it. It closes the message as buttons (`method/ranking.md`), the recommended Program first and marked *(Recommended)*, then any alternative worth offering, and stop is always one of them. **Never a bare prompt to select from twelve.**
 
 *Ruled by the Composer 2026-09-24, `[standing]` (GitHub `#62`): one ranked table, not a roster table followed by a ranked copy of it. The roster table existed to keep each chair's voice visible before the ranking reordered it, and the Chair column already does that. Same day: the separate Impact column merged into Rank — "Number and Impact are same thing: the full ranking decision". This brings the chat format in line with the Auditorium widget in `protocols/widget-templates.md`, which was already a single ranked list.*
+
+*Ruled by the Composer 2026-09-29, `[standing]` (`#177`): "Auditorium : always recommend a program once done, it's why I added ranking with PO, Auditorium can combine with eisenhower table to create a greater sum than the two alone." Impact alone says what matters and the glyph alone says who can move; together they give an order he can accept in one click. The Auditorium of 2026-09-27 closed with no recommendation, and he had to rule the Program himself. The stimulus use below is not repealed: his own answer to the rows outranks the recommendation.*
 
 Discipline: one idea each, breadth over depth. The very next message returns to normal routing — never carry the format forward uninvoked.
 
@@ -37,8 +40,8 @@ Discipline: one idea each, breadth over depth. The very next message returns to 
 **The format above is the same for both. What differs is what the Composer does with it**, and his
 reply shows which use it was. The orchestra never asks.
 
-- **Selection.** He picks from the twelve with `Program: 3, 1`. The ranking tells him where to
-  look, and the rows he leaves out are postponed.
+- **Selection.** He accepts the recommended Program in one click, or picks his own with
+  `Program: 3, 1`. The ranking tells him where to look, and the rows he leaves out are postponed.
 - **Stimulus.** He answers the twelve rows at once, in his own words, and **the output is his, often
   an idea that no row proposed.** Here `Program` is not the closing move; his free response is.
   Each answer is his decision, to act on or record. An idea he strikes from a row is authored by
