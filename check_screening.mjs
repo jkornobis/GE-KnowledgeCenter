@@ -117,7 +117,16 @@ if (!LOCAL_ONLY) {
     if (tok) fh.Authorization = `token ${tok[1]}`;
   } catch { /* the repository is public; read unauthenticated */ }
   await host("forgejo", FORGEJO, fh, 50);
-  await host("github", GITHUB, { Accept: "application/vnd.github+json", "User-Agent": "check_screening" }, 100);
+  // Anonymous GitHub reads share 60 an hour per address, and every instance's pre-push spends
+  // them: on 2026-09-29 they were gone and the host read as COULD NOT LOOK. A token, where one
+  // exists, is used for reading only (5000 an hour); without one the check still runs anonymously.
+  const gh = { Accept: "application/vnd.github+json", "User-Agent": "check_screening" };
+  try {
+    const env = readFileSync(join(homedir(), ".config", "github-api-ge-knowledgecenter.env"), "utf8");
+    const tok = env.match(/^JETON_GITHUB=(\S+)/m);
+    if (tok) gh.Authorization = `Bearer ${tok[1]}`;
+  } catch { /* no token: anonymous */ }
+  await host("github", GITHUB, gh, 100);
 }
 
 console.log(`screening: ${terms.length} terms · ${read} texts read${LOCAL_ONLY ? " · local only, the hosts were NOT read" : " · local + forgejo + github"}`);
