@@ -2308,3 +2308,23 @@ not read. The watch had shown only my own event. I have said so on #171.
 - #171 note 1, the MCP librarian, later.
 
 **Pending the Composer's hand:** the four GitHub issues' old versions (#166).
+
+## 2026-09-29 — #171 note 3: two backlog readings, then acting on what they found
+
+**The Composer asked for a refresh**, and it found a fault. `check_screening.mjs` read GitHub as
+*could not look*, because the anonymous limit (60 reads an hour, spent by every instance's pre-push)
+was used up. It now reads with the library's token (#175).
+
+**Backlog readings 1 and 2 of 4** were done by independent readers, one per log, over the Library's
+2,310 lines and agile-watcher's 901. Both are posted on #171, labelled as readings. **Lesson: his
+corrections mostly became pages already. The uncovered ground is the instances' own repeated slips.**
+He then ruled: **act on the findings before reading the two big logs**, GE-Workshop's (8,844 lines)
+and jkosvr-tower's (15,230 lines, in French).
+
+**Acted on:**
+- A closing keyword next to an issue number closes it even inside a negation: `tools/forgejo.md` §8
+  (three occurrences, agile-watcher).
+- The clock is read, never inferred: `method/time-management.md`, moved from his Key into shared
+  method (two occurrences in his Key, two in agile-watcher's log).
+- Reporting an issue's state without re-reading its thread (three times, this Library): handed to
+  GE-Workshop as a hook candidate.

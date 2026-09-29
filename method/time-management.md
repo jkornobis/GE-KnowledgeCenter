@@ -41,6 +41,13 @@ Exactly **one** permanent method is active; default **None**. Each is its own tr
 ## Guardrails
 - **None is the default.** Never impose or silently assume a method; the Composer opts in.
 - **No method becomes a rest nudge.** Time awareness is factual and structural, not "you should rest."
+- **The clock is read, never inferred** (moved here from one Composer's Key, 2026-09-29). A session's
+  context usually gives the date and nothing else: no weekday and no hour. So **a weekday or an hour
+  written anywhere, in a reply, a log entry or a timestamp, comes from a real reading (`date`), or it
+  is not written.** An estimate that looks plausible is the failure: two runs in one morning named a
+  Monday *Sunday* and called 10:40 *"~evening"*. One instance's journal records two more estimated
+  timestamps (2026-09-27 and 09-29, found by the #171 backlog reading). It applies to every
+  method above, *None* included, because *None* means not showing the time, never guessing it.
 
 ## Scope, stated once it could be named (2026-09-23)
 

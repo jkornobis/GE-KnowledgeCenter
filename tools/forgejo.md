@@ -98,6 +98,21 @@ unmerged** — *"good code but it has not seen any activity in a long time."*
 tells you**, which is what makes the parent project's issue corpus readable as evidence rather than
 as an analogy.
 
+### 8. ⚠️ A closing word next to `#N` closes the issue, including in a sentence that says it does not
+
+A commit message or PR body that puts a closing keyword (the *close*, *fix* and *resolve* family, in
+any tense) in front of an issue reference closes that issue when the change lands. **The parser
+reads the keyword and the number, not the sentence.** *"This does not close #13"* closes #13.
+
+**Observed three times in one instance's log** (agile-watcher, 2026-09-07 to 09-12: #18, #42 and #78
+at once, then #13 twice, from a PR body and then a commit), and never caught before the close. Found
+by the #171 backlog reading, 2026-09-29. The keyword family is upstream's documented behaviour, and
+it was not re-fetched for this line. GitHub behaves the same way.
+
+**So, when a text must mention an issue it does not close, keep the number away from the verb:**
+*"#13 stays open"*, or *"see #13"*. And after a merge, read the issue's state back, rather than
+assuming it is unchanged.
+
 ## Limits — where this instrument stops
 
 | Limit | Class |
