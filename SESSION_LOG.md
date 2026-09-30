@@ -2343,3 +2343,4 @@ The Composer, on a screenshot of the demo: the rank column wrapped. *"I don't wa
 
 **Same day, 14:30:** *"I need the number from 1 to 9 to be 0X for alignment issue."* The rank number is two digits, 01 to 12. A Program accepts either form.
 **14:31:** *"And I think bars comes before the emoji."* The cell reads `01 ▰▰▰▰ ⚡`.
+**14:3x:** the priority table was shown with and without bars. He chose **glyph only, two digits** (`01 ⚡`), written into `method/ranking.md`. Bars stay the Auditorium's, because the priority table is not ordered by size. His Key still shows `1 ⚡`, which is his to edit.
