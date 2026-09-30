@@ -2340,3 +2340,5 @@ The Composer, on seeing a demo Auditorium: "Good but I like the to have chair be
 ## 2026-09-30 — the Auditorium rank cell: bars, and the words in the legend
 
 The Composer, on a screenshot of the demo: the rank column wrapped. *"I don't want label on column, but in footer legend like the emoji."* He was shown bars and coloured circles in a worst-case table and chose **bars**. The cell is now `1 ⚡ ▰▰▰▰`, and a second legend line reads ▰▰▰▰ Structural · ▰▰▰▱ High · ▰▰▱▱ Medium · ▰▱▱▱ Low. The Accessibility Specialist's point decided nothing but is recorded: without the word, circles would carry the level by colour alone.
+
+**Same day, 14:30:** *"I need the number from 1 to 9 to be 0X for alignment issue."* The rank number is two digits, 01 to 12. A Program accepts either form.
