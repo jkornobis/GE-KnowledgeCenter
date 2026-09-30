@@ -2332,3 +2332,7 @@ and jkosvr-tower's (15,230 lines, in French).
 ## 2026-09-29 evening — #177: the Auditorium always closes on a recommended Program
 
 The Composer's standing ruling, relayed by GE-Workshop, is written into `protocols/triggers.md`. The rank cell carries the glyph from `method/ranking.md` beside the impact level (`1 ⚡ - **Structural**`). A third movement closes the Auditorium: a recommended Program drawn from the table (⚡ rows in impact order, 👁️ rows named as his), as buttons, with stop always one of them. The stimulus use is not repealed. My own Auditorium on 2026-09-27 is the case: it ended on "argue them" with no recommendation.
+
+## 2026-09-30 — the Auditorium table: the chair before the idea
+
+The Composer, on seeing a demo Auditorium: "Good but I like the to have chair before idea." `protocols/triggers.md` now shows `| Rank | Chair | Idea |`. No other page carries the column order.

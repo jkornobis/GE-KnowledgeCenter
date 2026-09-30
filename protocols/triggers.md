@@ -21,7 +21,7 @@ Typing a musician's name **alone** — e.g. `UX Designer` — routes directly to
 Single-use, self-closing. Response has three movements:
 
 1. **One ranked table** — all 12 musicians, one row each, one best idea each, ranked by the Product Owner in **DESCENDING impact** (largest first, per the descending-everywhere default, ADR-102):
-   `| Rank | Idea | Chair |` — e.g. `| 1 ⚡ - **Structural** | Measure the migration | 🧭 Product Owner |`
+   `| Rank | Chair | Idea |` — e.g. `| 1 ⚡ - **Structural** | 🧭 Product Owner | Measure the migration |`. **The chair comes before the idea** (the Composer, 2026-09-30): who speaks is read first, then what they say.
    - **The rank is number, glyph and level in one cell**, on every row: `1 ⚡ - **Structural**`, `2 👁️ - **Structural**`, `3 🕝 - **High**`. The level (Structural → High → Medium → Low) says **how big** the idea is; the glyph from `method/ranking.md` (⚡ do now · 👁️ yours to judge · 📤 delegate · 🕝 postpone · ♻️ recycle) says **whose move** it is. The level is never written in the Idea text. The number is the Program handle, so the table is a Program surface. A legend line for the glyphs sits under the table.
    - **The Chair column carries the emoji** from `protocols/persona-map.md`, and the name in full, never shortened.
    - **The Product Owner's tie-break is named in one line under the table.**
