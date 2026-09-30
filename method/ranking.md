@@ -40,6 +40,11 @@ second category exists at all.
 **A legend line sits under every table**, one line, the glyphs and their words, so the column reads
 without being learned.
 
+**The row number is two digits, joined to the glyph: `01 ⚡`, `02 👁️`** (the Composer, 2026-09-30), so the
+glyphs line up down the column. **No impact bars here**, unlike the Auditorium's rank cell
+(`protocols/triggers.md`): this table is ordered by *whose move*, not by size, so bars would sit out of
+order and read as a wrong ranking.
+
 ## When each category is worked — and it inverts the printed order
 
 **Ruled by the Composer, 2026-09-09:** *"new day means new tokens, best time of the GE to cleanup
