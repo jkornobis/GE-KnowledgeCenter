@@ -2348,3 +2348,5 @@ The Composer, on a screenshot of the demo: the rank column wrapped. *"I don't wa
 ## 2026-09-30 evening — behaviour 9 gets its page, and a sixth ending
 
 GE-Workshop asked on #171 at 14:39. This instance did not see it until the Composer asked at 18:12, because the room watch had been off since Sunday. **He ruled: a sixth ending, *the day is closed*, End Day only.** `protocols/endings.md` is new; behaviour 9 had no page before. The ending is recognised by `End Day GE` in the heading of the End Day chapter every instance appends to its log, not by `NEXT.md`, which only one instance writes. The skill line and the gate belong to GE-Workshop.
+
+**2026-09-30 20:55 — the sixth ending is complete on every side.** Library: `protocols/endings.md` (#184). GE-Workshop: the gate (PR #241, ADR-387) and the skill, now "one of six, never a seventh" (PR #242).
