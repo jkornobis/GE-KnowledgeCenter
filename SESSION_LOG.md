@@ -2344,3 +2344,7 @@ The Composer, on a screenshot of the demo: the rank column wrapped. *"I don't wa
 **Same day, 14:30:** *"I need the number from 1 to 9 to be 0X for alignment issue."* The rank number is two digits, 01 to 12. A Program accepts either form.
 **14:31:** *"And I think bars comes before the emoji."* The cell reads `01 ▰▰▰▰ ⚡`.
 **14:3x:** the priority table was shown with and without bars. He chose **glyph only, two digits** (`01 ⚡`), written into `method/ranking.md`. Bars stay the Auditorium's, because the priority table is not ordered by size. His Key still shows `1 ⚡`, which is his to edit.
+
+## 2026-09-30 evening — behaviour 9 gets its page, and a sixth ending
+
+GE-Workshop asked on #171 at 14:39. This instance did not see it until the Composer asked at 18:12, because the room watch had been off since Sunday. **He ruled: a sixth ending, *the day is closed*, End Day only.** `protocols/endings.md` is new; behaviour 9 had no page before. The ending is recognised by `End Day GE` in the heading of the End Day chapter every instance appends to its log, not by `NEXT.md`, which only one instance writes. The skill line and the gate belong to GE-Workshop.
