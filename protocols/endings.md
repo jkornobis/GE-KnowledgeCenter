@@ -65,6 +65,22 @@ at the gate's end, one exemption at a time:
 
 The last four were ruled together on 2026-09-27 and 2026-09-30, from the gate's own ledgers (`#171`).
 
+## A watch wakes the session only when something arrives (2026-10-02)
+
+**Every wake is a turn, and every turn costs the Composer a message.** A watch that expires on a
+timer and is restarted (a monitor capped at 30 minutes, then re-armed) wakes the session on each
+expiry, so a quiet afternoon becomes a column of *"re-armed, nothing new"*. He saw one and called the
+watch broken. The watch worked; **the restarting was the fault**, measured on two instances.
+
+**So a watch is started as a background command that ends at its first event**, wakes the session
+once with that event, and is started again after it is handled. **Silence then costs nothing**: no
+timer, no restart, no turn. Proven with a stand-in that printed twice: it woke at the first line, the
+second never surfaced, and nothing was left running. A watch that keeps a marker on disk reports what
+arrived between one wake and the next start, so nothing is lost in the gap.
+
+This is the waiting-turn ending above, prevented at its source rather than exempted at the gate.
+The estate's startup reminder carries it since GE-Workshop PR #246 (GE-Workshop #245).
+
 ## Related
 
 - `method/ranking.md`: a ranked table is always followed by buttons.
