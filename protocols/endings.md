@@ -74,9 +74,15 @@ watch broken. The watch worked; **the restarting was the fault**, measured on tw
 
 **So a watch is started as a background command that ends at its first event**, wakes the session
 once with that event, and is started again after it is handled. **Silence then costs nothing**: no
-timer, no restart, no turn. Proven with a stand-in that printed twice: it woke at the first line, the
-second never surfaced, and nothing was left running. A watch that keeps a marker on disk reports what
-arrived between one wake and the next start, so nothing is lost in the gap.
+timer, no restart, no turn. A watch that keeps a marker on disk reports what arrived between one
+wake and the next start, so nothing is lost in the gap.
+
+⚠️ **Stop the watch only after it has saved its marker, never at the moment it prints.** The first
+version stopped it on the printed line, before the save, and the next start reported the same event
+again: a loop, caught on the first real event (2026-10-02). It had been "proven" with a stand-in that
+had no marker, and **a proof with a stand-in is only as good as its resemblance to the real thing.**
+The fixed version waits for the marker file to change before stopping. On the real watch, the event
+was caught once, and the next start stayed silent.
 
 This is the waiting-turn ending above, prevented at its source rather than exempted at the gate.
 The estate's startup reminder carries it since GE-Workshop PR #246 (GE-Workshop #245).
