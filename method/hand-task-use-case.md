@@ -79,6 +79,32 @@ Send back here: <the value to paste into the chat>
   instance then reads **one field into a variable**, and never prints the file or echoes the value.
   Everything that is not secret still comes back in the chat.
 
+## A long ordered procedure — what the hand-off must hold (2026-10-02, `#190`)
+
+**The form above is for one task. A long ordered procedure fails differently.** Under a deadline,
+with about twenty ordered hand-offs across three files, one message said *follow the two scripts*,
+linked them, and gave a single numbered list that held step 8 of 18. The Composer executed that list
+at once: **a numbered list reads as *do this now*, and a link reads as *background*.** *"You lost me
+again, give detail of middle of process you only link before."*
+
+1. **The procedure is written in the message, from the first step not yet done, never behind a
+   link.** The link follows, as the source. This is a deliberate exception to the library's own rule that a
+   rule is pointed at and never restated (`start.md` §4, *a rule restated elsewhere is a fork*). That
+   rule is right for knowledge, which is read; it is wrong for a procedure, which is executed.
+2. **One numbered list per message, and it is what to do now.** A warning or an exception is a line
+   inside its step, never a second list.
+3. **One line before the list says where he stands**: *done so far: steps 1–7*.
+4. **Everything to click is named as his screen shows it**: position, label, and the age the panel
+   shows, not the timestamp the instance holds (*"you have the real timestamp, not me"*). **If the
+   instance cannot see the screen, it asks for a screenshot before giving a path.**
+5. **Under a deadline, one job per message**: the status of what was just done, then the next steps.
+   Tables, studies and open decisions wait for a message of their own.
+
+**The test before sending:** *if he does only what is numbered, in the order written, does he end
+where he should?* If not, the message is not ready. This is a judgement, not a character count, so
+it is a rule here and a mechanism only if it keeps recurring. It is the second form defect in two
+days, after `#185`.
+
 ## The question box carries decisions, never content
 
 **A question box renders over the message it follows.** A Use Case followed by a box is a Use Case
