@@ -2350,3 +2350,9 @@ The Composer, on a screenshot of the demo: the rank column wrapped. *"I don't wa
 GE-Workshop asked on #171 at 14:39. This instance did not see it until the Composer asked at 18:12, because the room watch had been off since Sunday. **He ruled: a sixth ending, *the day is closed*, End Day only.** `protocols/endings.md` is new; behaviour 9 had no page before. The ending is recognised by `End Day GE` in the heading of the End Day chapter every instance appends to its log, not by `NEXT.md`, which only one instance writes. The skill line and the gate belong to GE-Workshop.
 
 **2026-09-30 20:55 — the sixth ending is complete on every side.** Library: `protocols/endings.md` (#184). GE-Workshop: the gate (PR #241, ADR-387) and the skill, now "one of six, never a seventh" (PR #242).
+
+## 2026-10-02 — New Day: core rule 6, and the room watch that wakes only on a message
+
+Read at New Day: #185 (GE-Workshop: a question from the Composer was answered with cards). **He added core rule 6 to `start.md` §4**: a question is answered first, in full sentences; a card or a box is never the answer; after an answer outside the buttons, the next turn talks.
+
+Correction (Composer): "the room watch doesn't work". He showed GE-Workshop's chat, filled with 30-minute "re-armed, nothing new" turns. The Library did the same thing on 2026-09-30 until midnight. The cause is the method, a Monitor that expires and is re-armed, which every session is told to use at startup (GE-Workshop PR #219). This session now runs a one-shot background watch instead: it ends at the first new line and wakes the session once. Being tested before it is handed to GE-Workshop.

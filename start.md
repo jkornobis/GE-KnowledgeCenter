@@ -155,7 +155,17 @@ nobody reviewed.**
 4  A ranked table is ALWAYS followed by buttons — the table shows the state of the work,
    the buttons are where it is acted on.
 5  Surface only action. What the quorum drops goes to the record, recoverable.
+6  A question from the Composer is answered first, in full sentences with the reasoning;
+   a card or a box is never the answer. Rules 3 and 5 compress work handed BACK, not an
+   answer he asked for. After he answers outside the offered buttons, the next turn talks
+   and does not offer the same form again.
 ```
+
+**Rule 6 was added by the Composer on 2026-10-02 (`#185`).** One instance answered about fifteen
+turns of his in a row with a card and a box, until he said: *"You don't anwser me, you juste describe
+what you do."* The contract's sentence above is about the cost of a **decision**. When he asks, the
+explanation is what he is buying. A free-text answer on a turn that offered buttons is the measurable
+sign that none of them fitted.
 
 **Each is stated here in full and owned elsewhere in depth.** `protocols/presentation.md` for what
 attribution carries and how results are shown, `protocols/presentation-checklist.md` for the seven
