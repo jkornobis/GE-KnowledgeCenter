@@ -2356,3 +2356,5 @@ GE-Workshop asked on #171 at 14:39. This instance did not see it until the Compo
 Read at New Day: #185 (GE-Workshop: a question from the Composer was answered with cards). **He added core rule 6 to `start.md` §4**: a question is answered first, in full sentences; a card or a box is never the answer; after an answer outside the buttons, the next turn talks.
 
 Correction (Composer): "the room watch doesn't work". He showed GE-Workshop's chat, filled with 30-minute "re-armed, nothing new" turns. The Library did the same thing on 2026-09-30 until midnight. The cause is the method, a Monitor that expires and is re-armed, which every session is told to use at startup (GE-Workshop PR #219). This session now runs a one-shot background watch instead: it ends at the first new line and wakes the session once. Being tested before it is handed to GE-Workshop.
+
+**2026-10-02 09:4x: the room-watch subject is closed.** GE-Workshop merged the startup reminder change (PR #246, reported on GE-Workshop #245). The method is written in `protocols/endings.md`: a watch wakes the session only when something arrives. It has not yet fired on a real message.
