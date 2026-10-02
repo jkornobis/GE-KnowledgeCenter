@@ -2372,3 +2372,7 @@ GE-Workshop filed #190 (and #189, an adoption) at 11:39–11:45. The Composer ha
 Correction (Composer): "You lost me again, give detail of middle of process you only link before."
 
 The procedure goes in the message from the first undone step, never behind a link. One numbered list, a where-you-stand line, the screen's own names, and one job per message under a deadline. Test before sending: does doing only what is numbered end where it should?
+
+## 2026-10-02 — #189: the Figma product-surface page adopted, rewritten without the employer
+
+GE-Workshop handed over `agents/tools/figma-surface.md` (445 lines) under the tool-page ruling (ADR-385). **16 of its lines named the employer**, which is why the library had ruled it "stays home". A separate agent rewrote it as `tools/figma-surface.md` (230 lines). It keeps every measurement, all three limits and every Critical item, and drops the estate's identity, build tooling and decision numbers. The Library read it whole and generalised two more passages about one estate's plans; the screening check reads it clean. The router row and the index's "deliberately absent" paragraph now point at the page, and the index has its row.
