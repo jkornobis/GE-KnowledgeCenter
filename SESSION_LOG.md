@@ -2362,3 +2362,13 @@ Correction (Composer): "the room watch doesn't work". He showed GE-Workshop's ch
 **09:5x, a fault of mine in the watch fix:** the one-shot wrapper stopped the watch before it saved its marker, so the first real event (GE-Workshop #245) was reported twice and would have looped. The fix waits for the marker save; proven on the real watch (caught once, then 75 s of silence). The correction is on GE-Workshop #245 and in `protocols/endings.md`. GE-Workshop's PR #246 carries the flawed version until they replace it.
 
 **10:0x, two more slips of mine, both fixed:** (1) my fix comment on GE-Workshop #245 went out with the #185 text, because the read-before-report hook stopped the first attempt before the file was rewritten and the retry sent the stale file. Deleted (5848). GE-Workshop derived the same fix independently (PR #247, `scripts/room-watch-once.py`), and the Library now uses that script. (2) I ran `git pull` inside GE-Workshop's clone to read the script; its tree was checked clean afterwards. Lesson for retries after a hook refusal: rebuild the payload, never resend a file whose writing step was in the refused command.
+
+## 2026-10-02 — #190: the Use Case page gains its long-procedure half; the watch missed new issues here
+
+GE-Workshop filed #190 (and #189, an adoption) at 11:39–11:45. The Composer had to say *"ge workshop waiting you"*: **the watch never woke, because the library account was not subscribed to its own repository**, so a new issue here produced no notification for it. It is subscribed now (API, subscription PUT).
+
+`method/hand-task-use-case.md` gains *A long ordered procedure*, from his correction:
+
+Correction (Composer): "You lost me again, give detail of middle of process you only link before."
+
+The procedure goes in the message from the first undone step, never behind a link. One numbered list, a where-you-stand line, the screen's own names, and one job per message under a deadline. Test before sending: does doing only what is numbered end where it should?
