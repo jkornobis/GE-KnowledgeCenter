@@ -2376,3 +2376,11 @@ The procedure goes in the message from the first undone step, never behind a lin
 ## 2026-10-02 — #189: the Figma product-surface page adopted, rewritten without the employer
 
 GE-Workshop handed over `agents/tools/figma-surface.md` (445 lines) under the tool-page ruling (ADR-385). **16 of its lines named the employer**, which is why the library had ruled it "stays home". A separate agent rewrote it as `tools/figma-surface.md` (230 lines). It keeps every measurement, all three limits and every Critical item, and drops the estate's identity, build tooling and decision numbers. The Library read it whole and generalised two more passages about one estate's plans; the screening check reads it clean. The router row and the index's "deliberately absent" paragraph now point at the page, and the index has its row.
+
+## 2026-10-02 — the Auditorium rank: three bars
+
+On a screenshot of a real Auditorium, the rank cell still wrapped: the glyph fell onto a second line.
+
+Correction (Composer): "I want to reduce rendering as 3 bars only : Low become 3 empty bar and is enough. return carriage break the lisibility"
+
+The scale is now ▰▰▰ Structural · ▰▰▱ High · ▰▱▱ Medium · ▱▱▱ Low, in `protocols/triggers.md`.
