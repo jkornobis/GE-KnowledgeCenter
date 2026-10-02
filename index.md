@@ -61,10 +61,11 @@ against the tables below.** The citation is still not rewritten: the two are the
 coordinates, not proven to be the same text, and inventing that correspondence is what this section forbids.
 `check_links.mjs` cannot catch this — `brain/`, `agents/` and `skill/` are in its skip list, by design.
 
-**Two estate pages are deliberately absent** and will stay so: the occupancy roster, whose portable
-half already travels as `tools/chair-levers.md` while the rest is one estate's own seating; and the
-Figma product-surface audit, which cannot be published because it names an employer's systems. Pages
-here cite both by bare name for exactly the reason above.
+**One estate page is deliberately absent** and will stay so: the occupancy roster, whose portable
+half already travels as `tools/chair-levers.md` while the rest is one estate's own seating. Pages here
+cite it by bare name for exactly the reason above. *(The Figma product-surface audit was the second,
+kept home because it named an employer's systems. It was adopted on 2026-10-02 as
+`tools/figma-surface.md`, rewritten without them, `#189`.)*
 
 Fetch a page with — a live address, and the shape for any other:
 
@@ -166,6 +167,7 @@ the page's own `Audited` line, and the two drift apart: on 2026-09-23 a reader t
 | `tools/sigstore-cosign.md` | Keyless signing and provenance for artifacts: why the CLI's own Context7 entry scores Low, a supply-chain tool carrying a supply-chain dependency, and a user community invisible from either route | Software Architect, Reliability Engineer | 2026-08-25 |
 | `tools/figma.md` | The one page an orchestra fetches first for anything Figma: every page this library holds on the surface, keyed by what the work needs, plus the identity table that tells the three MCP servers apart by their parameter shape | UX Designer, Design Engineer | 2026-09-21 |
 | `tools/figma-mcp-remote.md` | The fileKey-scoped Figma MCP servers: 37 tools against the 33 recorded 2026-08-25, Generative Plugins as a whole new MCP-reachable family, shaders gaining write, and a re-audit forced by the calendar rather than by a finding | UX Designer, Design Engineer, Content Designer, Accessibility Specialist | 2026-09-22 |
+| `tools/figma-surface.md` | What Figma's own product does when driven by eyes and hands rather than MCP: the agent's web fetch and Bash tool measured, its Bash boundaries probed, Skills as single-file uploads with update-in-place and a YAML gate, plugins the MCP cannot invoke but a browser can see, connectors, and Eyes First — on one tenant, partial, probe 4 pending | UX Designer, Design Engineer, User Researcher | 2026-10-02 |
 | `tools/figma-mcp-desktop.md` | The selection-scoped Figma MCP server: seven tools that take no parameters at all — and why four passes chasing a per-agent registration missed the real mechanism, a loopback port scoped to whatever machine runs Figma's desktop app, which is never the tower this estate runs on | UX Designer, Design Engineer | 2026-09-24 |
 | `tools/i18next.md` | The FR/EN parity engine: two open issues against 1,472 Stack Overflow questions, and three of the top six are one problem — markup inside a translated string | Content Designer, Design Engineer | 2026-08-25 |
 | `tools/jira.md` | Jira at logic level rather than project level: the fetch route that works and the two that fail, the primitives a work item and a board actually are, and the craft slots left deliberately empty until an orchestra has experimented with a real instance | Product Owner, Software Architect, the whole room | 2026-09-01 |
