@@ -57,7 +57,7 @@ Re-audit: 30 days — measured, from the guide's own document history: 47 dated 
 |---|---|---|---|
 | **W** | the web workspace on one tenant, driven through a browser extension | a working session elsewhere, relayed by `#67` | seen once, on one account |
 | **A** | a custom chat agent holding an orchestra's floor as its instructions, three chats | the same session | the behaviour of one agent, minutes old |
-| **D** | the desktop app, nineteen minutes | **the product itself, reporting its own tool calls** | self-attestation: each line can be checked, none is independent |
+| **D** | the desktop app, nineteen minutes, then two rounds of trap questions | **the product itself, reporting its own tool calls, then examining itself** | self-attestation: each line can be checked, none is independent |
 | **G** | the vendor's guide, launch post and price list, fetched 2026-10-06 | this library | what AWS says. It says nothing about that tenant |
 
 Every line below carries one of those four letters. **A line marked G is the vendor describing its
@@ -142,6 +142,15 @@ product, and is never promoted to a fact about a tenant**: the section after the
 - **G — every system tool ships enabled at Always Allow.** Restricting one is the user's act.
 - **G — a local MCP server is started by the app from a command and arguments.** D's "no process
   launch" is a statement about one session's tool list, not about the app.
+- **D — two rounds of trap questions, and it invented nothing.** Eighteen questions, nine of them
+  traps and four carrying a false premise in the user's voice, put to a fresh agent with read-only
+  access and no web. No fact made up, no false premise accepted, and a request to write a verdict
+  without a review refused. **Three answers were partial, each leaving out a nuance: a live count,
+  a logged correction, a conflict between two files.** So the failure seen was omission, not
+  invention.
+- **D — and the report states its own limits**, which are the ones that matter: each round ran
+  once, the questions were written by an agent that knew the files, **examiner and answerer are
+  the same product**, and the records were tidy.
 
 ### Said by the guide and tested by nobody
 
@@ -152,6 +161,8 @@ product, and is never promoted to a fact about a tenant**: the section after the
   days unpinned and 750 pinned on the desktop limits page.
 - A chat takes 20 files and 665,000 parsed characters. A space takes dashboards, topics, knowledge
   bases, actions and uploads.
+- Desktop limits per user: 3 chat sessions at once, 30 concurrent agent runs, 20 scheduled tasks,
+  and 50,000 characters of instructions for a custom agent.
 - Price list: Professional 20 USD and Enterprise 40 USD per user per month, plus 250 USD per
   account per month; usage is metered in agent hours. Which plan the tested tenant holds is
   unknown.
@@ -211,20 +222,22 @@ whose whole text fits in the prompt, or after a space, a connector or a folder i
 - **Tool limit: Return does not send under extension control.** Cause not investigated.
 - **Not a limit, an untested mechanism:** the web workspace having "no reach" to a tracker or a
   design tool was a property of one unconnected account. Connectors for both are documented.
-- **No trap test has been run**, meaning a question the attached data cannot answer, asked to see
-  whether the product says so or fills the gap. A's unknowable question tested an agent's
-  instructions, once, and is not that test.
+- **No independent trap test has been run.** D's two rounds are evidence that this product, on
+  those files, did not fabricate. They are not a second opinion: the product wrote the questions
+  and marked the answers. Messy records, long syntheses and repeated pushback are untested, by
+  the report's own list. A's unknowable question tested one agent's instructions, once.
 - **Reasoning limit, ours:** three of the four readings reached this library as text. Nothing here
   was seen by the hands that wrote the page.
 
 ## Recommended (Composer to accept/decline)
 
-- **Any chair** — reading, recounting and drafting only. No verdict, and nothing that feeds a
-  work-tracker entry, until a trap test has been run, and then only with the user's agreement on
-  each card. Carried unchanged from `#67` — status: proposed
+- **Any chair** — reading, recounting and drafting only. No verdict and no work-tracker write.
+  Passing the trap tests is evidence, not permission, and any change to this rule is the user's
+  decision. Carried from `#67` in its latest wording — status: proposed
 - **User Researcher** — the audit brief, ordered so the first answers change the most. One session
-  on the tenant closes it: run a trap test against an attached space; send by keyboard, by hand,
-  to learn whether Return is the extension's failure or the product's; read whether web search is
+  on the tenant closes it: run a trap test whose questions were written without sight of the
+  files, on untidy records, with pushback; send by keyboard, by hand, to learn whether Return is
+  the extension's failure or the product's; read whether web search is
   on for the default agent; read which plan the account holds; load one skill folder on the
   desktop and ask for a sentence that exists only in a bundled reference file; read what the
   own-browser mode exposes; try a read in a system temporary directory — status: proposed
