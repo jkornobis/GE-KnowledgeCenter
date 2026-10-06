@@ -2384,3 +2384,13 @@ On a screenshot of a real Auditorium, the rank cell still wrapped: the glyph fel
 Correction (Composer): "I want to reduce rendering as 3 bars only : Low become 3 empty bar and is enough. return carriage break the lisibility"
 
 The scale is now ▰▰▰ Structural · ▰▰▱ High · ▰▱▱ Medium · ▱▱▱ Low, in `protocols/triggers.md`.
+
+## 2026-10-06 — GitHub #67: Amazon Quick gets its tool page, written from four readings
+
+The Composer asked for "issue 67 about tool audit amazon quick". **I read Forgejo #67, a closed tutorial PR, then four other repositories and both boards, before he pasted the link**: the issue was on the public tracker, which numbers separately.
+
+Correction (Composer): "first reach issue check to do for you are the public repo ones", then "your specificity is to have both issue on public and private repo, mean searching both before other private repo ones".
+
+`tools/amazon-quick.md` is new. The issue carried three hands-on readings from a session elsewhere: the web workspace, a custom agent holding an orchestra's floor, and the desktop app reporting on itself. This instance added the fourth, AWS's guide, fetched whole (1,139 pages) and searched. **The model behind the chat is named on no page.** The guide also adds what the testers did not report: temporary directories are readable whatever the folder permissions, every system tool ships at Always Allow, and the desktop app takes skills in the folder shape an orchestra already ships in. One claim of mine was wrong before it was committed, a label disagreement between tenant and guide that was really the guide's web and desktop chapters differing, and a re-check removed it.
+
+Not done: no hand of this library touched the product, no trap test has been run, and no lever entry was added to `tools/register.md`, because no lever there matches a second model route and naming one is a Tool Discovery decision.
