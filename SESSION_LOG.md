@@ -2432,3 +2432,31 @@ The Composer wrote: *"Auditorium on the pages of knowledge center need to be upd
 **Twice the turn was cut and he typed "Réessayer".** Each time the work resumed from the branch and the scratch files, which is the argument for pushing a branch before asking anything.
 
 **Open, not worked:** `#199` (GE-Tower, 20:49), four pieces to move from a Composer's Key into the library and a stale model name in the Fortissimo entry. Two findings from PR #200: `protocols/presentation.md` carries a persona colour table whose values differ from `protocols/persona-map.md`, and the widget's coloured edge has three colours for a four-level scale.
+
+## 2026-10-07 — End Day GE (Library)
+
+**Played across 6–7 October:**
+- **GitHub #67:** `tools/amazon-quick.md`, written from four readings (#194, #195), with three rulings recorded (#196).
+- **An Auditorium on the pages that need updating**, and its Program 01, 06, 07, 08: the mirror fault filed (`jkosvr-tower#90`), two Figma sources repaired (#198), the presentation pages and the Auditorium widget aligned (#200).
+- **#197 closed.** The four contradictions GE-Tower read are settled, and the order of authority is core line 7 in `start.md`.
+- **#185 closed.** The library's side was done: rule 6 since 2026-10-02, the checklist's exemption since #200.
+
+**Ranked, only what this session touched** (shown to him before the close, with buttons; he chose End Day):
+
+| # | Action | Recommendation |
+|---|---|---|
+| 01 📤 | Public copy frozen since 2 October (`jkosvr-tower#90`), 11 commits behind at 00:03 on 8 October | With the Tower; it may need the Composer's admin hand on the forge's mirror settings |
+| 02 ⚡ | `#199`: three pages to write so a Key can shrink, and a stale model name in Fortissimo | One pass, in a fresh session |
+| 03 👁️ | `#201`, the eight rows not played: three are the Composer's calls | Rule on them in one sitting |
+| 04 🕝 | Sixteen cited addresses show a challenge page to any script | They wait for a person's browser |
+
+⚡ do now · 👁️ yours to judge · 📤 delegate · 🕝 postpone · ♻️ recycle
+
+**No-loss check:**
+- The eight unplayed rows, the sixteen unread addresses and the two findings left open in #200 have a home in `#201`.
+- What the Amazon Quick page left for its re-audit had none: the rule kept proposed, the lever question, the missing independent trap test. It is now `#202`, dated 2026-11-05, because nothing here reads a page's clock.
+- `#199` was filed by GE-Tower and is untouched except its item 4, done as core line 7.
+- Board: two Done cards (Amazon Quick; the Program), and `#199`, `#201` and `#202` carded in *Ready*.
+- A memory kept for this instance: an issue number from the Composer is looked up on the public tracker, then on the forge, before anywhere else.
+
+**Not done, said plainly:** nothing merged since 2 October is on the public copy. The room watch is off, on his word.
