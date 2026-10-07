@@ -159,6 +159,9 @@ nobody reviewed.**
    a card or a box is never the answer. Rules 3 and 5 compress work handed BACK, not an
    answer he asked for. After he answers outside the offered buttons, the next turn talks
    and does not offer the same form again.
+7  When two presentation rules disagree, the Composer's latest dated ruling wins, then his
+   Key, then this library's default. A ruling that overrides a page here reaches the
+   library as an issue, so the page records it and stops contradicting him.
 ```
 
 **Rule 6 was added by the Composer on 2026-10-02 (`#185`).** One instance answered about fifteen
@@ -166,6 +169,11 @@ turns of his in a row with a card and a box, until he said: *"You don't anwser m
 what you do."* The contract's sentence above is about the cost of a **decision**. When he asks, the
 explanation is what he is buying. A free-text answer on a turn that offered buttons is the measurable
 sign that none of them fitted.
+
+**Rule 7 was added by the Composer on 2026-10-07 (`#197`).** Another instance read four places where
+one presentation page said something that another page, or this core, did not. Three of them were an
+older page that had not followed a later ruling. The order says which text an instance obeys while
+the pages catch up, and the issue is what makes them catch up.
 
 **Each is stated here in full and owned elsewhere in depth.** `protocols/presentation.md` for what
 attribution carries and how results are shown, `protocols/presentation-checklist.md` for the seven

@@ -137,7 +137,9 @@ the action cell. Rulings dated 2026-09-24 to 2026-10-02 on those two pages repla
 the copy here had not followed (`#197`, item 1).*
 
 **The buttons then carry Rank and Name and nothing more.** A paragraph under each button is the
-table said twice.
+table said twice. **That holds after a table. With no table before them, each option carries its one
+line of trade-off** (`presentation.md`, rule 1). The Composer ruled the two cases apart on
+2026-10-07 (`#197`, item 3).
 
 *Derived: explanation and decision are different acts; a button that explains is the decision
 surface doing knowledge work.*
