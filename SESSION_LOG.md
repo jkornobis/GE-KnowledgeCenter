@@ -2398,3 +2398,37 @@ Not done: no hand of this library touched the product, no trap test has been run
 **2026-10-06 16:4x, the page was stale within the hour.** A third comment reached GitHub #67 after the merge: the desktop addendum again, now with two rounds of trap questions (18 questions, nothing invented, three partial answers) and the rule reworded. The read-before-report check stopped my closing comment and that is how I saw it. The page's "no trap test has been run" became "no independent trap test": examiner and answerer were the same product, by the report's own account. The chapter above keeps its original sentence; this line corrects it.
 
 **2026-10-06 17:3x, three rulings on the Amazon Quick close-out (Composer, by button).** The rule on `tools/amazon-quick.md` **stays proposed**; he did not accept it as standing. No lever for a second model route enters `tools/register.md` yet; it is looked at again at the page's re-audit. The public copy is left to the mirror's schedule: at 17:27 GitHub was still on the 2026-10-02 head, and if it is still behind on 2026-10-07 that is filed on the tower's tracker as a mirror fault. A fifth comment reached GitHub #67 at 17:26; it is byte-identical to the 16:33 one already folded in, so the page did not change. The room watch reached its two-hour limit and is left off on his word.
+
+## 2026-10-07 — an Auditorium on the pages that need updating; Program 01, 06, 07, 08 played; core rule 7
+
+The Composer wrote: *"Auditorium on the pages of knowledge center need to be updated."* I read it as the trigger and said that the other reading, the Auditorium's own description being stale, was row 07. Every figure was measured that night.
+
+| Rank | Chair | Idea |
+|---|---|---|
+| 01 ▰▰▰ ⚡ | 📶 Reliability Engineer | The public copy has not moved since 2 October: GitHub is 6 commits behind Forgejo. File the mirror fault on the tower's tracker. |
+| 02 ▰▰▰ 📤 | 💻 Software Engineer | Nothing here reads a page's re-audit line. Ask the Workshop to point its freshness checker at this directory. |
+| 03 ▰▰▱ ⚡ | 🔍 User Researcher | Nine tool pages are past their own clock (zod 42 days, i18next 37, playwright 34, vitest 32, style-dictionary 30, tokens-studio 27, storybook 11, sigstore-cosign 5, wekan 2), and the register's sweep was due on 4 October. Work the debt, most overdue first. |
+| 04 ▰▰▱ 👁️ | 🧭 Product Owner | Seven of those nine clocks are 15 days or less. Set a floor, or accept those pages as overdue by declaration. |
+| 05 ▰▰▱ 👁️ | 🎨 UX Designer | UX Designer and Design Engineer have no reference page; ten chairs do. Write them, or rule that the lever indexes are their reference. |
+| 06 ▰▰▱ ⚡ | ☑️ QA Engineer | The outward sweep: 337 addresses answer, 3 are missing, two of them sources of the Figma product-surface page. Repair those, and open the refused ones in a browser. |
+| 07 ▰▱▱ ⚡ | 🔀 Agile Facilitator | Four pages describe the Auditorium as it was before 29 September. Point each at the canonical page. |
+| 08 ▰▱▱ ⚡ | ♿ Accessibility Specialist | The Auditorium widget writes the level as a coloured word; the chat format writes bars. Bring the widget to bars and glyph. |
+| 09 ▰▱▱ 👁️ | 👂 Agile Auditor | Seventeen observations sit in the index as "not yet decided", the oldest five weeks old. Rule on them in one sitting, or have each filed. |
+| 10 ▰▱▱ ⚡ | 🔗 Design Engineer | Tokens Studio states a 15-day clock in its header and 60 in its body; Style Dictionary is 30 days overdue. Re-audit the chain as one pass. |
+| 11 ▱▱▱ ⚡ | 📐 Software Architect | Two pages carry an audit date and no clock, and the register carries neither. Write the basis "not applicable, no release surface" where it fits. |
+| 12 ▱▱▱ ⚡ | ✏️ Content Designer | Three index rows no longer carry their page's own description, and two descriptions cover only part of their page. |
+
+⚡ do now · 👁️ yours to judge · 📤 delegate · 🕝 postpone · ♻️ recycle
+▰▰▰ Structural · ▰▰▱ High · ▰▱▱ Medium · ▱▱▱ Low
+
+**He chose the recommended Program: 01, 06, 07, 08.** The other eight rows are postponed, in one issue on this tracker.
+
+- **01.** Filed as `jkosvr-tower#90`. On 2026-10-07 at 20:50 the public copy was still on the 2 October head, and the issue had no answer.
+- **06.** PR #198. One Figma source had been renamed and still says what it is cited for. The other was removed, and the source now points at the archive's copy of 2026-09-26. A sentence on AI credits is dated, because neither source it names carries it any longer. **A count of mine was wrong in the table:** the sweep's total of refused addresses is 22, and 19 is only the 403s. Of those 19, 3 opened in a plain headless browser and 16 showed a challenge page. None was worked around.
+- **07 and 08.** PR #200, with the settled half of `#197` (GE-Tower, same day): the checklist no longer fixes four columns, counts six endings, and exempts an answer he asked for. He accepted the widget's new rank cell from a render attached to the PR.
+
+**Three rulings (Composer, by button, 2026-10-07).** The order of authority between presentation rules is **core line 7** in `start.md`, in the words put to him. What sits beside a button is **two cases**: rank and name after a ranked table, one line of trade-off with no table. The widget's rank cell is accepted.
+
+**Twice the turn was cut and he typed "Réessayer".** Each time the work resumed from the branch and the scratch files, which is the argument for pushing a branch before asking anything.
+
+**Open, not worked:** `#199` (GE-Tower, 20:49), four pieces to move from a Composer's Key into the library and a stale model name in the Fortissimo entry. Two findings from PR #200: `protocols/presentation.md` carries a persona colour table whose values differ from `protocols/persona-map.md`, and the widget's coloured edge has three colours for a four-level scale.
