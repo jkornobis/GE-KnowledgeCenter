@@ -7,16 +7,16 @@ card: tools/figma.md
 serves: [UX Designer, Design Engineer, User Researcher]
 generated: { by: agent:ge-knowledgecenter, at: 2026-10-02T12:30:00+02:00 }
 sources:
-  - resource: https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026
-    title: "What's new from Config 2026"
+  - resource: https://web.archive.org/web/20260926110853/https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026
+    title: "What's new from Config 2026 — the archived copy of 2026-09-26; Figma has since removed the article from its help centre"
   - resource: https://www.figma.com/blog/config-2026-recap/
     title: "Figma Config 2026 recap"
   - resource: https://mantlr.com/blog/free-figma-skills-2026
     title: "Free Figma Skills 2026"
   - resource: https://www.figma.com/blog/agent-custom-tools-context-skills/
     title: "Figma's design agent, now with custom tools and greater context"
-  - resource: https://help.figma.com/hc/en-us/articles/40283639496599-Custom-skills-for-the-Figma-agent-and-Figma-Make
-    title: "Custom skills for the Figma agent and Figma Make"
+  - resource: https://help.figma.com/hc/en-us/articles/40283639496599-Create-and-manage-custom-skills-in-Figma
+    title: "Create and manage custom skills in Figma — the article this page cites as Custom skills…, renamed by Figma and last edited 2026-10-06"
   - resource: https://help.figma.com/hc/en-us/articles/38147204302743-Create-and-use-custom-MCP-connectors-in-the-Figma-agent-and-Figma-Make
     title: "Create and use custom MCP connectors in the Figma agent and Figma Make"
   - resource: https://help.figma.com/hc/en-us/articles/39893099629975-Clear-chat-context-in-Figma-Make
@@ -132,7 +132,7 @@ A minimal single-file probe skill, run on the design surface. The agent's own re
 - **Root cause, named:** a negative result trusted without verifying the test engaged the mechanism. Create, Read and Delete had each been confirmed separately; Update was the one never properly tested, and the cheapest all along.
 - **`Export` produces a real `.md` download** (confirmed by the Composer 2026-07-16) — a browser automation saw nothing because an OS file-save is invisible to it by construction. **Export is a genuine read-back / drift-check path** for what is live in Figma. `Publish` changes sharing scope and stays the Composer's click.
 - **Account-scoped, but not self-assembling.** Uploaded skills are reachable from any new chat. Each chunk triggers off its own description; continuation chunks with generic descriptions have no topical hook. **Open a new chat by naming the system or a trigger once.** Not proven to self-assemble in a conversation that never references it.
-- **No per-chat dismiss.** **Disable skill** (Skills → Manage skills) is **account-wide**, both the design-file agent and Make. **Clear chat context** is **Figma Make–only**, wipes the conversation, and is not skill-scoped. **Start a new chat for unrelated work.** Figma stated no AI credits are consumed during the beta; usage-based billing is flagged as eventual. Sources: *Custom skills…*, *Clear chat context…*
+- **No per-chat dismiss.** **Disable skill** (Skills → Manage skills) is **account-wide**, both the design-file agent and Make. **Clear chat context** is **Figma Make–only**, wipes the conversation, and is not skill-scoped. **Start a new chat for unrelated work.** Figma stated no AI credits are consumed during the beta; usage-based billing is flagged as eventual. Sources: *Custom skills…*, *Clear chat context…* *(Sources re-read 2026-10-07: neither says this any longer. The custom-skills article, edited 2026-10-06, mentions neither credits nor a beta, and Clear chat context says a prompt can consume credits. Read the no-credits statement as true of the audit date only.)*
 
 ### The Skills UI driven end to end (2026-08-03, Claude in Chrome)
 
