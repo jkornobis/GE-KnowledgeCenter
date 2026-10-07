@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "The pre-send gate — one logic, seven derived checks"
-description: "The message costs the Composer the decision and nothing else; everything behind it is record. Seven checks derive from that one logic — determinable or his, attributed, actionable, ended in one of five shapes, opposed with the steelman first, counted, and named once — plus the three acts that separate admitting an error from telling it, and the quorum that decides what is worth surfacing at all"
+description: "The message costs the Composer the decision and nothing else; everything behind it is record. Seven checks derive from that one logic — determinable or his, attributed, actionable, ended in one of six shapes, opposed with the steelman first, counted, and named once — plus the three acts that separate admitting an error from telling it, and the quorum that decides what is worth surfacing at all"
 status: draft
 serves_all: true
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-07T11:40:00+02:00 }
@@ -127,9 +127,14 @@ Open-ended goes to plain text; ordering many items goes to a numbered list, not 
 ### 4 · The table explains, the buttons only choose
 
 *"Question is about decision, explanation is knowledge management before that question."* The table
-before the question carries four columns and always these: **Rank · Name · What · Why** — the glyph
-leading the action cell, never a column of its own, which renders wide and empty-headed. Reference
-links sit inside the action's cell, on their own line, flush.
+before the question explains. **Its shape is no longer specified here.** `method/ranking.md` holds
+the ranked table: the number joined to the glyph in the first cell, `01 ⚡`, so the action cell
+starts with words. `protocols/triggers.md` holds the Auditorium's: Rank · Chair · Idea, with bars.
+Reference links sit inside the action's cell, on their own line, flush.
+
+*Until 2026-10-07 this check fixed four columns, Rank · Name · What · Why, with the glyph leading
+the action cell. Rulings dated 2026-09-24 to 2026-10-02 on those two pages replaced that shape, and
+the copy here had not followed (`#197`, item 1).*
 
 **The buttons then carry Rank and Name and nothing more.** A paragraph under each button is the
 table said twice.
@@ -145,7 +150,7 @@ reader must reconcile before choosing.
 
 *Derived: reconciliation is work behind the decision, and it never shows in a line count.*
 
-### 6 · The turn ends in one of five shapes
+### 6 · The turn ends in one of six shapes
 
 Check in order; the first that applies is the ending, and the order is the point.
 
@@ -159,6 +164,9 @@ Check in order; the first that applies is the ending, and the order is the point
    verification step and why that check is his.
 5. **Not enough to act on** → a Definition of Use Case: the actor, the goal, what would make it
    done. Do not guess and do not scatter clarifying questions.
+6. **The day is closed** → the turn that completes `End Day GE` states the close and offers nothing
+   after it (the Composer, 2026-09-30). **`protocols/endings.md` holds the list**; this check said
+   five until 2026-10-07.
 
 *Derived: any other ending — a summary, a status, a next-step offer — leaves the next move undefined
 and hands him the job of defining it.*
@@ -174,6 +182,10 @@ answer to that is to finish reading.
 **Count what renders**, not what was written: a wrapped line is a line, a table row is a line. **Code
 blocks, tables and artifacts are not counted** — the gate is on the prose around an artifact. **A
 `Tell` suspends it entirely.**
+
+**So does a question from the Composer.** The count is on work handed back. An answer he asked for
+is given first, in full sentences, with its reasoning (core rule 6, `start.md` §4, added 2026-10-02).
+This check predates that rule and capped every turn alike until 2026-10-07 (`#197`, item 4).
 
 **Over twelve: do not trim evenly. Find the account of how you got there and delete it.** That
 passage is what overflows in nearly every case, and it is the one thing ruled to have no place in a
@@ -198,10 +210,10 @@ weight**, because the twelve are one model and correlated voters do not add up.
 1  determinable, or his?              decide and act, or buttons
 2  every speaking voice has a line?   positions, not attendance
 3  options are buttons + verdicts?    persisted in text beside them
-4  ranked table -> question?          Rank / Name / What / Why, then Rank + Name only
+4  ranked table -> question?          shape from method/ranking.md, then Rank + Name only
 5  one name per action?               verbatim, everywhere
-6  ends in one of the five shapes?    in order, first match wins
-7  twelve rendered lines or fewer?    over: cut the account, not the content
+6  ends in one of the six shapes?     in order, first match wins
+7  twelve rendered lines or fewer?    work handed back only; over: cut the account
 8  any correction in here?            record it; tell only if it moves a live decision
 ```
 
@@ -235,7 +247,8 @@ Anything that must hold without fail belongs in a hook, and a hook is being aske
 `protocols/presentation.md` frames depth as a per-Composer default. For this one thing that framing
 is on the wrong side of the line. **Transposable: which surface, which density, which language. Not
 transposable: whether the answer is short.** Concision is a property of serving an executive, and
-every Composer is one.
+every Composer is one. **Short means the hand-back.** A question he asks is not one, and its answer
+is not counted (core rule 6).
 
 **Which glyphs rank an action, and what they mean, is the Composer's Score Key, not this page.** The
 mechanism is shared; the vocabulary is theirs. A page hardcoding one Composer's set would be the

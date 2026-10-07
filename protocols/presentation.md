@@ -57,7 +57,7 @@ Buttons are not the only "show" — they're one surface, for one shape. The clic
 | See a design / visual result | Rendered inline visual |
 | Open-ended | Plain text |
 
-The **Auditorium / Note Picker** (ADR-197) is the canonical example of the third row: up to 12 items, ordered descending by impact, acted on by ordering (free Program). Never try to shrink it into buttons.
+The **Auditorium / Note Picker** (ADR-197) is the canonical example of the *order many items* row: up to 12 items, ordered descending by impact, acted on by ordering. **The twelve rows are never shrunk into buttons. What the buttons carry, since 2026-09-29, is the recommended Program that closes the message** (`protocols/triggers.md`, *Auditorium*); any other order is still typed.
 
 ## When the reader did not ask — a broadcast surface, and the first paragraph is load-bearing
 
@@ -113,7 +113,7 @@ Auditorium and Program are already "show" surfaces — numbered, ranked (descend
 ⚠️ **One thing on this page is not transposable, and this section used to imply it was.** Which
 surface, which density, which language — all a Composer's to set. **Whether the answer is short is
 not**: concision is a property of serving an executive, and every Composer is one. The counted form
-lives in `presentation-checklist.md` and no key overrides it (2026-09-07).
+lives in `presentation-checklist.md` and no key overrides it (2026-09-07). **It is a rule about work handed back.** A question he asks is answered in full, with the reasoning (core rule 6, `start.md` §4, 2026-10-02).
 
 The rules above are *defaults*. Each Composer transposes them into their own **key** via `Change Score Key` — decision UI, show depth, tell-access, results-table defaults (density/columns), didactic level, language, and **time management** (none / ambient — see `time.md`). Preferences persist in the Score Key section of their Composer Key; the shared system stays fixed, only the rendering changes per person. Read the active Score Key at session start and honor it over these defaults.
 
@@ -157,14 +157,14 @@ Agents and results render as **cards** via the visualize/`show_widget` tool wher
 
 Subtitle rule: a **noun phrase naming the field** — sentence case, `&` for compounds, no verbs, 1–3 words, each distinct. It is the second line of the speech/identity card, under the musician's name.
 
-Colors are assigned by domain proximity (families share a hue). Emoji were rejected in favor of Material outlined icons (Composer preference).
+Colors are assigned by domain proximity (families share a hue). **In widgets**, emoji were rejected in favor of Material outlined icons (Composer preference). **Attribution is markdown and never a widget** (above), and an attribution line takes the emoji column of `protocols/persona-map.md`. One icon language per surface, so the two do not conflict; this sentence read as if they did until 2026-10-07 (`#197`, item 2).
 
 **Interactive result tables — Note Picker and its static twin Auditorium (ADR-197, 2026-07-27, supersedes the Pivot table and the Roadmap-note picker as two separate templates)** render as widgets with:
 - **Priority as a colored left edge + word** — gold `#FFAE41` critical, Royal blue `#004AAC` impactful, grey `#888780` recommended (descending). The word rides beside the edge so priority is never conveyed by **color alone** (WCAG 1.4.1) — screen-reader and colorblind safe.
 - **Impact and effort stack as one badge, top-right of each row** — not a second row under the description. Effort has its own arrow + colour scale (➡️ low / ↗️ medium / ⏫ high) in green/amber/red, distinct from impact's gold/blue/grey so the two axes never read as one measurement. The effort colours are a first pass, not yet CI-contrast-verified like the tier words above.
 - **What before Why** — the title leads, the one-line description follows, full row width now that effort moved out of its way.
 - **Selection is the single adopt path — only when there's a real action to adopt (Chair Review, 2026-07-04).** Checkbox multi-select + select-all (indeterminate state), whole-row click to toggle, selected rows tinted (`--bg-accent`); a bulk bar surfaces "Adopt selected as Program" and sends the pick back via `sendPrompt`. **No per-row add button** — the checkbox already *is* the adopt affordance. **Drag-to-reorder (new, 2026-07-27):** a grip on each row; dropping it renumbers every row live, so adopted rows send in whatever order they're currently sitting in, not the original data order.
-- **Auditorium renders the identical body with every interactive affordance stripped** — no grip, checkbox, select-all, effort badge, or adopt button, no `<script>`. It is single-shot and self-closing (`triggers.md`): the Composer acts on its numbers by *typing* `Program: n, m`, never by clicking, so nothing on the surface needs to respond to one. **This is a per-table judgment call, never automatic** — a reference table with no adoptable action doesn't grow controls it can't back.
+- **Auditorium renders the identical body with every interactive affordance stripped** — no grip, checkbox, select-all, effort badge, or adopt button, no `<script>`. It is single-shot and self-closing (`triggers.md`): **the widget itself carries no control.** The Composer acts in the buttons that close the message, which offer the recommended Program (ruled 2026-09-29), or by typing `Program: n, m`, so nothing on the widget's surface needs to respond to a click. **Its rank cell reads number, bars, glyph, as in chat**, and not the coloured word the Note Picker uses (`protocols/widget-templates.md`). **This is a per-table judgment call, never automatic** — a reference table with no adoptable action doesn't grow controls it can't back.
 - Sortable headers (`unfold_more` → directional arrow; priority sorts critical-first), a **clearable** live filter (✕ appears when filled), an empty state, and keyboard focus rings.
 - **Default sort direction — descending, everywhere, no exception (Composer standing rule, 2026-07-05, ADR-102).** Every table sorts **descending** by its primary ranked dimension — most-significant first (impact / value / priority highest first; dates most-recent first; a bare name/label column descending too). This replaces the earlier mixed default (name columns A→Z, the Auditorium ascending). Nothing is ascending by default anymore.
 - Icons are **Material Symbols throughout** — one icon language.

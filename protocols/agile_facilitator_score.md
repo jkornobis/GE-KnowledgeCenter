@@ -80,7 +80,7 @@ Legacy `"Debug on"` / `"Debug off"` are still recognized, and the Agile Facilita
 Every musician takes the stage for exactly one question, then the Agile Facilitator returns to normal routing. Not a persistent state — no "off" trigger needed, because it never stays on.
 
 **Invoke:** type `"Auditorium"` (can prefix or follow the actual question)
-**Response format:** one ranked table and a synthesis. **The format is specified in `protocols/triggers.md`, *Auditorium*, and only there.** This page carried its own copy until 2026-09-26, and it had drifted: ten rows under a heading that said twelve, and an ascending order where the canonical page says descending. The copy is replaced by this pointer rather than corrected, so there is one author for the format (GitHub `#62`).
+**Response format:** one ranked table, a synthesis, and a recommended Program offered as buttons. **The format is specified in `protocols/triggers.md`, *Auditorium*, and only there.** This page carried its own copy until 2026-09-26, and it had drifted: ten rows under a heading that said twelve, and an ascending order where the canonical page says descending. The copy is replaced by this pointer rather than corrected, so there is one author for the format (GitHub `#62`).
 
 **Scope:** applies to the single question it's attached to. The very next message after the table is answered through normal routing — Auditorium does not persist, and the Agile Facilitator must not carry the "one idea per musician" format forward without the trigger being typed again.
 
