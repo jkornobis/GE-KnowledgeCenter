@@ -2464,3 +2464,11 @@ The Composer wrote: *"Auditorium on the pages of knowledge center need to be upd
 ## 2026-10-08 — #204: the consent gate gains one named exception, the tuner
 
 GE-Workshop asked for a review by session message, relaying the Composer. The ruling had reached this library through another instance, so it was put to him here before anything was written; he confirmed it by button, with three bounds added by this review. `protocols/orchestra-protocols.md` now carries the exception after the gate: one agent, grounded in its being read-only and not in the half-cent figure of a single run; the caller names the sources and never a credential path, because the agent's reading tools have no path limit and it skips the instruction files; and the harness may still prompt. `tools/mcp-and-subagents.md` carries three facts on subagent definitions, marked as reported except the measured start size.
+
+**2026-10-08 14:36, checkpoint (Composer's word).** State of this instance, for whoever opens the next session:
+
+- **Closed today:** #204, the tuner exception, PR #205. Its chapter is the one above.
+- **Open on this tracker, six:** #49, #166, #171, #199 (four pieces to move from a Key into the library), #201 (the eight Auditorium rows not played, three of them the Composer's calls), #202 (what waits for the Amazon Quick re-audit of 2026-11-05).
+- **The public copy is still frozen:** GitHub main is 0821a27, the forge is 62add3f, 15 commits apart. It sits with the Tower on its issue 90, unanswered since 2026-10-07 16:17.
+- **The room watch is off**, on his word of 2026-10-06. Nothing posted in the rooms reaches this instance.
+- **No branch is open and nothing is uncommitted.**
