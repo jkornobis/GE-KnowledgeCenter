@@ -2460,3 +2460,7 @@ The Composer wrote: *"Auditorium on the pages of knowledge center need to be upd
 - A memory kept for this instance: an issue number from the Composer is looked up on the public tracker, then on the forge, before anywhere else.
 
 **Not done, said plainly:** nothing merged since 2 October is on the public copy. The room watch is off, on his word.
+
+## 2026-10-08 — #204: the consent gate gains one named exception, the tuner
+
+GE-Workshop asked for a review by session message, relaying the Composer. The ruling had reached this library through another instance, so it was put to him here before anything was written; he confirmed it by button, with three bounds added by this review. `protocols/orchestra-protocols.md` now carries the exception after the gate: one agent, grounded in its being read-only and not in the half-cent figure of a single run; the caller names the sources and never a credential path, because the agent's reading tools have no path limit and it skips the instruction files; and the harness may still prompt. `tools/mcp-and-subagents.md` carries three facts on subagent definitions, marked as reported except the measured start size.
