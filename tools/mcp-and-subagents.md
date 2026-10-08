@@ -51,3 +51,13 @@ The first is a **reasoning-limit boundary**; the second and third are **tool lim
 - **Agile Facilitator — before reporting any capability as absent, check whether a different registration of the same product is answering.** This estate has now paid for that lesson once, in full. — status: **proposed**
 - **Agile Facilitator — record the parameter shape when introspecting a new server**; it identifies the route more reliably than the server's name does. — status: proposed
 - **Agile Auditor — the spawned-subagent-plus-ledger combination is written down and still not built.** `tools_lineage_full.md` lists this chair's waiting implementation as *"fires itself"*, and this page is where the mechanism is now described. — status: proposed
+
+## Subagent definitions — three facts, 2026-10-08
+
+Reported by another instance of this estate from the vendor's documentation (`https://code.claude.com/docs/en/sub-agents`), **not re-read by this library**, except where a line says *measured*.
+
+- **A subagent definition is a file.** Placed at user level, every repository on the machine sees it. *Reported.*
+- **A definition can skip the instruction files, and that is most of its start size.** *Measured by that instance, one run, 2026-10-08:* a definition that skips them started at 16,565 tokens, against 43,029 for a session that loads them. The same run showed that **hooks still reach such an agent**: skipping instruction files does not skip hooks.
+- **Definitions load at session start.** One written mid-session cannot be summoned until the next session. *Reported, and met in that run as an agent type not found.*
+
+What a standing permission to summon one such agent looks like, and its limits, is in `protocols/orchestra-protocols.md`, *Spawn & load-balancing pivot*.

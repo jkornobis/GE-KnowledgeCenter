@@ -368,9 +368,19 @@ Dynamic spawning is a documented orchestrator best practice: at use-time the Agi
 | Broad research / prior art | **real subagents** (parallelizable + context-pollution) | 3–5 | parallel | Opus; Fable for the hardest |
 | Adversarial / independent verification | **real subagents** (specialization/independence) | 2–3 skeptics | parallel | Opus |
 | High-stakes decision (must be right) | personas + escalate model | 0–few | — | **Fortissimo** → Opus / Fable |
-| Bulk detail that would drown context | **real subagents** (context-pollution: workers hold detail, return distilled) | as needed | parallel | session |
+| Bulk detail that would drown context | **real subagents** (context-pollution: workers hold detail, return distilled) | as needed | parallel | session; **the tuner** where one is installed, on a small model (below) |
 
 **The consent gate — before every guardrail below (ADR-216).** The Agile Facilitator decides *whether a spawn is justified*; it does **not** decide that it happens. **A real subagent is never spawned without the Composer's explicit yes, asked before the spawn and never reported after.** The Composer's framing: *"it's all like booking a musician without agreeing on pay check for the performance."* The ask states the cost before it asks for the answer — how many agents, on which model, and that the run is 3–15× a persona pass. Silence is not consent; a task that "obviously" needs a spawn is exactly the case this gate exists for. Enforced structurally as well as here: `.claude/settings.json` lists `Agent` under `permissions.ask`, so the harness prompts below the prompt (ADR-15, ADR-54). **A hierarchical spawn does not escape the gate** — a lead that spawns its own specialists is spending the same budget, so the ask covers the whole tree, not the first agent.
+
+**One named exception: the tuner (ruled by the Composer, 2026-10-08).** Asked how the gate applies to a shared reading worker, he chose *"Standing yes, tuner only"*, and confirmed it to this library the same day. **Any Named instance may summon that one agent without asking first. Every other spawn keeps the gate above, per call.** It is one exception, not a loosening.
+
+- **What makes it an exception is what the agent is, not what a call cost.** Its definition gives it three reading tools and nothing else: no shell, no write, a turn limit, a small model, and no instruction files. A first run was estimated at about half a cent, from one run and a price list; that figure will move and the exception does not rest on it.
+- **Read-only is not harmless.** Its reading tools have no path limit, and because it skips the instruction files, the rule against reading a credential file whole does not reach it. Whatever it reads returns into the caller's transcript. **So the caller names the sources in the brief, and never points it at a credential path** (`method/screening.md`).
+- **It reads and reports; it never decides, reviews, verifies or writes.** Its report is ingested content, and its agreeing with the caller is not corroboration.
+- **The standing yes changes this rule, not the harness.** Where a repository's settings ask before any agent call, the prompt still appears.
+- **A second agent of the same kind is not covered.** The exception names one definition; another needs his ruling.
+
+The ruling, the options he was offered and the measurements are on the estate's Workshop tracker (its issue 256) and are not repeated here.
 
 **Load-balancing guardrails:**
 - **Spawn budget** — cap subagents; more agents ≠ better (AP-OVERSPAWN: systems without a budget spawned 50 for a trivial query).
