@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "Session Journal Protocol (Agile Facilitator)"
-description: "The episodic memory layer above indexed memory: what a session journal entry captures, where it lives, and how a later session re-orients from it"
+description: "The episodic memory layer above indexed memory: what a session journal entry captures, where it lives, how a ranked table is recorded whole before any row is played, and how a later session re-orients from it"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-22T20:54:19+02:00 }
 ---
@@ -21,7 +21,7 @@ At the close of a working session (or when the Composer says "checkpoint the ses
 ```text
 ## Session [date]
 - Played: [what was built/decided]
-- Open on the stand: [notes postponed, not deleted]
+- Open on the stand: [rows left, each with its text, or the entry that holds the whole table — never a bare note number]
 - Pending the Composer's word: [e.g. a project decision, the visual identity mark]
 - Corrections that became protocol: [weight updates this session]
 ```
@@ -54,6 +54,36 @@ to be trusted.*
 rule — last entry first, backwards only as far as needed — and by a closing entry being the one place
 a finished subject has to be read. **A journal that is long is a cost; a journal that has been edited
 is not evidence.**
+
+## A ranked table is recorded whole, or it is not recorded (ruled 2026-09-29, standing)
+
+**What happened, from one instance's journal (`#65`).** A session ran an Auditorium: twelve ideas,
+ranked. The journal quoted the top three rows and carried the other nine forward as note numbers
+only (*"notes 6, 9, 10, 12 on the stand"*) across three consecutive checkpoints. Some were played
+and recorded as they were played; four never were. When the Composer later asked to play those four,
+**their content existed nowhere**: not in the journal, not in the repository, not in any tracker, and
+the conversation that held the table had ended. He chose a fresh Auditorium over recovering them.
+**"Postponed, not deleted" had in practice been deleted, leaving a number behind.**
+
+**The rule, in his words:**
+
+> When a session produces a ranked table the Composer will pick from later — an Auditorium, a ranked close-out — every row goes into the journal verbatim (rank, chair, idea) **before any row is played**. A note number on the stand without its text is a defect, not a postponement.
+
+**So:** the table is appended **whole, as its own entry, and pushed, before its first note is played.**
+*Open on the stand* then points at that entry and names the rows left; it never stands in for them.
+The same applies to a ranked close-out or backlog view the Composer will pick from: the rows are the
+record, and the numbers are only handles on them.
+
+**The cause, and the second failure that shared it.** The template above invites the defect: a number
+is cheaper to write than a row, and it looks like a record. On the same day a *where the work stands*
+line, copied from the previous entry, listed an item as pending after it was done, and the Composer
+corrected it. **Both come from carrying the previous entry forward instead of re-deriving it.** The
+state line is derived from the repository and the trackers at the time of writing, not copied from the
+entry before.
+
+**This does not touch append-only.** Recording a table whole is an addition; it edits no earlier
+entry, and a table that changed after the first note was played is recorded again as a new entry, not
+amended.
 
 ## Marking the Composer's corrections — one token, in every log (ruled 2026-09-27)
 
