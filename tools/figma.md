@@ -33,7 +33,7 @@ not partial.
 |---|---|---|
 | mutating, inspecting, or building on the Figma canvas via the Plugin API | [`figma-method.md`](figma-method.md) | live-verified, claim by claim |
 | calling the **remote** MCP server — `fileKey` + `nodeId` | [`figma-mcp-remote.md`](figma-mcp-remote.md) | **working**, re-audited 2026-09-22 — 37 tools, Generative Plugins now a full family; **2026-10-24 documentation read only (41 documented, code layers and image generation among them): live recount owed** |
-| calling the **desktop** MCP server — selection-scoped, no parameters | [`figma-mcp-desktop.md`](figma-mcp-desktop.md) | **out of scope by design** — loopback-scoped to the machine running Figma's desktop app; this estate runs on the tower, the remote server already covers it |
+| calling the **desktop** MCP server — current selection by default, no `fileKey` | [`figma-mcp-desktop.md`](figma-mcp-desktop.md) | **working from the Composer's own machine**, live-audited 2026-10-24 — 10 tools, two reads verified, writes not called; **still unreachable from the tower** (loopback-scoped) |
 | the product surface — Skills UI, plugins, connectors, driven by eyes and hands | [`figma-surface.md`](figma-surface.md) | **partial**, probes 1 and 3 run 2026-10-02 on one tenant, probe 4 pending; **code layers (open beta 2026-10-15) and the generally available agent added 2026-10-24 from Figma's pages, read not probed**. Adopted 2026-10-02 and **rewritten for this library** (`#189`): it was kept home because it named an employer's systems, and the rewrite removes them |
 | reviewing a multi-screen design system, or judging when it's too early to | [`../method/design-review.md`](../method/design-review.md) | recorded from a source document, screened, **not independently verified** |
 | a surface where an assistant proposes actions between a person and a process | [`../method/ai-assistant-patterns.md`](../method/ai-assistant-patterns.md) | recorded, the Composer's own rulings on one product — **not tested on a second** |
@@ -52,6 +52,10 @@ apart by their parameter shape and nothing else.
 | `mcp__Figma__*` | **7 tools, all with `"properties": {}`** — no parameters at all | the **desktop** connection: it operates on the *current selection*, which is why it needs no `fileKey`/`nodeId` |
 | `mcp__plugin_figma_figma__*` | large set, **`fileKey` + `nodeId` required** | the **remote** server |
 | `mcp__0b22ab40-…__*` | same large set, same required params | a second remote instance |
+
+**Superseded for the desktop row, 2026-10-24:** measured live, `mcp__Figma__*` is now **10 tools,
+none with a `fileKey`**, five of them declaring an optional `nodeId` — so *"no parameters"* is no
+longer the tell; *no `fileKey`* is. Details on [`figma-mcp-desktop.md`](figma-mcp-desktop.md), sixth pass.
 
 **This changes a claim the page made from documentation.** It recorded *"write-to-canvas is remote-server-only … confirming we're on the supported remote server, not the desktop bridge."* **Both are present simultaneously**, and the parameter shape is how you tell them apart at a glance — no parameters means desktop-and-selection-scoped.
 
