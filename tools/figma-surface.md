@@ -39,6 +39,14 @@ sources:
     title: "Figma AI design agent explained"
   - resource: https://uxdesign.cc/agentic-ai-design-systems-figma-a-practical-guide-6ab0b681718d
     title: "Agentic AI, design systems and Figma — a practical guide"
+  - resource: https://help.figma.com/hc/en-us/articles/44193259600535-Code-layers-in-Figma-Design
+    title: "Code layers in Figma Design"
+  - resource: https://help.figma.com/hc/en-us/articles/37998629035799-Work-with-the-Figma-agent-in-design-files
+    title: "Work with the Figma agent in design files"
+  - resource: https://www.figma.com/blog/build-by-design/
+    title: "Build by Design: New Workflows for New Ways of Building"
+  - resource: https://releasebot.io/updates/figma
+    title: "Figma release notes, as relayed by Releasebot (secondary)"
 ---
 
 # Tool: Figma — the product surface
@@ -132,7 +140,7 @@ A minimal single-file probe skill, run on the design surface. The agent's own re
 - **Root cause, named:** a negative result trusted without verifying the test engaged the mechanism. Create, Read and Delete had each been confirmed separately; Update was the one never properly tested, and the cheapest all along.
 - **`Export` produces a real `.md` download** (confirmed by the Composer 2026-07-16) — a browser automation saw nothing because an OS file-save is invisible to it by construction. **Export is a genuine read-back / drift-check path** for what is live in Figma. `Publish` changes sharing scope and stays the Composer's click.
 - **Account-scoped, but not self-assembling.** Uploaded skills are reachable from any new chat. Each chunk triggers off its own description; continuation chunks with generic descriptions have no topical hook. **Open a new chat by naming the system or a trigger once.** Not proven to self-assemble in a conversation that never references it.
-- **No per-chat dismiss.** **Disable skill** (Skills → Manage skills) is **account-wide**, both the design-file agent and Make. **Clear chat context** is **Figma Make–only**, wipes the conversation, and is not skill-scoped. **Start a new chat for unrelated work.** Figma stated no AI credits are consumed during the beta; usage-based billing is flagged as eventual. Sources: *Custom skills…*, *Clear chat context…*
+- **No per-chat dismiss.** **Disable skill** (Skills → Manage skills) is **account-wide**, both the design-file agent and Make. **Clear chat context** is **Figma Make–only**, wipes the conversation, and is not skill-scoped. **Start a new chat for unrelated work.** Figma stated no AI credits are consumed during the beta; usage-based billing is flagged as eventual. ~~No credits during the beta.~~ **Superseded 2026-10-24 (sourced, not probed): the agent uses AI credits from 2026-10-06 — see *Code layers and the agent, now shipped*.** Sources: *Custom skills…*, *Clear chat context…*
 
 ### The Skills UI driven end to end (2026-08-03, Claude in Chrome)
 
@@ -210,13 +218,31 @@ Driven via the Browser pane against the Composer's live session — the product 
 
 **Verified:** the connector exists, is offered on this account, and is described as real-time Jira/Compass/Confluence access. **Not verified:** whether `Connect` completes on an enterprise tenant; what it exposes (read? write? which projects?); whether the agent *reasons over* connector data or merely fetches it; whether *Created by you* permits an arbitrary endpoint or only an organisation-published one. **The panel proves availability, not capability.**
 
-## Horizon (2026-07-16): code as material
+## Code layers and the agent, now shipped (sourced 2026-10-24; **read, not probed**)
 
-From the *Config 2026 recap*:
-- **Code layers** — any design layer becomes a live, editable code layer, with **GitHub import** of production code onto the canvas; bidirectional. Announced to ship July 2026.
-- **Code as a design material** beside images and vectors; motion exports as inspectable CSS/JSON/React.
-- **Why it matters:** the canvas becomes a surface the UX Designer, Design Engineer and Software Engineer share. Eyes First applies unchanged — code layers are canvas nodes.
-- **Watch:** whether code layers' GitHub import reaches a GHES install or only `github.com` — the same question the 2026-07-04 finding settled for the Make connector. Re-test when they ship.
+⚠️ **Everything in this section comes from Figma's published pages. None of it was driven on the Composer's tenant, so none of it carries a probe date, and the `Audited` line above did not move for it** (the re-date rule). It replaces the 2026-07-16 *Horizon* section, whose forecast has now met its facts.
+
+**What changed against the forecast.** The 2026-07 text said code layers were *"announced to ship July 2026"*. ~~Announced to ship July 2026.~~ **They did not:** a private beta was announced in June, and the **open beta opened on 2026-10-15, on all plans** (the launch post is dated the 15th; one press report dates it the 14th). The same wave made the **Figma agent generally available**.
+
+| Fact | Source and how firm |
+|---|---|
+| Code layers are in **open beta, all plans**; gradual rollout, so some accounts may not have it yet | Figma help page *Code layers in Figma Design* and the launch post — **first-party** |
+| Five ways in: an empty layer prompted to the agent · **Build selection** on design frames · a page captured with the Chrome extension · **a connected GitHub repo cloned** · **a local folder uploaded** | help page — first-party |
+| Figma **stores the clone**; branches are supported and a pull request can merge changes back to the original repository | help page — first-party |
+| Creating one needs a **Full seat** and edit access to the file | help page — first-party |
+| **AI credits:** creating and editing in a code layer is **free on paid plans through 2026-11-04**; after that every code-layer task uses credits. Other agent work in the same request is not free. The MCP import itself uses no credits | help page — first-party |
+| Imports can take **10 minutes or more** and some projects need changes to run; not every repository works | help page — first-party |
+| The Figma agent is **generally available**; custom skills open to Starter; the agent uses AI credits **from 2026-10-06**; guidelines are markdown rules read on every prompt | Figma's release notes **as relayed by an aggregator** (releasebot) — not read on Figma's own site; the Figma help page for the agent gives no date |
+| **Specs** (a Markdown editor for the team's design language, readable by agents) are in open beta on paid plans; the **MCP** now generates code layers, edits specs and generates images, and 20 partner clients were added | launch post and press — first-party for the list, secondary for the detail |
+| Vector editing, icons, slots and prototyping in the agent are marked *coming soon*; **exporting assets and diagrams are not supported** | agent help page — first-party |
+
+**What this corrects on this page.**
+- *Skills → "no AI credits are consumed during the beta"* (2026-07): **superseded** by the 2026-10-06 start of credit use, if the aggregator's date holds.
+- *Plugins across three surfaces*: the **MCP column stays true**, but the **Browser pane row ("cannot run Plugin-API JS") is not the whole picture** — [issue #68](https://github.com/jkornobis/GE-KnowledgeCenter/issues/68) reports the Plugin API reachable from the page of a design file open in Chrome, reads and writes, driven by an agent that can run JavaScript in the tab. **Evidence only, on one tenant, security points raised on the issue; not adopted here.**
+
+**Still open, and the one the old Horizon asked.** *Does the GitHub import reach a self-hosted GitHub (GHES), or `github.com` only?* Figma's help page says it connects to *"GitHub organizations or accounts"* and **is silent on self-hosted installs.** Silence is not a yes: the 2026-07-04 finding on the Make connector was *no*, and **a capability absent from documentation is not an absent capability** (2026-08-28). Probe it before relying on either answer.
+
+**Why it matters for the room.** The canvas now holds code as a node. Eyes First applies unchanged — a code layer is a canvas node, and what it renders is judged on the image. **Not yet known:** whether the Plugin API (`figma-method.md`) can read or write a code layer's source, and whether the MCP page's tool count moved: the audited 37 predates the new MCP tools (see `figma-mcp-remote.md`; its re-audit is overdue by the calendar).
 
 ## Working method: Eyes First, Code Second (2026-07-16)
 
