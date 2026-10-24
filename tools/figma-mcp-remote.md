@@ -262,6 +262,25 @@ a full MCP surface; another gained write; one previously-verified tool could not
 
 **Resolved the same day, and it is not what this point guessed.** `claude mcp list` on this host shows exactly one Figma entry — this remote connector — and `curl 127.0.0.1:3845` (the desktop server's documented local port) is unreachable from here because this session runs on the tower (`hostname` → `kornobis-srv`), not on the machine running Figma's desktop app. **Not an audit-blocked registration gap — a loopback port that was never going to be reachable from this host.** Full account in `figma-mcp-desktop.md`'s fifth pass, closed there as out of scope: this connector already covers what the estate needs.
 
+## Fourth pass — 2026-10-24, documentation read, **not a live audit**
+
+⚠️ **This pass could not run live and says so first.** The session that wrote it had no `fileKey` connector loaded: only the desktop-shaped tools (no parameters) were present, and the Figma plugin server needed authorisation that no instrument here can give. **So nothing below was called, counted or schema-read on the connector.** It is Figma's own *Tools and prompts* page, read 2026-10-24, set against the 37 recorded above. **The `Audited` line did not move, and the 30-day re-audit (due 2026-10-22) is still owed.**
+
+**What the page documents: 41 tools plus one MCP prompt** (32 in the main index, 9 Weave). That is a count of what Figma *documents*; the number the connector *exposes* to a given client can differ (see point 4 of the third pass, where one documented tool was absent from a session's list).
+
+| What the documentation shows | Against the recorded state |
+|---|---|
+| **Code layers:** `send_code_to_figma` imports a local project as a Make file or a code layer (remote only) | new since 2026-09-22 |
+| **Image generation:** `generate_image` places a generated image in a file; **uses AI credits** (remote only) | new |
+| **Asset and HTML tools:** `download_assets`, `upload_assets`, `html_to_figma` (remote only) | new |
+| **Specs:** no dedicated tool — handled through `use_figma`, in open beta, on plans where Specs is turned on | new capability, no new tool |
+| **Weave:** nine tools; `weave_find_model`, `weave_run_model`, `weave_get_model_run_output` added to the six recorded. Needs a paid standalone Weave account and Weave credits | three more than recorded |
+| **Shaders:** the four kind-specific read tools are **marked deprecated** in favour of `list_shaders` / `get_shader` | confirms the 2026-09-22 refactor |
+| **`create_design_system_rules`** is listed as an **MCP prompt**, not a tool | the pages above counted it as a tool, and the desktop server in this session still exposes it as one |
+| **`generate_figma_design`** is documented again, "remote only; select clients only" | answers point 4 of the third pass: its absence may have been client registration, as that pass guessed |
+
+**Not established, and the reason this is not the re-audit:** which of the documented 41 the connector actually exposes, whether the 37 recorded were a subset of this list, and whether any of the new tools works. A documented tool is a claim by the vendor; the oracle rule from `tools/README.md` still wants a call. **Next, in order:** authorise the Figma plugin server in a session, count the live tools, and run one of the new ones (`send_code_to_figma` is the one that touches code layers).
+
 ### Verified live, 2026-09-22
 
 | Claim | Result |
