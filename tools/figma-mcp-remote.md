@@ -279,6 +279,8 @@ a full MCP surface; another gained write; one previously-verified tool could not
 | **`create_design_system_rules`** is listed as an **MCP prompt**, not a tool | the pages above counted it as a tool, and the desktop server in this session still exposes it as one |
 | **`generate_figma_design`** is documented again, "remote only; select clients only" | answers point 4 of the third pass: its absence may have been client registration, as that pass guessed |
 
+**Two documentation changes beyond the tool list.** (1) The *Seats & rate limits* section above records a hard cap of **6 tool calls a month** for Starter plans and View or Collab seats, taken from the `mcp-server-guide` README in 2026-07. **Figma's current help page on the MCP server does not mention that cap**; it says writing to the canvas outside drafts needs a Full seat, is free during the beta and will become usage-based, and points to a separate *Plans, access, and permissions* article for rate limits. **The README was not re-read, so the 6-a-month figure is neither confirmed nor retired — treat it as unverified.** (2) The same page lists a **`figma-spec` skill** for reading, creating and updating Specs; writing needs the remote server and edit access to the file.
+
 **Not established, and the reason this is not the re-audit:** which of the documented 41 the connector actually exposes, whether the 37 recorded were a subset of this list, and whether any of the new tools works. A documented tool is a claim by the vendor; the oracle rule from `tools/README.md` still wants a call. **Next, in order:** authorise the Figma plugin server in a session, count the live tools, and run one of the new ones (`send_code_to_figma` is the one that touches code layers).
 
 ### Verified live, 2026-09-22
