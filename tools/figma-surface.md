@@ -47,6 +47,8 @@ sources:
     title: "Build by Design: New Workflows for New Ways of Building"
   - resource: https://releasebot.io/updates/figma
     title: "Figma release notes, as relayed by Releasebot (secondary)"
+  - resource: https://www.figma.com/release-notes/
+    title: "Figma product news and release notes"
 ---
 
 # Tool: Figma — the product surface
@@ -232,13 +234,23 @@ Driven via the Browser pane against the Composer's live session — the product 
 | Creating one needs a **Full seat** and edit access to the file | help page — first-party |
 | **AI credits:** creating and editing in a code layer is **free on paid plans through 2026-11-04**; after that every code-layer task uses credits. Other agent work in the same request is not free. The MCP import itself uses no credits | help page — first-party |
 | Imports can take **10 minutes or more** and some projects need changes to run; not every repository works | help page — first-party |
-| The Figma agent is **generally available**; custom skills open to Starter; the agent uses AI credits **from 2026-10-06**; guidelines are markdown rules read on every prompt | Figma's release notes **as relayed by an aggregator** (releasebot) — not read on Figma's own site; the Figma help page for the agent gives no date |
+| The Figma agent is **generally available on 2026-10-06**; custom skills open to Starter; the agent uses AI credits **from that date**; library guidelines are markdown rules; generative plugins went GA the same day | Figma's own release notes, read 2026-10-24 (first-party). The aggregator said the same; the agent help page gives no date. The release-notes page was truncated, so entries of 15–29 Sep were not seen |
 | **Specs** (a Markdown editor for the team's design language, readable by agents) are in open beta on paid plans; the **MCP** now generates code layers, edits specs and generates images, and 20 partner clients were added | launch post and press — first-party for the list, secondary for the detail |
 | Vector editing, icons, slots and prototyping in the agent are marked *coming soon*; **exporting assets and diagrams are not supported** | agent help page — first-party |
 
 **What this corrects on this page.**
-- *Skills → "no AI credits are consumed during the beta"* (2026-07): **superseded** by the 2026-10-06 start of credit use, if the aggregator's date holds.
+- *Skills → "no AI credits are consumed during the beta"* (2026-07): **superseded** by the 2026-10-06 start of credit use (Figma's own release notes).
 - *Plugins across three surfaces*: the **MCP column stays true**, but the **Browser pane row ("cannot run Plugin-API JS") is not the whole picture** — [issue #68](https://github.com/jkornobis/GE-KnowledgeCenter/issues/68) reports the Plugin API reachable from the page of a design file open in Chrome, reads and writes, driven by an agent that can run JavaScript in the tab. **Evidence only, on one tenant, security points raised on the issue; not adopted here.**
+
+### What the documentation says now, against what this page recorded (read 2026-10-24, **not probed**)
+
+| Page said | Figma's pages now say |
+|---|---|
+| *Created by you* connectors: *"whether it permits an arbitrary endpoint or only an organisation-published one"* is **not verified** (Connectors, 2026-08-03) | **Any remote MCP server reachable over HTTPS, public or private; `localhost` and `stdio` are not supported.** Auth: OAuth 2.0 (default), OAuth with client id and secret, custom request headers, or none. Needs a paid plan. Tools that write to an external source are **off by default**, and each tool is set to *Ask to run*, *Always run* or *Never run*. Organisation and Enterprise admins can publish a connector to the organisation, or disable the feature. **Sourced answer to the open question; the probe is still owed** |
+| Skills are a **single Markdown file**, no `scripts/`, `references/` or `assets/` | **Unchanged.** Still one `.md` following the Agent Skills specification; Figma Make accepts standalone files only. The page states **no size limit**, so the 7.5K cap above stays an inference |
+| `Publish` *changes sharing scope* | Now spelled out: publish privately to a team or the whole organisation, or **publicly to the Figma Community**; team publishing needs the source file in that team; unpublishing keeps your copy, **deleting a published skill removes it for everyone** |
+| Skills need an account that has the beta | Skills are stated as **available on all plans**; custom skills open to Starter (release notes, 6 Oct) |
+| GitHub connector reaches `github.com` only (2026-07-04, hands-on) | **Neither the connectors page nor the code-layers page mentions self-hosted GitHub.** Organisation and Enterprise plans can now connect **several GitHub organisations to one Figma plan** (5 Oct). The 2026-07-04 measurement stands untouched |
 
 **Still open, and the one the old Horizon asked.** *Does the GitHub import reach a self-hosted GitHub (GHES), or `github.com` only?* Figma's help page says it connects to *"GitHub organizations or accounts"* and **is silent on self-hosted installs.** Silence is not a yes: the 2026-07-04 finding on the Make connector was *no*, and **a capability absent from documentation is not an absent capability** (2026-08-28). Probe it before relying on either answer.
 
