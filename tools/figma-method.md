@@ -9,6 +9,8 @@ sources:
     title: "Annotation — the namespaced category surface rule 20 said did not exist; the page carries getAnnotationCategoriesAsync and AnnotationCategory, and is no longer named AnnotationsAPI"
   - resource: https://github.com/jkornobis/GE-KnowledgeCenter/issues/34
     title: "Three corrections to rule 20, measured on a live FigJam board"
+  - resource: https://github.com/jkornobis/GE-KnowledgeCenter/issues/66
+    title: "Plugin API against REST: three reading differences and one trap, measured on two files (reported, not reproduced)"
   - resource: https://gregrobison.medium.com/drawing-conclusions-the-rise-of-visual-reasoning-in-ai-with-multimodal-visualization-of-thought-042856fd50af
     title: "Multimodal Visualization-of-Thought"
   - resource: https://arxiv.org/abs/2506.23918
@@ -306,7 +308,7 @@ is the design agent's job. Plugin API is for **local, in-file** components only.
 `use-design-system`. This is the Delegation Brief with a named delegate.*
 
 **Rule 19 was killed by the Composer on 2026-09-02, and the number is retired rather than reused** —
-this page runs 1–18, then 20. It read
+this page runs 1–18, then 20–30. It read
 *"⚠ No screenshots unless asked"*, carried from one session on the Figma AI Agent surface, and it
 flagged itself as contradicting this page's own method. It reserved its own resolution for the
 Composer — *"a rewrite of a live gate… the Composer's call, not a merge decision"* — and he made it:
@@ -417,6 +419,16 @@ text near a frame's wrap boundary can push content below the frame's edge — au
 element that grew, but a fixed-height ancestor does not resize with it. Keep additions to
 already-tight text short, and re-screenshot after the edit rather than assuming a small text change
 is a safe one.
+
+**28. Reading the same page through the plugin API and the REST API gives the same file, with three differences that belong to the APIs.** *Reported by another instance, issue #66, measured 2026-09-30 by porting a REST-based reading to the plugin API and comparing fingerprints (texts, instances and their components, component properties, overrides, hidden layers, layer lists, sizes). Not reproduced here: marked as reported, not verified.* A 4-screen file read identically; a 29-slide documentation file read identically in every category apart from these:
+
+1. **Slot properties** (`type: "SLOT"`) carry an internal reference object as their value in REST and something else in the plugin API. **Compare them only within one API.**
+2. **Text styling overrides:** the plugin API's `overrides[].overriddenFields` lists `fontName` and `textStyleId` on some layers where REST lists only `characters` and `fills`. **A plugin-API reader is stricter, never looser.**
+3. **Broken component sets throw on read.** `componentProperties` on an instance whose component set Figma reports broken throws *"Component set for node has existing errors"* (1,651 instances on the 29-slide file), and uncaught it stops the whole reading. REST still returns properties for them. **Wrap the read per instance** and count the failures instead of letting them end the run.
+
+**29. `skipInvisibleInstanceChildren` was `true` inside `use_figma`, and it hides the layers a reviewer most needs.** *Same provenance and verification state as rule 28.* With it on, the invisible layers inside instances are skipped: **77 of 113 texts on one slide were missing** from a reading. A reader that must see hidden layers sets `figma.skipInvisibleInstanceChildren = false` explicitly, as its first line. This is the same trap as rule 16, a silent smaller result rather than an exception, and it is the reason a count taken through `use_figma` can disagree with one taken through REST. It **may** also bear on the 22% of instances that this library's own measurement found empty (`tools/figma-mcp-remote.md`, *Prototype edges exist in the data model*), since that scan ran through `use_figma`; that link is a question, not a finding.
+
+**30. Two smaller observations about the `use_figma` environment, not verified beyond it.** *Same provenance.* `figma.root.name` returned `"Document"` rather than the file's name, so a script that keys on it needs a fallback. **A `use_figma` return is cut at 20 kB**, so a script that returns a full inventory should write a digest and return the digest.
 
 ## IV — Reading list (from the same session)
 

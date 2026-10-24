@@ -309,6 +309,10 @@ a full MCP surface; another gained write; one previously-verified tool could not
 
 **Still owed:** running one new tool end to end (`send_code_to_figma` is the code-layer one, and needs an account where the flag is true), and the Weave link state.
 
+### Generative plugins — what the vendor skill rules out (reported 2026-09-30, issue #66)
+
+*Read from Figma's `figma-generative-plugins` skill by another instance, **read and not used**; not reproduced here.* A plugin on that surface has **no authenticated network call**, **no change to its manifest** (`update_generative_plugin` cannot replace it), and **persistence limited to small preferences**. So a plugin that needs a user's token, or a large data file, **does not move to this surface as it is.** This bounds the *Practical consequence* on `figma-surface.md`: a standing tool in the Tools library is only as capable as those three limits allow.
+
 ### Verified live, 2026-09-22
 
 | Claim | Result |
