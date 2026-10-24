@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: Figma MCP — the desktop server"
-description: "The selection-scoped Figma MCP server: seven tools that take no parameters at all — and why four passes chasing a per-agent registration missed the real mechanism, a loopback port scoped to whatever machine runs Figma's desktop app, which is never the tower this estate runs on"
+description: "The Figma MCP server inside the desktop app, reached over a loopback port on the machine that runs it: ten tools, none taking a fileKey, half with no declared parameters at all — live-audited 2026-10-24 from a session on that machine, after five passes from the tower that structurally could not reach it"
 status: draft
 serves: [UX Designer, Design Engineer]
 generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
@@ -10,24 +10,28 @@ card: tools/figma.md
 
 # Tool: Figma MCP — the desktop server
 
-Audited 2026-07-04 by User Researcher. **NOT re-audited — the route is unreachable from this client.** MCP-mediated, **selection-scoped**: it operates on whatever is selected in the Figma desktop app, which is why its tools take no parameters at all.
+Audited 2026-10-24 by User Researcher, **live**, from a session running on the same machine as Figma's desktop app — the first audit since 2026-07-04, and the scope it covers is stated in the sixth pass below. MCP-mediated; **defaults to the current selection**, and also accepts a `nodeId` it does not always declare.
 
-Re-audit: 30 days — measured; inherits the Figma clock. **Overdue, and deliberately so** — see below.
+Re-audit: 30 days — measured; inherits the Figma clock.
 
-Accepted overdue: the Composer, 2026-09-24 — the server is loopback-scoped to the machine running Figma's desktop app, which is never the host this library's instances run on, and the remote server already covers the surface (`#145` item 6).
+**The 2026-09-24 acceptance of this page as overdue is spent.** It held because no instance ran on
+the machine that runs Figma's desktop app; on 2026-10-24 one did, which is the single condition the
+2026-09-22 closing paragraph named for reopening it.
 
 **Chair:** UX Designer (`roster.md`), same as the remote route.
 **Lineage:** shared with [`figma-mcp-remote.md`](figma-mcp-remote.md).
-**Route identity:** **7 tools, every one with `"properties": {}`** — no `fileKey`, no `nodeId`. That parameter shape *is* the tell.
+**Route identity (2026-10-24):** the `mcp__Figma__*` namespace, **10 tools, none with a `fileKey`**,
+five with `"properties": {}` and five with an optional `nodeId`. *The 2026-07-04 tell — "7 tools,
+every one with no parameters" — no longer holds; the reasoning is in the sixth pass.*
 
 **Why this page exists separately.** It is the half of the old `figma.md` that could not be dated,
 and keeping it joined to the remote route was what prevented that route from being dated either.
 **A page whose subject is unreachable should say so in its own header, not drag another page's clock
 down with it.**
 
-**What unblocks it:** Figma registers **per agent**. Its setup dialog lists Claude Code CLI (toggled
-on, auto-installed) and Claude Desktop (**"Get Figma integration"**, unclicked) as separate targets.
-Enabling the Dev Mode server and wiring an agent are two acts, and only the first has happened.
+**Who can reach it:** only a session running on the machine where Figma's desktop app runs, because
+the server listens on that machine's loopback address. A session on the tower still cannot, for the
+structural reason in the fifth pass.
 
 ## Re-audit attempted and NOT completed — 2026-08-23
 
@@ -177,3 +181,76 @@ machine as Figma's desktop app — the one condition, named above, under which t
 reachable. The four-pass diagnostic history stays, because it is what taught the actual mechanism; the
 open questions about Config 2026 capabilities specific to the desktop route (code layers, local Motion
 authoring) stay unanswered by design rather than by gap.
+
+## Sixth pass — 2026-10-24, live, and the route is reopened
+
+**The condition the closing paragraph named was met.** The Composer opened a Claude Code session in
+the Claude desktop app on his own machine — the one that runs Figma's desktop app — so `127.0.0.1`
+was, for the first time, the right machine. This is the first pass on this page that ran on that
+machine.
+
+```text
+Test-NetConnection 127.0.0.1 -Port 3845     TcpTestSucceeded : True
+GET http://127.0.0.1:3845/mcp               400   (a server is there; it expects an MCP request, not a bare GET)
+```
+
+**The first call still answered with setup instructions** — *"you need to enable the Dev Mode MCP
+Server"* — **twice, while the port was open.** A restart of the Claude desktop app cleared it, and
+the next call returned data. So that message is what the connector says whenever its own connection
+is not live, **not a reading of Figma's preference.** It is the same trap the third pass recorded:
+an instrument's self-report read as a fact about the subject. Here it was caught because the port
+was probed independently before the message was believed.
+
+### What was measured
+
+**The inventory, from the session's own tool list:** 11 tools at connect; one,
+`create_design_system_rules`, dropped out of the list mid-session when the server reconnected, so
+**10 were reachable** at the time of the calls below. The dropped one is recorded rather than
+counted, because its absence was observed once and not explained.
+
+| Declared parameters | Tools |
+|---|---|
+| **none** — `"properties": {}` | `get_metadata`, `get_design_context`, `get_screenshot`, `get_code_connect_map`, `add_code_connect_map` |
+| optional `nodeId` (plus logging-only `clientFrameworks` / `clientLanguages` on some) | `get_variable_defs`, `get_code_connect_suggestions`, `get_figjam`, `get_motion_context`, `send_code_connect_mappings` (which also requires `mappings`) |
+
+**No tool declares a `fileKey`.** That, with the namespace, is the identity that survives — not the
+absence of parameters.
+
+**An empty schema does not mean no parameters.** `get_metadata` declares nothing, yet called with a
+`nodeId` it returned that node. Its own description, and the descriptions of the other four
+empty-schema tools, say a `nodeId` is accepted. **So for this server the schema under-states the
+tool, and the description is the better reading** — the opposite of the usual rule that the schema
+is the contract.
+
+**"Selection-scoped" is a default, not a limit.** With no arguments:
+
+- `get_metadata` did **not** fail on an empty selection: it listed the open document's top-level
+  pages and asked for one of their ids.
+- `get_variable_defs` answered *"Nothing is selected"* — selection-bound when no `nodeId` is given.
+
+**One unexplained shape, recorded as observed:** a page id passed to `get_metadata` came back as a
+bare canvas node at 0 × 0 with no children. Whether that is because the page was not the one open in
+the desktop app (Figma loads pages on demand) was **not tested**.
+
+### What this pass did NOT verify
+
+- `get_screenshot`, `get_design_context`, `get_figjam`, `get_motion_context` — not called: nothing
+  was selected and no target was agreed for them.
+- `get_code_connect_map`, `get_code_connect_suggestions` — not called.
+- `add_code_connect_map`, `send_code_connect_mappings` — **deliberately not called**: they write
+  mappings into a real file, and no file was offered for writing.
+- The open questions from earlier passes about Config 2026 capabilities on this route — code layers,
+  Motion authoring, Make — **remain open**. They are not Critical facts this page holds, which is why
+  the `Audited` line moved without them; they are named here so the move is not read as covering
+  them.
+
+### What changes, and what does not
+
+**Changes:** this route is **reachable from any session running on the Composer's own machine**, and
+its identity is now 10 tools without a `fileKey`, not 7 without parameters. The 2026-09-22 *out of
+scope by design* status no longer holds.
+
+**Does not change:** a session on the tower still cannot reach it, for the loopback reason the fifth
+pass found. The remote server is still the route for work from a Figma link without the desktop app
+open. The two now answer **different questions**: the desktop route reads *what the Composer is
+looking at*, the remote route reads *what a link points to*.

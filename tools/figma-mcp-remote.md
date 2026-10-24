@@ -29,7 +29,7 @@ Re-audit: 30 days — measured; authority `agents/tools/yang/ux_designer.md` (fo
 
 **Chair:** UX Designer carries this product (`roster.md`); Design Engineer requires the token lever it serves. Also `Serves:` Content Designer and Accessibility Specialist.
 **Lineage:** the UX Designer's leap — *design as a shared act*, Photoshop (1990) → **Figma** (Sept 2016, browser + multiplayer), against paper and paste-up. Lag **~40 years**. `project/tools_lineage_full.md`
-**Route identity:** large tool set, **`fileKey` and `nodeId` required**. If a Figma tool takes no parameters, it is the desktop server — see [`figma-mcp-desktop.md`](figma-mcp-desktop.md).
+**Route identity:** large tool set, **`fileKey` and `nodeId` required**. If a Figma tool takes no `fileKey`, it is the desktop server — see [`figma-mcp-desktop.md`](figma-mcp-desktop.md). *(Until 2026-10-24 this said "no parameters"; the desktop server now declares an optional `nodeId` on half its tools.)*
 
 **This page earns its date, and it is the first one that could.** The re-audit below ran live against
 this route while the desktop route stayed unreachable — which is exactly the split's purpose. See
