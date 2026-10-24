@@ -2384,3 +2384,91 @@ On a screenshot of a real Auditorium, the rank cell still wrapped: the glyph fel
 Correction (Composer): "I want to reduce rendering as 3 bars only : Low become 3 empty bar and is enough. return carriage break the lisibility"
 
 The scale is now ▰▰▰ Structural · ▰▰▱ High · ▰▱▱ Medium · ▱▱▱ Low, in `protocols/triggers.md`.
+
+## 2026-10-06 — GitHub #67: Amazon Quick gets its tool page, written from four readings
+
+The Composer asked for "issue 67 about tool audit amazon quick". **I read Forgejo #67, a closed tutorial PR, then four other repositories and both boards, before he pasted the link**: the issue was on the public tracker, which numbers separately.
+
+Correction (Composer): "first reach issue check to do for you are the public repo ones", then "your specificity is to have both issue on public and private repo, mean searching both before other private repo ones".
+
+`tools/amazon-quick.md` is new. The issue carried three hands-on readings from a session elsewhere: the web workspace, a custom agent holding an orchestra's floor, and the desktop app reporting on itself. This instance added the fourth, AWS's guide, fetched whole (1,139 pages) and searched. **The model behind the chat is named on no page.** The guide also adds what the testers did not report: temporary directories are readable whatever the folder permissions, every system tool ships at Always Allow, and the desktop app takes skills in the folder shape an orchestra already ships in. One claim of mine was wrong before it was committed, a label disagreement between tenant and guide that was really the guide's web and desktop chapters differing, and a re-check removed it.
+
+Not done: no hand of this library touched the product, no trap test has been run, and no lever entry was added to `tools/register.md`, because no lever there matches a second model route and naming one is a Tool Discovery decision.
+
+**2026-10-06 16:4x, the page was stale within the hour.** A third comment reached GitHub #67 after the merge: the desktop addendum again, now with two rounds of trap questions (18 questions, nothing invented, three partial answers) and the rule reworded. The read-before-report check stopped my closing comment and that is how I saw it. The page's "no trap test has been run" became "no independent trap test": examiner and answerer were the same product, by the report's own account. The chapter above keeps its original sentence; this line corrects it.
+
+**2026-10-06 17:3x, three rulings on the Amazon Quick close-out (Composer, by button).** The rule on `tools/amazon-quick.md` **stays proposed**; he did not accept it as standing. No lever for a second model route enters `tools/register.md` yet; it is looked at again at the page's re-audit. The public copy is left to the mirror's schedule: at 17:27 GitHub was still on the 2026-10-02 head, and if it is still behind on 2026-10-07 that is filed on the tower's tracker as a mirror fault. A fifth comment reached GitHub #67 at 17:26; it is byte-identical to the 16:33 one already folded in, so the page did not change. The room watch reached its two-hour limit and is left off on his word.
+
+## 2026-10-07 — an Auditorium on the pages that need updating; Program 01, 06, 07, 08 played; core rule 7
+
+The Composer wrote: *"Auditorium on the pages of knowledge center need to be updated."* I read it as the trigger and said that the other reading, the Auditorium's own description being stale, was row 07. Every figure was measured that night.
+
+| Rank | Chair | Idea |
+|---|---|---|
+| 01 ▰▰▰ ⚡ | 📶 Reliability Engineer | The public copy has not moved since 2 October: GitHub is 6 commits behind Forgejo. File the mirror fault on the tower's tracker. |
+| 02 ▰▰▰ 📤 | 💻 Software Engineer | Nothing here reads a page's re-audit line. Ask the Workshop to point its freshness checker at this directory. |
+| 03 ▰▰▱ ⚡ | 🔍 User Researcher | Nine tool pages are past their own clock (zod 42 days, i18next 37, playwright 34, vitest 32, style-dictionary 30, tokens-studio 27, storybook 11, sigstore-cosign 5, wekan 2), and the register's sweep was due on 4 October. Work the debt, most overdue first. |
+| 04 ▰▰▱ 👁️ | 🧭 Product Owner | Seven of those nine clocks are 15 days or less. Set a floor, or accept those pages as overdue by declaration. |
+| 05 ▰▰▱ 👁️ | 🎨 UX Designer | UX Designer and Design Engineer have no reference page; ten chairs do. Write them, or rule that the lever indexes are their reference. |
+| 06 ▰▰▱ ⚡ | ☑️ QA Engineer | The outward sweep: 337 addresses answer, 3 are missing, two of them sources of the Figma product-surface page. Repair those, and open the refused ones in a browser. |
+| 07 ▰▱▱ ⚡ | 🔀 Agile Facilitator | Four pages describe the Auditorium as it was before 29 September. Point each at the canonical page. |
+| 08 ▰▱▱ ⚡ | ♿ Accessibility Specialist | The Auditorium widget writes the level as a coloured word; the chat format writes bars. Bring the widget to bars and glyph. |
+| 09 ▰▱▱ 👁️ | 👂 Agile Auditor | Seventeen observations sit in the index as "not yet decided", the oldest five weeks old. Rule on them in one sitting, or have each filed. |
+| 10 ▰▱▱ ⚡ | 🔗 Design Engineer | Tokens Studio states a 15-day clock in its header and 60 in its body; Style Dictionary is 30 days overdue. Re-audit the chain as one pass. |
+| 11 ▱▱▱ ⚡ | 📐 Software Architect | Two pages carry an audit date and no clock, and the register carries neither. Write the basis "not applicable, no release surface" where it fits. |
+| 12 ▱▱▱ ⚡ | ✏️ Content Designer | Three index rows no longer carry their page's own description, and two descriptions cover only part of their page. |
+
+⚡ do now · 👁️ yours to judge · 📤 delegate · 🕝 postpone · ♻️ recycle
+▰▰▰ Structural · ▰▰▱ High · ▰▱▱ Medium · ▱▱▱ Low
+
+**He chose the recommended Program: 01, 06, 07, 08.** The other eight rows are postponed, in one issue on this tracker.
+
+- **01.** Filed as `jkosvr-tower#90`. On 2026-10-07 at 20:50 the public copy was still on the 2 October head, and the issue had no answer.
+- **06.** PR #198. One Figma source had been renamed and still says what it is cited for. The other was removed, and the source now points at the archive's copy of 2026-09-26. A sentence on AI credits is dated, because neither source it names carries it any longer. **A count of mine was wrong in the table:** the sweep's total of refused addresses is 22, and 19 is only the 403s. Of those 19, 3 opened in a plain headless browser and 16 showed a challenge page. None was worked around.
+- **07 and 08.** PR #200, with the settled half of `#197` (GE-Tower, same day): the checklist no longer fixes four columns, counts six endings, and exempts an answer he asked for. He accepted the widget's new rank cell from a render attached to the PR.
+
+**Three rulings (Composer, by button, 2026-10-07).** The order of authority between presentation rules is **core line 7** in `start.md`, in the words put to him. What sits beside a button is **two cases**: rank and name after a ranked table, one line of trade-off with no table. The widget's rank cell is accepted.
+
+**Twice the turn was cut and he typed "Réessayer".** Each time the work resumed from the branch and the scratch files, which is the argument for pushing a branch before asking anything.
+
+**Open, not worked:** `#199` (GE-Tower, 20:49), four pieces to move from a Composer's Key into the library and a stale model name in the Fortissimo entry. Two findings from PR #200: `protocols/presentation.md` carries a persona colour table whose values differ from `protocols/persona-map.md`, and the widget's coloured edge has three colours for a four-level scale.
+
+## 2026-10-07 — End Day GE (Library)
+
+**Played across 6–7 October:**
+- **GitHub #67:** `tools/amazon-quick.md`, written from four readings (#194, #195), with three rulings recorded (#196).
+- **An Auditorium on the pages that need updating**, and its Program 01, 06, 07, 08: the mirror fault filed (`jkosvr-tower#90`), two Figma sources repaired (#198), the presentation pages and the Auditorium widget aligned (#200).
+- **#197 closed.** The four contradictions GE-Tower read are settled, and the order of authority is core line 7 in `start.md`.
+- **#185 closed.** The library's side was done: rule 6 since 2026-10-02, the checklist's exemption since #200.
+
+**Ranked, only what this session touched** (shown to him before the close, with buttons; he chose End Day):
+
+| # | Action | Recommendation |
+|---|---|---|
+| 01 📤 | Public copy frozen since 2 October (`jkosvr-tower#90`), 11 commits behind at 00:03 on 8 October | With the Tower; it may need the Composer's admin hand on the forge's mirror settings |
+| 02 ⚡ | `#199`: three pages to write so a Key can shrink, and a stale model name in Fortissimo | One pass, in a fresh session |
+| 03 👁️ | `#201`, the eight rows not played: three are the Composer's calls | Rule on them in one sitting |
+| 04 🕝 | Sixteen cited addresses show a challenge page to any script | They wait for a person's browser |
+
+⚡ do now · 👁️ yours to judge · 📤 delegate · 🕝 postpone · ♻️ recycle
+
+**No-loss check:**
+- The eight unplayed rows, the sixteen unread addresses and the two findings left open in #200 have a home in `#201`.
+- What the Amazon Quick page left for its re-audit had none: the rule kept proposed, the lever question, the missing independent trap test. It is now `#202`, dated 2026-11-05, because nothing here reads a page's clock.
+- `#199` was filed by GE-Tower and is untouched except its item 4, done as core line 7.
+- Board: two Done cards (Amazon Quick; the Program), and `#199`, `#201` and `#202` carded in *Ready*.
+- A memory kept for this instance: an issue number from the Composer is looked up on the public tracker, then on the forge, before anywhere else.
+
+**Not done, said plainly:** nothing merged since 2 October is on the public copy. The room watch is off, on his word.
+
+## 2026-10-08 — #204: the consent gate gains one named exception, the tuner
+
+GE-Workshop asked for a review by session message, relaying the Composer. The ruling had reached this library through another instance, so it was put to him here before anything was written; he confirmed it by button, with three bounds added by this review. `protocols/orchestra-protocols.md` now carries the exception after the gate: one agent, grounded in its being read-only and not in the half-cent figure of a single run; the caller names the sources and never a credential path, because the agent's reading tools have no path limit and it skips the instruction files; and the harness may still prompt. `tools/mcp-and-subagents.md` carries three facts on subagent definitions, marked as reported except the measured start size.
+
+**2026-10-08 14:36, checkpoint (Composer's word).** State of this instance, for whoever opens the next session:
+
+- **Closed today:** #204, the tuner exception, PR #205. Its chapter is the one above.
+- **Open on this tracker, six:** #49, #166, #171, #199 (four pieces to move from a Key into the library), #201 (the eight Auditorium rows not played, three of them the Composer's calls), #202 (what waits for the Amazon Quick re-audit of 2026-11-05).
+- **The public copy is still frozen:** GitHub main is 0821a27, the forge is 62add3f, 15 commits apart. It sits with the Tower on its issue 90, unanswered since 2026-10-07 16:17.
+- **The room watch is off**, on his word of 2026-10-06. Nothing posted in the rooms reaches this instance.
+- **No branch is open and nothing is uncommitted.**

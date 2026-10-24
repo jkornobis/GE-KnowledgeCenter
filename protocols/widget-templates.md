@@ -106,7 +106,9 @@ Musician chip emoji/icon come from the **persona map** above — never re-guess.
 
 ## Auditorium — the same body, zero interaction (ADR-197)
 
-Auditorium is single-shot and self-closing (`triggers.md`): twelve ideas appear once, ranked, and the Composer acts on the numbers by *typing* `Program: n, m`, never by clicking. It reuses the Note Picker's exact card body and spacing — bold title, musician chip, full-width description, impact badge top-right — with every interactive affordance removed: no grip, no checkbox, no select-all, no effort badge (Auditorium has no effort dimension, only impact), no adopt button, no `<script>` at all.
+Auditorium is single-shot and self-closing (`triggers.md`): twelve ideas appear once, ranked. **The widget carries no control.** The Composer acts in the buttons that close the message, which offer the recommended Program (ruled 2026-09-29), or by typing `Program: n, m`. It reuses the Note Picker's card body and spacing — bold title, musician chip, full-width description — with every interactive affordance removed: no grip, no checkbox, no select-all, no effort badge (Auditorium has no effort dimension, only impact), no adopt button, no `<script>` at all.
+
+**Its rank cell is the chat format's: two-digit number, bars, glyph, in that order, with no words** (`protocols/triggers.md`), and **two legend lines sit under the rows**, one for the glyphs and one for the bars. The cell carries an `aria-label` that says the same thing in words, because a screen reader has no useful reading of a bar character. *Until 2026-10-07 this template showed the level as a small coloured word, top-right. The chat format left words and colour for bars on 2026-09-30, and the template had not followed.*
 
 ```html
 <style>
@@ -114,16 +116,18 @@ Auditorium is single-shot and self-closing (`triggers.md`): twelve ideas appear 
 .au-edge{width:4px;flex:none}
 .au-body{flex:1;padding:12px 14px}
 .au-top{display:flex;align-items:flex-start;gap:10px}
-.au-num{font-size:12px;font-weight:600;color:var(--text-muted);width:16px;padding-top:2px}
+.au-rank{font-size:12px;font-weight:600;color:var(--text-muted);white-space:nowrap;padding-top:2px}
 .au-title{font-size:15px;font-weight:500;line-height:1.3}
 .au-chip{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;color:var(--text-secondary);border:0.5px solid var(--border);border-radius:6px;padding:2px 7px;margin-left:8px;white-space:nowrap}
-.au-tier{font-size:11.5px;font-weight:500;margin-left:auto}
 .au-desc{font-size:13px;color:var(--text-secondary);margin:6px 0 0;line-height:1.5}
+.au-legend{font-size:11.5px;color:var(--text-muted);margin:2px 0 0;line-height:1.6}
 </style>
 <div id="au-rows">
-  <div class="au-row"><div class="au-edge" style="background:#EDGE_HEX"></div><div class="au-body"><div class="au-top"><span class="au-num">1</span><span class="au-title">BEST IDEA<span class="au-chip">EMOJI CHAIR</span></span><span class="au-tier" style="color:#IMPACT_WORD_HEX">high</span></div><div class="au-desc">One line elaborating the idea, if it needs one.</div></div></div>
+  <div class="au-row"><div class="au-edge" style="background:#EDGE_HEX"></div><div class="au-body"><div class="au-top"><span class="au-rank" role="img" aria-label="Rank 1, structural, do now">01 ▰▰▰ ⚡</span><span class="au-title">BEST IDEA<span class="au-chip">EMOJI CHAIR</span></span></div><div class="au-desc">One line elaborating the idea, if it needs one.</div></div></div>
   <!-- repeat, one row per musician, ranked descending by impact (Product Owner's pass) -->
 </div>
+<p class="au-legend">⚡ do now · 👁️ yours to judge · 📤 delegate · 🕝 postpone · ♻️ recycle</p>
+<p class="au-legend">▰▰▰ Structural · ▰▰▱ High · ▰▱▱ Medium · ▱▱▱ Low</p>
 ```
 
 ---
