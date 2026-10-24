@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: Figma MCP — the remote servers"
-description: "The fileKey-scoped Figma MCP servers: 37 tools against the 33 recorded 2026-08-25, Generative Plugins as a whole new MCP-reachable family, shaders gaining write, and a re-audit forced by the calendar rather than by a finding"
+description: "The fileKey-scoped Figma MCP servers: 42 tools listed live 2026-10-24 (37 recorded 2026-09-22, 33 before that), Generative Plugins as a whole new MCP-reachable family, shaders gaining write, and a re-audit forced by the calendar rather than by a finding"
 status: draft
 serves: [UX Designer, Design Engineer, Content Designer, Accessibility Specialist]
 generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
@@ -23,7 +23,7 @@ card: tools/figma.md
 
 # Tool: Figma MCP — the remote servers
 
-Audited 2026-09-22 by User Researcher (re-audit; first pass 2026-08-25, superseded below). MCP-mediated, `fileKey` + `nodeId` scoped. Authenticated — verified by a live successful call this session, not by the environment's own connector-status banner, which is a finding in itself (see below).
+Audited 2026-10-24 (**partial**: the tool listing and one live call, `whoami`; no other tool run — see the fifth pass) and 2026-09-22 by User Researcher (re-audit; first pass 2026-08-25, superseded below). MCP-mediated, `fileKey` + `nodeId` scoped. Authenticated — verified by a live successful call this session, not by the environment's own connector-status banner, which is a finding in itself (see below).
 
 Re-audit: 30 days — measured; authority `agents/tools/yang/ux_designer.md` (four Config 2026 capabilities landed inside one audit interval, and this pass found more of the same shape)
 
@@ -282,6 +282,32 @@ a full MCP surface; another gained write; one previously-verified tool could not
 **Two documentation changes beyond the tool list.** (1) The *Seats & rate limits* section above records a hard cap of **6 tool calls a month** for Starter plans and View or Collab seats, taken from the `mcp-server-guide` README in 2026-07. **Figma's current help page on the MCP server does not mention that cap**; it says writing to the canvas outside drafts needs a Full seat, is free during the beta and will become usage-based, and points to a separate *Plans, access, and permissions* article for rate limits. **The README was not re-read, so the 6-a-month figure is neither confirmed nor retired — treat it as unverified.** (2) The same page lists a **`figma-spec` skill** for reading, creating and updating Specs; writing needs the remote server and edit access to the file.
 
 **Not established, and the reason this is not the re-audit:** which of the documented 41 the connector actually exposes, whether the 37 recorded were a subset of this list, and whether any of the new tools works. A documented tool is a claim by the vendor; the oracle rule from `tools/README.md` still wants a call. **Next, in order:** authorise the Figma plugin server in a session, count the live tools, and run one of the new ones (`send_code_to_figma` is the one that touches code layers).
+
+## Fifth pass — 2026-10-24, live: the listing and one call (partial)
+
+**The fourth pass above could not run live; this one did, in a later session the same day, and it supersedes that pass's "could not run" and its "live recount owed". It is partial on purpose:** the connector's tool listing was read and **one** tool was called (`whoami`). No other tool was run, so everything about what a new tool *does* stays schema-read.
+
+**The connector is live and authenticated.** `whoami` returned a full result, which is the oracle (a call, not a banner). Account and plan values are not recorded here, per the standing rule on this page. **Two capability flags it returns are recorded, because they decide what can be tried:** it now carries a `code_layers_enabled` field (account-wide and per plan), and a per-plan `specs_enabled`. On the audited account `code_layers_enabled` was **false on every plan** that day, so code layers could not be exercised there even though the import tool exists; Specs was enabled on two of three plans. *This agrees with Figma's own wording that code layers roll out gradually.*
+
+**The count: 42 tool names in this session's listing** (30 loaded, 12 deferred), against 37 recorded 2026-09-22 and 41 documented on 2026-10-24. The 37 were never listed whole, so a per-tool diff against them would be invented. **Against the documentation the difference is exact, and it is three tools:**
+
+| Direction | Tool | Reading |
+|---|---|---|
+| documented, **not exposed** | `html_to_figma` | the documentation lists it as remote-only; this connector does not offer it. A documented tool is a claim, not a registration |
+| exposed, **not documented** | `export_video` | recorded here since 2026-08-25; the documentation page omits it |
+| exposed, **not documented** | `create_session` | new. See below |
+
+**`create_session` changes the order of work.** The server's own instructions now say to call it **once per task, before the first read or edit, review-only work included**, as soon as the file key is known, and to pass the returned UUID as `sessionId` on every file tool for that task. Every file tool in the listing carries an optional `sessionId`. It is a record of the user's work, not a permission. **Schema- and instruction-read only: it was not called**, since no file task was running.
+
+**Four resolutions of earlier open points**
+- `generate_figma_design` (third pass, point 4: *not found, flagged not concluded*): **present on this connector.** The earlier absence was registration in that session, as that pass guessed.
+- Weave: nine tools, matching the documentation, three more than the six recorded in 2026-08-25. **Not called, so link state is unknown this pass.**
+- `send_code_to_figma` is exposed with a staged contract: ask with the destination only, build the archive it names, upload it, then call again within an hour with the arguments it returned unchanged. It requires loading the `figma-code-workflows` skill first. **Not run.**
+- `create_new_file` now accepts `figspec` and `figmake` as editor types beside design, figjam and slides (schema-read).
+
+**What this changes about #68.** That issue's premise is that the fileKey connector *refused* the user's identity, so from a personal Claude account it was unusable. **Today this connector authenticated** (`whoami` succeeded) in a session on a personal Claude account. How the Figma grant was made is not known from here, so this does not say the refusal was wrong when it happened; it says the premise is **not stable** and the page-JavaScript route should not be written up as the only write path.
+
+**Still owed:** running one new tool end to end (`send_code_to_figma` is the code-layer one, and needs an account where the flag is true), and the Weave link state.
 
 ### Verified live, 2026-09-22
 
