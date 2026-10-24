@@ -2472,3 +2472,29 @@ GE-Workshop asked for a review by session message, relaying the Composer. The ru
 - **The public copy is still frozen:** GitHub main is 0821a27, the forge is 62add3f, 15 commits apart. It sits with the Tower on its issue 90, unanswered since 2026-10-07 16:17.
 - **The room watch is off**, on his word of 2026-10-06. Nothing posted in the rooms reaches this instance.
 - **No branch is open and nothing is uncommitted.**
+
+## 2026-10-24 — Figma pages brought current, and the open-issue ranking recorded whole
+
+Figma's code layers (open beta 15 Oct) and the generally available agent had overtaken three pages. `tools/figma-surface.md` was rewritten from Figma's own pages (#69, #71), `tools/figma-mcp-remote.md` took a documentation read (#70) and then a partial live pass (#73: 42 tools listed, one call run, `html_to_figma` documented but not exposed, `create_session` new), and `tools/figma-mcp-desktop.md` was re-audited live from the machine that runs Figma (#72). Audited dates moved only where a call ran. Comments went to #68 twice: the security points of the page-JavaScript route, and the fact that the fileKey connector authenticated today in a personal-account session.
+
+**The ranking of the 15 open issues, recorded whole before the rule it serves (#65) was in force, and after rows 1 and 2 were already being played. That order slip is stated, not hidden.** Read in full, comments not read.
+
+| Rank | Action | Reference |
+|---|---|---|
+| 1 🎯 | Write the Plugin API vs REST findings into the Figma method and MCP pages | #66 |
+| 2 🎯 | Add "a ranked table is recorded whole" to the session journal protocol | #65 |
+| 3 ⚖️ | Rule on the graph builder: it travels, or the graph becomes a dated snapshot. #11 and #13 wait behind it | #12 |
+| 4 ⚖️ | Decide whether external links get a gate: three shapes offered, no recommendation attached | #48 |
+| 5 ⚖️ | Decide how the two remotes stay in step. Measured 2026-10-24: Forgejo `main` and GitHub `main` differed | #28 |
+| 6 ⚖️ | Decide whether to adopt the page-JavaScript route for Figma writes. Security points posted, author not yet answered | #68 |
+| 7 ⚖️ | Pick which Kanban practice comes first. The question was put on 5 September and never answered | #49 |
+| 8 🤝 | Hand over the cross-instance method. Addressed to the Workshop, nothing for the Library | #50 |
+| 9 ♻️ | Close as decided: #50 records the ruling to mint one key per card. Its four comments were not read | #44 |
+| 10 ♻️ | Park the delegate probe. Whether it earns a page is recorded on #24; probe 02 is worth running now the Figma agent is generally available | #39 |
+| 11 ♻️ | Park the three graph items that wait on #12: the 11 unplaced movements, the `live: false` principle, taste as a measurement boundary | #7, #9, #10 |
+
+🎯 do now · ⚖️ decide · 🤝 delegate · ♻️ recycle
+
+**Played, in order:** row 1 is `tools/figma-method.md` rules 28-30 and the generative-plugin limits, #74, and #66 is closed. Row 2 is the rule in `protocols/session_journal.md`, #75, and #65 is closed. Rows 3 to 11 are open on the stand and are all in the table above.
+
+**No-loss check:** row 6 has its comments on #68; row 5's measurement is the only record that the two remotes differed that day; rows 3, 4, 5, 7 are the Composer's rulings and have no other home than their issues.
