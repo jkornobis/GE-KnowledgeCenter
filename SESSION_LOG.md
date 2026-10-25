@@ -2498,3 +2498,22 @@ Figma's code layers (open beta 15 Oct) and the generally available agent had ove
 **Played, in order:** row 1 is `tools/figma-method.md` rules 28-30 and the generative-plugin limits, #74, and #66 is closed. Row 2 is the rule in `protocols/session_journal.md`, #75, and #65 is closed. Rows 3 to 11 are open on the stand and are all in the table above.
 
 **No-loss check:** row 6 has its comments on #68; row 5's measurement is the only record that the two remotes differed that day; rows 3, 4, 5, 7 are the Composer's rulings and have no other home than their issues.
+
+## 2026-10-25 — both Figma routes connected, the two remotes reconciled, Forgejo as source of truth
+
+**2026-10-25 22:06 CET, checkpoint (Composer's word).** One session, opened 2026-10-24 in the Claude desktop app on the Composer's own machine — the first Library session to run where Figma's desktop app runs.
+
+- **Figma, both routes live.** The desktop server answered "enable the Dev Mode MCP Server" twice while its port was open; a client restart cleared it. The fileKey connector was signed in by the Composer and answered `whoami`.
+- **`tools/figma-mcp-desktop.md` re-audited live, PR #72** — the route the 2026-09-22 close had put out of scope is reopened. 10 tools, none with a `fileKey`; the old "7 tools, no parameters" tell retired in four pages. Writes deliberately not called.
+- **Observed after the audit, not yet on the page:** on 2026-10-25 four of the five parameter-bearing desktop tools dropped out of the session's tool list again on a reconnect. The inventory is not stable across reconnects; the page's 10 is a reading of one moment.
+- **The two remotes, reconciled.** Ruling (Composer): "Forgejo is the source of truth." That decides row 5 of the 2026-10-24 table (`#28`). Forgejo's 9 changes of 10-06 to 10-08 and GitHub's 4 of 10-24 merged as `4abcde1`; one conflict in `tools/figma-surface.md`, both sides' dated notes kept.
+- **The split reopened within hours, and was closed again at this checkpoint.** PRs #73 to #76 landed on GitHub only, because this checkout's `main` tracked GitHub. Forgejo fast-forwarded to them here, and **`main` now tracks `forgejo/main` in this checkout.** Any other checkout of this library still tracking GitHub will reopen the split the same way.
+- **Forgejo pushes from this checkout now sign as `GE-KnowledgeCenter`** — HTTPS, token read from the library's own file at push time, the Composer's saved credentials cut out. Verified: `signs as GE-KnowledgeCenter`, push true, admin false, dry run exit 0. **The reconciliation push itself went out under the Composer's own key, before this was fixed**: the content is right, the signature is not.
+
+**Open on the stand:**
+- `#28` holds no record of the ruling yet; this entry is its only home until it does.
+- Rows 3, 4, 6, 7 of the 2026-10-24 table are still the Composer's; rows 8 to 11 unchanged. All are in that entry, whole.
+- `tools/figma-mcp-desktop.md`: four reads not called (screenshot, design context, FigJam, motion), and the unstable inventory above.
+- The other three GE token files on this machine (tower, watcher, workshop) are empty placeholders.
+
+**State:** Forgejo and GitHub both at the commit before this entry; this entry travels by PR on Forgejo and is mirrored.
