@@ -19,15 +19,24 @@ routes to where things are.**
 **Each of these fires on a specific act** — signing something, publishing something, writing a claim
 onto a page. **None of them is needed to find a page**, which is what the index is for.
 
-## Where this library lives — Forgejo writes, GitHub publishes (ruled 2026-09-06, reversing 2026-09-05)
+## Where this library lives — Forgejo writes, GitHub publishes (ruled 2026-09-06, reversing 2026-09-05; hand-push interim 2026-10-25)
 
 **Instances write to the Forgejo instance on the Composer's own server. GitHub is the published read
 surface** — every orchestra fetches this library from `raw.githubusercontent.com`, and that address
 is written into `start.md`, this index, the skill floor and the machine's own route file.
 
-**The link between them is a push mirror: Forgejo pushes to GitHub on its own schedule.** No session
-pushes to GitHub and no session has to remember it exists — which is the same property the previous
-ruling was reaching for, pointed the other way.
+**The intended link is a push mirror: Forgejo pushes to GitHub on its own schedule**, so that no
+session pushes to GitHub or has to remember it exists. **It is not doing that job.** On 2026-10-24 the
+two copies had diverged for 22 days, with changes on each side the other lacked, which a running mirror
+would not allow. *Inferred from that divergence, not read: the library's account cannot see Forgejo's
+mirror settings (`403`, admin only).*
+
+**Until the mirror runs, the interim is hand-push** (ruled by the Composer 2026-10-25, `#28`). **The
+session that merges pushes `main` to Forgejo first, then pushes the same `main` to GitHub**, then
+compares the two heads (below). **Forgejo first** because a push that fails halfway then leaves GitHub
+*behind* the source, which is the known and visible failure, instead of *ahead* of it, which is a fork
+of the source of truth. A session that only proposes (a branch, a PR) pushes nothing to `main` and
+owes nothing here.
 
 **The ruling of 2026-09-05 said the reverse, and it described something that was never built.**
 Measured 2026-09-06, asked of the machine rather than read from this page: the Forgejo repository
@@ -36,9 +45,12 @@ three pushes to it that day succeeded — while the ruling on this page called s
 mistake"* and told the next session to remove its only remote. **Four commits sat on Forgejo alone
 before anyone looked.**
 
-⚠️ **So a `github` remote in a working clone is a mistake, symmetric to the one this replaces.** The
-published copy is written by the mirror, never by a session; a second push URL couples one machine's
-availability to the other's, and a hand-pushed pair is forgettable by construction.
+⚠️ **While the interim holds, a working clone carries both remotes, and its `main` tracks Forgejo.**
+A clone whose `main` tracks GitHub sends a plain `git push` to the publish surface alone and opens a
+split with no error — measured 2026-10-24, twice in one day. **When the mirror runs, the GitHub
+remote comes out of working clones again**, because a hand-pushed pair is forgettable by
+construction; the interim accepts that cost knowingly rather than hiding it. A second push URL on one
+remote stays ruled out: it couples one machine's availability to the other's.
 
 ⚠️ **A publish surface that stops receiving content fails silently, and this is the failure mode to
 watch.** A stale `raw.githubusercontent.com` returns 200 with a library that stopped on some past
