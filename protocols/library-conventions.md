@@ -61,6 +61,12 @@ than as history:
     git ls-remote <forgejo>/GE-KnowledgeCenter.git main
     curl -s https://api.github.com/repos/jkornobis/GE-KnowledgeCenter/commits/main
 
+**`node check_remotes.mjs` makes that comparison in one command** (ruled by the Composer 2026-10-26):
+it reads the `forgejo` and `origin` remotes by name, prints the source, publish and local heads, and
+exits 1 when they differ or a remote cannot be read. **Run it as the last step after every merge.**
+It reports a gap, not a direction, and an unreadable remote is never counted as agreement. It is not
+a gate: it needs the network and a credential for the source remote.
+
 **What the published copy does not do**, said plainly so nobody relies on it wrongly: it is not an
 audit trail of what the source deleted, because it follows the source including deletions. It is the
 place the content is read, not a second history.

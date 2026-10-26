@@ -2551,3 +2551,9 @@ Product Owner's tie-break: the row that other rows cite ranks first; rows 02, 03
 **On the stand, with their text in the table above:** 03 (a claim-level field in frontmatter), 06 (a remote-drift command), 08 (define "mandala"), 09, 10, 11 and 12. Rows 03, 06 and 08 are the Composer's to judge.
 
 **Owed, and not filed:** the first run of the reproduction ledger needs a scratch Figma file named by the Composer; a real cold reader for `check_findability.mjs` is the stronger test and is his to run; whether `check_forecasts.mjs --strict` joins the gates in `CLAUDE.md` is his call.
+
+## 2026-10-26 — rows 12, 03 and 06 of the Auditorium played
+
+**Row 12**, played on the Composer's pick: the account-flag section on the Figma router (#83). **Row 03**, put to him as a question and ruled: a page-level field, `claim_level`, with the lowest rung a Tool page stands on; `check_okf.mjs` fails a bad value and counts the pages that carry it (4 of 29), and it is deliberately not named `verified:` (#84). **Row 06**, put to him and ruled: a script run by hand after each merge, `check_remotes.mjs`, which compares the source, publish and local heads and exits 1 on a gap; tested on agree, on a branch only one remote holds, on an unknown remote, and on a deliberately stale remote.
+
+**On the stand, with their text in the table above:** 08 (define "mandala", the Composer's to approve), and 09, 10 and 11, blocked by credits, his hands and an account flag.
