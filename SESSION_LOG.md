@@ -2557,3 +2557,7 @@ Product Owner's tie-break: the row that other rows cite ranks first; rows 02, 03
 **Row 12**, played on the Composer's pick: the account-flag section on the Figma router (#83). **Row 03**, put to him as a question and ruled: a page-level field, `claim_level`, with the lowest rung a Tool page stands on; `check_okf.mjs` fails a bad value and counts the pages that carry it (4 of 29), and it is deliberately not named `verified:` (#84). **Row 06**, put to him and ruled: a script run by hand after each merge, `check_remotes.mjs`, which compares the source, publish and local heads and exits 1 on a gap; tested on agree, on a branch only one remote holds, on an unknown remote, and on a deliberately stale remote.
 
 **On the stand, with their text in the table above:** 08 (define "mandala", the Composer's to approve), and 09, 10 and 11, blocked by credits, his hands and an account flag.
+
+## 2026-10-26 — row 08 played: "Mandala task" is in the glossary, in his words
+
+The Composer chose his own words verbatim, and then approved the merge. `method/orchestra_glossary.md` now defines **Mandala task** from his two sentences (2026-09-03 and 2026-09-10), with the five dimensions marked as the filing instance's wording and not his (#86). Issue `#13`'s first step is done; its other three surfaces (reading, indexing, fetching the curl list, the acting surface) are untouched and still wait on `#11` and `#12`. **Rows 09, 10 and 11 of the Auditorium remain on the stand, blocked** (the agent's AI credits, his hands, an account flag); their text is in the table above.
