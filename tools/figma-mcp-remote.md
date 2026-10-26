@@ -3,6 +3,7 @@ type: Tool
 title: "Tool: Figma MCP — the remote servers"
 description: "The fileKey-scoped Figma MCP servers: 42 tools listed live 2026-10-24 (37 recorded 2026-09-22, 33 before that), Generative Plugins as a whole new MCP-reachable family, shaders gaining write, and a re-audit forced by the calendar rather than by a finding"
 status: draft
+claim_level: documented
 serves: [UX Designer, Design Engineer, Content Designer, Accessibility Specialist]
 generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
 sources:

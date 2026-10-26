@@ -128,6 +128,13 @@ const checkLog = (rel, src) => {
   }
 };
 
+// `claim_level` (ruled 2026-10-26, tools/README.md, the ladder): the LOWEST rung a Tool page's claims
+// stand on. Its shape is checked; its presence is only COUNTED, on one line, because 29 warnings would
+// bury the 10 that already exist. It is deliberately not named `verified:` - a `verified:` key is
+// read elsewhere as a trust signal, and a key that promotes itself by presence is the defect #48 names.
+const CLAIM = new Set(["documented", "listed", "run", "reproduced"]);
+let toolPages = 0, claimed = 0;
+
 const pages = walk(ROOT);
 for (const abs of pages) {
   const rel = relative(ROOT, abs).split("\\").join("/");
@@ -169,6 +176,13 @@ for (const abs of pages) {
   // said `human:jkornobis` and instances had written most of them. What it does catch is
   // the field drifting back out of the vocabulary into a prose name, which is how two of
   // them stayed wrong for four days.
+  if (type && /^Tool\b/.test(type[1])) toolPages++;
+  const cl = fm.match(/^claim_level:\s*(\S+)/m);
+  if (cl) {
+    claimed++;
+    if (!CLAIM.has(cl[1]))
+      fails.push(`${rel}: claim_level '${cl[1]}' is not documented|listed|run|reproduced (tools/README.md, the ladder)`);
+  }
   const by = fm.match(/\bby:\s*([^,}\n]+?)\s*[,}]/);
   if (!by) warns.push(`${rel}: no 'generated.by' actor (§4.1 recommended, actor vocabulary 2026-09-06)`);
   else if (ACTOR_LEGACY.has(by[1]))
@@ -241,7 +255,8 @@ for (const [t, date] of rows) {
 
 const line = (a) => a.forEach((s) => console.log("  " + s));
 console.log(`OKF v0.2 — ${concepts} concept documents, ${reserved} reserved`);
-console.log(`coverage — ${rows.size} index rows, ${card.size} routing-card rows\n`);
+console.log(`coverage — ${rows.size} index rows, ${card.size} routing-card rows`);
+console.log(`claim_level — ${claimed} of ${toolPages} Tool pages carry it (optional; a router with no findings of its own omits it)\n`);
 if (fails.length) { console.log(`✗ ${fails.length} conformance failure(s):`); line(fails); }
 else console.log("✓ conformant");
 if (warns.length) { console.log(`\n≠ ${warns.length} recommendation(s) unmet:`); line(warns); }

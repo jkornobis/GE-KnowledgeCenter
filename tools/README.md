@@ -66,6 +66,15 @@ finding.**
    as that** (*partial*, or *read*). Rung 2 alone never moves it. This is the rule `tools/figma-surface.md`
    states as *"the date moves when a probe has run"*, put on the ladder.
 
+**The page-level field `claim_level` (ruled by the Composer 2026-10-26).** A Tool page may carry
+`claim_level: documented | listed | run | reproduced` in its frontmatter: **the lowest rung any claim on
+the page stands on**, which is rule 1 made readable by a gate. `check_okf.mjs` checks the value's shape
+and prints how many Tool pages carry it; it does not warn on the rest, because the field is optional
+until each page has been read for its lowest claim. **A router with no findings of its own omits it.**
+**It is deliberately not called `verified:`**: a `verified:` key is read elsewhere in this library as a
+trust signal, and a key that raises a page's tier merely by being present is the defect `#48` names.
+Setting it is a reading of the whole page, never a default.
+
 **A blocked rung is recorded as blocked, not as a lower claim.** A tool that is listed and cannot be
 run because an account flag is off is *listed, run blocked by `<the flag>`*; it is not downgraded to
 "documented", because the listing is true.

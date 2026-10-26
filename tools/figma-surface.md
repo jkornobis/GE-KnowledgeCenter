@@ -3,6 +3,7 @@ type: Tool
 title: "Tool: Figma — the product surface"
 description: "What Figma's own product does when driven by eyes and hands rather than MCP: the agent's web fetch and Bash tool measured, its Bash boundaries probed, Skills as single-file uploads with update-in-place and a YAML gate, plugins the MCP cannot invoke but a browser can see, connectors, and Eyes First — on one tenant, partial, probe 4 pending"
 status: draft
+claim_level: documented
 card: tools/figma.md
 serves: [UX Designer, Design Engineer, User Researcher]
 generated: { by: agent:ge-knowledgecenter, at: 2026-10-02T12:30:00+02:00 }
