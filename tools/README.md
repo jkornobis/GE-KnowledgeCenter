@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool pages"
-description: "What a tool page records and why: the vantage point a reading was taken from, its verification state, and the three layers that stop a toolset being hand-rolled"
+description: "What a tool page records and why: the vantage point a reading was taken from, its verification state, the four-rung ladder a claim climbs (documented, listed, run, reproduced), and the three layers that stop a toolset being hand-rolled"
 status: draft
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-16T21:24:05+02:00 }
@@ -36,6 +36,57 @@ Consolidated from the five pages that existed when this was written, each of whi
 So a page that says *"tool X can do Y"* is not yet a tool page. It becomes one when it says **how that was seen, from where, and on what date** — which is what makes the `Audited` line and the `UNVERIFIED` marks load-bearing rather than ceremonial, and what the reading-surface axis below is the deployment-surface case of.
 
 Each page carries an `Audited YYYY-MM-DD` line. Each page also carries a **`Re-audit: N days — <basis>`** line, whose authority is the chair's own page in `yang/` (ADR-267). **No checker in this bundle reads them yet** (`#145`). One exists at the Workshop instance, `check_tool_audit_freshness.mjs`. It flags a page past **its own** cadence, and a missing cadence line fails it. But it reads that instance's own copy of these pages, which drifted from this one before the Composer ruled on 2026-09-23 that this library authors tool pages. Until it reads this directory, a page's freshness is checked by reading its two lines by hand. **A page can be overdue on purpose**, when its route is unreachable by design. It then carries a third line, `Accepted overdue: <who decided>, <YYYY-MM-DD> — <why>`, so a checker can report it as accepted rather than stale. Without it, one deliberate page keeps every freshness report red, and readers learn to ignore red (`#145` item 6). **The decider is the Composer**, because accepting that a page will not be kept fresh is a scope call. This line used to say that check ran here. It never did: there has never been a `scripts/` directory in this bundle.
+
+## The ladder a claim climbs — documented, listed, run, reproduced (2026-10-26)
+
+**A claim about a tool stands on one rung, and the page says which.** Before this section the rungs
+were written as prose in a dozen ways (*schema-read*, *sourced, not probed*, *verified live*,
+*reported, not reproduced*, `UNVERIFIED`), and no reader could compare two pages. This is the one
+vocabulary behind them. It is the tool-page application of the oracle rule above, and it adds one
+thing the rule does not say: **the rungs can disagree with each other, and the disagreement is a
+finding.**
+
+| Rung | The claim stands on | Evidence it needs | What it does **not** show |
+|---|---|---|---|
+| **0 · Recalled** | memory | nothing; mark it `UNVERIFIED` | anything |
+| **1 · Documented** | the vendor's own page says so | the address and the date it was read | that the tool is offered to *this* client, on *this* account |
+| **2 · Listed** | the connected instrument offers it | the name, and its schema, in a listing taken this session | that it works, or that this account may use it |
+| **3 · Run** | it was called once on a real input | the call and its result, quoted, and the account state it ran under | that it works for anyone else, or twice |
+| **4 · Reproduced** | a second party, a second file or tenant, or a re-run after a change got the same | both runs, named | nothing further; it is the top |
+
+**Four rules follow.**
+
+1. **Every claim states its rung, and a page's summary line is only as high as its lowest claim.**
+   A page that mixes rungs says so, and does not average them.
+2. **Absence on rung 1 says nothing about rungs 2 and 3.** *A capability absent from documentation is
+   not an absent capability* (`tools/figma-surface.md`, 2026-08-28), and the reverse holds: a
+   documented tool is not an exposed one.
+3. **A disagreement between rungs is recorded as a finding, with both rungs named.**
+4. **The `Audited` date moves when a rung-3 call ran, and a pass that only listed or read is dated
+   as that** (*partial*, or *read*). Rung 2 alone never moves it. This is the rule `tools/figma-surface.md`
+   states as *"the date moves when a probe has run"*, put on the ladder.
+
+**A blocked rung is recorded as blocked, not as a lower claim.** A tool that is listed and cannot be
+run because an account flag is off is *listed, run blocked by `<the flag>`*; it is not downgraded to
+"documented", because the listing is true.
+
+**How the older wording maps:** *schema-read* and *schema-verified* are rung 2; *sourced* and *read*
+are rung 1; *verified live* and *measured* are rung 3 and must name the call; *reported, not
+reproduced* is a rung-3 claim made by someone else, held at rung 1 here until a run of ours exists.
+
+**The worked case, measured 2026-10-24 on the Figma remote connector** (`tools/figma-mcp-remote.md`,
+fifth pass). Figma's tool page documented 41 tools; the live listing offered 42; one call was run.
+
+| Tool | Rung 1 (documented) | Rung 2 (listed) | Rung 3 (run) | Reading |
+|---|---|---|---|---|
+| `html_to_figma` | yes | **no** | — | documented, not offered: a vendor claim that did not reach this client |
+| `export_video`, `create_session` | **no** | yes | — | offered, undocumented: the listing is ahead of the page |
+| `generate_figma_design` | yes | yes | — | an earlier session had not found it; its absence was registration, not removal |
+| `send_code_to_figma` | yes | yes | **blocked** by `code_layers_enabled`, false on every plan | listed, run blocked by the account flag |
+| `whoami` | yes | yes | **yes** | the only claim on rung 3 that day |
+
+*Rule 4 is why that pass moved the `Audited` line and marked it partial: one call ran, so the date
+moves; one call is not forty-two, so it says partial.*
 
 ## Why this subsystem exists at all (2026-08-08)
 
