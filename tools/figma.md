@@ -1,7 +1,7 @@
 ---
 type: Tool
 title: "Tool: Figma — router"
-description: "The one page an orchestra fetches first for anything Figma: every page this library holds on the surface, keyed by what the work needs, plus the identity table that tells the three MCP servers apart by their parameter shape"
+description: "The one page an orchestra fetches first for anything Figma: every page this library holds on the surface, keyed by what the work needs, plus the identity table that tells the three MCP servers apart by their parameter shape, and the account flags to read before planning around a newer feature"
 status: draft
 serves: [UX Designer, Design Engineer]
 generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
@@ -42,6 +42,25 @@ not partial.
 
 **Read the identity table below before opening either MCP page**, because the three servers are told
 apart by their parameter shape and nothing else.
+
+## Before planning around a feature — read the account's flags
+
+**A feature can be documented, listed and still not usable by the account in front of you**
+(`tools/README.md`, the ladder). The remote server answers `whoami` in one call; **read it once at the
+start of any Figma task that depends on a newer feature, and plan from what it says.** Record the
+flags, never the identity (the screening rule on `tools/figma-mcp-remote.md`).
+
+| `whoami` returns | It decides | Owning page | If it is off or absent |
+|---|---|---|---|
+| `code_layers_enabled`, account-wide and per plan | whether code layers can be created on that plan's files (`send_code_to_figma` is listed either way) | `figma-surface.md`, *Code layers and the agent, now shipped* | do not plan an import or a Build selection on that plan; say so and ask which plan the file belongs to |
+| `specs_enabled`, per plan | whether Specs (through `use_figma`, open beta) can be used on that plan's files | `figma-mcp-remote.md`, fifth pass | treat Specs as unavailable there until a call shows otherwise (the field's exact meaning is read from its name, not tested); prefer a file on a plan where it is on |
+| the seat on each plan (View, Collab, Dev, Full) | whether writing to the canvas outside drafts is allowed at all (Full seat) | `figma-mcp-remote.md`, *Seats & rate limits* | a View or Collab seat is read-only here; the documented monthly cap on those seats is unverified |
+| the plan tier | the plan Figma bills AI credits against | `figma-surface.md` | image generation and, after 2026-11-04, code-layer tasks use credits: ask before running either |
+
+**Measured once, on 2026-10-24, on one account:** the call succeeded, `code_layers_enabled` was false
+on every plan, and `specs_enabled` was true on two of three. **The flags are per account and move
+as Figma rolls features out gradually, so a value read on that date is a fact about that date.** Read
+it again; do not carry it forward from a page.
 
 ## Critical — re-audit 2026-08-08 (live schema introspection, not recalled)
 
