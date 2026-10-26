@@ -2517,3 +2517,27 @@ Figma's code layers (open beta 15 Oct) and the generally available agent had ove
 - The other three GE token files on this machine (tower, watcher, workshop) are empty placeholders.
 
 **State:** Forgejo and GitHub both at the commit before this entry; this entry travels by PR on Forgejo and is mirrored.
+
+## 2026-10-26 — Auditorium: what is the best addition to the library (ranked table, recorded whole before any row is played)
+
+The Composer asked for an Auditorium on the best addition to the library. The grounds: the Horizon forecast that sat wrong for three months, a documented tool that was not exposed, six rules still "reported, not reproduced", and two remotes that differed without notice. **The Program he chose: 01, 02, 04, 05, 07, in that order. Rows 03, 06, 08, 09, 10, 11 and 12 are on the stand, with their text below.**
+
+| Rank | Chair | Idea |
+|---|---|---|
+| 01 ▰▰▰ ⚡ | 👂 Agile Auditor | A "documented, registered, run" ladder page: the three states a claim about a tool can be in, with the 41-versus-42 case as the worked example, so every tool page can say which rung each claim stands on |
+| 02 ▰▰▰ ⚡ | 🔀 Agile Facilitator | A vendor-release playbook: the sequence run on 2026-10-24 (release notes, help pages, documented tool list, live listing, one call, PRs) with the stop rule that the audit date moves only when a call ran |
+| 03 ▰▰▰ 👁️ | 📐 Software Architect | One claim-level field in frontmatter (`documented` · `listed` · `run` · `reproduced`) in place of prose such as "sourced, not probed", so a gate can read it |
+| 04 ▰▰▱ ⚡ | 💻 Software Engineer | A forecast-expiry check: flags any dated future claim ("announced to ship July") once its date has passed; the old Horizon section was exactly this |
+| 05 ▰▰▱ ⚡ | ☑️ QA Engineer | A reproduction ledger: every "reported, not reproduced" rule (25 to 30 on the method page) with a script per rule; rule 29 first, since it silently drops texts |
+| 06 ▰▰▱ 👁️ | 📶 Reliability Engineer | A remote-drift command: one command compares the GitHub and Forgejo `main` and fails loudly when they differ (they differed on 2026-10-24, issue #28) |
+| 07 ▰▰▱ ⚡ | 🔍 User Researcher | A cold-reader test: ten real questions from this month, each with its expected page, run after a merge to see whether the index finds the answer |
+| 08 ▰▱▱ 👁️ | ✏️ Content Designer | "Mandala" and "mandala task" defined in the glossary in the Composer's own words (issue #13, first step); the definition is his to approve |
+| 09 ▰▱▱ 🕝 | ♿ Accessibility Specialist | A method for checking what the Figma agent builds: contrast, focus order, layer names; only writable from WCAG until an agent-built frame exists to test |
+| 10 ▰▱▱ 🕝 | 🎨 UX Designer | A briefing playbook for the Figma agent (probe 02 of issue #39); the agent now uses AI credits and each probe needs the Composer's session |
+| 11 ▰▱▱ 🕝 | 🔗 Design Engineer, with 🎨 UX Designer | A page on where Code Connect stops and code layers start; code layers were disabled on all three of the Composer's plans, so nothing can be run yet |
+| 12 ▰▱▱ ⚡ | 🧭 Product Owner | An "account readiness" row on the Figma router: a session reads the `whoami` flags (code layers, Specs) before planning around a feature |
+
+⚡ do now · 👁️ yours to judge · 📤 delegate · 🕝 postpone · ♻️ recycle
+▰▰▰ Structural · ▰▰▱ High · ▰▱▱ Medium · ▱▱▱ Low
+
+Product Owner's tie-break: the row that other rows cite ranks first; rows 02, 03 and 04 all lean on the ladder in 01.
