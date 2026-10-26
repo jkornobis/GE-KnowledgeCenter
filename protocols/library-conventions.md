@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "Library conventions — signing, publishing, and how a page states what it is"
-description: "The house rules that were carried inside the index and are now one hop away: which instance is speaking and how it says so, where this library writes and where it publishes, and the three conventions a page obeys about its own claims — a measurement carries its reference, a record says so, and provenance stays while autobiography goes"
+description: "The house rules that were carried inside the index and are now one hop away: which instance is speaking and how it says so, where this library writes and where it publishes (Forgejo first, then GitHub, and the two heads compared), and the three conventions a page obeys about its own claims — a measurement carries its reference, a record says so, and provenance stays while autobiography goes"
 status: draft
 serves_all: true
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-10T21:35:00+02:00 }

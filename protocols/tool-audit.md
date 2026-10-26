@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "Tool Audit — verified capability discovery for a new surface"
-description: "The one-time, file-backed setup step for deploying onto a new tool: critical facts verified this session rather than recalled, recommended skills proposed rather than applied, a per-page re-audit clock that a default must admit is a default, and the ten-step sequence for a re-audit when a vendor ships"
+description: "The one-time, file-backed setup step for deploying onto a new tool: critical facts verified this session rather than recalled, recommended skills proposed rather than applied, a per-page re-audit clock that a default must admit is a default, and the ten-step sequence for a re-audit when a vendor ships, with the rule for when a page's Audited date moves"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
 ---
