@@ -430,6 +430,79 @@ is a safe one.
 
 **30. Two smaller observations about the `use_figma` environment, not verified beyond it.** *Same provenance.* `figma.root.name` returned `"Document"` rather than the file's name, so a script that keys on it needs a fallback. **A `use_figma` return is cut at 20 kB**, so a script that returns a full inventory should write a digest and return the digest.
 
+## Reproduction ledger — which rules here are reported and not yet run (2026-10-26)
+
+**Rules 25 to 30, and the two failure modes under rule 20, were written down from another estate's
+report and marked *reported, not verified*.** That is rung 1 on the ladder in `tools/README.md`
+(someone else ran it; we have not). This ledger gives each one a script, says what it needs, and
+holds the status. **A status moves only on a quoted run**, with the date, the file it ran on and what
+came back: a rule is *reproduced* when our run agrees with the report, and *contradicted* when it
+does not. Neither word is written from memory.
+
+| Rule | The reported claim | Script | Needs | Status |
+|---|---|---|---|---|
+| 25 | `string.replace()` with no match returns the text unchanged and does not throw; a curly quote or an em-dash is enough to make it miss | node, below | nothing, it is plain JavaScript | **reproduced 2026-10-26** (node v26.7.0): a curly quote and a hyphen-for-em-dash each returned the text unchanged, no throw. *This confirms the language, not a Figma behaviour; the Figma-specific half of the rule (text nodes where it bites) is not run* |
+| 26 | a numbered list on a canvas is often several text nodes, not one | none yet | a file with such a list | not reproduced |
+| 27 | auto-layout grows the child's content, not always a fixed-height ancestor | none yet | a frame with a fixed-height parent near its wrap edge | not reproduced |
+| 24 | `createImage()` has a budget near 16 MP: 2× on 1920×1080 passes, 3× fails | **S24**, partial | a scratch file | not reproduced. *The script exports a frame; the budget as reported is on `createImage`, which an export does not call, so a pass here would not settle it* |
+| 20 | cloning a node whose annotations carry both `label` and `labelMarkdown` throws | none yet | a file with such an annotation | not reproduced |
+| 28.1 | slot properties differ in value between REST and the plugin API | none yet | a file with a slot and a REST token | not reproduced |
+| 28.2 | the plugin API lists `fontName` and `textStyleId` in `overriddenFields` where REST lists `characters` and `fills` | none yet | a file with text overrides and a REST token | not reproduced |
+| 28.3 | `componentProperties` throws "Component set for node has existing errors" on an instance of a broken set | **S28** | a file that has broken component sets | not reproduced |
+| 29 | `figma.skipInvisibleInstanceChildren` is `true` in `use_figma`, and with it on, hidden texts inside instances are missing | **S29** | a file with an instance that holds a hidden text | not reproduced |
+| 30 | `figma.root.name` returns `"Document"`; a `use_figma` return is cut at 20 kB | **S30** | any file | not reproduced |
+
+**Run rule 29 first.** It is the one that silently changes a count, and it is cheap: one read-only
+script on a file that already has an instance with a hidden text.
+
+**The scripts are read-only unless a note says otherwise, and each returns a small object.** Run them
+through `use_figma` on a file the Composer names or creates, never on a client file. The Composer's
+word is needed first, because `use_figma` is a write-capable tool and the rule here is that nothing
+touches a real file unasked.
+
+```js
+// S29 — rule 29. Read-only; restores the flag.
+const flag = figma.skipInvisibleInstanceChildren;
+const inst = figma.currentPage.findOne(n => n.type === 'INSTANCE');
+if (!inst) return { flag, note: 'no instance on this page' };
+const withFlag = inst.findAll(n => n.type === 'TEXT').length;
+figma.skipInvisibleInstanceChildren = false;
+const withoutFlag = inst.findAll(n => n.type === 'TEXT').length;
+figma.skipInvisibleInstanceChildren = flag;
+return { flag, withFlag, withoutFlag };   // reported: flag true, and withoutFlag > withFlag where a text is hidden
+```
+
+```js
+// S30 — rule 30. Read-only. The caller measures how much of "big" came back.
+return { rootName: figma.root.name, big: 'x'.repeat(25000) };   // reported: "Document", and big cut near 20,000
+```
+
+```js
+// S28 — rule 28.3. Read-only; counts failures instead of stopping on the first.
+const insts = figma.currentPage.findAll(n => n.type === 'INSTANCE').slice(0, 3000);
+let threw = 0, first = null;
+for (const i of insts) { try { i.componentProperties; } catch (e) { threw++; first = first || String(e.message).slice(0, 80); } }
+return { instances: insts.length, threw, first };   // reported: threw > 0 only where a component set is broken
+```
+
+```js
+// S24 — rule 24, partial. WRITES a scratch frame and removes it. Scratch file only.
+const f = figma.createFrame(); f.resize(1920, 1080);
+const out = {};
+for (const s of [2, 3]) {
+  try { const b = await f.exportAsync({ format: 'PNG', constraint: { type: 'SCALE', value: s } }); out['x' + s] = b.length; }
+  catch (e) { out['x' + s] = String(e.message).slice(0, 80); }
+}
+f.remove();
+return out;   // reported budget is on createImage, so a pass here proves only that export works
+```
+
+```js
+// Rule 25 — node, no Figma needed. Prints whether each replace() left the text unchanged.
+const s = 'Don\u2019t forget the em\u2014dash';
+console.log(s.replace("Don't forget", 'x') === s, s.replace('em-dash', 'x') === s);   // true true
+```
+
 ## IV — Reading list (from the same session)
 
 Brad Frost, [*Atomic Design*](https://atomicdesign.bradfrost.com/table-of-contents/) (2013) · Nathan
