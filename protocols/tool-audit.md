@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "Tool Audit — verified capability discovery for a new surface"
-description: "The one-time, file-backed setup step for deploying onto a new tool: critical facts verified this session rather than recalled, recommended skills proposed rather than applied, and a per-page re-audit clock that a default must admit is a default"
+description: "The one-time, file-backed setup step for deploying onto a new tool: critical facts verified this session rather than recalled, recommended skills proposed rather than applied, a per-page re-audit clock that a default must admit is a default, and the ten-step sequence for a re-audit when a vendor ships"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
 ---
@@ -50,6 +50,46 @@ A tool page is a snapshot of verified facts, and tools ship new versions — MCP
 **A page whose body declares it carries no findings of its own takes the third value.** Judge it by that declaration, never by the slug — a page was once refused a measurement on the strength of its filename, and the filename was not the reason.
 
 **Why it stopped being 90 for everything:** a file-type clock called `figma.md` *fresh* at 35 days while `register.md` recorded **four Config 2026 capabilities landing inside that same window** — the first run of the per-page clock marked it stale, which the old one never could. A scheduled runner **does** exist since ADR-152 — `userresearcher-cadence-tool-audit-sota-watch`, monthly (`0 9 1 * *`, first fire 2026-08-01) — and it runs this check in the same pass as note 13's state-of-the-art watch (same owner, User Researcher). It is also typeable on demand. *(Corrected 2026-08-05: this line read "the orchestra has no scheduled runner", true when ADR-124 wrote it and false since 2026-07-17.)* A flagged page gets a **re-audit**: User Researcher re-verifies the Critical facts live (introspect the current MCP schema, re-fetch docs) — never re-dated from memory — corrects what changed, and updates the `Audited` date; Recommended items are re-proposed only if newly relevant. Same discipline as the first audit, just triggered by the clock instead of a first deployment.
+
+## Re-audit on a vendor release — the sequence (2026-10-26)
+
+**When the clock lapses, or a vendor ships something the page forecast or never mentioned, this is the
+order of work.** It is the sequence run on the Figma pages on 2026-10-24, written down so the next
+release costs a pass and not a rediscovery. Every claim it produces stands on a rung of the ladder in
+`tools/README.md`, and the sequence is built so that each step is cheaper than the one after it.
+
+| Step | Do | Rung it produces | What goes wrong if skipped |
+|---|---|---|---|
+| 1 | **Read the page whole first.** List the claims it holds, each with its rung and its date. | — | a re-audit that checks what is easy to check, not what the page asserts |
+| 2 | **Read the vendor's release notes, first-party.** An aggregator may find a date; it never settles one. **Say if the page was truncated** ("Load more"): the window not seen is a finding. | 1 | a date or a plan taken from a secondary source |
+| 3 | **Read the vendor's pages for each claim the page holds.** Mark each: unchanged, changed, **forecast resolved**, or **no longer mentioned**. A claim the vendor stopped mentioning is *unverified*, not *retired*. | 1 | a retired claim whose only source was never re-read |
+| 4 | **List the live instrument** and count the names. Compare with the documented list: the delta has three kinds, *documented not offered*, *offered not documented*, *offered and documented*. | 2 | the page's count drifting from the instrument's |
+| 5 | **Run one read-only call that proves the instrument is live and authenticated**, preferably one that returns the account's capability flags. Record the flags, never the identity. | 3 | a connector banner believed in place of a call |
+| 6 | **Name what could not be reached and why**: a flag that is off, another machine, an authorisation only the Composer can give. Write it as *blocked by …* and date the next step. | blocked | an unreachable rung silently read as a lower claim |
+| 7 | **Edit the pages.** Add a dated section; strike through what is superseded and say by what; leave earlier passes as written. | — | rewriting history into an outcome |
+| 8 | **Sync the router and the index row**, then run the three gates. | — | a description that disagrees with its page |
+| 9 | **Open the PR as a review packet**, merge it, then push `main` to Forgejo first and GitHub second and compare the two heads (`protocols/library-conventions.md`). | — | a publish surface that quietly stopped receiving |
+| 10 | **Comment once, with facts only, on any open issue the result bears on**, and file anything owed. | — | a finding that lives only in a page nobody reads |
+
+**The date rule.** The `Audited` line moves when step 5 ran, and a pass that stopped at step 3 or 4
+is dated as that (*read*, *listed*), or marked **partial** in the header. A page never reads fuller
+than the call behind it.
+
+**Stop rules, each learned in the pass that wrote this.**
+
+- **When the instrument's self-report contradicts an independent probe, believe the probe and stop
+  trusting the report.** A local server answered *"enable the server"* twice while its port was open;
+  a restart of the client cleared it, and the message had never been a reading of the setting.
+- **A tool that fails twice stops the run** (invariant 3), and the failure is said, not worked around.
+- **Nothing that spends the vendor's credits or writes to a real file is run without the Composer's
+  word.** Image generation and code-layer import both do; listing and `whoami` do not.
+- **Screen before writing.** The library holds no employer, project or client, and no account or plan
+  names. A capability flag is recorded; the identity it came from is not.
+
+**What a pass owes when it ends short.** An explicit line of what remains, as an issue if it will
+outlive the session: the live recount, the second tenant, the tool nobody ran. *A pass that ends
+short and says so is a result; one that ends short and reads full is the defect this section exists
+to prevent.*
 
 ## Template
 
