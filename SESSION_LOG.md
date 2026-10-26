@@ -2541,3 +2541,13 @@ The Composer asked for an Auditorium on the best addition to the library. The gr
 ▰▰▰ Structural · ▰▰▱ High · ▰▱▱ Medium · ▱▱▱ Low
 
 Product Owner's tie-break: the row that other rows cite ranks first; rows 02, 03 and 04 all lean on the ladder in 01.
+
+## 2026-10-26 — the Program played: rows 01, 02, 04, 05, 07 of the Auditorium above
+
+**Played, in the Composer's order.** Row 01, the claim ladder, as a section of `tools/README.md` (#78). Row 02, the ten-step re-audit sequence in `protocols/tool-audit.md` (#79). Row 04, `check_forecasts.mjs`, report-only (#80); on 2026-11-05 it will flag the Figma "free through 4 November" sentence in `tools/figma-surface.md`. Row 05, the reproduction ledger in `tools/figma-method.md` (#81), with rule 25 reproduced in plain JavaScript and the rest waiting for a scratch file. Row 07, `check_findability.mjs` with ten real questions: first run 8 found, 1 weak, 1 missed; the two index rows were fixed rather than the questions, and the second run found all ten.
+
+**Delivery changed mid-Program.** Merges until #78 were made on GitHub first. The hand-push interim (ruled 2026-10-25, #28) says Forgejo first; GitHub was 4 commits ahead of Forgejo when this was noticed, and was brought level by pushing `main` to Forgejo. From #79 on, each merge is made locally and pushed Forgejo, then GitHub, and the two heads compared.
+
+**On the stand, with their text in the table above:** 03 (a claim-level field in frontmatter), 06 (a remote-drift command), 08 (define "mandala"), 09, 10, 11 and 12. Rows 03, 06 and 08 are the Composer's to judge.
+
+**Owed, and not filed:** the first run of the reproduction ledger needs a scratch Figma file named by the Composer; a real cold reader for `check_findability.mjs` is the stronger test and is his to run; whether `check_forecasts.mjs --strict` joins the gates in `CLAUDE.md` is his call.

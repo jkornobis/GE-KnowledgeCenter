@@ -1,0 +1,15 @@
+{
+  "about": "Real questions asked of this library, each with the page(s) that answer it. Read by check_findability.mjs. Never tune a question until it passes: a miss is a finding about the index, and the cure is a better row. Add a question when a session needed an answer and had to hunt for it; say when and what it was for.",
+  "questions": [
+    { "id": "q01", "asked": "2026-10-24", "for": "re-audit of the Figma product page", "q": "Is Figma's agent generally available and does it use AI credits?", "expect": ["tools/figma-surface.md"] },
+    { "id": "q02", "asked": "2026-10-24", "for": "re-audit of the remote MCP page", "q": "How many tools does the remote Figma MCP server expose?", "expect": ["tools/figma-mcp-remote.md"] },
+    { "id": "q03", "asked": "2026-10-24", "for": "reaching the local server", "q": "Can the Figma desktop MCP server be reached from another machine?", "expect": ["tools/figma-mcp-desktop.md"] },
+    { "id": "q04", "asked": "2026-10-26", "for": "issue 66, reading hidden layers", "q": "Why are hidden texts inside instances missing when I read a file with use_figma?", "expect": ["tools/figma-method.md"] },
+    { "id": "q05", "asked": "2026-10-26", "for": "recording the open-issue ranking", "q": "How is a ranked table recorded in the session journal?", "expect": ["protocols/session_journal.md"] },
+    { "id": "q06", "asked": "2026-10-26", "for": "partial passes on tool pages", "q": "When does the Audited date on a tool page move?", "expect": ["protocols/tool-audit.md", "tools/README.md"] },
+    { "id": "q07", "asked": "2026-10-26", "for": "pushing a merge", "q": "In what order do I push main to Forgejo and GitHub?", "expect": ["protocols/library-conventions.md"] },
+    { "id": "q08", "asked": "2026-10-26", "for": "running an Auditorium", "q": "What does an Auditorium response look like?", "expect": ["protocols/triggers.md"] },
+    { "id": "q09", "asked": "2026-10-24", "for": "starting any Figma task", "q": "Which page do I fetch first for anything Figma?", "expect": ["tools/figma.md"] },
+    { "id": "q10", "asked": "2026-10-24", "for": "what to do when a vendor ships", "q": "What steps do I follow to re-audit a tool when the vendor releases something new?", "expect": ["protocols/tool-audit.md"] }
+  ]
+}
