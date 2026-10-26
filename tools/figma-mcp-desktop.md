@@ -3,6 +3,7 @@ type: Tool
 title: "Tool: Figma MCP — the desktop server"
 description: "The Figma MCP server inside the desktop app, reached over a loopback port on the machine that runs it: ten tools, none taking a fileKey, half with no declared parameters at all — live-audited 2026-10-24 from a session on that machine, after five passes from the tower that structurally could not reach it"
 status: draft
+claim_level: listed
 serves: [UX Designer, Design Engineer]
 generated: { by: human:jkornobis, at: 2026-08-25T23:58:02+02:00 }
 card: tools/figma.md

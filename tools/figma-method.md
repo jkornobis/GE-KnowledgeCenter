@@ -3,6 +3,7 @@ type: Method
 title: "The Figma method — how a design surface is actually played"
 description: "Eyes first and code second: the working loop for a design surface, what the eyes read in a structured file, and why text-only spatial reasoning collapses as a layout grows"
 status: draft
+claim_level: documented
 generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
 sources:
   - resource: https://www.figma.com/plugin-docs/api/Annotation/
