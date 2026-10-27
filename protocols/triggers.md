@@ -71,10 +71,11 @@ Any numbered list or table you present (a `#` column suffices) is a *Program sel
 
 ## Fortissimo (ff)
 `Fortissimo` escalates the task to the **most reasonable-powerful model** for its authority — when a decision or change carries real stakes and must be right. "Reasonable" is load-bearing: match model power to stakes (effort-scaling for models), don't reflexively jump to the top.
-- Default authority tasks → **Opus 4.8** (`claude-opus-4-8`) — the recommended ceiling for complex work.
-- Only the hardest / highest-stakes → **Fable 5** (`claude-fable-5`) — most capable but premium (never a cost-motivated choice).
+- Default authority tasks → **the strongest reasonable tier**: the most capable model that is not premium-priced, the recommended ceiling for complex work.
+- Only the hardest / highest-stakes → **the most capable tier**, even at a premium (never a cost-motivated choice).
+- **Which model fills each tier is set by each project's key and changes with releases, so this page names tiers and no versions** (ruled 2026-10-27, from `#199`; the same reasoning as the thinker in `protocols/orchestra-protocols.md`). A version number written into a rule is stale at the next release.
 
-**Mechanism (honest):** the model runs the orchestra and cannot switch itself. So Fortissimo either (a) asks the Composer to switch the session with `/model`, or (b) spawns a subagent on the strong model for the scoped task and returns its judgment. Product Owner/Software Engineer own the model call; if the right tier is ambiguous, present Opus vs Fable as a yes/no-style choice. *Musical: ff is the fullest voice — used where it counts, not everywhere.*
+**Mechanism (honest):** the model runs the orchestra and cannot switch itself. So Fortissimo either (a) asks the Composer to switch the session with `/model`, or (b) spawns a subagent on the strong model for the scoped task and returns its judgment. Product Owner/Software Engineer own the model call; if the right tier is ambiguous, present the two tiers as a yes/no-style choice. A spawned subagent is a spawn like any other and keeps the consent gate (`protocols/orchestra-protocols.md`). *Musical: ff is the fullest voice — used where it counts, not everywhere.*
 
 ## Open score / Close score — open is the default, and it is silent `[standing]`
 **Open score is the resting state (Composer, 2026-08-27), and nothing announces it.** Routing is
