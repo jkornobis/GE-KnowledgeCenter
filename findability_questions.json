@@ -11,6 +11,7 @@
     { "id": "q08", "asked": "2026-10-26", "for": "running an Auditorium", "q": "What does an Auditorium response look like?", "expect": ["protocols/triggers.md"] },
     { "id": "q09", "asked": "2026-10-24", "for": "starting any Figma task", "q": "Which page do I fetch first for anything Figma?", "expect": ["tools/figma.md"] },
     { "id": "q10", "asked": "2026-10-24", "for": "what to do when a vendor ships", "q": "What steps do I follow to re-audit a tool when the vendor releases something new?", "expect": ["protocols/tool-audit.md"] },
-    { "id": "q11", "asked": "2026-10-27", "for": "moving the delivery method out of a Key", "q": "What goes in a pull request description, and who may comment on another instance's pull request?", "expect": ["method/delivery.md"] }
+    { "id": "q11", "asked": "2026-10-27", "for": "moving the delivery method out of a Key", "q": "What goes in a pull request description, and who may comment on another instance's pull request?", "expect": ["method/delivery.md"] },
+    { "id": "q12", "asked": "2026-10-27", "for": "moving End Day and New Day out of a Key", "q": "What does End Day GE do, in what order, and what does New Day read?", "expect": ["protocols/triggers.md"] }
   ]
 }
