@@ -1,7 +1,7 @@
 ---
 type: Method
 title: "Orchestra Glossary — Canonical Vocabulary (Content Designer)"
-description: "One definition per term for the whole system: roles, surfaces, artifacts, modes, triggers and named principles, so no word means two things"
+description: "One definition per term for the whole system: roles, surfaces, artifacts, modes, triggers and named principles, so no word means two things, and the practice of glossing a figurative term when it first does technical work"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-22T20:54:19+02:00 }
 ---
@@ -11,6 +11,26 @@ generated: { by: human:jkornobis, at: 2026-08-22T20:54:19+02:00 }
 One definition per term. When any doc uses these words, this is what they mean. Resolves the ambiguity the accessibility audit flagged (note 3).
 
 **This library authors this page** (ruled by the Composer 2026-09-24). Until that day it existed twice, here and in the Workshop instance's own tree, and the two copies had drifted in both directions: *Chair*, *Taijitu*, *Interval* and the reworded *Musician* and *Chair spec* existed only there, and *Sweep* only here. Those five entries are the Workshop's text, merged verbatim on 2026-09-24. The entries under *Surfaces* and *The fourth verdict* were added the same day, one definition per term, each pointing at the page that owns it.
+
+## Glossing a figurative term — the practice `[standing]`
+
+**The glossary holds definitions. This is the practice that decides when a definition has to travel
+with the word.** Ruled by the Composer 2026-09-01, `[standing]`, and held in his Key until forge `#199`
+asked for it to be written here.
+
+A reader may work in a second language on purpose, so that the technical layer stays lossless between
+them and the model. The price is the **idiomatic** layer: they do not always hold the *figurative* sense
+of a word, and an English word with a literal meaning can name a protocol, a clock or a state.
+
+- **Gloss a figurative term the first time it does technical work.** A word is doing technical work when
+  it names a protocol, a clock, a state, a trigger or a claim: *sweep*, *fair copy*, *the stand*,
+  *overshoot*. One clause, in plain words, at the first use in a page or an exchange.
+- **Do not gloss ordinary words.** A strong reader's ordinary vocabulary needs no help, and explaining it
+  is tiresome. **The test is whether the word is carrying a rule**, not whether it is hard.
+- **A term that keeps needing a gloss belongs in this glossary.** The word that prompted the practice
+  gated a protocol, named a clock and a debt, was used constantly, and was in no glossary.
+  `check_glossary_gap.mjs` lists the candidates; adding one is a definition, and a definition is this
+  page's job.
 
 ## Roles
 - **Composer** — the human user. Sets direction, judges all subjective questions, updates the protocol through correction. The final authority (Dèmos Kratos).
