@@ -61,7 +61,7 @@ card: tools/figma.md
 
 # The Figma method — how a design surface is actually played
 
-Audited 2026-09-22 by User Researcher — a full-page sweep against that day's live re-audit of the remote server (commit `e535f41`).
+Audited 2026-10-27 (**partial**: the reproduction ledger's rules were run through the remote connector, seven of its ten rows, and nothing else on this page was re-checked) and 2026-09-22 by User Researcher — a full-page sweep against that day's live re-audit of the remote server (commit `e535f41`).
 
 Re-audit: 30 days — measured; inherits the Figma clock, like the two connector pages, because a Figma release is what invalidates a rule here.
 
@@ -390,11 +390,11 @@ sharper statement of this is in Figma's own `figma-use` skill, which the estate 
 plain "throws if not yet a child" had not read — see `tools/figma-mcp-remote.md` on the route that
 serves those skills.
 
-**24. Images and exports exist; the pixel budget is reported, not reproduced.** `figma.createImage`,
+**24. Images and exports exist; the pixel budget is real, measured 2026-10-27.** `figma.createImage`,
 `figma.createImageAsync` and `node.exportAsync` are **all functions — verified 2026-09-02**.
-`exportAsync({ format: "PNG", constraint: { type: "SCALE", value } })` is the capture call. **Reported
-by the estate that hit the ceiling and untested here:** `createImage()` carries a budget near 16 MP, so
-a 1920×1080 frame exports at 2× (8.3 MP) but not 3× (18.6 MP). Treat 2× as the practical maximum for a
+`exportAsync({ format: "PNG", constraint: { type: "SCALE", value } })` is the capture call. **Reproduced
+2026-10-27 (see the ledger below):** `createImage()` carries a budget near 16 MP, so
+a 1920×1080 frame goes through at 2× (8.3 MP) and is refused at 3× (18.7 MP) with *"Image is too large"*, while `exportAsync` makes both PNGs. Treat 2× as the practical maximum for a
 full screen and 3× as available for crops — see `method/design-review.md` for why the floor is 2×.
 
 **25. A `replace()` with no match is a silent no-op, and text nodes are where this bites.**
@@ -429,7 +429,7 @@ is a safe one.
 
 **29. `skipInvisibleInstanceChildren` was `true` inside `use_figma`, and it hides the layers a reviewer most needs.** *Same provenance and verification state as rule 28.* With it on, the invisible layers inside instances are skipped: **77 of 113 texts on one slide were missing** from a reading. A reader that must see hidden layers sets `figma.skipInvisibleInstanceChildren = false` explicitly, as its first line. This is the same trap as rule 16, a silent smaller result rather than an exception, and it is the reason a count taken through `use_figma` can disagree with one taken through REST. It **may** also bear on the 22% of instances that this library's own measurement found empty (`tools/figma-mcp-remote.md`, *Prototype edges exist in the data model*), since that scan ran through `use_figma`; that link is a question, not a finding.
 
-**30. Two smaller observations about the `use_figma` environment, not verified beyond it.** *Same provenance.* `figma.root.name` returned `"Document"` rather than the file's name, so a script that keys on it needs a fallback. **A `use_figma` return is cut at 20 kB**, so a script that returns a full inventory should write a digest and return the digest.
+**30. Two smaller observations about the `use_figma` environment, not verified beyond it.** *Same provenance.* `figma.root.name` returned `"Document"` rather than the file's name, so a script that keys on it needs a fallback. ~~**A `use_figma` return is cut at 20 kB**~~ **Not seen on 2026-10-27, on the remote connector from a Claude Code session: a 30,000-character return arrived whole** (the ledger below). It may still hold in the reporting estate's environment, so a script that returns a full inventory should still write a digest and return the digest: a large return costs the caller its context whether or not it is cut.
 
 ## Reproduction ledger — which rules here are reported and not yet run (2026-10-26)
 
@@ -443,18 +443,21 @@ does not. Neither word is written from memory.
 | Rule | The reported claim | Script | Needs | Status |
 |---|---|---|---|---|
 | 25 | `string.replace()` with no match returns the text unchanged and does not throw; a curly quote or an em-dash is enough to make it miss | node, below | nothing, it is plain JavaScript | **reproduced 2026-10-26** (node v26.7.0): a curly quote and a hyphen-for-em-dash each returned the text unchanged, no throw. *This confirms the language, not a Figma behaviour; the Figma-specific half of the rule (text nodes where it bites) is not run* |
-| 26 | a numbered list on a canvas is often several text nodes, not one | none yet | a file with such a list | not reproduced |
-| 27 | auto-layout grows the child's content, not always a fixed-height ancestor | none yet | a frame with a fixed-height parent near its wrap edge | not reproduced |
-| 24 | `createImage()` has a budget near 16 MP: 2× on 1920×1080 passes, 3× fails | **S24**, partial | a scratch file | not reproduced. *The script exports a frame; the budget as reported is on `createImage`, which an export does not call, so a pass here would not settle it* |
-| 20 | cloning a node whose annotations carry both `label` and `labelMarkdown` throws | none yet | a file with such an annotation | not reproduced |
+| 26 | a numbered list on a canvas is often several text nodes, not one | none | a claim about how designers structure content, not about the API | **cannot be run as a script**; stays reported |
+| 27 | auto-layout grows the child's content, not always a fixed-height ancestor | **S27** | a fixed-height auto-layout parent | **partly reproduced 2026-10-27**: a text in a parent fixed at 120 px grew from 15 to 75 px and the parent stayed at 120. *The overflow the rule warns of was not reached: 75 px still fit inside the padding.* |
+| 24 | `createImage()` has a budget near 16 MP: 2× on 1920×1080 passes, 3× fails | **S24** | a scratch file | **reproduced 2026-10-27**: `createImage` on the 2× PNG (8.3 MP) returned an image of 3840×2160; on the 3× PNG (18.7 MP) it threw *"in createImage: Image is too large"*. `exportAsync` produced both PNGs (37,517 and 80,565 bytes), so the limit is on `createImage` and not on export |
+| 20 | cloning a node whose annotations carry both `label` and `labelMarkdown` throws | **S20** | a file where annotations may be edited | **not reproduced, and blocked**: the first write was refused with *"Cannot call node.annotations: you don't have permission to edit annotations on this file"* (the rule's own 20c wording, on a Starter-plan file). The both-fields claim was not reached |
 | 28.1 | slot properties differ in value between REST and the plugin API | none yet | a file with a slot and a REST token | not reproduced |
 | 28.2 | the plugin API lists `fontName` and `textStyleId` in `overriddenFields` where REST lists `characters` and `fills` | none yet | a file with text overrides and a REST token | not reproduced |
-| 28.3 | `componentProperties` throws "Component set for node has existing errors" on an instance of a broken set | **S28** | a file that has broken component sets | not reproduced |
-| 29 | `figma.skipInvisibleInstanceChildren` is `true` in `use_figma`, and with it on, hidden texts inside instances are missing | **S29** | a file with an instance that holds a hidden text | not reproduced |
-| 30 | `figma.root.name` returns `"Document"`; a `use_figma` return is cut at 20 kB | **S30** | any file | not reproduced |
+| 28.3 | `componentProperties` throws "Component set for node has existing errors" on an instance of a broken set | **S28** | a file that has broken component sets | **not reproduced 2026-10-27**: a set built from two variants with the same name read cleanly (0 throws on 2 instances), so *duplicate variant names* is not the condition. The condition that produces the error is unknown here |
+| 29 | `figma.skipInvisibleInstanceChildren` is `true` in `use_figma`, and with it on, hidden texts inside instances are missing | **S29** | a file with an instance that holds a hidden text | **reproduced 2026-10-27**: the flag read `true`; on an instance holding one visible and one hidden text, `findAll` counted **1** text with the flag on and **2** with it set to `false`; the flag was restored |
+| 30 | `figma.root.name` returns `"Document"`; a `use_figma` return is cut at 20 kB | **S30** | any file | **half reproduced, half contradicted 2026-10-27**: `figma.root.name` returned `"Document"`. A return of **30,000 characters arrived whole** (all thirty chunks, `[00]` to `[29]`), so the 20 kB cut was **not seen on this route** |
 
-**Run rule 29 first.** It is the one that silently changes a count, and it is cheap: one read-only
-script on a file that already has an instance with a hidden text.
+**First run, 2026-10-27.** Through the remote connector from a Claude Code session, on a scratch file the Composer allowed, in a Starter-plan team where he holds a Full seat. **Reproduced: 24, 25, 29 and the `"Document"` half of 30. Partly: 27. Contradicted on this route: the 20 kB cut in 30. Tried and not reproduced: 28.3. Blocked: 20. Unrunnable as a script: 26. Not run: 28.1 and 28.2, which need a REST token and a slot property.**
+
+**What the run changes.** Rule 29 is now a measured fact on this route and the one that matters most: a hidden text inside an instance is simply not counted until the flag is set to `false`. Rule 24 is a measured limit: stay under about 16 MP for `createImage`. **Rule 30's 20 kB cut did not happen here**, which does not make the Workshop wrong: its environment may differ from this one (another client, another return path). A claim that holds in one environment and not another is recorded as both, with each environment named.
+
+**Two deviations from the scripts printed below, for the record.** S30 returned a chunked 30,000-character string so the cut point would be readable, instead of the single 25,000-character string. S24 was run twice: once as printed, which passed at both scales as the ledger warned, and once feeding the exported PNGs to `createImage`, which is where the budget lives.
 
 **The scripts are read-only unless a note says otherwise, and each returns a small object.** Run them
 through `use_figma` on a file the Composer names or creates, never on a client file. The Composer's
@@ -496,6 +499,23 @@ for (const s of [2, 3]) {
 }
 f.remove();
 return out;   // reported budget is on createImage, so a pass here proves only that export works
+```
+
+```js
+// S27 — rule 27. WRITES a scratch frame. Scratch file only.
+const outer = figma.createAutoLayout('VERTICAL', { paddingTop: 8, paddingBottom: 8, paddingLeft: 8, paddingRight: 8 });
+outer.primaryAxisSizingMode = 'FIXED'; outer.counterAxisSizingMode = 'FIXED'; outer.resize(200, 120);
+const t = figma.createText(); outer.appendChild(t); t.characters = 'short'; t.textAutoResize = 'HEIGHT'; t.resize(184, t.height);
+const before = { textH: t.height, outerH: outer.height };
+t.characters = 'a much longer line of text that has to wrap onto several lines inside this narrow fixed-height parent';
+return { before, after: { textH: t.height, outerH: outer.height } };   // reported: the parent does not grow with the child
+```
+
+```js
+// S20 — rule 20. WRITES a scratch frame; needs a file where annotations may be edited.
+const fr = figma.createFrame(); fr.annotations = [{ labelMarkdown: 'note one' }];
+const cl = fr.clone();
+try { cl.annotations = fr.annotations; return 'copy ok'; } catch (e) { return String(e.message); }   // reported: "Only one of label or labelMarkdown should be given"
 ```
 
 ```js
