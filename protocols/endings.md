@@ -73,8 +73,8 @@ expiry, so a quiet afternoon becomes a column of *"re-armed, nothing new"*. He s
 watch broken. The watch worked; **the restarting was the fault**, measured on two instances.
 
 **So a watch is started as a background command that ends at its first event**, wakes the session
-once with that event, and is started again after it is handled. **Silence then costs nothing**: no
-timer, no restart, no turn. A watch that keeps a marker on disk reports what arrived between one
+once with that event, and is started again after it is handled. **Silence then costs nothing, inside
+the limit below**: no timer, no restart, no turn. A watch that keeps a marker on disk reports what arrived between one
 wake and the next start, so nothing is lost in the gap.
 
 ⚠️ **Stop the watch only after it has saved its marker, never at the moment it prints.** The first
@@ -83,6 +83,18 @@ again: a loop, caught on the first real event (2026-10-02). It had been "proven"
 had no marker, and **a proof with a stand-in is only as good as its resemblance to the real thing.**
 The fixed version waits for the marker file to change before stopping. On the real watch, the event
 was caught once, and the next start stayed silent.
+
+**The one-shot watch does expire, and the limit is part of the rule (2026-10-27, reported by
+GE-Workshop on `#208` from its own `#257`; not measured here).** The harness stops a background command
+at **30 minutes by default and at two hours at most**. So *silence costs nothing* holds only inside
+that window. After it, an open session is quiet until it is next armed, and the bell still reaches a
+fresh session when the Composer posts.
+
+**A ruling of 2026-10-09 told a session to start the watch again at the two-hour stop and report
+nothing; the Composer reversed it on 2026-10-12** (as GE-Workshop reports it). The reminder now arms
+once, goes quiet at the stop, and says so in one line. **So the sentence above holds: the restarting
+was the fault.** The stated cost of the reversed ruling is why: an idle open session would wake every
+two hours.
 
 This is the waiting-turn ending above, prevented at its source rather than exempted at the gate.
 The estate's startup reminder carries it since GE-Workshop PR #246 (GE-Workshop #245).
