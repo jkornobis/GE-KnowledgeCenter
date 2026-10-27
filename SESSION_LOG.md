@@ -2561,3 +2561,15 @@ Product Owner's tie-break: the row that other rows cite ranks first; rows 02, 03
 ## 2026-10-26 — row 08 played: "Mandala task" is in the glossary, in his words
 
 The Composer chose his own words verbatim, and then approved the merge. `method/orchestra_glossary.md` now defines **Mandala task** from his two sentences (2026-09-03 and 2026-09-10), with the five dimensions marked as the filing instance's wording and not his (#86). Issue `#13`'s first step is done; its other three surfaces (reading, indexing, fetching the curl list, the acting surface) are untouched and still wait on `#11` and `#12`. **Rows 09, 10 and 11 of the Auditorium remain on the stand, blocked** (the agent's AI credits, his hands, an account flag); their text is in the table above.
+
+## 2026-10-27 — New Day: the Workshop's two proposals, and three pieces of the Key moved into the library
+
+**New Day, read in full.** The public tracker was quiet. The forge tracker held eight open issues, two of them new since the last checkpoint: forge `#207` (the thinker) and `#208` (the room watch), both proposals from GE-Workshop, so both reached the Composer as proposals and were ranked before anything was played. His Program: 1, then 2 and 3 put to him.
+
+**#208, played:** `protocols/endings.md` states the one-shot watch's limits (30 minutes by default, two hours at most) and the Composer's reversal of 2026-10-12, both marked as reported by the Workshop, not measured here (PR #87). Closed.
+
+**#207, played, with a correction to the issue:** the issue relayed the 2026-10-09 ruling; the Workshop's own thread, read to its end, shows he replaced the consent on 2026-10-12 with **a standing yes for five calls a session** (ADR-394). `protocols/orchestra-protocols.md` carries the thinker as a second named exception, written as **roles** with the model left to each project's key, on his pick (PR #88). The screening script could not run (terms file missing on this machine); the text was read by hand. Closed.
+
+**#199, three of four pieces, on his pick:** Fortissimo names tiers (PR #89); the glossing practice is a glossary section (PR #90); the delivery method is `method/delivery.md` with a routing-card row (PR #91). **Left open on the stand:** `End Day` and `New Day` in `triggers.md` (he did not pick them), and the order of authority between presentation rules.
+
+**Unplayed from the 2026-10-26 Auditorium, with their text in that entry:** rows 09, 10 and 11, blocked. **Owed, and his:** a scratch Figma file for the reproduction ledger; whether `check_forecasts.mjs --strict` joins the gates; the Amazon Quick re-audit of 2026-11-05 (forge `#202`).
