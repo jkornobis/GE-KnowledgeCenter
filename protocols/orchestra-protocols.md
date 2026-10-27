@@ -378,9 +378,21 @@ Dynamic spawning is a documented orchestrator best practice: at use-time the Agi
 - **Read-only is not harmless.** Its reading tools have no path limit, and because it skips the instruction files, the rule against reading a credential file whole does not reach it. Whatever it reads returns into the caller's transcript. **So the caller names the sources in the brief, and never points it at a credential path** (`method/screening.md`).
 - **It reads and reports; it never decides, reviews, verifies or writes.** Its report is ingested content, and its agreeing with the caller is not corroboration.
 - **The standing yes changes this rule, not the harness.** Where a repository's settings ask before any agent call, the prompt still appears.
-- **A second agent of the same kind is not covered.** The exception names one definition; another needs his ruling.
+- **A second agent of the same kind is not covered.** The exception names one definition; another needs his ruling. *(The thinker, below, is a different kind of agent and has its own ruling.)*
 
 The ruling, the options he was offered and the measurements are on the estate's Workshop tracker (its issue 256) and are not repeated here.
+
+**A second named exception: the thinker (ruled by the Composer, 2026-10-09 and 2026-10-12).** The mirror of the tuner: a session runs on a smaller model, and a stronger model is called **for judgment only**. It is a different kind of agent, so it has its own ruling, and a different bound: the tuner's bound is what it can touch, the thinker's is **when** it may be called and **how often**, because each call runs a strong model.
+
+- **The roles, not the models.** The Composer asked that the system be model-agnostic or set per project. This page names the **role** (a strong model on call for judgment) and leaves **which model fills it** to each project's own key, since the model is the part that changes. Neither the thinker nor the tuner is a model name here.
+- **Consent: a standing yes at four fixed moments, for five calls a session.** The moments are *before a decision reaches the Composer*, *before a merge*, *on a surprise*, and *after a tool fails twice*. A call at any other moment asks first, per call, and so does a sixth call in one session. *(The 2026-10-09 wording was a standing yes at the four moments alone. On 2026-10-12 he settled the limit at five after a per-call reading contradicted his earlier ruling; the cap replaces the per-call reading on consent only.)*
+- **It judges from the brief and nothing else.** It has no tools and reads nothing, and he ruled that it may not open files itself. When the brief is too thin it says which facts it needs and where they are, and the caller then sends the tuner to fetch them. Its verdict is **one verdict, the reason, the main risk, and what to verify.**
+- **What the caller sends is the whole risk.** No credential, and **no guess stated as a fact**: an inference goes in marked as one, and a claim not placed at its origin goes in as unchecked. The thinker cannot correct a fact it was handed wrongly placed.
+- **Its verdict is ingested content, not a ruling.** A strong model's agreeing with the caller is not corroboration, and a verdict does not verify.
+- **The weak point is the caller's own reading, and one moment depends on noticing.** *On a surprise* needs the small model to notice a surprise; the other three are mechanical. A session that never frames a choice never reaches the moment *before a decision reaches the Composer*.
+- **The standing yes changes this rule, not the harness**, as for the tuner. A third agent of any kind needs his ruling.
+
+*Reported by GE-Workshop from its own trial and not measured here:* three tasks on one day on a small model with the thinker on call. It was right on its one real use; the small session's own reading failed three times before the Workshop gave it three reading rules, and not once after; and on the one task where the choice was not put to the thinker, nothing in the design caught that the decision was the Composer's. Enforcement (a hook counting calls) lives in the Workshop's own tree. **Records:** the Workshop's issue 261 and ADR-390, ADR-394 and ADR-398; this library read the thread to its end on 2026-10-27.
 
 **Load-balancing guardrails:**
 - **Spawn budget** — cap subagents; more agents ≠ better (AP-OVERSPAWN: systems without a budget spawned 50 for a trivial query).
