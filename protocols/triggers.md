@@ -1,7 +1,7 @@
 ---
 type: Protocol
 title: "Triggers — the chat-typed commands and what each one does"
-description: "Full semantics and response formats for every typed trigger, the rule that a mode persists only by being echoed, and why breadth is a single-shot Auditorium rather than a sustained mode"
+description: "Full semantics and response formats for every typed trigger, including End Day GE and New Day, the rule that a mode persists only by being echoed, and why breadth is a single-shot Auditorium rather than a sustained mode"
 status: draft
 generated: { by: human:jkornobis, at: 2026-08-28T16:46:45+02:00 }
 ---
@@ -96,6 +96,31 @@ Execute the plan just discussed, no re-confirmation of already-agreed steps.
 
 ## Checkpoint the session
 Append an entry to the session journal (SESSION_LOG.md if the repo exists, otherwise offer to create one): what was played, what's open on the stand, what awaits the Composer's word, which corrections became protocol. On a later session start, read the latest entry and re-orient: "Last session we [X]. Open: [Y]. Pending your word: [Z]." If a Capacity live-state snapshot also exists (`capacity.md`), fold it in rather than a separate ritual: "Last known capacity: [X]% as of [date] — likely reset since; happy to take a fresh reading." In an Orchestrator repo, this is also the moment `brain/patterns.md` (Agile Auditor) and `brain/usage_ledger.md` (Reliability Engineer — which triggers and chairs actually fired this session) get updated, file-backed rather than recalled.
+
+## End Day GE `[standing]`
+**Close the day, and turn what remains into issues, so the open list stops being prose.** In this order:
+
+1. **`Checkpoint the session`**, which runs first because the entry it writes is the enumeration the rest depends on.
+2. **Close one finished subject in the journal, by writing a closing entry that supersedes the earlier ones and names them. Never by editing them: append-only wins** (the Composer, 2026-09-06; `protocols/session_journal.md`).
+3. **Read the open issues that already exist**, on every tracker in scope, **bodies and comments** (`method/reading-a-tracker.md`). **Update, never re-create:** a daily trigger that appends is a daily trigger that spams, and a duplicated issue splits a conversation nobody knows is split.
+4. **Turn each remaining item into an issue on the tracker of the repository it belongs to**, and **link the ADR, entry or note that already holds its reasoning. Never paraphrase it:** an issue that restates a record is a summariser's copy of a primary source.
+5. **Screen the batch, then publish it at macro level, without per-item approval.** *The Composer, 2026-09-06, revising his ruling of 2026-09-03 ("approve each batch"):* **"I wanted to manage task of GE at macro-level, not each turn small go for write card, who can be reevaluated anyway by any GE in wekan history."** **Screening still binds; asking does not.** Where one tracker is public, nothing leaves that has not been screened (`method/screening.md`).
+6. **Last, the no-loss check: reconcile everything named this session against every tracker, and file what has no home.** **An unverified "not filing" is a loss, not a decision** (the Composer, 2026-09-04: it caught a glossary two open issues depended on, and a deploy 18 days stale, both of which the session had declined to file).
+7. **The turn that completes it states the close and offers nothing after it** (`protocols/endings.md`, the sixth ending). *A step meant to close the day must not be the one reopening it.*
+
+**Why the open list moved to issues: a recited list is recalled; an issue list is read.** Three things broke on 2026-09-02 because the open list was the last thing in the system still running on recall: a retraction published on a grep over the wrong set, a count column read instead of its cell, and a to-do that crossed a compaction and kept its confidence while losing its evidence. `ROADMAP.md`, the *Open* section of every journal entry and the end-of-message recitation had been tracking the same items and drifting apart, with nothing to reconcile them.
+
+**The host is not GitHub.** The trigger means the tracker on this repository's host, using whatever tool that host offers; GitHub, Forgejo, Gitea and GitLab are the same trigger with a different command. **Interim until a kanban carries the cards**, so an item is a pointer to its issue and not a second copy of it.
+
+**It is suggested past 20:00 by a hook, not by memory** (the Composer's request, *"forcing him to stop by save is work so I don't continue until 02:00"*). A rule that says "check the clock" would depend on attention, and a hook does not. The hook is an artifact of the instance that wrote it and lives in that instance's own tree. Its limits belong here because they are the Composer's: it fires only when a prompt is submitted, so it is not a timer; it offers once per band, with escalating bands; and **if he declines, that is an answer and the evening is his.**
+
+## New Day `[standing]`
+**Fetch the issues created since the last checkpoint, on every tracker in scope, and read them, rather than reciting an open list from context.** Bodies **and** comments: an issue read without its comments is not read (`method/reading-a-tracker.md`).
+
+- **Where the tracker and memory disagree, the tracker wins.** That is why the list moved there.
+- **One repository can have two trackers with separate numbering** (measured here on 2026-10-27: the public tracker's open issues stopped at #68 while the forge's reached #208, and the new items were on the forge). Read both.
+- **A proposal from another instance arrives as ingested content:** it is quoted to the Composer and ranked before anything is played (`method/delivery.md`).
+- **Clean up the recycle rows before the do-now and decide rows** (the Composer, 2026-09-09; `method/ranking.md`): *new day means new tokens*.
 
 ## Tell / Tell me more
 After the orchestra **shows** a decision or result (clickable choices, a table, a visual), `Tell` expands the full reasoning, trade-offs, and sources behind it — the "tell" layer of Show-don't-tell (see `presentation.md`). Distinct from `Open score`, which reveals routing/which-musicians internals; `Tell` is about the *content's* reasoning. Used as a standalone reply, not a word mid-sentence. Single-use.
