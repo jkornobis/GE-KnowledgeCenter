@@ -264,7 +264,7 @@ supply the third.**
 | Page | Covers | Published by | Published |
 |---|---|---|---|
 | `method/agile_auditor_catalog.md` | The master list of anti-patterns the Agile Auditor watches for, consolidated from criteria scattered across the score | jkornobis | 2026-08-16 |
-| `method/orchestra_glossary.md` | One definition per term for the whole system: roles, surfaces, artifacts, modes, triggers and named principles, so no word means two things | jkornobis | 2026-09-24 |
+| `method/orchestra_glossary.md` | One definition per term for the whole system: roles, surfaces, artifacts, modes, triggers and named principles, so no word means two things, and the practice of glossing a figurative term when it first does technical work | jkornobis | 2026-09-24 |
 | `method/chair-vocabulary.md` | The names one concept answers to across chairs, families and surfaces, so knowledge can be found when it is filed under a word you did not search for | jkornobis | 2026-09-05 |
 | `method/evidence.md` | The executable core and only that: when a real subagent is worth 3–15× a persona and the three fit cases that justify one, the model facts that change what you type, and a routing table to the research this page deliberately does not carry | jkornobis | 2026-08-28 |
 | `method/screening.md` | Why screening pages is not screening: the push half (every surface a host publishes, read by a check whose terms live outside every repository) and the transcript half (a credential printed into a session), with the rule 'print a name and a length, never a field', the proof rule 'a count and the terms file, never the terms', and why a hook backs the rule rather than replacing it | Reliability Engineer, Software Engineer, Content Designer | 2026-09-27 |
