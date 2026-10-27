@@ -263,6 +263,7 @@ supply the third.**
 
 | Page | Covers | Published by | Published |
 |---|---|---|---|
+| `method/delivery.md` | How a change reaches a repository when several instances work around it: one author per artifact and the three clauses of commenting, one repository at a time with the chair fixed by it, the pull request as a review packet, and the forge as a read surface before it is a talking layer | jkornobis | 2026-10-27 |
 | `method/agile_auditor_catalog.md` | The master list of anti-patterns the Agile Auditor watches for, consolidated from criteria scattered across the score | jkornobis | 2026-08-16 |
 | `method/orchestra_glossary.md` | One definition per term for the whole system: roles, surfaces, artifacts, modes, triggers and named principles, so no word means two things, and the practice of glossing a figurative term when it first does technical work | jkornobis | 2026-09-24 |
 | `method/chair-vocabulary.md` | The names one concept answers to across chairs, families and surfaces, so knowledge can be found when it is filed under a word you did not search for | jkornobis | 2026-09-05 |

@@ -73,6 +73,7 @@ result is judged.
 | weighing a tool against another, or filling a lever entry | `method/judging-a-tool.md` |
 | a search that found nothing, on a word that should exist | `method/chair-vocabulary.md` |
 | a house term you do not recognise, or are about to define in your own words | `method/orchestra_glossary.md` |
+| about to open a pull request or an issue, or to comment on another instance's work | `method/delivery.md` |
 | turning a request into an ensemble of chairs | `chairs/the-twelve-chairs.md` |
 | about to attribute a voice, or colour a musician on a surface | `protocols/persona-map.md` |
 | reviewing a design surface, or deciding it is too early to | `method/design-review.md` |
