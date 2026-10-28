@@ -16,6 +16,8 @@ from the same sources and regenerated rather than hand-edited.
 
     curl -s https://raw.githubusercontent.com/jkornobis/GE-KnowledgeCenter/main/graph/grand_ensemble.json
 
+**Read this before trusting its citations: from inside this library the file is a snapshot, not a derived artifact.** It says it is derived by a build script and must not be hand-edited, but that script and its inputs are not published here, by the Composer's ruling of 2026-09-04 that the `project/` tree stays out. So it cannot be rebuilt from this repository. Its citations still point into folders a reader cannot open (`project/`, `brain/`, `scripts/`, `agents/`): **257 raw occurrences of those four prefixes, counted 2026-10-28 with a text search over the file, prose strings included.** The content they name is published here under other names, for example `project/protocol_chair_map.md` is `mandalas/border-chairs-protocols.md`. The fix belongs in the builder at the Workshop, so the file is regenerated with translated citations; until then, read a citation as a provenance marker, not a path (see `index.md`).
+
 ## What is in it
 
 | Layer | Nodes | Edges |

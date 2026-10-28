@@ -2585,3 +2585,7 @@ The Composer ruled what closes a task and a subject, so the rule taken into `pro
 ## 2026-10-28 — forecast check becomes the fourth gate; #199 closed
 
 The Composer ruled two things. **`check_forecasts.mjs --strict` joins the done-gates** in `CLAUDE.md` section 4 (now four), because a dated promise gone stale should fail loudly at merge time, not be found by a reader; it reads phrasing, so a false alarm is fixed by correcting the sentence. **The 2026-09-24 Checkpoint ruling needs no original text:** his 2026-10-27 word is the source, and `protocols/triggers.md` says so. Piece 4 of `#199` (order of authority) was already core rule 7 in `start.md` since the 2026-10-07 ruling, so `#199` has nothing left open.
+
+## 2026-10-28 — graph #12: the fix goes to the Workshop's builder
+
+The Composer chose to fix the graph's untranslated citations in the builder at the Workshop, not with a translation table here and not with both. The graph page now says plainly that, from inside this library, the file is a snapshot that cannot be rebuilt, and that its citations are provenance markers. Counted 2026-10-28 by text search over `graph/grand_ensemble.json`, prose strings included: 219 `project/`, 18 `brain/`, 13 `scripts/`, 7 `agents/`, 257 in all. This replaces the 636 of 2026-09-04, which was counted on an older file; the two are not comparable. The handoff to the Workshop goes out as an issue; `#12` stays open until a rebuilt graph lands.
