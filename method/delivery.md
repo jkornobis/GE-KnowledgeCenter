@@ -61,6 +61,19 @@ the gates are green and nothing waits on a review that was asked for. A one-line
 repository needs no ceremony; a finding, a rule change, or anything another instance will read does. A
 worked example is in `tutorial/first-contribution.md`.
 
+## The same packet when the deliverable outlives the turn (2026-10-28)
+
+**A pull request is read once; a deliverable that stays (a study, a page, a prototype for the Composer's review) is read again, by someone who was not there.** It needs the six parts above and four more. *The list is the filing instance's proposal of 2026-09-04 (forge `GE-KnowledgeCenter#13`, surface 4); the Composer ruled on 2026-10-28 that it extends this page rather than becoming a second one. The wording is not his.*
+
+- **The declared circle**: what was read, what was not, and what was marked used (`principles/core-principles.md`, *The Declared Circle*).
+- **The task it answers**: the tier, the chairs, and the use case in actor, goal and done form (`protocols/presentation-checklist.md`, the closing gate).
+- **The result in the chair's native form**: a use case, a Gantt, a Double Diamond, an epic cut into stories (`tools/lineage.md`, `method/design-review.md` section 3), shown as the artifact, not described.
+- **Frontmatter**, so the deliverable is a page and enters the same index (`check_okf.mjs`).
+
+**Every claim carries its source and a status**, `earned` or `asserted`, the graph's own vocabulary applied to prose. **An ending in one of the five shapes** (`protocols/presentation.md`): at this scale, the decisions as a numbered table the Composer can `Program`.
+
+**What this does not settle:** the task file itself, "work context to keep", belongs to the Composer's own tree, since this library carries no project; only its shape is described here. No template file is added, and no gate reads these parts: they are a convention until one does.
+
 ## The forge is a read surface before it is a talking layer (2026-09-01)
 
 **The forge is the talking layer between instances**: durable, quotable, attributable, and it survives
