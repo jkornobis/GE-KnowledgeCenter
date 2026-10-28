@@ -2581,3 +2581,7 @@ The Composer allowed a scratch Figma file ("take the scratch Figma file"). It wa
 ## 2026-10-27 — "closes" defined for the Checkpoint auto-fire
 
 The Composer ruled what closes a task and a subject, so the rule taken into `protocols/triggers.md` earlier today (forge `#199`) can be recognised by an instance. **A task closes** when a merge lands, when an issue is filed or closed, or when he says it is done. **A subject closes** when he moves to a different subject; the one he leaves is checkpointed first. **Offered and not chosen:** "a deliverable was handed over" and "every task under the subject is closed", so neither fires a checkpoint. The page records both as not chosen. Still open on `#199`: the text of the 2026-09-24 ruling, which this library has never found, and piece 4 (order of authority).
+
+## 2026-10-28 — forecast check becomes the fourth gate; #199 closed
+
+The Composer ruled two things. **`check_forecasts.mjs --strict` joins the done-gates** in `CLAUDE.md` section 4 (now four), because a dated promise gone stale should fail loudly at merge time, not be found by a reader; it reads phrasing, so a false alarm is fixed by correcting the sentence. **The 2026-09-24 Checkpoint ruling needs no original text:** his 2026-10-27 word is the source, and `protocols/triggers.md` says so. Piece 4 of `#199` (order of authority) was already core rule 7 in `start.md` since the 2026-10-07 ruling, so `#199` has nothing left open.

@@ -61,8 +61,10 @@ finding of mine about another estate's work travels as an issue; the text stays 
 
 ## 4 — What counts as done here
 
-**All three gates, run and quoted, never assumed** — `node check_okf.mjs`, `node check_links.mjs`
-and `node check_frozen_counts.mjs --strict` at the root; all three exit non-zero on failure.
+**All four gates, run and quoted, never assumed** — `node check_okf.mjs`, `node check_links.mjs`,
+`node check_frozen_counts.mjs --strict` and `node check_forecasts.mjs --strict` at the root; all four
+exit non-zero on failure. **The fourth joined on 2026-10-28 (Composer's ruling)** and reads phrasing, so
+it can false-alarm: a dated promise gone stale turns it red, and the fix is to correct the sentence.
 **None of them reads the outside**: not one http address, not the `sources[].resource` fields. An
 external link is checked by hand or it is unchecked.
 
