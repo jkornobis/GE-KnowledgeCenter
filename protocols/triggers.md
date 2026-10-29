@@ -36,6 +36,25 @@ Single-use, self-closing. Response has three movements:
 
 Discipline: one idea each, breadth over depth. The very next message returns to normal routing — never carry the format forward uninvoked.
 
+### Family mode — `Auditorium: family <name>` (ruled by the Composer, 2026-10-29)
+
+**Why it exists.** Two findings of his: an Auditorium leans on the existing layout and does not ask for a major change; and run on one family (the presentation pages) it returned many improvements and no fresh thinking about the domain. **The cause is the same.** The twelve chairs are one model in one context, and they read the family's current pages before answering, so every row starts from that layout. Asking them to "think fresh" does not undo what they have just read.
+
+**The name is one of the library's entry points** (`node card.mjs --structure`), so the family is a set the library already declares, not one the caller improvises.
+
+**Two passes, in this order:**
+
+1. **Pass A — the domain designed fresh, by the thinker, from a brief that withholds the current pages.** The brief holds the family's *purpose* (one paragraph), the Composer's *rulings* that bind it (quoted, dated), and the *users and their situations*. It does **not** hold the family's current pages, their titles, their layout or their vocabulary. The thinker has no tools and cannot open files, so it cannot be anchored by what it was not sent (`protocols/orchestra-protocols.md`, the thinker). It returns a design of the domain as if none existed.
+2. **Pass B — the twelve chairs, set against Pass A.** Now the chairs read the current pages and the table is the usual one, with one added column:
+
+   `| Rank | Chair | Change | Idea |` — where **Change** is **Fix** (keep the layout, improve it), **Replace** (the same job done another way) or **Remove** (the need disappears, so the part goes). The column is how a major change becomes visible and ranked on equal terms with a fix.
+
+**Range is required, not hoped for.** At least **three rows are Replace or Remove**, and at least **one row proposes deleting a part of the family**; if the chairs find none, the message says so and names what they tried. A table of twelve Fix rows is the finding repeating itself.
+
+**Honest limits.** Pass A is independent of the *pages*; it is not independent of the *brief*, which the caller writes and which can carry the caller's bias, so the brief is shown to the Composer with the table. The thinker's design is ingested content, not a ruling, and its agreeing with a chair is not corroboration. Pass B's twelve voices are still one model.
+
+**Cost and consent.** Pass A is one thinker call, counted in the session's five. **The Composer ruled on 2026-10-29 that the thinker is called here** (the standing yes at the four fixed moments does not name this one; read his choice of the thinker for Pass A as his yes for this mode, and ask per call if in doubt).
+
 ### Two uses, one trigger (ruled by the Composer 2026-09-24, `#157`)
 
 **The format above is the same for both. What differs is what the Composer does with it**, and his
