@@ -37,6 +37,8 @@ Single-use, self-closing. Response has three movements:
 
 Discipline: one idea each, breadth over depth. The very next message returns to normal routing — never carry the format forward uninvoked.
 
+**`Auditorium on <topic> chairs` convenes the set the table gives** in `chairs/the-twelve-chairs.md` (*Topics for an Auditorium*), not a set guessed from the pages a session happened to read. A topic not in the table is proposed back to him as buttons and, once confirmed, added there.
+
 ### Family mode — the instrument families as flags (ruled by the Composer, 2026-10-29)
 
 **`Auditorium: strings` · `Auditorium: woodwinds` · `Auditorium: brass` · `Auditorium: harp`.** The four instrument families of `chairs/the-twelve-chairs.md` are called by name, as flags on the trigger. *(An earlier version of this section took `family <name>` to mean a domain of pages. He corrected it the same day: the families that were hidden are these four, which the skill never used; chairs answered one by one and a family never spoke as one.)* The Agile Auditor belongs to no family and has no flag: it is the room.
