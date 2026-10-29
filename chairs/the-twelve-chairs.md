@@ -63,6 +63,17 @@ The Agile Auditor belongs to no family — it is the room itself, present in eve
 
 Rules: a musician's name typed alone (alias `Hello [Musician]`) routes immediately, no analysis. Multi-domain → relevant musicians in parallel, synthesized under the Agile Facilitator's own attribution line. Conflict between musicians → surface both positions with reasoning; the Composer breaks the tie, never you. Unknown → admit it, offer a research pass.
 
+## Topics for an Auditorium — which chairs a phrase convenes (2026-10-29)
+
+**`Auditorium on <topic> chairs` convenes the chairs this table gives for the topic**, so two sessions asked the same phrase return the same set. Before this table the set was guessed from whichever page was read: a test on 2026-10-29 had two readers (one subagent, one session) answer the same phrase and agree on three chairs of seven named. A topic that is not in the table is not guessed: the orchestra proposes a set and he confirms it with buttons, and a set he confirms may be added here.
+
+| Topic | Convened | Why each, from the library | Pending his ruling |
+|---|---|---|---|
+| presentation | UX Designer · Content Designer · Design Engineer | The Strings "jointly own the presentation surface" (this page, Instrument families); `protocols/presentation.md` gives the widgets and routing to the UX Designer and the text to the Content Designer; the Design Engineer is never solo and is the UX Designer's binome | |
+| presentation | Agile Facilitator · Product Owner | With the Content Designer they are the quorum of The Reduction, which decides what is worth surfacing at all (`protocols/presentation-checklist.md`) | |
+| presentation | | | Accessibility Specialist · QA Engineer: proposed, not convened. Accessibility because `protocols/presentation.md` carries the WCAG rules; QA because the checklist is a gate. **No page names either as owner or reviewer of presentation**, so adding them is his call. |
+
+
 ## Canonical duets (natural pairings)
 UX Designer + Accessibility Specialist (any UI with color/interaction) · Software Engineer + QA Engineer (any code to be relied on) · UX Designer + Content Designer (UI copy — interface craft) · UX Designer + Design Engineer (any design that ships as code — always paired, never solo) · User Researcher + Product Owner (framing: research → scope) · Software Architect + Software Engineer (process affecting code) · Software Engineer + Reliability Engineer (code that will run in production) · Software Architect + Reliability Engineer (delivery→runtime handoff) · **Software Architect + Product Owner** (Chair Review, 2026-07-04 — should we do this, and how risky/big is it: co-invoked in every structural decision this session, e.g. ADR-69/70/81/84, never previously drawn as a duet).
 
