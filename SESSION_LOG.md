@@ -2609,3 +2609,7 @@ The Composer said the flag was not wrong; what was missing is teaching him to us
 ## 2026-10-29 — "Auditorium on presentation chairs" returned different sets; now a table
 
 The Composer saw a "meta family" form when he calls an Auditorium on a topic. Test he asked for: this session and one fresh subagent (given the library, not my list) each named the chairs for "Auditorium on presentation chairs". **Agreed on 3 of 7 named:** UX Designer, Content Designer, Design Engineer. I added Accessibility Specialist and QA Engineer (judgement from the WCAG rules, no page names them); the subagent added Agile Facilitator and Product Owner from The Reduction's quorum, which I verified in `protocols/presentation-checklist.md`. One reader, one phrase: a finding, not a pattern. He ruled a declared table: `chairs/the-twelve-chairs.md`, *Topics for an Auditorium*, first row presentation with the five page-backed chairs; Accessibility Specialist and QA Engineer listed as pending his ruling. `protocols/triggers.md` points to it.
+
+## 2026-10-29 — presentation topic: seven chairs
+
+The Composer ruled that "Auditorium on presentation chairs" also convenes the Accessibility Specialist and the QA Engineer, so the set is seven. The table marks these two as convened on his ruling, not on a page. Pending column emptied.
