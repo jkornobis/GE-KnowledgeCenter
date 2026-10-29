@@ -36,24 +36,24 @@ Single-use, self-closing. Response has three movements:
 
 Discipline: one idea each, breadth over depth. The very next message returns to normal routing — never carry the format forward uninvoked.
 
-### Family mode — `Auditorium: family <name>` (ruled by the Composer, 2026-10-29)
+### Family mode — the instrument families as flags (ruled by the Composer, 2026-10-29)
 
-**Why it exists.** Two findings of his: an Auditorium leans on the existing layout and does not ask for a major change; and run on one family (the presentation pages) it returned many improvements and no fresh thinking about the domain. **The cause is the same.** The twelve chairs are one model in one context, and they read the family's current pages before answering, so every row starts from that layout. Asking them to "think fresh" does not undo what they have just read.
+**`Auditorium: strings` · `Auditorium: woodwinds` · `Auditorium: brass` · `Auditorium: harp`.** The four instrument families of `chairs/the-twelve-chairs.md` are called by name, as flags on the trigger. *(An earlier version of this section took `family <name>` to mean a domain of pages. He corrected it the same day: the families that were hidden are these four, which the skill never used; chairs answered one by one and a family never spoke as one.)* The Agile Auditor belongs to no family and has no flag: it is the room.
 
-**The name is one of the library's entry points** (`node card.mjs --structure`), so the family is a set the library already declares, not one the caller improvises.
+**What the flag does.** The family answers **as one**, about **its own domain**, the Domain column of that table: Strings, interface craft and the presentation surface; Woodwinds, the quality gate; Brass, implementation and operations; Harp, framing. A family is a group of two or three chairs, so the table is short, and it opens with **one line, the family's position**, before any member row.
+
+**Why a flag and not only the full room.** The full Auditorium reads the existing layout and returns improvements to it (his two findings of 2026-10-29). The chairs are one model that has just read the pages, so asking them to "think fresh" does not undo it. A family run is aimed at one domain, so it can afford to start from a blank page.
 
 **Two passes, in this order:**
 
-1. **Pass A — the domain designed fresh, by the thinker, from a brief that withholds the current pages.** The brief holds the family's *purpose* (one paragraph), the Composer's *rulings* that bind it (quoted, dated), and the *users and their situations*. It does **not** hold the family's current pages, their titles, their layout or their vocabulary. The thinker has no tools and cannot open files, so it cannot be anchored by what it was not sent (`protocols/orchestra-protocols.md`, the thinker). It returns a design of the domain as if none existed.
-2. **Pass B — the twelve chairs, set against Pass A.** Now the chairs read the current pages and the table is the usual one, with one added column:
+1. **Pass A, the domain designed fresh, by the thinker, from a brief that withholds the current pages.** The brief holds the domain's *purpose* (one paragraph), the Composer's *rulings* that bind it (quoted, dated), and *who uses it and in what situation*. It does **not** hold the current pages, their titles, layout or vocabulary. The thinker has no tools and cannot open files, so it cannot be anchored by what it was not sent (`protocols/orchestra-protocols.md`, the thinker).
+2. **Pass B, the family's chairs, set against Pass A.** Now they read the current pages. One line first (the family's position), then `| Rank | Chair | Change | Idea |`, where **Change** is **Fix** (keep the layout, improve it), **Replace** (the same job done another way) or **Remove** (the need disappears, so the part goes). The column is how a major change becomes visible and ranked beside a fix.
 
-   `| Rank | Chair | Change | Idea |` — where **Change** is **Fix** (keep the layout, improve it), **Replace** (the same job done another way) or **Remove** (the need disappears, so the part goes). The column is how a major change becomes visible and ranked on equal terms with a fix.
+**Range is required, not hoped for.** At least **one row is Replace or Remove**, and the family's position says what it would delete if it could; if it finds nothing, the message says so and names what it tried. A table of Fix rows only is the finding repeating itself.
 
-**Range is required, not hoped for.** At least **three rows are Replace or Remove**, and at least **one row proposes deleting a part of the family**; if the chairs find none, the message says so and names what they tried. A table of twelve Fix rows is the finding repeating itself.
+**Honest limits.** Pass A is independent of the *pages*, not of the *brief*, which the caller writes and which can carry the caller's bias, so the brief is shown to the Composer with the table. The thinker's design is ingested content, not a ruling, and its agreeing with a chair is not corroboration. A family's chairs are still one model. **Not covered:** a domain that no family owns (the principles, for instance); the full Auditorium still serves it.
 
-**Honest limits.** Pass A is independent of the *pages*; it is not independent of the *brief*, which the caller writes and which can carry the caller's bias, so the brief is shown to the Composer with the table. The thinker's design is ingested content, not a ruling, and its agreeing with a chair is not corroboration. Pass B's twelve voices are still one model.
-
-**Cost and consent.** Pass A is one thinker call, counted in the session's five. **The Composer ruled on 2026-10-29 that the thinker is called here** (the standing yes at the four fixed moments does not name this one; read his choice of the thinker for Pass A as his yes for this mode, and ask per call if in doubt).
+**Cost and consent.** Pass A is one thinker call, counted in the session's five. The four fixed moments for the standing yes do not name this one; his choice of the thinker for Pass A on 2026-10-29 is read as his yes for this mode, and a doubtful case asks per call.
 
 ### Two uses, one trigger (ruled by the Composer 2026-09-24, `#157`)
 
