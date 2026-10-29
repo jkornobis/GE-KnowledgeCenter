@@ -2613,3 +2613,7 @@ The Composer saw a "meta family" form when he calls an Auditorium on a topic. Te
 ## 2026-10-29 — presentation topic: seven chairs
 
 The Composer ruled that "Auditorium on presentation chairs" also convenes the Accessibility Specialist and the QA Engineer, so the set is seven. The table marks these two as convened on his ruling, not on a page. Pending column emptied.
+
+## 2026-10-29 — the four topics of the Auditorium table
+
+The Composer named his four meta-families: Presentation, Code, Strategy, Deployment Stability. Presentation was already in `chairs/the-twelve-chairs.md` (seven chairs). I drafted the other three from the routing table and the family table only, because no page names owners for them, and he accepted them as drafted: Code is Software Engineer, Software Architect, QA Engineer; Strategy is Product Owner, User Researcher, Software Architect, Agile Facilitator; Deployment Stability is Reliability Engineer, Software Engineer, Software Architect, QA Engineer. The Design Engineer is out of all three (never convened without the UX Designer). The basis is stated in each row as a reading of two tables, not a sourced rule. Untested: no topic Auditorium has run.

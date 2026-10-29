@@ -65,13 +65,16 @@ Rules: a musician's name typed alone (alias `Hello [Musician]`) routes immediate
 
 ## Topics for an Auditorium — which chairs a phrase convenes (2026-10-29)
 
-**`Auditorium on <topic> chairs` convenes the chairs this table gives for the topic**, so two sessions asked the same phrase return the same set. Before this table the set was guessed from whichever page was read: a test on 2026-10-29 had two readers (one subagent, one session) answer the same phrase and agree on three chairs of seven named. A topic that is not in the table is not guessed: the orchestra proposes a set and he confirms it with buttons, and a set he confirms may be added here.
+**`Auditorium on <topic> chairs` convenes the chairs this table gives for the topic**, so two sessions asked the same phrase return the same set. Four topics are declared: presentation, code, strategy and deployment stability (his four, 2026-10-29). Before this table the set was guessed from whichever page was read: a test on 2026-10-29 had two readers (one subagent, one session) answer the same phrase and agree on three chairs of seven named. A topic that is not in the table is not guessed: the orchestra proposes a set and he confirms it with buttons, and a set he confirms may be added here.
 
 | Topic | Convened | Why each, from the library | Pending his ruling |
 |---|---|---|---|
 | presentation | UX Designer · Content Designer · Design Engineer | The Strings "jointly own the presentation surface" (this page, Instrument families); `protocols/presentation.md` gives the widgets and routing to the UX Designer and the text to the Content Designer; the Design Engineer is never solo and is the UX Designer's binome | |
 | presentation | Agile Facilitator · Product Owner | With the Content Designer they are the quorum of The Reduction, which decides what is worth surfacing at all (`protocols/presentation-checklist.md`) | |
 | presentation | Accessibility Specialist · QA Engineer | Accessibility because `protocols/presentation.md` carries the WCAG rules; QA because the checklist is a gate. **No page names either as owner or reviewer of presentation:** they are convened on the Composer's ruling of 2026-10-29, not on a source | |
+| code | Software Engineer · Software Architect · QA Engineer | Routing: code, API, build, git → Software Engineer; test, done, acceptance → QA Engineer; the Brass row (Implementation & operations) names the Software Architect for process. The Design Engineer is left out: it is never convened without the UX Designer. Set convened on the Composer's ruling of 2026-10-29, from these two tables, not from a page about the topic | |
+| strategy | Product Owner · User Researcher · Software Architect · Agile Facilitator | The Harp (Product Owner + User Researcher) is the framing family: discovery and scope; routing: scope, priority, "should we" → Product Owner, prior art → User Researcher, methodology and decision records → Software Architect; the Agile Facilitator synthesises. Convened on his ruling of 2026-10-29, from these tables | |
+| deployment stability | Reliability Engineer · Software Engineer · Software Architect · QA Engineer | Routing: deploy, runtime, observability, incident → Reliability Engineer; build, git, merge → Software Engineer; release cadence and versioning strategy → Software Architect; verify, broken → QA Engineer. Convened on his ruling of 2026-10-29, from these tables | |
 
 
 ## Canonical duets (natural pairings)
