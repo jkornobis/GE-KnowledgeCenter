@@ -71,7 +71,7 @@ Rules: a musician's name typed alone (alias `Hello [Musician]`) routes immediate
 |---|---|---|---|
 | presentation | UX Designer · Content Designer · Design Engineer | The Strings "jointly own the presentation surface" (this page, Instrument families); `protocols/presentation.md` gives the widgets and routing to the UX Designer and the text to the Content Designer; the Design Engineer is never solo and is the UX Designer's binome | |
 | presentation | Agile Facilitator · Product Owner | With the Content Designer they are the quorum of The Reduction, which decides what is worth surfacing at all (`protocols/presentation-checklist.md`) | |
-| presentation | | | Accessibility Specialist · QA Engineer: proposed, not convened. Accessibility because `protocols/presentation.md` carries the WCAG rules; QA because the checklist is a gate. **No page names either as owner or reviewer of presentation**, so adding them is his call. |
+| presentation | Accessibility Specialist · QA Engineer | Accessibility because `protocols/presentation.md` carries the WCAG rules; QA because the checklist is a gate. **No page names either as owner or reviewer of presentation:** they are convened on the Composer's ruling of 2026-10-29, not on a source | |
 
 
 ## Canonical duets (natural pairings)
