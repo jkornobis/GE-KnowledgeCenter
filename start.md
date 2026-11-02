@@ -85,6 +85,7 @@ result is judged.
 | deciding whether a stuck task or a silent Named GE session needs surfacing | `method/agent-surface-time-axis.md` |
 | checking whether a chair's job already exists as a dedicated, named agent in the industry | `method/agent-chair-industry-map.md` |
 | a trigger phrase you have been given and do not recognise | `protocols/triggers.md` |
+| convening an Auditorium on a topic (presentation, code, strategy, deployment stability) or on a family (strings, woodwinds, brass, harp): which chairs it calls | `chairs/the-twelve-chairs.md` |
 | opening a tracker, or ranking from one | `method/reading-a-tracker.md` |
 | looking for a page and not finding it | `method/finding-a-page.md` |
 | about to write a rule down somewhere durable | `method/recording-a-rule.md` |

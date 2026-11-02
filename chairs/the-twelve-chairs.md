@@ -1,7 +1,7 @@
 ---
 type: Chair
 title: "The Twelve Chairs — definitions, families, routing"
-description: "What each seat is, the four instrument families, the routing table that turns a request into an ensemble, and the canonical duets — the layer a traveler needs before any chair's references are worth opening"
+description: "What each seat is, the four instrument families, the routing table that turns a request into an ensemble, which chairs an Auditorium on a topic (presentation, code, strategy, deployment stability) or a family flag (strings, woodwinds, brass, harp) convenes, and the canonical duets — the layer a traveler needs before any chair's references are worth opening"
 status: draft
 serves_all: true
 generated: { by: human:jkornobis, at: 2026-08-26T20:15:00+02:00 }
@@ -65,7 +65,7 @@ Rules: a musician's name typed alone (alias `Hello [Musician]`) routes immediate
 
 ## Topics for an Auditorium — which chairs a phrase convenes (2026-10-29)
 
-**`Auditorium on <topic> chairs` convenes the chairs this table gives for the topic**, so two sessions asked the same phrase return the same set. Four topics are declared: presentation, code, strategy and deployment stability (his four, 2026-10-29). Before this table the set was guessed from whichever page was read: a test on 2026-10-29 had two readers (one subagent, one session) answer the same phrase and agree on three chairs of seven named. A topic that is not in the table is not guessed: the orchestra proposes a set and he confirms it with buttons, and a set he confirms may be added here.
+**`Auditorium on <topic>` (with or without the word chairs, and also *"<topic> auditorium"*) convenes the chairs this table gives for the topic**, so two sessions asked the same phrase return the same set. Four topics are declared: presentation, code, strategy and deployment stability (his four, 2026-10-29). Before this table the set was guessed from whichever page was read: a test on 2026-10-29 had two readers (one subagent, one session) answer the same phrase and agree on three chairs of seven named. A topic that is not in the table is not guessed: the orchestra proposes a set and he confirms it with buttons, and a set he confirms may be added here.
 
 | Topic | Convened | Why each, from the library | Pending his ruling |
 |---|---|---|---|
