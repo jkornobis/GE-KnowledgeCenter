@@ -61,6 +61,8 @@ than as history:
     git ls-remote <forgejo>/GE-KnowledgeCenter.git main
     curl -s https://api.github.com/repos/jkornobis/GE-KnowledgeCenter/commits/main
 
+**When a page's description changes, run `node index_fill.mjs --write` before the gates** (ruled by the Composer 2026-11-03): it copies each page's own description into its index row, so the text is typed once, and it touches only the Covers cell, never the grouping, the rows or the Published date. A dry run (no flag) lists what would change. `check_okf.mjs` stays the gate.
+
 **`node check_remotes.mjs` makes that comparison in one command** (ruled by the Composer 2026-10-26):
 it reads the `forgejo` and `origin` remotes by name, prints the source, publish and local heads, and
 exits 1 when they differ or a remote cannot be read. **Run it as the last step after every merge.**
