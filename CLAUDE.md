@@ -88,6 +88,8 @@ only route in, so an unlisted page is not in the library.
                             (one bounded exception, below)
     issues + PRs            jkornobis/GE-KnowledgeCenter on Forgejo
     Wekan                   "Knowledge Center - Dedicated Board" · "Discussions GE Board"
+                            NOT A RECORD YET: named as the future home, holds no cards, and
+                            nothing is filed there until it does (Composer, 2026-11-03)
     decisions               an issue on GE-Workshop, where the ADR log lives — not here
 
 **The meta-auditorium — four Matrix rooms, and they are a THINKING surface only** (Composer,
