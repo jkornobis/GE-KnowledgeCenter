@@ -36,7 +36,9 @@ session that merges pushes `main` to Forgejo first, then pushes the same `main` 
 compares the two heads (below). **Forgejo first** because a push that fails halfway then leaves GitHub
 *behind* the source, which is the known and visible failure, instead of *ahead* of it, which is a fork
 of the source of truth. A session that only proposes (a branch, a PR) pushes nothing to `main` and
-owes nothing here.
+owes nothing here.
+
+**The interim is a command now** (built at the Workshop, `GE-Workshop#313`, merged there via `#314`; read and checked here 2026-11-03): `publish_library.mjs` runs the four gates, then the screening, **refusing when the terms file is missing or the screening cannot run**, prints a plain-words summary built from the diff against the public copy, and pushes **only with `--go=<head>`** of the head that summary showed: the source first, the public copy only if that succeeded, then the heads check. **Publish with it.** A hand push skips the screening and the summary, so it is the fallback only where the command cannot run, and it is said to be one. The command lives in the Workshop's tree; this library names it and does not carry it.
 
 **The ruling of 2026-09-05 said the reverse, and it described something that was never built.**
 Measured 2026-09-06, asked of the machine rather than read from this page: the Forgejo repository
