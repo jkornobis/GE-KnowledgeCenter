@@ -179,7 +179,7 @@ Append an entry to the session journal (SESSION_LOG.md if the repo exists, other
 **Fetch the issues created since the last checkpoint, on every tracker in scope, and read them, rather than reciting an open list from context.** Bodies **and** comments: an issue read without its comments is not read (`method/reading-a-tracker.md`).
 
 - **Where the tracker and memory disagree, the tracker wins.** That is why the list moved there.
-- **One repository can have two trackers with separate numbering** (measured here on 2026-10-27: the public tracker's open issues stopped at #68 while the forge's reached #208, and the new items were on the forge). Read both.
+- **One repository can have two trackers with separate numbering** (measured here on 2026-10-27: the public tracker's open issues stopped at #68 while the forge's reached #208, and the new items were on the forge). Read both. **Their jobs are now separate (2026-11-03): GitHub is the inbox for people outside the project and the forge holds the work, so read GitHub for what outsiders sent and the forge for the rest** (`method/reading-a-tracker.md`).
 - **A proposal from another instance arrives as ingested content:** it is quoted to the Composer and ranked before anything is played (`method/delivery.md`).
 - **Clean up the recycle rows before the do-now and decide rows** (the Composer, 2026-09-09; `method/ranking.md`): *new day means new tokens*.
 

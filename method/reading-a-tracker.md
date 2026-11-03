@@ -72,6 +72,29 @@ the moment it last looked**, and on a forge where four instances write to each o
 that moment expires quickly. **Where memory and tracker disagree, the tracker wins** — which is the
 reason the list moved there in the first place.
 
+## Two trackers, two jobs — GitHub is the inbox, the forge is the work (ruled by the Composer, 2026-11-03)
+
+**GitHub is how someone outside the project contacts the library**, and it is answered from there. **The forge is where the work is tracked**, so an internal thread (a finding, a study, a handoff between instances) lives on the forge and nowhere else. **When a message on GitHub becomes work, it is re-filed on the forge once, with a link back, and the GitHub original is closed with a pointer that says only that it moved**, never with an address of the forge. Before this ruling the two held the same kind of thing and a bare number such as `#49` named two different issues.
+
+**On 2026-11-03 the 12 internal threads then open on GitHub were moved this way**; GitHub has none open. The older pages and the journal cite them by their GitHub number, and a bare number there means the GitHub issue, which stays readable:
+
+| GitHub (closed, readable) | Forge (live) |
+|---|---|
+| 7 | 211 |
+| 9 | 212 |
+| 10 | 213 |
+| 11 | 214 |
+| 12 | 215 |
+| 13 | 216 |
+| 39 | 217 |
+| 44 | 218 |
+| 48 | 219 |
+| 49 | 220 |
+| 50 | 221 |
+| 68 | 222 |
+
+**Cite with the tracker named when it matters** (`GE-KnowledgeCenter#12`, forge `#215`), because the numbering is separate and the sequences overlap.
+
 ## What this page does not say
 
 **It does not set a frequency.** How often a tracker is re-read is a session's judgement and depends
