@@ -36,8 +36,8 @@ session that merges pushes `main` to Forgejo first, then pushes the same `main` 
 compares the two heads (below). **Forgejo first** because a push that fails halfway then leaves GitHub
 *behind* the source, which is the known and visible failure, instead of *ahead* of it, which is a fork
 of the source of truth. A session that only proposes (a branch, a PR) pushes nothing to `main` and
-owes nothing here.
-
+owes nothing here.
+
 **The interim is a command now** (built at the Workshop, `GE-Workshop#313`, merged there via `#314`; read and checked here 2026-11-03): `publish_library.mjs` runs the four gates, then the screening, **refusing when the terms file is missing or the screening cannot run**, prints a plain-words summary built from the diff against the public copy, and pushes **only with `--go=<head>`** of the head that summary showed: the source first, the public copy only if that succeeded, then the heads check. **Publish with it.** A hand push skips the screening and the summary, so it is the fallback only where the command cannot run, and it is said to be one. The command lives in the Workshop's tree; this library names it and does not carry it.
 
 **The ruling of 2026-09-05 said the reverse, and it described something that was never built.**
@@ -334,6 +334,33 @@ role with a repository or a host behind it can be checked by anyone; a role with
 **Nothing further is added here**, because the failure #51 reports was not that leadership was
 unnamed — it was that a claim about an estate travelled without saying who made it or whether they
 could have known. **That is fixed by announcing, not by another roster.**
+
+### The work-item key — which item is being spoken about (ruled 2026-09-05, adopted here 2026-09-06)
+
+**The tag says who is speaking; the key says which piece of work this belongs to**, so a session that
+was not there can follow one item across issues, pull requests, comments and cards. Proposed by the
+Workshop, ruled by the Composer, thread `#218`.
+
+```
+[GE · Library · GE-KnowledgeCenter]
+GE-KnowledgeCenter-20261103-<8 hex>
+```
+
+- **Format** `GE-<role>-YYYYMMDD-<8 hex>` — the only date order that no reader can mistake for another day.
+- **Carrier: the second body line, under the tag.** Not a label (labels never reach a comment) and not the title.
+- **Minted at the first issue, and nothing else mints.** A pull request, a comment or a card carries the
+  key of the issue it serves. **Work with no issue has no key, and that is correct**: needing one is
+  the signal to open the issue.
+- **The role is the minter's, forever** — it records origin, not ownership. No retrofitting.
+
+**Reachable by search on both trackers:** GitHub, comments included (measured 2026-09-06); Forgejo,
+comments included (measured 2026-11-03 — tokens found only in a comment return their issue). **The hit
+is the thread, not the comment**: you land where the argument is, then read it.
+
+⚠️ **Adopted on 2026-09-06 and not practised:** of the 41 issues this account opened on the forge by
+2026-11-03, none minted a key — the two carrying one are copies of a Workshop thread. **It lived on a
+thread and on no page**, which is the reason this section exists. A key carried by habit on some items
+is worse than none, because it looks like a join and is not.
 
 ### Taking the chair — what follows from naming the repository (proposed by the Workshop, 2026-09-04)
 
