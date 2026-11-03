@@ -87,6 +87,8 @@ only route in, so an unlisted page is not in the library.
     SESSION_LOG.md          at this root — APPEND ONLY, several instances write here
                             (one bounded exception, below)
     issues + PRs            jkornobis/GE-KnowledgeCenter on Forgejo
+                            (GitHub issues are the inbox for people OUTSIDE the project and
+                            hold no internal thread: Composer, 2026-11-03)
     Wekan                   "Knowledge Center - Dedicated Board" · "Discussions GE Board"
                             NOT A RECORD YET: named as the future home, holds no cards, and
                             nothing is filed there until it does (Composer, 2026-11-03)
