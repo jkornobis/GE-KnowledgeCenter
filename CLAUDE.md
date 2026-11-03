@@ -79,6 +79,10 @@ output of a failure, so the artifact leaves correct and arrives wrong, with no e
 2026-09-08 after it published two mangled bodies in twenty-four hours; twice is a pattern, and the
 defect is invisible at the point it happens.
 
+**Publishing is the Workshop's `publish_library.mjs`, not a hand push** (`GE-Workshop#313`): it runs the four gates, 
+refuses without the screening terms, shows a plain summary and pushes only with `--go=<head>` of the head shown. 
+A hand push skips the screening and the summary, so it is the fallback and is said to be one (`protocols/library-conventions.md`).
+
 **A merge that adds a page adds its `index.md` row in the same breath.** That index states it is the
 only route in, so an unlisted page is not in the library.
 
