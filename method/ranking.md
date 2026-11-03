@@ -120,7 +120,7 @@ a glyph that was chosen.**
 ## The table is half of a pair, and the other half is not optional
 
 **A ranked table is always followed by buttons** — a multiple-choice prompt carrying the rows that
-are genuinely the Composer's. **The table shows the state of the work; the buttons are where he acts
+are genuinely the Composer's. **Ranking and sorting always end by proposing a Program of notes by default, and the prompt allows several picks at once, not one** (the Composer, 2026-11-03). **The table shows the state of the work; the buttons are where he acts
 on it.**
 
 ⚠️ **A table that ends a message leaves every 👁️ row as something he must answer in prose**, which is
