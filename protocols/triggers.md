@@ -58,6 +58,27 @@ Discipline: one idea each, breadth over depth. The very next message returns to 
 
 **Cost and consent.** Pass A is one thinker call, counted in the session's five. The four fixed moments for the standing yes do not name this one; his choice of the thinker for Pass A on 2026-10-29 is read as his yes for this mode, and a doubtful case asks per call.
 
+### Deep Auditorium — `Deep Auditorium on <field>` (ruled by the Composer, 2026-11-03)
+
+**The improvement method for a field, when the plain Auditorium returns small fixes.** It starts from his proposal (the Strategy quorum leads, each chair of the field brings ideas, the quorum ranks and builds consistency, the table comes out as any auditorium table, longer or shorter than ten rows) and keeps its shape. It changes four things, each from a challenge made the same day by this session and by a thinker working apart, which reached the same three objections: **ten ideas a chair is padding** (the last five vary the first five), **the quorum ranks its own output** (the same model, so its consistency looks like corroboration and is not), and **"redundant if implemented" mixes two relations** that must be told apart.
+
+**The field** is a topic of the table in `chairs/the-twelve-chairs.md` (*Topics for an Auditorium*), so the chairs are the table's, not guessed. **The quorum** is the Strategy row of the same table. A chair that is in both speaks in Round 1 and its own ideas are labelled by the other quorum chairs; if fewer than two remain, he labels them.
+
+**The steps, in this order:**
+
+1. **He names the field and its purpose in one sentence.**
+2. **A thinker drafts two or three rival designs of the field**, from the purpose and his rulings, with the current pages withheld. The brief carries the rulings and the real constraints as facts (a design that ignores them is fresh and cannot be built), and the brief is shown to him with the table.
+3. **Round 1, blind: each chair of the field gives three ideas against those designs**, each marked **Fix**, **Replace** or **Remove**, and **at least one of the three is Replace or Remove**. Each chair answers without reading the others' ideas. *A chair is a persona in one context, so blind here means "in turn, before the merge", not independent.*
+4. **The quorum merges and labels, and adds no ideas.** It merges **duplicates** (the same idea twice), labels each survivor **Must** or **Nice**, and records two relations the labels cannot carry: **depends-on** (B only makes sense after A) and **conflicts-with** (A and B cannot both be done). An idea made unnecessary by another is **Redundant, naming which**.
+5. **Round 2: the chairs react once to the merged list**, to challenge a Must or fill a gap, and **a second thinker, seeing only the purpose and the merged table, names what is missing and which Must is wrong.**
+6. **The result is the usual auditorium table**, `| Rank | Chair | Change | Idea |`, **capped at about twelve rows**, with the dependencies and conflicts in one line under it. **Every dropped row goes to the record** and is reachable with "Tell": recycle, never drop (`protocols/presentation-checklist.md`, The Reduction).
+
+**The quorum proposes; he decides.** Must and Nice are the quorum's reading, and the table says so. The ranking is not corroborated by its own agreement.
+
+**Cost and consent:** two thinker calls of the session's five (steps 2 and 5), counted; his choice of this method is read as his yes for both, and a doubtful case asks per call (`protocols/orchestra-protocols.md`, the thinker).
+
+**Untested, stated before the first use.** One occurrence is a finding, not a pattern. **The test:** run the plain Auditorium and this method on one field, show him both tables **unlabelled and in random order**, and count the structural ideas (Replace or Remove) he would adopt. The method wins only on that count: more rows is not a win. **Known weak point:** blind in step 3 is not independence, and the thinkers' designs depend on a brief the caller writes.
+
 ### Two uses, one trigger (ruled by the Composer 2026-09-24, `#157`)
 
 **The format above is the same for both. What differs is what the Composer does with it**, and his
