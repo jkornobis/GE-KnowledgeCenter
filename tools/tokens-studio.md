@@ -66,7 +66,7 @@ Also present and worth avoiding: `/websites/tokens_studio` at **41**, and `/toke
 
 ## Limits — where this instrument stops
 
-- **It is a plugin, not a platform.** Its release cadence rides Figma's, which is why this page's clock is 60 days rather than 30 or 90 — faster than a build tool, slower than the canvas.
+- **It is a plugin, not a platform.** Its release cadence rides Figma's. This page first estimated a 60-day clock from that; the cadence was then measured, and the measured 15 days in the *Re-audit* line above is the clock.
 - **Reference-only sets can export unresolved** (#3682), and the loss is silent.
 - **No group-level description**, so the *why* behind a token group does not cross.
 

@@ -138,22 +138,7 @@ Agents and results render as **cards** via the visualize/`show_widget` tool wher
 
 **Visual spec:** Material Symbols Outlined icons (loaded from `fonts.googleapis.com`), each in its full family color; `border-radius: 12px`; surface-2 background; two font weights (400/500); sentence case. **No card border in `show_widget` chat output** — the host already frames the widget, and a second border double-boxes it (ADR-140). Keep the `1px solid` family-color-at-~20%-alpha border only where the card has no surrounding host chrome, e.g. `docs-site/`'s standalone components.
 
-**Persona icon + family-color map:**
-
-| Musician | Subtitle (field synthesis) | Material icon | Color | Family |
-|---|---|---|---|---|
-| Agile Facilitator | Routing & synthesis | `hub` | #888780 | gray (lead) |
-| Agile Auditor | Pattern detection | `hearing` | #7F77DD | purple (meta) |
-| UX Designer | Design & UX | `palette` | #D85A30 | coral (creative) |
-| Design Engineer | Design-to-code fidelity | `integration_instructions` | #B84A26 | coral (creative) |
-| Content Designer | Copy & vocabulary | `edit_note` | #D4537E | pink (creative) |
-| Accessibility Specialist | Accessibility & standards | `accessibility_new` | #1D9E75 | teal (quality) |
-| QA Engineer | Testing & DoD | `fact_check` | #639922 | green (quality) |
-| Software Engineer | Code & APIs | `code` | #378ADD | blue (tech) |
-| Software Architect | Process & versioning | `architecture` | #185FA5 | blue (tech) |
-| Product Owner | Purpose & scope | `explore` | #BA7517 | amber (strategy) |
-| User Researcher | Research & sourcing | `travel_explore` | #EF9F27 | amber (research) |
-| Reliability Engineer | Reliability & runtime | `dns` | #5B7185 | steel (ops) |
+**Persona icon + family-color map: [`persona-map.md`](persona-map.md) is the only copy** — icon, emoji, both dot hexes, family and subtitle for each chair. A table here carried the palette that page replaced on 2026-07-23 (invented, and failed colour-vision testing), so the two disagreed for every chair; removed 2026-11-03 rather than corrected, because a second copy is how they diverged (`#201`, rows 07–08).
 
 Subtitle rule: a **noun phrase naming the field** — sentence case, `&` for compounds, no verbs, 1–3 words, each distinct. It is the second line of the speech/identity card, under the musician's name.
 

@@ -62,6 +62,10 @@ sources:
 
 Products grouped under **levers**. Written by a User Researcher-led **Tool Discovery** run — see `protocols/tool-discovery.md` for the protocol.
 
+Audited 2026-09-04 by User Researcher — the date of the last sweep, recorded in [`register-sweeps.md`](register-sweeps.md).
+
+Re-audit: 30 days — the sweep clock, set by the Figma lever below (*the lever that set the 30-day clock*).
+
 **This file names chairs, never musicians.** A chair is a seat and its canon; a musician is whoever occupies it and whatever toolset they carry (ADR-199). The register describes what a leap *is* and which seats it touches — never who carries it. Who carries what lives in `roster.md`, which cites this file one way and is never cited back.
 
 **Two chair fields, and they answer different questions (ADR-220).**
