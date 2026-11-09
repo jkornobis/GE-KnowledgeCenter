@@ -1,7 +1,7 @@
 ---
 type: Protocol
-title: "The pre-send gate — one logic, seven derived checks"
-description: "The message costs the Composer the decision and nothing else; everything behind it is record. Seven checks derive from that one logic — determinable or his, attributed, actionable, ended in one of six shapes, opposed with the steelman first, counted, and named once — plus the three acts that separate admitting an error from telling it, and the quorum that decides what is worth surfacing at all"
+title: "The pre-send gate — one logic, ten derived checks"
+description: "The message costs the Composer the decision and nothing else; everything behind it is record. Ten checks derive from that one logic — determinable or his, attributed, actionable, ended in one of six shapes, opposed with the steelman first, counted, named once, the result on the first line, progress restated, and an estimate given as a count — plus the three acts that separate admitting an error from telling it, and the quorum that decides what is worth surfacing at all"
 status: draft
 serves_all: true
 generated: { by: agent:ge-knowledgecenter, at: 2026-09-07T11:40:00+02:00 }
@@ -16,7 +16,7 @@ sources:
 
 # The pre-send gate
 
-*The seven checks below are not seven rules. They are one rule under seven pressures.*
+*The ten checks below are not ten rules. They are one rule under ten pressures. Seven are derived in full below; 9 to 11 joined on 2026-11-09 and sit after the pre-send list.*
 
 ---
 
@@ -217,7 +217,29 @@ weight**, because the twelve are one model and correlated voters do not add up.
 6  ends in one of the six shapes?     in order, first match wins
 7  twelve rendered lines or fewer?    work handed back only; over: cut the account
 8  any correction in here?            record it; tell only if it moves a live decision
+9  first line after attribution?      the result: what just happened
+10 task of 3+ steps?                  'Step X of Y done: <result>. Next: <step>' as that line
+11 entering a task?                   size stated as a count: steps, commits, issues
 ```
+
+### Checks 9 to 11 — ruled by the Composer 2026-11-09, standing
+
+**9 · The first line carries the result.** With only the first line after the attribution and the
+last line, the reader knows what just happened and what to do next. The last line is already
+governed by the six endings. The first line was governed by nothing, and context or method filled it.
+
+**10 · Progress is restated on multi-step work.** A task of three or more steps says which step
+finished and which comes next, in the form above, **as the first line of check 9**, not as a second
+line. The board line closing a turn shows the state of all open work; this line shows the state of
+the task being worked.
+
+**11 · An estimate is a count, not a duration.** When a task is entered (behavior 10), its size is
+stated in things that can be counted after the fact: steps, commits, issues, files. A model's sense
+of duration is learned from human-written text, not from its own speed, so a duration is a guess
+that no later check can confirm.
+
+*Source: `method/measuring-presentation.md`, the study of a public output-style skill that measured
+the first two rules. The build half — measuring them here with and without — is `GE-Workshop#325`.*
 
 **The check runs before the send, never after.** A rule the sender judges after the fact is the
 thing that failed nineteen times.
@@ -226,7 +248,7 @@ thing that failed nineteen times.
 
 ## Why one logic and not more rules
 
-**Each of the seven above is individually satisfiable and collectively insufficient**, which is the
+**Each of the checks above is individually satisfiable and collectively insufficient**, which is the
 proof that the rules were never the logic. The Composer's own example: *"see how your internal
 assumption always exposed makes you say endlessly: 'First, a correction I owe you from an hour
 ago'."* **That sentence passes every check on this page** — short, attributed, above a ranked table,
