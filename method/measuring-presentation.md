@@ -78,10 +78,13 @@ output contract, or an autonomy regression.
 
 ## What it holds that this library does not
 
-1. **A measurement.** `protocols/presentation-checklist.md` states its twelve-line ceiling is
-   *"a working ceiling, not a measurement"*, and counts 19 decisions that did not stop the
-   complaint. A fixed case set scored blind against a baseline is the instrument that page says it
-   lacks.
+1. **A baseline.** This library already grades behaviour blind: `protocols/orchestra_test_harness.md`
+   holds invariant and capability sets, a constant grader prompt and a grader with no shared context.
+   **But it asks whether a rule is obeyed, PASS or FAIL — never whether obeying it helps.** The
+   source runs every case with and without the rule and scores both on the same rubric, and that is
+   the only design that could have found the regression above: a rule followed perfectly can still
+   lower the score. `protocols/presentation-checklist.md` states its twelve-line ceiling is *"a
+   working ceiling, not a measurement"*; a with-and-without run is what would make it one.
 2. **A first-line test.** No check here reads the first line of a message. The two-line test is
    countable, which is the property the checklist demands of a rule.
 3. **Progress restated inside a task** — *step 3 of 5 done; next: …*. A turn here ends with the
