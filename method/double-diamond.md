@@ -148,8 +148,9 @@ one.
 
 ## What is not decided
 
-- **The direction.** Whether the count of decisions per message should go down, up or hit a target is his
-  ruling, after the baseline.
-- **Round 2 on the plan**, the second thinker's audit, was not run.
+- **Ruled afterwards, 2026-11-10, standing:** a ceiling of one decision per message with no floor, a batch
+  he asked for exempt (`protocols/presentation-checklist.md`). The direction question is closed; the
+  counter that enforces it is not built.
+- **Round 2 on the presentation plan**, the second thinker's audit, was not run (it was run on Strategy).
 - **The tooling.** A count over the transcripts, a log of decisions per message and a periodic sample for
   him to label are the Workshop's to build; none exists.
