@@ -17,8 +17,8 @@ sources:
 
 # The double diamond for the orchestra
 
-Proposed by the Composer on 2026-11-10 and run once the same day on the presentation gate. **One run is
-a finding, not a pattern.** Nothing here is installed; the build is the Workshop's.
+Proposed by the Composer on 2026-11-10 and run twice the same day, on the presentation gate and on
+Strategy. **Two runs are two findings, not a pattern.** Nothing here is installed; the build is the Workshop's.
 
 ## The problem it answers
 
@@ -113,6 +113,38 @@ last two rulings applied:
 204 long messages in the wider pool) and was corrected before anything was labeled. The sample is not
 stratified by task type. Sources are practitioner and vendor pages, plus the abstracts of the speech-act
 papers; no authoritative standard for a fixed set of meeting-minute categories was found.
+
+## The second run — Strategy, 2026-11-10
+
+**Diamond 1.** Four chairs (Product Owner, User Researcher, Software Architect, Agile Facilitator) asked one
+Why each against the Composer's Key, the floor of this repository and SESSION_LOG. Three problem
+statements: **Audience** (the estate is built for one verified person and designed for many; no study of a
+second user was found), **Handoff cost** (the researcher/builder split costs several hops per study and none
+is counted) and **Continuity** (the estate exists so nothing is lost between sessions, yet losses are found
+after the fact, by the Composer). He kept Continuity as the brief.
+
+**Diamond 2.** The quorum merged seven rows; a second thinker, working apart on the purpose and the table
+only, audited them. Its findings changed the plan:
+- The first plan would have missed two of the three known losses, because it scanned for deferral phrases
+  and the other two were an artifact made and never filed and a request never built. Extraction must cover
+  three kinds: deferrals, things the Composer asked for, things an instance produced.
+- A count nothing writes down stays unknown, and a detected item with no card is detected and still lost.
+  The count goes into the log and each item is filed in the same closing act.
+- A low count means *not seen*, not *not lost*. The Composer's spot-check stays the ground truth.
+
+**One hand-run test.** Run on a session believed clean, the extraction returned no candidates. The session
+held 2,024 characters of assistant text, six button answers and one typed request: **the Composer's words
+arrive mostly as button answers (tool results), so a scanner that reads only message text misses most of
+them.** The transcript that held the three known losses no longer exists on disk, so recall cannot be tested
+on it; this session's own unfiled items served instead, which is circular.
+
+**One Why across two fields.** The presentation gate's *Detection* and Strategy's *Continuity* are the same
+problem: the Composer is the only detector, after the fact. Two fields found it independently. That is the
+signal a cross-field diamond exists to watch for, and it is one occurrence.
+
+**A wording correction.** "A deferral with no card is a drop" appears in this library's own log as a
+sentence of the Library. It is not a ruling of the Composer; a plan that relies on it needs him to make it
+one.
 
 ## What is not decided
 
