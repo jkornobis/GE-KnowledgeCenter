@@ -2687,3 +2687,7 @@ He proposed a **double diamond** for the orchestra: a Why diamond across fields 
 ## 2026-11-10 — the double diamond, second run (Strategy)
 
 Diamond 1 on **Strategy** ended in three problem statements (Audience, Handoff cost, Continuity); he kept **Continuity**: losses between sessions are found after the fact, by him. Diamond 2 produced seven rows and a second thinker's audit, which showed the first plan would have missed two of the three known losses and that a low count means *not seen*, not *not lost*. His Program was the hand test only: on a session believed clean the extraction returned no candidates, but the session held 2,024 characters of assistant text, so **his words, which arrive as button answers (tool results), must be read as well**. The transcript holding the three original losses no longer exists on disk. The same Why (the Composer as the only detector, after the fact) surfaced independently in the presentation gate and in Strategy. **Filed because he asked for them to be:** the page `method/double-diamond.md` (PR #226) and a comment on `GE-Workshop#328`. Still his: whether "a deferral with no card is a drop" becomes a ruling, and the direction of the decision count.
+
+## 2026-11-10 — "a deferral with no card is a drop", ruled standing
+
+He ruled the sentence **standing** and declined a tolerance. It had stood in this log as the Library's own wording; it is now step 6 of End Day GE in `protocols/triggers.md` (PR #227, merged), and the Workshop was told on `GE-Workshop#328`, which keeps the ADR and the detector design.
