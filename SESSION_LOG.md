@@ -2691,3 +2691,7 @@ Diamond 1 on **Strategy** ended in three problem statements (Audience, Handoff c
 ## 2026-11-10 — "a deferral with no card is a drop", ruled standing
 
 He ruled the sentence **standing** and declined a tolerance. It had stood in this log as the Library's own wording; it is now step 6 of End Day GE in `protocols/triggers.md` (PR #227, merged), and the Workshop was told on `GE-Workshop#328`, which keeps the ADR and the detector design.
+
+## 2026-11-10 — a ceiling of one decision per message, ruled standing
+
+The direction of the decision count is ruled: **at most one decision per message, no floor**, a batch he asked for exempt. It stands in `protocols/presentation-checklist.md` as a measure, not a numbered check (PR #228, merged); `method/double-diamond.md` no longer lists it as open. Nothing enforces it; the counter is the Workshop's on `GE-Workshop#328`.
