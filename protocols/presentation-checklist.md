@@ -241,6 +241,17 @@ that no later check can confirm.
 *Source: `method/measuring-presentation.md`, the study of a public output-style skill that measured
 the first two rules. The build half — measuring them here with and without — is `GE-Workshop#325`.*
 
+### A ceiling of one decision per message — ruled by the Composer 2026-11-10, standing
+
+**A message hands him at most one decision, and there is no floor:** a message that hands him none is
+fine. A *decision* is anything asked of him that he must rule on (an authorization, a question, a call he
+is asked to check, a choice embedded in a task step), in a buttons box or in prose; an open question with
+no options and an item merely mentioned as coming up do not count. **Exempt: a batch he asked for**, such
+as several rulings requested at once or an Auditorium Program. It is a measure and not a numbered check:
+**nothing enforces it yet**, and the counter that would flag a message above one is the Workshop's to build
+(`GE-Workshop#328`). Baseline when it was ruled: 15 of the 16 messages in a sample of 26 that hand a
+decision already hand exactly one (`method/double-diamond.md`).
+
 **The check runs before the send, never after.** A rule the sender judges after the fact is the
 thing that failed nineteen times.
 
