@@ -2695,3 +2695,7 @@ He ruled the sentence **standing** and declined a tolerance. It had stood in thi
 ## 2026-11-10 — a ceiling of one decision per message, ruled standing
 
 The direction of the decision count is ruled: **at most one decision per message, no floor**, a batch he asked for exempt. It stands in `protocols/presentation-checklist.md` as a measure, not a numbered check (PR #228, merged); `method/double-diamond.md` no longer lists it as open. Nothing enforces it; the counter is the Workshop's on `GE-Workshop#328`.
+
+## 2026-11-11 — Fable 5.2 studied in chat, not landed as a page
+
+Asked whether Fable 5.2 is worth trying for a GE subject. First-party pages read: released 2026-11-09, $8 / $40 per million tokens against Opus 5.5 at $4 / $20 and Fable 5.1 at $10 / $50; Anthropic's own advice is to start with Opus 5.5. Verdict given: worth a bounded trial, not a switch, for the strong-read and audit moments and for Fortissimo, not the everyday session; trial in counts is 10 cases on 2 models, 20 runs, blind-judged by him. Four behaviors touch GE rules (turns ending early, silent tool runs, close rule-following, readiness to delegate to subagents); 30-day data retention is required. **He chose to stop after the answer, so no page was written.** Under the deferral ruling of the same week the stale lineup in `method/evidence.md` got a card instead of staying a remark: issue #229.
