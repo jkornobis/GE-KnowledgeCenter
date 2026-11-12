@@ -223,18 +223,13 @@ Driven via the Browser pane against the Composer's live session — the product 
 
 ## Code layers and the agent, now shipped (sourced 2026-10-24; **read, not probed**)
 
-⚠️ **Everything in this section comes from Figma's published pages. None of it was driven on the Composer's tenant, so none of it carries a probe date, and the `Audited` line above did not move for it** (the re-date rule). It replaces the 2026-07-16 *Horizon* section, whose forecast has now met its facts.
+⚠️ **Everything in this section comes from Figma's published pages. None of it was driven on the Composer's tenant, so none of it carries a probe date, and the `Audited` line above did not move for it** (the re-date rule). It replaces the 2026-07-16 *Horizon* section, whose forecast has now met its facts. **Code layers have their own page since 2026-11-11 (`figma-code-layers.md`); the agent, Specs and corrections below stay here.**
 
 **What changed against the forecast.** The 2026-07 text said code layers were *"announced to ship July 2026"*. ~~Announced to ship July 2026.~~ **They did not:** a private beta was announced in June, and the **open beta opened on 2026-10-15, on all plans** (the launch post is dated the 15th; one press report dates it the 14th). The same wave made the **Figma agent generally available**.
 
 | Fact | Source and how firm |
 |---|---|
-| Code layers are in **open beta, all plans**; gradual rollout, so some accounts may not have it yet | Figma help page *Code layers in Figma Design* and the launch post — **first-party** |
-| Five ways in: an empty layer prompted to the agent · **Build selection** on design frames · a page captured with the Chrome extension · **a connected GitHub repo cloned** · **a local folder uploaded** | help page — first-party |
-| Figma **stores the clone**; branches are supported and a pull request can merge changes back to the original repository | help page — first-party |
-| Creating one needs a **Full seat** and edit access to the file | help page — first-party |
-| **AI credits:** the free window for creating and editing in a code layer on paid plans **ended on 2026-11-04**; every code-layer task now uses credits, at a cost that varies with the task. Other agent work in the same request was never free. The MCP import itself uses no credits | help page — first-party; re-read 2026-11-09 through a search of help.figma.com, which still states the window and shows no extension |
-| Imports can take **10 minutes or more** and some projects need changes to run; not every repository works | help page — first-party |
+| **Code layers** — status, the five ways in, plans and seats, AI credits, imports, and what Figma does not state | **Moved to [`figma-code-layers.md`](figma-code-layers.md) on 2026-11-11**, re-read from Figma's help page the same day. The rows that stood here are there, with their dates |
 | The Figma agent is **generally available on 2026-10-06**; custom skills open to Starter; the agent uses AI credits **from that date**; library guidelines are markdown rules; generative plugins went GA the same day | Figma's own release notes, read 2026-10-24 (first-party). The aggregator said the same; the agent help page gives no date. The release-notes page was truncated, so entries of 15–29 Sep were not seen |
 | **Specs** (a Markdown editor for the team's design language, readable by agents) are in open beta on paid plans; the **MCP** now generates code layers, edits specs and generates images, and 20 partner clients were added | launch post and press — first-party for the list, secondary for the detail |
 | Vector editing, icons, slots and prototyping in the agent are marked *coming soon*; **exporting assets and diagrams are not supported** | agent help page — first-party |
