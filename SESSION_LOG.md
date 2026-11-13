@@ -2707,3 +2707,7 @@ He asked for code layers to be studied by a thinker and given a dedicated sectio
 ## 2026-11-13 — the method is named "Grand Auditorium"
 
 Asked how to name the new auditorium method, he ruled **Grand Auditorium**, standing, over my recommendation (Double Diamond plus Why Auditorium). "Meta-auditorium", his earlier word, was set aside because the floor already uses it for the four Matrix rooms. Written in `method/double-diamond.md` (retitled, path kept so links hold) and as a trigger section in `protocols/triggers.md` (PR #232, merged); the Workshop was told on `GE-Workshop#328`, which owns the skill text and the ADR.
+
+## 2026-11-13 — "Deep Auditorium" becomes a setting of the Auditorium
+
+After the Grand Auditorium was named, he asked what separates the deep one from the grand one and proposed that the deep one be relabelled as an option of the classic. It is: the deep run is the Grand Auditorium's second diamond, and alone it is the fast path when the Why is settled. He ruled it **standing**: `Auditorium on <field> deep`, the name "Deep Auditorium" retired (PR #233, merged; `GE-Workshop#328` told). **A fault of mine, corrected in the same pass:** when he asked, I said the blind comparison of plain against deep had never run. It ran on 2026-11-03 (this log, the entry on the presentation test): he preferred the deep table, structural ideas adopted were not counted. The page that said "untested" was rewritten to say what happened; the relabel does not depend on that claim.
