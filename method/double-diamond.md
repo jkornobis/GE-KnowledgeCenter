@@ -1,7 +1,7 @@
 ---
 type: Method
 title: "Grand Auditorium — the double diamond for the orchestra, a Why diamond across fields before any How"
-description: "The Grand Auditorium (the Composer's name, ruled 2026-11-13), a method that puts the Why before the How: a first diamond across fields that diverges on problems and converges on a brief the Composer rules, then a second diamond per field (the Deep Auditorium) that diverges on solutions against that brief and converges on a plan. Why the plain Auditorium answers How on the existing world, the two risks of asking Why of one model, and the first run on the presentation gate with its labels and findings"
+description: "The Grand Auditorium (the Composer's name, ruled 2026-11-13), a method that puts the Why before the How: a first diamond across fields that diverges on problems and converges on a brief the Composer rules, then a second diamond per field (the deep setting of the Auditorium) that diverges on solutions against that brief and converges on a plan. Why the plain Auditorium answers How on the existing world, the two risks of asking Why of one model, and the first run on the presentation gate with its labels and findings"
 status: draft
 card: none
 serves: [Product Owner, User Researcher, Agile Facilitator, Software Architect, QA Engineer]
@@ -25,7 +25,7 @@ Strategy. **Two runs are two findings, not a pattern.** Nothing here is installe
 ## The problem it answers
 
 The Composer's observation: *an Auditorium in a field tends to update the existing world and to answer
-How first, missing the chance to ask Why and then How.* The plain Auditorium and the Deep Auditorium
+How first, missing the chance to ask Why and then How.* The plain Auditorium and its deep setting
 (`protocols/triggers.md`) both start from the pages as they are, or from a purpose he states in one
 sentence. A purpose written at the call can already assume the thing stays and only needs improving. The
 first attempt at this very pilot did exactly that: it produced twenty-one ideas about the existing gate
@@ -38,9 +38,9 @@ A double diamond has two rounds of diverging then converging. Here:
 | | Diverge | Converge | Ends in |
 |---|---|---|---|
 | **Diamond 1, Why** | every field's chairs ask what problem they solve, for whom, what would be seen if it were solved, and what the field assumes without checking | the strategy quorum cuts to a short list of problem statements | **a brief the Composer rules on.** Nothing is built before it |
-| **Diamond 2, How** | the Deep Auditorium on each field, run against the brief and not against the current pages | the quorum merges, labels and ranks, with dependencies and conflicts | a plan the Composer cuts, then issues, then the Workshop builds |
+| **Diamond 2, How** | the deep setting of the Auditorium on each field, run against the brief and not against the current pages | the quorum merges, labels and ranks, with dependencies and conflicts | a plan the Composer cuts, then issues, then the Workshop builds |
 
-The two are never run in one pass. The meta-auditorium is Diamond 1 across fields; the Deep Auditorium
+The two are never run in one pass. The Grand Auditorium's first diamond runs across fields; the deep setting
 stays the Diamond 2 tool, and it stays replayable one move at a time.
 
 **Two products, not one.** Diamond 2 across many fields produces a map (the per-field tables, kept whole

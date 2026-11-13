@@ -58,7 +58,9 @@ Discipline: one idea each, breadth over depth. The very next message returns to 
 
 **Cost and consent.** Pass A is one thinker call, counted in the session's five. The four fixed moments for the standing yes do not name this one; his choice of the thinker for Pass A on 2026-10-29 is read as his yes for this mode, and a doubtful case asks per call.
 
-### Deep Auditorium — `Deep Auditorium on <field>` (ruled by the Composer, 2026-11-03)
+### The deep setting — `Auditorium on <field> deep` (ruled by the Composer, 2026-11-03; renamed from "Deep Auditorium" on 2026-11-13, standing)
+
+**The name "Deep Auditorium" is retired.** It is a setting of the Auditorium, like the family flags, and it is also the second diamond of the Grand Auditorium (below). Everything under this heading is unchanged by the rename.
 
 **The improvement method for a field, when the plain Auditorium returns small fixes.** It starts from his proposal (the Strategy quorum leads, each chair of the field brings ideas, the quorum ranks and builds consistency, the table comes out as any auditorium table, longer or shorter than ten rows) and keeps its shape. It changes four things, each from a challenge made the same day by this session and by a thinker working apart, which reached the same three objections: **ten ideas a chair is padding** (the last five vary the first five), **the quorum ranks its own output** (the same model, so its consistency looks like corroboration and is not), and **"redundant if implemented" mixes two relations** that must be told apart.
 
@@ -93,7 +95,7 @@ Discipline: one idea each, breadth over depth. The very next message returns to 
 
 **Cost and consent:** two thinker calls of the session's five (steps 2 and 5), counted, plus whatever Round 1 mode he chose; his choice of this method is read as his yes for both, and a doubtful case asks per call (`protocols/orchestra-protocols.md`, the thinker).
 
-**Untested, stated before the first use.** One occurrence is a finding, not a pattern. **The test:** run the plain Auditorium and this method on one field, show him both tables **unlabelled and in random order**, and count the structural ideas (Replace or Remove) he would adopt. The method wins only on that count: more rows is not a win. **Known weak point:** in the *in turn* and *section* modes Round 1 is not independence, and in every mode the thinkers' designs depend on a brief the caller writes.
+**Tested once on 2026-11-03, and not counted.** The plain Auditorium and this method were run on one field and shown to him **unlabelled and in random order**; he preferred the deep table, for a reason he gave (one chair can give more than one useful note, where the plain one allows one idea per chair). He gave no row numbers, so the structural ideas (Replace or Remove) he would adopt were not counted, and that count is still the test: more rows is not a win. One run, one reader: a finding, not a pattern. **Known weak point:** in the *in turn* and *section* modes Round 1 is not independence, and in every mode the thinkers' designs depend on a brief the caller writes.
 
 ### Grand Auditorium — `Grand Auditorium on <field>` (named and ruled by the Composer, 2026-11-13, standing)
 
@@ -101,7 +103,7 @@ Discipline: one idea each, breadth over depth. The very next message returns to 
 
 1. **Diamond 1, Why.** The field's chairs (the table in `chairs/the-twelve-chairs.md`) and the User Researcher each ask one Why against recorded evidence, his rulings, SESSION_LOG and past complaints; every answer names its evidence or is marked an assumption. The quorum converges to a short list of problem statements.
 2. **It stops there.** He rules on the brief: one or more statements, and none means the diamond failed. Nothing is built or proposed before that ruling, and the purpose is his, never the quorum's.
-3. **Diamond 2, How.** The Deep Auditorium (above) runs against the ruled brief, not against the current pages, and ends in the usual ranked table with a recommended Program. A second thinker's audit of the table is the step that changed both plans run so far.
+3. **Diamond 2, How.** The deep setting of the Auditorium (above) runs against the ruled brief, not against the current pages, and ends in the usual ranked table with a recommended Program. A second thinker's audit of the table is the step that changed both plans run so far.
 
 **The two diamonds are never run in one pass.** The stop between them is the point of the trigger. **Two runs on record, so a finding and not yet a pattern.** The counter and the log the Workshop builds for it are on `GE-Workshop#328`.
 
