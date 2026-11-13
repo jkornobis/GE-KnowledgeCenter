@@ -95,6 +95,16 @@ Discipline: one idea each, breadth over depth. The very next message returns to 
 
 **Untested, stated before the first use.** One occurrence is a finding, not a pattern. **The test:** run the plain Auditorium and this method on one field, show him both tables **unlabelled and in random order**, and count the structural ideas (Replace or Remove) he would adopt. The method wins only on that count: more rows is not a win. **Known weak point:** in the *in turn* and *section* modes Round 1 is not independence, and in every mode the thinkers' designs depend on a brief the caller writes.
 
+### Grand Auditorium — `Grand Auditorium on <field>` (named and ruled by the Composer, 2026-11-13, standing)
+
+**The Why before the How.** An Auditorium on a field tends to update the world as it stands and to answer How first (his observation, 2026-11-10). This trigger puts a Why diamond in front of the Deep Auditorium. Full account, the two runs on record and the measurements: `method/double-diamond.md`.
+
+1. **Diamond 1, Why.** The field's chairs (the table in `chairs/the-twelve-chairs.md`) and the User Researcher each ask one Why against recorded evidence, his rulings, SESSION_LOG and past complaints; every answer names its evidence or is marked an assumption. The quorum converges to a short list of problem statements.
+2. **It stops there.** He rules on the brief: one or more statements, and none means the diamond failed. Nothing is built or proposed before that ruling, and the purpose is his, never the quorum's.
+3. **Diamond 2, How.** The Deep Auditorium (above) runs against the ruled brief, not against the current pages, and ends in the usual ranked table with a recommended Program. A second thinker's audit of the table is the step that changed both plans run so far.
+
+**The two diamonds are never run in one pass.** The stop between them is the point of the trigger. **Two runs on record, so a finding and not yet a pattern.** The counter and the log the Workshop builds for it are on `GE-Workshop#328`.
+
 ### Two uses, one trigger (ruled by the Composer 2026-09-24, `#157`)
 
 **The format above is the same for both. What differs is what the Composer does with it**, and his
