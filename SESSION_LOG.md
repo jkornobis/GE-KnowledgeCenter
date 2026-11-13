@@ -2703,3 +2703,7 @@ Asked whether Fable 5.2 is worth trying for a GE subject. First-party pages read
 ## 2026-11-11 — Figma code layers get their own page
 
 He asked for code layers to be studied by a thinker and given a dedicated section. The thinker (the session's fifth and last call) was briefed with the facts and no pages, and chose a new page over keeping the section in `figma-surface.md`, which would have left one feature split across five pages, and over the router, which carries no findings. **Landed:** `tools/figma-code-layers.md` plus its index row, a pointer row in `figma-surface.md`, and a router row in `figma.md` (PR #230, merged). **Status held at open beta**: Figma's help page and a secondary report of its 3 November note say so, no general-availability notice was found, and when asked what "published" meant he answered *open beta reached my account*. **Never probed.** The three probes owed are carried by issue #231, so they are not a deferral without a card.
+
+## 2026-11-13 — the method is named "Grand Auditorium"
+
+Asked how to name the new auditorium method, he ruled **Grand Auditorium**, standing, over my recommendation (Double Diamond plus Why Auditorium). "Meta-auditorium", his earlier word, was set aside because the floor already uses it for the four Matrix rooms. Written in `method/double-diamond.md` (retitled, path kept so links hold) and as a trigger section in `protocols/triggers.md` (PR #232, merged); the Workshop was told on `GE-Workshop#328`, which owns the skill text and the ADR.
