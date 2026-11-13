@@ -1,7 +1,7 @@
 ---
 type: Method
-title: "The double diamond for the orchestra — a Why diamond across fields before any How"
-description: "A method that puts the Why before the How: a first diamond across fields that diverges on problems and converges on a brief the Composer rules, then a second diamond per field (the Deep Auditorium) that diverges on solutions against that brief and converges on a plan. Why the plain Auditorium answers How on the existing world, the two risks of asking Why of one model, and the first run on the presentation gate with its labels and findings"
+title: "Grand Auditorium — the double diamond for the orchestra, a Why diamond across fields before any How"
+description: "The Grand Auditorium (the Composer's name, ruled 2026-11-13), a method that puts the Why before the How: a first diamond across fields that diverges on problems and converges on a brief the Composer rules, then a second diamond per field (the Deep Auditorium) that diverges on solutions against that brief and converges on a plan. Why the plain Auditorium answers How on the existing world, the two risks of asking Why of one model, and the first run on the presentation gate with its labels and findings"
 status: draft
 card: none
 serves: [Product Owner, User Researcher, Agile Facilitator, Software Architect, QA Engineer]
@@ -15,7 +15,9 @@ sources:
     title: "DACI decision-making framework, Umbrex (a practitioner page; the sources disagree on details)"
 ---
 
-# The double diamond for the orchestra
+# Grand Auditorium — the double diamond for the orchestra
+
+**Named by the Composer on 2026-11-13, standing: *Grand Auditorium* is the whole method, and `Grand Auditorium on <field>` is its trigger (`protocols/triggers.md`).** The path of this page keeps the earlier working name, *double diamond*, so no link breaks. The industry term for the shape is still the double diamond; the name of the method here is Grand Auditorium.
 
 Proposed by the Composer on 2026-11-10 and run twice the same day, on the presentation gate and on
 Strategy. **Two runs are two findings, not a pattern.** Nothing here is installed; the build is the Workshop's.
