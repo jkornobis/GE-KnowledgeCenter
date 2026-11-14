@@ -89,6 +89,8 @@ Discipline: one idea each, breadth over depth. The very next message returns to 
 
 **What the one comparison showed (the code field, 9 ideas each, one run):** the session in turn and one section call on a subagent shared 3 ideas, and each had about 5 the other lacked; the union was 14 distinct ideas against 9, **at about 3,500 tokens per added idea against about 170 per in-turn idea**. The subagent's additions included two structural ideas the session did not have, one of them replacing a check the session had itself written. **The subagent was not blind:** it named risks that were in this repository's `CLAUDE.md` and not in its brief, so, as an *inference*, subagents receive the project instructions, and a partial run is independent of the session's context and not of the project floor. The per-chair mode is the only one that would be independent of the session, and it was not tested.
 
+**Measured again on 2026-11-14, not reconciled:** nine thinker calls in one run (one design, seven chairs, one audit) reported 4,184 to 6,115 tokens each in the harness's usage field, 45,221 in all, against the 68,821 to 69,647 each recorded on 2026-11-03 and used in the table above. Whether the field counts the same thing is not known, so the table is left as it stands until it is.
+
 **Per-chair calls are plain subagents, not the thinker role, so they are outside its five-a-session cap; his choice of that mode at the call is the yes the subagent rule asks for.** If the field has more chairs than the table's presentation row, the per-chair estimate scales by the chair count.
 
 **The quorum proposes; he decides.** Must and Nice are the quorum's reading, and the table says so. The ranking is not corroborated by its own agreement.
