@@ -19,8 +19,8 @@ sources:
 
 **Named by the Composer on 2026-11-13, standing: *Grand Auditorium* is the whole method, and `Grand Auditorium on <field>` is its trigger (`protocols/triggers.md`).** The path of this page keeps the earlier working name, *double diamond*, so no link breaks. The industry term for the shape is still the double diamond; the name of the method here is Grand Auditorium.
 
-Proposed by the Composer on 2026-11-10 and run twice the same day, on the presentation gate and on
-Strategy. **Two runs are two findings, not a pattern.** Nothing here is installed; the build is the Workshop's.
+Proposed by the Composer on 2026-11-10 and run twice on 2026-11-10, on the presentation gate and on
+Strategy, and a third time on 2026-11-14, on the library itself. **Three runs, one reader and one model: findings, not a pattern.** Nothing here is installed; the build is the Workshop's.
 
 ## The problem it answers
 
@@ -147,6 +147,28 @@ signal a cross-field diamond exists to watch for, and it is one occurrence.
 **A wording correction.** "A deferral with no card is a drop" appears in this library's own log as a
 sentence of the Library. It is not a ruling of the Composer; a plan that relies on it needs him to make it
 one.
+
+## The third run — the library itself, 2026-11-14
+
+**The field and the aim.** *Library* was not in the topic table; he confirmed seven chairs (Content Designer, Software Architect, Software Engineer, QA Engineer, User Researcher, Accessibility Specialist, Product Owner) and the row is now in `chairs/the-twelve-chairs.md`. The aim he gave was to study the library to find evolutions worth implementing, so each idea had to change what the library is or does, and carried a cost as a count. A fourth label, **NEW**, was allowed for this run only, because a new capability fits neither Fix, Replace nor Remove.
+
+**Diamond 1.** Seven chairs, one Why each, against counts taken from the repository and the forge. Three statements, all three kept as the brief: **Freshness** (outside claims age with no page-level detector), **The reader** (nobody measures who reads the library or what they miss) and **Growth without a measure of value**. Accessibility had no evidence either way and went to the record.
+
+**A correction the run forced.** The first evidence was incomplete and one figure was wrong. The page ages were counted from the generated date; by last-edit date the median is 58 days (not 78) and 55 of 117 dated pages are older than 60 days (not 96 of 115). And the library already had `check_findability` (a lexical proxy over 13 real questions, all 13 landing in the top three rows), `check_corpus_freshness` (a graph copy against the corpus, exits 0 when unconfigured) and `measure_coupling` and `measure_stability`. So "no detector" and "nobody measures" became *no page-level detector* and *no measure of use*. The statements stood, narrower. **The cause was reading the repository's pages and not its root scripts before writing a Why.**
+
+**Diamond 2, in the per-chair mode he chose.** One thinker drew three rival designs (expiry by default, a demand ledger with a reader test, demolition) with the pages withheld; seven chairs each gave three ideas against them; the quorum merged 21 ideas into 12 rows; a second thinker audited the table. The audit changed it:
+- the gap ledger, a Nice, became a Must: nothing else measured agent readers or tied growth to value;
+- tagged editions and whole-index generation were dropped, each conflicting with a ruling of his (approval bound to one head; keep the hand grouping of the index);
+- the keep/drop sitting was demoted, as housekeeping;
+- a backfill row was added, because the freshness gate would list all 117 pages on its first day, and `checked:` must cite a source re-read, not only a date.
+
+**Three things checked in the code before ranking.** The status gate already accepts `draft`, `stable` and `deprecated` and fails any other value, and no page uses `stable`, so "checked" needs no new value. The publish command requires exit 0 from each of its four gates, and the freshness check that exits 0 unconfigured is not one of them, so a third gate outcome cannot break publishing. The 13 findability questions are sessions' real questions and were never tuned.
+
+**The ranked plan** is on the Workshop issue that carries the build. **First move, before any build:** a five-question pilot, one sitting and no code. He writes five real recent questions, an agent answers each from the library alone, and he scores them. If findability still shows 13 of 13 while he scores under 4 of 5, the proxy is hiding gaps and the ledger and the question bank are justified; if all five pass, they are worth less than claimed.
+
+**Measured on this run, and unexplained.** Nine thinker calls reported 4,184 to 6,115 tokens each in the harness's usage field, 45,221 in all, against the 68,821 to 69,647 each recorded on 2026-11-03 and the roughly 270,000 estimated for this mode. Whether the field counts the same thing is not known.
+
+**Cross-field pattern, with its limit.** Freshness is the third field in which the same Why appeared (the Composer is the only detector, after the fact), after the presentation gate and Strategy. All three runs read the same sources, so it is one finding seen three times, not three independent ones.
 
 ## What is not decided
 
