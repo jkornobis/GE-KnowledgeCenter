@@ -170,6 +170,19 @@ one.
 
 **Cross-field pattern, with its limit.** Freshness is the third field in which the same Why appeared (the Composer is the only detector, after the fact), after the presentation gate and Strategy. All three runs read the same sources, so it is one finding seen three times, not three independent ones.
 
+## The pilot, 2026-11-14 and 15 — what a fresh reader found
+
+**Design.** He sent five real questions (automating page refresh; the auditoriums as a progression of field scope; recurring presentation issues; stale content from outdated pages; finding content and making every instance search before acting). Five fresh read-only agents each answered one from the library alone, starting at the routing card, and reported the pages they read and the page they expected and did not find. **The scoring rule was set before scoring:** an answer counts 1 only if a session could act on it without coming back to ask him. He scored five and applied the rule: Q2 and Q5 counted, Q1, Q3 and Q4 did not.
+
+**Result: 2 of 5, under the pre-set bar of 4.** While `check_findability` shows 13 of 13, the proxy is hiding gaps, which justifies the gap ledger and the question bank. **Limits:** five questions, one scorer; the bar of 4 was set in the audit and not argued; the agents grepped the index and did not read it, so a miss can mean "not routed" and not "not written"; the score decided the verdict only because it fell on the line, and "all count" would have given 4 of 5.
+
+**Five gaps the agents named, each a page they expected and did not find:** an overview of the Auditorium variants by scope; a library-wide page on refreshing pages (the "Refresh GE" trigger is named in two files and no route reaches it); the implemented remedy for recurring presentation issues, which does not exist yet; a general page on stale pages, since the re-audit rule is written for tool pages; and a mechanism that makes every instance consult the library before acting, where there is only a rule.
+
+**Three findings from checking their citations, which change the plan.**
+- **A page-level freshness detector already exists, for tool pages**: the Workshop's `check_tool_audit_freshness.mjs`, reading each page's `Audited` and `Re-audit` lines, with a basis for the interval that includes "not applicable, no release surface". The plan's row 04 should extend this clock to world-claim pages, not add a new scheme. The earlier statement that no page-level detector exists was wrong for the 30 tool pages.
+- **Run with its default folder it reports "All tool pages verified" and exits 0 after reading no page.** Pointed at the library's `tools/` folder, it lists 17 stale pages and one with no `Audited` line (`tools/figma-code-layers.md`, which was read and never probed), and exits 1. This is the case row 01 describes. Whether the monthly scheduled run passes the folder is not checked.
+- **The library's tool-audit page cites that script by a path that does not exist in this repository**; it lives in the Workshop.
+
 ## What is not decided
 
 - **Ruled afterwards, 2026-11-10, standing:** a ceiling of one decision per message with no floor, a batch
