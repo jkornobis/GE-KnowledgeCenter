@@ -87,6 +87,8 @@ result is judged.
 | a trigger phrase you have been given and do not recognise | `protocols/triggers.md` |
 | convening an Auditorium on a topic (presentation, code, strategy, deployment stability) or on a family (strings, woodwinds, brass, harp): which chairs it calls | `chairs/the-twelve-chairs.md` |
 | improving a whole field rather than asking one question: the deep setting, `Auditorium on <field> deep` | `protocols/triggers.md` |
+| choosing which Auditorium to call, by the size of the question: plain, a family, a topic, the deep setting, the Grand Auditorium | `method/auditorium-variants.md` |
+| a page is stale, a page may need retiring, or refreshing pages automatically: what exists today and what does not | `method/keeping-pages-true.md` |
 | opening a tracker, or ranking from one | `method/reading-a-tracker.md` |
 | looking for a page and not finding it | `method/finding-a-page.md` |
 | about to write a rule down somewhere durable | `method/recording-a-rule.md` |
