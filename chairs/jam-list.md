@@ -1,7 +1,7 @@
 ---
 type: Chair Reference
 title: "The jam list — small experiments to try for each chair, from papers, datasets and news"
-description: "A list of experiments worth running per chair, assembled 2026-11-20 from research papers, datasets and one news article: each item names its source with an address that resolved, says what the source is and how firm it is, and gives a cheap test as a count with the Composer or a baseline as the judge — unranked by the orchestra, none run, and tiered by the Composer on 2026-11-20"
+description: "A list of experiments worth running per chair, assembled 2026-11-20 from research papers, datasets and one news article: each item names its source with an address that resolved, says what the source is and how firm it is, and gives a cheap test as a count with the Composer or a baseline as the judge — unranked by the orchestra, tiered by the Composer on 2026-11-20, with the first run recorded (the Agile Auditor classifying twelve logged faults, 8 of them failures to check before asserting)"
 status: draft
 card: none
 serves_all: true
@@ -53,8 +53,8 @@ sources:
 
 Assembled 2026-11-20 at the Composer's request: *search Hugging Face and the news for a skill or methodology
 worth testing for each chair, and build a jam list.* **A jam here is a small experiment: cheap, run against a
-baseline, with the Composer or a stated metric as the judge.** The list is unranked by me and **no item has been
-run**. **The Composer tiered all fourteen on 2026-11-20, one item at a time by his own answers, with nothing
+baseline, with the Composer or a stated metric as the judge.** The list is unranked by me and **one item has been
+run** (the first run, below). **The Composer tiered all fourteen on 2026-11-20, one item at a time by his own answers, with nothing
 marked as recommended; an instance only recorded them:** six Critical, seven Important, one Emerging, none
 "not worth tracking". The tiers say which items are worth tracking and testing, in the sense the chairs'
 reference files use (`chairs/skills-candidates.md`), not that any result is known.
@@ -87,9 +87,46 @@ disagrees with another and that is itself the finding.
 | Agile Facilitator | MultiAgentBench, [Hugging Face](https://huggingface.co/papers/2503.01935) | Measures collaboration by milestone-based indicators and compares coordination layouts | A way to score a run by milestones, not only by outcome. **No benchmark of facilitation itself was found** | 5 milestones for each of the 3 Grand Auditorium runs, scored afterwards (15 scores) | Critical |
 | Agile Auditor | TRAIL, [preprint](https://arxiv.org/abs/2505.08638), with the library's MAST page, and REFLECT, [preprint](https://arxiv.org/abs/2605.19196) | A taxonomy of agent trace errors; a test of whether LLM judges can be trusted | The log records this instance's own faults, which no one has classified | The faults recorded since 13 November classified by the taxonomy, counted by category (about 8 to 10) | Critical |
 
+## First jam run — the Agile Auditor's classification, 2026-11-20
+
+**What was run.** The 11 faults this instance's log records since 2026-11-13, split into 12 labelled cases
+(one fault had two causes), each classified by two published taxonomies: TRAIL's (3 categories, 9 groups,
+20 error types, read verbatim from its third section) and MAST's (3 categories, 14 failure modes, whose
+definitions were read as a summary's paraphrase). **The labels are mine and the Composer checked them: they
+hold.** Both taxonomies were built for agent traces, so applying them to one assistant working with a human
+is a reading of this library, not theirs.
+
+| # | The fault | TRAIL | MAST |
+|---|---|---|---|
+| 1 | Kept asking closing questions after he chose to stop | Instruction non-compliance | 1.5 Unaware of stopping conditions |
+| 2 | Repeated for days that the screening terms file was absent | Context handling failure | 3.2 No or incomplete verification |
+| 3a | First library Why diamond missed scripts at the repository root | Poor information retrieval | 3.2 |
+| 3b | Computed page ages from the generated date, which overstated staleness | Tool output misinterpretation | 3.3 Incorrect verification |
+| 4 | Stated the open-issue count from memory | Text-only hallucination | 3.2 |
+| 5 | Answered on an article from search summaries and got a term wrong | Poor information retrieval | 3.2 |
+| 6 | Said a PR was waiting, from a stale comment | Context handling failure | 3.2 |
+| 7 | Rewrote a CRLF file whole | Tool selection error | none: caught by the diff stat |
+| 8 | Attributed to a page something it does not say | Text-only hallucination | none: caught by reading the page |
+| 9 | Two gates red on a first draft | Instruction non-compliance | 1.1 Disobey task specification; the gates caught it |
+| 10 | Said a comparison never ran when it had | Text-only hallucination | 3.2 |
+| 11 | Two wrong explanations of a gate before reading its source | Text-only hallucination | 3.3 |
+
+**The count.** By TRAIL, 10 of 12 are Reasoning errors, 2 are Planning and Coordination (both stale context)
+and none are System Execution; the most common type is the text-only hallucination (4 of 12). By MAST, **8 of
+12 are Task Verification (6 no or incomplete verification, 2 incorrect verification)**, 2 are System Design,
+and 2 were caught by a check that worked. MAST's published split for multi-agent systems is 42% specification,
+37% misalignment and 21% verification (`method/orchestra_prior_art.md`), so this instance's mix is close to
+the reverse.
+
+**What it suggests, not a ruling.** The dominant fault here is asserting before checking, which the rule
+that a verification needs an external artifact already names; coordination between agents is not where it
+breaks. **Limits:** 12 labels, one instance, one labeller who is the instance, and a taxonomy that does not
+describe the faults a check caught. TRAIL's own text lists a fourth category, "Domain Specific Errors", that
+was seen only in a summary and was not used.
+
 ## What the list does not say
 
-- **No item is a recommendation, and none has been run.** Each test is sized as a count of things to score
+- **No item is a recommendation, and only the first has been run.** Each test is sized as a count of things to score
   and names its judge; the harness that would run several of them is on `GE-Workshop#325` and `#330`.
 - **Two items touch the Workshop's code or records** (mutation-testing a gate's tests, and classifying
   faults from a log); the Library would propose them there and not run them on another repository.
