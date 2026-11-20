@@ -1,7 +1,7 @@
 ---
 type: Chair Reference
 title: "The jam list — small experiments to try for each chair, from papers, datasets and news"
-description: "A list of experiments worth running per chair, assembled 2026-11-20 from research papers, datasets and one news article: each item names its source with an address that resolved, says what the source is and how firm it is, and gives a cheap test as a count with the Composer or a baseline as the judge — unranked by the orchestra, tiered by the Composer on 2026-11-20, with the first run recorded (the Agile Auditor classifying twelve logged faults, 8 of them failures to check before asserting)"
+description: "A list of experiments worth running per chair, assembled 2026-11-20 from research papers, datasets and one news article: each item names its source with an address that resolved, says what the source is and how firm it is, and gives a cheap test as a count with the Composer or a baseline as the judge — unranked by the orchestra, tiered by the Composer on 2026-11-20, with two runs recorded (the Agile Auditor classifying twelve logged faults, 8 of them failures to check before asserting; the Agile Facilitator scoring three Grand Auditorium runs by milestones, 14 of 15 met)"
 status: draft
 card: none
 serves_all: true
@@ -53,8 +53,8 @@ sources:
 
 Assembled 2026-11-20 at the Composer's request: *search Hugging Face and the news for a skill or methodology
 worth testing for each chair, and build a jam list.* **A jam here is a small experiment: cheap, run against a
-baseline, with the Composer or a stated metric as the judge.** The list is unranked by me and **one item has been
-run** (the first run, below). **The Composer tiered all fourteen on 2026-11-20, one item at a time by his own answers, with nothing
+baseline, with the Composer or a stated metric as the judge.** The list is unranked by me and **two items have been
+run** (the first two runs, below). **The Composer tiered all fourteen on 2026-11-20, one item at a time by his own answers, with nothing
 marked as recommended; an instance only recorded them:** six Critical, seven Important, one Emerging, none
 "not worth tracking". The tiers say which items are worth tracking and testing, in the sense the chairs'
 reference files use (`chairs/skills-candidates.md`), not that any result is known.
@@ -124,9 +124,43 @@ breaks. **Limits:** 12 labels, one instance, one labeller who is the instance, a
 describe the faults a check caught. TRAIL's own text lists a fourth category, "Domain Specific Errors", that
 was seen only in a summary and was not used.
 
+## Second jam run — the Agile Facilitator's milestones, 2026-11-20
+
+**What was run.** Five milestones taken from the Grand Auditorium's own text (`protocols/triggers.md`) and
+**fixed before any run was scored**, then scored 1 or 0 for each of the three runs on record, 15 scores,
+from the log. **The scores are mine and the Composer checked them: they hold.** The method is the
+milestone-based indicators of MultiAgentBench (`https://huggingface.co/papers/2503.01935`), applied here to
+runs of this library's own method, not to agents.
+
+The milestones: 1 each Why answer names its evidence or is marked an assumption; 2 the Composer ruled a brief
+before any How; 3 the How diamond ran against the ruled brief, not against the current pages; 4 a second
+thinker working apart audited the table; 5 the run ended in a ranked table with a recommended Program, put to
+the Composer as buttons.
+
+| Milestone | Presentation gate, 10 Nov | Strategy, 10 Nov | Library, 14 Nov |
+|---|---|---|---|
+| 1 Evidence named | met | met | met, though the evidence was incomplete |
+| 2 The stop | met | met | met |
+| 3 How against the brief | met | met | met |
+| 4 Independent audit | **not met: the plan was never audited** | met: it changed the plan | met: it changed the plan |
+| 5 Ranked table and Program | met | met | met |
+| **Score** | 4 of 5 | 5 of 5 | 5 of 5 |
+
+**A second count, from the log: corrections forced inside the run.** Presentation 1 (the first attempt
+answered How first and was reframed); Strategy 0; Library 2 (the evidence overstated staleness and missed
+scripts at the repository root, and the pilot later showed tool pages already had a clock).
+
+**What it shows, with n of 3, none of it a rule.**
+- **Milestones say that a run followed its steps, not that it was right.** The library run scored 5 of 5 and
+  needed the most corrections, so a milestone score needs the correction count beside it.
+- **The audit is the milestone that mattered.** Where it ran, in two runs, it changed the plan; the one run
+  without it is the one whose plan has the least behind it.
+- **Limits:** the scores are mine, the milestones are binary so "met" hides quality, and three runs are
+  three runs.
+
 ## What the list does not say
 
-- **No item is a recommendation, and only the first has been run.** Each test is sized as a count of things to score
+- **No item is a recommendation, and only the first two have been run.** Each test is sized as a count of things to score
   and names its judge; the harness that would run several of them is on `GE-Workshop#325` and `#330`.
 - **Two items touch the Workshop's code or records** (mutation-testing a gate's tests, and classifying
   faults from a log); the Library would propose them there and not run them on another repository.
