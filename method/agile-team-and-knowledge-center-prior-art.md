@@ -15,6 +15,8 @@ sources:
     title: "Knowledge Activation: AI Skills as the Institutional Knowledge Primitive for Agentic Software Development, Bakal, preprint, v2 of 2026-06-04; read in part"
   - resource: https://www.ml6.eu/en/blog/working-with-ai-is-a-personal-skill-working-with-ai-as-a-team-is-not
     title: "Working with AI is a personal skill, working with AI as a team is not, ML6, 2026-07-22, updated 2026-08-19; read in full"
+  - resource: https://github.com/bmad-code-org/BMAD-METHOD/blob/main/skills/toolsmith/bmad-eval/SKILL.md
+    title: "bmad-eval SKILL.md, read 2026-11-20 through a fetch agent; its scripts, references and cases were not read"
   - resource: https://arxiv.org/abs/2406.11912
     title: "AgileCoder: Dynamic Collaborative Agents for Software Development based on Agile Methodology — known from search summaries only, not opened"
 ---
@@ -55,13 +57,49 @@ on it: one blind comparison counted by preference, one pilot of five questions.
 ## Four candidates, none adopted
 
 1. **`bmad-eval`.** A skill that measures skills, agents and modules. Relevant to the baseline on
-   `GE-Workshop#325`. **Not read.**
+   `GE-Workshop#325`. **Read the same day; what it holds is below.**
 2. **Continuation paths.** In the preprint each knowledge unit says what to do on success, on failure and
    when to escalate to a human. The six endings cover escalation; a page carries no failure path.
 3. **Context harvesting.** An agent proposes the knowledge updates after a session, for a human to approve.
    End Day GE does this by hand, and the no-loss check is its test.
 4. **Agent teams as a peer channel between instances.** Experimental, with no project-level team
    configuration, so a watch and not a candidate for use.
+
+## `bmad-eval`, read 2026-11-20
+
+Its `SKILL.md` (71 lines, in the v7 preview's Toolsmith module) was read through a fetch agent; **its scripts,
+references and example cases were not**, and the page reports no result and no evidence of its own validity.
+
+**Four modes, each a question:**
+
+| Mode | The question it asks | Mapped to this library's need |
+|---|---|---|
+| Baseline | Does the skill beat the bare model on the same input? Each case runs twice, with the skill staged and with nothing | The with-and-without run proposed on `GE-Workshop#325` |
+| Variant | Does a section earn its place? The skill against a stripped or earlier version | The test the presentation checklist has never had: does each check, taken out, change the result |
+| Quality | Does the output meet a named rubric? A separate grader per case | The graded half of #325 |
+| Trigger | Does the description fire on the right queries and stay quiet on the rest? Pairs of a query and whether it should trigger | The gap in `method/skill-authoring-lessons.md`: a description that says when to fetch, now with a way to test it |
+
+**How it runs.** Each case runs in a temporary clean room outside the project, so the project's own
+instruction files do not bias the result. The default is one run per case and a result counts as settled
+only at three or more. Every run leaves a timestamped folder with the prompt, transcript, timing and the
+grading, and the skill says never to delete or overwrite one. With several runs it reports mean, standard
+deviation, minimum, maximum and the difference. Its own rule: **a baseline the skill no longer beats means
+retiring the skill, not patching it.**
+
+**What it does not settle, for this library's purposes.**
+- **The grader.** It does not name the grader's model and does not say whether grading is blind. A grader
+  of the same model family is the weakness the first study on this subject found
+  (`method/measuring-presentation.md`).
+- **No human grader and no test across model tiers.** One harness command is recorded per project.
+- **No pass bar.** It sets no numeric threshold; it asks that failures cite evidence and that evaluations
+  passing for trivial reasons be flagged.
+- **A risk to know before trying it.** It runs the user's harness command with permission prompts off, and
+  says it is not contained unless the command wraps it in a sandbox. It bundles Python scripts, and asks
+  the agent to install a companion skill from the same repository.
+
+**Read as a design, not as a tool to adopt.** Its modes are the questions the Workshop's harness needs; the
+two gaps (an independent grader, the Composer as the human judge) are the ones this estate already
+holds as principles.
 
 ## Limits, stated once
 
@@ -73,6 +111,6 @@ vendor's benchmark; **that claim was not checked.** Nearness to the concept is t
 
 ## What would test it
 
-Read `bmad-eval` and try its method on a skill the Workshop already has, with the baseline of
-`GE-Workshop#325`; and put a failure path in three library pages and see whether a fresh reader uses it.
+Try its method on a skill the Workshop already has, with the baseline of
+`GE-Workshop#325` and the Composer as the grader; and put a failure path in three library pages and see whether a fresh reader uses it.
 Both are proposals, and neither has run.
