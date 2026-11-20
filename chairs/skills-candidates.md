@@ -1,7 +1,7 @@
 ---
 type: Chair Reference
 title: "Community and first-party skills as reference candidates, per chair — unranked, none tried"
-description: "For each of the twelve chairs, the skills the first-party repository, a community curated list and third-party directories name for its field, with every address either verified to resolve on 2026-11-20 or marked as a lead that was not opened; the eleven that resolve were tiered by the Composer on 2026-11-20, the leads are untiered, and no skill was installed, read in full or run"
+description: "For each of the twelve chairs, the skills the first-party repository, a community curated list and third-party directories name for its field, with every address either verified to resolve on 2026-11-20 or marked as a lead that was not opened; the eleven first rows and the eight leads opened and read that day were all tiered by the Composer on 2026-11-20, and no skill was installed or run"
 status: draft
 card: none
 serves_all: true
@@ -15,6 +15,20 @@ sources:
     title: "obra/superpowers — a collection of Claude Code skills; resolves 2026-11-20"
   - resource: https://github.com/trailofbits/skills
     title: "Trail of Bits skills — security-review skills; resolves 2026-11-20"
+  - resource: https://github.com/anthropics/knowledge-work-plugins
+    title: "anthropics/knowledge-work-plugins — the design plugin's accessibility-review skill, read 2026-11-20"
+  - resource: https://github.com/alirezarezvani/claude-skills
+    title: "alirezarezvani/claude-skills — a11y-audit, read 2026-11-20; scripts not read"
+  - resource: https://github.com/AccessLint/skills
+    title: "AccessLint skills — README read 2026-11-20; skill files not read"
+  - resource: https://github.com/skillrecordings/adr-skill
+    title: "skillrecordings/adr-skill — read 2026-11-20; scripts not read"
+  - resource: https://github.com/wshobson/agents
+    title: "wshobson/agents — the ADR and postmortem skills, read 2026-11-20"
+  - resource: https://github.com/addyosmani/agent-skills
+    title: "addyosmani/agent-skills — documentation-and-adrs, read 2026-11-20"
+  - resource: https://github.com/mohitagw15856/pm-claude-skills
+    title: "mohitagw15856/pm-claude-skills — user-interview-synthesis, read 2026-11-20"
 ---
 
 # Skills as reference candidates, per chair
@@ -24,7 +38,7 @@ instance may not assign a tier. **The eleven rows below that resolve were tiered
 day, one row at a time by his own answers; an instance only recorded them.** The tiers are Critical,
 Important and Emerging, in the sense the chairs' reference files use them (read from those files, not
 stated anywhere): Critical, a chair must know it before acting; Important, established practice worth
-carrying; Emerging, newer practice to watch. **The leads are untiered, since none was opened.** *Resolves* means the address answered when requested on 2026-11-20 and
+carrying; Emerging, newer practice to watch. **The leads were opened later the same day and tiered the same way (below).** *Resolves* means the address answered when requested on 2026-11-20 and
 nothing more. **No skill was installed, read in full or run, so each row is a candidate at the level
 documented, never an endorsement.** Skills can run code; Anthropic's own guidance is to install only
 from trusted sources and to audit a skill's files first (`method/skill-authoring-lessons.md`).
@@ -45,18 +59,30 @@ from trusted sources and to audit a skill's files first (`method/skill-authoring
 | Agile Auditor, Agile Facilitator | `skill-creator` | Guides the building of a new skill by interview | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/skill-creator) | Important |
 | Product Owner, Software Architect | `get-shit-done` | Context engineering and spec-driven development | [gsd-build](https://github.com/gsd-build/get-shit-done) | Critical |
 
-## Fields the community list does not cover, and the leads that exist
+## Fields the community list does not cover: the leads, opened and tiered
 
 The curated list read has **no entry** for accessibility, user research, architecture decisions,
-reliability or git workflow. The wider directories name some. **None of the leads below was opened or
-resolved**; they come from third-party directory listings and are for a later pass, not for trust.
+reliability or git workflow. Third-party directories named some, and **on 2026-11-20 each lead was opened
+and its `SKILL.md` read through a fetch agent**, with a light audit in the way Anthropic recommends: what
+the skill bundles, and whether it tells the agent to contact an address, read credentials or send data.
+**Scripts and referenced folders were mostly not opened, so a clean audit line means only that nothing was
+seen in the file read.** Nothing was installed or run. The tiers are the Composer's, given the same day.
 
-| Chair | Lead | What the listing says |
-|---|---|---|
-| Accessibility Specialist | `accessibility-review`, in Anthropic's `knowledge-work-plugins` repository; several community `a11y-audit` skills | A WCAG 2.1 AA audit of a design or page; one community listing was flagged for referenced files missing from its bundle |
-| User Researcher | `user-research-synthesis`, in a community product-management collection | Synthesizes research findings into structured insights |
-| Software Architect | Many architecture-decision-record skills, one of which tells an agent when to stop and propose a record before adding a dependency | Different record formats; a page's own rule for what an ADR holds is the Workshop's |
-| Reliability Engineer | A postmortem-writing skill in a community agents collection | Not seen; **no dedicated SRE incident-review skill was found** |
+| Chair | Candidate | What it does, as read | Audit notes | Tier |
+|---|---|---|---|---|
+| Accessibility Specialist | [`accessibility-review`](https://github.com/anthropics/knowledge-work-plugins/tree/main/design/skills/accessibility-review), first-party | A WCAG 2.1 AA audit of a design or page with a fixed report; 128 lines; Apache-2.0 | One file, no scripts. Acts through connected tools (a design tool, ticket creation) when they exist | Critical |
+| Accessibility Specialist | [`a11y-audit`](https://github.com/alirezarezvani/claude-skills/blob/main/engineering-team/a11y-audit/skills/a11y-audit/SKILL.md), community | Scan, fix and verify over a frontend, WCAG 2.2 A and AA; 211 lines; MIT | **Bundles Python scripts, not read**; its fix option edits project source files | Critical |
+| Accessibility Specialist | [AccessLint skills](https://github.com/AccessLint/skills), community | Five skills, including a WCAG-EM site audit; MIT | **Runs unpinned npm packages, can launch Chrome and attach to a signed-in session, and has an optional hosted service that stores findings.** The skill files were not read | Important |
+| Software Architect | [`adr-skill`](https://github.com/skillrecordings/adr-skill/blob/main/skills/adr-skill/SKILL.md), community | MADR-style records, four phases, a rule to stop and propose a record before a new dependency or pattern; 311 lines | Three Node scripts, not read; **no license visible**; installs through npm | Critical |
+| Software Architect | [`architecture-decision-records`](https://github.com/wshobson/agents/blob/main/plugins/documentation-generation/skills/architecture-decision-records/SKILL.md), community | Patterns, a status lifecycle, a review checklist; MIT | Reference files only; no scripts seen | Important |
+| Software Architect | [`documentation-and-adrs`](https://github.com/addyosmani/agent-skills/blob/main/skills/documentation-and-adrs/SKILL.md), community | A record template, "never delete, supersede", and a git-history check for documents that drifted from their code; 320 lines; MIT | One file; a local `git log` snippet only | Important |
+| Reliability Engineer | [`postmortem-writing`](https://github.com/wshobson/agents/blob/main/plugins/incident-response/skills/postmortem-writing/SKILL.md), community | Blameless postmortems with a timeline, 5 Whys and templates; an incident review in substance, though it never says SRE; MIT | Reference files only; no scripts seen | Important |
+| User Researcher | [`user-interview-synthesis`](https://github.com/mohitagw15856/pm-claude-skills/blob/main/skills/user-interview-synthesis/SKILL.md), community | Themes from interview transcripts, with quotes and a scoring rubric; 86 lines; MIT | No code in the file. **The lead, `user-research-synthesis`, could not be confirmed to exist**; this is its closest sibling | Emerging |
+
+**Two of these bear on this library's own plans without deciding them.** The record skill that says
+*never delete, supersede* and checks a document against its code's git history is the practice the
+append-only log and the freshness plan on `GE-Workshop#330` already follow. The two rows that run code, the
+AccessLint skills and the Python-backed `a11y-audit`, are candidates to track, not to install.
 
 **Skills already available in the Composer's own Claude environment**, named in its skill list and not
 read: design critique, accessibility review, design handoff, design-system audit, UX copy, user research
