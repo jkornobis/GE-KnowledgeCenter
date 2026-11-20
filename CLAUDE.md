@@ -82,6 +82,11 @@ defect is invisible at the point it happens.
 **Publishing is the Workshop's `publish_library.mjs`, not a hand push** (`GE-Workshop#313`): it runs the four gates, 
 refuses without the screening terms, shows a plain summary and pushes only with `--go=<head>` of the head shown. 
 A hand push skips the screening and the summary, so it is the fallback and is said to be one (`protocols/library-conventions.md`).
+**Automatic since 2026-11-20 (Composer, `[standing]`): after a merge to `main` this instance runs the command and
+passes `--go=<head>` itself, with no approval step; Forgejo is the exact mirror of the public copy.** The gates and the
+screening still run first and still refuse: on any red gate or screening match it stops and tells him, it never pushes.
+The summary is shown to him after the push. His approval of the exact head, which he had ruled on `GE-Workshop#313`, is
+superseded, and the risk it covered (a term nobody thought of) is his to accept.
 
 **A merge that adds a page adds its `index.md` row in the same breath.** That index states it is the
 only route in, so an unlisted page is not in the library.
