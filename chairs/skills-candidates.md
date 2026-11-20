@@ -1,7 +1,7 @@
 ---
 type: Chair Reference
 title: "Community and first-party skills as reference candidates, per chair — unranked, none tried"
-description: "For each of the twelve chairs, the skills the first-party repository, a community curated list and third-party directories name for its field, with every address either verified to resolve on 2026-11-20 or marked as a lead that was not opened; the tier column is left empty for the Composer, and no skill was installed, read in full or run"
+description: "For each of the twelve chairs, the skills the first-party repository, a community curated list and third-party directories name for its field, with every address either verified to resolve on 2026-11-20 or marked as a lead that was not opened; the eleven that resolve were tiered by the Composer on 2026-11-20, the leads are untiered, and no skill was installed, read in full or run"
 status: draft
 card: none
 serves_all: true
@@ -19,8 +19,12 @@ sources:
 
 # Skills as reference candidates, per chair
 
-Assembled 2026-11-20 for the Composer to tier, in the shape of `chairs/references-candidates.md`: **the
-tier column is empty on purpose.** *Resolves* means the address answered when requested on 2026-11-20 and
+Assembled 2026-11-20 for the Composer to tier, in the shape of `chairs/references-candidates.md`, where an
+instance may not assign a tier. **The eleven rows below that resolve were tiered by the Composer the same
+day, one row at a time by his own answers; an instance only recorded them.** The tiers are Critical,
+Important and Emerging, in the sense the chairs' reference files use them (read from those files, not
+stated anywhere): Critical, a chair must know it before acting; Important, established practice worth
+carrying; Emerging, newer practice to watch. **The leads are untiered, since none was opened.** *Resolves* means the address answered when requested on 2026-11-20 and
 nothing more. **No skill was installed, read in full or run, so each row is a candidate at the level
 documented, never an endorsement.** Skills can run code; Anthropic's own guidance is to install only
 from trusted sources and to audit a skill's files first (`method/skill-authoring-lessons.md`).
@@ -29,17 +33,17 @@ from trusted sources and to audit a skill's files first (`method/skill-authoring
 
 | Chair | Candidate | What it is said to do | Address | Tier |
 |---|---|---|---|---|
-| UX Designer | `frontend-design` | Steers Claude away from generic aesthetics toward deliberate design choices | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/frontend-design) | |
-| Design Engineer | `web-artifacts-builder` | Builds HTML artifacts with React, Tailwind CSS and shadcn/ui | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) | |
-| QA Engineer | `webapp-testing` | Tests local web applications with Playwright, for UI verification and debugging | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/webapp-testing) | |
-| QA Engineer | `playwright-skill` | General browser automation with Playwright | [lackeyjb](https://github.com/lackeyjb/playwright-skill) | |
-| Software Engineer | `superpowers` | Core skills for test-driven development, debugging and collaboration, with planning commands | [obra](https://github.com/obra/superpowers) | |
-| Software Engineer | Trail of Bits security skills | Static analysis and code auditing | [trailofbits](https://github.com/trailofbits/skills) | |
-| Software Architect | `mcp-builder` | A guide for building servers that connect external APIs; only loosely architecture | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/mcp-builder) | |
-| Content Designer | `internal-comms` | Status reports, newsletters and FAQs | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/internal-comms) | |
-| Content Designer | `brand-guidelines` | Applies a brand's colours and typography to artifacts | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) | |
-| Agile Auditor, Agile Facilitator | `skill-creator` | Guides the building of a new skill by interview | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/skill-creator) | |
-| Product Owner, Software Architect | `get-shit-done` | Context engineering and spec-driven development | [gsd-build](https://github.com/gsd-build/get-shit-done) | |
+| UX Designer | `frontend-design` | Steers Claude away from generic aesthetics toward deliberate design choices | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/frontend-design) | Critical |
+| Design Engineer | `web-artifacts-builder` | Builds HTML artifacts with React, Tailwind CSS and shadcn/ui | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) | Emerging |
+| QA Engineer | `webapp-testing` | Tests local web applications with Playwright, for UI verification and debugging | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/webapp-testing) | Critical |
+| QA Engineer | `playwright-skill` | General browser automation with Playwright | [lackeyjb](https://github.com/lackeyjb/playwright-skill) | Critical |
+| Software Engineer | `superpowers` | Core skills for test-driven development, debugging and collaboration, with planning commands | [obra](https://github.com/obra/superpowers) | Important |
+| Software Engineer | Trail of Bits security skills | Static analysis and code auditing | [trailofbits](https://github.com/trailofbits/skills) | Important |
+| Software Architect | `mcp-builder` | A guide for building servers that connect external APIs; only loosely architecture | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/mcp-builder) | Important |
+| Content Designer | `internal-comms` | Status reports, newsletters and FAQs | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/internal-comms) | Emerging |
+| Content Designer | `brand-guidelines` | Applies a brand's colours and typography to artifacts | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) | Critical |
+| Agile Auditor, Agile Facilitator | `skill-creator` | Guides the building of a new skill by interview | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/skill-creator) | Important |
+| Product Owner, Software Architect | `get-shit-done` | Context engineering and spec-driven development | [gsd-build](https://github.com/gsd-build/get-shit-done) | Critical |
 
 ## Fields the community list does not cover, and the leads that exist
 
