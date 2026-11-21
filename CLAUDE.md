@@ -120,6 +120,7 @@ because a surface I do not know exists is one I never post to.
 at that end, not this one; I supply the decision, what it reverses and the artifact behind it, and
 the Workshop writes the record — one author per artifact. Issue creation is irreversible for an
 agent on this forge, so it is filed once and well-formed, never as a draft.
+**Atomic by default (Composer, 2026-11-21, `[standing]`):** one card per deliverable or decision, and every deferral still gets its own card. A bundle is allowed only for items that cannot be worked apart, and then it carries a checklist of its parts. Measured 2026-11-20: 3 of the 10 issues this instance filed were atomic, and three of the failures were bundled on purpose to save cards (`chairs/jam-list.md`).
 
 **The one bounded exception to append-only, set 2026-09-07.** `End Day GE` asks for a closed
 subject to be compacted and this file forbids rewriting — a conflict named 2026-09-06, deferred
