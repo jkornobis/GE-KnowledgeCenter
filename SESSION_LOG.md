@@ -2825,3 +2825,7 @@ The Workshop's session asked, after the Composer ruled step 1 of the tracking pr
 ## 2026-11-21 — the Library's statement against P1 to P4
 
 At the Workshop's request on `GE-Workshop#339` (brief ruled by the Composer the same day), the Library posted what it would build against each problem: it **authors** the two-line test for unattended runs, a page-level detector design, the pages the pilot found missing, a leak taxonomy and the pilot as a standing measure; it **asks the Workshop to build** the scripts and the harness. It named P3 as not ownable by one field and left that to the Composer's open question 3. A proposal only: nothing is built before the Workshop's split, and each item would be filed as its own card afterwards.
+
+## 2026-11-21 — Diamond 1 for the public named-GE pool
+
+At the Workshop's request on `GE-Workshop#342` (a study, not decided), the Library answered the four questions for the pool: what it is for (sizing the reader to the work, a need shown for cost and not for quality), who it serves (the Composer; outside readers are an assumption), five assumptions with their evidence (small-model reading, knowing when to escalate, sessions improving each other, the fence on woken sessions, screening for a public surface), and the cost of being wrong. One open question for him: whether "public" means outsiders or only the GEs. Nothing measured or built; the Library would take the public surface and its screening as a gate to rule first.
