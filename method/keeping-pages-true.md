@@ -19,7 +19,7 @@ points to.
 
 | Mechanism | What it covers | How it runs | Where it stops |
 |---|---|---|---|
-| **A clock on each tool page.** Two lines: `Audited YYYY-MM-DD` and `Re-audit: N days — <basis>`, read by the Workshop's `scripts/check_tool_audit_freshness.mjs` | The 30 pages in `tools/` | By hand, and monthly on a scheduled runner (ADR-152) | **Run with its default folder it reads no page and prints "All tool pages verified", exit 0.** The library's pages are read only with `--dir tools`. Measured 2026-11-15: with it, 17 of 30 are past their own interval and one has no `Audited` line (exit 1). **Not checked:** whether the monthly run passes `--dir` |
+| **A clock on each tool page.** Two lines: `Audited YYYY-MM-DD` and `Re-audit: N days — <basis>`, read by the Workshop's `scripts/check_tool_audit_freshness.mjs` | The 30 pages in `tools/` | By hand; a monthly scheduled runner (ADR-152) is named by the pages and **was not found** (below) | **Run with its default folder it reads no page and prints "All tool pages verified", exit 0.** The library's pages are read only with `--dir tools`. Measured 2026-11-15: with it, 17 of 30 are past their own interval and one has no `Audited` line (exit 1). **Whether the monthly run passes `--dir` cannot be answered: on 2026-11-21 no runner of that name was found** in this machine's crontab, user timers or session jobs, among the four routines of the account, or in the Workshop's repository, which names it only in comments and documents. Whether it exists elsewhere is unknown |
 | **The register's sweep.** `Tool Discovery: sweep`, every 30 days | The register of tools, which moves faster than the pages | Typed on demand; never waits on a scheduler | A stale register is re-swept, never re-dated from memory |
 | **The four gates** (`check_okf`, `check_links`, `check_frozen_counts --strict`, `check_forecasts --strict`) | That the library agrees with itself | Run on every merge | **They read nothing outside the repository**: no web address, no `sources[].resource` field. A stale claim about the outside is invisible to them |
 | **`check_corpus_freshness`** | Whether this library's copy of the graph is still the corpus's | `--source=<url or path>` | Exits 0 when no source is configured, so unconfigured looks green |
@@ -63,4 +63,4 @@ interval, and the re-audit is done by hand.
 ## Limits, stated once
 
 The table is read from the library's own pages and two runs of the script on 2026-11-15. The scheduled
-runner's configuration was not read. The count of pages that make claims about the outside is unknown.
+runner's configuration could not be read, because no runner of that name was found where this instance can look. The count of pages that make claims about the outside is unknown.
