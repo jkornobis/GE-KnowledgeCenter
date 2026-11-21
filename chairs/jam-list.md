@@ -1,7 +1,7 @@
 ---
 type: Chair Reference
 title: "The jam list — small experiments to try for each chair, from papers, datasets and news"
-description: "A list of experiments worth running per chair, assembled 2026-11-20 from research papers, datasets and one news article: each item names its source with an address that resolved, says what the source is and how firm it is, and gives a cheap test as a count with the Composer or a baseline as the judge — unranked by the orchestra, tiered by the Composer on 2026-11-20, with two runs recorded (the Agile Auditor classifying twelve logged faults, 8 of them failures to check before asserting; the Agile Facilitator scoring three Grand Auditorium runs by milestones, 14 of 15 met)"
+description: "A list of experiments worth running per chair, assembled 2026-11-20 from research papers, datasets and one news article: each item names its source with an address that resolved, says what the source is and how firm it is, and gives a cheap test as a count with the Composer or a baseline as the judge — unranked by the orchestra, tiered by the Composer on 2026-11-20, with three runs recorded (the Agile Auditor classifying twelve logged faults, 8 of them failures to check before asserting; the Agile Facilitator scoring three Grand Auditorium runs by milestones, 14 of 15 met; the Product Owner scoring ten issues on three criteria, 20 of 30 met)"
 status: draft
 card: none
 serves_all: true
@@ -53,8 +53,8 @@ sources:
 
 Assembled 2026-11-20 at the Composer's request: *search Hugging Face and the news for a skill or methodology
 worth testing for each chair, and build a jam list.* **A jam here is a small experiment: cheap, run against a
-baseline, with the Composer or a stated metric as the judge.** The list is unranked by me and **two items have been
-run** (the first two runs, below). **The Composer tiered all fourteen on 2026-11-20, one item at a time by his own answers, with nothing
+baseline, with the Composer or a stated metric as the judge.** The list is unranked by me and **three items have been
+run** (the first three runs, below). **The Composer tiered all fourteen on 2026-11-20, one item at a time by his own answers, with nothing
 marked as recommended; an instance only recorded them:** six Critical, seven Important, one Emerging, none
 "not worth tracking". The tiers say which items are worth tracking and testing, in the sense the chairs'
 reference files use (`chairs/skills-candidates.md`), not that any result is known.
@@ -158,9 +158,43 @@ scripts at the repository root, and the pilot later showed tool pages already ha
 - **Limits:** the scores are mine, the milestones are binary so "met" hides quality, and three runs are
   three runs.
 
+## Third jam run — the Product Owner's scores on ten issues, 2026-11-20
+
+**What was run.** The 10 issues this library instance filed between 2026-11-09 and 2026-11-20 (four here,
+six at the Workshop), each read in full with its comments and scored 1 or 0 on three criteria, 30 scores.
+The criteria come from the user-story quality framework in the item's source (`https://arxiv.org/abs/2504.00513`),
+**adapted for issues and fixed before any issue was read**: *atomic* (one deliverable or one decision, so it
+can close on one thing), *minimal* (every section serves its ask, nothing a reader must skip) and
+*independent* (it can be worked without another issue being done first; a related link does not count, a
+"closes when X exists" does). **The scores are mine and the Composer checked them: they hold.**
+
+| Issue | Atomic | Minimal | Independent | Why |
+|---|---|---|---|---|
+| Library: stale model facts | no | yes | yes | A page update and, separately, whether to write an escalation page |
+| Library: Figma probes | no | yes | yes | Three probes in one card |
+| Library: pilot gaps | no | yes | no | Five gaps; one closes only when the Workshop's counter exists |
+| Library: forge token | yes | yes | yes | One hand task |
+| Workshop: presentation baseline | yes | no | yes | One deliverable; the body still carries three rules since ruled and built |
+| Workshop: Grand Auditorium | no | yes | yes | A counter, a log, a sample and a replay in one build list |
+| Workshop: library plan | no | yes | no | Four rows; the backfill depends on the freshness row |
+| Workshop: two items | no | yes | yes | Two unrelated items, filed together on purpose |
+| Workshop: unattended runs | yes | yes | yes | One inventory |
+| Workshop: skill against the guidance | no | yes | yes | Three asks |
+| **Met** | **3 of 10** | **9 of 10** | **8 of 10** | **20 of 30** |
+
+**What it shows, with n of 10 and no rule.**
+- **Atomicity is where these issues fail.** Three of the seven that fail were bundled on purpose, so that no
+  deferral would be left without a card. Two standing rules pull against each other here: *a deferral with
+  no card is a drop*, and *an issue is filed once and never as a draft*. The first pushes toward a bundle, the
+  second toward a card that cannot close in parts.
+- **All ten are still open**, none for longer than three weeks, so this run cannot say whether atomicity
+  changes whether they close.
+- **Limits:** I scored my own issues, the framework was built for user stories, and the library's handoff
+  format is deliberately fuller than a story, so "minimal" is my adaptation.
+
 ## What the list does not say
 
-- **No item is a recommendation, and only the first two have been run.** Each test is sized as a count of things to score
+- **No item is a recommendation, and only the first three have been run.** Each test is sized as a count of things to score
   and names its judge; the harness that would run several of them is on `GE-Workshop#325` and `#330`.
 - **Two items touch the Workshop's code or records** (mutation-testing a gate's tests, and classifying
   faults from a log); the Library would propose them there and not run them on another repository.
