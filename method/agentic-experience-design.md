@@ -59,6 +59,7 @@ that cannot say the second fails unseen. Measured on 2026-11-15, one such run an
 wrongly: the freshness script, with its default folder, printed that every tool page was verified after
 reading none (`method/keeping-pages-true.md`). `protocols/pane-guard.md` already rules what may run
 unattended, by register; it does not ask what proves a run worked.
+**The rule form, with two labelled lines a check can find, is `method/unattended-run-test.md`.**
 
 ## Questions for a Why diamond on an automation field
 
