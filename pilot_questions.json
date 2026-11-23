@@ -1,0 +1,12 @@
+{
+  "about": "The pilot's five questions, restated by the Library, in the shape GE-Workshop's fresh_reader_run.mjs reads. The pilot of 2026-11-14 and 15 (method/double-diamond.md) kept the Composer's questions only as a paraphrase, so these five are the Library's restatement and NOT his words: he confirms or rewrites each before a run, and a changed file shows as a different sha256 on the run's sheet. See method/standing-measure.md. The rule and the bar are carried unchanged from the pilot and are his to confirm before every run.",
+  "rule": "an answer counts 1 only if a session could act on it without coming back to ask him",
+  "bar": "4 of 5",
+  "questions": [
+    { "id": "Q1", "text": "How can the refreshing of the library's pages be automated, and what exists to start from?" },
+    { "id": "Q2", "text": "How do the different Auditoriums relate to each other as a progression of field scope?" },
+    { "id": "Q3", "text": "What remedy exists for recurring presentation issues, and how is it enforced?" },
+    { "id": "Q4", "text": "How does the library detect and handle pages whose content has become outdated?" },
+    { "id": "Q5", "text": "How does an instance find the library's content, and what makes every instance search it before acting?" }
+  ]
+}
