@@ -111,3 +111,5 @@ floor records the distinction; the distinction is the method, the brackets are n
 **And it does not make every small choice a question.** A decision inside a ruling that binds only
 the work in front of you is a session decision by nature and needs no ceremony. **The test is
 whether it reaches a session that is not yours.**
+
+**Its address, as opposed to its level, is `method/tracing-a-ruling.md`:** a ruling carries the record that holds its reasoning, in a form a script can read.
