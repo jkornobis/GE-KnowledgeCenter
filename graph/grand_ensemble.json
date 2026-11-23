@@ -3487,14 +3487,14 @@
           "family": "Decision & Escalation",
           "yang": "before any choice: is this determinable, or authorship?",
           "seed": "a choice offered is a bug unless it is theirs",
-          "definedAt": "`presentation-checklist.md:7`",
+          "definedAt": "`presentation-checklist.md:100`",
           "sources": [],
           "firstName": "Rule 0 gate",
           "lastName": "Decision & Escalation",
           "title": "a choice offered is a bug unless it is theirs",
           "familyDoc": "mandalas/protocols-layer.md#decision--escalation",
           "layer": "protocols",
-          "doc": "presentation-checklist.md:7",
+          "doc": "presentation-checklist.md:100",
           "icon": "gavel",
           "iconStatus": "ratified",
           "iconFrom": "project/icon_registry.md"
@@ -8264,7 +8264,7 @@
       "toLayer": "protocols",
       "kind": "enacts",
       "status": "earned",
-      "why": "Agile Facilitator — \"does this have a single correct answer that I (**the Agile Facilitator**) can find by looking?\" — the gate is written in the Agile Facilitator's own first person (`mandalas/border-chairs-protocols.md`, class: protocol-declared)",
+      "why": "Agile Facilitator — \"anything the Agile Facilitator can settle by looking (reading the repo, running a check, applying a standard). → **The Agile Facilitator decides and acts. Never present it.**\" — the gate names the Agile Facilitator as the one who settles a determinable decision (the checklist's first-person wording dropped the name after the pin of 2026-08-29, #356) (`mandalas/border-chairs-protocols.md`, class: protocol-declared)",
       "a": "musicians:agilefacilitator",
       "b": "protocols:rule0gate",
       "id": "cross:agilefacilitator+rule0gate:enacts",
@@ -11172,6 +11172,6 @@
       "why": "Said to be impossible until 2026-07-29 — no protocol↔protocol structure existed anywhere. It did not exist; it was never ruled out. 70 edges now, each with its quote."
     }
   ],
-  "from": "GE-Workshop/project/graph/grand_ensemble.json@8b0fdf211bb4",
+  "from": "GE-Workshop/project/graph/grand_ensemble.json@a0f765cef81b",
   "exportedBy": "scripts/export_graph_for_library.mjs"
 }
