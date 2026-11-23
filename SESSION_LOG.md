@@ -2861,3 +2861,7 @@ Third in the Composer's order. `method/outside-claims-detector.md` (PR `#264`). 
 ## 2026-11-23 — #258 authored: the two-line test as a rule
 
 Fourth in the Composer's order. `method/unattended-run-test.md` (PR `#266`), with a pointer from the page where the test stood as a paragraph. **The rule:** every unattended run states `Proof` and `Silent failure` in two labelled lines; a check holds that both exist and are not empty, never that they are true, and a run with neither is NOT CHECKED. **Five runs of the estate** with the two lines as the record gives them, for their owners to confirm; four share a shape in the Library's reading. **Not decided, his:** the two labels are a naming. **The order is now at `#237`**, the pilot's missing pages, whose gaps 3 and 5 he has not ordered.
+
+## 2026-11-23 — the graph copy refreshed (#265)
+
+The Workshop asked for the graph copy to be refreshed after its re-pin (`GE-Workshop#356`, then PR `#363`). **Done from a clone of the Workshop at origin/main, with the export script, and checked by a diff of old against new:** 8 lines, the Rule 0 crossing's quote, the stamp (`@8b0fdf211bb4` to `@a0f765cef81b`) and the gate's `definedAt` and `doc` at `presentation-checklist.md:100`. The card asked for 503d767 or later; the stamp is the graph file's own last commit, an ancestor of 503d767, and the file at origin/main equals it. Gates exit 0, `--verify` 15 of 15. PR `#267`. **Also this day, #258:** all four cards that gate the Workshop's builds are written (`#255` to `#258`); the order is now at `#237`.
