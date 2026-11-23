@@ -1,7 +1,7 @@
 ---
 type: Method
 title: "Tracing a ruling — the address a recorded ruling carries, in a form a script can read (Agile Auditor, Software Architect, Content Designer)"
-description: "A ruling the Library records carries the address of the record that holds its reasoning, an ADR number or an issue in a named repository, written inside the parenthetical that already names the Composer and the date; why a script cannot find rulings in prose and so reads only the ones that declare themselves, how an honestly untraced ruling is marked, and the count of the form as it stands today, 18 parentheticals on 10 pages of which 1 carries an address — a proposal, with the shape still the Composer's to rule"
+description: "A ruling the Library records carries the address of the record that holds its reasoning, an ADR number or an issue in a named repository, written inside the parenthetical that already names the Composer and the date; why a script cannot find rulings in prose and so reads only the ones that declare themselves, how an honestly untraced ruling is marked, and the count of the form as it stands, 10 declared rulings on 7 pages as the Workshop's check reads them and 13 by a pattern that also reads line-wrapped ones, none carrying an address — a proposal, with the shape still the Composer's to rule"
 status: draft
 card: none
 serves: [Agile Auditor, Software Architect, Content Designer, Agile Facilitator, Product Owner]
@@ -65,22 +65,26 @@ recorded before today cannot be rewritten to carry an address it never had. **A 
 and no `untraced` is the only failure**, and it is checked on lines a commit adds or changes, not over the
 whole corpus; the same reasoning as the Workshop's level check, which reads a diff and not the history.
 
-## Measured, 2026-11-23
+## Measured, 2026-11-23, and corrected the same day
 
-Counted over the library's pages, the log excluded, by reading each parenthetical that opens with `(Composer,`
-and a date:
+**The first count on this page was wrong, and the Workshop's check caught it** (`GE-KnowledgeCenter#259`, the Workshop's
+comment of 10:05). It said 18 parentheticals on 10 pages with 1 carrying an address. **That pattern was looser than the form
+this page proposes**: it also took variants such as `(Composer standing rule, 2026-07-05, ADR-102)`, and the single
+"address" it found was one of those variants, outside the declared form. Counted again at head `76f2818`, the log and this
+page excluded:
 
 ```text
-parentheticals in that form                18
-pages carrying one                         10
-carrying an address                         1
+parentheticals opening "(Composer, <date>", read across line breaks     13   on 10 pages
+declared rulings as the Workshop's check reads them (by line)           10   on  7 pages
+carrying an address, in the declared form                                0
+malformed (the level `[standing]` read as an ending)                     1   CLAUDE.md:123
 ```
 
-**A looser count, any parenthetical with a date and a ruling word (Composer, ruled, ruling), found 94 on 28
-pages, 7 of them with an address.** The two counts differ because the looser form includes narration; the
-tighter one is the one a check could hold. **The form as it stands is nearly all unaddressed, so the first run
-will list the library's rulings as debt.** That is the finding the rule exists to make visible, and it is a
-list, not a verdict.
+**Two differences from the check are findings, not noise.** One parenthetical in `CLAUDE.md` is wrapped across two lines, so
+a reader that goes line by line cannot see it; and a level written before the address, `[standing]`, was read as an ending.
+**Both are the check's to answer, since the rule allows the level**; the count that holds is the check's, 10 on 7. A looser
+count of any date with a ruling word found 94 on 28 pages: the difference is narration, which is why the declared form is
+the one to read. **So the first run lists every declared ruling as debt**, a list and not a verdict.
 
 ## What this page does not do
 
