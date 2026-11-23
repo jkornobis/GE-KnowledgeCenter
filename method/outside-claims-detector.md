@@ -1,7 +1,7 @@
 ---
 type: Method
 title: "The outside-claims detector — which pages are in scope, what a page declares, what the check reports and when it says it could not look (Reliability Engineer, Software Architect, QA Engineer)"
-description: "A design for a page-level detector of claims about the outside world, extending the tool pages' existing clock instead of adding a scheme: a page is in scope when it sits in tools/ or names a source outside this library, 63 pages today of which 42 outside tools/ carry no clock; the declaration is the two lines already in use plus the address the audit was made against; six states and their exit codes, including the one that says it could not look; the first run lists undeclared pages as debt; a test over six fixtures — a proposal for the Workshop's script, with the pages that make an unsourced claim named as the gap no rule closes"
+description: "A design for a page-level detector of claims about the outside world, extending the tool pages' existing clock instead of adding a scheme: a page is in scope when it sits in tools/ or names a source outside this library, 63 pages today of which 42 outside tools/ carry no clock; the declaration is the two lines already in use plus the address the audit was made against; seven states and their exit codes, including the one that says it could not look and the one the Composer ruled on 2026-09-24 for a page unreachable by design; the first run lists undeclared pages as debt; a test over seven fixtures — a proposal for the Workshop's script, with the pages that make an unsourced claim named as the gap no rule closes"
 status: draft
 card: none
 serves: [Reliability Engineer, Software Architect, QA Engineer, Agile Auditor, Product Owner]
@@ -73,12 +73,16 @@ checkable in one way: **the address must be one of the page's own sources.** It 
 declaration is not a proof, and the page says so.
 
 **The three bases already allowed stay.** A measured interval; `default, not measured` at 90 days, which must say it
-is a default; and `not applicable — <reason>` for a page with no release surface upstream. A page in scope that holds
-none of the three is undeclared.
+is a default; and `not applicable — <reason>` for a page with no release surface upstream. **A fourth line stays too**,
+ruled by the Composer on 2026-09-24 (`GE-KnowledgeCenter#145`, item 6) and honoured by the Workshop's script for a page
+unreachable by design: `Accepted overdue: <who decided>, <YYYY-MM-DD> — <why>`, at line start. The decider and the date
+are required; without the decider the page reads stale again. A page in scope that holds none of these is undeclared.
 
 ## What the check reports
 
-One state per page, and the exit code that follows. **Two of them are failures; one says the check could not run.**
+One state per page, and the exit code that follows. **Two of them are failures; one says the check could not run.** The
+table was written without ACCEPTED OVERDUE, which the Library itself introduced on `#145`; the Workshop's script
+honoured it and the Workshop pointed out the omission.
 
 | State | Meaning | Exit |
 |---|---|---|
@@ -86,7 +90,8 @@ One state per page, and the exit code that follows. **Two of them are failures; 
 | **NOT APPLICABLE** | Declared `not applicable`, with its reason | 0 |
 | **DUE** | Declared, and the interval has passed | 1 |
 | **UNSOURCED** | The `against` address is not among the page's sources | 1 |
-| **UNDECLARED** | In scope and no clock | listed as debt; fails only on lines a commit adds or changes |
+| **ACCEPTED OVERDUE** | Past its interval, with an `Accepted overdue` line naming who decided and when | 0, and the page is still listed |
+| **UNDECLARED** | In scope and no clock | listed as debt; fails only for a page a commit adds or changes |
 | **NOT CHECKED** | No page was read, the scope came out empty, or a frontmatter could not be read | 2 |
 
 **NOT CHECKED is the one that matters.** On 2026-11-15 the existing script, run with its default folder, printed
@@ -111,9 +116,10 @@ is the failure it is meant to catch.** Whether a runner exists is the Workshop's
 
 ## What would test it
 
-Six fixtures, one per state, each a page the check must classify, and one empty folder it must refuse: a page inside its
+Seven fixtures, one per state, each a page the check must classify, and one empty folder it must refuse: a page inside its
 interval; a page past it; a page with an `against` address that is not one of its sources; an in-scope page with no
-clock; a page declared not applicable with a reason; and a folder with no pages, which must exit 2 and not 0. That is the
+clock; a page declared not applicable with a reason; a page past its interval with an `Accepted overdue` line, and the same
+page with the decider removed, which must read stale; and a folder with no pages, which must exit 2 and not 0. That is the
 Workshop's test; it has not run, and the design has not been read by the script's author.
 
 ## What this page does not do
