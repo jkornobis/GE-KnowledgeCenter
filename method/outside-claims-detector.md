@@ -76,7 +76,8 @@ declaration is not a proof, and the page says so.
 is a default; and `not applicable — <reason>` for a page with no release surface upstream. **A fourth line stays too**,
 ruled by the Composer on 2026-09-24 (`GE-KnowledgeCenter#145`, item 6) and honoured by the Workshop's script for a page
 unreachable by design: `Accepted overdue: <who decided>, <YYYY-MM-DD> — <why>`, at line start. The decider and the date
-are required; without the decider the page reads stale again. A page in scope that holds none of these is undeclared.
+are required, **and the only decider allowed is `the Composer`**: any other name, or a placeholder (`TBD`, `?`, `n/a`),
+reads as overdue (Composer, 2026-11-25, GE-Workshop#366). A page in scope that holds none of these is undeclared.
 
 ## What the check reports
 
@@ -91,7 +92,7 @@ honoured it and the Workshop pointed out the omission.
 | **DUE** | Declared, and the interval has passed | 1 |
 | **UNSOURCED** | The `against` address is not among the page's sources | 1 |
 | **ACCEPTED OVERDUE** | Past its interval, with an `Accepted overdue` line naming who decided and when | 0, and the page is still listed |
-| **UNDECLARED** | In scope and no clock | listed as debt; fails only for a page a commit adds or changes |
+| **UNDECLARED** | In scope and no clock, or an audit line with no `against` address | listed as debt; once gated, fails only for a page a commit adds or changes (Composer, 2026-11-25, GE-Workshop#366) |
 | **NOT CHECKED** | No page was read, the scope came out empty, or a frontmatter could not be read | 2 |
 
 **NOT CHECKED is the one that matters.** On 2026-11-15 the existing script, run with its default folder, printed
@@ -99,9 +100,16 @@ honoured it and the Workshop pointed out the omission.
 card gives a gate that cannot run its own exit code (`GE-Workshop#345`); this check should use it, and **a run that read
 zero pages must never be green.**
 
+## Who owns *overdue*, and when the old script goes
+
+**The detector owns the question *this tool page is overdue*.** The Workshop's `check_tool_audit_freshness.mjs` is not
+retired when the detector is built but **when the detector becomes a gate**, so that nothing goes unwatched in between
+(Composer, 2026-11-25, GE-Workshop#366). Until then both run, and where they disagree the disagreement is a finding about
+the page or the detector, not a tie to be broken by a rule.
+
 ## The first run, and the backfill
 
-**The first run lists 42 undeclared pages and passes.** The same reasoning as the ruling-trace check applies: most of
+**The first run lists 42 undeclared pages and passes**, and an audit line with no `against` address is listed with them as debt. The same reasoning as the ruling-trace check applies: most of
 the library predates the rule, and a check that fails on its whole history teaches its readers to ignore red. UNDECLARED
 becomes a failure only for a page a commit adds or changes. **Closing the 42 is its own work and its own cards**, one
 per deliverable; it is a re-audit of each page against its source, and a date moved without that is the failure this
